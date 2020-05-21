@@ -63,6 +63,17 @@ module.exports = {
                         loader: "sass-loader"
                     },
                 ]
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                use: [
+                    /* {
+                        loader: 'file-loader?name=./assets/fonts/webfonts/[name].[ext]'
+                    }, */
+                    {
+                        loader: 'file-loader?name=./src/fonts/Montserrat/[name].[ext]'
+                    }
+                ]
             }
         ]
     },
