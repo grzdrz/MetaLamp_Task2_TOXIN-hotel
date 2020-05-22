@@ -95,7 +95,13 @@ body {
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        /* font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase; */ }
     .headersAndFooters__buttonDefault_firstButton {
       margin-right: 20px; }
 

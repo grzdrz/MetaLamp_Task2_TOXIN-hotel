@@ -1,0 +1,10 @@
+@mixin buttonTextProperties {
+    font: {
+        family: MontserratBold;
+        style: normal;
+        weight: bold;
+        size: 12px;
+    }
+    line-height: 15px;
+    text-transform: uppercase;
+}

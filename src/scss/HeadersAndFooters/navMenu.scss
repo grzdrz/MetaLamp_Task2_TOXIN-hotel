@@ -1,0 +1,9 @@
+&__navMenu {
+    width: (100% * 530%) / 1440%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin-right: 30px;
+}

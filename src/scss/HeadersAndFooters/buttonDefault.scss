@@ -1,0 +1,23 @@
+&__buttonDefault {
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 22px;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    & > p {
+        margin: 9px 20px;
+        @import "./buttonDefault/buttonTextProperties.scss";
+        @include buttonTextProperties;
+    }
+
+    @import "./buttonDefault/hollowButton.scss";
+
+    &_firstButton {
+        //модификатор, задающий отступ первой кнопки от следующей
+        ////
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,12 @@
+.headersAndFooters {
+    display: flex;
+    flex-direction: column;
+    background: #f4f4f6;
+
+    @import "./HeadersAndFooters/standardNavBar.scss";
+    @import "./HeadersAndFooters/logo.scss";
+    @import "./HeadersAndFooters/navMenuAndButtonDefaultContainer.scss";
+    @import "./HeadersAndFooters/navMenu.scss";
+    @import "./HeadersAndFooters/navMenuItem.scss";
+    @import "./HeadersAndFooters/buttonDefault.scss";
+}

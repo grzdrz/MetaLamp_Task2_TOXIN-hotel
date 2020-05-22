@@ -1,0 +1,14 @@
+&_hollowButton {
+    //модификатор, делающий кнопку полой
+    background: #ffffff;
+    color: #bc9cff;
+    margin: 2px;
+    padding: 9px 20px;
+    border-radius: inherit;
+    text-decoration: none;
+
+    & > p {
+        @import "./buttonTextProperties.scss";
+        @include buttonTextProperties;
+    }
+}
