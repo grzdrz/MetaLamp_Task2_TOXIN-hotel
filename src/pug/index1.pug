@@ -9,28 +9,30 @@ html
                 .headersAndFooters__logo
                     //- svg img
                     p TOXIN
-                .headersAndFooters__group2AndbuttonDefault
-                    ul(class=['headersAndFooters__group2'])
-                        li 
+                .headersAndFooters__navMenuAndButtonDefaultContainer
+                    ul(class=['headersAndFooters__navMenu'])
+                        li(class=['headersAndFooters__navMenuItem', 'headersAndFooters__navMenuItem_firstItem']) 
                             a(href='#')
                                 p Home
-                        li 
+                        li(class=['headersAndFooters__navMenuItem'])
                             a(href='#')
                                 p About Us
-                        li 
+                        li(class=['headersAndFooters__navMenuItem']) 
                             a(href='#')
                                 p Services
-                        li 
+                        li(class=['headersAndFooters__navMenuItem'])
                             a(href='#')
                                 p Careers
-                        li 
+                        li(class=['headersAndFooters__navMenuItem'])
                             a(href='#')
                                 p News
-                        li 
+                        li(class=['headersAndFooters__navMenuItem', 'headersAndFooters__navMenuItem_lastItem'])
                             a(href='#')
                                 p Documentation
-                    div(class=['headersAndFooters__buttonDefault', 'headersAndFooters__firstButtonDefault'])
-                        a(class=['headersAndFooters_login'] href='#') 
+                    div(class=[
+                        'headersAndFooters__buttonDefault',
+                        'headersAndFooters__buttonDefault_firstButton'])
+                        a(class=['headersAndFooters__buttonDefault_hollowButton'] href='#') 
                             p LOGIN
                     a(class=['headersAndFooters__buttonDefault'] href='#')
                         p REGISTER         

@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #f4f4f6; }
-  .headersAndFooters .headersAndFooters__standardNavBar {
+  .headersAndFooters__standardNavBar {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -29,73 +29,73 @@ body {
     padding: 21px 140px 28px 140px;
     background: #ffffff;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
-    .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__logo {
-      color: #1f2041;
-      display: flex;
-      align-items: center; }
-    .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
-      .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__group2 {
-        width: 36.80556%;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 70%;
-        margin-right: 30px; }
-        .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__group2 li {
-          display: flex;
-          align-items: center;
-          margin: 0px 14px; }
-          .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__group2 li a {
-            text-decoration: none;
-            color: rgba(31, 32, 65, 0.5); }
-            .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__group2 li a p {
-              font-family: MontserratRegular;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 17px; }
-        .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__group2 li:first-of-type {
-          margin: 0px 14px 0px 0px; }
-          .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__group2 li:first-of-type a {
-            color: rgba(31, 32, 65, 0.75); }
-            .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__group2 li:first-of-type a p {
-              font-family: MontserratBold; }
-        .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__group2 li:last-of-type {
-          margin: 0px 0px 0px 14px; }
-      .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__buttonDefault {
-        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-        color: #ffffff;
-        text-decoration: none;
-        border-radius: 22px;
-        display: flex;
-        position: relative;
-        align-items: center; }
-        .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__buttonDefault .headersAndFooters_login {
-          background: #ffffff;
-          color: #bc9cff;
-          margin: 2px;
-          padding: 9px 20px;
-          border-radius: inherit;
-          text-decoration: none; }
-          .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__buttonDefault .headersAndFooters_login > p {
-            font-family: MontserratBold;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 15px;
-            text-transform: uppercase; }
-        .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__buttonDefault > p {
-          margin: 9px 20px;
-          font-family: MontserratBold;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 12px;
-          line-height: 15px;
-          text-transform: uppercase; }
-      .headersAndFooters .headersAndFooters__standardNavBar .headersAndFooters__group2AndbuttonDefault .headersAndFooters__firstButtonDefault {
-        margin-right: 20px; }
+  .headersAndFooters__logo {
+    color: #1f2041;
+    display: flex;
+    align-items: center; }
+  .headersAndFooters__navMenuAndButtonDefaultContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .headersAndFooters__navMenu {
+    width: 36.80556%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin-right: 30px; }
+  .headersAndFooters__navMenuItem {
+    display: flex;
+    align-items: center;
+    margin: 0px 14px; }
+    .headersAndFooters__navMenuItem a {
+      text-decoration: none;
+      color: rgba(31, 32, 65, 0.5); }
+      .headersAndFooters__navMenuItem a p {
+        font-family: MontserratRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px; }
+    .headersAndFooters__navMenuItem_firstItem {
+      margin: 0px 14px 0px 0px; }
+      .headersAndFooters__navMenuItem_firstItem a {
+        color: rgba(31, 32, 65, 0.75); }
+        .headersAndFooters__navMenuItem_firstItem a p {
+          font-family: MontserratBold; }
+    .headersAndFooters__navMenuItem_lastItem {
+      margin: 0px 0px 0px 14px; }
+  .headersAndFooters__buttonDefault {
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 22px;
+    display: flex;
+    position: relative;
+    align-items: center; }
+    .headersAndFooters__buttonDefault > p {
+      margin: 9px 20px;
+      font-family: MontserratBold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase; }
+    .headersAndFooters__buttonDefault_hollowButton {
+      background: #ffffff;
+      color: #bc9cff;
+      margin: 2px;
+      padding: 9px 20px;
+      border-radius: inherit;
+      text-decoration: none; }
+      .headersAndFooters__buttonDefault_hollowButton > p {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase; }
+    .headersAndFooters__buttonDefault_firstButton {
+      margin-right: 20px; }
 
