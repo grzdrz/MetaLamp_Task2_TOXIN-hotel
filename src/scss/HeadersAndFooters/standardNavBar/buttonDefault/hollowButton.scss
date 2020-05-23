@@ -1,19 +1,20 @@
 &_hollowButton {
+    $border: 2px;
+
     //модификатор, делающий кнопку полой
     background: #ffffff;
     color: #bc9cff;
-    $border: 2px;
     margin: $border;
-/*     padding: 7px 0px 8px 0px; */
     border-radius: inherit;
     text-decoration: none;
     background-origin: border-box;
-    background-clip: padding-box, border-box;
-    -webkit-background-clip: padding-box, border-box;
     height: 30px;
 
     & > p {
-        margin: 9px - $border 18px - $border 10px - $border 20px - $border;
+        /* margin: 9px - $border 20px - $border 10px - $border 20px - $border; */
+        @each $side, $value in $pMarginMap {
+            margin-#{$side}: $value - $border;
+        }
         @import "./buttonTextProperties.scss";
         @include buttonTextProperties;
     }

@@ -2,8 +2,8 @@
     color: #1f2041;
     display: flex;
     align-items: center;
-    margin: 10px 0px 20px 0px;
-    margin-right: 297px;
+    margin: 15px 0px 15px 0px;
+    margin-right: (297 * 100%) / 1440;
 }
 
 @import './logoSymbol.scss';

@@ -1,4 +1,41 @@
 @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./src/fonts/Icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(./src/fonts/Icons/MaterialIcons-Regular.woff2) format('woff2'),
+       url(./src/fonts/Icons/MaterialIcons-Regular.woff) format('woff'),
+       url(./src/fonts/Montserrat/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+@font-face {
   font-family: MontserratBold;
   src: url(./src/fonts/Montserrat/Montserrat-Bold.ttf); }
 
@@ -20,12 +57,14 @@ body {
   display: flex;
   flex-direction: column;
   background: #f4f4f6; }
+  .headersAndFooters__globalLogo {
+    height: 48px;
+    margin: 30px 0px 72px 30px; }
   .headersAndFooters__standardNavBar {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-content: center;
-    margin: 50px 0px;
     padding: 0px 140px;
     background: #ffffff;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
@@ -33,27 +72,42 @@ body {
     color: #1f2041;
     display: flex;
     align-items: center;
-    margin: 10px 0px 20px 0px;
-    margin-right: 297px; }
+    margin: 15px 0px 15px 0px;
+    margin-right: 20.625%; }
   .headersAndFooters__logoSymbol {
-    margin-right: 12px; }
-  .headersAndFooters__navMenuAndButtonDefaultContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center; }
+    margin-right: 12.5px; }
   .headersAndFooters__navMenu {
     width: 36.80556%;
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 70%;
-    margin: 21px 30px 28px 0px; }
+    /* justify-content: space-between; */
+    width: 527px;
+    margin: 26px 30px 23px 0px; }
   .headersAndFooters__navMenuItem {
     display: flex;
     align-items: center;
-    margin: 0px 14px; }
+    margin: 0px 15px;
+    /*     i.material-icons {
+        font-family: "Material Icons";
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+
+        -moz-osx-font-smoothing: grayscale;
+
+        font-feature-settings: "liga";
+    } */ }
     .headersAndFooters__navMenuItem a {
       text-decoration: none;
       color: rgba(31, 32, 65, 0.5); }
@@ -64,13 +118,13 @@ body {
         font-size: 14px;
         line-height: 17px; }
     .headersAndFooters__navMenuItem_firstItem {
-      margin: 0px 14px 0px 0px; }
+      margin: 0px 15px 0px 0px; }
       .headersAndFooters__navMenuItem_firstItem a {
         color: rgba(31, 32, 65, 0.75); }
         .headersAndFooters__navMenuItem_firstItem a p {
           font-family: MontserratBold; }
     .headersAndFooters__navMenuItem_lastItem {
-      margin: 0px 0px 0px 14px; }
+      margin: 0px 0px 0px 15px; }
   .headersAndFooters__buttonDefault {
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     color: #ffffff;
@@ -79,10 +133,13 @@ body {
     display: flex;
     position: relative;
     align-items: center;
-    margin: 13px 0px 23px 0px;
+    margin: 18px 0px 18px 0px;
     height: 34px; }
     .headersAndFooters__buttonDefault > p {
-      margin: 9px 18px 10px 20px;
+      margin-top: 9px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
       font-family: MontserratBold;
       font-style: normal;
       font-weight: bold;
@@ -93,15 +150,16 @@ body {
       background: #ffffff;
       color: #bc9cff;
       margin: 2px;
-      /*     padding: 7px 0px 8px 0px; */
       border-radius: inherit;
       text-decoration: none;
       background-origin: border-box;
-      background-clip: padding-box, border-box;
-      -webkit-background-clip: padding-box, border-box;
       height: 30px; }
       .headersAndFooters__buttonDefault_hollowButton > p {
-        margin: 7px 16px 8px 18px;
+        /* margin: 9px - $border 20px - $border 10px - $border 20px - $border; */
+        margin-top: 7px;
+        margin-right: 18px;
+        margin-bottom: 8px;
+        margin-left: 18px;
         font-family: MontserratBold;
         font-style: normal;
         font-weight: bold;

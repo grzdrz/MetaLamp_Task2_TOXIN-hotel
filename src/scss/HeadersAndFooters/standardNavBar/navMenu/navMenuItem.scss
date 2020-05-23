@@ -1,7 +1,7 @@
 &__navMenuItem {
     display: flex;
     align-items: center;
-    margin: 0px 14px;
+    margin: 0px 15px;
     a {
         text-decoration: none;
         color: rgba(31, 32, 65, 0.5);
@@ -15,7 +15,7 @@
     }
 
     &_firstItem {
-        margin: 0px 14px 0px 0px;
+        margin: 0px 15px 0px 0px;
         a {
             color: rgba(31, 32, 65, 0.75);
             p {
@@ -25,6 +25,6 @@
     }
 
     &_lastItem {
-        margin: 0px 0px 0px 14px;
+        margin: 0px 0px 0px 15px;
     }
 }

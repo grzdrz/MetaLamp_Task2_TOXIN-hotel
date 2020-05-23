@@ -65,16 +65,29 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                test: /\.svg$/,
+                loader: 'svg-url-loader'
+            },
+            {
+                test: /\.ttf$/,
                 use: [
-                    /* {
-                        loader: 'file-loader?name=./assets/fonts/webfonts/[name].[ext]'
-                    }, */
                     {
                         loader: 'file-loader?name=./src/fonts/Montserrat/[name].[ext]'
                     }
                 ]
-            }
+            },
+            {
+                test: /\.(eot|svg|woff|woff2)$/,
+                use: [
+                    {
+                        loader: 'file-loader?name=./src/fonts/Icons/[name].[ext]'
+                    }
+                ]
+            },
         ]
     },
 }
+
+
+
+//(eot|svg|woff|woff2)

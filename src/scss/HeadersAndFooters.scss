@@ -1,12 +1,8 @@
-.headersAndFooters {
+.headersAndFooters {//блок
     display: flex;
     flex-direction: column;
     background: #f4f4f6;
 
+    @import "./HeadersAndFooters/globalLogo.scss";
     @import "./HeadersAndFooters/standardNavBar.scss";
-    @import "./HeadersAndFooters/logo/logo.scss";
-    @import "./HeadersAndFooters/navMenuAndButtonDefaultContainer.scss";
-    @import "./HeadersAndFooters/navMenu/navMenu.scss";
-    @import "./HeadersAndFooters/navMenu/navMenuItem.scss";
-    @import "./HeadersAndFooters/buttonDefault/buttonDefault.scss";
 }
