@@ -6,14 +6,16 @@
     display: flex;
     position: relative;
     align-items: center;
+    margin: 13px 0px 23px 0px;
+    height: 34px;
 
     & > p {
-        margin: 9px 20px;
-        @import "./buttonDefault/buttonTextProperties.scss";
+        margin: 9px 18px 10px 20px;
+        @import "./buttonTextProperties.scss";
         @include buttonTextProperties;
     }
 
-    @import "./buttonDefault/hollowButton.scss";
+    @import "./hollowButton.scss";
 
     &_firstButton {
         //модификатор, задающий отступ первой кнопки от следующей

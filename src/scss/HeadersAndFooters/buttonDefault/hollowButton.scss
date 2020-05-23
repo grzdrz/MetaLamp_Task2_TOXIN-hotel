@@ -2,12 +2,18 @@
     //модификатор, делающий кнопку полой
     background: #ffffff;
     color: #bc9cff;
-    margin: 2px;
-    padding: 9px 20px;
+    $border: 2px;
+    margin: $border;
+/*     padding: 7px 0px 8px 0px; */
     border-radius: inherit;
     text-decoration: none;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    -webkit-background-clip: padding-box, border-box;
+    height: 30px;
 
     & > p {
+        margin: 9px - $border 18px - $border 10px - $border 20px - $border;
         @import "./buttonTextProperties.scss";
         @include buttonTextProperties;
     }

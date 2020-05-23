@@ -4,9 +4,9 @@
     background: #f4f4f6;
 
     @import "./HeadersAndFooters/standardNavBar.scss";
-    @import "./HeadersAndFooters/logo.scss";
+    @import "./HeadersAndFooters/logo/logo.scss";
     @import "./HeadersAndFooters/navMenuAndButtonDefaultContainer.scss";
-    @import "./HeadersAndFooters/navMenu.scss";
-    @import "./HeadersAndFooters/navMenuItem.scss";
-    @import "./HeadersAndFooters/buttonDefault.scss";
+    @import "./HeadersAndFooters/navMenu/navMenu.scss";
+    @import "./HeadersAndFooters/navMenu/navMenuItem.scss";
+    @import "./HeadersAndFooters/buttonDefault/buttonDefault.scss";
 }

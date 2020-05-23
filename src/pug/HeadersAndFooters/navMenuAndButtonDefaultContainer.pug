@@ -1,12 +1,12 @@
 .headersAndFooters__navMenuAndButtonDefaultContainer
     ul(class=['headersAndFooters__navMenu'])
-        li(class=['headersAndFooters__navMenuItem', 'headersAndFooters__navMenuItem_firstItem']) 
+        li(class=['headersAndFooters__navMenuItem', 'headersAndFooters__navMenuItem_firstItem'])
             a(href='#')
                 p Home
         li(class=['headersAndFooters__navMenuItem'])
             a(href='#')
                 p About Us
-        li(class=['headersAndFooters__navMenuItem']) 
+        li(class=['headersAndFooters__navMenuItem'])
             a(href='#')
                 p Services
         li(class=['headersAndFooters__navMenuItem'])
@@ -18,10 +18,9 @@
         li(class=['headersAndFooters__navMenuItem', 'headersAndFooters__navMenuItem_lastItem'])
             a(href='#')
                 p Documentation
-    div(class=[
-        'headersAndFooters__buttonDefault',
-        'headersAndFooters__buttonDefault_firstButton'])
-        a(class=['headersAndFooters__buttonDefault_hollowButton'] href='#') 
-            p LOGIN
-    a(class=['headersAndFooters__buttonDefault'] href='#')
-        p REGISTER   
+                
+    include ./navMenuButtonDefaultContainer/hollowButton.pug
+    +hollowButton('LOGIN')
+
+    include ./navMenuButtonDefaultContainer/buttonDefault.pug
+    +buttonDefault('REGISTER')
