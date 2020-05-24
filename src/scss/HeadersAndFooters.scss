@@ -1,8 +1,12 @@
-.headersAndFooters {//блок
+.headersAndFooters {
+    //блок
     display: flex;
     flex-direction: column;
     background: #f4f4f6;
 
-    @import "./HeadersAndFooters/globalLogo.scss";
-    @import "./HeadersAndFooters/standardNavBar.scss";
+    @import "./HeadersAndFooters/GlobalLogo.scss";
+    @import "./HeadersAndFooters/StandardNavBar.scss";
+    @import "./HeadersAndFooters/StandardLoggedInNavBar.scss";
+    @import "./HeadersAndFooters/FooterWidgetsAndCopyrightBar.scss";
+    @import "./HeadersAndFooters/Indentation.scss";
 }

@@ -5,11 +5,19 @@ html
         title FSD_Task2
     body
         .headersAndFooters
-            include ./HeadersAndFooters/globalLogo.pug
-            include ./HeadersAndFooters/standardNavBar.pug   
+            include ./HeadersAndFooters/GlobalLogo.pug
+            include ./HeadersAndFooters/StandardNavBar.pug   
 
-            .headersAndFooters__standardLoggedInNavBar
+            .headersAndFooters__indentation
+
+            include ./HeadersAndFooters/StandardLoggedInNavBar.pug 
+
+            .headersAndFooters__indentation
+
+            include ./HeadersAndFooters/FooterWidgetsAndCopyrightBar.pug
 
             .headersAndFooters__footerWidgetsAndCopyrightBar
+
+            .headersAndFooters__indentation
 
             .headersAndFooters__footerCreative

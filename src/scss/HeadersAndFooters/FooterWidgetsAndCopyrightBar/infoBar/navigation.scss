@@ -1,0 +1,10 @@
+&__navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+
+    a {
+        text-decoration: none;
+    }
+}

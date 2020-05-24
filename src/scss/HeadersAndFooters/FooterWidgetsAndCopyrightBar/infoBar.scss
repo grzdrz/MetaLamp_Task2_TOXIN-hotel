@@ -1,0 +1,13 @@
+&__infoBar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 140px;
+    align-content: center;
+}
+
+@import "./infoBar/someInfo.scss";
+@import "./infoBar/navigation.scss";
+@import "./infoBar/aboutUs.scss";
+@import "./infoBar/support.scss";
+@import "./infoBar/subscribeToOurNewsletter.scss";

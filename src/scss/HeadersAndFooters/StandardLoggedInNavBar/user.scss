@@ -1,0 +1,27 @@
+&__user {
+    /* margin: 26px 0px 26px 0px; *///30
+    display: flex;
+    align-items: center;
+
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+    white-space: nowrap;
+
+    /* position: relative; */
+
+    &:before{
+        content: '';
+        height: 30px;
+        width: 1px;
+        background: transparent;
+        border-left: 1px solid rgba(31, 32, 65, 0.1);
+        padding-right: 30px;
+        /* margin: 20px 0px 20px 0px; */
+        /* position: absolute
+        left: 30px; */
+    }
+}
