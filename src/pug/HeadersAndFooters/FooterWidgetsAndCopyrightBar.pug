@@ -4,62 +4,65 @@
             include ./StandardNavBar/logo.pug
             p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
         
-        ul(class=['headersAndFooters__navigation'])
-            li(class=['headersAndFooters__navigationItem', 'headersAndFooters__navigationItem_firstItem'])
+        ul(class=['headersAndFooters__infoBarMenu'])
+            li(class=['headersAndFooters__infoBarMenuItem', 'headersAndFooters__infoBarMenuItem_firstItem'])
                 a(href='#')
                     p NAVIGATION
-            li(class=['headersAndFooters__navigationItem'])
+            li(class=['headersAndFooters__infoBarMenuItem'])
                 a(href='#')
                     p About Us
-            li(class=['headersAndFooters__navigationItem'])
+            li(class=['headersAndFooters__infoBarMenuItem'])
                 a(href='#')
                     p News
-            li(class=['headersAndFooters__navigationItem'])
+            li(class=['headersAndFooters__infoBarMenuItem'])
                 a(href='#')
                     p Support
-            li(class=['headersAndFooters__navigationItem'])
+            li(class=['headersAndFooters__infoBarMenuItem'])
                 a(href='#')
                     p Products
         
-        ul(class=['headersAndFooters__aboutUs'])
-            li(class=['headersAndFooters__aboutUsItem', 'headersAndFooters__aboutUsItem_firstItem'])
+        ul(class=['headersAndFooters__infoBarMenu'])
+            li(class=['headersAndFooters__infoBarMenuItem', 'headersAndFooters__infoBarMenuItem_firstItem'])
                 a(href='#')
                     p ABOUT US
-            li(class=['headersAndFooters__aboutUsItem'])
+            li(class=['headersAndFooters__infoBarMenuItem'])
                 a(href='#')
                     p Who we are
-            li(class=['headersAndFooters__aboutUsItem'])
+            li(class=['headersAndFooters__infoBarMenuItem'])
                 a(href='#')
                     p Our team
-            li(class=['headersAndFooters__aboutUsItem'])
+            li(class=['headersAndFooters__infoBarMenuItem'])
                 a(href='#')
                     p Careers
-            li(class=['headersAndFooters__aboutUsItem'])
+            li(class=['headersAndFooters__infoBarMenuItem'])
                 a(href='#')
                     p Investors
         
-        ul(class=['headersAndFooters__support'])
-            li(class=['headersAndFooters__supportItem', 'headersAndFooters__supportItem_firstItem'])
+        ul(class=['headersAndFooters__infoBarMenu'])
+            li(class=['headersAndFooters__infoBarMenuItem', 'headersAndFooters__infoBarMenuItem_firstItem'])
                 a(href='#')
                     p SUPPORT
-            li(class=['headersAndFooters__supportItem'])
+            li(class=['headersAndFooters__infoBarMenuItem'])
                 a(href='#')
                     p Documentation
-            li(class=['headersAndFooters__supportItem'])
+            li(class=['headersAndFooters__infoBarMenuItem'])
                 a(href='#')
                     p Community
-            li(class=['headersAndFooters__supportItem'])
+            li(class=['headersAndFooters__infoBarMenuItem'])
                 a(href='#')
                     p Get in Touch
         
         form(class=['headersAndFooters__subscribeToOurNewsletter'])
             p SUBSCRIBE TO OUR NEWSLETTER
             p Receive our latest news and promotions in your inbox!
-            input(class=['headersAndFooters__subscribeToOurNewsletterEmailInput']
-                  name="email" 
-                  value="Your email address"
-                  type="email" 
-                  placeholder="Your email address")
+            .headersAndFooters__subscribeToOurNewsletterEmailForm
+                input(class=['headersAndFooters__subscribeToOurNewsletterInput']
+                    name="email" 
+                    type="email" 
+                    placeholder="Your email address")
+                input(class=['headersAndFooters__subscribeToOurNewsletterSubmit']
+                    type="submit"
+                    value="arrow_forward")      
     
     .headersAndFooters__copyrightBar
         .headersAndFooters__copyright

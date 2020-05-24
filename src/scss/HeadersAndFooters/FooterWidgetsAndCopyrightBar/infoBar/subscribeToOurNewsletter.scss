@@ -1,16 +1,93 @@
 &__subscribeToOurNewsletter {
     display: flex;
     flex-direction: column;
+    justify-self: end;
+
+    margin-top: 4px;
     margin-left: 87px;
+
+    p:first-of-type {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1f2041;
+
+        margin-bottom: 21px;
+    }
+    p:last-of-type {
+        font-family: MontserratRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+
+        margin-bottom: 20px;
+        width: 196px;
+    }
 }
 
-&__subscribeToOurNewsletterEmailInput {
+&__subscribeToOurNewsletterEmailForm {
+    display: flex;
+    flex-wrap: nowrap;
     width: 260px;
-    height: 44px;
+    /*     height: 44px; */
 
     background: transparent;
     border-radius: 4px;
     border: 1px solid rgba(31, 32, 65, 0.25);
+}
 
+&__subscribeToOurNewsletterInput {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    border: 0px solid transparent;
+    width: 216px;
+    /* height: 44px; */
     padding-left: 15px;
+
+    background: transparent;
+    color: rgba(31, 32, 65, 1);
+
+    &::-webkit-input-placeholder{
+        background: rgba(31, 32, 65, 0.25);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: 0px solid transparent;
+    }
+    &::-moz-placeholder{
+        background: rgba(31, 32, 65, 0.25);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+&__subscribeToOurNewsletterSubmit {
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    border: 0px solid transparent;
+
+    width: 44px;
+    height: 44px;
+
+    background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+    background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+    background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

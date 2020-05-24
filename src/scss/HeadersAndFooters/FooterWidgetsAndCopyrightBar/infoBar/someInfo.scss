@@ -1,5 +1,15 @@
-&__someInfo{
+&__someInfo {
     width: 260px;
     display: flex;
     flex-direction: column;
+
+    p {
+        margin-top: 20px;
+        font-family: MontserratRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+    }
 }
