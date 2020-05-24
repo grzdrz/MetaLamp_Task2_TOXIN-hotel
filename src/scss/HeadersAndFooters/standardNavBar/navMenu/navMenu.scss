@@ -1,11 +1,8 @@
 &__navMenu {
-    width: (100% * 530%) / 1440%;
     list-style: none;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     width: 527px;
-    /* margin: 26px 30px 23px 0px; */
     margin: 0px 30px 0px 0px;
-    margin-left: 22.625%;
+    justify-self: end;
 }

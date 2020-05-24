@@ -3,10 +3,7 @@
     display: flex;
     align-items: center;
     height: 40px;
-    /* margin: 15px 0px 15px 0px; */
-    //margin-right: (297 * 100%) / 1440;
-    //margin-right: 297px;
-    /* margin-right: 22.625%; */
+    justify-self: end;
 }
 
 @import './logoSymbol.scss';
