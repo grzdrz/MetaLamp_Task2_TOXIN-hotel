@@ -65,10 +65,6 @@ module.exports = {
                 ]
             },
             {
-                test: /\.svg$/,
-                loader: 'svg-url-loader'
-            },
-            {
                 test: /\.ttf$/,
                 use: [
                     {
@@ -77,12 +73,19 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(eot|svg|woff|woff2)$/,
+                test: /\.(eot|woff|woff2)$/,
                 use: [
                     {
                         loader: 'file-loader?name=./src/fonts/Icons/[name].[ext]'
                     }
                 ]
+            },
+            {
+                test: /\.svg$/,
+                loader: 'file-loader?name=./src/img/[name].[ext]',
+                options: {
+                    regExp: /src\/img\/\.png$/i,
+                }
             },
         ]
     },
@@ -91,3 +94,7 @@ module.exports = {
 
 
 //(eot|svg|woff|woff2)
+/*                 loader: 'svg-url-loader', */
+/*                 options: {
+                    outputPath: "./src/img"
+                } */

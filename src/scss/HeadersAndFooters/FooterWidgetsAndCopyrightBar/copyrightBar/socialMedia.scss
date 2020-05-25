@@ -1,0 +1,20 @@
+&__socialMedia {
+    display: flex;
+    align-content: center;
+
+    $iconSize: 24px;
+    a {
+        width: $iconSize;
+        height: $iconSize;
+        margin-right: 20px;
+
+        img {
+            width: $iconSize;
+            height: $iconSize;
+        }
+
+        &:last-of-type{
+            margin-right: 0px;
+        }
+    }
+}
