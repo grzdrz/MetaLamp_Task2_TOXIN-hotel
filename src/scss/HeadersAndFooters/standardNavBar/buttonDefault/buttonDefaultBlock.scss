@@ -1,0 +1,33 @@
+.buttonDefault {
+    //кнопка как отдельный блок
+    border-radius: 22px;
+    & > a {
+        color: #ffffff;
+        text-decoration: none;
+        display: flex;
+
+        & > p {
+            @import "./buttonTextProperties.scss";
+            @include buttonTextProperties;
+        }
+    }
+
+    &_hollowButton {
+        $border: 2px;
+        & > a {
+            //модификатор, делающий кнопку полой
+            background: #ffffff;
+            /* color: #bc9cff; */
+            margin: $border;
+            border-radius: inherit;
+            text-decoration: none;
+            background-origin: border-box;
+            height: 30px;
+
+            & > p {
+                @import "./buttonTextProperties.scss";
+                @include buttonTextProperties;
+            }
+        }
+    }
+}

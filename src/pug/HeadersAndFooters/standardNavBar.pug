@@ -1,7 +1,6 @@
 .headersAndFooters__standardNavBar
     include ./StandardNavBar/logo.pug
     include ./StandardNavBar/navMenu.pug
-    include ./StandardNavBar/hollowButton.pug
-    +hollowButton('LOGIN')
     include ./StandardNavBar/buttonDefault.pug
-    +buttonDefault('REGISTER')
+    +getButton('LOGIN', true, 'headersAndFooters__buttonDefault_hollowSize')
+    +getButton('REGISTER', false, 'headersAndFooters__buttonDefault_size')

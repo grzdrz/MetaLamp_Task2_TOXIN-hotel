@@ -43,6 +43,51 @@
   font-family: MontserratRegular;
   src: url(./src/fonts/Montserrat/Montserrat-Regular.ttf); }
 
+.colors__background_purpleToBlueGrad {
+  background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+
+.colors__background_purple {
+  background: #bc9cff; }
+
+.colors__background_green {
+  background: #6fcf97; }
+
+.colors__background_darkShade5 {
+  background: rgba(31, 32, 65, 0.05); }
+
+.colors__background_darkShade25 {
+  background: rgba(31, 32, 65, 0.25); }
+
+.colors__background_darkShade50 {
+  background: rgba(31, 32, 65, 0.5); }
+
+.colors__background_darkShade75 {
+  background: rgba(31, 32, 65, 0.75); }
+
+.colors__background_darkShade100 {
+  background: #1f2041; }
+
+.colors__font_purple {
+  color: #bc9cff; }
+
+.colors__font_green {
+  color: #6fcf97; }
+
+.colors__font_darkShade5 {
+  color: rgba(31, 32, 65, 0.05); }
+
+.colors__font_darkShade25 {
+  color: rgba(31, 32, 65, 0.25); }
+
+.colors__font_darkShade50 {
+  color: rgba(31, 32, 65, 0.5); }
+
+.colors__font_darkShade75 {
+  color: rgba(31, 32, 65, 0.75); }
+
+.colors__font_darkShade100 {
+  color: #1f2041; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -122,46 +167,60 @@ body {
       color: rgba(31, 32, 65, 0.5); }
     .headersAndFooters__navMenuItem:nth-child(3) {
       margin-right: 5px; }
-  .headersAndFooters__buttonDefault {
-    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 22px;
-    display: flex;
+  .headersAndFooters__buttonDefault_firstButton {
+    margin-right: 20px; }
+  .headersAndFooters__buttonDefault_size {
     height: 34px; }
-    .headersAndFooters__buttonDefault > p {
-      margin-top: 9px;
-      margin-right: 20px;
-      margin-bottom: 10px;
-      margin-left: 20px;
-      font-family: MontserratBold;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase; }
-    .headersAndFooters__buttonDefault_hollowButton {
-      background: #ffffff;
-      color: #bc9cff;
-      margin: 2px;
-      border-radius: inherit;
-      text-decoration: none;
-      background-origin: border-box;
-      height: 30px; }
-      .headersAndFooters__buttonDefault_hollowButton > p {
-        /* margin: 9px - $border 20px - $border 10px - $border 20px - $border; */
-        margin-top: 7px;
-        margin-right: 18px;
-        margin-bottom: 8px;
-        margin-left: 18px;
+    .headersAndFooters__buttonDefault_size > a {
+      height: 34px; }
+      .headersAndFooters__buttonDefault_size > a > p {
+        margin: 9px 20px 10px 20px;
         font-family: MontserratBold;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase; }
-    .headersAndFooters__buttonDefault_firstButton {
-      margin-right: 20px; }
+  .headersAndFooters__buttonDefault_hollowSize {
+    height: 34px; }
+    .headersAndFooters__buttonDefault_hollowSize > a {
+      height: 34px; }
+      .headersAndFooters__buttonDefault_hollowSize > a > p {
+        margin: 7px 18px 8px 18px;
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase; }
+  .headersAndFooters .buttonDefault {
+    border-radius: 22px; }
+    .headersAndFooters .buttonDefault > a {
+      color: #ffffff;
+      text-decoration: none;
+      display: flex; }
+      .headersAndFooters .buttonDefault > a > p {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase; }
+    .headersAndFooters .buttonDefault_hollowButton > a {
+      background: #ffffff;
+      /* color: #bc9cff; */
+      margin: 2px;
+      border-radius: inherit;
+      text-decoration: none;
+      background-origin: border-box;
+      height: 30px; }
+      .headersAndFooters .buttonDefault_hollowButton > a > p {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase; }
   .headersAndFooters__standardLoggedInNavBar {
     width: 100%;
     display: grid;

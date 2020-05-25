@@ -1,6 +1,10 @@
-mixin hollowButton(text)
+//-mixin hollowButton(text)
     div(class=[
         'headersAndFooters__buttonDefault',
-        'headersAndFooters__buttonDefault_firstButton'])
-        a(class=['headersAndFooters__buttonDefault_hollowButton'] href='#') 
-            p LOGIN
+        'headersAndFooters__buttonDefault_size',
+        'headersAndFooters__buttonDefault_firstButton',
+        'buttonDefault',
+        'buttonDefault_hollowButton',
+        'colors__background_purpleToBlueGrad'])
+        a(href='#') 
+            p(class=['colors__font_purple']) LOGIN     

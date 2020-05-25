@@ -1,24 +1,42 @@
+//кнопка как элемент
 &__buttonDefault {
-    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 22px;
-    display: flex;
-    height: 34px;
-
-    $pMarginMap: (top: 9px, right: 20px, bottom: 10px, left: 20px);
-    & > p {
-        @each $side, $value in $pMarginMap {
-            margin-#{$side}: $value;
-        }
-        @import "./buttonTextProperties.scss";
-        @include buttonTextProperties;
-    }
-
-    @import "./hollowButton.scss";
 
     &_firstButton {
-        //модификатор, задающий отступ первой кнопки от следующей
         margin-right: 20px;
     }
+
+    //размеры задаются локально, относительно текущего блока-контекста 
+    &_size {
+        $buttonHeight: 34px;
+        height: $buttonHeight;
+        & > a {
+            height: $buttonHeight;
+
+            & > p {
+                margin: 9px 20px 10px 20px;
+
+                @import "./buttonTextProperties.scss";
+                @include buttonTextProperties;
+            }
+        }
+    }
+
+    &_hollowSize {
+        $buttonHeight: 34px;
+        height: $buttonHeight;
+
+        $border: 2px;
+        & > a {
+            height: $buttonHeight;
+
+            & > p {
+                margin: 9px - $border 20px - $border 10px - $border 20px - $border;
+
+                @import "./buttonTextProperties.scss";
+                @include buttonTextProperties;
+            }
+        }
+    }
 }
+
+@import "./buttonDefaultBlock.scss";
