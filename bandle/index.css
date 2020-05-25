@@ -56,7 +56,8 @@ body {
 .headersAndFooters {
   display: flex;
   flex-direction: column;
-  background: #f4f4f6; }
+  background: #f4f4f6;
+  padding-bottom: 130px; }
   .headersAndFooters__globalLogo {
     height: 48px;
     margin: 30px 0px 72px 30px; }
@@ -82,7 +83,7 @@ body {
     list-style: none;
     display: flex;
     flex-direction: row;
-    width: 527px;
+    width: 530px;
     margin: 0px 30px 0px 0px;
     justify-self: end; }
   .headersAndFooters__navMenuItem {
@@ -100,7 +101,7 @@ body {
         font-size: 14px;
         line-height: 17px;
         white-space: nowrap;
-        letter-spacing: 0px; }
+        letter-spacing: 0.002em; }
     .headersAndFooters__navMenuItem_firstItem {
       margin: 0px 15px 0px 0px; }
       .headersAndFooters__navMenuItem_firstItem a {
@@ -212,13 +213,14 @@ body {
     display: flex;
     flex-direction: column; }
     .headersAndFooters__someInfo p {
-      margin-top: 20px;
       font-family: MontserratRegular;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
       line-height: 24px;
-      color: rgba(31, 32, 65, 0.75); }
+      color: rgba(31, 32, 65, 0.75);
+      margin-top: 18px;
+      letter-spacing: -0.01em; }
   .headersAndFooters__infoBarMenu {
     list-style: none;
     justify-self: end;
@@ -229,9 +231,9 @@ body {
     .headersAndFooters__infoBarMenu:nth-child(3) {
       margin-left: 119px; }
     .headersAndFooters__infoBarMenu:nth-child(4) {
-      margin-left: 118px; }
+      margin-left: 115px; }
   .headersAndFooters__infoBarMenuItem {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     font-family: MontserratRegular;
     font-style: normal;
     font-weight: normal;
@@ -240,10 +242,11 @@ body {
     .headersAndFooters__infoBarMenuItem a {
       text-decoration: none;
       white-space: nowrap;
-      color: rgba(31, 32, 65, 0.5); }
+      color: rgba(31, 32, 65, 0.5);
+      letter-spacing: -0.01em; }
     .headersAndFooters__infoBarMenuItem_firstItem {
       margin-top: 4px;
-      margin-bottom: 21px;
+      margin-bottom: 22px;
       font-family: MontserratBold;
       font-style: normal;
       font-weight: bold;
@@ -270,7 +273,8 @@ body {
       line-height: 15px;
       text-transform: uppercase;
       color: #1f2041;
-      margin-bottom: 21px; }
+      margin-bottom: 20px;
+      letter-spacing: -0.02em; }
     .headersAndFooters__subscribeToOurNewsletter p:last-of-type {
       font-family: MontserratRegular;
       font-style: normal;
@@ -279,7 +283,8 @@ body {
       line-height: 24px;
       color: rgba(31, 32, 65, 0.75);
       margin-bottom: 20px;
-      width: 196px; }
+      width: 196px;
+      letter-spacing: -0.01em; }
   .headersAndFooters__subscribeToOurNewsletterEmailForm {
     display: flex;
     flex-wrap: nowrap;
@@ -333,10 +338,19 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 0px 140px;
+    padding: 23px 140px;
     /* align-content: center; */
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1); }
+  .headersAndFooters__copyright {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.75);
+    letter-spacing: -0.008em; }
   .headersAndFooters__socialMedia {
     display: flex;
     align-content: center; }
@@ -352,4 +366,22 @@ body {
   .headersAndFooters__indentation {
     margin-bottom: 40px;
     background-color: transparent; }
+  .headersAndFooters__footerCreative {
+    padding: 100px 440px 110px 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+    .headersAndFooters__footerCreative p {
+      text-align: center;
+      margin-top: 18px;
+      margin-bottom: 27px;
+      font-family: MontserratRegular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: rgba(31, 32, 65, 0.75); }
 

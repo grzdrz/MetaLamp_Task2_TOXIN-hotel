@@ -4,12 +4,14 @@
     flex-direction: column;
 
     p {
-        margin-top: 20px;
         font-family: MontserratRegular;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 24px;
         color: rgba(31, 32, 65, 0.75);
+
+        margin-top: 18px;
+        letter-spacing: -0.01em;
     }
 }
