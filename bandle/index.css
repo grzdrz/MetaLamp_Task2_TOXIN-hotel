@@ -129,8 +129,11 @@ body {
     display: flex;
     flex-direction: row;
     width: 530px;
-    margin: 0px 30px 0px 0px;
     justify-self: end; }
+    .headersAndFooters__navMenu_firstNavMenuMargin {
+      margin: 0px 25px 0px 0px; }
+    .headersAndFooters__navMenu_secondNavMenuMargin {
+      margin: 0px 30px 0px 0px; }
   .headersAndFooters__navMenuItem {
     display: flex;
     align-items: center;

@@ -1,21 +1,23 @@
-ul(class=['headersAndFooters__navMenu'])
-    li(class=['headersAndFooters__navMenuItem', 'headersAndFooters__navMenuItem_firstItem'])
-        a(href='#')
-            p Home
-    li(class=['headersAndFooters__navMenuItem'])
-        a(href='#')
-            p About Us
-    li(class=['headersAndFooters__navMenuItem'])
-        a(href='#')
-            p Services
-        a(href='#')    
-            i(class=['material-icons', 'headersAndFooters__navMenuItem_expandMore']) expand_more
-    li(class=['headersAndFooters__navMenuItem'])
-        a(href='#')
-            p Careers
-    li(class=['headersAndFooters__navMenuItem'])
-        a(href='#')
-            p News
-    li(class=['headersAndFooters__navMenuItem', 'headersAndFooters__navMenuItem_lastItem'])
-        a(href='#')
-            p Documentation
+mixin getNavMenu(marginClass)
+    - let ulClassArray = ['headersAndFooters__navMenu'].concat(marginClass)
+    - let items = [['#', 'Home'], ['#', 'About Us'], ['#', 'Services'], ['#', 'Careers'], ['#', 'News'], ['#', 'Documentation']]
+    ul(class= ulClassArray)
+        for item in items
+            if items.indexOf(item) === 0
+                li(class=['headersAndFooters__navMenuItem', 'headersAndFooters__navMenuItem_firstItem'])
+                    a(href=item[0])
+                        p= item[1]
+            else if items.indexOf(item) === items.length - 1
+                li(class=['headersAndFooters__navMenuItem', 'headersAndFooters__navMenuItem_lastItem'])
+                    a(href=item[0])
+                        p= item[1]
+            else if item[1] === 'Services'
+                li(class=['headersAndFooters__navMenuItem'])
+                    a(href=item[0])
+                        p= item[1]
+                    a(href='#')    
+                        i(class=['material-icons', 'headersAndFooters__navMenuItem_expandMore']) expand_more
+            else
+                li(class=['headersAndFooters__navMenuItem'])
+                    a(href=item[0])
+                        p= item[1]

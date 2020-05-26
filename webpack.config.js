@@ -82,9 +82,9 @@ module.exports = {
             },
             {
                 test: /\.svg$/,
-                loader: 'file-loader?name=./src/img/[name].[ext]',
+                loader: 'file-loader',
                 options: {
-                    regExp: /src\/img\/\.png$/i,
+                    name: '[path][name].[ext]',
                 }
             },
         ]
