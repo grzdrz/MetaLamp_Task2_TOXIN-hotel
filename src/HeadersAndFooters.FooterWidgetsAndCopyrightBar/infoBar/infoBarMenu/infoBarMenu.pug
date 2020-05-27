@@ -1,0 +1,14 @@
+mixin getInfoBarMenu(listOfLinks)
+    - let isFirstIteration = true;
+
+    ul(class=['footerWidgetsAndCopyrightBar__infoBarMenu'])
+        for link in listOfLinks
+            if isFirstIteration
+                li(class=['footerWidgetsAndCopyrightBar__infoBarMenuItem', 'footerWidgetsAndCopyrightBar__infoBarMenuItem_firstItem'])
+                    a(href=link[0])
+                        p= link[1]
+            else
+                li(class=['footerWidgetsAndCopyrightBar__infoBarMenuItem'])
+                    a(href=link[0])
+                        p= link[1]
+            - isFirstIteration = false

@@ -13,13 +13,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 //html бандлов под каждую страницу веб-приложения.   
 const glob = require('glob');
 const pluginsOptions = [];
-let pages = glob.sync(__dirname + '/src/pug/*.pug');
+let pages = glob.sync(__dirname + '/src/pages/*.pug');
 pages.forEach(function (file) {
     let base = path.basename(file, '.pug');
     pluginsOptions.push(
         new HtmlWebpackPlugin({
             filename: './' + base + '.html',
-            template: './src/pug/' + base + '.pug',
+            template: './src/pages/' + base + '.pug',
             inject: true
         })
     )
@@ -66,19 +66,27 @@ module.exports = {
             },
             {
                 test: /\.ttf$/,
-                use: [
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]',
+                }
+                /* use: [
                     {
                         loader: 'file-loader?name=./src/fonts/Montserrat/[name].[ext]'
                     }
-                ]
+                ] */
             },
             {
                 test: /\.(eot|woff|woff2)$/,
-                use: [
-                    {
-                        loader: 'file-loader?name=./src/fonts/Icons/[name].[ext]'
-                    }
-                ]
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]',
+                }
+                /* use: [
+                                    {
+                                        loader: 'file-loader?name=./src/fonts/Icons/[name].[ext]'
+                                    }
+                                ] */
             },
             {
                 test: /\.svg$/,
@@ -90,11 +98,3 @@ module.exports = {
         ]
     },
 }
-
-
-
-//(eot|svg|woff|woff2)
-/*                 loader: 'svg-url-loader', */
-/*                 options: {
-                    outputPath: "./src/img"
-                } */

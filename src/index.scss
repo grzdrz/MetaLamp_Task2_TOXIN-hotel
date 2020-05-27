@@ -1,0 +1,24 @@
+@font-face {
+    font-family: MontserratBold;
+    src: url("./fonts/Montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: MontserratRegular;
+    src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
+}
+@import "../node_modules/material-design-icons/iconfont/material-icons.css";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-width: 100%;
+}
+
+@import "./ColorsAndTextTypes/colors.scss";
+@import "./pages/HeadersAndFooters.scss";

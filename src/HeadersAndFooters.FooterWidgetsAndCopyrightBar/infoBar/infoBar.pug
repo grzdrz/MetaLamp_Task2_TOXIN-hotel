@@ -1,0 +1,9 @@
+.footerWidgetsAndCopyrightBar__infoBar
+    include ./someInfo/someInfo.pug
+
+    include ./infoBarMenu/infoBarMenu.pug
+    +getInfoBarMenu([['#', 'NAVIGATION'], ['#', 'About Us'], ['#', 'News'], ['#', 'Support'], ['#', 'Products']])
+    +getInfoBarMenu([['#', 'ABOUT US'], ['#', 'Who we are'], ['#', 'Our team'], ['#', 'Careers'], ['#', 'Investors']])
+    +getInfoBarMenu([['#', 'SUPPORT'], ['#', 'Documentation'], ['#', 'Community'], ['#', 'Get in Touch']])
+
+    include ./subscribeToOurNewsletter/subscribeToOurNewsletter.pug

@@ -2,12 +2,12 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(./src/fonts/Icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: url(node_modules/material-design-icons/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
   src: local('Material Icons'),
        local('MaterialIcons-Regular'),
-       url(./src/fonts/Icons/MaterialIcons-Regular.woff2) format('woff2'),
-       url(./src/fonts/Icons/MaterialIcons-Regular.woff) format('woff'),
-       url(./src/fonts/Montserrat/MaterialIcons-Regular.ttf) format('truetype');
+       url(node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+       url(node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
+       url(node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
 }
 
 .material-icons {
@@ -37,11 +37,21 @@
 
 @font-face {
   font-family: MontserratBold;
-  src: url(./src/fonts/Montserrat/Montserrat-Bold.ttf); }
+  src: url(src/fonts/Montserrat/Montserrat-Bold.ttf); }
 
 @font-face {
   font-family: MontserratRegular;
-  src: url(./src/fonts/Montserrat/Montserrat-Regular.ttf); }
+  src: url(src/fonts/Montserrat/Montserrat-Regular.ttf); }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box; }
+
+html,
+body {
+  min-width: 100%; }
 
 .colors__background_purpleToBlueGrad {
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
@@ -88,60 +98,54 @@
 .colors__font_darkShade100 {
   color: #1f2041; }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  box-sizing: border-box; }
-
-html,
-body {
-  min-width: 100%; }
-
 .headersAndFooters {
   display: flex;
   flex-direction: column;
   background: #f4f4f6;
   padding-bottom: 130px; }
-  .headersAndFooters__globalLogo {
-    height: 48px;
-    margin: 30px 0px 72px 30px; }
-  .headersAndFooters__standardNavBar {
-    width: 100%;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: min-content auto min-content min-content;
-    align-items: center;
-    padding: 15px 140px;
-    justify-items: start;
-    background: #ffffff;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
-  .headersAndFooters__logo {
+  .headersAndFooters > div:nth-child(2),
+  .headersAndFooters > div:nth-child(3),
+  .headersAndFooters > div:nth-child(4) {
+    margin-bottom: 40px; }
+
+.globalLogo {
+  height: 48px;
+  margin: 30px 0px 72px 30px; }
+
+.standardNavBar {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: min-content auto min-content min-content;
+  align-items: center;
+  padding: 15px 140px;
+  justify-items: start;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  .standardNavBar__logo {
     color: #1f2041;
     display: flex;
     align-items: center;
     height: 40px;
     justify-self: end; }
-  .headersAndFooters__logoSymbol {
+  .standardNavBar__logoSymbol {
     margin-right: 12.5px; }
-  .headersAndFooters__navMenu {
+  .standardNavBar__navMenu {
     list-style: none;
     display: flex;
     flex-direction: row;
     width: 530px;
     justify-self: end; }
-    .headersAndFooters__navMenu_firstNavMenuMargin {
+    .standardNavBar__navMenu_navMenuMargin {
       margin: 0px 25px 0px 0px; }
-    .headersAndFooters__navMenu_secondNavMenuMargin {
-      margin: 0px 30px 0px 0px; }
-  .headersAndFooters__navMenuItem {
+  .standardNavBar__navMenuItem {
     display: flex;
     align-items: center;
     margin: 0px 14px; }
-    .headersAndFooters__navMenuItem a {
+    .standardNavBar__navMenuItem a {
       text-decoration: none;
       color: rgba(31, 32, 65, 0.5); }
-      .headersAndFooters__navMenuItem a p {
+      .standardNavBar__navMenuItem a p {
         font-family: MontserratRegular;
         /*             font-family: Montserrat; */
         font-style: normal;
@@ -150,15 +154,15 @@ body {
         line-height: 17px;
         white-space: nowrap;
         letter-spacing: 0.002em; }
-    .headersAndFooters__navMenuItem_firstItem {
+    .standardNavBar__navMenuItem_firstItem {
       margin: 0px 15px 0px 0px; }
-      .headersAndFooters__navMenuItem_firstItem a {
+      .standardNavBar__navMenuItem_firstItem a {
         color: rgba(31, 32, 65, 0.75); }
-        .headersAndFooters__navMenuItem_firstItem a p {
+        .standardNavBar__navMenuItem_firstItem a p {
           font-family: MontserratBold; }
-    .headersAndFooters__navMenuItem_lastItem {
+    .standardNavBar__navMenuItem_lastItem {
       margin: 0px 0px 0px 15px; }
-    .headersAndFooters__navMenuItem_expandMore {
+    .standardNavBar__navMenuItem_expandMore {
       font-family: Material Icons;
       font-style: normal;
       font-weight: normal;
@@ -168,15 +172,15 @@ body {
       align-items: center;
       text-align: center;
       color: rgba(31, 32, 65, 0.5); }
-    .headersAndFooters__navMenuItem:nth-child(3) {
+    .standardNavBar__navMenuItem:nth-child(3) {
       margin-right: 5px; }
-  .headersAndFooters__buttonDefault_firstButton {
+  .standardNavBar__buttonDefault_firstButton {
     margin-right: 20px; }
-  .headersAndFooters__buttonDefault_size {
+  .standardNavBar__buttonDefault_size {
     height: 34px; }
-    .headersAndFooters__buttonDefault_size > a {
+    .standardNavBar__buttonDefault_size > a {
       height: 34px; }
-      .headersAndFooters__buttonDefault_size > a > p {
+      .standardNavBar__buttonDefault_size > a > p {
         margin: 9px 20px 10px 20px;
         font-family: MontserratBold;
         font-style: normal;
@@ -184,11 +188,11 @@ body {
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase; }
-  .headersAndFooters__buttonDefault_hollowSize {
+  .standardNavBar__buttonDefault_hollowSize {
     height: 34px; }
-    .headersAndFooters__buttonDefault_hollowSize > a {
+    .standardNavBar__buttonDefault_hollowSize > a {
       height: 34px; }
-      .headersAndFooters__buttonDefault_hollowSize > a > p {
+      .standardNavBar__buttonDefault_hollowSize > a > p {
         margin: 7px 18px 8px 18px;
         font-family: MontserratBold;
         font-style: normal;
@@ -196,20 +200,20 @@ body {
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase; }
-  .headersAndFooters .buttonDefault {
+  .standardNavBar .buttonDefault {
     border-radius: 22px; }
-    .headersAndFooters .buttonDefault > a {
+    .standardNavBar .buttonDefault > a {
       color: #ffffff;
       text-decoration: none;
       display: flex; }
-      .headersAndFooters .buttonDefault > a > p {
+      .standardNavBar .buttonDefault > a > p {
         font-family: MontserratBold;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase; }
-    .headersAndFooters .buttonDefault_hollowButton > a {
+    .standardNavBar .buttonDefault_hollowButton > a {
       background: #ffffff;
       /* color: #bc9cff; */
       margin: 2px;
@@ -217,23 +221,26 @@ body {
       text-decoration: none;
       background-origin: border-box;
       height: 30px; }
-      .headersAndFooters .buttonDefault_hollowButton > a > p {
+      .standardNavBar .buttonDefault_hollowButton > a > p {
         font-family: MontserratBold;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase; }
-  .headersAndFooters__standardLoggedInNavBar {
-    width: 100%;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: min-content auto min-content min-content;
-    align-items: center;
-    padding: 15px 140px;
-    background: #ffffff;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
-  .headersAndFooters__user {
+
+.standardLoggedInNavBar {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: min-content auto min-content min-content;
+  align-items: center;
+  padding: 15px 140px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  .standardLoggedInNavBar__navMenu_navMenuMargin {
+    margin: 0px 30px 0px 0px; }
+  .standardLoggedInNavBar__user {
     /* margin: 26px 0px 26px 0px; */
     display: flex;
     align-items: center;
@@ -245,7 +252,7 @@ body {
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap;
     /* position: relative; */ }
-    .headersAndFooters__user:before {
+    .standardLoggedInNavBar__user:before {
       content: '';
       height: 30px;
       width: 1px;
@@ -255,13 +262,14 @@ body {
       /* margin: 20px 0px 20px 0px; */
       /* position: absolute
         left: 30px; */ }
-  .headersAndFooters__footerWidgetsAndCopyrightBar {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: #ffffff;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
-  .headersAndFooters__infoBar {
+
+.footerWidgetsAndCopyrightBar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  .footerWidgetsAndCopyrightBar__infoBar {
     width: 100%;
     display: grid;
     grid-template-rows: auto;
@@ -270,11 +278,11 @@ body {
     justify-items: start;
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
     margin-bottom: 1px; }
-  .headersAndFooters__someInfo {
+  .footerWidgetsAndCopyrightBar__someInfo {
     width: 260px;
     display: flex;
     flex-direction: column; }
-    .headersAndFooters__someInfo p {
+    .footerWidgetsAndCopyrightBar__someInfo p {
       font-family: MontserratRegular;
       font-style: normal;
       font-weight: normal;
@@ -283,30 +291,30 @@ body {
       color: rgba(31, 32, 65, 0.75);
       margin-top: 18px;
       letter-spacing: -0.01em; }
-  .headersAndFooters__infoBarMenu {
+  .footerWidgetsAndCopyrightBar__infoBarMenu {
     list-style: none;
     justify-self: end;
     display: flex;
     flex-direction: column; }
-    .headersAndFooters__infoBarMenu:nth-child(2) {
+    .footerWidgetsAndCopyrightBar__infoBarMenu:nth-child(2) {
       margin-left: 40px; }
-    .headersAndFooters__infoBarMenu:nth-child(3) {
+    .footerWidgetsAndCopyrightBar__infoBarMenu:nth-child(3) {
       margin-left: 119px; }
-    .headersAndFooters__infoBarMenu:nth-child(4) {
+    .footerWidgetsAndCopyrightBar__infoBarMenu:nth-child(4) {
       margin-left: 115px; }
-  .headersAndFooters__infoBarMenuItem {
+  .footerWidgetsAndCopyrightBar__infoBarMenuItem {
     margin-bottom: 21px;
     font-family: MontserratRegular;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px; }
-    .headersAndFooters__infoBarMenuItem a {
+    .footerWidgetsAndCopyrightBar__infoBarMenuItem a {
       text-decoration: none;
       white-space: nowrap;
       color: rgba(31, 32, 65, 0.5);
       letter-spacing: -0.01em; }
-    .headersAndFooters__infoBarMenuItem_firstItem {
+    .footerWidgetsAndCopyrightBar__infoBarMenuItem_firstItem {
       margin-top: 4px;
       margin-bottom: 22px;
       font-family: MontserratBold;
@@ -315,19 +323,19 @@ body {
       font-size: 12px;
       line-height: 15px;
       text-transform: uppercase; }
-      .headersAndFooters__infoBarMenuItem_firstItem a {
+      .footerWidgetsAndCopyrightBar__infoBarMenuItem_firstItem a {
         text-decoration: none;
         white-space: nowrap;
         color: #1f2041; }
-    .headersAndFooters__infoBarMenuItem:last-of-type {
+    .footerWidgetsAndCopyrightBar__infoBarMenuItem:last-of-type {
       margin-bottom: 0px; }
-  .headersAndFooters__subscribeToOurNewsletter {
+  .footerWidgetsAndCopyrightBar__subscribeToOurNewsletter {
     display: flex;
     flex-direction: column;
     justify-self: end;
     margin-top: 4px;
     margin-left: 87px; }
-    .headersAndFooters__subscribeToOurNewsletter p:first-of-type {
+    .footerWidgetsAndCopyrightBar__subscribeToOurNewsletter p:first-of-type {
       font-family: MontserratBold;
       font-style: normal;
       font-weight: bold;
@@ -337,7 +345,7 @@ body {
       color: #1f2041;
       margin-bottom: 20px;
       letter-spacing: -0.02em; }
-    .headersAndFooters__subscribeToOurNewsletter p:last-of-type {
+    .footerWidgetsAndCopyrightBar__subscribeToOurNewsletter p:last-of-type {
       font-family: MontserratRegular;
       font-style: normal;
       font-weight: normal;
@@ -347,7 +355,7 @@ body {
       margin-bottom: 20px;
       width: 196px;
       letter-spacing: -0.01em; }
-  .headersAndFooters__subscribeToOurNewsletterEmailForm {
+  .footerWidgetsAndCopyrightBar__subscribeToOurNewsletterEmailForm {
     display: flex;
     flex-wrap: nowrap;
     width: 260px;
@@ -355,7 +363,7 @@ body {
     background: transparent;
     border-radius: 4px;
     border: 1px solid rgba(31, 32, 65, 0.25); }
-  .headersAndFooters__subscribeToOurNewsletterInput {
+  .footerWidgetsAndCopyrightBar__subscribeToOurNewsletterInput {
     font-family: MontserratRegular;
     font-style: normal;
     font-weight: normal;
@@ -367,20 +375,20 @@ body {
     padding-left: 15px;
     background: transparent;
     color: #1f2041; }
-    .headersAndFooters__subscribeToOurNewsletterInput::-webkit-input-placeholder {
+    .footerWidgetsAndCopyrightBar__subscribeToOurNewsletterInput::-webkit-input-placeholder {
       background: rgba(31, 32, 65, 0.25);
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       border: 0px solid transparent; }
-    .headersAndFooters__subscribeToOurNewsletterInput::-moz-placeholder {
+    .footerWidgetsAndCopyrightBar__subscribeToOurNewsletterInput::-moz-placeholder {
       background: rgba(31, 32, 65, 0.25);
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent; }
-  .headersAndFooters__subscribeToOurNewsletterSubmit {
+  .footerWidgetsAndCopyrightBar__subscribeToOurNewsletterSubmit {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
@@ -396,7 +404,7 @@ body {
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent; }
-  .headersAndFooters__copyrightBar {
+  .footerWidgetsAndCopyrightBar__copyrightBar {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -405,7 +413,7 @@ body {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1); }
-  .headersAndFooters__copyright {
+  .footerWidgetsAndCopyrightBar__copyright {
     font-family: MontserratRegular;
     font-style: normal;
     font-weight: normal;
@@ -413,37 +421,35 @@ body {
     line-height: 17px;
     color: rgba(31, 32, 65, 0.75);
     letter-spacing: -0.008em; }
-  .headersAndFooters__socialMedia {
+  .footerWidgetsAndCopyrightBar__socialMedia {
     display: flex;
     align-content: center; }
-    .headersAndFooters__socialMedia a {
+    .footerWidgetsAndCopyrightBar__socialMedia a {
       width: 24px;
       height: 24px;
       margin-right: 20px; }
-      .headersAndFooters__socialMedia a img {
+      .footerWidgetsAndCopyrightBar__socialMedia a img {
         width: 24px;
         height: 24px; }
-      .headersAndFooters__socialMedia a:last-of-type {
+      .footerWidgetsAndCopyrightBar__socialMedia a:last-of-type {
         margin-right: 0px; }
-  .headersAndFooters__indentation {
-    margin-bottom: 40px;
-    background-color: transparent; }
-  .headersAndFooters__footerCreative {
-    padding: 100px 440px 110px 440px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #ffffff;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
-    .headersAndFooters__footerCreative p {
-      text-align: center;
-      margin-top: 18px;
-      margin-bottom: 27px;
-      font-family: MontserratRegular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-      text-align: center;
-      color: rgba(31, 32, 65, 0.75); }
+
+.footerCreative {
+  padding: 100px 440px 110px 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  .footerCreative p {
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 27px;
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.75); }
 

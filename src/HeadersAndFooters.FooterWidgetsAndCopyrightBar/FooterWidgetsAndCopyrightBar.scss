@@ -1,0 +1,10 @@
+.footerWidgetsAndCopyrightBar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+    @import "./infoBar/infoBar.scss";
+    @import "./copyrightBar/copyrightBar.scss";
+}

@@ -1,0 +1,7 @@
+.standardNavBar
+    include ./logo/logo.pug
+    include ./navMenu/navMenu.pug
+    +getNavMenu(['standardNavBar__navMenu_navMenuMargin'])
+    include ./buttonDefault/getButtonDefault.pug
+    +getButton('LOGIN', true, ['standardNavBar__buttonDefault_firstButton', 'standardNavBar__buttonDefault_hollowSize'])
+    +getButton('REGISTER', false, 'standardNavBar__buttonDefault_size')
