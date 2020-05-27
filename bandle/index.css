@@ -179,21 +179,10 @@ body {
   .standardNavBar__buttonDefault_size {
     height: 34px; }
     .standardNavBar__buttonDefault_size > a {
-      height: 34px; }
+      height: 34px;
+      padding: 0px 18px; }
       .standardNavBar__buttonDefault_size > a > p {
-        margin: 9px 20px 10px 20px;
-        font-family: MontserratBold;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase; }
-  .standardNavBar__buttonDefault_hollowSize {
-    height: 34px; }
-    .standardNavBar__buttonDefault_hollowSize > a {
-      height: 34px; }
-      .standardNavBar__buttonDefault_hollowSize > a > p {
-        margin: 7px 18px 8px 18px;
+        margin: 0px 2px;
         font-family: MontserratBold;
         font-style: normal;
         font-weight: bold;
@@ -205,7 +194,8 @@ body {
     .standardNavBar .buttonDefault > a {
       color: #ffffff;
       text-decoration: none;
-      display: flex; }
+      display: flex;
+      align-items: center; }
       .standardNavBar .buttonDefault > a > p {
         font-family: MontserratBold;
         font-style: normal;
@@ -222,12 +212,7 @@ body {
       background-origin: border-box;
       height: 30px; }
       .standardNavBar .buttonDefault_hollowButton > a > p {
-        font-family: MontserratBold;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase; }
+        margin: 0px 0px; }
 
 .standardLoggedInNavBar {
   width: 100%;

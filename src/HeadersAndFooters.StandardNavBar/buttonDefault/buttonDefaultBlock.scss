@@ -5,6 +5,7 @@
         color: #ffffff;
         text-decoration: none;
         display: flex;
+        align-items: center;
 
         & > p {
             @import "./buttonTextProperties.scss";
@@ -25,8 +26,7 @@
             height: 30px;
 
             & > p {
-                @import "./buttonTextProperties.scss";
-                @include buttonTextProperties;
+                margin: 0px 0px;
             }
         }
     }

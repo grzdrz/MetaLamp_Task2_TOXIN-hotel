@@ -12,25 +12,15 @@
         & > a {
             height: $buttonHeight;
 
+            $hollowBorderSizeThickness: 2px;
+            padding: 0px 20px - $hollowBorderSizeThickness;
             & > p {
-                margin: 9px 20px 10px 20px;
-
-                @import "./buttonTextProperties.scss";
-                @include buttonTextProperties;
-            }
-        }
-    }
-
-    &_hollowSize {
-        $buttonHeight: 34px;
-        height: $buttonHeight;
-
-        $border: 2px;
-        & > a {
-            height: $buttonHeight;
-
-            & > p {
-                margin: 9px - $border 20px - $border 10px - $border 20px - $border;
+                //Небольшой трюк(костыль) для того чтобы можно было проще настраивать полые кнопки,
+                //передавая в них просто размер кнопки, без размера внутренней полости.
+                //В полой кнопке в свою очередь данный марджин обнуляется модификатором,
+                //уменьшая размер полости на толщину рамки, где в данном случае толщина рамки
+                //подразумевается равной 2м пикселям.
+                margin: 0px $hollowBorderSizeThickness;
 
                 @import "./buttonTextProperties.scss";
                 @include buttonTextProperties;
