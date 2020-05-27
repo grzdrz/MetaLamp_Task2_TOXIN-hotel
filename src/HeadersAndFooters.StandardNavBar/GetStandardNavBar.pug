@@ -1,0 +1,17 @@
+mixin getStandardNavBar(isAuthorized)
+    .standardNavBar
+        include ../HeadersAndFooters.LogoColored/logoColored.pug
+
+        include ./navMenu/navMenu.pug
+        if(isAuthorized)
+            +getNavMenu(['standardNavBar__navMenu_navMenuMarginForAuthorized'])
+        else
+            +getNavMenu(['standardNavBar__navMenu_navMenuMarginForNotAuthorized'])    
+
+        if(isAuthorized)
+            include ./user/user.pug
+            +getUserName('Cosmin Negoita')
+        else
+            include ../ButtonDefault/GetButtonDefault.pug
+            +getButton('LOGIN', true, ['standardNavBar__buttonDefault_size', 'standardNavBar__buttonDefault_firstButton'])
+            +getButton('REGISTER', false, ['standardNavBar__buttonDefault_size'])

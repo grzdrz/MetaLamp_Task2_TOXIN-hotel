@@ -1,6 +1,8 @@
 .buttonDefault {
     //кнопка как отдельный блок
     border-radius: 22px;
+    display: flex;
+    align-items: center;
     & > a {
         color: #ffffff;
         text-decoration: none;
@@ -13,21 +15,21 @@
         }
     }
 
+    //модификатор, делающий кнопку полой
     &_hollowButton {
         $border: 2px;
-        & > a {
-            //модификатор, делающий кнопку полой
+        & > a:first-of-type {
+            height: 30px;
             background: #ffffff;
-            /* color: #bc9cff; */
             margin: $border;
             border-radius: inherit;
             text-decoration: none;
             background-origin: border-box;
-            height: 30px;
 
-            & > p {
+            & > p:first-of-type {
                 margin: 0px 0px;
             }
         }
     }
 }
+//first-of-type для повышения приоритета

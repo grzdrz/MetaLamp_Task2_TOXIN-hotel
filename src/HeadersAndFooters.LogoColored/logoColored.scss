@@ -1,9 +1,10 @@
-&__logo {
-    color: #1f2041;
+.logoColored {
     display: flex;
     align-items: center;
     height: 40px;
     justify-self: end;
-}
 
-@import './logoSymbol.scss';
+    &_logoMarginRight {
+        margin-right: 12.5px;
+    }
+}

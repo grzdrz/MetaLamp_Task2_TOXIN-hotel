@@ -112,6 +112,32 @@ body {
   height: 48px;
   margin: 30px 0px 72px 30px; }
 
+.buttonDefault {
+  border-radius: 22px;
+  display: flex;
+  align-items: center; }
+  .buttonDefault > a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center; }
+    .buttonDefault > a > p {
+      font-family: MontserratBold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase; }
+  .buttonDefault_hollowButton > a:first-of-type {
+    height: 30px;
+    background: #ffffff;
+    margin: 2px;
+    border-radius: inherit;
+    text-decoration: none;
+    background-origin: border-box; }
+    .buttonDefault_hollowButton > a:first-of-type > p:first-of-type {
+      margin: 0px 0px; }
+
 .standardNavBar {
   width: 100%;
   display: grid;
@@ -122,22 +148,16 @@ body {
   justify-items: start;
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
-  .standardNavBar__logo {
-    color: #1f2041;
-    display: flex;
-    align-items: center;
-    height: 40px;
-    justify-self: end; }
-  .standardNavBar__logoSymbol {
-    margin-right: 12.5px; }
   .standardNavBar__navMenu {
     list-style: none;
     display: flex;
     flex-direction: row;
     width: 530px;
     justify-self: end; }
-    .standardNavBar__navMenu_navMenuMargin {
+    .standardNavBar__navMenu_navMenuMarginForNotAuthorized {
       margin: 0px 25px 0px 0px; }
+    .standardNavBar__navMenu_navMenuMarginForAuthorized {
+      margin: 0px 30px 0px 0px; }
   .standardNavBar__navMenuItem {
     display: flex;
     align-items: center;
@@ -147,7 +167,6 @@ body {
       color: rgba(31, 32, 65, 0.5); }
       .standardNavBar__navMenuItem a p {
         font-family: MontserratRegular;
-        /*             font-family: Montserrat; */
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -182,51 +201,8 @@ body {
       height: 34px;
       padding: 0px 18px; }
       .standardNavBar__buttonDefault_size > a > p {
-        margin: 0px 2px;
-        font-family: MontserratBold;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase; }
-  .standardNavBar .buttonDefault {
-    border-radius: 22px; }
-    .standardNavBar .buttonDefault > a {
-      color: #ffffff;
-      text-decoration: none;
-      display: flex;
-      align-items: center; }
-      .standardNavBar .buttonDefault > a > p {
-        font-family: MontserratBold;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase; }
-    .standardNavBar .buttonDefault_hollowButton > a {
-      background: #ffffff;
-      /* color: #bc9cff; */
-      margin: 2px;
-      border-radius: inherit;
-      text-decoration: none;
-      background-origin: border-box;
-      height: 30px; }
-      .standardNavBar .buttonDefault_hollowButton > a > p {
-        margin: 0px 0px; }
-
-.standardLoggedInNavBar {
-  width: 100%;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: min-content auto min-content min-content;
-  align-items: center;
-  padding: 15px 140px;
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
-  .standardLoggedInNavBar__navMenu_navMenuMargin {
-    margin: 0px 30px 0px 0px; }
-  .standardLoggedInNavBar__user {
-    /* margin: 26px 0px 26px 0px; */
+        margin: 0px 2px; }
+  .standardNavBar__user {
     display: flex;
     align-items: center;
     font-family: MontserratRegular;
@@ -235,18 +211,14 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: rgba(31, 32, 65, 0.5);
-    white-space: nowrap;
-    /* position: relative; */ }
-    .standardLoggedInNavBar__user:before {
+    white-space: nowrap; }
+    .standardNavBar__user:before {
       content: '';
       height: 30px;
       width: 1px;
       background: transparent;
       border-left: 1px solid rgba(31, 32, 65, 0.1);
-      padding-right: 30px;
-      /* margin: 20px 0px 20px 0px; */
-      /* position: absolute
-        left: 30px; */ }
+      padding-right: 30px; }
 
 .footerWidgetsAndCopyrightBar {
   width: 100%;
@@ -437,4 +409,12 @@ body {
     line-height: 24px;
     text-align: center;
     color: rgba(31, 32, 65, 0.75); }
+
+.logoColored {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-self: end; }
+  .logoColored_logoMarginRight {
+    margin-right: 12.5px; }
 

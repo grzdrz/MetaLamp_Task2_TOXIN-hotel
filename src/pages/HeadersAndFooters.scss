@@ -13,7 +13,11 @@
 }
 
 @import "../GlobalLogo/GlobalLogo.scss";
+@import "../ButtonDefault/buttonDefault.scss";
+
 @import "../HeadersAndFooters.StandardNavBar/StandardNavBar.scss";
-@import "../HeadersAndFooters.StandardLoggedInNavBar/StandardLoggedInNavBar.scss";
 @import "../HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.scss";
 @import "../HeadersAndFooters.FooterCreative/FooterCreative.scss";
+
+@import "../HeadersAndFooters.LogoColored/logoColored.scss";
+
