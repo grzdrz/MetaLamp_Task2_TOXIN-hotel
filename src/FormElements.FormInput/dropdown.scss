@@ -1,0 +1,40 @@
+&__dropedList {
+    border-top: 1px solid rgba(31, 32, 65, 0.5);
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    & > div:first-of-type {
+        margin-top: 7px;
+    }
+    & > div {
+        margin-bottom: 7px;
+    }
+}
+&__dropedListItem {
+    display: grid;
+    grid-template-columns: auto 93px;
+    align-items: center;
+    padding: 0px 7px 0px 15px;
+    & > p {
+        overflow: auto;
+        word-wrap: break-word;
+    }
+}
+&__dropedListItemHandler {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    & > button{
+        width: 30px;
+        height: 30px;
+        border-radius: 31px;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        background: transparent;
+    }
+    & > p{
+        margin: 0px 5px;
+    }
+}

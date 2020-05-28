@@ -30,4 +30,21 @@ html
                 name: "someText",
                 type: "text",
                 value: "This is pretty awesome",
-                isSubmitButton: false})                
+                isSubmitButton: false})    
+
+            +getFormInput("dropdown", {
+                labelText: "DROPDOWN",
+                testLabel: {
+                    isTestLabelVisible: false,
+                    value: ""
+                },
+                placeholder: "dropdown",
+                name: "dropdown",
+                type: "text",
+                value: "Сколько гостей",
+                isSubmitButton: false,
+                dropList: [
+                    {name: "qwerty", value: 0},
+                    {name: "asdfg", value: 0},
+                    {name: "fgbdfffdf", value: 0}]
+                })                               

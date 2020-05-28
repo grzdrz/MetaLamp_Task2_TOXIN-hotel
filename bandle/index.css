@@ -98,10 +98,13 @@ body {
 .colors__font_darkShade100 {
   color: #1f2041; }
 
-.formElements > div:nth-child(2),
-.formElements > div:nth-child(3) {
-  margin-bottom: 20px;
-  margin-left: 141px; }
+.formElements {
+  padding-bottom: 100px; }
+  .formElements > div:nth-child(2),
+  .formElements > div:nth-child(3),
+  .formElements > div:nth-child(4) {
+    margin-bottom: 20px;
+    margin-left: 141px; }
 
 .globalLogo {
   height: 48px;
@@ -117,7 +120,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5px; }
-    .formInput__label p:first-of-type {
+    .formInput__label p:nth-of-type(1) {
       font-family: MontserratBold;
       font-style: normal;
       font-weight: bold;
@@ -125,7 +128,7 @@ body {
       line-height: 15px;
       text-transform: uppercase;
       color: #1f2041; }
-    .formInput__label p:last-of-type {
+    .formInput__label p:nth-of-type(2) {
       font-family: MontserratRegular;
       font-style: normal;
       font-weight: normal;
@@ -174,8 +177,8 @@ body {
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .formInput__submitInput {
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     outline: none;
     font-family: Material Icons;
     font-style: normal;
@@ -193,6 +196,54 @@ body {
     .formInput__submitInput:hover, .formInput__submitInput:focus {
       border: 1px solid rgba(31, 32, 65, 0.5);
       border-radius: 4px; }
+  .formInput__dropdownInput {
+    width: 42px;
+    height: 42px;
+    outline: none;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    border: 0px solid transparent;
+    background: rgba(31, 32, 65, 0.75);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+    .formInput__dropdownInput:hover, .formInput__dropdownInput:focus {
+      border: 1px solid rgba(31, 32, 65, 0.5);
+      border-radius: 4px; }
+  .formInput__dropedList {
+    border-top: 1px solid rgba(31, 32, 65, 0.5);
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 3; }
+    .formInput__dropedList > div:first-of-type {
+      margin-top: 7px; }
+    .formInput__dropedList > div {
+      margin-bottom: 7px; }
+  .formInput__dropedListItem {
+    display: grid;
+    grid-template-columns: auto 93px;
+    align-items: center;
+    padding: 0px 7px 0px 15px; }
+    .formInput__dropedListItem > p {
+      overflow: auto;
+      word-wrap: break-word; }
+  .formInput__dropedListItemHandler {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    .formInput__dropedListItemHandler > button {
+      width: 30px;
+      height: 30px;
+      border-radius: 31px;
+      border: 1px solid rgba(31, 32, 65, 0.5);
+      background: transparent; }
+    .formInput__dropedListItemHandler > p {
+      margin: 0px 5px; }
 
 .globalLogo {
   margin-bottom: 65px; }

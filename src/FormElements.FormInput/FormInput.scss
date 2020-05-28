@@ -13,7 +13,7 @@
 
         margin-bottom: 5px;
 
-        p:first-of-type {
+        p:nth-of-type(1) {
             font-family: MontserratBold;
             font-style: normal;
             font-weight: bold;
@@ -22,7 +22,7 @@
             text-transform: uppercase;
             color: #1f2041;
         }
-        p:last-of-type {
+        p:nth-of-type(2) {
             font-family: MontserratRegular;
             font-style: normal;
             font-weight: normal;
@@ -90,8 +90,8 @@
     }
 
     &__submitInput {
-        width: 44px;
-        height: 44px;
+        width: 42px;
+        height: 42px;
         outline: none;
 
         font-family: Material Icons;
@@ -115,4 +115,31 @@
             border-radius: 4px;
         }
     }
+
+    &__dropdownInput{
+        width: 42px;
+        height: 42px;
+        outline: none;
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        border: 0px solid transparent;
+
+        background: rgba(31, 32, 65, 0.75);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:hover,
+        &:focus {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            border-radius: 4px;
+        }
+    }
+
+    @import "./dropdown.scss";
 }
