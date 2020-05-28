@@ -1,0 +1,33 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title FormElements
+    body
+        .formElements
+            include ../GlobalLogo/GlobalLogo.pug
+
+            include ../FormElements.FormInput/GetFormInput.pug
+            +getFormInput("textFieldDefault", {
+                labelText: "TEXT FIELD",
+                testLabel: {
+                    isTestLabelVisible: true,
+                    value: "DEFAULT"
+                },
+                placeholder: "Email",
+                name: "email",
+                type: "email",
+                value: "",
+                isSubmitButton: false})
+
+            +getFormInput("textFieldDefault", {
+                labelText: "TEXT FIELD",
+                testLabel: {
+                    isTestLabelVisible: true,
+                    value: "HOVER / FOCUS"
+                },
+                placeholder: "Some text",
+                name: "someText",
+                type: "text",
+                value: "This is pretty awesome",
+                isSubmitButton: false})                

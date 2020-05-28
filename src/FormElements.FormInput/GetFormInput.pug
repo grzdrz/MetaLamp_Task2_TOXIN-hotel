@@ -1,0 +1,17 @@
+mixin getFormInput(inputType, options, classArray)
+    if inputType === "textFieldDefault"
+        div(class=["formInput", "formInput_textFieldDefault"])
+            .formInput__label
+                p(class=[""])= options.labelText
+                if options.testLabel.isTestLabelVisible
+                    p= options.testLabel.value
+            div(class=["formInput__input"])               
+                input(class=["formInput__mainInput"],
+                    placeholder= options.placeholder,
+                    name= options.name,
+                    type= options.type,
+                    value= options.value)
+                if options.isSubmitButton
+                    input(class=['formInput__submitInput']
+                        type="submit"
+                        value="arrow_forward")
