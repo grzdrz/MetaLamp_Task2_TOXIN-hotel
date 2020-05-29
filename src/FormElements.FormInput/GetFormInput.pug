@@ -21,16 +21,17 @@ mixin getFormInput(inputType, options, classArray)
                 p(class=[""])= options.labelText
                 if options.testLabel.isTestLabelVisible
                     p= options.testLabel.value
-            div(class=["formInput__input"])               
+            div(class=["formInput__input", options.dropdownShowInfoType])
                 input(class=["formInput__mainInput"],
                     placeholder= options.placeholder,
                     name= options.name,
                     type= options.type,
                     value= options.value,
-                    disabled= true) 
+                    disabled= true,
+                    readonly= true)
                 input(class=['formInput__dropdownInput']
                     type="submit"
-                    value="expand_more")  
+                    value="expand_more")
                 div(class=["formInput__dropedList"]
                     style={display: "none"})
                     for item in options.dropList
@@ -39,4 +40,4 @@ mixin getFormInput(inputType, options, classArray)
                             div(class=["formInput__dropedListItemHandler"])
                                 button(class=["formInput__dropedListItemHandlerMinus"])= "-"
                                 p= item.value
-                                button(class=["formInput__dropedListItemHandlerPlus"])= "+"                  
+                                button(class=["formInput__dropedListItemHandlerPlus"])= "+"

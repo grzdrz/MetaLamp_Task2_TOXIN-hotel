@@ -32,6 +32,7 @@ html
                 value: "This is pretty awesome",
                 isSubmitButton: false})    
 
+
             +getFormInput("dropdown", {
                 labelText: "DROPDOWN",
                 testLabel: {
@@ -44,7 +45,23 @@ html
                 value: "Сколько гостей",
                 isSubmitButton: false,
                 dropList: [
-                    {name: "qwerty", value: 0},
-                    {name: "asdfg", value: 0},
-                    {name: "fgbdfffdf", value: 0}]
-                })                               
+                    {name: "ВЗРОСЛЫЕ", value: 0},
+                    {name: "ДЕТИ", value: 0},
+                    {name: "МЛАДЕНЦЫ", value: 0}],         
+                dropdownShowInfoType: "formInput__dropdown_fullNumber"}) 
+            +getFormInput("dropdown", {
+                labelText: "DROPDOWN",
+                testLabel: {
+                    isTestLabelVisible: false,
+                    value: ""
+                },
+                placeholder: "dropdown",
+                name: "dropdown",
+                type: "text",
+                value: "Сколько комнат",
+                isSubmitButton: false,
+                dropList: [
+                    {name: "СПАЛЬНИ", value: 0},
+                    {name: "КРОВАТИ", value: 0},
+                    {name: "ВАННЫЕ КОМНАТЫ", value: 0}],
+                dropdownShowInfoType: "formInput__dropdown_listOfNumbers"})                           
