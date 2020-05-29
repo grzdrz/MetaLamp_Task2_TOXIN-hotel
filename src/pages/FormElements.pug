@@ -79,3 +79,27 @@ html
                 labelText: "expandable checkbox list",
                 isExpandable: true})
 
+            include ../FormElements.RadioButton/RadioButton.pug
+            +getRadioButton("radio", [
+                {text: "Мужчина", isChecked: true},
+                {text: "Женщина", isChecked: false},
+            ],
+            {
+                title: "Radio Buttons",
+                name: "gender"
+            })
+            +getRadioButton("toggle", [
+                {text: "Получать спецпредложения", isChecked: true},
+            ],
+            {
+                title: "Toggle",
+                name: "specialOffer"
+            })
+            +getRadioButton("toggle", [
+                {text: "Получать спецпредложения", isChecked: false},
+            ],
+            {
+                title: "",
+                name: "specialOffer"
+            })
+

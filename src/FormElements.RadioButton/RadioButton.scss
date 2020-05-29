@@ -1,0 +1,122 @@
+.radioButton {
+    &__buttonsContainer {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-template-rows: max-content;
+    }
+
+    &__title {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1f2041;
+        margin-bottom: 15px;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        position: relative;
+
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    &__labelToggle {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        position: relative;
+
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    &__button {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+        width: 20px;
+        height: 20px;
+
+        & + p::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 21px;
+            margin-right: 10px;
+        }
+
+        &:checked + p::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #bc9cff;
+            border-radius: 21px;
+            margin-right: 10px;
+            background: url("./FormElements.RadioButton/img/circle.svg") no-repeat;
+            background-position: 50% 50%;
+        }
+    }
+
+    &__toggle {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+        width: 40px;
+        height: 20px;
+
+        & + p::before {
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 21px;
+            margin-right: 10px;
+            background: url("./FormElements.RadioButton/img/circleGrey.svg") no-repeat;
+            background-position: 10% 50%;
+
+            transition-property: background, background-position, border;
+            transition-duration: 0.5s;
+        }
+
+        &:checked + p::before {
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            border: 1px solid #bc9cff;
+            border-radius: 21px;
+            margin-right: 10px;
+            background: url("./FormElements.RadioButton/img/circle.svg") no-repeat;
+            background-position: 90% 50%;
+
+            transition-property: background, background-position, border;
+            transition-duration: 0.5s;
+        }
+    }
+
+    &__text {
+        font-family: MontserratRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
