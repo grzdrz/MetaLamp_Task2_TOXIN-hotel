@@ -1,0 +1,13 @@
+mixin getCheckbox(checkboxList, options, classArray)
+    div(class=["checkboxList"])
+        .checkboxList__label
+            p(class=[""])= options.labelText
+            if options.isExpandable     
+                button(class=["checkboxList__dropdownButton"]) expand_more
+        .checkboxList__list        
+            for item in checkboxList
+                .checkboxList__item
+                    label(class=["checkboxList__itemLabel"])
+                        //-div(class=["checkboxList__itemCheckboxImage"])
+                        input(class=["checkboxList__itemCheckbox"] type= "checkbox" checked= item.isChecked)
+                        p= item.text

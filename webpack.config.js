@@ -54,10 +54,10 @@ module.exports = {
                         loader: "style-loader"
                     },
                     {
-                        loader: MiniCssExtractPlugin.loader
+                        loader: MiniCssExtractPlugin.loader,
                     },
                     {
-                        loader: "css-loader"
+                        loader: "css-loader",
                     },
                     {
                         loader: "sass-loader"
@@ -70,11 +70,6 @@ module.exports = {
                 options: {
                     name: '[path][name].[ext]',
                 }
-                /* use: [
-                    {
-                        loader: 'file-loader?name=./src/fonts/Montserrat/[name].[ext]'
-                    }
-                ] */
             },
             {
                 test: /\.(eot|woff|woff2)$/,
@@ -82,11 +77,6 @@ module.exports = {
                 options: {
                     name: '[path][name].[ext]',
                 }
-                /* use: [
-                                    {
-                                        loader: 'file-loader?name=./src/fonts/Icons/[name].[ext]'
-                                    }
-                                ] */
             },
             {
                 test: /\.svg$/,
@@ -94,7 +84,7 @@ module.exports = {
                 options: {
                     name: '[path][name].[ext]',
                 }
-            },
+            }
         ]
     },
 }

@@ -29,9 +29,7 @@ mixin getFormInput(inputType, options, classArray)
                     value= options.value,
                     disabled= true,
                     readonly= true)
-                input(class=['formInput__dropdownInput']
-                    type="submit"
-                    value="expand_more")
+                button(class=['formInput__dropdownInput']) expand_more
                 div(class=["formInput__dropedList"]
                     style={display: "none"})
                     for item in options.dropList

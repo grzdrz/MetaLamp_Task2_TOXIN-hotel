@@ -7,7 +7,7 @@ html
         .formElements
             include ../GlobalLogo/GlobalLogo.pug
 
-            include ../FormElements.FormInput/GetFormInput.pug
+            include ../FormElements.FormInput/FormInput.pug
             +getFormInput("textFieldDefault", {
                 labelText: "TEXT FIELD",
                 testLabel: {
@@ -64,4 +64,18 @@ html
                     {name: "СПАЛЬНИ", value: 0},
                     {name: "КРОВАТИ", value: 0},
                     {name: "ВАННЫЕ КОМНАТЫ", value: 0}],
-                dropdownShowInfoType: "formInput__dropdown_listOfNumbers"})                           
+                dropdownShowInfoType: "formInput__dropdown_listOfNumbers"})    
+
+            include ../FormElements.CheckboxList/CheckboxList.pug
+            +getCheckbox([
+                {isChecked: false, text: "Завтрак"},
+                {isChecked: true, text: "Письменный стол"}, 
+                {isChecked: true, text: "Стул для кормления"},
+                {isChecked: true, text: "Кроватка"},
+                {isChecked: false, text: "Телевизор"},
+                {isChecked: false, text: "Шампунь"},
+                {isChecked: false, text: "Телевизор"},
+                {isChecked: false, text: "Шампунь"}], {
+                labelText: "expandable checkbox list",
+                isExpandable: true})
+
