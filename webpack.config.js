@@ -8,6 +8,9 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 //корневого js файла указанного в точке входа(/src/index.js в данном случае).
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const webpack = require('webpack');
+const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
+
 //Массив объектов-плагинов, описаных выше.
 //Под 2ой плагин создано n экземпляров, где n == числу корневых pug файлов. Это нужно для того, чтобы при сборке получалось множество 
 //html бандлов под каждую страницу веб-приложения.   
@@ -27,6 +30,18 @@ pages.forEach(function (file) {
 pluginsOptions.push(new MiniCssExtractPlugin({
     filename: 'index.css',
 }));
+pluginsOptions.push(new webpack.ProvidePlugin({
+    $: 'jquery',
+    jQuery: 'jquery'
+}));
+/* pluginsOptions.push(new HtmlWebpackExternalsPlugin({ // optional plugin: inject cdn
+    externals: [
+        {
+            module: 'jquery',
+            entry: 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'
+        }
+    ]
+})); */
 
 module.exports = {
     entry: {

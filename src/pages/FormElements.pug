@@ -3,6 +3,8 @@ html
     head
         meta(charset="utf-8")
         title FormElements
+        link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous") 
     body
         .formElements
             include ../GlobalLogo/GlobalLogo.pug
@@ -82,24 +84,19 @@ html
             include ../FormElements.RadioButton/RadioButton.pug
             +getRadioButton("radio", [
                 {text: "Мужчина", isChecked: true},
-                {text: "Женщина", isChecked: false},
-            ],
-            {
+                {text: "Женщина", isChecked: false}],{
                 title: "Radio Buttons",
-                name: "gender"
-            })
+                name: "gender"})
             +getRadioButton("toggle", [
-                {text: "Получать спецпредложения", isChecked: true},
-            ],
-            {
+                {text: "Получать спецпредложения", isChecked: true}],{
                 title: "Toggle",
-                name: "specialOffer"
-            })
+                name: "specialOffer"})
             +getRadioButton("toggle", [
-                {text: "Получать спецпредложения", isChecked: false},
-            ],
-            {
+                {text: "Получать спецпредложения", isChecked: false}], {
                 title: "",
-                name: "specialOffer"
-            })
-
+                name: "specialOffer"})
+                
+            include ../FormElements.RateButton/RateButton.pug
+            +getRateButton({
+                
+            })    

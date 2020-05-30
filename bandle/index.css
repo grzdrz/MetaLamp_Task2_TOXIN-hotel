@@ -448,8 +448,7 @@ body {
     margin-right: 10px;
     background: url(src/FormElements.RadioButton/img/circleGrey.svg) no-repeat;
     background-position: 10% 50%;
-    transition-property: background, background-position, border;
-    transition-duration: 0.5s; }
+    transition: 0.2s; }
   .radioButton__toggle:checked + p::before {
     content: "";
     display: inline-block;
@@ -460,8 +459,7 @@ body {
     margin-right: 10px;
     background: url(src/FormElements.RadioButton/img/circle.svg) no-repeat;
     background-position: 90% 50%;
-    transition-property: background, background-position, border;
-    transition-duration: 0.5s; }
+    transition: 0.2s; }
 
 .radioButton__text {
   font-family: MontserratRegular;
@@ -474,6 +472,131 @@ body {
   flex-direction: row;
   align-items: center; }
 
+.ratingRadio {
+  display: grid;
+  grid-template-columns: 0px max-content max-content max-content max-content max-content;
+  grid-template-rows: max-content;
+  position: relative; }
+  .ratingRadio__starContainer {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content;
+    position: relative; }
+    .ratingRadio__starContainer:first-of-type {
+      opacity: 0;
+      z-index: -1; }
+  .ratingRadio__label {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    /* &:first-of-type {
+            opacity: 0;
+            z-index: -1;
+        } */ }
+  .ratingRadio__input {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    opacity: 0;
+    z-index: -1; }
+    .ratingRadio__input:checked + p::before {
+      position: absolute;
+      font-family: Material Icons;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      padding: 5px 0px 0px 5px;
+      border: 0px solid transparent;
+      content: "star";
+      background: white;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 1;
+      z-index: 99999; }
+  .ratingRadio__text {
+    position: absolute;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    border: 0px solid transparent;
+    background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+/* .rating {
+    position: relative;
+}
+.rating-area {
+    overflow: hidden;
+    width: 265px;
+    //margin: 0 auto;
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content max-content;
+    grid-template-rows: max-content;
+
+    & > input {
+        display: none;
+    }
+    & > label {
+        float: right;
+        width: 42px;
+        padding: 0;
+        cursor: pointer;
+        font-size: 50px;
+        line-height: 50px;
+        color: lightgrey;
+        text-shadow: 1px 1px #bbb;
+    }
+    & > label:before {
+        content: "★";
+    }
+    & > input:checked ~ label {
+        color: gold;
+        text-shadow: 1px 1px #c60;
+    }
+    & > label:hover,
+    & > label:hover ~ label {
+        color: gold;
+    }
+    & > input:checked + label:hover,
+    & > input:checked + label:hover ~ label,
+    & > input:checked ~ label:hover,
+    & > input:checked ~ label:hover ~ label,
+    & > label:hover ~ input:checked ~ label {
+        color: gold;
+        text-shadow: 1px 1px goldenrod;
+    }
+    & > label:active {
+        position: relative;
+    }
+} */
+/* &:not(:checked) > input {
+        display: none;
+    }
+    &:not(:checked) > label {
+        float: right;
+        width: 42px;
+        padding: 0;
+        cursor: pointer;
+        font-size: 50px;
+        line-height: 50px;
+        color: lightgrey;
+        text-shadow: 1px 1px #bbb;
+    } */
+/* &:not(:checked) > label:before {
+        content: "★";
+    } */
+/* &:not(:checked) > label:hover,
+    &:not(:checked) > label:hover ~ label {
+        color: gold;
+    } */
 .globalLogo {
   margin-bottom: 65px; }
 
