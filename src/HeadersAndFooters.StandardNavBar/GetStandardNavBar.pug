@@ -12,6 +12,16 @@ mixin getStandardNavBar(isAuthorized)
             include ./user/user.pug
             +getUserName('Cosmin Negoita')
         else
-            include ../ButtonDefault/GetButtonDefault.pug
-            +getButton('LOGIN', true, ['standardNavBar__buttonDefault_size', 'standardNavBar__buttonDefault_firstButton'])
-            +getButton('REGISTER', false, ['standardNavBar__buttonDefault_size'])
+            include ../FormElements.ButtonDefault/ButtonDefault.pug
+            +getButton('LOGIN', {
+                isHollow:  true,
+                isLink: true,
+            },{
+                containerClasses: ["standardNavBar__buttonDefault_height", "standardNavBar__buttonDefault_firstButton"]
+            })
+            +getButton('REGISTER', {
+                isHollow:  false,
+                isLink: true,
+            },{
+                containerClasses: ["standardNavBar__buttonDefault_height"]
+            })

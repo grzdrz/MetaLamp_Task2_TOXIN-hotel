@@ -1,0 +1,31 @@
+mixin getButton(text, options, classes)
+    - let containerClasses = [];
+    - let buttonBasisClasses = [];
+    - let textClasses = [];
+    - let arrowClasses = [];
+    if classes
+        - classes.containerClasses ? containerClasses = containerClasses.concat(classes.containerClasses) : [];
+        - classes.buttonBasisClasses ? buttonBasisClasses = buttonBasisClasses.concat(classes.buttonBasisClasses) : [];
+        - classes.textClasses ? textClasses = textClasses.concat(classes.textClasses) : [];
+        - classes.arrowClasses ? arrowClasses = arrowClasses.concat(classes.arrowClasses) : [];
+
+    if options.isHollow
+        - containerClasses.push("buttonDefault_hollowButton");
+        - textClasses.push("colors__font_purple");
+    if options.hasArrow
+        if options.isHollow
+            - arrowClasses.push("colors__font_purple");
+        else
+            - arrowClasses.push("colors__font_white");    
+
+    div(class= ["buttonDefault"].concat(containerClasses))
+        if options.isLink
+            a(href='#' class=["buttonDefault__buttonBasis"].concat(buttonBasisClasses))
+                p(class=["buttonDefault__buttonText"].concat(textClasses))= text
+                if options.hasArrow
+                    p(class=["buttonDefault__arrow"].concat(arrowClasses)) arrow_forward    
+        else
+            button(class=["buttonDefault__buttonBasis"].concat(buttonBasisClasses))    
+                p(class=["buttonDefault__buttonText"].concat(textClasses))= text
+                if options.hasArrow
+                    p(class=["buttonDefault__arrow"].concat(arrowClasses)) arrow_forward      
