@@ -945,6 +945,55 @@ body {
     height: 44px;
     width: 44px; }
 
+.pagination {
+  display: flex;
+  flex-direction: column; }
+  .pagination__pageList {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    background: #b3b3b3; }
+  .pagination__leftArrow, .pagination__rightArrow, .pagination__pageLink {
+    width: 40px;
+    height: 40px;
+    text-decoration: none; }
+  .pagination__pageLink_target {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    border-radius: 50%; }
+  .pagination__leftArrow, .pagination__rightArrow {
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+    border-radius: 50%; }
+  .pagination__leftArrowText, .pagination__rightArrowText {
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; }
+  .pagination__leftArrowText {
+    transform: rotate(180deg); }
+  .pagination__pageLinkText {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5); }
+
 .globalLogo {
   margin-bottom: 65px; }
 

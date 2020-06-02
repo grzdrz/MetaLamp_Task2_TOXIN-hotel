@@ -1,0 +1,48 @@
+mixin getPagination(pagesNumber, curPage, options, classes)
+    - let containerClasses = [];
+
+    if classes
+        - classes.containerClasses ? containerClasses = containerClasses.concat(classes.containerClasses) : [];
+
+
+    if options.title
+        p(class=["pagination__title"])= options.title
+
+    div(class=["pagination__pageList"])
+        if curPage !== 1
+            a(href="#" class=["pagination__leftArrow"])
+                p(class=["pagination__leftArrowText"]) arrow_forward
+            a(href="#" class=["pagination__pageLink"])
+                p(class=["pagination__pageLinkText"])= 1                    
+
+        if curPage - 3 > 1
+            a(class=["pagination__pageLink"])
+                p(class=["pagination__pageLinkText"])= "..." 
+
+        if curPage - 2 > 1
+            a(href="#" class=["pagination__pageLink"])
+                p(class=["pagination__pageLinkText"])= curPage - 2
+        if curPage - 1 > 1
+            a(href="#" class=["pagination__pageLink"])
+                p(class=["pagination__pageLinkText"])= curPage - 1
+
+        a(href="#" class=["pagination__pageLink", "pagination__pageLink_target"])
+            p(class=["pagination__pageLinkText"])= curPage
+
+        if curPage + 1 < pagesNumber
+            a(href="#" class=["pagination__pageLink"])
+                p(class=["pagination__pageLinkText"])= curPage + 1
+        if curPage + 2 < pagesNumber
+            a(href="#" class=["pagination__pageLink"])
+                p(class=["pagination__pageLinkText"])= curPage + 2
+        if curPage + 3 < pagesNumber
+            a(class=["pagination__pageLink"])
+                p(class=["pagination__pageLinkText"])= "..." 
+
+        if curPage !== pagesNumber
+            a(href="#" class=["pagination__pageLink"])
+                p(class=["pagination__pageLinkText"])= pagesNumber    
+            a(href="#" class=["pagination__rightArrow"])
+                p(class=["pagination__rightArrowText"]) arrow_forward
+
+        //-p(class=["pagination__textInfo"])= options.title                    

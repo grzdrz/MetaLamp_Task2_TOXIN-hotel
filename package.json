@@ -12,6 +12,7 @@
   "devDependencies": {
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
+    "fs": "0.0.1-security",
     "glob": "^7.1.6",
     "html-webpack-plugin": "^4.3.0",
     "material-design-icons": "^3.0.1",

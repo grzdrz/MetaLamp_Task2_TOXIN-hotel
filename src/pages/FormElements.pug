@@ -112,3 +112,9 @@ html
                 isLink: false,
                 hasArrow: true,
             })
+
+            include ../FormElements.Pagination/Pagination.pug
+            div(class=["pagination"])
+                +getPagination(20, 7, {
+                    title: "pagination",
+                })

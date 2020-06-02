@@ -16,16 +16,16 @@ mixin getButton(text, options, classes)
         if options.isHollow
             - arrowClasses.push("colors__font_purple");
         else
-            - arrowClasses.push("colors__font_white");    
+            - arrowClasses.push("colors__font_white");
 
     div(class= ["buttonDefault"].concat(containerClasses))
         if options.isLink
             a(href='#' class=["buttonDefault__buttonBasis"].concat(buttonBasisClasses))
                 p(class=["buttonDefault__buttonText"].concat(textClasses))= text
                 if options.hasArrow
-                    p(class=["buttonDefault__arrow"].concat(arrowClasses)) arrow_forward    
+                    p(class=["buttonDefault__arrow"].concat(arrowClasses)) arrow_forward
         else
-            button(class=["buttonDefault__buttonBasis"].concat(buttonBasisClasses))    
+            button(class=["buttonDefault__buttonBasis"].concat(buttonBasisClasses))
                 p(class=["buttonDefault__buttonText"].concat(textClasses))= text
                 if options.hasArrow
-                    p(class=["buttonDefault__arrow"].concat(arrowClasses)) arrow_forward      
+                    p(class=["buttonDefault__arrow"].concat(arrowClasses)) arrow_forward

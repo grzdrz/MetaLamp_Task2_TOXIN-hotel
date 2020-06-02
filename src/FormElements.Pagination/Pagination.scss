@@ -1,0 +1,72 @@
+.pagination {
+    display: flex;
+    flex-direction: column;
+
+    &__pageList {
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+        background: rgb(179, 179, 179);
+    }
+
+    $buttonSize: 40px;
+    &__leftArrow,
+    &__rightArrow,
+    &__pageLink {
+        width: $buttonSize;
+        height: $buttonSize;
+        text-decoration: none;
+    }
+
+    &__pageLink {
+        &_target {
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            border-radius: 50%;
+        }
+    }
+
+    &__leftArrow,
+    &__rightArrow {
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        border-radius: 50%;
+    }
+
+    &__leftArrowText,
+    &__rightArrowText {
+        width: inherit;
+        height: inherit;
+        background: transparent;
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    &__leftArrowText {
+        transform: rotate(180deg);
+    }
+
+    &__pageLinkText {
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgba(31, 32, 65, 0.5);
+    }
+}
