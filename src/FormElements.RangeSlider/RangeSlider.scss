@@ -1,0 +1,69 @@
+.rangeSlider {
+    display: flex;
+    flex-direction: column;
+    background: gray;
+    width: max-content;
+    height: max-content;
+
+    &__titleContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+    }
+
+    &__rangeValue {
+    }
+
+    &__sliderContainer {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: max-content;
+        height: 16px;
+        background: rgb(202, 155, 155);
+    }
+
+    &__firstInput {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &__lastInput {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &__sliderBodyEmpty {
+        width: 266px;
+        height: 6px;
+        background: green;
+        position: relative;
+    }
+
+    &__sliderBodyFilled {
+        width: 100px;//test
+        height: 6px;
+        background: green;
+    }
+
+    &__firstSlider {
+        width: 16px;
+        height: 16px;
+        background: blue;
+        position: absolute;
+    }
+
+    &__lastSlider {
+        width: 16px;
+        height: 16px;
+        background: coral;
+        position: absolute;
+        margin-left: 36px; //test
+    }
+}

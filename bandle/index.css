@@ -952,7 +952,7 @@ body {
     display: flex;
     flex-direction: row;
     width: max-content;
-    background: #b3b3b3; }
+    background: #dfdfdf; }
   .pagination__leftArrow, .pagination__rightArrow, .pagination__pageLink {
     width: 40px;
     height: 40px;
@@ -960,6 +960,8 @@ body {
   .pagination__pageLink_target {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 50%; }
+    .pagination__pageLink_target > p {
+      color: white; }
   .pagination__leftArrow, .pagination__rightArrow {
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
     border-radius: 50%; }
@@ -993,6 +995,53 @@ body {
     align-items: center;
     text-align: center;
     color: rgba(31, 32, 65, 0.5); }
+
+.rangeSlider {
+  display: flex;
+  flex-direction: column;
+  background: gray;
+  width: max-content;
+  height: max-content; }
+  .rangeSlider__titleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+  .rangeSlider__sliderContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: max-content;
+    height: 16px;
+    background: #ca9b9b; }
+  .rangeSlider__firstInput {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+  .rangeSlider__lastInput {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+  .rangeSlider__sliderBodyEmpty {
+    width: 266px;
+    height: 6px;
+    background: green;
+    position: relative; }
+  .rangeSlider__sliderBodyFilled {
+    width: 100px;
+    height: 6px;
+    background: green; }
+  .rangeSlider__firstSlider {
+    width: 16px;
+    height: 16px;
+    background: blue;
+    position: absolute; }
+  .rangeSlider__lastSlider {
+    width: 16px;
+    height: 16px;
+    background: coral;
+    position: absolute;
+    margin-left: 36px; }
 
 .globalLogo {
   margin-bottom: 65px; }

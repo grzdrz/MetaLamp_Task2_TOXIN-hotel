@@ -103,7 +103,7 @@ import "./test.js"; */
 
 //P.S. Это в первую очередь демонстрационный скрипт, нужный для того чтобы заставить кнопки пагинации реагировать на клики по ним.
 //Но в теории его можно использовать для одностраничных веб приложений, где элементы должны 
-//определенным способом(в данном случае через pug) рендериться повторно без перезагрузки всей страницы.
+//определенным способом(в данном случае с помощью pug шаблонп) рендериться повторно без перезагрузки всей страницы.
 let getPaginationByPugCode = require("./FormElements.Pagination/paginationForJSRender.pug");
 {
     let curPage = 1;
@@ -137,4 +137,59 @@ let getPaginationByPugCode = require("./FormElements.Pagination/paginationForJSR
         //Плюс т.к. подразумевается что на одной странице одна пагинация, то теоретически это допустимо.
         setClickEventsToLinks();
     }
+}
+
+
+//rangeSlider
+{
+    let rangeSliders = document.querySelectorAll(".rangeSlider");
+    rangeSliders.forEach(e => {
+        let targetFirstSlider = e.querySelector(".rangeSlider__firstSlider");
+        let targetLastSlider = e.querySelector(".rangeSlider__lastSlider");
+
+        targetFirstSlider.ondragstart = function () {
+            return false;
+        };
+        targetLastSlider.ondragstart = function () {
+            return false;
+        };
+
+        targetFirstSlider.addEventListener("mousedown", sliderMouseDown);
+        targetLastSlider.addEventListener("mousedown", sliderMouseDown);
+    });
+
+    //document.addEventListener("mousedown", sliderMouseDown);
+    function sliderMouseDown(event) {
+        //event.preventDefault();
+        let targetObj;
+        if (event.currentTarget.className) {
+            let classArray = event.currentTarget.className.split(/\s/i);
+            if (classArray.includes("rangeSlider__firstSlider", 0) || classArray.includes("rangeSlider__lastSlider", 0)) {
+                targetObj = event.currentTarget;
+
+                document.addEventListener("mousemove", mouseMove);
+                document.addEventListener("mouseup", mouseUp);
+            }
+            else return;
+        }
+        else return;
+
+        function mouseMove(event) {
+            //event.preventDefault();
+            //let targetCoordinates = targetObj.getBoundingClientRect();
+            let containerCoordinates = targetObj.parentElement.getBoundingClientRect();
+            let dX = Math.round(event.clientX - containerCoordinates.x);
+            if (dX < 0) dX = 0;
+            targetObj.style.marginLeft = dX + "px";
+        }
+
+        function mouseUp(event) {
+            //event.preventDefault();
+            document.removeEventListener("mousemove", mouseMove);
+            document.removeEventListener("mouseup", mouseUp);
+
+            /*  */
+        }
+    }
+
 }
