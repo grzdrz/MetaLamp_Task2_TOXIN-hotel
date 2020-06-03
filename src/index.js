@@ -164,7 +164,7 @@ let getPaginationByPugCode = require("./FormElements.Pagination/paginationForJSR
         let targetObj;
         if (event.currentTarget.className) {
             let classArray = event.currentTarget.className.split(/\s/i);
-            if (classArray.includes("rangeSlider__firstSlider", 0) || classArray.includes("rangeSlider__lastSlider", 0)) {
+            if (classArray.includes("rangeSlider__firstSlider") || classArray.includes("rangeSlider__lastSlider")) {
                 targetObj = event.currentTarget;
 
                 document.addEventListener("mousemove", mouseMove);
@@ -174,22 +174,69 @@ let getPaginationByPugCode = require("./FormElements.Pagination/paginationForJSR
         }
         else return;
 
+        let otherSlider;
+        let targetSliderIndex;
+        //let otherSliderIndex;
+        if (targetObj.className.split(/\s/i).includes("rangeSlider__firstSlider")) {
+            targetSliderIndex = 0;
+            //otherSliderIndex = 1;
+            otherSlider = targetObj.parentElement.querySelector(".rangeSlider__lastSlider");
+        }
+        else {
+            targetSliderIndex = 1;
+            //otherSliderIndex = 0;
+            otherSlider = targetObj.parentElement.querySelector(".rangeSlider__firstSlider");
+        }
+
+        //координаты полосы
+        let containerCoordinates = targetObj.parentElement.getBoundingClientRect();
+        //ширина полосы
+        let containerWidth = targetObj.parentElement.clientWidth;
+
+        //координаты захваченного ползунка
+        let targetCoordinates = targetObj.getBoundingClientRect();
+        //координаты захваченного ползунка
+        let otherSliderCoordinates = otherSlider.getBoundingClientRect();
+        //ширина ползунка
+        let sliderWidth = targetObj.clientWidth;
+
+
+        //расстояние между местом нажатия кнопки мыши внутри бегунка и левым краем бегунка
+        let xMousePosInsideTargetObj = event.clientX - targetCoordinates.x;
+
         function mouseMove(event) {
             //event.preventDefault();
-            //let targetCoordinates = targetObj.getBoundingClientRect();
-            let containerCoordinates = targetObj.parentElement.getBoundingClientRect();
-            let dX = Math.round(event.clientX - containerCoordinates.x);
-            if (dX < 0) dX = 0;
-            targetObj.style.marginLeft = dX + "px";
+            let target_dX = Math.round(event.clientX - containerCoordinates.x - xMousePosInsideTargetObj);
+            if (targetSliderIndex === 0) {
+                targetObj.style.marginLeft = target_dX + "px";
+
+                if (target_dX < 0)
+                    targetObj.style.marginLeft = "0px";
+                else if (target_dX + sliderWidth > containerWidth)
+                    targetObj.style.marginLeft = containerWidth - sliderWidth + "px";
+
+                let targetCoordinates2 = targetObj.getBoundingClientRect();
+                if (targetCoordinates2.x + sliderWidth > otherSliderCoordinates.x)
+                    targetObj.style.marginLeft = otherSliderCoordinates.x - containerCoordinates.x - sliderWidth + "px";
+            }
+            else if (targetSliderIndex === 1) {
+                targetObj.style.marginLeft = target_dX + "px";
+
+                if (target_dX < 0)
+                    targetObj.style.marginLeft = "0px";
+                else if (target_dX + sliderWidth > containerWidth)
+                    targetObj.style.marginLeft = containerWidth - sliderWidth + "px";
+
+                let targetCoordinates2 = targetObj.getBoundingClientRect();
+                if (targetCoordinates2.x < otherSliderCoordinates.x + sliderWidth)
+                    targetObj.style.marginLeft = otherSliderCoordinates.x - containerCoordinates.x + sliderWidth + "px";
+            }
         }
 
         function mouseUp(event) {
             //event.preventDefault();
             document.removeEventListener("mousemove", mouseMove);
             document.removeEventListener("mouseup", mouseUp);
-
-            /*  */
         }
     }
-
 }

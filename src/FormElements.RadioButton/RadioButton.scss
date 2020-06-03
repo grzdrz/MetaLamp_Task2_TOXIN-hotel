@@ -59,12 +59,6 @@
 
         &:checked + p::before {
             content: "";
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 1px solid #bc9cff;
-            border-radius: 21px;
-            margin-right: 10px;
             background: url("./FormElements.RadioButton/img/circle.svg") no-repeat;
             background-position: 50% 50%;
         }
