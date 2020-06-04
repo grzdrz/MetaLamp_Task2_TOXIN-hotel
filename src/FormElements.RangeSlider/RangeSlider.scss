@@ -5,6 +5,10 @@
     width: max-content;
     height: max-content;
 
+    $filledBodyWidth: 100px;
+    $filledBodyMarginLeft: 30px;
+    $sliderSize: 16px;
+
     &__titleContainer {
         display: flex;
         flex-direction: row;
@@ -47,23 +51,27 @@
     }
 
     &__sliderBodyFilled {
-        width: 100px;//test
+        width: $filledBodyWidth; //test
         height: 6px;
-        background: green;
+        background: aquamarine;
+        margin-left: $filledBodyMarginLeft;
     }
 
     &__firstSlider {
-        width: 16px;
-        height: 16px;
+        width: $sliderSize;
+        height: $sliderSize;
         background: blue;
         position: absolute;
+        border-radius: 50%;
+        margin-left: $filledBodyMarginLeft - $sliderSize / 2;
     }
 
     &__lastSlider {
-        width: 16px;
-        height: 16px;
+        width: $sliderSize;
+        height: $sliderSize;
         background: coral;
         position: absolute;
-        margin-left: 36px; //test
+        margin-left: $filledBodyMarginLeft + $filledBodyWidth - $sliderSize / 2; //test
+        border-radius: 50%;
     }
 }

@@ -82,7 +82,7 @@
             background: url("./FormElements.RadioButton/img/circleGrey.svg") no-repeat;
             background-position: 10% 50%;
 
-            transition: 0.2s;
+            transition: background-position 0.5s;
         }
 
         &:checked + p::before {
@@ -96,7 +96,7 @@
             background: url("./FormElements.RadioButton/img/circle.svg") no-repeat;
             background-position: 90% 50%;
 
-            transition: 0.2s;
+            transition: background-position 0.5s;
         }
     }
 

@@ -800,7 +800,7 @@ body {
     margin-right: 10px;
     background: url(src/FormElements.RadioButton/img/circleGrey.svg) no-repeat;
     background-position: 10% 50%;
-    transition: 0.2s; }
+    transition: background-position 0.5s; }
   .radioButton__toggle:checked + p::before {
     content: "";
     display: inline-block;
@@ -811,7 +811,7 @@ body {
     margin-right: 10px;
     background: url(src/FormElements.RadioButton/img/circle.svg) no-repeat;
     background-position: 90% 50%;
-    transition: 0.2s; }
+    transition: background-position 0.5s; }
 
 .radioButton__text {
   font-family: MontserratRegular;
@@ -828,7 +828,8 @@ body {
   display: grid;
   grid-template-columns: 0px max-content max-content max-content max-content max-content;
   grid-template-rows: max-content;
-  position: relative; }
+  position: relative;
+  width: max-content; }
   .ratingRadio__starContainer {
     display: grid;
     grid-template-columns: max-content;
@@ -840,11 +841,10 @@ body {
   .ratingRadio__label {
     width: 24px;
     height: 24px;
-    position: relative;
-    /* &:first-of-type {
-            opacity: 0;
-            z-index: -1;
-        } */ }
+    position: relative; }
+    .ratingRadio__label:first-of-type {
+      opacity: 0;
+      z-index: -1; }
   .ratingRadio__input {
     width: 24px;
     height: 24px;
@@ -852,6 +852,23 @@ body {
     opacity: 0;
     z-index: -1; }
     .ratingRadio__input:checked + p::before {
+      position: absolute;
+      font-family: Material Icons;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      padding: 5px 0px 0px 5px;
+      border: 0px solid transparent;
+      content: "";
+      background: white;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 1;
+      z-index: 99999; }
+    .ratingRadio__input_unchecked + p::before {
       position: absolute;
       font-family: Material Icons;
       font-style: normal;
@@ -1024,18 +1041,22 @@ body {
   .rangeSlider__sliderBodyFilled {
     width: 100px;
     height: 6px;
-    background: green; }
+    background: aquamarine;
+    margin-left: 30px; }
   .rangeSlider__firstSlider {
     width: 16px;
     height: 16px;
     background: blue;
-    position: absolute; }
+    position: absolute;
+    border-radius: 50%;
+    margin-left: 22px; }
   .rangeSlider__lastSlider {
     width: 16px;
     height: 16px;
     background: coral;
     position: absolute;
-    margin-left: 36px; }
+    margin-left: 122px;
+    border-radius: 50%; }
 
 .globalLogo {
   margin-bottom: 65px; }
