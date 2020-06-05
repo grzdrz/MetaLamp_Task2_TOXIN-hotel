@@ -826,7 +826,7 @@ body {
 
 .ratingRadio {
   display: grid;
-  grid-template-columns: 0px max-content max-content max-content max-content max-content;
+  grid-template-columns: max-content max-content max-content max-content max-content;
   grid-template-rows: max-content;
   position: relative;
   width: max-content; }
@@ -835,16 +835,10 @@ body {
     grid-template-columns: max-content;
     grid-template-rows: max-content;
     position: relative; }
-    .ratingRadio__starContainer:first-of-type {
-      opacity: 0;
-      z-index: -1; }
   .ratingRadio__label {
     width: 24px;
     height: 24px;
     position: relative; }
-    .ratingRadio__label:first-of-type {
-      opacity: 0;
-      z-index: -1; }
   .ratingRadio__input {
     width: 24px;
     height: 24px;
@@ -852,22 +846,7 @@ body {
     opacity: 0;
     z-index: -1; }
     .ratingRadio__input:checked + p::before {
-      position: absolute;
-      font-family: Material Icons;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 14px;
-      padding: 5px 0px 0px 5px;
-      border: 0px solid transparent;
-      content: "";
-      background: white;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      opacity: 1;
-      z-index: 99999; }
+      content: ""; }
     .ratingRadio__input_unchecked + p::before {
       position: absolute;
       font-family: Material Icons;
@@ -882,9 +861,7 @@ body {
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
-      -webkit-text-fill-color: transparent;
-      opacity: 1;
-      z-index: 99999; }
+      -webkit-text-fill-color: transparent; }
   .ratingRadio__text {
     position: absolute;
     font-family: Material Icons;

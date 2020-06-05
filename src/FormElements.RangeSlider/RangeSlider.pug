@@ -1,8 +1,8 @@
 mixin getRangeSlider(title, options, classes)
-    div(class=["rangeSlider"])
+    div(class=["rangeSlider"] data-max-value=options.maxValue data-min-value=options.minValue)
         div(class=["rangeSlider__titleContainer"])
             p(class=["rangeSlider__title"])= title
-            p(class=["rangeSlider__rangeValue"])= options.firstValue + " - " + options.lastValue
+            p(class=["rangeSlider__inputsValueRange"])= options.firstValue + " - " + options.lastValue
         div(class=["rangeSlider__sliderContainer"])
             div(class=["rangeSlider__sliderBodyEmpty"])
                 div(class=["rangeSlider__sliderBodyFilled"])
@@ -10,7 +10,5 @@ mixin getRangeSlider(title, options, classes)
             div(class=["rangeSlider__lastSlider"])
             input(class=["rangeSlider__firstInput"] type="hidden" value= options.firstValue)
             input(class=["rangeSlider__lastInput"] type="hidden" value= options.lastValue)
-            input(class=["rangeSlider__maxValueInput"] type="hidden" value= options.maxValue)
-            input(class=["rangeSlider__minValueInput"] type="hidden" value= options.minValue)
 
 

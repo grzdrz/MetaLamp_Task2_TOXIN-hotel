@@ -1,6 +1,6 @@
 .ratingRadio {
     display: grid;
-    grid-template-columns: 0px max-content max-content max-content max-content max-content;
+    grid-template-columns: max-content max-content max-content max-content max-content;
     grid-template-rows: max-content;
     position: relative;
     width: max-content;
@@ -10,22 +10,12 @@
         grid-template-columns: max-content;
         grid-template-rows: max-content;
         position: relative;
-
-        &:first-of-type {
-            opacity: 0;
-            z-index: -1;
-        }
     }
 
     &__label {
         width: 24px;
         height: 24px;
         position: relative;
-
-        &:first-of-type {
-            opacity: 0;
-            z-index: -1;
-        }
     }
 
     &__input {
@@ -36,22 +26,7 @@
         z-index: -1;
 
         &:checked + p::before {
-            position: absolute;
-            font-family: Material Icons;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 14px;
-            padding: 5px 0px 0px 5px;
-            border: 0px solid transparent;
             content: "";
-            background: rgba(255, 255, 255, 1);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            opacity: 1;
-            z-index: 99999;
         }
 
         &_unchecked {
@@ -70,8 +45,6 @@
                 -moz-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
-                opacity: 1;
-                z-index: 99999;
             }
         }
     }
