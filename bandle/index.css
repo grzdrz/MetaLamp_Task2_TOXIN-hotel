@@ -987,53 +987,68 @@ body {
 .rangeSlider {
   display: flex;
   flex-direction: column;
-  background: gray;
+  background: white;
   width: max-content;
   height: max-content; }
   .rangeSlider__titleContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px; }
+    margin-bottom: 18px; }
+  .rangeSlider__title {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .rangeSlider__inputsValueRange {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: 0.03em; }
   .rangeSlider__sliderContainer {
     display: flex;
     align-items: center;
     position: relative;
     width: max-content;
     height: 16px;
-    background: #ca9b9b; }
-  .rangeSlider__firstInput {
-    position: absolute;
-    z-index: -1;
-    opacity: 0; }
-  .rangeSlider__lastInput {
+    background: transparent; }
+  .rangeSlider__firstInput, .rangeSlider__lastInput {
     position: absolute;
     z-index: -1;
     opacity: 0; }
   .rangeSlider__sliderBodyEmpty {
     width: 266px;
     height: 6px;
-    background: green;
+    background: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 3px;
     position: relative; }
   .rangeSlider__sliderBodyFilled {
     width: 100px;
     height: 6px;
-    background: aquamarine;
-    margin-left: 30px; }
-  .rangeSlider__firstSlider {
-    width: 16px;
-    height: 16px;
-    background: blue;
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+    margin-left: 30px;
+    position: absolute; }
+  .rangeSlider__firstSlider, .rangeSlider__lastSlider {
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
     position: absolute;
-    border-radius: 50%;
-    margin-left: 22px; }
-  .rangeSlider__lastSlider {
-    width: 16px;
-    height: 16px;
-    background: coral;
-    position: absolute;
-    margin-left: 122px;
     border-radius: 50%; }
+  .rangeSlider__firstSliderOutside, .rangeSlider__lastSliderOutside {
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    position: absolute; }
 
 .globalLogo {
   margin-bottom: 65px; }

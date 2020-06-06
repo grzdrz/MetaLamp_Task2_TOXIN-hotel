@@ -28,6 +28,8 @@ export function rangeSliderScript() {
     rangeSliders.forEach(e => {
         let targetFirstSlider = e.querySelector(".rangeSlider__firstSlider");
         let targetLastSlider = e.querySelector(".rangeSlider__lastSlider");
+        let targetFirstSliderBorder = e.querySelector(".rangeSlider__firstSliderOutside");
+        let targetLastSliderBorder = e.querySelector(".rangeSlider__lastSliderOutside");
 
         targetFirstSlider.ondragstart = function () {
             return false;
@@ -65,12 +67,14 @@ export function rangeSliderScript() {
 
         firstSlider.style.marginLeft = x1_slider + "px";
         lastSlider.style.marginLeft = x2_slider + "px";
+        targetFirstSliderBorder.style.marginLeft = x1_slider - 2 + "px";
+        targetLastSliderBorder.style.marginLeft = x2_slider - 2 + "px";
         slidersFilledStrip.style.width = x2_slider - x1_slider + "px";
         slidersFilledStrip.style.marginLeft = x1_slider + sliderWidth / 2 + "px";
     });
 
 
-
+    //let widthTest =
     function sliderMouseDown(event) {
         let cursorXPos;
         if (event.changedTouches) cursorXPos = event.changedTouches[0].pageX;
@@ -78,6 +82,8 @@ export function rangeSliderScript() {
 
         let targetSlider;
         let otherSlider;
+        let targetSliderBorder;
+        let otherSliderBorder;
         let targetSliderContainer;
         let targetSliderIndex;
         let targetInput;
@@ -96,6 +102,9 @@ export function rangeSliderScript() {
 
                 targetInput = targetSlider.parentElement.querySelector(".rangeSlider__firstInput");
                 otherInput = targetSlider.parentElement.querySelector(".rangeSlider__lastInput");
+
+                targetSliderBorder = targetSlider.parentElement.querySelector(".rangeSlider__firstSliderOutside");
+                otherSliderBorder = targetSlider.parentElement.querySelector(".rangeSlider__lastSliderOutside");
             }
             else if (classArray.includes("rangeSlider__lastSlider")) {
                 targetSlider = event.currentTarget;
@@ -105,6 +114,9 @@ export function rangeSliderScript() {
 
                 otherInput = targetSlider.parentElement.querySelector(".rangeSlider__firstInput");
                 targetInput = targetSlider.parentElement.querySelector(".rangeSlider__lastInput");
+
+                otherSliderBorder = targetSlider.parentElement.querySelector(".rangeSlider__firstSliderOutside");
+                targetSliderBorder = targetSlider.parentElement.querySelector(".rangeSlider__lastSliderOutside");
             }
             else return;
         }
@@ -147,7 +159,7 @@ export function rangeSliderScript() {
                 else if (newDeltaXForTargetSlider + sliderWidth > slidersContainerWidth)
                     targetSlider.style.marginLeft = slidersContainerWidth - sliderWidth + "px";
             }
-            
+
             //обновленные координаты целевого ползунка после изменения позиции курсора
             let newTargetSliderBoundingCoords = targetSlider.getBoundingClientRect();
             if (targetSliderIndex === 0) {//для первого ползунка
@@ -165,11 +177,16 @@ export function rangeSliderScript() {
                     let maxInputDeltaValue = inputMaxValue - inputMinValue;
                     let newTargetInputValue = Math.round((maxInputDeltaValue * targetSliderMarginLeft) / maxDistanceBetweenSliders + inputMinValue);
 
+                    let temp1 = newTargetInputValue / Number.parseInt(targetSliderContainer.dataset.valueRound);
+                    let temp2 = Math.round(temp1);
+                    let temp3 = temp2 * Number.parseInt(targetSliderContainer.dataset.valueRound);
+                    newTargetInputValue = temp3;
+
                     targetInput.value = newTargetInputValue;
 
                     let inputsValueRangeTextInTitle = inputsValueRangeInTitle.textContent;
                     let splitedInputsValueRangeTextInTitle = inputsValueRangeTextInTitle.split(/\s/i);
-                    splitedInputsValueRangeTextInTitle[0] = newTargetInputValue.toString();
+                    splitedInputsValueRangeTextInTitle[0] = newTargetInputValue.toString() + targetSliderContainer.dataset.valueType;
                     inputsValueRangeTextInTitle = splitedInputsValueRangeTextInTitle.join(" ");
                     inputsValueRangeInTitle.textContent = inputsValueRangeTextInTitle;
                 }
@@ -189,15 +206,22 @@ export function rangeSliderScript() {
                     let maxInputDeltaValue = inputMaxValue - inputMinValue;
                     let newTargetInputValue = Math.round((maxInputDeltaValue * targetSliderMarginLeft) / maxDistanceBetweenSliders + inputMinValue);
 
+                    let temp1 = newTargetInputValue / Number.parseInt(targetSliderContainer.dataset.valueRound);
+                    let temp2 = Math.round(temp1);
+                    let temp3 = temp2 * Number.parseInt(targetSliderContainer.dataset.valueRound);
+                    newTargetInputValue = temp3;
+
                     targetInput.value = newTargetInputValue;
 
                     let inputsValueRangeTextInTitle = inputsValueRangeInTitle.textContent;
                     let splitedInputsValueRangeTextInTitle = inputsValueRangeTextInTitle.split(/\s/i);
-                    splitedInputsValueRangeTextInTitle[2] = newTargetInputValue.toString();
+                    splitedInputsValueRangeTextInTitle[2] = newTargetInputValue.toString() + targetSliderContainer.dataset.valueType;
                     inputsValueRangeTextInTitle = splitedInputsValueRangeTextInTitle.join(" ");
                     inputsValueRangeInTitle.textContent = inputsValueRangeTextInTitle;
                 }
             }
+            targetSliderBorder.style.marginLeft = Number.parseInt(targetSlider.style.marginLeft) - 2 + "px";
+            otherSliderBorder.style.marginLeft = Number.parseInt(otherSlider.style.marginLeft) - 2 + "px";
         }
 
         function mouseUp(event) {

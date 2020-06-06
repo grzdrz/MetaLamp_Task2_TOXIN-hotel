@@ -1,7 +1,7 @@
 .rangeSlider {
     display: flex;
     flex-direction: column;
-    background: gray;
+    background: white;
     width: max-content;
     height: max-content;
 
@@ -13,13 +13,29 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 18px;
     }
 
     &__title {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1f2041;
     }
 
-    &__rangeValue {
+    &__inputsValueRange {
+        font-family: MontserratRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        text-transform: uppercase;
+        color: rgba(31, 32, 65, 0.5);
+        letter-spacing: 0.03em;
     }
 
     &__sliderContainer {
@@ -28,15 +44,10 @@
         position: relative;
         width: max-content;
         height: 16px;
-        background: rgb(202, 155, 155);
+        background: transparent;
     }
 
-    &__firstInput {
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-    }
-
+    &__firstInput,
     &__lastInput {
         position: absolute;
         z-index: -1;
@@ -46,32 +57,37 @@
     &__sliderBodyEmpty {
         width: 266px;
         height: 6px;
-        background: green;
+        background: #ffffff;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 3px;
         position: relative;
     }
 
     &__sliderBodyFilled {
         width: $filledBodyWidth; //test
         height: 6px;
-        background: aquamarine;
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
         margin-left: $filledBodyMarginLeft;
-    }
-
-    &__firstSlider {
-        width: $sliderSize;
-        height: $sliderSize;
-        background: blue;
         position: absolute;
-        border-radius: 50%;
-        margin-left: $filledBodyMarginLeft - $sliderSize / 2;
     }
 
+    &__firstSlider,
     &__lastSlider {
+        width: $sliderSize - 4px;
+        height: $sliderSize - 4px;
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        position: absolute;
+        border-radius: 50%;
+        //margin-left: $filledBodyMarginLeft - $sliderSize / 2;
+        //margin-left: $filledBodyMarginLeft + $filledBodyWidth - $sliderSize / 2; //test
+    }
+
+    &__firstSliderOutside,
+    &__lastSliderOutside {
         width: $sliderSize;
         height: $sliderSize;
-        background: coral;
-        position: absolute;
-        margin-left: $filledBodyMarginLeft + $filledBodyWidth - $sliderSize / 2; //test
+        background: white;
         border-radius: 50%;
+        position: absolute;
     }
 }
