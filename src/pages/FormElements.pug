@@ -117,6 +117,13 @@ html
             div(class=["pagination"])
                 +getPagination(20, 7, {
                     title: "pagination",
+                    downText: "1 – 12 из 100+ вариантов аренды",
+                })
+            include ../FormElements.Pagination/Pagination.pug
+            div(class=["pagination"])
+                +getPagination(20, 2, {
+                    title: "pagination",
+                    downText: "1 – 12 из 100+ вариантов аренды",
                 })
 
             include ../FormElements.RangeSlider/RangeSlider.pug

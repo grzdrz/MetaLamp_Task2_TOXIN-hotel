@@ -936,11 +936,20 @@ body {
 .pagination {
   display: flex;
   flex-direction: column; }
+  .pagination__title {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 16px; }
   .pagination__pageList {
     display: flex;
     flex-direction: row;
     width: max-content;
-    background: #dfdfdf; }
+    background: transparent; }
   .pagination__leftArrow, .pagination__rightArrow, .pagination__pageLink {
     width: 40px;
     height: 40px;
@@ -983,6 +992,14 @@ body {
     align-items: center;
     text-align: center;
     color: rgba(31, 32, 65, 0.5); }
+  .pagination__downText {
+    margin-top: 10px;
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
 
 .rangeSlider {
   display: flex;

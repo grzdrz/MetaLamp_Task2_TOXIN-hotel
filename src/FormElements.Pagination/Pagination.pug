@@ -1,4 +1,4 @@
-mixin getPagination(pagesNumber, curPage, options, classes)
+mixin getPagination(pagesCount, curPageNumber, options, classes)
     - let containerClasses = [];
 
     if classes
@@ -8,41 +8,42 @@ mixin getPagination(pagesNumber, curPage, options, classes)
     if options.title
         p(class=["pagination__title"])= options.title
 
-    div(class=["pagination__pageList"])
-        if curPage !== 1
+    div(class=["pagination__pageList"] data-cur-page-number=curPageNumber)
+        if curPageNumber !== 1
             a(href="#" class=["pagination__leftArrow"])
                 p(class=["pagination__leftArrowText"]) arrow_forward
             a(href="#" class=["pagination__pageLink"])
                 p(class=["pagination__pageLinkText"])= 1                    
 
-        if curPage - 3 > 1
+        if curPageNumber - 3 > 1
             a(class=["pagination__pageLink"])
                 p(class=["pagination__pageLinkText"])= "..." 
 
-        if curPage - 2 > 1
+        if curPageNumber - 2 > 1
             a(href="#" class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= curPage - 2
-        if curPage - 1 > 1
+                p(class=["pagination__pageLinkText"])= curPageNumber - 2
+        if curPageNumber - 1 > 1
             a(href="#" class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= curPage - 1
+                p(class=["pagination__pageLinkText"])= curPageNumber - 1
 
         a(href="#" class=["pagination__pageLink", "pagination__pageLink_target"])
-            p(class=["pagination__pageLinkText"])= curPage
+            p(class=["pagination__pageLinkText"])= curPageNumber
 
-        if curPage + 1 < pagesNumber
+        if curPageNumber + 1 < pagesCount
             a(href="#" class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= curPage + 1
-        if curPage + 2 < pagesNumber
+                p(class=["pagination__pageLinkText"])= curPageNumber + 1
+        if curPageNumber + 2 < pagesCount
             a(href="#" class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= curPage + 2
-        if curPage + 3 < pagesNumber
+                p(class=["pagination__pageLinkText"])= curPageNumber + 2
+        if curPageNumber + 3 < pagesCount
             a(class=["pagination__pageLink"])
                 p(class=["pagination__pageLinkText"])= "..." 
 
-        if curPage !== pagesNumber
+        if curPageNumber !== pagesCount
             a(href="#" class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= pagesNumber    
+                p(class=["pagination__pageLinkText"])= pagesCount    
             a(href="#" class=["pagination__rightArrow"])
                 p(class=["pagination__rightArrowText"]) arrow_forward
 
-        //-p(class=["pagination__textInfo"])= options.title                    
+    if options.downText
+        p(class=["pagination__downText"])= options.downText                
