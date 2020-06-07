@@ -1,13 +1,16 @@
-mixin getCheckbox(checkboxList, options, classArray)
-    div(class=["checkboxList"])
-        .checkboxList__label
-            p(class=[""])= options.labelText
-            if options.isExpandable     
-                button(class=["checkboxList__dropdownButton"]) expand_more
-        .checkboxList__list        
+mixin getCheckbox(checkboxType, checkboxList, options, classArray)
+
+    - let containerClasses = ["checkboxList"];
+    - if(checkboxType === "expandable") containerClasses.push("checkboxList_expandable");
+ 
+    div(class=containerClasses)
+        div(class=["checkboxList__title"])
+            p(class=["checkboxList__titleText"])= options.titleText
+            if checkboxType === "expandable"
+                p(class=["checkboxList__dropdownButton"]) expand_more
+        div(class=["checkboxList__list"] data-is-opened=options.isOpened)
             for item in checkboxList
-                .checkboxList__item
+                div(class=["checkboxList__item"])
                     label(class=["checkboxList__itemLabel"])
-                        //-div(class=["checkboxList__itemCheckboxImage"])
                         input(class=["checkboxList__itemCheckbox"] type= "checkbox" checked= item.isChecked)
-                        p= item.text
+                        p(class=["checkboxList__itemLabelText"])= item.text

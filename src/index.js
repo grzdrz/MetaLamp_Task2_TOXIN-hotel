@@ -14,6 +14,10 @@ import "./test.js"; */
 import { dropdownScript } from "./FormElements.FormInput/Dropdown.js";
 dropdownScript();
 
+//dropdown
+import { expandableCheckboxListScript } from "./FormElements.CheckboxList/ExpandableCheckboxList.js";
+expandableCheckboxListScript();
+
 //rate button
 import { rateButtonScript } from "./FormElements.RateButton/RateButton.js";
 rateButtonScript();

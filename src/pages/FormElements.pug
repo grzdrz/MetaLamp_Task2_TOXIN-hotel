@@ -71,7 +71,7 @@ html
                     typeOfShownInfo: "formInput__dropdown_listOfNumbers"},})
 
             include ../FormElements.CheckboxList/CheckboxList.pug
-            +getCheckbox([
+            +getCheckbox("expandable", [
                 {isChecked: false, text: "Завтрак"},
                 {isChecked: true, text: "Письменный стол"}, 
                 {isChecked: true, text: "Стул для кормления"},
@@ -79,9 +79,24 @@ html
                 {isChecked: false, text: "Телевизор"},
                 {isChecked: false, text: "Шампунь"},
                 {isChecked: false, text: "Телевизор"},
-                {isChecked: false, text: "Шампунь"}], {
-                labelText: "expandable checkbox list",
-                isExpandable: true})
+                {isChecked: false, text: "Шампунь"}], 
+                {
+                    titleText: "expandable checkbox list",
+                    isOpened: "true",
+                })
+            +getCheckbox("expandable", [
+                {isChecked: false, text: "Завтрак"},
+                {isChecked: true, text: "Письменный стол"}, 
+                {isChecked: true, text: "Стул для кормления"},
+                {isChecked: true, text: "Кроватка"},
+                {isChecked: false, text: "Телевизор"},
+                {isChecked: false, text: "Шампунь"},
+                {isChecked: false, text: "Телевизор"},
+                {isChecked: false, text: "Шампунь"}], 
+                {
+                    titleText: "expandable checkbox list",
+                    isOpened: "false",
+                })                
 
             include ../FormElements.RadioButton/RadioButton.pug
             +getRadioButton("radio", [
