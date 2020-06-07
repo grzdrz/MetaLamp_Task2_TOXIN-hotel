@@ -1,10 +1,13 @@
 mixin getCheckbox(checkboxType, checkboxList, options, classArray)
 
     - let containerClasses = ["checkboxList"];
+    - let titleContainerClasses = ["checkboxList__title"];
     - if(checkboxType === "expandable") containerClasses.push("checkboxList_expandable");
- 
+    - if(checkboxType === "rich") titleContainerClasses.push("checkboxList__titleText_richTitleBottomMargin");
+    - if(checkboxType === "simple") titleContainerClasses.push("checkboxList__titleText_simpleTitleBottomMargin");
+
     div(class=containerClasses)
-        div(class=["checkboxList__title"])
+        div(class=titleContainerClasses)
             p(class=["checkboxList__titleText"])= options.titleText
             if checkboxType === "expandable"
                 p(class=["checkboxList__dropdownButton"]) expand_more
@@ -13,4 +16,11 @@ mixin getCheckbox(checkboxType, checkboxList, options, classArray)
                 div(class=["checkboxList__item"])
                     label(class=["checkboxList__itemLabel"])
                         input(class=["checkboxList__itemCheckbox"] type= "checkbox" checked= item.isChecked)
-                        p(class=["checkboxList__itemLabelText"])= item.text
+                        if checkboxType === "rich"
+                            p(class=["checkboxList__itemLabelMainText"])= item.text
+                        else if checkboxType === "simple"
+                            p(class=["checkboxList__itemLabelSimpleText"])= item.text
+                        else
+                            p(class=["checkboxList__itemLabelText"])= item.text
+                    if checkboxType === "rich"
+                        p(class=["checkboxList__itemLabelAdditionalText"])= item.additionalText  

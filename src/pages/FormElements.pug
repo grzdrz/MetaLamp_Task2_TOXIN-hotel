@@ -96,6 +96,19 @@ html
                 {
                     titleText: "expandable checkbox list",
                     isOpened: "false",
+                })
+            +getCheckbox("rich", [
+                {isChecked: false, text: "Широкий коридор", additionalText: "Ширина коридоров в номере не менее 91 см."},
+                {isChecked: true, text: "Помощник для инвалидов", additionalText: "На 1 этаже вас встретит специалист и проводит до номера."},], 
+                {
+                    titleText: "rich checkbox list",
+                })
+            +getCheckbox("simple", [
+                {isChecked: false, text: "Можно курить"},
+                {isChecked: true, text: "Можно с питомцами"},
+                {isChecked: true, text: "Можно пригласить гостей (до 10 человек)"},], 
+                {
+                    titleText: "Checkbox Buttons",
                 })                
 
             include ../FormElements.RadioButton/RadioButton.pug

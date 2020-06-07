@@ -20,6 +20,11 @@
         color: #1f2041;
         word-wrap: none;
         margin-right: 31px;
+
+        &_richTitleBottomMargin,
+        &_simpleTitleBottomMargin {
+            margin-bottom: 15px;
+        }
     }
 
     &__dropdownButton {
@@ -51,7 +56,7 @@
 
     &__item {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
         margin-bottom: 10px;
         &:last-child {
@@ -71,10 +76,49 @@
         flex-direction: row;
         align-items: center;
     }
+    &__itemLabelMainText {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.75);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__itemLabelSimpleText {
+        font-family: MontserratRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    $checkboxMarginRight: 10px;
+    $checkboxSize: 20px;
+    &__itemLabelAdditionalText {
+        margin-left: $checkboxSize + $checkboxMarginRight;
+        margin-top: 5px;
+        width: 266px;
+
+        font-family: MontserratRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(31, 32, 65, 0.5);
+    }
 
     &__itemCheckbox {
-        width: 20px;
-        height: 20px;
+        width: $checkboxSize;
+        height: $checkboxSize;
         position: absolute;
         z-index: -1;
         opacity: 0;
@@ -86,7 +130,7 @@
             height: 18px;
             border: 1px solid #adb5bd;
             border-radius: 4px;
-            margin-right: 10px;
+            margin-right: $checkboxMarginRight;
         }
         &:checked + p::before {
             content: "";
@@ -95,7 +139,7 @@
             height: 18px;
             border: 1px solid #bc9cff;
             border-radius: 4px;
-            margin-right: 10px;
+            margin-right: $checkboxMarginRight;
             background: url("./FormElements.CheckboxList/img/checkMark.svg") no-repeat;
             background-position: 50% 40%;
         }
