@@ -6,32 +6,33 @@
         flex-direction: column;
     }
 
-    &__label {
+    @import "./Dropdown.scss";
+
+    &__title {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
         margin-bottom: 5px;
-
-        p:nth-of-type(1) {
-            font-family: MontserratBold;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 15px;
-            text-transform: uppercase;
-            color: #1f2041;
-        }
-        p:nth-of-type(2) {
-            font-family: MontserratRegular;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 15px;
-            text-align: right;
-            text-transform: uppercase;
-            color: rgba(31, 32, 65, 0.5);
-        }
+    }
+    &__titleText {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1f2041;
+    }
+    &__titleTextTest {
+        font-family: MontserratRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        text-transform: uppercase;
+        color: rgba(31, 32, 65, 0.5);
     }
 
     &__input {
@@ -113,12 +114,6 @@
         -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        &:hover,
-        &:focus {
-            border: 1px solid rgba(31, 32, 65, 0.5);
-            border-radius: 4px;
-        }
     }
 
     &__dropdownInput {
@@ -138,12 +133,5 @@
         -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        &:hover{
-            border: 1px solid rgba(31, 32, 65, 0.5);
-            border-radius: 4px;
-        }
     }
-
-    @import "./dropdown.scss";
 }

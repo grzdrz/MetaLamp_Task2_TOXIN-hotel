@@ -1,10 +1,14 @@
 mixin getFormInput(inputType, options, classArray)
-    if inputType === "textFieldDefault"
-        div(class=["formInput", "formInput_textFieldDefault"])
-            .formInput__label
-                p(class=[""])= options.labelText
-                if options.testLabel.isTestLabelVisible
-                    p= options.testLabel.value
+    - let containerClasses = ["formInput"];
+    - if(inputType === "dropdown") containerClasses.push("formInput_dropdown");
+
+    div(class=containerClasses data-border-radius="")
+        div(class=["formInput__title"])
+            p(class=["formInput__titleText"])= options.titleText
+            if options.titleTextTest.isTitleTextTestVisible
+                p(class=["formInput__titleTextTest"])= options.titleTextTest.value
+
+        if inputType === "textFieldDefault"
             div(class=["formInput__input"])               
                 input(class=["formInput__mainInput"],
                     placeholder= options.placeholder,
@@ -15,13 +19,9 @@ mixin getFormInput(inputType, options, classArray)
                     input(class=['formInput__submitInput']
                         type="submit"
                         value="arrow_forward")
-    else if inputType === "dropdown"                     
-        div(class=["formInput", "formInput_dropdown"])
-            .formInput__label
-                p(class=[""])= options.labelText
-                if options.testLabel.isTestLabelVisible
-                    p= options.testLabel.value
-            div(class=["formInput__input", options.dropdownShowInfoType])
+
+        else if inputType === "dropdown"
+            div(class=["formInput__input", options.dropdown.typeOfShownInfo])
                 input(class=["formInput__mainInput"],
                     placeholder= options.placeholder,
                     name= options.name,
@@ -32,10 +32,10 @@ mixin getFormInput(inputType, options, classArray)
                 button(class=['formInput__dropdownInput']) expand_more
                 div(class=["formInput__dropedList"]
                     style={display: "none"})
-                    for item in options.dropList
+                    for item in options.dropdown.dropList
                         div(class=["formInput__dropedListItem"])
-                            p= item.name
+                            p(class=["formInput__dropedListItemText"])= item.name
                             div(class=["formInput__dropedListItemHandler"])
                                 button(class=["formInput__dropedListItemHandlerMinus"])= "-"
-                                p= item.value
+                                p(class=["formInput__dropedListItemHandlerText"])= item.value
                                 button(class=["formInput__dropedListItemHandlerPlus"])= "+"

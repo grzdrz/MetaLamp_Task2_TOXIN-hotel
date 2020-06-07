@@ -11,10 +11,10 @@ html
 
             include ../FormElements.FormInput/FormInput.pug
             +getFormInput("textFieldDefault", {
-                labelText: "TEXT FIELD",
-                testLabel: {
-                    isTestLabelVisible: true,
-                    value: "DEFAULT"
+                titleText: "text field",
+                titleTextTest: {
+                    isTitleTextTestVisible: true,
+                    value: "default"
                 },
                 placeholder: "Email",
                 name: "email",
@@ -23,10 +23,10 @@ html
                 isSubmitButton: false})
 
             +getFormInput("textFieldDefault", {
-                labelText: "TEXT FIELD",
-                testLabel: {
-                    isTestLabelVisible: true,
-                    value: "HOVER / FOCUS"
+                titleText: "text field",
+                titleTextTest: {
+                    isTitleTextTestVisible: true,
+                    value: "hover / focus"
                 },
                 placeholder: "Some text",
                 name: "someText",
@@ -36,9 +36,9 @@ html
 
 
             +getFormInput("dropdown", {
-                labelText: "DROPDOWN",
-                testLabel: {
-                    isTestLabelVisible: false,
+                titleText: "dropdown",
+                titleTextTest: {
+                    isTitleTextTestVisible: false,
                     value: ""
                 },
                 placeholder: "dropdown",
@@ -46,15 +46,16 @@ html
                 type: "text",
                 value: "Сколько гостей",
                 isSubmitButton: false,
-                dropList: [
-                    {name: "ВЗРОСЛЫЕ", value: 0},
-                    {name: "ДЕТИ", value: 0},
-                    {name: "МЛАДЕНЦЫ", value: 0}],         
-                dropdownShowInfoType: "formInput__dropdown_fullNumber"}) 
+                dropdown: {
+                    dropList: [
+                        {name: "взрослые", value: 0},
+                        {name: "дети", value: 0},
+                        {name: "младенцы", value: 0}],         
+                    typeOfShownInfo: "formInput__dropdown_sumNumber"},})
             +getFormInput("dropdown", {
-                labelText: "DROPDOWN",
-                testLabel: {
-                    isTestLabelVisible: false,
+                titleText: "dropdown",
+                titleTextTest: {
+                    isTitleTextTestVisible: false,
                     value: ""
                 },
                 placeholder: "dropdown",
@@ -62,11 +63,12 @@ html
                 type: "text",
                 value: "Сколько комнат",
                 isSubmitButton: false,
-                dropList: [
-                    {name: "СПАЛЬНИ", value: 0},
-                    {name: "КРОВАТИ", value: 0},
-                    {name: "ВАННЫЕ КОМНАТЫ", value: 0}],
-                dropdownShowInfoType: "formInput__dropdown_listOfNumbers"})    
+                dropdown: {
+                    dropList: [
+                        {name: "спальни", value: 0},
+                        {name: "кровати", value: 0},
+                        {name: "ванные комнаты", value: 0}],
+                    typeOfShownInfo: "formInput__dropdown_listOfNumbers"},})
 
             include ../FormElements.CheckboxList/CheckboxList.pug
             +getCheckbox([

@@ -4,13 +4,6 @@
     grid-column-start: 1;
     grid-column-end: 3;
 
-    & > div:first-of-type {
-        margin-top: 7px;
-    }
-    & > div {
-        margin-bottom: 7px;
-    }
-
     position: absolute;
     width: 100%;
     top: 44px;
@@ -30,64 +23,68 @@
         border-top: 0px;
     }
 }
+
 &__dropedListItem {
     display: grid;
     grid-template-columns: auto 93px;
     align-items: center;
     padding: 0px 7px 0px 15px;
-    & > p {
-        overflow: auto;
-        word-wrap: break-word;
-        font-family: MontserratBold;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-        color: #1f2041;
+
+    margin-bottom: 7px;
+    &:first-of-type {
+        margin-top: 7px;
     }
 }
+
+&__dropedListItemText {
+    overflow: auto;
+    word-wrap: break-word;
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+}
+
 &__dropedListItemHandler {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    & > button {
-        width: 30px;
-        height: 30px;
-        border-radius: 31px;
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        background: transparent;
-
-        font-family: MontserratBold;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #1f2041;
-    }
-
-    & > p {
-        margin: 0px 5px;
-        font-family: MontserratBold;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #1f2041;
-    }
-}
-
-&__dropedListItemHandlerMinus {
-    opacity: 0.38;
 }
 
 &__dropedListItemHandlerMinus,
 &__dropedListItemHandlerPlus {
     outline: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 31px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    background: transparent;
+
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1f2041;
+}
+&__dropedListItemHandlerMinus {
+    opacity: 0.38;
+}
+
+&__dropedListItemHandlerText {
+    margin: 0px 5px;
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1f2041;
 }

@@ -472,28 +472,97 @@ body {
   .formInput_textFieldDefault {
     display: flex;
     flex-direction: column; }
-  .formInput__label {
+  .formInput__dropedList {
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    background: white;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-top: 0px;
+    box-sizing: content-box;
+    margin: -1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 1; }
+    .formInput__dropedList:hover, .formInput__dropedList:focus {
+      border: 1px solid rgba(31, 32, 65, 0.5);
+      border-top: 0px; }
+  .formInput__dropedListItem {
+    display: grid;
+    grid-template-columns: auto 93px;
+    align-items: center;
+    padding: 0px 7px 0px 15px;
+    margin-bottom: 7px; }
+    .formInput__dropedListItem:first-of-type {
+      margin-top: 7px; }
+  .formInput__dropedListItemText {
+    overflow: auto;
+    word-wrap: break-word;
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .formInput__dropedListItemHandler {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  .formInput__dropedListItemHandlerMinus, .formInput__dropedListItemHandlerPlus {
+    outline: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 31px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    background: transparent;
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .formInput__dropedListItemHandlerMinus {
+    opacity: 0.38; }
+  .formInput__dropedListItemHandlerText {
+    margin: 0px 5px;
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .formInput__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5px; }
-    .formInput__label p:nth-of-type(1) {
-      font-family: MontserratBold;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase;
-      color: #1f2041; }
-    .formInput__label p:nth-of-type(2) {
-      font-family: MontserratRegular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 15px;
-      text-align: right;
-      text-transform: uppercase;
-      color: rgba(31, 32, 65, 0.5); }
+  .formInput__titleText {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .formInput__titleTextTest {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5); }
   .formInput__input {
     display: grid;
     grid-template-rows: 42px;
@@ -556,10 +625,12 @@ body {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; }
-    .formInput__submitInput:hover, .formInput__submitInput:focus {
-      border: 1px solid rgba(31, 32, 65, 0.5);
-      border-radius: 4px; }
+    -webkit-text-fill-color: transparent;
+    /* &:hover,
+        &:focus {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            border-radius: 4px;
+        } */ }
   .formInput__dropdownInput {
     width: 42px;
     height: 42px;
@@ -574,81 +645,11 @@ body {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; }
-    .formInput__dropdownInput:hover {
-      border: 1px solid rgba(31, 32, 65, 0.5);
-      border-radius: 4px; }
-  .formInput__dropedList {
-    flex-direction: column;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    position: absolute;
-    width: 100%;
-    top: 44px;
-    background: white;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    border-top: 0px;
-    box-sizing: content-box;
-    margin: -1px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    z-index: 1; }
-    .formInput__dropedList > div:first-of-type {
-      margin-top: 7px; }
-    .formInput__dropedList > div {
-      margin-bottom: 7px; }
-    .formInput__dropedList:hover, .formInput__dropedList:focus {
-      border: 1px solid rgba(31, 32, 65, 0.5);
-      border-top: 0px; }
-  .formInput__dropedListItem {
-    display: grid;
-    grid-template-columns: auto 93px;
-    align-items: center;
-    padding: 0px 7px 0px 15px; }
-    .formInput__dropedListItem > p {
-      overflow: auto;
-      word-wrap: break-word;
-      font-family: MontserratBold;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase;
-      color: #1f2041; }
-  .formInput__dropedListItemHandler {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; }
-    .formInput__dropedListItemHandler > button {
-      width: 30px;
-      height: 30px;
-      border-radius: 31px;
-      border: 1px solid rgba(31, 32, 65, 0.5);
-      background: transparent;
-      font-family: MontserratBold;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #1f2041; }
-    .formInput__dropedListItemHandler > p {
-      margin: 0px 5px;
-      font-family: MontserratBold;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #1f2041; }
-  .formInput__dropedListItemHandlerMinus {
-    opacity: 0.38; }
-  .formInput__dropedListItemHandlerMinus, .formInput__dropedListItemHandlerPlus {
-    outline: none; }
+    -webkit-text-fill-color: transparent;
+    /* &:hover {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            border-radius: 4px;
+        } */ }
 
 .checkboxList {
   display: grid;
