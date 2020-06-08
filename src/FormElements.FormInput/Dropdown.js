@@ -1,3 +1,5 @@
+import { queryParentElementByClass } from "../queryParentElementByClass.js";
+
 export function dropdownScript() {
 
     let dropdownsElems = document.querySelectorAll(".formInput_dropdown");
@@ -19,8 +21,7 @@ export function dropdownScript() {
 
         let clearButton = e.querySelector(".formInput__clearButton");
         if (clearButton) {
-            clearButton.disabled = true;
-            clearButton.style.opacity = 0;
+            clearButton.style.display = "none";
             clearButton.onclick = onClear;
         }
         let applyButton = e.querySelector(".formInput__applyButton");
@@ -33,7 +34,7 @@ export function dropdownScript() {
 
 
     function onDropdownClick(event) {
-        let inputContainer = event.currentTarget.parentElement;
+        let inputContainer = queryParentElementByClass(event.currentTarget, "formInput__input");
         let dropwdownList = inputContainer.querySelector(".formInput__dropedList");
 
         if (dropwdownList.style.display === "none") {
@@ -70,7 +71,6 @@ export function dropdownScript() {
 
 
     function onDropdownItemPlus(event) {
-        event.preventDefault();
         let dropedListItemHandlerText = event.currentTarget.parentElement.querySelector(".formInput__dropedListItemHandlerText");
         let curValue = Number.parseInt(dropedListItemHandlerText.textContent);
         curValue++;
@@ -78,38 +78,43 @@ export function dropdownScript() {
             event.currentTarget.parentElement.querySelector(".formInput__dropedListItemHandlerMinus").style.opacity = 1;
         dropedListItemHandlerText.textContent = curValue.toString();
 
-        let listContainer = event.currentTarget.parentElement.parentElement.parentElement;
+        let listContainer = queryParentElementByClass(event.currentTarget, "formInput__dropedList");
         let clearButton = listContainer.querySelector(".formInput__clearButton");
         if (clearButton) {
-            clearButton.disabled = false;
-            clearButton.style.opacity = 1;
+            clearButton.style.display = "flex";
         }
 
-        changeDropdownInputValue(event.currentTarget.parentElement.parentElement.parentElement.parentElement);
+        changeDropdownInputValue(queryParentElementByClass(event.currentTarget, "formInput__input"));
     }
     function onDropdownItemMinus(event) {
-        event.preventDefault();
         let dropedListItemHandlerText = event.currentTarget.parentElement.querySelector(".formInput__dropedListItemHandlerText");
         let curValue = Number.parseInt(dropedListItemHandlerText.textContent);
         curValue--;
         if (curValue < 0) curValue = 0;
+
+        dropedListItemHandlerText.textContent = curValue.toString();
+
         if (curValue === 0) {
             event.currentTarget.style.opacity = 0.38;
 
-            let listContainer = event.currentTarget.parentElement.parentElement.parentElement;
-            let clearButton = listContainer.querySelector(".formInput__clearButton");
-            if (clearButton) {
-                clearButton.disabled = true;
-                clearButton.style.opacity = 0;
+            //проверка на наличие нулей в значениях всех элементов выпадающего списка
+            let listContainer = queryParentElementByClass(event.currentTarget, "formInput__dropedList");
+            let allValues = Array.from(listContainer.querySelectorAll(".formInput__dropedListItemHandlerText"));
+            let absSum = allValues.reduce((sum, currentValue) => {
+                return sum + Math.abs(Number.parseInt(currentValue.textContent));
+            }, 0);
+            if (absSum === 0) {
+                let clearButton = listContainer.querySelector(".formInput__clearButton");
+                if (clearButton) {
+                    clearButton.style.display = "none";
+                }
             }
         }
-        dropedListItemHandlerText.textContent = curValue.toString();
 
-        changeDropdownInputValue(event.currentTarget.parentElement.parentElement.parentElement.parentElement);
+        changeDropdownInputValue(queryParentElementByClass(event.currentTarget, "formInput__input"));
     }
 
     function changeDropdownInputValue(curDropdownContainer) {
-        //let curDropdownContainer = event.currentTarget.parentElement.parentElement.parentElement.parentElement;
         let dropdownList = curDropdownContainer.querySelectorAll(".formInput__dropedListItem");
         let sum = Array.from(dropdownList).reduce((sum, e) => {
             return sum + Number.parseInt(e.querySelector(".formInput__dropedListItemHandlerText").textContent)
@@ -140,10 +145,9 @@ export function dropdownScript() {
     }
 
     function onClear(event) {
-        event.currentTarget.disabled = true;
-        event.currentTarget.style.opacity = 0;
+        event.currentTarget.style.display = "none";
 
-        let inputContainer = event.currentTarget.parentElement.parentElement.parentElement;
+        let inputContainer = queryParentElementByClass(event.currentTarget, "formInput__input");
         inputContainer.querySelector(".formInput__mainInput").value = inputContainer.dataset.defaultValue;
         inputContainer.querySelectorAll(".formInput__dropedListItemHandlerText").forEach(e => {
             e.textContent = "0";
@@ -154,7 +158,7 @@ export function dropdownScript() {
     }
 
     function onApply(event) {
-        let inputContainer = event.currentTarget.parentElement.parentElement.parentElement;
+        let inputContainer = queryParentElementByClass(event.currentTarget, "formInput__input");
         let dropwdownList = inputContainer.querySelector(".formInput__dropedList");
 
         inputContainer.style.borderBottomLeftRadius = inputContainer.dataset.borderRadius;
