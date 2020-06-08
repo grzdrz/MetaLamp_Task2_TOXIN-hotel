@@ -1,0 +1,10 @@
+mixin getBulletList(list, options, classArray)
+
+    div(class=["bulletList"])
+        div(class=["bulletList__title"])
+            p(class=["bulletList__titleText"])= options.titleText
+        ul(class=["bulletList__list"])    
+            for listItem in list
+                li(class=["bulletList__listItem"])
+                    div(class=["bulletList__listItemMarker"])
+                    p(class=["bulletList__listItemText"])= listItem

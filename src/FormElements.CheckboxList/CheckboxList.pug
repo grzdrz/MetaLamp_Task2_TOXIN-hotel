@@ -2,9 +2,19 @@ mixin getCheckbox(checkboxType, checkboxList, options, classArray)
 
     - let containerClasses = ["checkboxList"];
     - let titleContainerClasses = ["checkboxList__title"];
-    - if(checkboxType === "expandable") containerClasses.push("checkboxList_expandable");
-    - if(checkboxType === "rich") titleContainerClasses.push("checkboxList__titleText_richTitleBottomMargin");
-    - if(checkboxType === "simple") titleContainerClasses.push("checkboxList__titleText_simpleTitleBottomMargin");
+    - let labelTextClasses = [];
+    - if(checkboxType === "expandable"){
+    -    containerClasses.push("checkboxList_expandable");
+    -    labelTextClasses.push("checkboxList__itemLabelText");
+    - }
+    - else if(checkboxType === "rich"){
+    -    titleContainerClasses.push("checkboxList__titleText_richTitleBottomMargin");
+    -    labelTextClasses.push("checkboxList__itemLabelMainText");
+    - }
+    - else if(checkboxType === "simple"){
+    -    titleContainerClasses.push("checkboxList__titleText_simpleTitleBottomMargin");
+    -    labelTextClasses.push("checkboxList__itemLabelSimpleText"); 
+    - }
 
     div(class=containerClasses)
         div(class=titleContainerClasses)
@@ -16,11 +26,7 @@ mixin getCheckbox(checkboxType, checkboxList, options, classArray)
                 div(class=["checkboxList__item"])
                     label(class=["checkboxList__itemLabel"])
                         input(class=["checkboxList__itemCheckbox"] type= "checkbox" checked= item.isChecked)
-                        if checkboxType === "rich"
-                            p(class=["checkboxList__itemLabelMainText"])= item.text
-                        else if checkboxType === "simple"
-                            p(class=["checkboxList__itemLabelSimpleText"])= item.text
-                        else
-                            p(class=["checkboxList__itemLabelText"])= item.text
+                        div(class=["checkboxList__itemCheckboxVisiblePart"])
+                        p(class=labelTextClasses)= item.text
                     if checkboxType === "rich"
                         p(class=["checkboxList__itemLabelAdditionalText"])= item.additionalText  

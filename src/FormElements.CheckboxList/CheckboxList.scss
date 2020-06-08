@@ -64,6 +64,11 @@
         }
     }
 
+    &__itemLabel {
+        display: flex;
+        align-items: end;
+    }
+
     &__itemLabelText {
         font-family: MontserratRegular;
         font-style: normal;
@@ -71,6 +76,7 @@
         font-size: 14px;
         line-height: 18px;
         color: rgba(31, 32, 65, 0.5);
+        width: max-content;
 
         display: flex;
         flex-direction: row;
@@ -95,6 +101,7 @@
         font-size: 14px;
         line-height: 18px;
         color: rgba(31, 32, 65, 0.5);
+        width: 200px;
 
         display: flex;
         flex-direction: row;
@@ -106,7 +113,7 @@
     &__itemLabelAdditionalText {
         margin-left: $checkboxSize + $checkboxMarginRight;
         margin-top: 5px;
-        width: 266px;
+        width: 230px;
 
         font-family: MontserratRegular;
         font-style: normal;
@@ -123,18 +130,16 @@
         z-index: -1;
         opacity: 0;
 
-        & + p::before {
-            content: "";
-            display: inline-block;
+        & + div {
+            display: flex;
             width: 18px;
             height: 18px;
             border: 1px solid #adb5bd;
             border-radius: 4px;
             margin-right: $checkboxMarginRight;
         }
-        &:checked + p::before {
-            content: "";
-            display: inline-block;
+        &:checked + div {
+            display: flex;
             width: 18px;
             height: 18px;
             border: 1px solid #bc9cff;
@@ -144,4 +149,6 @@
             background-position: 50% 40%;
         }
     }
+
+
 }

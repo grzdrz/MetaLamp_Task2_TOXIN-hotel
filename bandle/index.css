@@ -690,6 +690,9 @@ body {
     margin-bottom: 10px; }
     .checkboxList__item:last-child {
       margin-bottom: 0px; }
+  .checkboxList__itemLabel {
+    display: flex;
+    align-items: end; }
   .checkboxList__itemLabelText {
     font-family: MontserratRegular;
     font-style: normal;
@@ -697,6 +700,7 @@ body {
     font-size: 14px;
     line-height: 18px;
     color: rgba(31, 32, 65, 0.5);
+    width: max-content;
     display: flex;
     flex-direction: row;
     align-items: center; }
@@ -717,13 +721,14 @@ body {
     font-size: 14px;
     line-height: 18px;
     color: rgba(31, 32, 65, 0.5);
+    width: 200px;
     display: flex;
     flex-direction: row;
     align-items: center; }
   .checkboxList__itemLabelAdditionalText {
     margin-left: 30px;
     margin-top: 5px;
-    width: 266px;
+    width: 230px;
     font-family: MontserratRegular;
     font-style: normal;
     font-weight: normal;
@@ -736,17 +741,15 @@ body {
     position: absolute;
     z-index: -1;
     opacity: 0; }
-    .checkboxList__itemCheckbox + p::before {
-      content: "";
-      display: inline-block;
+    .checkboxList__itemCheckbox + div {
+      display: flex;
       width: 18px;
       height: 18px;
       border: 1px solid #adb5bd;
       border-radius: 4px;
       margin-right: 10px; }
-    .checkboxList__itemCheckbox:checked + p::before {
-      content: "";
-      display: inline-block;
+    .checkboxList__itemCheckbox:checked + div {
+      display: flex;
       width: 18px;
       height: 18px;
       border: 1px solid #bc9cff;
@@ -1089,6 +1092,45 @@ body {
     background: white;
     border-radius: 50%;
     position: absolute; }
+
+.bulletList {
+  display: flex;
+  flex-direction: column; }
+  .bulletList__title {
+    margin-bottom: 15px; }
+  .bulletList__titleText {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .bulletList__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none; }
+  .bulletList__listItem {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 10px; }
+    .bulletList__listItem:last-of-type {
+      margin-bottom: 0px; }
+  .bulletList__listItemMarker {
+    width: 10px;
+    height: 10px;
+    background: rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+    margin-right: 10px; }
+  .bulletList__listItemText {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    width: 240px; }
 
 .globalLogo {
   margin-bottom: 65px; }
