@@ -491,6 +491,24 @@ body {
     .formInput__dropedList:hover, .formInput__dropedList:focus {
       border: 1px solid rgba(31, 32, 65, 0.5);
       border-top: 0px; }
+  .formInput__dropdownInput {
+    width: 42px;
+    height: 42px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    border: 0px solid transparent;
+    background: rgba(31, 32, 65, 0.75);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
   .formInput__dropedListItem {
     display: grid;
     grid-template-columns: auto 93px;
@@ -541,6 +559,26 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
+  .formInput__controlButtonsContainer {
+    display: flex;
+    margin: 20px 10px 13px 15px; }
+  .formInput__applyButton {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #bc9cff;
+    margin-left: auto; }
+  .formInput__clearButton {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5); }
   .formInput__title {
     display: flex;
     flex-direction: row;
@@ -622,21 +660,6 @@ body {
     background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
     background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
     background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; }
-  .formInput__dropdownInput {
-    width: 42px;
-    height: 42px;
-    outline: none;
-    font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
-    border: 0px solid transparent;
-    background: rgba(31, 32, 65, 0.75);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;

@@ -21,15 +21,14 @@ mixin getFormInput(inputType, options, classArray)
                         value="arrow_forward")
 
         else if inputType === "dropdown"
-            div(class=["formInput__input", options.dropdown.typeOfShownInfo])
-                input(class=["formInput__mainInput"],
+            div(class=["formInput__input", options.dropdown.typeOfShownInfo], data-default-value=options.value)
+                input(class=["formInput__mainInput"], 
                     placeholder= options.placeholder,
                     name= options.name,
                     type= options.type,
                     value= options.value,
-                    disabled= true,
                     readonly= true)
-                button(class=['formInput__dropdownInput']) expand_more
+                p(class=['formInput__dropdownInput']) expand_more
                 div(class=["formInput__dropedList"]
                     style={display: "none"})
                     for item in options.dropdown.dropList
@@ -39,3 +38,9 @@ mixin getFormInput(inputType, options, classArray)
                                 button(class=["formInput__dropedListItemHandlerMinus"])= "-"
                                 p(class=["formInput__dropedListItemHandlerText"])= item.value
                                 button(class=["formInput__dropedListItemHandlerPlus"])= "+"
+                    if options.hasApplyButton || options.hasClearButton
+                        div(class=["formInput__controlButtonsContainer"])
+                            if options.hasClearButton
+                                p(class=["formInput__clearButton"]) очистить
+                            if options.hasApplyButton
+                                p(class=["formInput__applyButton"]) применить

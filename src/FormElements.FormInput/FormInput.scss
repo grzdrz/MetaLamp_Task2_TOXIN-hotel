@@ -115,23 +115,4 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
-    &__dropdownInput {
-        width: 42px;
-        height: 42px;
-        outline: none;
-
-        font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 24px;
-        border: 0px solid transparent;
-
-        background: rgba(31, 32, 65, 0.75);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 }

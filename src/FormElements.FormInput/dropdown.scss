@@ -24,6 +24,29 @@
     }
 }
 
+&__dropdownInput {
+    width: 42px;
+    height: 42px;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    border: 0px solid transparent;
+
+    background: rgba(31, 32, 65, 0.75);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 &__dropedListItem {
     display: grid;
     grid-template-columns: auto 93px;
@@ -87,4 +110,30 @@
     text-align: center;
     text-transform: uppercase;
     color: #1f2041;
+}
+
+&__controlButtonsContainer {
+    display: flex;
+    margin: 20px 10px 13px 15px;
+}
+&__applyButton {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #bc9cff;
+
+    margin-left: auto;
+}
+
+&__clearButton {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
 }
