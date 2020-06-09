@@ -5,6 +5,8 @@ html
         title FormElements
         link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous") 
+        //-link(href="../node_modules/air-datepicker/dist/css/datepicker.min.css" rel="stylesheet" type="text/css")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css" rel="stylesheet")
     body
         .formElements
             include ../GlobalLogo/GlobalLogo.pug
@@ -178,3 +180,7 @@ html
             {
                 titleText: "bullet list",
             })
+
+
+            include ../FormElements.DateInput/DateInput.pug
+            +getDateInput()

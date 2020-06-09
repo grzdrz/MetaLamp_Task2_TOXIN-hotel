@@ -1,0 +1,14 @@
+mixin getDateInput(options, classes)
+    //-input(type='text' class='datepicker-here')
+
+    //-script
+        include ./test.js
+
+
+    div(class=["dateInput"])
+        p()
+            label() Select first date
+                input(type="text" name="first_date" class="first-datepicker")
+        p()
+            label() Select second date
+                input(type="text" name="second_date" class="second-datepicker")

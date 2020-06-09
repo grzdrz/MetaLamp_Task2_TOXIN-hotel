@@ -80,6 +80,20 @@ module.exports = {
                 ]
             },
             {
+                test: /\.css$/,
+                loaders: [
+                    {
+                        loader: "style-loader"
+                    },
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                    },
+                    {
+                        loader: "css-loader",
+                    },
+                ]
+            },
+            {
                 test: /\.ttf$/,
                 loader: 'file-loader',
                 options: {

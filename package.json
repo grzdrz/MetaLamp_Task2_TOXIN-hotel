@@ -28,6 +28,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "html-webpack-externals-plugin": "^3.8.0",
     "jquery": "^3.5.1"
   }

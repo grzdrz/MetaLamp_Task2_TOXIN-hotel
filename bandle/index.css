@@ -1155,6 +1155,12 @@ body {
     color: rgba(31, 32, 65, 0.75);
     width: 240px; }
 
+.first-datepicker,
+.second-datepicker {
+  padding: 4px 6px;
+  border: 1px solid #ddd;
+  border-radius: 3px; }
+
 .globalLogo {
   margin-bottom: 65px; }
 
