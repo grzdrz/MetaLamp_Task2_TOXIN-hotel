@@ -1,9 +1,9 @@
-.formElements{
-    & > div:nth-child(n + 1){
+.formElements {
+    & > div:nth-child(n + 1) {
         margin-bottom: 20px;
         margin-left: 141px;
     }
-    padding-bottom: 100px;
+    padding-bottom: 300px;
 }
 
 @import "../GlobalLogo/GlobalLogo.scss";
@@ -17,6 +17,6 @@
 @import "../FormElements.BulletList/BulletList.scss";
 @import "../FormElements.DateInput/DateInput.scss";
 
-.globalLogo{
+.globalLogo {
     margin-bottom: 65px;
 }
