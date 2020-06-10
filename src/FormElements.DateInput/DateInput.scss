@@ -2,6 +2,13 @@
   display: flex;
   flex-direction: row;
 
+  &_dropdown,
+  &_simple {
+    .dateInput__datepickerLabel {
+      width: 266px;
+    }
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -26,6 +33,7 @@
   &__datepickerLabel {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;

@@ -1,13 +1,28 @@
-mixin getDateInput(options, classes)
+mixin getDateInput(inputType, options, classes)
 
-    div(class=["dateInput"])
-        div(class=["dateInput__container"])
-            p(class=["dateInput__title"]) прибытие
-            label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"])
-                input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"] type="text" name="first_date" readonly=true)
-                p(class=["dateInput__datepickerArrow", "dateInput__datepickerLabel_first"]) expand_more
-        div(class=["dateInput__container"])
-            p(class=["dateInput__title"]) выезд
-            label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_second"])
-                input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_second"] type="text" name="second_date" readonly=true)
-                p(class=["dateInput__datepickerArrow", "dateInput__datepickerLabel_second"]) expand_more
+    - if(inputType === "double")
+        div(class=["dateInput dateInput_double"])
+            div(class=["dateInput__container"])
+                p(class=["dateInput__title"])= options.firstTitle
+                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"])
+                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"] type="text" name="first_date" readonly=true)
+                    p(class=["dateInput__datepickerArrow", "dateInput__datepickerLabel_first"]) expand_more
+            div(class=["dateInput__container"])
+                p(class=["dateInput__title"])= options.secondTitle
+                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_second"])
+                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_second"] type="text" name="second_date" readonly=true)
+                    p(class=["dateInput__datepickerArrow", "dateInput__datepickerLabel_second"]) expand_more
+    - else if(inputType === "dropdown")
+        div(class=["dateInput dateInput_dropdown"])
+            div(class=["dateInput__container"])
+                p(class=["dateInput__title"])= options.title
+                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"])
+                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"] type="text" name="first_date" readonly=true)
+                    p(class=["dateInput__datepickerArrow", "dateInput__datepickerLabel_first"]) expand_more
+    - else if(inputType === "simple")
+        div(class=["dateInput dateInput_simple"])
+            div(class=["dateInput__container"])
+                p(class=["dateInput__title"])= options.title
+                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"])
+                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"] type="text" name="first_date" readonly=true)
+                    p(class=["dateInput__datepickerArrow", "dateInput__datepickerLabel_first"]) expand_more                    

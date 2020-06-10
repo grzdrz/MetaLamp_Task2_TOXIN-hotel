@@ -183,4 +183,13 @@ html
 
 
             include ../FormElements.DateInput/DateInput.pug
-            +getDateInput()
+            +getDateInput("double", {
+                firstTitle: "выезд",
+                secondTitle: "прибытие",
+            })
+            +getDateInput("dropdown", {
+                title: "dropdown",
+            })
+            +getDateInput("simple", {
+                title: "simple",
+            })

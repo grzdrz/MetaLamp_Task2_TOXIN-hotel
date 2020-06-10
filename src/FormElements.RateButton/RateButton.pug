@@ -1,7 +1,6 @@
 mixin getRateButton(options, classArray)
-    - let i = 1;
     div(class=["ratingRadio"])
-        while i <= 5
+        - for(let i=1; i <= 5; i++)
             label(class=["ratingRadio__label"] title="Оценка «" + i + "»" data-index-number= i)
                 input(type="radio" 
                     class=["ratingRadio__input", "ratingRadio__input_unchecked"] 
@@ -9,4 +8,3 @@ mixin getRateButton(options, classArray)
                     value= i 
                     data-index-number= i)
                 p(class=["ratingRadio__text"] data-index-number= i)= "star" 
-            - i++;

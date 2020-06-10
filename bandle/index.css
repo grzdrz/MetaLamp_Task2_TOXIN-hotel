@@ -885,10 +885,16 @@ body {
     grid-template-rows: max-content;
     position: relative; }
   .ratingRadio__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 24px;
     height: 24px;
     position: relative; }
   .ratingRadio__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 24px;
     height: 24px;
     position: absolute;
@@ -898,26 +904,33 @@ body {
       content: ""; }
     .ratingRadio__input_unchecked + p::before {
       position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      content: "star";
       font-family: Material Icons;
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
-      line-height: 14px;
-      padding: 5px 0px 0px 5px;
+      font-size: 58%;
       border: 0px solid transparent;
-      content: "star";
       background: white;
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent; }
   .ratingRadio__text {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    width: 24px;
+    height: 24px;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 24px;
     border: 0px solid transparent;
     background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
     -webkit-background-clip: text;
@@ -1158,6 +1171,8 @@ body {
 .dateInput {
   display: flex;
   flex-direction: row; }
+  .dateInput_dropdown .dateInput__datepickerLabel, .dateInput_simple .dateInput__datepickerLabel {
+    width: 266px; }
   .dateInput__container {
     display: flex;
     flex-direction: column; }
@@ -1175,6 +1190,7 @@ body {
   .dateInput__datepickerLabel {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
@@ -1258,10 +1274,11 @@ body {
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 4px; }
-  .datepicker.-bottom-right-.active {
+  border-radius: 4px;
+  width: max-content; }
+  .datepicker.-bottom-right-, .datepicker.-bottom-right-.active {
     margin-left: -28px; }
-  .datepicker.-bottom-left-.active {
+  .datepicker.-bottom-left-, .datepicker.-bottom-left-.active {
     margin-left: -2px; }
   .datepicker.active {
     width: max-content; }

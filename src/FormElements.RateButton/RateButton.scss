@@ -5,6 +5,7 @@
     position: relative;
     width: max-content;
 
+    $size: 24px;
     &__starContainer {
         display: grid;
         grid-template-columns: max-content;
@@ -13,14 +14,22 @@
     }
 
     &__label {
-        width: 24px;
-        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: $size;
+        height: $size;
         position: relative;
     }
 
     &__input {
-        width: 24px;
-        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: $size;
+        height: $size;
         position: absolute;
         opacity: 0;
         z-index: -1;
@@ -32,15 +41,20 @@
         &_unchecked {
             & + p::before {
                 position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: $size;
+                height: $size;
+
+                content: "star";
                 font-family: Material Icons;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 14px;
-                line-height: 14px;
-                padding: 5px 0px 0px 5px;
+                font-size: 58%;
                 border: 0px solid transparent;
-                content: "star";
-                background: rgba(255, 255, 255, 1);
+
+                background: white;
                 -webkit-background-clip: text;
                 -moz-background-clip: text;
                 background-clip: text;
@@ -50,12 +64,17 @@
     }
 
     &__text {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
+        width: $size;
+        height: $size;
+
         font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
-        font-size: 24px;
-        line-height: 24px;
+        font-size: $size;
         border: 0px solid transparent;
 
         background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
