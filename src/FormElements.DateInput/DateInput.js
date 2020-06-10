@@ -51,9 +51,13 @@ export function setDateInputScript() {
         }).data('datepicker');
 
         let secondDatepicker = secondDateInput.datepicker({
-            minDate: new Date(),
+            /* todayButton: true,
+            clearButton: true, */
             range: true,
             position: 'bottom right',
+            navTitles: {
+                days: 'MM yyyy',
+            },
             onShow: function (dp, animationCompleted) {
                 if (!animationCompleted) {
                     if (!dp.$datepicker.find('.dateInput__buttons').html()) {
@@ -69,6 +73,8 @@ export function setDateInputScript() {
                         dp.$datepicker.find('.dateInput__applyButton').click(function (event) {
                             dp.hide();
                         });
+
+                        dp.$datepicker.find('.datepicker--pointer').css("display", "none");
                     }
                 }
             },
