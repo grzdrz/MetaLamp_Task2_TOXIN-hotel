@@ -1188,15 +1188,14 @@ body {
     color: #1f2041;
     margin-bottom: 6px; }
   .dateInput__datepickerLabel {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 44px;
+    grid-template-rows: 44px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
     width: 150px; }
   .dateInput__datepickerInput {
-    width: 110px;
     padding: 0px 0px 0px 15px;
     height: 44px;
     outline: none;
@@ -1238,8 +1237,6 @@ body {
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-    display: flex;
-    align-items: center;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     display: flex;
@@ -1372,7 +1369,11 @@ body {
     .datepicker--cell-month, .datepicker--cell-year {
       width: 70px;
       height: 70px; }
-      .datepicker--cell-month.-current-, .datepicker--cell-month.-selected-.-current-, .datepicker--cell-year.-current-, .datepicker--cell-year.-selected-.-current- {
+      .datepicker--cell-month.-current-, .datepicker--cell-year.-current- {
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        color: white;
+        border-radius: 50%; }
+      .datepicker--cell-month.-selected-, .datepicker--cell-month.-selected-.-current-, .datepicker--cell-year.-selected-, .datepicker--cell-year.-selected-.-current- {
         background: linear-gradient(to bottom, #bb9cff, #8ba4f9);
         color: white;
         border-radius: 50%; }

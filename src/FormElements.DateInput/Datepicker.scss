@@ -144,7 +144,12 @@
             width: 70px;
             height: 70px;
 
-            &.-current-,
+            &.-current- {
+                background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+                color: white;
+                border-radius: 50%;
+            }
+            &.-selected-,
             &.-selected-.-current- {
                 background: linear-gradient(to bottom, rgba(187, 156, 255, 1), rgba(139, 164, 249, 1));
                 color: white;

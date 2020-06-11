@@ -31,9 +31,9 @@
   }
 
   &__datepickerLabel {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 44px;
+    grid-template-rows: 44px;
 
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
@@ -42,7 +42,6 @@
   }
 
   &__datepickerInput {
-    width: 110px;
     padding: 0px 0px 0px 15px;
     height: 44px;
     outline: none;
@@ -91,8 +90,6 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-    display: flex;
-    align-items: center;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
 

@@ -1,4 +1,7 @@
-const dateFormatOptions = { year: "numeric", month: "2-digit", day: "2-digit", };
+const dateFormatOptions1 = { year: "numeric", month: "2-digit", day: "2-digit", };
+const dateFormatOptions2 = {
+    month: "short", day: "2-digit",
+};
 
 export function setDateInputScript() {
     $(function () {
@@ -35,13 +38,14 @@ export function setDateInputScript() {
                     }
                 },
                 onSelect: function (formattedDate, date, inst) {
-                    secondDatepicker.clear();//чистим соседний датапикер
                     if (firstDatepicker.selectedDates[0]) {
-                        let firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptions).format(firstDatepicker.selectedDates[0]);
+                        let firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1)
+                            .format(firstDatepicker.selectedDates[0]);
                         firstDateInput.prop("value", firstFormattedDate);
                     }
                     if (firstDatepicker.selectedDates[1]) {
-                        let secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptions).format(firstDatepicker.selectedDates[1]);
+                        let secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1)
+                            .format(firstDatepicker.selectedDates[1]);
                         secondDateInput.prop("value", secondFormattedDate);
                     }
                     else {
@@ -52,7 +56,7 @@ export function setDateInputScript() {
             }).data('datepicker');
 
 
-        let dropdownDateInput = $('.dateInput_dropdown .dateInput__datepickerInput_first');
+        let dropdownDateInput = $('.dateInput_dropdown .dateInput__datepickerInput');
         let dropdownDatepicker;
         if (dropdownDateInput)
             dropdownDatepicker = dropdownDateInput.datepicker({
@@ -81,10 +85,26 @@ export function setDateInputScript() {
                         }
                     }
                 },
+                onSelect: function (formattedDate, date, inst) {
+                    if (dropdownDatepicker.selectedDates[0] && dropdownDatepicker.selectedDates[1]) {
+                        let formattedDate1 = (new Intl.DateTimeFormat("ru-RU", dateFormatOptions2)
+                            .format(dropdownDatepicker.selectedDates[0]))
+                            .toString();
+                        formattedDate1 = formattedDate1.slice(0, formattedDate1.length - 1);    
+                        let formattedDate2 = (new Intl.DateTimeFormat("ru-RU", dateFormatOptions2)
+                            .format(dropdownDatepicker.selectedDates[1]))
+                            .toString();
+                        formattedDate2 = formattedDate2.slice(0, formattedDate2.length - 1);    
+                        dropdownDateInput.prop("value", formattedDate1 + " - " + formattedDate2);
+                    }
+                    else {
+                        dropdownDateInput.prop("value", "");
+                    }
+                },
             }).data('datepicker');
 
 
-        let simpleDateInput = $('.dateInput_simple .dateInput__datepickerInput_first');
+        let simpleDateInput = $('.dateInput_simple .dateInput__datepickerInput');
         let simpleDatepicker;
         if (simpleDateInput)
             simpleDatepicker = simpleDateInput.datepicker({
