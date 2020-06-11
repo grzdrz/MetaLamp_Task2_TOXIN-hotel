@@ -1,0 +1,9 @@
+mixin getLikeButton(options, classes)
+
+    - if(options.hasTitle)
+        p(class=["likeButton__title"])
+    div(class=["likeButton"])
+        input(class=["likeButton__input"] type="checkbox" checked=options.isChecked)
+        label(class=["likeButton__label"])
+            p(class=["likeButton__buttonLikeSymbol"])
+            p(class=["likeButton__buttonLikesNumber"])= options.number

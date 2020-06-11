@@ -193,3 +193,55 @@ html
             +getDateInput("simple", {
                 title: "simple",
             })
+
+
+            include ../FormElements.LikeButton/LikeButton.pug
+            +getLikeButton({
+                hasTitle: true,
+                number: 2,
+                isChecked: false,
+            })
+            +getLikeButton({
+                hasTitle: true,
+                number: 3,
+                isChecked: true,
+            })
+
+
+            include ../FormElements.RoomDetails/RoomDetails.pug
+            +getRoomDetails([
+                {icon: "insert_emoticon", titleText: "Комфорт", mainText: "Шумопоглощающие стены",},
+                {icon: "location_city", titleText: "Удобство", mainText: "Окно в каждой из спален",},
+                {icon: "whatshot", titleText: "Уют", mainText: "Номер оснащён камином",},
+            ])
+
+
+            include ../FormElements.GuestRoomReviews/GuestRoomReviews.pug
+            +getGuestRoomReviews([
+                {
+                    imgSrc: "./src/FormElements.GuestRoomReviews/img/image1.png",
+                    fullName: "Мурад Сарафанов",
+                    numberOfDaysSinceComment: "5 дней назад",
+                    likeButtonOptions: {
+                        hasTitle: false,
+                        number: 12,
+                        isChecked: true,
+                    },
+                    comment: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий." +
+                        "И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто" +
+                        "не жаловался из соседей.",
+                },
+                {
+                    imgSrc: "./src/FormElements.GuestRoomReviews/img/image2.png",
+                    fullName: "Патрисия Стёклышкова",
+                    numberOfDaysSinceComment: "Неделю назад",
+                    likeButtonOptions: {
+                        hasTitle: false,
+                        number: 2,
+                        isChecked: false,
+                    },
+                    comment: "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать," +
+                        "каждый день новое блюдо и десерт как комплимент", 
+                },                
+            ])
+//-"../FormElements.GuestRoomReviews/img/image1.png"            

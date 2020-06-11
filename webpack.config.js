@@ -58,6 +58,7 @@ module.exports = {
                 test: /\.pug$/,
                 loaders: [
                     {
+                        loader: "apply-loader",
                         loader: "pug-loader"
                     },
                 ]
@@ -80,20 +81,6 @@ module.exports = {
                 ]
             },
             {
-                test: /\.css$/,
-                loaders: [
-                    {
-                        loader: "style-loader"
-                    },
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                    },
-                    {
-                        loader: "css-loader",
-                    },
-                ]
-            },
-            {
                 test: /\.ttf$/,
                 loader: 'file-loader',
                 options: {
@@ -101,19 +88,12 @@ module.exports = {
                 }
             },
             {
-                test: /\.(eot|woff|woff2)$/,
+                test: /\.(eot|woff|woff2|svg|png)$/,
                 loader: 'file-loader',
                 options: {
                     name: '[path][name].[ext]',
                 }
             },
-            {
-                test: /\.svg$/,
-                loader: 'file-loader',
-                options: {
-                    name: '[path][name].[ext]',
-                }
-            }
         ]
     },
 }

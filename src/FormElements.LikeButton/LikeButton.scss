@@ -1,0 +1,110 @@
+.likeButton {
+    width: max-content;
+
+    $buttonHeight: 20px;
+    $buttonWidth: 40px;
+    $buttonTexSidetPaddings: 22px;
+    $borderRadius: 22px;
+    $borderThickness: 2px;
+
+    &__title {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1f2041;
+
+        margin-bottom: 6px;
+    }
+
+    &__label {
+        color: #ffffff;
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: $buttonWidth;
+        grid-template-rows: auto;
+        align-items: center;
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+        height: $buttonHeight;
+        border-radius: $borderRadius;
+
+        outline: none;
+
+        position: relative;
+
+        width: $buttonWidth;
+
+        z-index: -1;
+    }
+    &__buttonLikesNumber {
+        font-family: MontserratRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+
+        background: #ffffff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding-left: $buttonTexSidetPaddings - $borderThickness;
+        margin: $borderThickness;
+        border-radius: $borderRadius;
+        height: $buttonHeight - $borderThickness * 2;
+    }
+
+    &__input {
+        position: absolute;
+
+        width: $buttonWidth;
+        height: $buttonHeight;
+        opacity: 0;
+
+        &:checked + label > p {
+            color: #bc9cff;
+        }
+        &:not(:checked) + label > p {
+            color: rgba(31, 32, 65, 0.25);
+        }
+        &:checked + label {
+            background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+        }
+        &:not(:checked) + label {
+            background: rgba(31, 32, 65, 0.25);
+        }
+        &:checked + label > .likeButton__buttonLikeSymbol::after {
+            content: "favorite";
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &:not(:checked) + label > .likeButton__buttonLikeSymbol::after {
+            content: "favorite_border";
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0px solid transparent;
+        }
+    }
+
+    &__buttonLikeSymbol {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $buttonHeight;
+        height: $buttonHeight;
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}

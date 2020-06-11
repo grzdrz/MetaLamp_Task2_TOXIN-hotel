@@ -1,5 +1,7 @@
 import "./index.scss";
 
+require.context('./', true, /\.(png|svg|jpg)$/);
+
 
 import jQueryTest from 'jquery';
 const $ = jQueryTest;

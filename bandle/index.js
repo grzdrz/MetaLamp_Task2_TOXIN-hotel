@@ -198,6 +198,17 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
+/***/ "./src sync recursive \\.(png|svg|jpg)$":
+/*!***********************************!*\
+  !*** ./src sync \.(png|svg|jpg)$ ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./FormElements.CheckboxList/img/checkMark.svg\": \"./src/FormElements.CheckboxList/img/checkMark.svg\",\n\t\"./FormElements.GuestRoomReviews/img/image1.png\": \"./src/FormElements.GuestRoomReviews/img/image1.png\",\n\t\"./FormElements.GuestRoomReviews/img/image2.png\": \"./src/FormElements.GuestRoomReviews/img/image2.png\",\n\t\"./FormElements.GuestRoomReviews/img/logo.svg\": \"./src/FormElements.GuestRoomReviews/img/logo.svg\",\n\t\"./FormElements.RadioButton/img/circle.svg\": \"./src/FormElements.RadioButton/img/circle.svg\",\n\t\"./FormElements.RadioButton/img/circleGrey.svg\": \"./src/FormElements.RadioButton/img/circleGrey.svg\",\n\t\"./GlobalLogo/img/logo.svg\": \"./src/GlobalLogo/img/logo.svg\",\n\t\"./HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/facebookIcon.svg\": \"./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/facebookIcon.svg\",\n\t\"./HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/instagramIcon.svg\": \"./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/instagramIcon.svg\",\n\t\"./HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/instagramIcon2.svg\": \"./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/instagramIcon2.svg\",\n\t\"./HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/twitterIcon.svg\": \"./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/twitterIcon.svg\",\n\t\"./HeadersAndFooters.LogoColored/img/TOXIN.svg\": \"./src/HeadersAndFooters.LogoColored/img/TOXIN.svg\",\n\t\"./HeadersAndFooters.LogoColored/img/logoColored.svg\": \"./src/HeadersAndFooters.LogoColored/img/logoColored.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg)$?");
+
+/***/ }),
+
 /***/ "./src/FormElements.CheckboxList/ExpandableCheckboxList.js":
 /*!*****************************************************************!*\
   !*** ./src/FormElements.CheckboxList/ExpandableCheckboxList.js ***!
@@ -207,6 +218,18 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"expandableCheckboxListScript\", function() { return expandableCheckboxListScript; });\nfunction expandableCheckboxListScript() {\r\n    let expandableCheckboxLists = document.querySelectorAll(\".checkboxList_expandable\");\r\n    expandableCheckboxLists.forEach(e => {\r\n        let dropdownButton = e.querySelector(\".checkboxList__title\");\r\n        dropdownButton.onclick = expandCheckboxList;\r\n\r\n        expandCheckboxList({ currentTarget: dropdownButton, });\r\n    });\r\n\r\n    function expandCheckboxList(event) {\r\n        let list = event.currentTarget.parentElement.querySelector(\".checkboxList__list\");\r\n        if (list.dataset.isOpened === \"true\") {\r\n            list.style.display = \"none\";\r\n            list.dataset.isOpened = \"false\";\r\n            event.currentTarget.querySelector(\".checkboxList__dropdownButton\").style.transform = \"rotate(180deg)\";\r\n        }\r\n        else {\r\n            list.style.display = \"grid\";\r\n            list.dataset.isOpened = \"true\";\r\n            event.currentTarget.querySelector(\".checkboxList__dropdownButton\").style.transform = \"none\";\r\n        }\r\n    }\r\n}\n\n//# sourceURL=webpack:///./src/FormElements.CheckboxList/ExpandableCheckboxList.js?");
+
+/***/ }),
+
+/***/ "./src/FormElements.CheckboxList/img/checkMark.svg":
+/*!*********************************************************!*\
+  !*** ./src/FormElements.CheckboxList/img/checkMark.svg ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/FormElements.CheckboxList/img/checkMark.svg\");\n\n//# sourceURL=webpack:///./src/FormElements.CheckboxList/img/checkMark.svg?");
 
 /***/ }),
 
@@ -234,6 +257,42 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/FormElements.GuestRoomReviews/img/image1.png":
+/*!**********************************************************!*\
+  !*** ./src/FormElements.GuestRoomReviews/img/image1.png ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/FormElements.GuestRoomReviews/img/image1.png\");\n\n//# sourceURL=webpack:///./src/FormElements.GuestRoomReviews/img/image1.png?");
+
+/***/ }),
+
+/***/ "./src/FormElements.GuestRoomReviews/img/image2.png":
+/*!**********************************************************!*\
+  !*** ./src/FormElements.GuestRoomReviews/img/image2.png ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/FormElements.GuestRoomReviews/img/image2.png\");\n\n//# sourceURL=webpack:///./src/FormElements.GuestRoomReviews/img/image2.png?");
+
+/***/ }),
+
+/***/ "./src/FormElements.GuestRoomReviews/img/logo.svg":
+/*!********************************************************!*\
+  !*** ./src/FormElements.GuestRoomReviews/img/logo.svg ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/FormElements.GuestRoomReviews/img/logo.svg\");\n\n//# sourceURL=webpack:///./src/FormElements.GuestRoomReviews/img/logo.svg?");
+
+/***/ }),
+
 /***/ "./src/FormElements.Pagination/Pagination.js":
 /*!***************************************************!*\
   !*** ./src/FormElements.Pagination/Pagination.js ***!
@@ -254,6 +313,30 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (curPageNumber, pagesCount) {pug_mixins[\"getPagination\"] = pug_interp = function(pagesCount, curPageNumber, options, classes){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\nlet containerClasses = [];\nif (classes) {\nclasses.containerClasses ? containerClasses = containerClasses.concat(classes.containerClasses) : [];\n}\nif (options.title) {\npug_html = pug_html + \"\\u003Cp class=\\\"pagination__title\\\"\\u003E\" + (pug.escape(null == (pug_interp = options.title) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\";\n}\npug_html = pug_html + \"\\u003Cdiv\" + (\" class=\\\"pagination__pageList\\\"\"+pug.attr(\"data-cur-page-number\", curPageNumber, true, true)) + \"\\u003E\";\nif (curPageNumber !== 1) {\npug_html = pug_html + \"\\u003Ca class=\\\"pagination__leftArrow\\\" href=\\\"#\\\"\\u003E\\u003Cp class=\\\"pagination__leftArrowText\\\"\\u003Earrow_forward\\u003C\\u002Fp\\u003E\\u003C\\u002Fa\\u003E\\u003Ca class=\\\"pagination__pageLink\\\" href=\\\"#\\\"\\u003E\\u003Cp class=\\\"pagination__pageLinkText\\\"\\u003E\" + (pug.escape(null == (pug_interp = 1) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003C\\u002Fa\\u003E\";\n}\nif (curPageNumber - 3 > 1) {\npug_html = pug_html + \"\\u003Ca class=\\\"pagination__pageLink\\\"\\u003E\\u003Cp class=\\\"pagination__pageLinkText\\\"\\u003E\" + (pug.escape(null == (pug_interp = \"...\") ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003C\\u002Fa\\u003E\";\n}\nif (curPageNumber - 2 > 1) {\npug_html = pug_html + \"\\u003Ca class=\\\"pagination__pageLink\\\" href=\\\"#\\\"\\u003E\\u003Cp class=\\\"pagination__pageLinkText\\\"\\u003E\" + (pug.escape(null == (pug_interp = curPageNumber - 2) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003C\\u002Fa\\u003E\";\n}\nif (curPageNumber - 1 > 1) {\npug_html = pug_html + \"\\u003Ca class=\\\"pagination__pageLink\\\" href=\\\"#\\\"\\u003E\\u003Cp class=\\\"pagination__pageLinkText\\\"\\u003E\" + (pug.escape(null == (pug_interp = curPageNumber - 1) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003C\\u002Fa\\u003E\";\n}\npug_html = pug_html + \"\\u003Ca class=\\\"pagination__pageLink pagination__pageLink_target\\\" href=\\\"#\\\"\\u003E\\u003Cp class=\\\"pagination__pageLinkText\\\"\\u003E\" + (pug.escape(null == (pug_interp = curPageNumber) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003C\\u002Fa\\u003E\";\nif (curPageNumber + 1 < pagesCount) {\npug_html = pug_html + \"\\u003Ca class=\\\"pagination__pageLink\\\" href=\\\"#\\\"\\u003E\\u003Cp class=\\\"pagination__pageLinkText\\\"\\u003E\" + (pug.escape(null == (pug_interp = curPageNumber + 1) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003C\\u002Fa\\u003E\";\n}\nif (curPageNumber + 2 < pagesCount) {\npug_html = pug_html + \"\\u003Ca class=\\\"pagination__pageLink\\\" href=\\\"#\\\"\\u003E\\u003Cp class=\\\"pagination__pageLinkText\\\"\\u003E\" + (pug.escape(null == (pug_interp = curPageNumber + 2) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003C\\u002Fa\\u003E\";\n}\nif (curPageNumber + 3 < pagesCount) {\npug_html = pug_html + \"\\u003Ca class=\\\"pagination__pageLink\\\"\\u003E\\u003Cp class=\\\"pagination__pageLinkText\\\"\\u003E\" + (pug.escape(null == (pug_interp = \"...\") ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003C\\u002Fa\\u003E\";\n}\nif (curPageNumber !== pagesCount) {\npug_html = pug_html + \"\\u003Ca class=\\\"pagination__pageLink\\\" href=\\\"#\\\"\\u003E\\u003Cp class=\\\"pagination__pageLinkText\\\"\\u003E\" + (pug.escape(null == (pug_interp = pagesCount) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003C\\u002Fa\\u003E\\u003Ca class=\\\"pagination__rightArrow\\\" href=\\\"#\\\"\\u003E\\u003Cp class=\\\"pagination__rightArrowText\\\"\\u003Earrow_forward\\u003C\\u002Fp\\u003E\\u003C\\u002Fa\\u003E\";\n}\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\";\nif (options.downText) {\npug_html = pug_html + \"\\u003Cp class=\\\"pagination__downText\\\"\\u003E\" + (pug.escape(null == (pug_interp = options.downText) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\";\n}\n};\npug_mixins[\"getPagination\"](pagesCount, curPageNumber, {\n    title: \"pagination\",\n    downText: \"1 – 12 из 100+ вариантов аренды\",\n});}.call(this,\"curPageNumber\" in locals_for_with?locals_for_with.curPageNumber:typeof curPageNumber!==\"undefined\"?curPageNumber:undefined,\"pagesCount\" in locals_for_with?locals_for_with.pagesCount:typeof pagesCount!==\"undefined\"?pagesCount:undefined));;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./src/FormElements.Pagination/paginationForJSRender.pug?");
+
+/***/ }),
+
+/***/ "./src/FormElements.RadioButton/img/circle.svg":
+/*!*****************************************************!*\
+  !*** ./src/FormElements.RadioButton/img/circle.svg ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/FormElements.RadioButton/img/circle.svg\");\n\n//# sourceURL=webpack:///./src/FormElements.RadioButton/img/circle.svg?");
+
+/***/ }),
+
+/***/ "./src/FormElements.RadioButton/img/circleGrey.svg":
+/*!*********************************************************!*\
+  !*** ./src/FormElements.RadioButton/img/circleGrey.svg ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/FormElements.RadioButton/img/circleGrey.svg\");\n\n//# sourceURL=webpack:///./src/FormElements.RadioButton/img/circleGrey.svg?");
 
 /***/ }),
 
@@ -281,6 +364,90 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/GlobalLogo/img/logo.svg":
+/*!*************************************!*\
+  !*** ./src/GlobalLogo/img/logo.svg ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/GlobalLogo/img/logo.svg\");\n\n//# sourceURL=webpack:///./src/GlobalLogo/img/logo.svg?");
+
+/***/ }),
+
+/***/ "./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/facebookIcon.svg":
+/*!**********************************************************************************************************!*\
+  !*** ./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/facebookIcon.svg ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/facebookIcon.svg\");\n\n//# sourceURL=webpack:///./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/facebookIcon.svg?");
+
+/***/ }),
+
+/***/ "./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/instagramIcon.svg":
+/*!***********************************************************************************************************!*\
+  !*** ./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/instagramIcon.svg ***!
+  \***********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/instagramIcon.svg\");\n\n//# sourceURL=webpack:///./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/instagramIcon.svg?");
+
+/***/ }),
+
+/***/ "./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/instagramIcon2.svg":
+/*!************************************************************************************************************!*\
+  !*** ./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/instagramIcon2.svg ***!
+  \************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/instagramIcon2.svg\");\n\n//# sourceURL=webpack:///./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/instagramIcon2.svg?");
+
+/***/ }),
+
+/***/ "./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/twitterIcon.svg":
+/*!*********************************************************************************************************!*\
+  !*** ./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/twitterIcon.svg ***!
+  \*********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/twitterIcon.svg\");\n\n//# sourceURL=webpack:///./src/HeadersAndFooters.FooterWidgetsAndCopyrightBar/copyrightBar/socialMedia/img/twitterIcon.svg?");
+
+/***/ }),
+
+/***/ "./src/HeadersAndFooters.LogoColored/img/TOXIN.svg":
+/*!*********************************************************!*\
+  !*** ./src/HeadersAndFooters.LogoColored/img/TOXIN.svg ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/HeadersAndFooters.LogoColored/img/TOXIN.svg\");\n\n//# sourceURL=webpack:///./src/HeadersAndFooters.LogoColored/img/TOXIN.svg?");
+
+/***/ }),
+
+/***/ "./src/HeadersAndFooters.LogoColored/img/logoColored.svg":
+/*!***************************************************************!*\
+  !*** ./src/HeadersAndFooters.LogoColored/img/logoColored.svg ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/HeadersAndFooters.LogoColored/img/logoColored.svg\");\n\n//# sourceURL=webpack:///./src/HeadersAndFooters.LogoColored/img/logoColored.svg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -289,7 +456,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _FormElements_FormInput_Dropdown_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./FormElements.FormInput/Dropdown.js */ \"./src/FormElements.FormInput/Dropdown.js\");\n/* harmony import */ var _FormElements_CheckboxList_ExpandableCheckboxList_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./FormElements.CheckboxList/ExpandableCheckboxList.js */ \"./src/FormElements.CheckboxList/ExpandableCheckboxList.js\");\n/* harmony import */ var _FormElements_RateButton_RateButton_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./FormElements.RateButton/RateButton.js */ \"./src/FormElements.RateButton/RateButton.js\");\n/* harmony import */ var _FormElements_Pagination_Pagination_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./FormElements.Pagination/Pagination.js */ \"./src/FormElements.Pagination/Pagination.js\");\n/* harmony import */ var _FormElements_RangeSlider_RangeSlider_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./FormElements.RangeSlider/RangeSlider.js */ \"./src/FormElements.RangeSlider/RangeSlider.js\");\n/* harmony import */ var _FormElements_DateInput_DateInput_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./FormElements.DateInput/DateInput.js */ \"./src/FormElements.DateInput/DateInput.js\");\n\r\n\r\n\r\n\r\nconst $ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;\r\nglobal.jQuery = $;\r\nglobal.$ = $;\r\n\r\n\r\n\r\n/* import \"./jquery-rate-picker.js\";  */\r\n/* import \"./test.js\"; */\r\n\r\n//dropdown\r\n\r\nObject(_FormElements_FormInput_Dropdown_js__WEBPACK_IMPORTED_MODULE_3__[\"dropdownScript\"])();\r\n\r\n//dropdown\r\n\r\nObject(_FormElements_CheckboxList_ExpandableCheckboxList_js__WEBPACK_IMPORTED_MODULE_4__[\"expandableCheckboxListScript\"])();\r\n\r\n//rate button\r\n\r\nObject(_FormElements_RateButton_RateButton_js__WEBPACK_IMPORTED_MODULE_5__[\"rateButtonScript\"])();\r\n\r\n\r\n//pagination\r\n\r\nObject(_FormElements_Pagination_Pagination_js__WEBPACK_IMPORTED_MODULE_6__[\"paginationScript\"])();\r\n\r\n\r\n//rangeSlider\r\n\r\nObject(_FormElements_RangeSlider_RangeSlider_js__WEBPACK_IMPORTED_MODULE_7__[\"rangeSliderScript\"])();\r\n\r\n\r\n\r\nObject(_FormElements_DateInput_DateInput_js__WEBPACK_IMPORTED_MODULE_8__[\"setDateInputScript\"])();\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _FormElements_FormInput_Dropdown_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./FormElements.FormInput/Dropdown.js */ \"./src/FormElements.FormInput/Dropdown.js\");\n/* harmony import */ var _FormElements_CheckboxList_ExpandableCheckboxList_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./FormElements.CheckboxList/ExpandableCheckboxList.js */ \"./src/FormElements.CheckboxList/ExpandableCheckboxList.js\");\n/* harmony import */ var _FormElements_RateButton_RateButton_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./FormElements.RateButton/RateButton.js */ \"./src/FormElements.RateButton/RateButton.js\");\n/* harmony import */ var _FormElements_Pagination_Pagination_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./FormElements.Pagination/Pagination.js */ \"./src/FormElements.Pagination/Pagination.js\");\n/* harmony import */ var _FormElements_RangeSlider_RangeSlider_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./FormElements.RangeSlider/RangeSlider.js */ \"./src/FormElements.RangeSlider/RangeSlider.js\");\n/* harmony import */ var _FormElements_DateInput_DateInput_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./FormElements.DateInput/DateInput.js */ \"./src/FormElements.DateInput/DateInput.js\");\n\r\n\r\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\n\r\nconst $ = jquery__WEBPACK_IMPORTED_MODULE_1___default.a;\r\nglobal.jQuery = $;\r\nglobal.$ = $;\r\n\r\n\r\n\r\n/* import \"./jquery-rate-picker.js\";  */\r\n/* import \"./test.js\"; */\r\n\r\n//dropdown\r\n\r\nObject(_FormElements_FormInput_Dropdown_js__WEBPACK_IMPORTED_MODULE_3__[\"dropdownScript\"])();\r\n\r\n//dropdown\r\n\r\nObject(_FormElements_CheckboxList_ExpandableCheckboxList_js__WEBPACK_IMPORTED_MODULE_4__[\"expandableCheckboxListScript\"])();\r\n\r\n//rate button\r\n\r\nObject(_FormElements_RateButton_RateButton_js__WEBPACK_IMPORTED_MODULE_5__[\"rateButtonScript\"])();\r\n\r\n\r\n//pagination\r\n\r\nObject(_FormElements_Pagination_Pagination_js__WEBPACK_IMPORTED_MODULE_6__[\"paginationScript\"])();\r\n\r\n\r\n//rangeSlider\r\n\r\nObject(_FormElements_RangeSlider_RangeSlider_js__WEBPACK_IMPORTED_MODULE_7__[\"rangeSliderScript\"])();\r\n\r\n\r\n\r\nObject(_FormElements_DateInput_DateInput_js__WEBPACK_IMPORTED_MODULE_8__[\"setDateInputScript\"])();\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

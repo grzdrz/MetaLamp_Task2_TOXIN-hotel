@@ -1,5 +1,6 @@
 .formElements {
-    & > div:nth-child(n + 1) {
+    & > div:nth-child(n + 1),
+    & > label:nth-child(n + 1)  {
         margin-bottom: 20px;
         margin-left: 141px;
     }
@@ -16,6 +17,9 @@
 @import "../FormElements.RangeSlider/RangeSlider.scss";
 @import "../FormElements.BulletList/BulletList.scss";
 @import "../FormElements.DateInput/DateInput.scss";
+@import "../FormElements.LikeButton/LikeButton.scss";
+@import "../FormElements.RoomDetails/RoomDetails.scss";
+@import "../FormElements.GuestRoomReviews/GuestRoomReviews.scss";
 
 .globalLogo {
     margin-bottom: 65px;

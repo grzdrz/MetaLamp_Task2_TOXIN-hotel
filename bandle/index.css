@@ -459,7 +459,8 @@ body {
 
 .formElements {
   padding-bottom: 500px; }
-  .formElements > div:nth-child(n + 1) {
+  .formElements > div:nth-child(n + 1),
+  .formElements > label:nth-child(n + 1) {
     margin-bottom: 20px;
     margin-left: 141px; }
 
@@ -1463,6 +1464,212 @@ body {
       display: flex;
       justify-content: space-between;
       height: max-content; }
+
+.likeButton {
+  width: max-content; }
+  .likeButton__title {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 6px; }
+  .likeButton__label {
+    color: #ffffff;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 40px;
+    grid-template-rows: auto;
+    align-items: center;
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+    height: 20px;
+    border-radius: 22px;
+    outline: none;
+    position: relative;
+    width: 40px;
+    z-index: -1; }
+  .likeButton__buttonLikesNumber {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    background: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin: 2px;
+    border-radius: 22px;
+    height: 16px; }
+  .likeButton__input {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    opacity: 0; }
+    .likeButton__input:checked + label > p {
+      color: #bc9cff; }
+    .likeButton__input:not(:checked) + label > p {
+      color: rgba(31, 32, 65, 0.25); }
+    .likeButton__input:checked + label {
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+    .likeButton__input:not(:checked) + label {
+      background: rgba(31, 32, 65, 0.25); }
+    .likeButton__input:checked + label > .likeButton__buttonLikeSymbol::after {
+      content: "favorite";
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .likeButton__input:not(:checked) + label > .likeButton__buttonLikeSymbol::after {
+      content: "favorite_border";
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0px solid transparent; }
+  .likeButton__buttonLikeSymbol {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center; }
+
+.roomDetails {
+  display: flex;
+  flex-direction: column;
+  width: max-content; }
+  .roomDetails__bottomBorder {
+    width: 280px;
+    height: 1px;
+    background: rgba(31, 32, 65, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .roomDetails__bottomBorder:last-child {
+      margin-bottom: 0px; }
+  .roomDetails__container {
+    display: flex;
+    flex-direction: row; }
+  .roomDetails__icon {
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* -moz-background-clip: text;
+        background-clip: text; */
+    margin-right: 10px; }
+  .roomDetails__textContainer {
+    display: flex;
+    flex-direction: column; }
+  .roomDetails__titleText {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
+  .roomDetails__mainText {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
+
+.likeButton {
+  width: max-content; }
+  .likeButton__title {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 6px; }
+  .likeButton__label {
+    color: #ffffff;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 40px;
+    grid-template-rows: auto;
+    align-items: center;
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+    height: 20px;
+    border-radius: 22px;
+    outline: none;
+    position: relative;
+    width: 40px;
+    z-index: -1; }
+  .likeButton__buttonLikesNumber {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    background: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin: 2px;
+    border-radius: 22px;
+    height: 16px; }
+  .likeButton__input {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    opacity: 0; }
+    .likeButton__input:checked + label > p {
+      color: #bc9cff; }
+    .likeButton__input:not(:checked) + label > p {
+      color: rgba(31, 32, 65, 0.25); }
+    .likeButton__input:checked + label {
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+    .likeButton__input:not(:checked) + label {
+      background: rgba(31, 32, 65, 0.25); }
+    .likeButton__input:checked + label > .likeButton__buttonLikeSymbol::after {
+      content: "favorite";
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .likeButton__input:not(:checked) + label > .likeButton__buttonLikeSymbol::after {
+      content: "favorite_border";
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0px solid transparent; }
+  .likeButton__buttonLikeSymbol {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center; }
 
 .globalLogo {
   margin-bottom: 65px; }

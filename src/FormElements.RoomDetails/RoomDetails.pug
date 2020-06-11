@@ -1,0 +1,11 @@
+mixin getRoomDetails(detailsArray, options, classes)
+
+    div(class=["roomDetails"])
+        - for(let detail of detailsArray)
+            div(class=["roomDetails__container"])
+                p(class=["roomDetails__icon"])= detail.icon
+                div(class=["roomDetails__textContainer"])
+                    p(class=["roomDetails__titleText"])= detail.titleText
+                    p(class=["roomDetails__mainText"])= detail.mainText
+            div(class=["roomDetails__bottomBorder"])    
+
