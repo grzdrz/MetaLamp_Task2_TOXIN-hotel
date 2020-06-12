@@ -1,3 +1,5 @@
+@import "./index.scss";
+
 .colors {
     &__background {
         &_purpleToBlueGrad {
@@ -66,4 +68,9 @@
             color: white;
         }
     }
+}
+@import "./GlobalLogo/GlobalLogo.scss";
+@import "./ColorsAndType.ColorBlock/ColorBlock.scss";
+.globalLogo {
+    margin-bottom: 67px;
 }

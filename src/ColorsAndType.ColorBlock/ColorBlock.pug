@@ -1,0 +1,12 @@
+mixin getColorBlock(options, classes)
+    - let colorRectangleClasses = [];
+
+    - if(classes)
+        - classes.colorRectangleClasses ? colorRectangleClasses = colorRectangleClasses.concat(classes.colorRectangleClasses) : [];
+
+
+    div(class=["colors__colorContainer"])
+        div(class=["colors__colorRectangle"].concat(colorRectangleClasses))
+        div(class=["colors__textContainer"])
+            p(class=["colors__colorName"])= options.colorName
+            p(class=["colors__colorCode"])= options.colorCode

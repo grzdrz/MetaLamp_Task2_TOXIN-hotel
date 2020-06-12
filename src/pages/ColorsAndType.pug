@@ -1,0 +1,54 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title ColorsAndType
+        link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous")
+    body
+        include ../GlobalLogo/GlobalLogo.pug
+
+        include ../ColorsAndType.ColorBlock/ColorBlock.pug
+        .colors
+            div(class=["colors__colorsContainer"])
+                - for(let i = 100; i >= 25; i-=25)
+                    +getColorBlock({
+                        colorName: "Dark Shade " + i + "%",
+                        colorCode: "#1F2041",
+                    },
+                    {
+                        colorRectangleClasses: [
+                            "colors__background_darkShade" + i
+                        ]
+                    })
+
+                +getColorBlock({
+                    colorName: "Dark Shade 5%",
+                    colorCode: "#1F2041",
+                },
+                {
+                    colorRectangleClasses: [
+                        "colors__background_darkShade5"
+                    ]
+                })
+
+                +getColorBlock({
+                    colorName: "Purple",
+                    colorCode: "#BC9CFF",
+                },
+                {
+                    colorRectangleClasses: [
+                        "colors__background_purple"
+                    ]
+                })
+
+                +getColorBlock({
+                    colorName: "Green",
+                    colorCode: "#6FCF97",
+                },
+                {
+                    colorRectangleClasses: [
+                        "colors__background_green"
+                    ]
+                })                                
+

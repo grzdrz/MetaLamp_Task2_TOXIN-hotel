@@ -1,7 +1,6 @@
 @import "./index.scss";
 
 .headersAndFooters {
-    //блок
     display: flex;
     flex-direction: column;
     background: #f4f4f6;
@@ -22,6 +21,8 @@
 @import "./HeadersAndFooters.FooterCreative/FooterCreative.scss";
 
 @import "./HeadersAndFooters.LogoColored/logoColored.scss";
+
+@import "./ColorsAndType.scss";
 
 .globalLogo {
     margin-bottom: 72px;
