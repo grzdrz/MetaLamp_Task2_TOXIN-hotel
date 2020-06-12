@@ -1,10 +1,14 @@
 mixin getRateButton(options, classArray)
+
     div(class=["ratingRadio"])
-        - for(let i=1; i <= 5; i++)
-            label(class=["ratingRadio__label"] title="Оценка «" + i + "»" data-index-number= i)
-                input(type="radio" 
-                    class=["ratingRadio__input", "ratingRadio__input_unchecked"] 
-                    name="starRating" 
-                    value= i 
-                    data-index-number= i)
-                p(class=["ratingRadio__text"] data-index-number= i)= "star" 
+        - for(let i=4; i >= 0; i--)
+            input(type="radio"
+                class=["ratingRadio__input", "ratingRadio__input_" + (i + 1)]
+                name="starRating"
+                value=(i + 1)
+                checked=options.isCheckedArray[i])
+            p(class=["ratingRadio__label", "ratingRadio__label_" + (i + 1)] title="Оценка «" + (i + 1) + "»")
+
+//- i + 1 при диапазоне от 4 до 0 включительно для того чтобы массив isCheckedArray мог начинаться с 0го индекса
+//-если же просто i при диапазоне от 5 до 1 включительно, то в массиве isCheckedArray нужно будет не заполнять первый элемент
+//-(хотя 2ой вариант наверное тоже допустим)

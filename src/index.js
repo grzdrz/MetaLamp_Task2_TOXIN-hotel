@@ -21,10 +21,6 @@ dropdownScript();
 import { expandableCheckboxListScript } from "./FormElements.CheckboxList/ExpandableCheckboxList.js";
 expandableCheckboxListScript();
 
-//rate button
-import { rateButtonScript } from "./FormElements.RateButton/RateButton.js";
-rateButtonScript();
-
 
 //pagination
 import { paginationScript } from "./FormElements.Pagination/Pagination.js";

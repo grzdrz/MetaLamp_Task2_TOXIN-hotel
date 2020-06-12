@@ -1,86 +1,81 @@
 .ratingRadio {
-    display: grid;
-    grid-template-columns: max-content max-content max-content max-content max-content;
-    grid-template-rows: max-content;
-    position: relative;
-    width: max-content;
-
     $size: 24px;
-    &__starContainer {
-        display: grid;
-        grid-template-columns: max-content;
-        grid-template-rows: max-content;
-        position: relative;
+    position: relative;
+    display: flex;
+    width: 120px;
+    height: 24px;
+
+    &__input {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        opacity: 0;
+
+        @for $i from 1 through 5 {
+            &_#{$i} {
+                margin-left: 24px * ($i - 1);
+            }
+        }
+
+        & + p::before {
+            content: "star_border";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            font-family: Material Icons;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 20px;
+            color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:checked ~ p::after {
+            content: "star";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            font-family: Material Icons;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 20px;
+            color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 
     &__label {
         display: flex;
         justify-content: center;
         align-items: center;
-
-        width: $size;
-        height: $size;
-        position: relative;
-    }
-
-    &__input {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        width: $size;
-        height: $size;
+        width: 24px;
+        height: 24px;
         position: absolute;
-        opacity: 0;
         z-index: -1;
 
-        &:checked + p::before {
-            content: "";
-        }
-
-        &_unchecked {
-            & + p::before {
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: $size;
-                height: $size;
-
-                content: "star";
-                font-family: Material Icons;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 58%;
-                border: 0px solid transparent;
-
-                background: white;
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+        @for $i from 1 through 5 {
+            &_#{$i} {
+                margin-left: 24px * ($i - 1);
             }
         }
-    }
-
-    &__text {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        width: $size;
-        height: $size;
-
-        font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
-        font-size: $size;
-        border: 0px solid transparent;
-
-        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 }
