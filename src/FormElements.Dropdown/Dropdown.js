@@ -120,12 +120,11 @@ export function dropdownScript() {
             return sum + Number.parseInt(e.querySelector(".dropdown__dropedListItemHandlerText").textContent)
         }, 0);
 
-        //склонение слова гость по числу
         if (curDropdownContainer.className.match(/dropdown__input_sumNumber/i)) {
             curDropdownContainer
                 .parentElement
                 .querySelector(".dropdown__mainInput")
-                .value = sum + " " + doDeclensionOfWord(sum, );
+                .value = sum + " " + doDeclensionOfWord(sum, "гость");
         }
         else if (curDropdownContainer.className.match(/dropdown__input_listOfNumbers/i)) {
             let allItemsNames = Array.from(curDropdownContainer.querySelectorAll(".dropdown__dropedListItem"));
@@ -142,6 +141,7 @@ export function dropdownScript() {
         }
     }
 
+    //склонение слов
     function doDeclensionOfWord(number, word) {
         let words;
         if (word === "гость") words = ["гость", "гостя", "гостей"];
@@ -158,7 +158,7 @@ export function dropdownScript() {
             return words[2];
     }
 
-
+    
     function onClear(event) {
         event.currentTarget.style.display = "none";
 
@@ -172,7 +172,6 @@ export function dropdownScript() {
         });
     }
 
-    
     function onApply(event) {
         let inputContainer = queryParentElementByClass(event.currentTarget, "dropdown__input");
         let dropwdownList = inputContainer.querySelector(".dropdown__dropedList");

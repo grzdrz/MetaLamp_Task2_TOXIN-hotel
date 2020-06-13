@@ -2,10 +2,14 @@
     p SUBSCRIBE TO OUR NEWSLETTER
     p Receive our latest news and promotions in your inbox!
     form.footerWidgetsAndCopyrightBar__subscribeToOurNewsletterEmailForm
-        input(class=['footerWidgetsAndCopyrightBar__subscribeToOurNewsletterInput']
-            name="email" 
-            type="email" 
-            placeholder="Your email address")
-        input(class=['footerWidgetsAndCopyrightBar__subscribeToOurNewsletterSubmit']
-            type="submit"
-            value="arrow_forward")
+        include ../../../FormElements.FormInput/FormInput.pug
+        +getFormInput({
+            hasTitle: false,
+            titleTextTest: {
+                isTitleTextTestVisible: false,
+            },
+            placeholder: "Your email address",
+            name: "email",
+            type: "email",
+            value: "",
+            hasSubmitButton: true})

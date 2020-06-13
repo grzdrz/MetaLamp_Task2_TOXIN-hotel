@@ -13,6 +13,7 @@ html
 
             include ../FormElements.FormInput/FormInput.pug
             +getFormInput({
+                hasTitle: true,
                 titleText: "text field",
                 titleTextTest: {
                     isTitleTextTestVisible: true,
@@ -22,9 +23,10 @@ html
                 name: "email",
                 type: "email",
                 value: "",
-                isSubmitButton: false})
+                hasSubmitButton: false})
 
             +getFormInput({
+                hasTitle: true,
                 titleText: "text field",
                 titleTextTest: {
                     isTitleTextTestVisible: true,
@@ -34,7 +36,7 @@ html
                 name: "someText",
                 type: "text",
                 value: "This is pretty awesome",
-                isSubmitButton: false})    
+                hasSubmitButton: false})    
 
             include ../FormElements.Dropdown/Dropdown.pug
             +getDropdown({
@@ -47,13 +49,13 @@ html
                 name: "dropdown",
                 type: "text",
                 value: "Сколько гостей",
-                isSubmitButton: false,
                 dropdown: {
                     dropList: [
                         {name: "взрослые", value: 0},
                         {name: "дети", value: 0},
                         {name: "младенцы", value: 0}],         
                     typeOfShownInfo: "dropdown__input_sumNumber"},})
+                    
             +getDropdown({
                 titleText: "dropdown",
                 titleTextTest: {
@@ -64,7 +66,6 @@ html
                 name: "dropdown",
                 type: "text",
                 value: "Сколько комнат",
-                isSubmitButton: false,
                 hasApplyButton: true,
                 hasClearButton: true,
                 dropdown: {
@@ -73,6 +74,7 @@ html
                         {name: "кровати", value: 0},
                         {name: "ванные комнаты", value: 0}],
                     typeOfShownInfo: "dropdown__input_listOfNumbers"},})
+
 
             include ../FormElements.CheckboxList/CheckboxList.pug
             +getCheckbox("expandable", [
@@ -115,6 +117,7 @@ html
                     titleText: "Checkbox Buttons",
                 })                
 
+
             include ../FormElements.RadioButton/RadioButton.pug
             +getRadioButton("radio", [
                 {text: "Мужчина", isChecked: true},
@@ -130,10 +133,12 @@ html
                 title: "",
                 name: "specialOffer"})
 
+
             include ../FormElements.RateButton/RateButton.pug
             +getRateButton({
                 isCheckedArray: [false, false, true, false, false,]
             })
+
 
             include ../FormElements.ButtonDefault/ButtonDefault.pug
             +getButton("click me", {
@@ -147,6 +152,7 @@ html
                 hasArrow: true,
             })
 
+
             include ../FormElements.Pagination/Pagination.pug
             div(class=["pagination"])
                 +getPagination(20, 7, {
@@ -159,6 +165,7 @@ html
                     title: "pagination",
                     downText: "1 – 12 из 100+ вариантов аренды",
                 })
+
 
             include ../FormElements.RangeSlider/RangeSlider.pug
             +getRangeSlider("range slider", {

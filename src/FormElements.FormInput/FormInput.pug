@@ -1,10 +1,11 @@
 mixin getFormInput(options, classArray)
 
     div(class=["formInput"])
-        div(class=["formInput__title"])
-            p(class=["formInput__titleText"])= options.titleText
-            if options.titleTextTest.isTitleTextTestVisible
-                p(class=["formInput__titleTextTest"])= options.titleTextTest.value
+        - if(options.hasTitle)
+            div(class=["formInput__title"])
+                p(class=["formInput__titleText"])= options.titleText
+                if options.titleTextTest.isTitleTextTestVisible
+                    p(class=["formInput__titleTextTest"])= options.titleTextTest.value
 
         div(class=["formInput__input"])               
             input(class=["formInput__mainInput"],
@@ -12,7 +13,7 @@ mixin getFormInput(options, classArray)
                 name= options.name,
                 type= options.type,
                 value= options.value)
-            if options.isSubmitButton
+            if options.hasSubmitButton
                 input(class=['formInput__submitInput']
                     type="submit"
                     value="arrow_forward")

@@ -1,9 +1,9 @@
 const WebpackConfig = require("./webpackconfigBuilder");
 
 let fileNames = [
-    /* "HeadersAndFooters", */
+    "HeadersAndFooters",
     "FormElements",
-    "ColorsAndType"];
+    /* "ColorsAndType" */];
 
 module.exports = fileNames.map(fileName => {
     return new WebpackConfig(fileName, __dirname);

@@ -1,17 +1,33 @@
 &__buttonDefault {
-    &_firstButton {
-        margin-right: 20px;
-    }
-
     $buttonHeight: 34px;
     $borderThickness: 2px;
+
+    &_firstButton {
+        margin-right: 20px;
+        & > a {
+            & > p {
+                padding-left: 20px - $borderThickness;
+                padding-right: 20px - $borderThickness;
+            }
+        }
+    }
+
+    &_secondButton {
+        & > a {
+            & > p {
+                padding-left: 20px - $borderThickness;
+                padding-right: 20px - $borderThickness;
+            }
+        }
+    }
+
     &_height:nth-child(n) {
         height: $buttonHeight;
 
         & > a,
         & > button {
             height: $buttonHeight;
-            
+
             & > p {
                 height: $buttonHeight - $borderThickness * 2;
             }
