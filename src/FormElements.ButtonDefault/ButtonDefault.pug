@@ -17,15 +17,22 @@ mixin getButton(text, options, classes)
             - arrowClasses.push("colors__font_purple");
         else
             - arrowClasses.push("colors__font_white");
+            
 
-    div(class= ["buttonDefault"].concat(containerClasses))
-        if options.isLink
+    div(class=["buttonDefault"].concat(containerClasses))
+        - if(options.buttonType === "a")
             a(href='#' class=["buttonDefault__buttonBasis"].concat(buttonBasisClasses))
                 p(class=["buttonDefault__buttonText"].concat(textClasses))= text
                 if options.hasArrow
                     p(class=["buttonDefault__arrow"].concat(arrowClasses)) arrow_forward
-        else
+        - else if(options.buttonType === "button")
             button(class=["buttonDefault__buttonBasis"].concat(buttonBasisClasses))
                 p(class=["buttonDefault__buttonText"].concat(textClasses))= text
                 if options.hasArrow
                     p(class=["buttonDefault__arrow"].concat(arrowClasses)) arrow_forward
+        - else if(options.buttonType === "submit")
+            label(class=["buttonDefault__buttonBasis"].concat(buttonBasisClasses))
+                input(class=["buttonDefault__inputButton"] type="submit")
+                p(class=["buttonDefault__buttonText"].concat(textClasses))= text
+                if options.hasArrow
+                    p(class=["buttonDefault__arrow"].concat(arrowClasses)) arrow_forward                    

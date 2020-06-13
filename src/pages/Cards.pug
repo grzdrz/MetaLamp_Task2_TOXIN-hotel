@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Cards
+        link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css" rel="stylesheet")    
+    body
+        .cards
+            include ../GlobalLogo/GlobalLogo.pug
+
+            include ../Cards.FormDefault/FormDefault.pug
+            +getForm({
+                titleText: "Найдём номера под ваши пожелания",
+                formType: "guestsAndDateRange",
+
+                dropdownTitleText: "гости",
+            }, 
+            {
+                formClasses: ["formDefault_guestsAndDateRange"],
+            })
+

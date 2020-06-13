@@ -3,7 +3,7 @@ const dateFormatOptions2 = {
     month: "short", day: "2-digit",
 };
 
-export function setDateInputScript() {
+export function dateInputScript() {
     $(function () {
         let firstDateInput = $('.dateInput_double .dateInput__datepickerInput_first');
         let secondDateInput = $('.dateInput_double .dateInput__datepickerInput_second');

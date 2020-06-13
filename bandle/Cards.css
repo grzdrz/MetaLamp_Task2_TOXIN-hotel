@@ -1,0 +1,700 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(node_modules/material-design-icons/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+       url(node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
+       url(node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+@charset "UTF-8";
+@font-face {
+  font-family: MontserratBold;
+  src: url(src/fonts/Montserrat/Montserrat-Bold.ttf); }
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url(src/fonts/Montserrat/Montserrat-Regular.ttf); }
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url(src/fonts/OpenSans/OpenSans-Bold.ttf); }
+
+@font-face {
+  font-family: OpenSansRegular;
+  src: url(src/fonts/OpenSans/OpenSans-Regular.ttf); }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box; }
+
+html,
+body {
+  min-width: 100%;
+  display: flex; }
+
+.cards {
+  min-width: 100%;
+  background: #e5e5e5;
+  padding-bottom: 500px; }
+  .cards > div:nth-child(n + 2),
+  .cards > label,
+  .cards > form {
+    margin-bottom: 20px;
+    margin-left: 141px; }
+
+.globalLogo {
+  height: 48px;
+  margin: 30px 0px 0px 30px; }
+
+.formDefault {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 380px;
+  padding: 40px 30px 30px 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; }
+  .formDefault_guestsAndDateRange .dateInput {
+    margin-bottom: 20px; }
+  .formDefault__title {
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1f2041;
+    display: flex;
+    width: 320px;
+    margin-bottom: 20px; }
+
+.dateInput {
+  display: flex;
+  flex-direction: row; }
+  .dateInput_dropdown .dateInput__datepickerLabel, .dateInput_simple .dateInput__datepickerLabel {
+    width: 266px; }
+  .dateInput__container {
+    display: flex;
+    flex-direction: column; }
+    .dateInput__container:first-child {
+      margin-right: 20px; }
+  .dateInput__title {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 6px; }
+  .dateInput__datepickerLabel {
+    display: grid;
+    grid-template-columns: auto 44px;
+    grid-template-rows: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 150px; }
+  .dateInput__datepickerInput {
+    padding: 0px 0px 0px 15px;
+    height: 44px;
+    outline: none;
+    background: transparent;
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    white-space: nowrap;
+    /* Отменяем перенос текста */
+    overflow: hidden;
+    /* Обрезаем содержимое */
+    text-overflow: ellipsis;
+    /* Многоточие */ }
+    .dateInput__datepickerInput::-webkit-input-placeholder {
+      background: rgba(31, 32, 65, 0.25);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 0px solid transparent; }
+    .dateInput__datepickerInput:-webkit-autofill, .dateInput__datepickerInput:-webkit-autofill:hover, .dateInput__datepickerInput:-webkit-autofill:focus,
+    .dateInput__datepickerInput textarea:-webkit-autofill,
+    .dateInput__datepickerInput textarea:-webkit-autofill:hover,
+    .dateInput__datepickerInput textarea:-webkit-autofill:focus,
+    .dateInput__datepickerInput select:-webkit-autofill,
+    .dateInput__datepickerInput select:-webkit-autofill:hover,
+    .dateInput__datepickerInput select:-webkit-autofill:focus {
+      border: 0px solid rgba(255, 255, 255, 0);
+      -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
+      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      transition: background-color 5000s ease-in-out 0s;
+      color: rgba(31, 32, 65, 0.75); }
+  .dateInput__datepickerArrow {
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px; }
+  .dateInput__buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 20px; }
+  .dateInput__applyButton {
+    margin-left: auto;
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #bc9cff; }
+  .dateInput__clearButton {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5); }
+
+.datepicker {
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  width: max-content; }
+  .datepicker.-bottom-right-, .datepicker.-bottom-right-.active {
+    margin-left: -28px; }
+  .datepicker.-bottom-left-, .datepicker.-bottom-left-.active {
+    margin-left: -2px; }
+  .datepicker.active {
+    width: max-content; }
+  .datepicker--cells {
+    width: 280px; }
+  .datepicker--cell {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    width: 40px;
+    height: 40px; }
+    .datepicker--cell-day.-selected- {
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      border-radius: 50%;
+      position: relative; }
+      .datepicker--cell-day.-selected-.-focus- {
+        background: linear-gradient(to bottom, #bb9cff, #8ba4f9); }
+    .datepicker--cell-day.-current- {
+      background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+      border-radius: 50%;
+      font-family: MontserratBold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff; }
+    .datepicker--cell-day.-current-.-in-range- {
+      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      color: rgba(31, 32, 65, 0.5);
+      border-radius: 0px;
+      font-family: MontserratRegular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      text-align: center; }
+    .datepicker--cell-day.-in-range-.-other-month- {
+      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      color: rgba(31, 32, 65, 0.25); }
+    .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-current-, .datepicker--cell-day.-range-to-.-current-, .datepicker--cell-day.-range-from-.-other-month-, .datepicker--cell-day.-range-to-.-other-month- {
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      border-radius: 50%;
+      font-family: MontserratBold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      position: relative; }
+    .datepicker--cell-day.-range-from-::after {
+      content: "";
+      width: inherit;
+      height: inherit;
+      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      width: 50%;
+      margin-left: 50%;
+      position: absolute;
+      z-index: -1; }
+    .datepicker--cell-day.-range-to-::after {
+      content: "";
+      width: inherit;
+      height: inherit;
+      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      width: 50%;
+      margin-right: 50%;
+      position: absolute;
+      z-index: -1; }
+    .datepicker--cell-day.-range-from-.-focus-::after {
+      margin-left: 55%; }
+    .datepicker--cell-day.-range-to-.-focus-::after {
+      margin-right: 55%; }
+    .datepicker--cell-day.-in-range- {
+      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      color: rgba(31, 32, 65, 0.5); }
+    .datepicker--cell-day.-disabled- {
+      color: rgba(31, 32, 65, 0.25); }
+    .datepicker--cell-month, .datepicker--cell-year {
+      width: 70px;
+      height: 70px; }
+      .datepicker--cell-month.-current-, .datepicker--cell-year.-current- {
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        color: white;
+        border-radius: 50%; }
+      .datepicker--cell-month.-selected-, .datepicker--cell-month.-selected-.-current-, .datepicker--cell-year.-selected-, .datepicker--cell-year.-selected-.-current- {
+        background: linear-gradient(to bottom, #bb9cff, #8ba4f9);
+        color: white;
+        border-radius: 50%; }
+  .datepicker--content {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .datepicker--nav {
+    padding: 20px 20px 30px 20px;
+    border: 0px solid transparent; }
+    .datepicker--nav-title {
+      font-family: OpenSansBold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 24px;
+      text-align: center;
+      color: #1f2041; }
+    .datepicker--nav-action {
+      position: relative; }
+      .datepicker--nav-action > svg {
+        opacity: 0; }
+      .datepicker--nav-action:first-child::after {
+        content: "arrow_back";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        border: 0px solid transparent;
+        background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .datepicker--nav-action:last-child::after {
+        content: "arrow_forward";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        border: 0px solid transparent;
+        background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+  .datepicker--days-names {
+    width: 280px; }
+  .datepicker--day-name {
+    min-width: 40px;
+    height: 40px;
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #bc9cff; }
+  .datepicker--months {
+    height: max-content; }
+    .datepicker--months > .datepicker--cells-months {
+      display: flex;
+      justify-content: space-between;
+      height: max-content; }
+  .datepicker--years {
+    height: max-content; }
+    .datepicker--years > .datepicker--cells-years {
+      display: flex;
+      justify-content: space-between;
+      height: max-content; }
+
+.dropdown {
+  width: 320px; }
+  .dropdown_textFieldDefault {
+    display: flex;
+    flex-direction: column; }
+  .dropdown__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px; }
+  .dropdown__titleText {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .dropdown__titleTextTest {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5); }
+  .dropdown__input {
+    display: grid;
+    grid-template-rows: 42px;
+    grid-template-columns: auto min-content;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative; }
+    .dropdown__input:hover, .dropdown__input:focus {
+      border: 1px solid rgba(31, 32, 65, 0.5); }
+  .dropdown__mainInput {
+    padding: 0px 100px 0px 15px;
+    height: 44px;
+    outline: none;
+    background: transparent;
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    white-space: nowrap;
+    /* Отменяем перенос текста */
+    overflow: hidden;
+    /* Обрезаем содержимое */
+    text-overflow: ellipsis;
+    /* Многоточие */ }
+    .dropdown__mainInput::-webkit-input-placeholder {
+      background: rgba(31, 32, 65, 0.25);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 0px solid transparent; }
+    .dropdown__mainInput:-webkit-autofill, .dropdown__mainInput:-webkit-autofill:hover, .dropdown__mainInput:-webkit-autofill:focus,
+    .dropdown__mainInput textarea:-webkit-autofill,
+    .dropdown__mainInput textarea:-webkit-autofill:hover,
+    .dropdown__mainInput textarea:-webkit-autofill:focus,
+    .dropdown__mainInput select:-webkit-autofill,
+    .dropdown__mainInput select:-webkit-autofill:hover,
+    .dropdown__mainInput select:-webkit-autofill:focus {
+      border: 0px solid rgba(255, 255, 255, 0);
+      -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
+      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      transition: background-color 5000s ease-in-out 0s;
+      color: rgba(31, 32, 65, 0.75); }
+  .dropdown__dropedList {
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    background: white;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-top: 0px;
+    box-sizing: content-box;
+    margin: -1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 1; }
+    .dropdown__dropedList:hover, .dropdown__dropedList:focus {
+      /* border: 1px solid rgba(31, 32, 65, 0.5); */
+      border-top: 0px; }
+  .dropdown__dropdownInput {
+    width: 42px;
+    height: 42px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    border: 0px solid transparent;
+    background: rgba(31, 32, 65, 0.75);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .dropdown__dropedListItem {
+    display: grid;
+    grid-template-columns: auto 93px;
+    align-items: center;
+    padding: 0px 7px 0px 15px;
+    margin-bottom: 7px; }
+    .dropdown__dropedListItem:first-of-type {
+      margin-top: 7px; }
+  .dropdown__dropedListItemText {
+    overflow: auto;
+    word-wrap: break-word;
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .dropdown__dropedListItemHandler {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  .dropdown__dropedListItemHandlerMinus, .dropdown__dropedListItemHandlerPlus {
+    outline: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 31px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    background: transparent;
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .dropdown__dropedListItemHandlerMinus {
+    opacity: 0.38; }
+  .dropdown__dropedListItemHandlerText {
+    margin: 0px 5px;
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .dropdown__controlButtonsContainer {
+    display: flex;
+    margin: 20px 10px 13px 15px; }
+  .dropdown__applyButton {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #bc9cff;
+    margin-left: auto; }
+  .dropdown__clearButton {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5); }
+
+.buttonDefault {
+  border-radius: 22px;
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: min-content;
+  align-items: center;
+  height: 44px; }
+  .buttonDefault__buttonBasis {
+    color: #ffffff;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: auto;
+    align-items: center;
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+    height: 44px;
+    border-radius: 22px;
+    outline: none;
+    position: relative; }
+    .buttonDefault__buttonBasis:hover {
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
+  .buttonDefault__buttonText {
+    background: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0px 58px;
+    color: #ffffff;
+    margin: 2px;
+    border-radius: 22px;
+    height: 40px;
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: -0.03em; }
+  .buttonDefault_hollowButton > a > p:first-of-type,
+  .buttonDefault_hollowButton > button > p:first-of-type {
+    background: #ffffff;
+    color: #bc9cff; }
+  .buttonDefault__arrow {
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    height: 44px;
+    width: 44px; }
+  .buttonDefault__inputButton {
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit; }
+    .buttonDefault__inputButton + label {
+      z-index: -1; }
+
+.buttonDefault {
+  margin-top: 30px; }
+  .buttonDefault__buttonText {
+    padding: 0px 94px; }
+
+.colors__background_purpleToBlueGrad {
+  background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+
+.colors__background_purple {
+  background: #bc9cff; }
+
+.colors__background_green {
+  background: #6fcf97; }
+
+.colors__background_darkShade5 {
+  background: rgba(31, 32, 65, 0.05); }
+
+.colors__background_darkShade25 {
+  background: rgba(31, 32, 65, 0.25); }
+
+.colors__background_darkShade50 {
+  background: rgba(31, 32, 65, 0.5); }
+
+.colors__background_darkShade75 {
+  background: rgba(31, 32, 65, 0.75); }
+
+.colors__background_darkShade100 {
+  background: #1f2041; }
+
+.colors__font_purple {
+  color: #bc9cff; }
+
+.colors__font_green {
+  color: #6fcf97; }
+
+.colors__font_darkShade5 {
+  color: rgba(31, 32, 65, 0.05); }
+
+.colors__font_darkShade25 {
+  color: rgba(31, 32, 65, 0.25); }
+
+.colors__font_darkShade50 {
+  color: rgba(31, 32, 65, 0.5); }
+
+.colors__font_darkShade75 {
+  color: rgba(31, 32, 65, 0.75); }
+
+.colors__font_darkShade100 {
+  color: #1f2041; }
+
+.colors__font_white {
+  color: white; }
+
+.globalLogo {
+  margin-bottom: 72px; }
+

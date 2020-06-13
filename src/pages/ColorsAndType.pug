@@ -6,11 +6,11 @@ html
         link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous")
     body
-        include ../GlobalLogo/GlobalLogo.pug
-
         include ../ColorsAndType.ColorBlock/ColorBlock.pug
-        .colors
-            div(class=["colors__colorsContainer"])
+        .colorsBlock
+            include ../GlobalLogo/GlobalLogo.pug
+            
+            div(class=["colorsAndTypeBlock__colorsContainer"])
                 - for(let i = 100; i >= 25; i-=25)
                     +getColorBlock({
                         colorName: "Dark Shade " + i + "%",

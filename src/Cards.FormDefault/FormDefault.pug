@@ -1,0 +1,40 @@
+mixin getForm(options, classes)
+    - let formClasses = [];
+
+    - if(classes)
+        - classes.formClasses ? formClasses = formClasses.concat(classes.formClasses) : [];
+
+    form(class=["formDefault"].concat(formClasses))
+        p(class=["formDefault__title"])= options.titleText
+        - if(options.formType === "guestsAndDateRange"){
+            include ../FormElements.DateInput/DateInput.pug
+            +getDateInput("double", {
+                firstTitle: "выезд",
+                secondTitle: "прибытие",
+            })
+
+            include ../FormElements.Dropdown/Dropdown.pug
+            +getDropdown({
+                titleText: options.dropdownTitleText,
+                titleTextTest: {
+                    isTitleTextTestVisible: false,
+                    value: ""
+                },
+                placeholder: "dropdown",
+                name: "dropdown",
+                type: "text",
+                value: "Сколько гостей",
+                dropdown: {
+                    dropList: [
+                        {name: "взрослые", value: 0},
+                        {name: "дети", value: 0},
+                        {name: "младенцы", value: 0}],         
+                    typeOfShownInfo: "dropdown__input_sumNumber"},}) 
+
+            include ../FormElements.ButtonDefault/ButtonDefault.pug
+            +getButton('подобрать номер', {
+                isHollow: false,
+                buttonType: "submit",
+                hasArrow: true,
+            })
+        - }                  

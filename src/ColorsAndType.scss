@@ -1,76 +1,16 @@
 @import "./index.scss";
 
-.colors {
-    &__background {
-        &_purpleToBlueGrad {
-            background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-        }
+.colorsAndTypeBlock {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
 
-        &_purple {
-            background: #bc9cff;
-        }
-
-        &_green {
-            background: #6fcf97;
-        }
-
-        &_darkShade5 {
-            background: rgba(31, 32, 65, 0.05);
-        }
-
-        &_darkShade25 {
-            background: rgba(31, 32, 65, 0.25);
-        }
-
-        &_darkShade50 {
-            background: rgba(31, 32, 65, 0.5);
-        }
-
-        &_darkShade75 {
-            background: rgba(31, 32, 65, 0.75);
-        }
-
-        &_darkShade100 {
-            background: #1f2041;
-        }
-    }
-
-    &__font {
-        &_purple {
-            color: #bc9cff;
-        }
-
-        &_green {
-            color: #6fcf97;
-        }
-
-        &_darkShade5 {
-            color: rgba(31, 32, 65, 0.05);
-        }
-
-        &_darkShade25 {
-            color: rgba(31, 32, 65, 0.25);
-        }
-
-        &_darkShade50 {
-            color: rgba(31, 32, 65, 0.5);
-        }
-
-        &_darkShade75 {
-            color: rgba(31, 32, 65, 0.75);
-        }
-
-        &_darkShade100 {
-            color: #1f2041;
-        }
-
-        &_white {
-            color: white;
-        }
-    }
+    @import "./ColorsAndType.ColorBlock/ColorBlock.scss";
 }
+
 @import "./GlobalLogo/GlobalLogo.scss";
-@import "./ColorsAndType.ColorBlock/ColorBlock.scss";
+@import "./ColorsAndType.ColorBlock/ColorsAndFonts.scss";
+
 .globalLogo {
     margin-bottom: 67px;
 }

@@ -28,5 +28,5 @@ import { rangeSliderScript } from "../FormElements.RangeSlider/RangeSlider.js";
 rangeSliderScript();
 
 
-import { setDateInputScript } from "../FormElements.DateInput/DateInput.js";
-setDateInputScript();
+import { dateInputScript } from "../FormElements.DateInput/DateInput.js";
+dateInputScript();

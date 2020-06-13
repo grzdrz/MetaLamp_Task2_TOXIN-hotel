@@ -71,6 +71,8 @@ export function dropdownScript() {
 
 
     function onDropdownItemPlus(event) {
+        event.preventDefault();
+
         let dropedListItemHandlerText = event.currentTarget.parentElement.querySelector(".dropdown__dropedListItemHandlerText");
         let curValue = Number.parseInt(dropedListItemHandlerText.textContent);
         curValue++;
@@ -87,6 +89,8 @@ export function dropdownScript() {
         changeDropdownInputValue(queryParentElementByClass(event.currentTarget, "dropdown__input"));
     }
     function onDropdownItemMinus(event) {
+        event.preventDefault();
+
         let dropedListItemHandlerText = event.currentTarget.parentElement.querySelector(".dropdown__dropedListItemHandlerText");
         let curValue = Number.parseInt(dropedListItemHandlerText.textContent);
         curValue--;
@@ -158,7 +162,7 @@ export function dropdownScript() {
             return words[2];
     }
 
-    
+
     function onClear(event) {
         event.currentTarget.style.display = "none";
 

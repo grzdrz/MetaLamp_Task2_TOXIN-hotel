@@ -5,8 +5,8 @@ mixin getColorBlock(options, classes)
         - classes.colorRectangleClasses ? colorRectangleClasses = colorRectangleClasses.concat(classes.colorRectangleClasses) : [];
 
 
-    div(class=["colors__colorContainer"])
-        div(class=["colors__colorRectangle"].concat(colorRectangleClasses))
-        div(class=["colors__textContainer"])
-            p(class=["colors__colorName"])= options.colorName
-            p(class=["colors__colorCode"])= options.colorCode
+    div(class=["colorsAndTypeBlock__colorContainer"])
+        div(class=["colorsAndTypeBlock__colorRectangle"].concat(colorRectangleClasses))
+        div(class=["colorsAndTypeBlock__textContainer"])
+            p(class=["colorsAndTypeBlock__colorName"])= options.colorName
+            p(class=["colorsAndTypeBlock__colorCode"])= options.colorCode

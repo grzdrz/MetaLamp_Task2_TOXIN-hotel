@@ -59,7 +59,58 @@
 
 html,
 body {
-  min-width: 100%; }
+  min-width: 100%;
+  display: flex; }
+
+.colorsAndTypeBlock {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .colorsAndTypeBlock__colorsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 427px;
+    margin-bottom: 145px; }
+  .colorsAndTypeBlock__colorContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px; }
+    .colorsAndTypeBlock__colorContainer:last-child {
+      margin-bottom: 0px; }
+  .colorsAndTypeBlock__colorRectangle {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px; }
+  .colorsAndTypeBlock__textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px; }
+  .colorsAndTypeBlock__colorName {
+    display: flex;
+    align-items: center;
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    color: #1f2041;
+    letter-spacing: -0.015em; }
+  .colorsAndTypeBlock__colorCode {
+    display: flex;
+    align-items: center;
+    font-family: OpenSansRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 29px;
+    color: #1f2041;
+    letter-spacing: -0.04em; }
+
+.globalLogo {
+  height: 48px;
+  margin: 30px 0px 0px 30px; }
 
 .colors__background_purpleToBlueGrad {
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
@@ -108,55 +159,6 @@ body {
 
 .colors__font_white {
   color: white; }
-
-.globalLogo {
-  height: 48px;
-  margin: 30px 0px 0px 30px; }
-
-.colors {
-  display: flex;
-  flex-direction: column; }
-  .colors__colorsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-left: 150px;
-    margin-right: 427px;
-    margin-bottom: 145px; }
-  .colors__colorContainer {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px; }
-    .colors__colorContainer:last-child {
-      margin-bottom: 0px; }
-  .colors__colorRectangle {
-    width: 70px;
-    height: 70px;
-    border-radius: 6px; }
-  .colors__textContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 40px; }
-  .colors__colorName {
-    display: flex;
-    align-items: center;
-    font-family: OpenSansBold;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 29px;
-    color: #1f2041;
-    letter-spacing: -0.015em; }
-  .colors__colorCode {
-    display: flex;
-    align-items: center;
-    font-family: OpenSansRegular;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 29px;
-    color: #1f2041;
-    letter-spacing: -0.04em; }
 
 .globalLogo {
   margin-bottom: 67px; }

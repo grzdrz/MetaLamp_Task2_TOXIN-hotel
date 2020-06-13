@@ -1,6 +1,7 @@
 @import "./index.scss";
 
 .headersAndFooters {
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     background: #f4f4f6;
@@ -14,15 +15,11 @@
 }
 
 @import "./GlobalLogo/GlobalLogo.scss";
-@import "./FormElements.ButtonDefault/buttonDefault.scss";
-
 @import "./HeadersAndFooters.StandardNavBar/StandardNavBar.scss";
 @import "./HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.scss";
 @import "./HeadersAndFooters.FooterCreative/FooterCreative.scss";
-
 @import "./HeadersAndFooters.LogoColored/logoColored.scss";
-
-@import "./ColorsAndType.scss";
+@import "./ColorsAndType.ColorBlock/ColorsAndFonts.scss";
 
 .globalLogo {
     margin-bottom: 72px;

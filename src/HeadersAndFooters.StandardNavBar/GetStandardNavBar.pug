@@ -15,13 +15,13 @@ mixin getStandardNavBar(isAuthorized)
             include ../FormElements.ButtonDefault/ButtonDefault.pug
             +getButton('LOGIN', {
                 isHollow:  true,
-                isLink: true,
+                buttonType: "a",
             },{
                 containerClasses: ["standardNavBar__buttonDefault_height", "standardNavBar__buttonDefault_firstButton"]
             })
             +getButton('REGISTER', {
                 isHollow:  false,
-                isLink: true,
+                buttonType: "a",
             },{
                 containerClasses: ["standardNavBar__buttonDefault_height", "standardNavBar__buttonDefault_secondButton"]
             })

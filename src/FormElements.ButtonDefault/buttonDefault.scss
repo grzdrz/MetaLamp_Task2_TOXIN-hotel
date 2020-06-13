@@ -79,4 +79,15 @@
         height: $buttonHeight;
         width: $buttonHeight;
     }
+
+    &__inputButton {
+        position: absolute;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+
+        & + label {
+            z-index: -1;
+        }
+    }
 }
