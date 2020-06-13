@@ -10,7 +10,7 @@ global.$ = $;
 import 'air-datepicker';
 
 //dropdown
-import { dropdownScript } from "../FormElements.FormInput/Dropdown.js";
+import { dropdownScript } from "../FormElements.Dropdown/Dropdown.js";
 dropdownScript();
 
 //dropdown

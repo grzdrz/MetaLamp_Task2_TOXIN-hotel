@@ -1,0 +1,30 @@
+mixin getDropdown(options, classArray)
+
+    div(class=["dropdown"] data-border-radius="")
+        div(class=["dropdown__title"])
+            p(class=["dropdown__titleText"])= options.titleText
+            if options.titleTextTest.isTitleTextTestVisible
+                p(class=["dropdown__titleTextTest"])= options.titleTextTest.value
+        div(class=["dropdown__input", options.dropdown.typeOfShownInfo], data-default-value=options.value)
+            input(class=["dropdown__mainInput"], 
+                placeholder= options.placeholder,
+                name= options.name,
+                type= options.type,
+                value= options.value,
+                readonly= true)
+            p(class=['dropdown__dropdownInput']) expand_more
+            div(class=["dropdown__dropedList"]
+                style={display: "none"})
+                for item in options.dropdown.dropList
+                    div(class=["dropdown__dropedListItem"])
+                        p(class=["dropdown__dropedListItemText"])= item.name
+                        div(class=["dropdown__dropedListItemHandler"])
+                            button(class=["dropdown__dropedListItemHandlerMinus"])= "-"
+                            p(class=["dropdown__dropedListItemHandlerText"])= item.value
+                            button(class=["dropdown__dropedListItemHandlerPlus"])= "+"
+                if options.hasApplyButton || options.hasClearButton
+                    div(class=["dropdown__controlButtonsContainer"])
+                        if options.hasClearButton
+                            p(class=["dropdown__clearButton"]) очистить
+                        if options.hasApplyButton
+                            p(class=["dropdown__applyButton"]) применить                    

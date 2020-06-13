@@ -1,4 +1,4 @@
-.formInput {
+.dropdown {
     width: 320px;
 
     &_textFieldDefault {
@@ -93,10 +93,40 @@
         text-overflow: ellipsis; /* Многоточие */
     }
 
-    &__submitInput {
+    &__dropedList {
+        //border-top: 1px solid rgba(31, 32, 65, 0.5);
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        position: absolute;
+        width: 100%;
+        top: 44px;
+        background: white;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        border-top: 0px;
+        box-sizing: content-box;
+        margin: -1px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        z-index: 1;
+
+        &:hover,
+        &:focus {
+            /* border: 1px solid rgba(31, 32, 65, 0.5); */
+            border-top: 0px;
+        }
+    }
+
+    &__dropdownInput {
         width: 42px;
         height: 42px;
         outline: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         font-family: Material Icons;
         font-style: normal;
@@ -105,12 +135,101 @@
         line-height: 24px;
         border: 0px solid transparent;
 
-        background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-        background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: rgba(31, 32, 65, 0.75);
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    &__dropedListItem {
+        display: grid;
+        grid-template-columns: auto 93px;
+        align-items: center;
+        padding: 0px 7px 0px 15px;
+
+        margin-bottom: 7px;
+        &:first-of-type {
+            margin-top: 7px;
+        }
+    }
+
+    &__dropedListItemText {
+        overflow: auto;
+        word-wrap: break-word;
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1f2041;
+    }
+
+    &__dropedListItemHandler {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__dropedListItemHandlerMinus,
+    &__dropedListItemHandlerPlus {
+        outline: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 31px;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        background: transparent;
+
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #1f2041;
+    }
+    &__dropedListItemHandlerMinus {
+        opacity: 0.38;
+    }
+
+    &__dropedListItemHandlerText {
+        margin: 0px 5px;
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #1f2041;
+    }
+
+    &__controlButtonsContainer {
+        display: flex;
+        margin: 20px 10px 13px 15px;
+    }
+    &__applyButton {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #bc9cff;
+
+        margin-left: auto;
+    }
+
+    &__clearButton {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: rgba(31, 32, 65, 0.5);
     }
 }

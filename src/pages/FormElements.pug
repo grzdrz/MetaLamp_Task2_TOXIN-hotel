@@ -12,7 +12,7 @@ html
             include ../GlobalLogo/GlobalLogo.pug
 
             include ../FormElements.FormInput/FormInput.pug
-            +getFormInput("textFieldDefault", {
+            +getFormInput({
                 titleText: "text field",
                 titleTextTest: {
                     isTitleTextTestVisible: true,
@@ -24,7 +24,7 @@ html
                 value: "",
                 isSubmitButton: false})
 
-            +getFormInput("textFieldDefault", {
+            +getFormInput({
                 titleText: "text field",
                 titleTextTest: {
                     isTitleTextTestVisible: true,
@@ -36,8 +36,8 @@ html
                 value: "This is pretty awesome",
                 isSubmitButton: false})    
 
-
-            +getFormInput("dropdown", {
+            include ../FormElements.Dropdown/Dropdown.pug
+            +getDropdown({
                 titleText: "dropdown",
                 titleTextTest: {
                     isTitleTextTestVisible: false,
@@ -53,8 +53,8 @@ html
                         {name: "взрослые", value: 0},
                         {name: "дети", value: 0},
                         {name: "младенцы", value: 0}],         
-                    typeOfShownInfo: "formInput__dropdown_sumNumber"},})
-            +getFormInput("dropdown", {
+                    typeOfShownInfo: "dropdown__input_sumNumber"},})
+            +getDropdown({
                 titleText: "dropdown",
                 titleTextTest: {
                     isTitleTextTestVisible: false,
@@ -72,7 +72,7 @@ html
                         {name: "спальни", value: 0},
                         {name: "кровати", value: 0},
                         {name: "ванные комнаты", value: 0}],
-                    typeOfShownInfo: "formInput__dropdown_listOfNumbers"},})
+                    typeOfShownInfo: "dropdown__input_listOfNumbers"},})
 
             include ../FormElements.CheckboxList/CheckboxList.pug
             +getCheckbox("expandable", [

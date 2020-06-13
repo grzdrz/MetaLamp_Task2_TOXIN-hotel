@@ -1,58 +1,18 @@
-mixin getFormInput(inputType, options, classArray)
-    - let containerClasses = ["formInput"];
-    - if(inputType === "dropdown") containerClasses.push("formInput_dropdown");
+mixin getFormInput(options, classArray)
 
-    div(class=containerClasses data-border-radius="")
+    div(class=["formInput"])
         div(class=["formInput__title"])
             p(class=["formInput__titleText"])= options.titleText
             if options.titleTextTest.isTitleTextTestVisible
                 p(class=["formInput__titleTextTest"])= options.titleTextTest.value
 
-        if inputType === "textFieldDefault"
-            div(class=["formInput__input"])               
-                input(class=["formInput__mainInput"],
-                    placeholder= options.placeholder,
-                    name= options.name,
-                    type= options.type,
-                    value= options.value)
-                if options.isSubmitButton
-                    input(class=['formInput__submitInput']
-                        type="submit"
-                        value="arrow_forward")
-
-        else if inputType === "dropdown"
-            div(class=["formInput__input", options.dropdown.typeOfShownInfo], data-default-value=options.value)
-                input(class=["formInput__mainInput"], 
-                    placeholder= options.placeholder,
-                    name= options.name,
-                    type= options.type,
-                    value= options.value,
-                    readonly= true)
-                p(class=['formInput__dropdownInput']) expand_more
-                div(class=["formInput__dropedList"]
-                    style={display: "none"})
-                    for item in options.dropdown.dropList
-                        div(class=["formInput__dropedListItem"])
-                            p(class=["formInput__dropedListItemText"])= item.name
-                            div(class=["formInput__dropedListItemHandler"])
-                                button(class=["formInput__dropedListItemHandlerMinus"])= "-"
-                                p(class=["formInput__dropedListItemHandlerText"])= item.value
-                                button(class=["formInput__dropedListItemHandlerPlus"])= "+"
-                    if options.hasApplyButton || options.hasClearButton
-                        div(class=["formInput__controlButtonsContainer"])
-                            if options.hasClearButton
-                                p(class=["formInput__clearButton"]) очистить
-                            if options.hasApplyButton
-                                p(class=["formInput__applyButton"]) применить
-
-        //-else if inputType === "doubleDateInput"
-            div(class=["formInput__title"])
-                p(class=["dateInput__title"]) прибытие
-                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"])
-                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"] type="text" name="first_date" )
-                    p(class=["dateInput__datepickerArrow", "dateInput__datepickerLabel_first"]) expand_more
-            div(class=["formInput__title"])
-                p(class=["dateInput__title"]) выезд
-                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_second"])
-                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_second"] type="text" name="second_date")
-                    p(class=["dateInput__firstDatepickerArrow"]) expand_more
+        div(class=["formInput__input"])               
+            input(class=["formInput__mainInput"],
+                placeholder= options.placeholder,
+                name= options.name,
+                type= options.type,
+                value= options.value)
+            if options.isSubmitButton
+                input(class=['formInput__submitInput']
+                    type="submit"
+                    value="arrow_forward")
