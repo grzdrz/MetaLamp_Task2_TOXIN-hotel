@@ -1,4 +1,6 @@
 .radioButton {
+    width: max-content;
+    
     &__buttonsContainer {
         display: grid;
         grid-template-columns: max-content max-content;

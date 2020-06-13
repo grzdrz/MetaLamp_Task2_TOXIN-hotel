@@ -4,8 +4,8 @@ mixin getFormInput(options, classArray)
         - if(options.hasTitle)
             div(class=["formInput__title"])
                 p(class=["formInput__titleText"])= options.titleText
-                if options.titleTextTest.isTitleTextTestVisible
-                    p(class=["formInput__titleTextTest"])= options.titleTextTest.value
+                if options.isTitleTextTestVisible
+                    p(class=["formInput__titleTextTest"])= options.titleTextTestValue
 
         div(class=["formInput__input"])               
             input(class=["formInput__mainInput"],

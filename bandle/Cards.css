@@ -91,15 +91,24 @@ body {
   .formDefault_guestsAndDateRange .dateInput {
     margin-bottom: 20px; }
   .formDefault__title {
+    display: flex;
+    width: 320px;
+    margin-bottom: 20px; }
+  .formDefault__titleText {
     font-family: OpenSansBold;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    color: #1f2041;
-    display: flex;
-    width: 320px;
-    margin-bottom: 20px; }
+    color: #1f2041; }
+  .formDefault__buttonDefault_guestsAndDateRange {
+    margin-top: 30px; }
+    .formDefault__buttonDefault_guestsAndDateRange .buttonDefault__buttonText {
+      padding: 0px 94px; }
+  .formDefault__buttonDefault_registration {
+    margin-top: 30px; }
+    .formDefault__buttonDefault_registration .buttonDefault__buttonText {
+      padding: 0px 94px; }
 
 .dateInput {
   display: flex;
@@ -642,10 +651,184 @@ body {
     .buttonDefault__inputButton + label {
       z-index: -1; }
 
-.buttonDefault {
-  margin-top: 30px; }
-  .buttonDefault__buttonText {
-    padding: 0px 94px; }
+.formInput {
+  width: 320px; }
+  .formInput_textFieldDefault {
+    display: flex;
+    flex-direction: column; }
+  .formInput__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px; }
+  .formInput__titleText {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .formInput__titleTextTest {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5); }
+  .formInput__input {
+    display: grid;
+    grid-template-rows: 42px;
+    grid-template-columns: auto min-content;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative; }
+    .formInput__input:hover, .formInput__input:focus {
+      border: 1px solid rgba(31, 32, 65, 0.5); }
+  .formInput__mainInput {
+    padding: 0px 15px;
+    height: 44px;
+    outline: none;
+    background: transparent;
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    white-space: nowrap;
+    /* Отменяем перенос текста */
+    overflow: hidden;
+    /* Обрезаем содержимое */
+    text-overflow: ellipsis;
+    /* Многоточие */ }
+    .formInput__mainInput::-webkit-input-placeholder {
+      background: rgba(31, 32, 65, 0.25);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 0px solid transparent; }
+    .formInput__mainInput:-webkit-autofill, .formInput__mainInput:-webkit-autofill:hover, .formInput__mainInput:-webkit-autofill:focus,
+    .formInput__mainInput textarea:-webkit-autofill,
+    .formInput__mainInput textarea:-webkit-autofill:hover,
+    .formInput__mainInput textarea:-webkit-autofill:focus,
+    .formInput__mainInput select:-webkit-autofill,
+    .formInput__mainInput select:-webkit-autofill:hover,
+    .formInput__mainInput select:-webkit-autofill:focus {
+      border: 0px solid rgba(255, 255, 255, 0);
+      -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
+      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      transition: background-color 5000s ease-in-out 0s;
+      color: rgba(31, 32, 65, 0.75); }
+  .formInput__submitInput {
+    width: 42px;
+    height: 42px;
+    outline: none;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    border: 0px solid transparent;
+    background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+    background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+    background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.radioButton {
+  width: max-content; }
+  .radioButton__buttonsContainer {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content; }
+  .radioButton__title {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 15px; }
+  .radioButton__label {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    margin-right: 20px; }
+    .radioButton__label:last-child {
+      margin-right: 0px; }
+  .radioButton__labelToggle {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+    margin-right: 20px; }
+    .radioButton__labelToggle:last-child {
+      margin-right: 0px; }
+  .radioButton__button {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    width: 20px;
+    height: 20px; }
+    .radioButton__button + p::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: 21px;
+      margin-right: 10px; }
+    .radioButton__button:checked + p::before {
+      content: "";
+      background: url(src/FormElements.RadioButton/img/circle.svg) no-repeat;
+      background-position: 50% 50%; }
+  .radioButton__toggle {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    width: 40px;
+    height: 20px; }
+    .radioButton__toggle + p::before {
+      content: "";
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: 21px;
+      margin-right: 10px;
+      background: url(src/FormElements.RadioButton/img/circleGrey.svg) no-repeat;
+      background-position: 10% 50%;
+      transition: background-position 0.3s; }
+    .radioButton__toggle:checked + p::before {
+      content: "";
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+      border: 1px solid #bc9cff;
+      border-radius: 21px;
+      margin-right: 10px;
+      background: url(src/FormElements.RadioButton/img/circle.svg) no-repeat;
+      background-position: 90% 50%;
+      transition: background-position 0.3s; }
+  .radioButton__text {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
 
 .colors__background_purpleToBlueGrad {
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }

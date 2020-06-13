@@ -5,7 +5,11 @@ mixin getForm(options, classes)
         - classes.formClasses ? formClasses = formClasses.concat(classes.formClasses) : [];
 
     form(class=["formDefault"].concat(formClasses))
-        p(class=["formDefault__title"])= options.titleText
+        div(class=["formDefault__title"])
+            p(class=["formDefault__titleText"])= options.titleText
+            - if(options.hasSecondTitle)
+                p(class=["formDefault__titleSecondText"])= options.titleText
+
         - if(options.formType === "guestsAndDateRange"){
             include ../FormElements.DateInput/DateInput.pug
             +getDateInput("double", {
@@ -16,10 +20,8 @@ mixin getForm(options, classes)
             include ../FormElements.Dropdown/Dropdown.pug
             +getDropdown({
                 titleText: options.dropdownTitleText,
-                titleTextTest: {
-                    isTitleTextTestVisible: false,
-                    value: ""
-                },
+                isTitleTextTestVisible: false,
+                titleTextTestValue: "",
                 placeholder: "dropdown",
                 name: "dropdown",
                 type: "text",
@@ -32,9 +34,95 @@ mixin getForm(options, classes)
                     typeOfShownInfo: "dropdown__input_sumNumber"},}) 
 
             include ../FormElements.ButtonDefault/ButtonDefault.pug
-            +getButton('подобрать номер', {
+            +getButton({
+                text: 'подобрать номер',
                 isHollow: false,
                 buttonType: "submit",
                 hasArrow: true,
+            },
+            {
+                container: ["formDefault__buttonDefault_guestsAndDateRange"],
             })
-        - }                  
+        - }
+        - else if(options.formType === "registration"){
+            include ../FormElements.FormInput/FormInput.pug
+            +getFormInput({
+                hasTitle: false,
+                placeholder: "Имя",
+                name: "clientFirstName",
+                type: "text",
+                value: "",
+                hasSubmitButton: false}
+            )
+
+            +getFormInput({
+                hasTitle: false,
+                placeholder: "Фамилия",
+                name: "clientSecondName",
+                type: "text",
+                value: "",
+                hasSubmitButton: false}
+            )
+
+            include ../FormElements.RadioButton/RadioButton.pug
+            +getRadioButton("radio", [
+                {text: "Мужчина", isChecked: true},
+                {text: "Женщина", isChecked: false},
+            ],
+            {
+                title: "Radio Buttons",
+                name: "gender",
+            })
+
+            include ../FormElements.DateInput/DateInput.pug
+            +getDateInput("simple", {
+                title: "дата рождения",
+            })
+
+            +getFormInput({
+                hasTitle: true,
+                titleText: "данные для входа в сервис",                
+                placeholder: "Email",
+                name: "email",
+                type: "email",
+                value: "",
+                hasSubmitButton: false}
+            )
+
+            +getFormInput({
+                hasTitle: false,
+                placeholder: "Пароль",
+                name: "password",
+                type: "password",
+                value: "",
+                hasSubmitButton: false}
+            )
+
+            +getRadioButton("toggle", [
+                {text: "Получать спецпредложения", isChecked: false}
+            ],
+            {
+                title: "",
+                name: "specialOffer"
+            })
+
+            include ../FormElements.ButtonDefault/ButtonDefault.pug
+            +getButton({
+                text: 'перейти к оплате',
+                isHollow: false,
+                buttonType: "submit",
+                hasArrow: true,
+            },
+            {
+                container: ["formDefault__buttonDefault_guestsAndDateRange"],
+            })
+
+            div(class=["formDefault__alreadyRegistered"])
+                p(class=["formDefault__alreadyRegisteredText"]) Нет аккаунта на Toxin?
+                +getButton({
+                    text: "войти",
+                    isHollow:  true,
+                    buttonType: "a",
+                    hasArrow: false,
+                })
+        - }

@@ -14,10 +14,8 @@ html
             +getFormInput({
                 hasTitle: true,
                 titleText: "text field",
-                titleTextTest: {
-                    isTitleTextTestVisible: true,
-                    value: "default"
-                },
+                isTitleTextTestVisible: true,
+                titleTextTestValue: "default",
                 placeholder: "Email",
                 name: "email",
                 type: "email",
@@ -27,10 +25,8 @@ html
             +getFormInput({
                 hasTitle: true,
                 titleText: "text field",
-                titleTextTest: {
-                    isTitleTextTestVisible: true,
-                    value: "hover / focus"
-                },
+                isTitleTextTestVisible: true,
+                titleTextTestValue: "hover / focus",
                 placeholder: "Some text",
                 name: "someText",
                 type: "text",
@@ -40,10 +36,8 @@ html
             include ../FormElements.Dropdown/Dropdown.pug
             +getDropdown({
                 titleText: "dropdown",
-                titleTextTest: {
-                    isTitleTextTestVisible: false,
-                    value: ""
-                },
+                isTitleTextTestVisible: false,
+                titleTextTestValue: "",
                 placeholder: "dropdown",
                 name: "dropdown",
                 type: "text",
@@ -54,13 +48,11 @@ html
                         {name: "дети", value: 0},
                         {name: "младенцы", value: 0}],         
                     typeOfShownInfo: "dropdown__input_sumNumber"},})
-                    
+
             +getDropdown({
                 titleText: "dropdown",
-                titleTextTest: {
-                    isTitleTextTestVisible: false,
-                    value: ""
-                },
+                isTitleTextTestVisible: false,
+                titleTextTestValue: "",
                 placeholder: "dropdown",
                 name: "dropdown",
                 type: "text",
@@ -120,17 +112,26 @@ html
             include ../FormElements.RadioButton/RadioButton.pug
             +getRadioButton("radio", [
                 {text: "Мужчина", isChecked: true},
-                {text: "Женщина", isChecked: false}],{
+                {text: "Женщина", isChecked: false},
+            ],
+            {
                 title: "Radio Buttons",
-                name: "gender"})
+                name: "gender",
+            })
             +getRadioButton("toggle", [
-                {text: "Получать спецпредложения", isChecked: true}],{
+                {text: "Получать спецпредложения", isChecked: true}
+            ],
+            {
                 title: "Toggle",
-                name: "specialOffer"})
+                name: "specialOffer"
+            })
             +getRadioButton("toggle", [
-                {text: "Получать спецпредложения", isChecked: false}], {
+                {text: "Получать спецпредложения", isChecked: false}
+            ],
+            {
                 title: "",
-                name: "specialOffer"})
+                name: "specialOffer"
+            })
 
 
             include ../FormElements.RateButton/RateButton.pug
@@ -140,12 +141,14 @@ html
 
 
             include ../FormElements.ButtonDefault/ButtonDefault.pug
-            +getButton("click me", {
+            +getButton({
+                text: "click me",
                 isHollow:  false,
                 buttonType: "button",
                 hasArrow: true,
             })
-            +getButton("click me", {
+            +getButton({
+                text: "click me",
                 isHollow:  true,
                 buttonType: "a",
                 hasArrow: true,

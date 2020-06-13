@@ -3,8 +3,8 @@ mixin getDropdown(options, classArray)
     div(class=["dropdown"] data-border-radius="")
         div(class=["dropdown__title"])
             p(class=["dropdown__titleText"])= options.titleText
-            if options.titleTextTest.isTitleTextTestVisible
-                p(class=["dropdown__titleTextTest"])= options.titleTextTest.value
+            if options.isTitleTextTestVisible
+                p(class=["dropdown__titleTextTest"])= options.titleTextTestValue
         div(class=["dropdown__input", options.dropdown.typeOfShownInfo], data-default-value=options.value)
             input(class=["dropdown__mainInput"], 
                 placeholder= options.placeholder,

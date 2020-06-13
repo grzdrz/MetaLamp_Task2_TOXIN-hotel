@@ -463,97 +463,93 @@ body {
       background: url(src/FormElements.CheckboxList/img/checkMark.svg) no-repeat;
       background-position: 50% 40%; }
 
-.radioButton__buttonsContainer {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  grid-template-rows: max-content; }
-
-.radioButton__title {
-  font-family: MontserratBold;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  margin-bottom: 15px; }
-
-.radioButton__label {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  position: relative;
-  margin-right: 20px; }
-  .radioButton__label:last-child {
-    margin-right: 0px; }
-
-.radioButton__labelToggle {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  position: relative;
-  margin-right: 20px; }
-  .radioButton__labelToggle:last-child {
-    margin-right: 0px; }
-
-.radioButton__button {
-  opacity: 0;
-  position: absolute;
-  z-index: -1;
-  width: 20px;
-  height: 20px; }
-  .radioButton__button + p::before {
-    content: "";
-    display: inline-block;
+.radioButton {
+  width: max-content; }
+  .radioButton__buttonsContainer {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content; }
+  .radioButton__title {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 15px; }
+  .radioButton__label {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    margin-right: 20px; }
+    .radioButton__label:last-child {
+      margin-right: 0px; }
+  .radioButton__labelToggle {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+    margin-right: 20px; }
+    .radioButton__labelToggle:last-child {
+      margin-right: 0px; }
+  .radioButton__button {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
     width: 20px;
-    height: 20px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 21px;
-    margin-right: 10px; }
-  .radioButton__button:checked + p::before {
-    content: "";
-    background: url(src/FormElements.RadioButton/img/circle.svg) no-repeat;
-    background-position: 50% 50%; }
-
-.radioButton__toggle {
-  opacity: 0;
-  position: absolute;
-  z-index: -1;
-  width: 40px;
-  height: 20px; }
-  .radioButton__toggle + p::before {
-    content: "";
-    display: inline-block;
+    height: 20px; }
+    .radioButton__button + p::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: 21px;
+      margin-right: 10px; }
+    .radioButton__button:checked + p::before {
+      content: "";
+      background: url(src/FormElements.RadioButton/img/circle.svg) no-repeat;
+      background-position: 50% 50%; }
+  .radioButton__toggle {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
     width: 40px;
-    height: 20px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 21px;
-    margin-right: 10px;
-    background: url(src/FormElements.RadioButton/img/circleGrey.svg) no-repeat;
-    background-position: 10% 50%;
-    transition: background-position 0.3s; }
-  .radioButton__toggle:checked + p::before {
-    content: "";
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    border: 1px solid #bc9cff;
-    border-radius: 21px;
-    margin-right: 10px;
-    background: url(src/FormElements.RadioButton/img/circle.svg) no-repeat;
-    background-position: 90% 50%;
-    transition: background-position 0.3s; }
-
-.radioButton__text {
-  font-family: MontserratRegular;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.5);
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
+    height: 20px; }
+    .radioButton__toggle + p::before {
+      content: "";
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: 21px;
+      margin-right: 10px;
+      background: url(src/FormElements.RadioButton/img/circleGrey.svg) no-repeat;
+      background-position: 10% 50%;
+      transition: background-position 0.3s; }
+    .radioButton__toggle:checked + p::before {
+      content: "";
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+      border: 1px solid #bc9cff;
+      border-radius: 21px;
+      margin-right: 10px;
+      background: url(src/FormElements.RadioButton/img/circle.svg) no-repeat;
+      background-position: 90% 50%;
+      transition: background-position 0.3s; }
+  .radioButton__text {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
 
 .ratingRadio {
   position: relative;

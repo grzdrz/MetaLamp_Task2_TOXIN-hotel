@@ -1,38 +1,29 @@
-mixin getButton(text, options, classes)
-    - let containerClasses = [];
-    - let buttonBasisClasses = [];
-    - let textClasses = [];
-    - let arrowClasses = [];
-    if classes
-        - classes.containerClasses ? containerClasses = containerClasses.concat(classes.containerClasses) : [];
-        - classes.buttonBasisClasses ? buttonBasisClasses = buttonBasisClasses.concat(classes.buttonBasisClasses) : [];
-        - classes.textClasses ? textClasses = textClasses.concat(classes.textClasses) : [];
-        - classes.arrowClasses ? arrowClasses = arrowClasses.concat(classes.arrowClasses) : [];
+mixin getButton(options, classes={})
 
-    if options.isHollow
-        - containerClasses.push("buttonDefault_hollowButton");
-        - textClasses.push("colors__font_purple");
-    if options.hasArrow
-        if options.isHollow
-            - arrowClasses.push("colors__font_purple");
-        else
-            - arrowClasses.push("colors__font_white");
-            
+    - if(options.isHollow)
+        - classes.container ? classes.container.push("buttonDefault_hollowButton") : classes.container = ["buttonDefault_hollowButton"];
+        - classes.text ? classes.text.push("colors__font_purple") : classes.text = ["colors__font_purple"];
+    - if(options.hasArrow)
+        - if(options.isHollow)
+            - classes.arrow ? classes.arrow.push("colors__font_purple") : classes.arrow = ["colors__font_purple"];
+        - else
+            - classes.arrow ? classes.arrow.push("colors__font_white") : classes.arrow = ["colors__font_white"];
 
-    div(class=["buttonDefault"].concat(containerClasses))
+
+    div(class=["buttonDefault"].concat(classes.container || []))
         - if(options.buttonType === "a")
-            a(href='#' class=["buttonDefault__buttonBasis"].concat(buttonBasisClasses))
-                p(class=["buttonDefault__buttonText"].concat(textClasses))= text
-                if options.hasArrow
-                    p(class=["buttonDefault__arrow"].concat(arrowClasses)) arrow_forward
+            a(href='#' class=["buttonDefault__buttonBasis"].concat(classes.buttonBasis || []))
+                p(class=["buttonDefault__buttonText"].concat(classes.text || []))= options.text
+                - if(options.hasArrow)
+                    p(class=["buttonDefault__arrow"].concat(classes.arrow || [])) arrow_forward
         - else if(options.buttonType === "button")
-            button(class=["buttonDefault__buttonBasis"].concat(buttonBasisClasses))
-                p(class=["buttonDefault__buttonText"].concat(textClasses))= text
-                if options.hasArrow
-                    p(class=["buttonDefault__arrow"].concat(arrowClasses)) arrow_forward
+            button(class=["buttonDefault__buttonBasis"].concat(classes.buttonBasis || []))
+                p(class=["buttonDefault__buttonText"].concat(classes.text || []))= options.text
+                - if(options.hasArrow)
+                    p(class=["buttonDefault__arrow"].concat(classes.arrow || [])) arrow_forward
         - else if(options.buttonType === "submit")
-            label(class=["buttonDefault__buttonBasis"].concat(buttonBasisClasses))
+            label(class=["buttonDefault__buttonBasis"].concat(classes.buttonBasis || []))
                 input(class=["buttonDefault__inputButton"] type="submit")
-                p(class=["buttonDefault__buttonText"].concat(textClasses))= text
-                if options.hasArrow
-                    p(class=["buttonDefault__arrow"].concat(arrowClasses)) arrow_forward                    
+                p(class=["buttonDefault__buttonText"].concat(classes.text || []))= options.text
+                - if(options.hasArrow)
+                    p(class=["buttonDefault__arrow"].concat(classes.arrow || [])) arrow_forward

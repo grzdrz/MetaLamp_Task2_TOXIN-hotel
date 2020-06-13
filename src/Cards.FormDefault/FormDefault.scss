@@ -20,27 +20,38 @@
     }
 
     &__title {
+        display: flex;
+        width: 320px;
+        margin-bottom: 20px;
+    }
+    &__titleText {
         font-family: OpenSansBold;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
         line-height: 30px;
         color: #1f2041;
+    }
 
-        display: flex;
-        width: 320px;
+    &__buttonDefault {
+        &_guestsAndDateRange {
+            margin-top: 30px;
+            & .buttonDefault__buttonText {
+                padding: 0px 94px;
+            }
+        }
 
-        margin-bottom: 20px;
+        &_registration {
+            margin-top: 30px;
+            & .buttonDefault__buttonText {
+                padding: 0px 94px;
+            }
+        }
     }
 }
 
 @import "../FormElements.DateInput/DateInput.scss";
 @import "../FormElements.Dropdown/Dropdown.scss";
 @import "../FormElements.ButtonDefault/ButtonDefault.scss";
-
-.buttonDefault{
-    margin-top: 30px;
-    &__buttonText{
-        padding: 0px 94px;
-    }
-}
+@import "../FormElements.FormInput/FormInput.scss";
+@import "../FormElements.RadioButton/RadioButton.scss";

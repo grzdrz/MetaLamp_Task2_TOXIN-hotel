@@ -1,17 +1,18 @@
 mixin getRadioButton(buttonType, radioButtonList, options, classArray)
     if buttonType === "radio"
-        .radioButton
-            p(class=["radioButton__title"])= options.title
-            .radioButton__buttonsContainer
+        div(class=["radioButton"])
+            - if(options.title)
+                p(class=["radioButton__title"])= options.title
+            div(class=["radioButton__buttonsContainer"])
                 for item in radioButtonList
                     label(class=["radioButton__label"])
                         input(class=["radioButton__button"] type="radio" name= options.name checked= item.isChecked)
                         p(class=["radioButton__text"])= item.text
     else if buttonType === "toggle"
-        .radioButton
-            if options.title
+        div(class=["radioButton"])
+            - if(options.title)
                 p(class=["radioButton__title"])= options.title
-            .radioButton__buttonsContainer
+            div(class=["radioButton__buttonsContainer"])
                 for item in radioButtonList
                     label(class=["radioButton__labelToggle"])
                         input(class=["radioButton__toggle"] type="checkbox" name= options.name checked= item.isChecked)
