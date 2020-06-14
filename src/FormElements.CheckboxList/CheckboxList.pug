@@ -22,8 +22,10 @@ mixin getCheckbox(options, classes={})
             - for(let item of options.checkboxList)
                 div(class=["checkboxList__item"].concat(classes.item || []))
                     label(class=["checkboxList__itemLabel"].concat(classes.itemLabel || []))
-                        input(class=["checkboxList__itemCheckbox"].concat(classes.itemCheckbox || []) type= "checkbox" checked= item.isChecked)
-                        div(class=["checkboxList__itemCheckboxVisiblePart"].concat(classes.itemCheckboxVisiblePart || []))
+                        input(class=["checkboxList__itemCheckboxInput"].concat(classes.itemCheckboxInput || []) type= "checkbox" checked= item.isChecked)
+                        div(class=["checkboxList__itemCheckboxCheckMarkContainer"].concat(classes.itemCheckboxCheckMarkContainer || []))
+                            img(src="./src/FormElements.CheckboxList/img/checkMark.svg" class=["checkboxList__itemCheckboxCheckMark"].concat(classes.itemCheckboxCheckMark || []))
+                        div(class=["checkboxList__itemCheckboxFrame"].concat(classes.itemCheckboxFrame || []))
                         p(class=["checkboxList__itemLabelText"].concat(classes.itemLabelText || []))= item.text
                     - if(options.checkboxType === "rich")
                         p(class=["checkboxList__itemLabelAdditionalText"].concat(classes.itemLabelAdditionalText || []))= item.additionalText  

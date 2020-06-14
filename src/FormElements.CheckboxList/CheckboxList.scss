@@ -123,32 +123,51 @@
         color: rgba(31, 32, 65, 0.5);
     }
 
-    &__itemCheckbox {
+    &__itemCheckboxInput {
         width: $checkboxSize;
         height: $checkboxSize;
-        position: absolute;
-        z-index: -1;
+        position: relative;
+        margin-right: $checkboxMarginRight;
         opacity: 0;
 
-        & + div {
-            display: flex;
-            width: 18px;
-            height: 18px;
+        &:not(:checked) + .checkboxList__itemCheckboxCheckMarkContainer {
+            opacity: 0;
+        }
+        &:not(:checked) ~ .checkboxList__itemCheckboxFrame {
             border: 1px solid #adb5bd;
-            border-radius: 4px;
-            margin-right: $checkboxMarginRight;
         }
-        &:checked + div {
-            display: flex;
-            width: 18px;
-            height: 18px;
+
+        &:checked + .checkboxList__itemCheckboxCheckMarkContainer {
+            opacity: 1;
+        }
+        &:checked ~ .checkboxList__itemCheckboxFrame {
             border: 1px solid #bc9cff;
-            border-radius: 4px;
-            margin-right: $checkboxMarginRight;
-            //background: url("./FormElements.CheckboxList/img/checkMark.svg") no-repeat;
-            background-image: "./FormElements.CheckboxList/img/checkMark.svg";
-            background-repeat: no-repeat;
-            background-position: 50% 40%;
         }
+    }
+
+    &__itemCheckboxCheckMarkContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+
+        padding-bottom: 2px;
+
+        width: $checkboxSize;
+        height: $checkboxSize;
+    }
+
+    &__itemCheckboxCheckMark {
+        display: flex;
+        width: 10px;
+        height: 10px;
+    }
+
+    &__itemCheckboxFrame {
+        display: flex;
+        width: $checkboxSize;
+        height: $checkboxSize;
+        border-radius: 4px;
+        position: absolute;
     }
 }

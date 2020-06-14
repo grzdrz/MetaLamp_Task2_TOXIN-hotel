@@ -8,6 +8,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 //корень которого расположен в js файле точки входа.
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 const webpack = require('webpack');
 
 //HtmlWebpackPlugin с inject: true при генерации html файлов вставляет в него ВСЕ описанные в свойстве entry объекта конфигурации

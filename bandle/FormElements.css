@@ -1063,29 +1063,38 @@ body {
     font-size: 12px;
     line-height: 14px;
     color: rgba(31, 32, 65, 0.5); }
-  .checkboxList__itemCheckbox {
+  .checkboxList__itemCheckboxInput {
     width: 20px;
     height: 20px;
-    position: absolute;
-    z-index: -1;
+    position: relative;
+    margin-right: 10px;
     opacity: 0; }
-    .checkboxList__itemCheckbox + div {
-      display: flex;
-      width: 18px;
-      height: 18px;
-      border: 1px solid #adb5bd;
-      border-radius: 4px;
-      margin-right: 10px; }
-    .checkboxList__itemCheckbox:checked + div {
-      display: flex;
-      width: 18px;
-      height: 18px;
-      border: 1px solid #bc9cff;
-      border-radius: 4px;
-      margin-right: 10px;
-      background-image: "./FormElements.CheckboxList/img/checkMark.svg";
-      background-repeat: no-repeat;
-      background-position: 50% 40%; }
+    .checkboxList__itemCheckboxInput:not(:checked) + .checkboxList__itemCheckboxCheckMarkContainer {
+      opacity: 0; }
+    .checkboxList__itemCheckboxInput:not(:checked) ~ .checkboxList__itemCheckboxFrame {
+      border: 1px solid #adb5bd; }
+    .checkboxList__itemCheckboxInput:checked + .checkboxList__itemCheckboxCheckMarkContainer {
+      opacity: 1; }
+    .checkboxList__itemCheckboxInput:checked ~ .checkboxList__itemCheckboxFrame {
+      border: 1px solid #bc9cff; }
+  .checkboxList__itemCheckboxCheckMarkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-bottom: 2px;
+    width: 20px;
+    height: 20px; }
+  .checkboxList__itemCheckboxCheckMark {
+    display: flex;
+    width: 10px;
+    height: 10px; }
+  .checkboxList__itemCheckboxFrame {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    position: absolute; }
 
 .radioButton {
   width: max-content; }
