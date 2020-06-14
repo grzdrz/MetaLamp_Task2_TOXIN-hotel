@@ -39,11 +39,32 @@ module.exports = class WebpackConfigBuilder {
                     ]
                 },
                 {
+                    test: /\.(ttf|eot|woff|woff2|svg|png)$/,
+                    loader: 'file-loader',
+                    options: {
+                        name: '[path][name].[ext]',
+                    }
+                },
+                {
+                    test: /\.css$/,
+                    loaders: [
+                        {
+                            loader: "style-loader"
+                        },
+                        {
+                            loader: MiniCssExtractPlugin.loader,
+                        },
+                        {
+                            loader: "css-loader",
+                        },
+                    ]
+                },
+                {
                     test: /\.scss$/,
                     loaders: [
-                        /* {
+                        {
                             loader: "style-loader"
-                        }, */
+                        },
                         {
                             loader: MiniCssExtractPlugin.loader,
                         },
@@ -54,13 +75,6 @@ module.exports = class WebpackConfigBuilder {
                             loader: "sass-loader"
                         },
                     ]
-                },
-                {
-                    test: /\.(ttf|eot|woff|woff2|svg|png)$/,
-                    loader: 'file-loader',
-                    options: {
-                        name: '[path][name].[ext]',
-                    }
                 },
             ]
         };

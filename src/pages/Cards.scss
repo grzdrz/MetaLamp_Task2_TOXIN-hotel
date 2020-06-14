@@ -1,4 +1,4 @@
-@import "./index.scss";
+@import "./base.scss";
 
 .cards {
     min-width: 100%;
@@ -13,9 +13,9 @@
     padding-bottom: 500px;
 }
 
-@import "./GlobalLogo/GlobalLogo.scss";
-@import "./Cards.FormDefault/FormDefault.scss";
-@import "./ColorsAndType.ColorBlock/ColorsAndFonts.scss";
+@import "../GlobalLogo/GlobalLogo.scss";
+@import "../Cards.FormDefault/FormDefault.scss";
+@import "../ColorsAndType/ColorsAndFonts.scss";
 
 .globalLogo {
     margin-bottom: 72px;

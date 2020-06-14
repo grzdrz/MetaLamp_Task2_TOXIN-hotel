@@ -1,10 +1,17 @@
 .radioButton {
     width: max-content;
-    
+
     &__buttonsContainer {
-        display: grid;
-        grid-template-columns: max-content max-content;
-        grid-template-rows: max-content;
+        display: flex;
+    }
+    &__buttonContainer {
+        display: flex;
+        position: relative;
+
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0px;
+        }
     }
 
     &__title {
@@ -18,87 +25,86 @@
         margin-bottom: 15px;
     }
 
-    &__label {
+    &__labelRadio {
         display: flex;
         flex-direction: row;
-        align-content: center;
+        justify-content: center;
+        align-items: center;
         position: relative;
-
-        margin-right: 20px;
-        &:last-child {
-            margin-right: 0px;
-        }
-    }
-
-    &__labelToggle {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        position: relative;
-
-        margin-right: 20px;
-        &:last-child {
-            margin-right: 0px;
-        }
-    }
-
-    &__button {
-        opacity: 0;
-        position: absolute;
         z-index: -1;
         width: 20px;
         height: 20px;
+        border-radius: 50%;
 
-        & + p::before {
-            content: "";
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            border-radius: 21px;
-            margin-right: 10px;
-        }
-
-        &:checked + p::before {
-            content: "";
-            background: url("./FormElements.RadioButton/img/circle.svg") no-repeat;
-            background-position: 50% 50%;
-        }
+        margin-right: 10px;
     }
+    &__labelToggle {
+        display: flex;
+        flex-direction: row;
 
-    &__toggle {
-        opacity: 0;
-        position: absolute;
+        align-items: center;
+        position: relative;
         z-index: -1;
         width: 40px;
         height: 20px;
+        border-radius: 10px;
 
-        & + p::before {
-            content: "";
-            display: inline-block;
-            width: 40px;
-            height: 20px;
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            border-radius: 21px;
-            margin-right: 10px;
-            background: url("./FormElements.RadioButton/img/circleGrey.svg") no-repeat;
-            background-position: 10% 50%;
+        margin-right: 10px;
 
-            transition: background-position 0.3s;
-        }
+        padding: 0px 3px;
 
-        &:checked + p::before {
-            content: "";
-            display: inline-block;
-            width: 40px;
-            height: 20px;
+        transition: padding-left 0.3s;
+    }
+
+    &__buttonRadio {
+        opacity: 0;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+
+        &:checked + label {
             border: 1px solid #bc9cff;
-            border-radius: 21px;
-            margin-right: 10px;
-            background: url("./FormElements.RadioButton/img/circle.svg") no-repeat;
-            background-position: 90% 50%;
+        }
+        &:checked + label::after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            border-radius: 50%;
+        }
+        &:not(:checked) + label {
+            border: 1px solid rgba(31, 32, 65, 0.25);
+        }
+    }
+    &__buttonToggle {
+        opacity: 0;
+        position: absolute;
+        width: 40px;
+        height: 20px;
+        opacity: 0;
 
-            transition: background-position 0.3s;
+        &:checked + label {
+            border: 1px solid #bc9cff;
+            padding-left: 3px;
+        }
+        &:not(:checked) + label {
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            padding-left: 23px;
+        }
+        &:checked + label::after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            border-radius: 50%;
+        }
+        &:not(:checked) + label::after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background: rgba(31, 32, 65, 0.25);
+            border-radius: 50%;
         }
     }
 

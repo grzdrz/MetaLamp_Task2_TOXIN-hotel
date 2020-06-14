@@ -1,0 +1,31 @@
+@import "./base.scss";
+
+.formElements {
+    min-width: 100%;
+    & > div:nth-child(n + 1),
+    & > label {
+        margin-bottom: 20px;
+        margin-left: 141px;
+    }
+    padding-bottom: 500px;
+}
+
+@import "../GlobalLogo/GlobalLogo.scss";
+@import "../FormElements.FormInput/FormInput.scss";
+@import "../FormElements.Dropdown/Dropdown.scss";
+@import "../FormElements.CheckboxList/CheckboxList.scss";
+@import "../FormElements.RadioButton/RadioButton.scss";
+@import "../FormElements.RateButton/RateButton.scss";
+@import "../FormElements.ButtonDefault/ButtonDefault.scss";
+@import "../FormElements.Pagination/Pagination.scss";
+@import "../FormElements.RangeSlider/RangeSlider.scss";
+@import "../FormElements.BulletList/BulletList.scss";
+@import "../FormElements.DateInput/DateInput.scss";
+@import "../FormElements.LikeButton/LikeButton.scss";
+@import "../FormElements.RoomDetails/RoomDetails.scss";
+@import "../FormElements.GuestRoomReviews/GuestRoomReviews.scss";
+@import "../ColorsAndType/ColorsAndFonts.scss";
+
+.globalLogo {
+    margin-bottom: 65px;
+}

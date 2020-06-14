@@ -1,20 +1,19 @@
 @font-face {
     font-family: MontserratBold;
-    src: url("./fonts/Montserrat/Montserrat-Bold.ttf");
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
 }
 @font-face {
     font-family: MontserratRegular;
-    src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
 }
 @font-face {
     font-family: OpenSansBold;
-    src: url("./fonts/OpenSans/OpenSans-Bold.ttf");
+    src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
 }
 @font-face {
     font-family: OpenSansRegular;
-    src: url("./fonts/OpenSans/OpenSans-Regular.ttf");
+    src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
 }
-@import "../node_modules/material-design-icons/iconfont/material-icons.css";
 
 * {
     margin: 0px;

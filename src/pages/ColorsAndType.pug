@@ -6,10 +6,11 @@ html
         link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous")
     body
-        include ../ColorsAndType.ColorBlock/ColorBlock.pug
-        .colorsBlock
-            include ../GlobalLogo/GlobalLogo.pug
-            
+        include ../ColorsAndType/ColorAndFontBlocks.pug
+
+        include ../GlobalLogo/GlobalLogo.pug
+
+        div(class=["colorsAndFontsContainer"])
             div(class=["colorsAndTypeBlock__colorsContainer"])
                 - for(let i = 100; i >= 25; i-=25)
                     +getColorBlock({
@@ -17,7 +18,7 @@ html
                         colorCode: "#1F2041",
                     },
                     {
-                        colorRectangleClasses: [
+                        colorRectangle: [
                             "colors__background_darkShade" + i
                         ]
                     })
@@ -27,7 +28,7 @@ html
                     colorCode: "#1F2041",
                 },
                 {
-                    colorRectangleClasses: [
+                    colorRectangle: [
                         "colors__background_darkShade5"
                     ]
                 })
@@ -37,7 +38,7 @@ html
                     colorCode: "#BC9CFF",
                 },
                 {
-                    colorRectangleClasses: [
+                    colorRectangle: [
                         "colors__background_purple"
                     ]
                 })
@@ -47,8 +48,63 @@ html
                     colorCode: "#6FCF97",
                 },
                 {
-                    colorRectangleClasses: [
+                    colorRectangle: [
                         "colors__background_green"
                     ]
-                })                                
+                })
+
+
+            div(class=["colorsAndTypeBlock__fontsContainer"])
+
+                +getFontBlock({
+                    tagName: "H1",
+                    descriptionText: "This one is the sub-section or widget title",
+                },
+                {
+                    tag: [
+                        "fonts__family_montserratRegular", "fonts__size_24", "colors__font_darkShade25"
+                    ],
+                    description: [
+                        "fonts__family_quicksandBold", "fonts__size_24", "colors__font_darkShade100", "fonts__lineHeight_30"
+                    ]
+                })
+
+                +getFontBlock({
+                    tagName: "H2",
+                    descriptionText: "Next one is the item title inside widgets",
+                },
+                {
+                    tag: [
+                        "fonts__family_montserratRegular", "fonts__size_19", "colors__font_darkShade25"
+                    ],
+                    description: [
+                        "fonts__family_quicksandBold", "fonts__size_19", "colors__font_darkShade100", "fonts__lineHeight_24"
+                    ]
+                })
+
+                +getFontBlock({
+                    tagName: "H3",
+                    descriptionText: "This is a label or CTA text",
+                },
+                {
+                    tag: [
+                        "fonts__family_montserratRegular", "fonts__size_12", "colors__font_darkShade25"
+                    ],
+                    description: [
+                        "fonts__family_montserratBold", "fonts__size_12", "colors__font_darkShade100", "fonts__lineHeight_15", "fonts_uppercase"
+                    ]
+                })
+
+                +getFontBlock({
+                    tagName: "Body",
+                    descriptionText: "This is the body text which is used for most of the design, like paragraphs, lists, etc.",
+                },
+                {
+                    tag: [
+                        "fonts__family_montserratRegular", "fonts__size_14", "colors__font_darkShade25"
+                    ],
+                    description: [
+                        "fonts__family_montserratRegular", "fonts__size_14", "colors__font_darkShade75", "fonts__lineHeight_24"
+                    ]
+                })                
 

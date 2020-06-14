@@ -145,10 +145,10 @@
             border: 1px solid #bc9cff;
             border-radius: 4px;
             margin-right: $checkboxMarginRight;
-            background: url("./FormElements.CheckboxList/img/checkMark.svg") no-repeat;
+            //background: url("./FormElements.CheckboxList/img/checkMark.svg") no-repeat;
+            background-image: "./FormElements.CheckboxList/img/checkMark.svg";
+            background-repeat: no-repeat;
             background-position: 50% 40%;
         }
     }
-
-
 }

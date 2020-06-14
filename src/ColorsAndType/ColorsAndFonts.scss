@@ -67,3 +67,54 @@
         }
     }
 }
+
+.fonts {
+    &__family {
+        &_montserratRegular {
+            font-family: MontserratRegular;
+        }
+
+        &_quicksandRegular {
+            font-family: OpenSansRegular;
+        }
+
+        &_montserratBold {
+            font-family: MontserratBold;
+        }
+
+        &_quicksandBold {
+            font-family: OpenSansBold;
+        }
+    }
+
+    &__size {
+        &_24 {
+            font-size: 24px;
+        }
+        &_19 {
+            font-size: 19px;
+        }
+        &_14 {
+            font-size: 14px;
+        }
+        &_12 {
+            font-size: 12px;
+        }
+    }
+
+    &__lineHeight {
+        &_30 {
+            line-height: 30px;
+        }
+        &_24 {
+            line-height: 24px;
+        }
+        &_15 {
+            line-height: 15px;
+        }
+    }
+
+    &_uppercase{
+        text-transform: uppercase;
+    }
+}

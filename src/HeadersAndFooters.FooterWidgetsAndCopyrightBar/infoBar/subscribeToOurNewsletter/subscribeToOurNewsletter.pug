@@ -5,11 +5,10 @@
         include ../../../FormElements.FormInput/FormInput.pug
         +getFormInput({
             hasTitle: false,
-            titleTextTest: {
-                isTitleTextTestVisible: false,
-            },
+            isTitleTextTestVisible: false,
             placeholder: "Your email address",
             name: "email",
             type: "email",
             value: "",
-            hasSubmitButton: true})
+            hasSubmitButton: true,
+        })
