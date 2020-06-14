@@ -1,44 +1,44 @@
-mixin getDateInput(inputType, options, classes)
+mixin getDateInput(options, classes={})
 
-    - if(inputType === "double")
-        div(class=["dateInput dateInput_double"])
-            div(class=["dateInput__container"])
-                p(class=["dateInput__title"])= options.firstTitle
-                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"])
-                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"] 
+    - if(options.inputType === "double")
+        div(class=["dateInput", "dateInput_double"].concat(classes.container || []))
+            div(class=["dateInput__inputContainer"].concat(classes.inputContainer || []))
+                p(class=["dateInput__title"].concat(classes.title || []))= options.firstTitle
+                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"].concat(classes.datepickerLabel || []))
+                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"].concat(classes.datepickerInput || []) 
                         type="text" 
                         name="first_date" 
                         placeholder="ДД.ММ.ГГГГ"
                         readonly=true)
-                    p(class=["dateInput__datepickerArrow", "dateInput__datepickerLabel_first"]) expand_more
-            div(class=["dateInput__container"])
-                p(class=["dateInput__title"])= options.secondTitle
-                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_second"])
-                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_second"] 
+                    p(class=["dateInput__datepickerArrow"].concat(classes.datepickerArrow || [])) expand_more
+            div(class=["dateInput__inputContainer"].concat(classes.inputContainer || []))
+                p(class=["dateInput__title"].concat(classes.title || []))= options.secondTitle
+                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_second"].concat(classes.datepickerLabel || []))
+                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_second"].concat(classes.datepickerInput || [])  
                         type="text" 
                         name="second_date"
                         placeholder="ДД.ММ.ГГГГ"
                         readonly=true)
-                    p(class=["dateInput__datepickerArrow", "dateInput__datepickerLabel_second"]) expand_more
-    - else if(inputType === "dropdown")
-        div(class=["dateInput dateInput_dropdown"])
-            div(class=["dateInput__container"])
-                p(class=["dateInput__title"])= options.title
-                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"])
-                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"] 
+                    p(class=["dateInput__datepickerArrow"].concat(classes.datepickerArrow || [])) expand_more
+    - else if(options.inputType === "dropdown")
+        div(class=["dateInput", "dateInput_dropdown"].concat(classes.container || []))
+            div(class=["dateInput__inputContainer"].concat(classes.inputContainer || []))
+                p(class=["dateInput__title"].concat(classes.title || []))= options.title
+                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"].concat(classes.datepickerLabel || []))
+                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"].concat(classes.datepickerInput || []) 
                         type="text" 
                         name="first_date" 
                         placeholder="ДД.ММ.ГГГГ"
                         readonly=true)
-                    p(class=["dateInput__datepickerArrow", "dateInput__datepickerLabel_first"]) expand_more
-    - else if(inputType === "simple")
-        div(class=["dateInput dateInput_simple"])
-            div(class=["dateInput__container"])
-                p(class=["dateInput__title"])= options.title
-                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"])
-                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"] 
+                    p(class=["dateInput__datepickerArrow"].concat(classes.datepickerArrow || [])) expand_more
+    - else if(options.inputType === "simple")
+        div(class=["dateInput", "dateInput_simple"].concat(classes.container || []))
+            div(class=["dateInput__inputContainer"].concat(classes.inputContainer || []))
+                p(class=["dateInput__title"].concat(classes.title || []))= options.title
+                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"].concat(classes.datepickerLabel || []))
+                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"].concat(classes.datepickerInput || []) 
                         type="text" 
                         name="first_date" 
                         placeholder="ДД.ММ.ГГГГ"
                         readonly=true)
-                    p(class=["dateInput__datepickerArrow", "dateInput__datepickerLabel_first"]) expand_more                    
+                    p(class=["dateInput__datepickerArrow"].concat(classes.datepickerArrow || [])) expand_more                    

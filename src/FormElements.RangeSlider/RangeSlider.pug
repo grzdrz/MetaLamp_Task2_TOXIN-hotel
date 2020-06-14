@@ -1,21 +1,26 @@
-mixin getRangeSlider(title, options, classes)
-    div(class=["rangeSlider"] 
+mixin getRangeSlider(options, classes={})
+
+    div(class=["rangeSlider"].concat(classes.container || [])
     data-max-value=options.maxValue 
     data-min-value=options.minValue
     data-value-type=options.valueType
     data-value-round=options.valueRound)
-        div(class=["rangeSlider__titleContainer"])
-            p(class=["rangeSlider__title"])= title
-            p(class=["rangeSlider__inputsValueRange"]
+        div(class=["rangeSlider__titleContainer"].concat(classes.titleContainer || []))
+            p(class=["rangeSlider__title"].concat(classes.title || []))= options.title
+            p(class=["rangeSlider__inputsValueRange"].concat(classes.inputsValueRange || [])
             )= options.firstValue + options.valueType + " - " + options.lastValue + options.valueType
-        div(class=["rangeSlider__sliderContainer"])
-            div(class=["rangeSlider__sliderBodyEmpty"])
-            div(class=["rangeSlider__sliderBodyFilled"])
-            div(class=["rangeSlider__firstSliderOutside"])
-            div(class=["rangeSlider__lastSliderOutside"])
-            div(class=["rangeSlider__firstSlider"])
-            div(class=["rangeSlider__lastSlider"])
-            input(class=["rangeSlider__firstInput"] type="hidden" value= options.firstValue)
-            input(class=["rangeSlider__lastInput"] type="hidden" value= options.lastValue)
+        div(class=["rangeSlider__sliderContainer"].concat(classes.sliderContainer || []))
+            div(class=["rangeSlider__sliderBodyEmpty"].concat(classes.sliderBodyEmpty || []))
+            div(class=["rangeSlider__sliderBodyFilled"].concat(classes.sliderBodyFilled || []))
+            div(class=["rangeSlider__firstSliderOutside"].concat(classes.firstSliderOutside || []))
+            div(class=["rangeSlider__lastSliderOutside"].concat(classes.lastSliderOutside || []))
+            div(class=["rangeSlider__firstSlider"].concat(classes.firstSlider || []))
+            div(class=["rangeSlider__lastSlider"].concat(classes.lastSlider || []))
+            input(class=["rangeSlider__firstInput"].concat(classes.firstInput || [])
+                type="hidden"
+                value= options.firstValue)
+            input(class=["rangeSlider__lastInput"].concat(classes.lastInput || []) 
+                type="hidden" 
+                value= options.lastValue)
 
 

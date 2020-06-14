@@ -12,7 +12,8 @@ mixin getForm(options, classes)
 
         - if(options.formType === "guestsAndDateRange"){
             include ../FormElements.DateInput/DateInput.pug
-            +getDateInput("double", {
+            +getDateInput({
+                inputType: "double",
                 firstTitle: "выезд",
                 secondTitle: "прибытие",
             })
@@ -26,12 +27,15 @@ mixin getForm(options, classes)
                 name: "dropdown",
                 type: "text",
                 value: "Сколько гостей",
-                dropdown: {
-                    dropList: [
-                        {name: "взрослые", value: 0},
-                        {name: "дети", value: 0},
-                        {name: "младенцы", value: 0}],         
-                    typeOfShownInfo: "dropdown__input_sumNumber"},}) 
+                dropdownList: [
+                    {name: "взрослые", value: 0},
+                    {name: "дети", value: 0},
+                    {name: "младенцы", value: 0}
+                ],
+            },
+            {
+                input: ["dropdown__input_sumNumber"],
+            })
 
             include ../FormElements.ButtonDefault/ButtonDefault.pug
             +getButton({
@@ -75,7 +79,8 @@ mixin getForm(options, classes)
             })
 
             include ../FormElements.DateInput/DateInput.pug
-            +getDateInput("simple", {
+            +getDateInput({
+                inputType: "simple",                
                 title: "дата рождения",
             })
 
@@ -98,10 +103,11 @@ mixin getForm(options, classes)
                 hasSubmitButton: false}
             )
 
-            +getRadioButton("toggle", [
-                {text: "Получать спецпредложения", isChecked: false}
-            ],
-            {
+            +getRadioButton({
+                buttonType: "toggle",
+                radioButtonList: [
+                    {text: "Получать спецпредложения", isChecked: false}
+                ],
                 title: "",
                 name: "specialOffer"
             })

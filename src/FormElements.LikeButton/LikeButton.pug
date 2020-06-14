@@ -1,9 +1,9 @@
-mixin getLikeButton(options, classes)
+mixin getLikeButton(options, classes={})
 
     - if(options.hasTitle)
-        p(class=["likeButton__title"])
-    div(class=["likeButton"])
-        input(class=["likeButton__input"] type="checkbox" checked=options.isChecked)
-        label(class=["likeButton__label"])
-            p(class=["likeButton__buttonLikeSymbol"])
-            p(class=["likeButton__buttonLikesNumber"])= options.number
+        p(class=["likeButton__title"].concat(classes.title || []))
+    div(class=["likeButton"].concat(classes.container || []))
+        input(class=["likeButton__input"].concat(classes.input || []) type="checkbox" checked=options.isChecked)
+        label(class=["likeButton__label"].concat(classes.label || []))
+            p(class=["likeButton__buttonLikeSymbol"].concat(classes.buttonLikeSymbol || []))
+            p(class=["likeButton__buttonLikesNumber"].concat(classes.buttonLikesNumber || []))= options.number

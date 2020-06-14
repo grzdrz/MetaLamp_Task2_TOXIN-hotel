@@ -1,32 +1,29 @@
-mixin getCheckbox(checkboxType, checkboxList, options, classArray)
+mixin getCheckbox(options, classes={})
 
-    - let containerClasses = ["checkboxList"];
-    - let titleContainerClasses = ["checkboxList__title"];
-    - let labelTextClasses = [];
-    - if(checkboxType === "expandable"){
-    -    containerClasses.push("checkboxList_expandable");
-    -    labelTextClasses.push("checkboxList__itemLabelText");
+    - if(options.checkboxType === "expandable"){
+    -    classes.container ? classes.container.push("checkboxList_expandable") : classes.container = ["checkboxList_expandable"];
+    -    classes.itemLabelText ? classes.itemLabelText.push("checkboxList__itemLabelText") : classes.itemLabelText = ["checkboxList__itemLabelText"];
     - }
-    - else if(checkboxType === "rich"){
-    -    titleContainerClasses.push("checkboxList__titleText_richTitleBottomMargin");
-    -    labelTextClasses.push("checkboxList__itemLabelMainText");
+    - else if(options.checkboxType === "rich"){
+    -    classes.title ? classes.title.push("checkboxList__titleText_richTitleBottomMargin") : classes.title = ["checkboxList__titleText_richTitleBottomMargin"];
+    -    classes.itemLabelText ? classes.itemLabelText.push("checkboxList__itemLabelMainText") : classes.itemLabelText = ["checkboxList__itemLabelMainText"];
     - }
-    - else if(checkboxType === "simple"){
-    -    titleContainerClasses.push("checkboxList__titleText_simpleTitleBottomMargin");
-    -    labelTextClasses.push("checkboxList__itemLabelSimpleText"); 
+    - else if(options.checkboxType === "simple"){
+    -    classes.title ? classes.title.push("checkboxList__titleText_simpleTitleBottomMargin") : classes.title = ["checkboxList__titleText_simpleTitleBottomMargin"];
+    -    classes.itemLabelText ? classes.itemLabelText.push("checkboxList__itemLabelSimpleText") : classes.itemLabelText = ["checkboxList__itemLabelSimpleText"]; 
     - }
 
-    div(class=containerClasses)
-        div(class=titleContainerClasses)
-            p(class=["checkboxList__titleText"])= options.titleText
-            if checkboxType === "expandable"
-                p(class=["checkboxList__dropdownButton"]) expand_more
-        div(class=["checkboxList__list"] data-is-opened=options.isOpened)
-            for item in checkboxList
-                div(class=["checkboxList__item"])
-                    label(class=["checkboxList__itemLabel"])
-                        input(class=["checkboxList__itemCheckbox"] type= "checkbox" checked= item.isChecked)
-                        div(class=["checkboxList__itemCheckboxVisiblePart"])
-                        p(class=labelTextClasses)= item.text
-                    if checkboxType === "rich"
-                        p(class=["checkboxList__itemLabelAdditionalText"])= item.additionalText  
+    div(class=["checkboxList"].concat(classes.container || []))
+        div(class=["checkboxList__title"].concat(classes.title || []))
+            p(class=["checkboxList__titleText"].concat(classes.titleText || []))= options.titleText
+            - if(options.checkboxType === "expandable")
+                p(class=["checkboxList__dropdownButton"].concat(classes.dropdownButton || [])) expand_more
+        div(class=["checkboxList__list"].concat(classes.list || []) data-is-opened=options.isOpened)
+            - for(let item of options.checkboxList)
+                div(class=["checkboxList__item"].concat(classes.item || []))
+                    label(class=["checkboxList__itemLabel"].concat(classes.itemLabel || []))
+                        input(class=["checkboxList__itemCheckbox"].concat(classes.itemCheckbox || []) type= "checkbox" checked= item.isChecked)
+                        div(class=["checkboxList__itemCheckboxVisiblePart"].concat(classes.itemCheckboxVisiblePart || []))
+                        p(class=["checkboxList__itemLabelText"].concat(classes.itemLabelText || []))= item.text
+                    - if(options.checkboxType === "rich")
+                        p(class=["checkboxList__itemLabelAdditionalText"].concat(classes.itemLabelAdditionalText || []))= item.additionalText  

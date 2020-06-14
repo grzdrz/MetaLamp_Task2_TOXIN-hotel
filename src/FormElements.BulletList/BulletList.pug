@@ -1,10 +1,10 @@
-mixin getBulletList(list, options, classArray)
+mixin getBulletList(options, classes={})
 
-    div(class=["bulletList"])
-        div(class=["bulletList__title"])
-            p(class=["bulletList__titleText"])= options.titleText
-        ul(class=["bulletList__list"])    
-            for listItem in list
-                li(class=["bulletList__listItem"])
-                    div(class=["bulletList__listItemMarker"])
-                    p(class=["bulletList__listItemText"])= listItem
+    div(class=["bulletList"].concat(classes.container || []))
+        div(class=["bulletList__title"].concat(classes.title || []))
+            p(class=["bulletList__titleText"].concat(classes.titleText || []))= options.titleText
+        ul(class=["bulletList__list"].concat(classes.list || []))    
+            - for(let listItem of options.list)
+                li(class=["bulletList__listItem"].concat(classes.listItem || []))
+                    div(class=["bulletList__listItemMarker"].concat(classes.listItemMarker || []))
+                    p(class=["bulletList__listItemText"].concat(classes.listItemText || []))= listItem

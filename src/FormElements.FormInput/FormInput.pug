@@ -1,19 +1,19 @@
-mixin getFormInput(options, classArray)
+mixin getFormInput(options, classes={})
 
-    div(class=["formInput"])
+    div(class=["formInput"].concat(classes.container || []))
         - if(options.hasTitle)
-            div(class=["formInput__title"])
-                p(class=["formInput__titleText"])= options.titleText
-                if options.isTitleTextTestVisible
-                    p(class=["formInput__titleTextTest"])= options.titleTextTestValue
+            div(class=["formInput__title"].concat(classes.title || []))
+                p(class=["formInput__titleText"].concat(classes.titleText || []))= options.titleText
+                - if(options.isTitleTextTestVisible)
+                    p(class=["formInput__titleTextTest"].concat(classes.titleTextTest || []))= options.titleTextTestValue
 
-        div(class=["formInput__input"])               
-            input(class=["formInput__mainInput"],
+        div(class=["formInput__input"].concat(classes.input || []))               
+            input(class=["formInput__mainInput"].concat(classes.mainInput || []),
                 placeholder= options.placeholder,
                 name= options.name,
                 type= options.type,
                 value= options.value)
-            if options.hasSubmitButton
-                input(class=['formInput__submitInput']
+            - if(options.hasSubmitButton)
+                input(class=['formInput__submitInput'].concat(classes.submitInput || [])
                     type="submit"
                     value="arrow_forward")

@@ -1,30 +1,32 @@
-mixin getDropdown(options, classArray)
+mixin getDropdown(options, classes={})
 
-    div(class=["dropdown"] data-border-radius="")
-        div(class=["dropdown__title"])
-            p(class=["dropdown__titleText"])= options.titleText
-            if options.isTitleTextTestVisible
-                p(class=["dropdown__titleTextTest"])= options.titleTextTestValue
-        div(class=["dropdown__input", options.dropdown.typeOfShownInfo], data-default-value=options.value)
-            input(class=["dropdown__mainInput"], 
+    div(class=["dropdown"].concat(classes.container || []) data-border-radius="")
+        div(class=["dropdown__title"].concat(classes.title || []))
+            p(class=["dropdown__titleText"].concat(classes.titleText || []))= options.titleText
+            - if(options.isTitleTextTestVisible)
+                p(class=["dropdown__titleTextTest"].concat(classes.titleTextTest || []))= options.titleTextTestValue
+        div(class=["dropdown__input"].concat(classes.input || []), data-default-value=options.value)
+            input(class=["dropdown__mainInput"].concat(classes.mainInput || []), 
                 placeholder= options.placeholder,
                 name= options.name,
                 type= options.type,
                 value= options.value,
                 readonly= true)
-            p(class=['dropdown__dropdownInput']) expand_more
-            div(class=["dropdown__dropedList"]
+            p(class=['dropdown__dropdownInput'].concat(classes.dropdownInput || [])) expand_more
+            div(class=["dropdown__dropedList"].concat(classes.dropedList || [])
                 style={display: "none"})
-                for item in options.dropdown.dropList
-                    div(class=["dropdown__dropedListItem"])
-                        p(class=["dropdown__dropedListItemText"])= item.name
-                        div(class=["dropdown__dropedListItemHandler"])
-                            button(class=["dropdown__dropedListItemHandlerMinus"])= "-"
-                            p(class=["dropdown__dropedListItemHandlerText"])= item.value
-                            button(class=["dropdown__dropedListItemHandlerPlus"])= "+"
-                if options.hasApplyButton || options.hasClearButton
-                    div(class=["dropdown__controlButtonsContainer"])
-                        if options.hasClearButton
-                            p(class=["dropdown__clearButton"]) очистить
-                        if options.hasApplyButton
-                            p(class=["dropdown__applyButton"]) применить                    
+                - for(let item of options.dropdownList)
+                    div(class=["dropdown__dropedListItem"].concat(classes.dropedListItem || []))
+                        p(class=["dropdown__dropedListItemText"].concat(classes.dropedListItemText || []))= item.name
+                        div(class=["dropdown__dropedListItemHandler"].concat(classes.dropedListItemHandler || []))
+                            button(class=["dropdown__dropedListItemHandlerMinus"].concat(classes.dropedListItemHandlerMinus || []))= "-"
+                            p(class=["dropdown__dropedListItemHandlerText"].concat(classes.dropedListItemHandlerText || []))= item.value
+                            button(class=["dropdown__dropedListItemHandlerPlus"].concat(classes.dropedListItemHandlerPlus || []))= "+"
+                - if(options.hasApplyButton || options.hasClearButton)
+                    div(class=["dropdown__controlButtonsContainer"].concat(classes.controlButtonsContainer || []))
+                        - if(options.hasClearButton)
+                            p(class=["dropdown__clearButton"].concat(classes.clearButton || [])) очистить
+                        - if(options.hasApplyButton)
+                            p(class=["dropdown__applyButton"].concat(classes.applyButton || [])) применить      
+
+//- options.dropdown.typeOfShownInfo              

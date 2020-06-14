@@ -870,10 +870,10 @@ body {
   flex-direction: row; }
   .dateInput_dropdown .dateInput__datepickerLabel, .dateInput_simple .dateInput__datepickerLabel {
     width: 266px; }
-  .dateInput__container {
+  .dateInput__inputContainer {
     display: flex;
     flex-direction: column; }
-    .dateInput__container:first-child {
+    .dateInput__inputContainer:first-child {
       margin-right: 20px; }
   .dateInput__title {
     font-family: MontserratBold;
@@ -1252,7 +1252,7 @@ body {
     margin-bottom: 20px; }
     .roomDetails__bottomBorder:last-child {
       margin-bottom: 0px; }
-  .roomDetails__container {
+  .roomDetails__detailContainer {
     display: flex;
     flex-direction: row; }
   .roomDetails__icon {
@@ -1297,12 +1297,12 @@ body {
   color: #1f2041;
   margin-bottom: 20px; }
 
-.guestRoomReviews__container {
+.guestRoomReviews__reviewContainer {
   display: grid;
   grid-template-columns: max-content 653px;
   grid-template-rows: auto auto;
   margin-bottom: 22px; }
-  .guestRoomReviews__container:last-child {
+  .guestRoomReviews__reviewContainer:last-child {
     margin-bottom: 0px; }
 
 .guestRoomReviews__userAvatar {

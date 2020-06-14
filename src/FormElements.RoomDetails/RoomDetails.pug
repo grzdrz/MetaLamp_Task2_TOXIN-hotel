@@ -1,11 +1,11 @@
-mixin getRoomDetails(detailsArray, options, classes)
+mixin getRoomDetails(options, classes={})
 
-    div(class=["roomDetails"])
-        - for(let detail of detailsArray)
-            div(class=["roomDetails__container"])
-                p(class=["roomDetails__icon"])= detail.icon
-                div(class=["roomDetails__textContainer"])
-                    p(class=["roomDetails__titleText"])= detail.titleText
-                    p(class=["roomDetails__mainText"])= detail.mainText
-            div(class=["roomDetails__bottomBorder"])    
+    div(class=["roomDetails"].concat(classes.container || []))
+        - for(let detail of options.detailsArray)
+            div(class=["roomDetails__detailContainer"].concat(classes.detailContainer || []))
+                p(class=["roomDetails__icon"].concat(classes.icon || []))= detail.icon
+                div(class=["roomDetails__textContainer"].concat(classes.textContainer || []))
+                    p(class=["roomDetails__titleText"].concat(classes.titleText || []))= detail.titleText
+                    p(class=["roomDetails__mainText"].concat(classes.mainText || []))= detail.mainText
+            div(class=["roomDetails__bottomBorder"].concat(classes.bottomBorder || []))    
 

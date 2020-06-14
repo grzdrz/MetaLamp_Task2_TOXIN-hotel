@@ -1,14 +1,14 @@
-mixin getGuestRoomReviews(reviewsArray, options, classes)
+mixin getGuestRoomReviews(options, classes={})
 
     include ../FormElements.LikeButton/LikeButton.pug
 
-    div(class=["guestRoomReviews"])
-        p(class=["guestRoomReviews__title"]) Отзывы посетителей номера
-        - for(let review of reviewsArray)
-            div(class=["guestRoomReviews__container"])
-                img(src=review.imgSrc class=["guestRoomReviews__userAvatar"])
-                div(class=["guestRoomReviews__userInfo"])
-                    p(class=["guestRoomReviews__userFullName"])= review.fullName
-                    p(class=["guestRoomReviews__numberOfDaysSinceComment"])= review.numberOfDaysSinceComment
+    div(class=["guestRoomReviews"].concat(classes.container || []))
+        p(class=["guestRoomReviews__title"].concat(classes.title || [])) Отзывы посетителей номера
+        - for(let review of options.reviewsArray)
+            div(class=["guestRoomReviews__reviewContainer"].concat(classes.reviewContainer || []))
+                img(src=review.imgSrc class=["guestRoomReviews__userAvatar"].concat(classes.userAvatar || []))
+                div(class=["guestRoomReviews__userInfo"].concat(classes.userInfo || []))
+                    p(class=["guestRoomReviews__userFullName"].concat(classes.userFullName || []))= review.fullName
+                    p(class=["guestRoomReviews__numberOfDaysSinceComment"].concat(classes.numberOfDaysSinceComment || []))= review.numberOfDaysSinceComment
                 +getLikeButton(review.likeButtonOptions)
-                p(class=["guestRoomReviews__comment"])= review.comment
+                p(class=["guestRoomReviews__comment"].concat(classes.comment || []))= review.comment

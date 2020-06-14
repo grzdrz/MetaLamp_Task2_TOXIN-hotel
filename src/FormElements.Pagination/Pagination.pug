@@ -1,49 +1,44 @@
-mixin getPagination(pagesCount, curPageNumber, options, classes)
-    - let containerClasses = [];
+mixin getPagination(options, classes={})
 
-    if classes
-        - classes.containerClasses ? containerClasses = containerClasses.concat(classes.containerClasses) : [];
+    - if(options.title)
+        p(class=["pagination__title"].concat(classes.title || []))= options.title
 
+    div(class=["pagination__pageList"].concat(classes.pageList || []) data-cur-page-number=options.curPageNumber)
+        - if(options.curPageNumber !== 1)
+            a(href="#" class=["pagination__leftArrow"].concat(classes.leftArrow || []))
+                p(class=["pagination__leftArrowText"].concat(classes.leftArrowText || [])) arrow_forward
+            a(href="#" class=["pagination__pageLink"].concat(classes.pageLink || []))
+                p(class=["pagination__pageLinkText"].concat(classes.pageLinkText || []))= 1                    
 
-    if options.title
-        p(class=["pagination__title"])= options.title
+        - if(options.curPageNumber - 3 > 1)
+            a(class=["pagination__pageLink"].concat(classes.pageLink || []))
+                p(class=["pagination__pageLinkText"].concat(classes.pageLinkText || []))= "..." 
 
-    div(class=["pagination__pageList"] data-cur-page-number=curPageNumber)
-        if curPageNumber !== 1
-            a(href="#" class=["pagination__leftArrow"])
-                p(class=["pagination__leftArrowText"]) arrow_forward
-            a(href="#" class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= 1                    
+        - if(options.curPageNumber - 2 > 1)
+            a(href="#" class=["pagination__pageLink"].concat(classes.pageLink || []))
+                p(class=["pagination__pageLinkText"].concat(classes.pageLinkText || []))= options.curPageNumber - 2
+        - if(options.curPageNumber - 1 > 1)
+            a(href="#" class=["pagination__pageLink"].concat(classes.pageLink || []))
+                p(class=["pagination__pageLinkText"].concat(classes.pageLinkText || []))= options.curPageNumber - 1
 
-        if curPageNumber - 3 > 1
-            a(class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= "..." 
+        a(href="#" class=["pagination__pageLink", "pagination__pageLink_target"].concat(classes.pageLink || []))
+            p(class=["pagination__pageLinkText"].concat(classes.pageLinkText || []))= options.curPageNumber
 
-        if curPageNumber - 2 > 1
-            a(href="#" class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= curPageNumber - 2
-        if curPageNumber - 1 > 1
-            a(href="#" class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= curPageNumber - 1
+        - if(options.curPageNumber + 1 < options.pagesCount)
+            a(href="#" class=["pagination__pageLink"].concat(classes.pageLink || []))
+                p(class=["pagination__pageLinkText"].concat(classes.pageLinkText || []))= options.curPageNumber + 1
+        - if(options.curPageNumber + 2 < options.pagesCount)
+            a(href="#" class=["pagination__pageLink"].concat(classes.pageLink || []))
+                p(class=["pagination__pageLinkText"].concat(classes.pageLinkText || []))= options.curPageNumber + 2
+        - if(options.curPageNumber + 3 < options.pagesCount)
+            a(class=["pagination__pageLink"].concat(classes.pageLink || []))
+                p(class=["pagination__pageLinkText"].concat(classes.pageLinkText || []))= "..." 
 
-        a(href="#" class=["pagination__pageLink", "pagination__pageLink_target"])
-            p(class=["pagination__pageLinkText"])= curPageNumber
+        - if(options.curPageNumber !== options.pagesCount)
+            a(href="#" class=["pagination__pageLink"].concat(classes.pageLink || []))
+                p(class=["pagination__pageLinkText"].concat(classes.pageLinkText || []))= options.pagesCount    
+            a(href="#" class=["pagination__rightArrow"].concat(classes.rightArrow || []))
+                p(class=["pagination__rightArrowText"].concat(classes.rightArrowText || [])) arrow_forward
 
-        if curPageNumber + 1 < pagesCount
-            a(href="#" class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= curPageNumber + 1
-        if curPageNumber + 2 < pagesCount
-            a(href="#" class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= curPageNumber + 2
-        if curPageNumber + 3 < pagesCount
-            a(class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= "..." 
-
-        if curPageNumber !== pagesCount
-            a(href="#" class=["pagination__pageLink"])
-                p(class=["pagination__pageLinkText"])= pagesCount    
-            a(href="#" class=["pagination__rightArrow"])
-                p(class=["pagination__rightArrowText"]) arrow_forward
-
-    if options.downText
-        p(class=["pagination__downText"])= options.downText                
+    - if(options.downText)
+        p(class=["pagination__downText"].concat(classes.downText || []))= options.downText                

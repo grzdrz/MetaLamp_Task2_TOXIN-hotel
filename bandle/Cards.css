@@ -115,10 +115,10 @@ body {
   flex-direction: row; }
   .dateInput_dropdown .dateInput__datepickerLabel, .dateInput_simple .dateInput__datepickerLabel {
     width: 266px; }
-  .dateInput__container {
+  .dateInput__inputContainer {
     display: flex;
     flex-direction: column; }
-    .dateInput__container:first-child {
+    .dateInput__inputContainer:first-child {
       margin-right: 20px; }
   .dateInput__title {
     font-family: MontserratBold;

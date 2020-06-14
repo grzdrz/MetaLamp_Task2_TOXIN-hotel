@@ -1,13 +1,14 @@
-mixin getRateButton(options, classArray)
+mixin getRateButton(options, classes={})
 
-    div(class=["ratingRadio"])
+    div(class=["ratingRadio"].concat(classes.container || []))
         - for(let i=4; i >= 0; i--)
             input(type="radio"
-                class=["ratingRadio__input", "ratingRadio__input_" + (i + 1)]
+                class=["ratingRadio__input", "ratingRadio__input_" + (i + 1)].concat(classes.input || [])
                 name="starRating"
                 value=(i + 1)
                 checked=options.isCheckedArray[i])
-            p(class=["ratingRadio__label", "ratingRadio__label_" + (i + 1)] title="Оценка «" + (i + 1) + "»")
+            p(class=["ratingRadio__label", "ratingRadio__label_" + (i + 1)].concat(classes.label || []) 
+                title="Оценка «" + (i + 1) + "»")
 
 //- i + 1 при диапазоне от 4 до 0 включительно для того чтобы массив isCheckedArray мог начинаться с 0го индекса
 //-если же просто i при диапазоне от 5 до 1 включительно, то в массиве isCheckedArray нужно будет не заполнять первый элемент
