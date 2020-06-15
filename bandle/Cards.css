@@ -1572,6 +1572,148 @@ body {
     text-align: center;
     color: #000000; }
 
+.roomInfo {
+  width: 270px;
+  height: 258px;
+  display: flex;
+  /* &__photoRadioButtons {
+        z-index: 2;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 42px;
+
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    } */
+  /* &__photoRadioButton {
+        width: 8px;
+        height: 8px;
+
+        position: relative;
+    } */ }
+  .roomInfo__photos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 271px;
+    height: 152px; }
+  .roomInfo__photo {
+    position: absolute;
+    z-index: 1;
+    opacity: 0; }
+  .roomInfo__arrows {
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    width: 271px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; }
+  .roomInfo__arrowBack {
+    transform: rotate(90deg); }
+  .roomInfo__arrowForward {
+    transform: rotate(-90deg); }
+  .roomInfo__photoRadioButtonInput {
+    z-index: 3;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    opacity: 0;
+    bottom: 15px;
+    /* &_1 {
+                margin-left: 24px * ($i - 1);
+            } */
+    /* &_2 {
+                margin-left: 24px * ($i - 1);
+            } */
+    /* &_3 {
+                margin-left: 24px * ($i - 1);
+            } */
+    /* &_4 {
+                margin-left: 24px * ($i - 1);
+            } */
+    /* &_1 {
+            right: 15px + ($radioButtonSize + 3px) * 3;
+            & + div {
+                right: 15px + ($radioButtonSize + 3px) * 3;
+            }
+            &:checked ~ .roomInfo__photo_1 {
+                opacity: 1;
+            }
+        }
+        &_2 {
+            right: 15px + (8px + 3px) * 2;
+            & + div {
+                right: 15px + (8px + 3px) * 2;
+            }
+            &:checked ~ .roomInfo__photo_2 {
+                opacity: 1;
+            }
+        }
+        &_3 {
+            right: 15px + (8px + 3px) * 1;
+            & + div {
+                right: 15px + (8px + 3px) * 1;
+            }
+            &:checked ~ .roomInfo__photo_3 {
+                opacity: 1;
+            }
+        }
+        &_4 {
+            right: 15px + (8px + 3px) * 0;
+            & + div {
+                right: 15px + (8px + 3px) * 0;
+            }
+            &:checked ~ .roomInfo__photo_4 {
+                opacity: 1;
+            }
+        } */ }
+    .roomInfo__photoRadioButtonInput:checked + div {
+      background: #ffffff; }
+    .roomInfo__photoRadioButtonInput_1 {
+      right: 48px; }
+      .roomInfo__photoRadioButtonInput_1 + div {
+        right: 48px; }
+      .roomInfo__photoRadioButtonInput_1:checked ~ .roomInfo__photo_1 {
+        opacity: 1; }
+    .roomInfo__photoRadioButtonInput_2 {
+      right: 37px; }
+      .roomInfo__photoRadioButtonInput_2 + div {
+        right: 37px; }
+      .roomInfo__photoRadioButtonInput_2:checked ~ .roomInfo__photo_2 {
+        opacity: 1; }
+    .roomInfo__photoRadioButtonInput_3 {
+      right: 26px; }
+      .roomInfo__photoRadioButtonInput_3 + div {
+        right: 26px; }
+      .roomInfo__photoRadioButtonInput_3:checked ~ .roomInfo__photo_3 {
+        opacity: 1; }
+    .roomInfo__photoRadioButtonInput_4 {
+      right: 15px; }
+      .roomInfo__photoRadioButtonInput_4 + div {
+        right: 15px; }
+      .roomInfo__photoRadioButtonInput_4:checked ~ .roomInfo__photo_4 {
+        opacity: 1; }
+  .roomInfo__photoRadioButtonCircle {
+    z-index: 2;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+    position: absolute;
+    bottom: 15px; }
+
 .colors__background_purpleToBlueGrad {
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
 

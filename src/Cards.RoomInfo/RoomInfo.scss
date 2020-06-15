@@ -1,0 +1,145 @@
+.roomInfo {
+    width: 270px;
+    height: 258px;
+    display: flex;
+
+    &__photos {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 271px;
+        height: 152px;
+    }
+
+    &__photo {
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    &__arrows {
+        z-index: 3;
+
+        display: flex;
+        justify-content: space-between;
+
+        width: 271px;
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    &__arrowBack {
+        transform: rotate(90deg);
+    }
+    &__arrowForward {
+        transform: rotate(-90deg);
+    }
+
+    /* &__photoRadioButtons {
+        z-index: 2;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 42px;
+
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    } */
+
+    /* &__photoRadioButton {
+        width: 8px;
+        height: 8px;
+
+        position: relative;
+    } */
+    $radioButtonSize: 8px;
+    &__photoRadioButtonInput {
+        z-index: 3;
+
+        width: $radioButtonSize;
+        height: $radioButtonSize;
+
+        position: absolute;
+        opacity: 0;
+
+        bottom: 15px;
+
+        &:checked + div {
+            background: #ffffff;
+        }
+
+        $test: 6px;
+        @for $i from 1 through 4 {
+            &_#{$i} {
+                right: 15px + ($radioButtonSize + 3px) * (4 - $i);
+                & + div {
+                    right: 15px + ($radioButtonSize + 3px) * (4 - $i);
+                }
+                &:checked ~ .roomInfo__photo_#{$i} {
+                    opacity: 1;
+                }
+            }
+        }
+
+        /* &_1 {
+            right: 15px + ($radioButtonSize + 3px) * 3;
+            & + div {
+                right: 15px + ($radioButtonSize + 3px) * 3;
+            }
+            &:checked ~ .roomInfo__photo_1 {
+                opacity: 1;
+            }
+        }
+        &_2 {
+            right: 15px + (8px + 3px) * 2;
+            & + div {
+                right: 15px + (8px + 3px) * 2;
+            }
+            &:checked ~ .roomInfo__photo_2 {
+                opacity: 1;
+            }
+        }
+        &_3 {
+            right: 15px + (8px + 3px) * 1;
+            & + div {
+                right: 15px + (8px + 3px) * 1;
+            }
+            &:checked ~ .roomInfo__photo_3 {
+                opacity: 1;
+            }
+        }
+        &_4 {
+            right: 15px + (8px + 3px) * 0;
+            & + div {
+                right: 15px + (8px + 3px) * 0;
+            }
+            &:checked ~ .roomInfo__photo_4 {
+                opacity: 1;
+            }
+        } */
+    }
+    &__photoRadioButtonCircle {
+        z-index: 2;
+
+        width: 8px;
+        height: 8px;
+
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+
+        position: absolute;
+        bottom: 15px;
+    }
+}

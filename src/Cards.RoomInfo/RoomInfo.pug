@@ -1,0 +1,20 @@
+mixin getRoomInfo(options, classes={})
+
+    div(class=["roomInfo"].concat(classes.container || []))
+        div(class=["roomInfo__photos"])
+            //-div(class=["roomInfo__photoRadioButtons"])
+            - for(let i = 1; i <= 4; i++){
+                //-label(class=["roomInfo__photoRadioButton", "roomInfo__photoRadioButton_" + i])
+                input(class=["roomInfo__photoRadioButtonInput", "roomInfo__photoRadioButtonInput_" + i] 
+                    type="radio"
+                    name="photo"
+                    checked=(i === 1))
+                div(class=["roomInfo__photoRadioButtonCircle", "roomInfo__photoRadioButtonCircle_" + i])
+            - }
+            img(class=["roomInfo__photo", "roomInfo__photo_1"] src="./src/Cards.RoomInfo/img/test11.png")
+            img(class=["roomInfo__photo", "roomInfo__photo_2"] src="./src/Cards.RoomInfo/img/test22.png")            
+            img(class=["roomInfo__photo", "roomInfo__photo_3"] src="./src/Cards.RoomInfo/img/test33.png")
+            img(class=["roomInfo__photo", "roomInfo__photo_4"] src="./src/Cards.RoomInfo/img/test44.png")
+            div(class=["roomInfo__arrows"])
+                p(class=["roomInfo__arrowBack"]) expand_more
+                p(class=["roomInfo__arrowForward"]) expand_more
