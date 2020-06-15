@@ -1162,10 +1162,10 @@ body {
     z-index: 2; }
     .radioButton__buttonToggle:checked + label {
       border: 1px solid #bc9cff;
-      padding-left: 3px; }
+      padding-left: 23px; }
     .radioButton__buttonToggle:not(:checked) + label {
       border: 1px solid rgba(31, 32, 65, 0.25);
-      padding-left: 23px; }
+      padding-left: 3px; }
     .radioButton__buttonToggle:checked + label::after {
       content: "";
       width: 12px;

@@ -1,0 +1,67 @@
+mixin getPriceCalculationForm(options, classes={})
+
+    div(class=["formDefault__titleInfo"].concat(classes.titleInfo || []))
+        div(class=["formDefault__roomNumberAndStatus"])
+            p(class=["formDefault__numberSymbol"])= "№"
+            p(class=["formDefault__roomNumber"])= options.roomNumber
+            p(class=["formDefault__roomStatus"])= options.roomStatus
+        div(class=["formDefault__roomPriceAndPeriodOfTime"])
+            p(class=["formDefault__roomPrice"])= options.roomPrice
+            p(class=["formDefault__periodOfTime"])= "в " + options.periodOfTime
+
+    include ../../FormElements.DateInput/DateInput.pug
+    +getDateInput({
+        inputType: "double",
+        firstTitle: "выезд",
+        secondTitle: "прибытие"},
+        {
+            container: ["formDefault_marginBottom20"]
+        }
+    )
+
+    include ../../FormElements.Dropdown/Dropdown.pug
+    +getDropdown({
+        titleText: "гости",
+        isTitleTextTestVisible: false,
+        titleTextTestValue: "",
+        placeholder: "dropdown",
+        name: "dropdown",
+        type: "text",
+        value: "Сколько гостей",
+        dropdownList: [
+            {name: "взрослые", value: 0},
+            {name: "дети", value: 0},
+            {name: "младенцы", value: 0}
+        ]},
+        {
+            container: ["formDefault_marginBottom20"],
+            input: ["dropdown__input_sumNumber"],
+        }
+    )   
+
+    div(class=["formDefault__interactiveInfo"])
+        div(class=["formDefault__fullPrice"])
+            p(class=["formDefault__priceMultiplyPeriodOfTime"]) 9 990₽ х 4 суток
+            p(class=["formDefault__priceMultiplyPeriodOfTimeCalculated"]) 39 960₽
+        div(class=["formDefault__servicesDiscount"])
+            p(class=["formDefault__servicesDiscountCount"]) Сбор за услуги: скидка 2 179₽
+            p(class=["formDefault__servicesDiscountCalculated"]) 0₽
+        div(class=["formDefault__additionalServices"])
+            p(class=["formDefault__additionalServicesPrice"]) Сбор за дополнительные услуги
+            p(class=["formDefault__additionalServicesPriceCalculated"]) 300₽
+        div(class=["formDefault__inTotal"])
+            p(class=["formDefault__inTotalText"]) Итого
+            p(class=["formDefault__inTotalBottomLine"])
+            p(class=["formDefault__inTotalNumber"]) 38 081₽
+
+    include ../../FormElements.ButtonDefault/ButtonDefault.pug
+    +getButton({
+        text: 'забронировать',
+        isHollow: false,
+        buttonType: "submit",
+        hasArrow: true},
+        {
+            buttonText: ["formDefault__priceCalculation_toBookButtonText"],
+        }
+    )
+

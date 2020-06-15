@@ -1,0 +1,50 @@
+mixin getAuthorizationForm()
+
+    +getFormInput({
+        hasTitle: false,
+        titleText: "",                
+        placeholder: "Email",
+        name: "email",
+        type: "email",
+        value: "",
+        hasSubmitButton: false},
+        {
+            container: ["formDefault_marginBottom10"]
+        }
+    )
+
+    +getFormInput({
+        hasTitle: false,
+        placeholder: "Пароль",
+        name: "password",
+        type: "password",
+        value: "",
+        hasSubmitButton: false},
+        {
+            container: ["formDefault_marginBottom20"]
+        }
+    )
+
+    include ../../FormElements.ButtonDefault/ButtonDefault.pug
+    +getButton({
+        text: 'войти',
+        isHollow: false,
+        buttonType: "submit",
+        hasArrow: true},
+        {
+            container: ["formDefault_marginBottom30"],
+            buttonText: ["formDefault__authorization_enterButtonText"],
+        }
+    )
+
+    div(class=["formDefault__alreadyRegistered"])
+        p(class=["formDefault__alreadyRegisteredText"]) Нет аккаунта на Toxin?
+        +getButton({
+            text: "создать",
+            isHollow:  true,
+            buttonType: "a",
+            hasArrow: false},
+        {
+            buttonText: ["formDefault__authorization_createAccountButtonText"],
+        }
+    )

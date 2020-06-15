@@ -86,11 +86,11 @@
 
         &:checked + label {
             border: 1px solid #bc9cff;
-            padding-left: 3px;
+            padding-left: 23px;
         }
         &:not(:checked) + label {
             border: 1px solid rgba(31, 32, 65, 0.25);
-            padding-left: 23px;
+            padding-left: 3px;
         }
         &:checked + label::after {
             content: "";

@@ -1398,10 +1398,10 @@ body {
     z-index: 2; }
     .radioButton__buttonToggle:checked + label {
       border: 1px solid #bc9cff;
-      padding-left: 3px; }
+      padding-left: 23px; }
     .radioButton__buttonToggle:not(:checked) + label {
       border: 1px solid rgba(31, 32, 65, 0.25);
-      padding-left: 23px; }
+      padding-left: 3px; }
     .radioButton__buttonToggle:checked + label::after {
       content: "";
       width: 12px;
@@ -1435,20 +1435,117 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
-  .formDefault_guestsAndDateRange .dateInput {
-    margin-bottom: 20px; }
   .formDefault_marginBottom10 {
     margin-bottom: 10px; }
   .formDefault_marginBottom20 {
     margin-bottom: 20px; }
   .formDefault_marginBottom30 {
     margin-bottom: 30px; }
+  .formDefault__authorization_enterButtonText {
+    padding: 0px 136px; }
+  .formDefault__authorization_createAccountButtonText {
+    padding: 0px 18px; }
+  .formDefault__guestsAndDateRange_getANumberButtonText {
+    padding: 0px 94px; }
   .formDefault__registration_paymentButtonText {
     padding: 0px 94px; }
   .formDefault__registration_authorizationButtonText {
     padding: 0px 25px; }
-  .formDefault__guestsAndDateRange_getANumberButtonText {
-    padding: 0px 94px; }
+  .formDefault__priceCalculationForm {
+    margin-bottom: 20px; }
+  .formDefault__titleInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .formDefault__roomNumberAndStatus {
+    display: flex;
+    align-items: baseline; }
+  .formDefault__numberSymbol {
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1f2041;
+    margin-right: 3px; }
+  .formDefault__roomNumber {
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1f2041;
+    margin-right: 5px; }
+  .formDefault__roomStatus {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #bc9cff; }
+  .formDefault__roomPriceAndPeriodOfTime {
+    display: flex;
+    align-items: flex-end; }
+  .formDefault__roomPrice {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    margin-right: 3px; }
+  .formDefault__periodOfTime {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5); }
+  .formDefault__interactiveInfo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; }
+  .formDefault__fullPrice, .formDefault__servicesDiscount {
+    display: flex;
+    justify-content: space-between;
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    margin-bottom: 10px; }
+  .formDefault__additionalServices {
+    display: flex;
+    justify-content: space-between;
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    margin-bottom: 30px; }
+  .formDefault__inTotal {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: max-content auto max-content;
+    align-items: baseline;
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #1f2041; }
+    .formDefault__inTotalText {
+      margin-right: 5px; }
+    .formDefault__inTotalBottomLine {
+      border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+      box-sizing: border-box; }
+    .formDefault__inTotalNumber {
+      margin-left: 5px; }
+  .formDefault__priceCalculation_toBookButtonText {
+    padding: 0px 101px; }
   .formDefault__title {
     display: flex;
     width: 320px;

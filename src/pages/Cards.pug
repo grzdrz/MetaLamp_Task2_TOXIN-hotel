@@ -16,16 +16,20 @@ html
                 formType: "guestsAndDateRange",
 
                 dropdownTitleText: "гости",
-            }, 
-            {
-                formClasses: ["formDefault_guestsAndDateRange"],
             })
 
             +getForm({
                 titleText: "Регистрация аккаунта",
                 formType: "registration",
-            }, 
-            {
-                formClasses: ["formDefault_registration"],
             })
+
+            +getForm({
+                titleText: "Войти",
+                formType: "authorization",
+            })
+
+            +getForm({
+                titleText: "",
+                formType: "priceCalculation",
+            })            
 

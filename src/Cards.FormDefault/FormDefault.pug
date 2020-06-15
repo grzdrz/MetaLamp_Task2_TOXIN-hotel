@@ -1,163 +1,31 @@
-mixin getForm(options, classes)
-    - let formClasses = [];
+mixin getForm(options, classes={})
 
-    - if(classes)
-        - classes.formClasses ? formClasses = formClasses.concat(classes.formClasses) : [];
-
-    form(class=["formDefault"].concat(formClasses))
-        div(class=["formDefault__title"])
-            p(class=["formDefault__titleText"])= options.titleText
-            - if(options.hasSecondTitle)
-                p(class=["formDefault__titleSecondText"])= options.titleText
+    form(class=["formDefault"].concat(classes.form || []))
+        - if(options.titleText)
+            div(class=["formDefault__title"])
+                p(class=["formDefault__titleText"])= options.titleText
 
         - if(options.formType === "guestsAndDateRange"){
-            include ../FormElements.DateInput/DateInput.pug
-            +getDateInput({
-                inputType: "double",
-                firstTitle: "выезд",
-                secondTitle: "прибытие"},
-                {
-                    container: ["formDefault_marginBottom20"]
-                }
-            )
-
-            include ../FormElements.Dropdown/Dropdown.pug
-            +getDropdown({
-                titleText: options.dropdownTitleText,
-                isTitleTextTestVisible: false,
-                titleTextTestValue: "",
-                placeholder: "dropdown",
-                name: "dropdown",
-                type: "text",
-                value: "Сколько гостей",
-                dropdownList: [
-                    {name: "взрослые", value: 0},
-                    {name: "дети", value: 0},
-                    {name: "младенцы", value: 0}
-                ]},
-                {
-                    container: ["formDefault_marginBottom30"]
-                }
-            )
-
-            include ../FormElements.ButtonDefault/ButtonDefault.pug
-            +getButton({
-                text: 'подобрать номер',
-                isHollow: false,
-                buttonType: "submit",
-                hasArrow: true},
-                {
-                    buttonText: ["formDefault__guestsAndDateRange_getANumberButtonText"],
-                }
-            )
+            include ./formsContent/guestsAndDateRangeForm.pug
+            +getGuestsAndDateRangeForm()
         - }
         - else if(options.formType === "registration"){
-            include ../FormElements.FormInput/FormInput.pug
-            +getFormInput({
-                hasTitle: false,
-                placeholder: "Имя",
-                name: "clientFirstName",
-                type: "text",
-                value: "",
-                hasSubmitButton: false},
-                {
-                    container: ["formDefault_marginBottom10"]
-                }
-            )
-
-            +getFormInput({
-                hasTitle: false,
-                placeholder: "Фамилия",
-                name: "clientSecondName",
-                type: "text",
-                value: "",
-                hasSubmitButton: false},
-                {
-                    container: ["formDefault_marginBottom10"]
-                }
-            )
-
-            include ../FormElements.RadioButton/RadioButton.pug
-            +getRadioButton({
-                buttonType: "radio",
-                radioButtonList: [
-                    {text: "Мужчина", isChecked: true},
-                    {text: "Женщина", isChecked: false},
-                ],
-                title: "",
-                name: "gender"},
-                {
-                    container: ["formDefault_marginBottom20"]
-                }
-            )
-
-            include ../FormElements.DateInput/DateInput.pug
-            +getDateInput({
-                inputType: "simple",                
-                title: "дата рождения"},
-                {
-                    container: ["formDefault_marginBottom20"]
-                }
-            )
-
-            +getFormInput({
-                hasTitle: true,
-                titleText: "данные для входа в сервис",                
-                placeholder: "Email",
-                name: "email",
-                type: "email",
-                value: "",
-                hasSubmitButton: false},
-                {
-                    container: ["formDefault_marginBottom10"]
-                }
-            )
-
-            +getFormInput({
-                hasTitle: false,
-                placeholder: "Пароль",
-                name: "password",
-                type: "password",
-                value: "",
-                hasSubmitButton: false},
-                {
-                    container: ["formDefault_marginBottom10"]
-                }
-            )
-
-            +getRadioButton({
-                buttonType: "toggle",
-                radioButtonList: [
-                    {text: "Получать спецпредложения", isChecked: false}
-                ],
-                title: "",
-                name: "specialOffer"},
-                {
-                    container: ["formDefault_marginBottom20"]
-                }
-            )
-
-            include ../FormElements.ButtonDefault/ButtonDefault.pug
-            +getButton({
-                text: 'перейти к оплате',
-                isHollow: false,
-                buttonType: "submit",
-                hasArrow: true},
-                {
-                    container: ["formDefault_marginBottom30"],
-                    buttonText: ["formDefault__registration_paymentButtonText"],
-                }
-            )
-
-            div(class=["formDefault__alreadyRegistered"])
-                p(class=["formDefault__alreadyRegisteredText"]) Уже есть аккаунт на Toxin
-                +getButton({
-                    text: "войти",
-                    isHollow:  true,
-                    buttonType: "a",
-                    hasArrow: false},
-                {
-                    buttonText: ["formDefault__registration_authorizationButtonText"],
-                }
-            )
+            include ./formsContent/registrationForm.pug
+            +getRegistrationForm()
         - }
+        - else if(options.formType === "authorization"){
+            include ./formsContent/authorizationForm.pug
+            +getAuthorizationForm()
+        - }
+        - else if(options.formType === "priceCalculation"){
+            include ./formsContent/priceCalculationForm.pug
+            +getPriceCalculationForm({
+                roomNumber: 888,
+                roomStatus: "люкс",
+                roomPrice: "9 990₽",
+                periodOfTime: "сутки",
+            },
+            {
+                titleInfo: ["formDefault_marginBottom20"],
+            })
+        - }        

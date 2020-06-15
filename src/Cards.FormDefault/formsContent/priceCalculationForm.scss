@@ -1,0 +1,139 @@
+&__priceCalculationForm {
+    margin-bottom: 20px;
+}
+
+&__titleInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+&__roomNumberAndStatus {
+    display: flex;
+    align-items: baseline;
+}
+
+&__numberSymbol {
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1f2041;
+
+    margin-right: 3px;
+}
+
+&__roomNumber {
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1f2041;
+
+    margin-right: 5px;
+}
+
+&__roomStatus {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #bc9cff;
+}
+
+&__roomPriceAndPeriodOfTime {
+    display: flex;
+    align-items: flex-end;
+}
+
+&__roomPrice {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+
+    margin-right: 3px;
+}
+
+&__periodOfTime {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+@mixin setFontProperties($lineHeight: 24px) {
+    font: {
+        family: MontserratRegular;
+        style: normal;
+        weight: normal;
+        size: 14px;
+    }
+    line-height: $lineHeight;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+&__interactiveInfo {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+&__fullPrice,
+&__servicesDiscount {
+    display: flex;
+    justify-content: space-between;
+
+    @include setFontProperties();
+
+    margin-bottom: 10px;
+}
+
+&__additionalServices {
+    display: flex;
+    justify-content: space-between;
+
+    @include setFontProperties(18px);
+
+    margin-bottom: 30px;
+}
+
+&__inTotal {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: max-content auto max-content;
+    align-items: baseline;
+
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #1f2041;
+
+    &Text {
+        margin-right: 5px;
+    }
+    &BottomLine {
+        border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+    }
+    &Number {
+        margin-left: 5px;
+    }
+}
+
+&__priceCalculation {
+    &_toBookButtonText {
+        padding: 0px 101px;
+    }
+}
