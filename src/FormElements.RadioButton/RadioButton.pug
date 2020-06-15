@@ -3,21 +3,21 @@ mixin getRadioButton(options, classes={})
     div(class=["radioButton"].concat(classes.container || []))
         - if(options.title)
             p(class=["radioButton__title"].concat(classes.title || []))= options.title
-            div(class=["radioButton__buttonsContainer"].concat(classes.buttonsContainer || []))
-                - for(let item of options.radioButtonList)
-                    label(class=["radioButton__buttonContainer"].concat(classes.buttonsContainer || []))
-                        - if(options.buttonType === "radio")
-                            input(class=["radioButton__buttonRadio"].concat(classes.button || []) 
-                                type="radio" 
-                                name= options.name 
-                                checked= item.isChecked)               
-                            label(class=["radioButton__labelRadio"].concat(classes.label || []))
-                            p(class=["radioButton__text"].concat(classes.text || []))= item.text
-                        - else if(options.buttonType === "toggle")
-                            input(class=["radioButton__buttonToggle"].concat(classes.button || []) 
-                                type="checkbox" 
-                                name= options.name 
-                                checked= item.isChecked)               
-                            label(class=["radioButton__labelToggle"].concat(classes.label || []))
-                            p(class=["radioButton__text"].concat(classes.text || []))= item.text
+        div(class=["radioButton__buttonsContainer"].concat(classes.buttonsContainer || []))
+            - for(let item of options.radioButtonList)
+                label(class=["radioButton__buttonContainer"].concat(classes.buttonsContainer || []))
+                    - if(options.buttonType === "radio")
+                        input(class=["radioButton__buttonRadio"].concat(classes.button || []) 
+                            type="radio" 
+                            name= options.name 
+                            checked= item.isChecked)               
+                        label(class=["radioButton__labelRadio"].concat(classes.label || []))
+                        p(class=["radioButton__text"].concat(classes.text || []))= item.text
+                    - else if(options.buttonType === "toggle")
+                        input(class=["radioButton__buttonToggle"].concat(classes.button || []) 
+                            type="checkbox" 
+                            name= options.name 
+                            checked= item.isChecked)               
+                        label(class=["radioButton__labelToggle"].concat(classes.label || []))
+                        p(class=["radioButton__text"].concat(classes.text || []))= item.text
 

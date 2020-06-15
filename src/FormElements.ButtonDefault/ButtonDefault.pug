@@ -2,7 +2,7 @@ mixin getButton(options, classes={})
 
     - if(options.isHollow)
         - classes.container ? classes.container.push("buttonDefault_hollowButton") : classes.container = ["buttonDefault_hollowButton"];
-        - classes.text ? classes.text.push("colors__font_purple") : classes.text = ["colors__font_purple"];
+        - classes.buttonText ? classes.buttonText.push("colors__font_purple") : classes.buttonText = ["colors__font_purple"];
     - if(options.hasArrow)
         - if(options.isHollow)
             - classes.arrow ? classes.arrow.push("colors__font_purple") : classes.arrow = ["colors__font_purple"];
@@ -13,17 +13,17 @@ mixin getButton(options, classes={})
     div(class=["buttonDefault"].concat(classes.container || []))
         - if(options.buttonType === "a")
             a(href='#' class=["buttonDefault__buttonBasis"].concat(classes.buttonBasis || []))
-                p(class=["buttonDefault__buttonText"].concat(classes.text || []))= options.text
+                p(class=["buttonDefault__buttonText"].concat(classes.buttonText || []))= options.text
                 - if(options.hasArrow)
                     p(class=["buttonDefault__arrow"].concat(classes.arrow || [])) arrow_forward
         - else if(options.buttonType === "button")
             button(class=["buttonDefault__buttonBasis"].concat(classes.buttonBasis || []))
-                p(class=["buttonDefault__buttonText"].concat(classes.text || []))= options.text
+                p(class=["buttonDefault__buttonText"].concat(classes.buttonText || []))= options.text
                 - if(options.hasArrow)
                     p(class=["buttonDefault__arrow"].concat(classes.arrow || [])) arrow_forward
         - else if(options.buttonType === "submit")
             label(class=["buttonDefault__buttonBasis"].concat(classes.buttonBasis || []))
                 input(class=["buttonDefault__inputButton"] type="submit")
-                p(class=["buttonDefault__buttonText"].concat(classes.text || []))= options.text
+                p(class=["buttonDefault__buttonText"].concat(classes.buttonText || []))= options.text
                 - if(options.hasArrow)
                     p(class=["buttonDefault__arrow"].concat(classes.arrow || [])) arrow_forward

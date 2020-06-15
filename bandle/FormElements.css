@@ -1121,7 +1121,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -1131,7 +1131,7 @@ body {
     flex-direction: row;
     align-items: center;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     width: 40px;
     height: 20px;
     border-radius: 10px;
@@ -1139,11 +1139,11 @@ body {
     padding: 0px 3px;
     transition: padding-left 0.3s; }
   .radioButton__buttonRadio {
-    opacity: 0;
     position: absolute;
     width: 20px;
     height: 20px;
-    opacity: 0; }
+    opacity: 0;
+    z-index: 2; }
     .radioButton__buttonRadio:checked + label {
       border: 1px solid #bc9cff; }
     .radioButton__buttonRadio:checked + label::after {
@@ -1155,11 +1155,11 @@ body {
     .radioButton__buttonRadio:not(:checked) + label {
       border: 1px solid rgba(31, 32, 65, 0.25); }
   .radioButton__buttonToggle {
-    opacity: 0;
     position: absolute;
     width: 40px;
     height: 20px;
-    opacity: 0; }
+    opacity: 0;
+    z-index: 2; }
     .radioButton__buttonToggle:checked + label {
       border: 1px solid #bc9cff;
       padding-left: 3px; }
@@ -1198,7 +1198,8 @@ body {
     width: 24px;
     height: 24px;
     position: absolute;
-    opacity: 0; }
+    opacity: 0;
+    z-index: 2; }
     .ratingRadio__input_1 {
       margin-left: 0px; }
     .ratingRadio__input_2 {
@@ -1254,7 +1255,7 @@ body {
     width: 24px;
     height: 24px;
     position: absolute;
-    z-index: -1; }
+    z-index: 1; }
     .ratingRadio__label_1 {
       margin-left: 0px; }
     .ratingRadio__label_2 {

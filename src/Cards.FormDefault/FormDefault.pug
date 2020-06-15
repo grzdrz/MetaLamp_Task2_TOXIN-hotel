@@ -15,8 +15,11 @@ mixin getForm(options, classes)
             +getDateInput({
                 inputType: "double",
                 firstTitle: "выезд",
-                secondTitle: "прибытие",
-            })
+                secondTitle: "прибытие"},
+                {
+                    container: ["formDefault_marginBottom20"]
+                }
+            )
 
             include ../FormElements.Dropdown/Dropdown.pug
             +getDropdown({
@@ -31,22 +34,22 @@ mixin getForm(options, classes)
                     {name: "взрослые", value: 0},
                     {name: "дети", value: 0},
                     {name: "младенцы", value: 0}
-                ],
-            },
-            {
-                input: ["dropdown__input_sumNumber"],
-            })
+                ]},
+                {
+                    container: ["formDefault_marginBottom30"]
+                }
+            )
 
             include ../FormElements.ButtonDefault/ButtonDefault.pug
             +getButton({
                 text: 'подобрать номер',
                 isHollow: false,
                 buttonType: "submit",
-                hasArrow: true,
-            },
-            {
-                container: ["formDefault__buttonDefault_guestsAndDateRange"],
-            })
+                hasArrow: true},
+                {
+                    buttonText: ["formDefault__guestsAndDateRange_getANumberButtonText"],
+                }
+            )
         - }
         - else if(options.formType === "registration"){
             include ../FormElements.FormInput/FormInput.pug
@@ -56,7 +59,10 @@ mixin getForm(options, classes)
                 name: "clientFirstName",
                 type: "text",
                 value: "",
-                hasSubmitButton: false}
+                hasSubmitButton: false},
+                {
+                    container: ["formDefault_marginBottom10"]
+                }
             )
 
             +getFormInput({
@@ -65,24 +71,34 @@ mixin getForm(options, classes)
                 name: "clientSecondName",
                 type: "text",
                 value: "",
-                hasSubmitButton: false}
+                hasSubmitButton: false},
+                {
+                    container: ["formDefault_marginBottom10"]
+                }
             )
 
             include ../FormElements.RadioButton/RadioButton.pug
-            +getRadioButton("radio", [
-                {text: "Мужчина", isChecked: true},
-                {text: "Женщина", isChecked: false},
-            ],
-            {
-                title: "Radio Buttons",
-                name: "gender",
-            })
+            +getRadioButton({
+                buttonType: "radio",
+                radioButtonList: [
+                    {text: "Мужчина", isChecked: true},
+                    {text: "Женщина", isChecked: false},
+                ],
+                title: "",
+                name: "gender"},
+                {
+                    container: ["formDefault_marginBottom20"]
+                }
+            )
 
             include ../FormElements.DateInput/DateInput.pug
             +getDateInput({
                 inputType: "simple",                
-                title: "дата рождения",
-            })
+                title: "дата рождения"},
+                {
+                    container: ["formDefault_marginBottom20"]
+                }
+            )
 
             +getFormInput({
                 hasTitle: true,
@@ -91,7 +107,10 @@ mixin getForm(options, classes)
                 name: "email",
                 type: "email",
                 value: "",
-                hasSubmitButton: false}
+                hasSubmitButton: false},
+                {
+                    container: ["formDefault_marginBottom10"]
+                }
             )
 
             +getFormInput({
@@ -100,7 +119,10 @@ mixin getForm(options, classes)
                 name: "password",
                 type: "password",
                 value: "",
-                hasSubmitButton: false}
+                hasSubmitButton: false},
+                {
+                    container: ["formDefault_marginBottom10"]
+                }
             )
 
             +getRadioButton({
@@ -109,26 +131,33 @@ mixin getForm(options, classes)
                     {text: "Получать спецпредложения", isChecked: false}
                 ],
                 title: "",
-                name: "specialOffer"
-            })
+                name: "specialOffer"},
+                {
+                    container: ["formDefault_marginBottom20"]
+                }
+            )
 
             include ../FormElements.ButtonDefault/ButtonDefault.pug
             +getButton({
                 text: 'перейти к оплате',
                 isHollow: false,
                 buttonType: "submit",
-                hasArrow: true,
-            },
-            {
-                container: ["formDefault__buttonDefault_guestsAndDateRange"],
-            })
+                hasArrow: true},
+                {
+                    container: ["formDefault_marginBottom30"],
+                    buttonText: ["formDefault__registration_paymentButtonText"],
+                }
+            )
 
             div(class=["formDefault__alreadyRegistered"])
-                p(class=["formDefault__alreadyRegisteredText"]) Нет аккаунта на Toxin?
+                p(class=["formDefault__alreadyRegisteredText"]) Уже есть аккаунт на Toxin
                 +getButton({
                     text: "войти",
                     isHollow:  true,
                     buttonType: "a",
-                    hasArrow: false,
-                })
+                    hasArrow: false},
+                {
+                    buttonText: ["formDefault__registration_authorizationButtonText"],
+                }
+            )
         - }

@@ -1,7 +1,12 @@
+@import "../FormElements.DateInput/DateInput.scss";
+@import "../FormElements.Dropdown/Dropdown.scss";
+@import "../FormElements.ButtonDefault/ButtonDefault.scss";
+@import "../FormElements.FormInput/FormInput.scss";
+@import "../FormElements.RadioButton/RadioButton.scss";
+
 .formDefault {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 
     width: 380px;
 
@@ -19,6 +24,36 @@
         }
     }
 
+    &_marginBottom10 {
+        margin-bottom: 10px;
+    }
+
+    &_marginBottom20 {
+        margin-bottom: 20px;
+    }
+
+    &_marginBottom30 {
+        margin-bottom: 30px;
+    }
+
+    &__registration {
+        &_paymentButtonText {
+            padding: 0px 94px;
+        }
+
+        &_authorizationButtonText {
+            padding: 0px 25px;
+        }
+    }
+
+    &__guestsAndDateRange {
+        &_getANumberButtonText {
+            padding: 0px 94px;
+        }
+    }
+
+
+
     &__title {
         display: flex;
         width: 320px;
@@ -33,25 +68,23 @@
         color: #1f2041;
     }
 
-    &__buttonDefault {
-        &_guestsAndDateRange {
-            margin-top: 30px;
-            & .buttonDefault__buttonText {
-                padding: 0px 94px;
-            }
-        }
+    &__alreadyRegistered {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        &_registration {
-            margin-top: 30px;
-            & .buttonDefault__buttonText {
-                padding: 0px 94px;
-            }
-        }
+    &__alreadyRegisteredText {
+        font-family: MontserratRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #000000;
     }
 }
-
-@import "../FormElements.DateInput/DateInput.scss";
-@import "../FormElements.Dropdown/Dropdown.scss";
-@import "../FormElements.ButtonDefault/ButtonDefault.scss";
-@import "../FormElements.FormInput/FormInput.scss";
-@import "../FormElements.RadioButton/RadioButton.scss";
