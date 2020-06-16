@@ -4,7 +4,7 @@ mixin getRateButton(options, classes={})
         - for(let i=4; i >= 0; i--)
             input(type="radio"
                 class=["ratingRadio__input", "ratingRadio__input_" + (i + 1)].concat(classes.input || [])
-                name="starRating"
+                name="starRating_" + options.blockNumber,
                 value=(i + 1)
                 checked=options.isCheckedArray[i])
             p(class=["ratingRadio__label", "ratingRadio__label_" + (i + 1)].concat(classes.label || []) 

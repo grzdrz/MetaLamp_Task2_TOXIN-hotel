@@ -16,4 +16,7 @@ dropdownScript();
 import { dateInputScript } from "../FormElements.DateInput/DateInput.js";
 dateInputScript();
 
+import { roomInfoScript } from "../Cards.RoomInfo/RoomInfo.js";
+roomInfoScript();
+
 import "./Cards.scss";

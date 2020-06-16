@@ -152,8 +152,13 @@ html
 
             include ../FormElements.RateButton/RateButton.pug
             +getRateButton({
+                blockNumber: 1,
                 isCheckedArray: [false, false, true, false, false,]
             })
+            +getRateButton({
+                blockNumber: 2,
+                isCheckedArray: [false, false, true, false, false,]
+            })            
 
 
             include ../FormElements.ButtonDefault/ButtonDefault.pug

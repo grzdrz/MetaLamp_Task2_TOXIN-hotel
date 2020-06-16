@@ -5,17 +5,23 @@ mixin getRoomInfo(options, classes={})
             - for(let i = 1; i <= 4; i++){
                 input(class=["roomInfo__photoRadioButtonInput", "roomInfo__photoRadioButtonInput_" + i] 
                     type="radio"
-                    name="photo"
-                    checked=(i === 1))
+                    name="photo_" + options.blockNumber
+                    checked=(i === 1)
+                    disabled=(i > options.photos.length)
+                    data-serial-number=i)
                 div(class=["roomInfo__photoRadioButtonCircle", "roomInfo__photoRadioButtonCircle_" + i])
             - }
-            img(class=["roomInfo__photo", "roomInfo__photo_1"] src="./src/Cards.RoomInfo/img/test11.png")
-            img(class=["roomInfo__photo", "roomInfo__photo_2"] src="./src/Cards.RoomInfo/img/test22.png")            
-            img(class=["roomInfo__photo", "roomInfo__photo_3"] src="./src/Cards.RoomInfo/img/test33.png")
-            img(class=["roomInfo__photo", "roomInfo__photo_4"] src="./src/Cards.RoomInfo/img/test44.png")
-            div(class=["roomInfo__arrows"])
-                p(class=["roomInfo__arrowBack"]) expand_more
-                p(class=["roomInfo__arrowForward"]) expand_more
+            - let i = 1;
+            - for(let photoName of options.photos){
+                img(class=["roomInfo__photo", "roomInfo__photo_" + i] src="./src/Cards.RoomInfo/img/" + photoName + ".png")
+                - i++;
+            - }
+            - if(options.photos.length > 1)
+                div(class=["roomInfo__arrows"])
+                    button(class=["roomInfo__arrowBack"])
+                        span(class=["roomInfo__arrowBackIcon"]) expand_more
+                    button(class=["roomInfo__arrowForward"]) 
+                        span(class=["roomInfo__arrowForwardIcon"]) expand_more
 
         div(class=["roomInfo__textInfo"])
             include ../Cards.RoomInfoTitle/RoomInfoTitle.pug
@@ -30,6 +36,7 @@ mixin getRoomInfo(options, classes={})
             div(class=["roomInfo__roomRateAndReviewsCount"])
                 include ../FormElements.RateButton/RateButton.pug
                 +getRateButton({
+                    blockNumber: options.blockNumber,
                     isCheckedArray: options.isCheckedArray,
                 })
 
