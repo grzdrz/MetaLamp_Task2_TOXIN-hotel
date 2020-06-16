@@ -1,13 +1,16 @@
 mixin getPriceCalculationForm(options, classes={})
 
-    div(class=["formDefault__titleInfo"].concat(classes.titleInfo || []))
-        div(class=["formDefault__roomNumberAndStatus"])
-            p(class=["formDefault__numberSymbol"])= "№"
-            p(class=["formDefault__roomNumber"])= options.roomNumber
-            p(class=["formDefault__roomStatus"])= options.roomStatus
-        div(class=["formDefault__roomPriceAndPeriodOfTime"])
-            p(class=["formDefault__roomPrice"])= options.roomPrice
-            p(class=["formDefault__periodOfTime"])= "в " + options.periodOfTime
+    include ../../Cards.RoomInfoTitle/RoomInfoTitle.pug
+    +getRoomInfoTitle( {
+            roomNumber: 888,
+            roomStatus: "люкс",
+            roomPrice: "9 990₽",
+            periodOfTime: "сутки",
+        }, 
+        {
+            container: ["formDefault_marginBottom20"],
+        }
+    ) 
 
     include ../../FormElements.DateInput/DateInput.pug
     +getDateInput({

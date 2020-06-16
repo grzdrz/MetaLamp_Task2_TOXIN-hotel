@@ -1,0 +1,10 @@
+mixin getRoomInfoTitle(options, classes={})
+
+    div(class=["roomInfoTitle"].concat(classes.container || []))
+        div(class=["roomInfoTitle__roomNumberAndStatus"])
+            p(class=["roomInfoTitle__numberSymbol"])= "№"
+            p(class=["roomInfoTitle__roomNumber"].concat(classes.roomNumber || []))= options.roomNumber
+            p(class=["roomInfoTitle__roomStatus"])= options.roomStatus
+        div(class=["roomInfoTitle__roomPriceAndPeriodOfTime"].concat(classes.roomPriceAndPeriodOfTime || []))
+            p(class=["roomInfoTitle__roomPrice"])= options.roomPrice
+            p(class=["roomInfoTitle__periodOfTime"])= "в " + options.periodOfTime

@@ -35,6 +35,25 @@ html
 
             include ../Cards.RoomInfo/RoomInfo.pug
             +getRoomInfo({
-                
+                roomInfoTitleOptions: {
+                    roomNumber: 888,
+                    roomStatus: "люкс",
+                    roomPrice: "9 990₽",
+                    periodOfTime: "сутки",
+                },
+                reviewsCount: 145,
+                reviewsCountText: "Отзывов",
+                isCheckedArray: [false, false, false, false, true,],
             })
+            +getRoomInfo({
+                roomInfoTitleOptions: {
+                    roomNumber: 840,
+                    roomStatus: "",
+                    roomPrice: "9 990₽",
+                    periodOfTime: "сутки",
+                },
+                reviewsCount: 65,
+                reviewsCountText: "Отзывов",
+                isCheckedArray: [false, false, false, true, false,],
+            })            
 

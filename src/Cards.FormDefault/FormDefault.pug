@@ -19,13 +19,5 @@ mixin getForm(options, classes={})
         - }
         - else if(options.formType === "priceCalculation"){
             include ./formsContent/priceCalculationForm.pug
-            +getPriceCalculationForm({
-                roomNumber: 888,
-                roomStatus: "люкс",
-                roomPrice: "9 990₽",
-                periodOfTime: "сутки",
-            },
-            {
-                titleInfo: ["formDefault_marginBottom20"],
-            })
+            +getPriceCalculationForm()
         - }        

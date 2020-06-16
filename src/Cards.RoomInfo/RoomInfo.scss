@@ -1,7 +1,15 @@
+@import "../Cards.RoomInfoTitle/RoomInfoTitle.scss";
+@import "../FormElements.RateButton/RateButton.scss";
+
 .roomInfo {
     width: 270px;
-    height: 258px;
+    //height: 258px;
     display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
 
     &__photos {
         position: relative;
@@ -141,5 +149,59 @@
 
         position: absolute;
         bottom: 15px;
+    }
+
+    &__textInfo {
+        padding: 15px 16px 19px 20px;
+    }
+
+    &__roomRateAndReviewsCount {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 8px;
+    }
+
+    &__reviewsCountContainer {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 3px;
+        padding-right: 4px;
+    }
+
+    &__reviewsCount {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        color: rgba(31, 32, 65, 0.5);
+
+        margin-right: 3px;
+    }
+
+    &__reviewsCountText {
+        font-family: MontserratRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        color: rgba(31, 32, 65, 0.5);
+    }
+
+    &_fontSize19 {
+        font-size: 19px;
+    }
+
+    &_bottomBorder {
+        padding-bottom: 7px;
+        padding-top: 3px;
+        border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+    }
+
+    &_alignItemsCenter {
+        align-items: center;
     }
 }

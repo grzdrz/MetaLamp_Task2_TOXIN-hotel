@@ -1451,57 +1451,55 @@ body {
     padding: 0px 94px; }
   .formDefault__registration_authorizationButtonText {
     padding: 0px 25px; }
-  .formDefault__priceCalculationForm {
-    margin-bottom: 20px; }
-  .formDefault__titleInfo {
+  .formDefault .roomInfoTitle {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-  .formDefault__roomNumberAndStatus {
-    display: flex;
-    align-items: baseline; }
-  .formDefault__numberSymbol {
-    font-family: OpenSansBold;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: #1f2041;
-    margin-right: 3px; }
-  .formDefault__roomNumber {
-    font-family: OpenSansBold;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    color: #1f2041;
-    margin-right: 5px; }
-  .formDefault__roomStatus {
-    font-family: MontserratBold;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #bc9cff; }
-  .formDefault__roomPriceAndPeriodOfTime {
-    display: flex;
-    align-items: flex-end; }
-  .formDefault__roomPrice {
-    font-family: MontserratBold;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 0.5);
-    margin-right: 3px; }
-  .formDefault__periodOfTime {
-    font-family: MontserratRegular;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 0.5); }
+    .formDefault .roomInfoTitle__roomNumberAndStatus {
+      display: flex;
+      align-items: baseline; }
+    .formDefault .roomInfoTitle__numberSymbol {
+      font-family: OpenSansBold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      color: #1f2041;
+      margin-right: 8px; }
+    .formDefault .roomInfoTitle__roomNumber {
+      font-family: OpenSansBold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+      color: #1f2041;
+      margin-right: 5px; }
+    .formDefault .roomInfoTitle__roomStatus {
+      font-family: MontserratBold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #bc9cff; }
+    .formDefault .roomInfoTitle__roomPriceAndPeriodOfTime {
+      display: flex;
+      align-items: flex-end; }
+    .formDefault .roomInfoTitle__roomPrice {
+      font-family: MontserratBold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba(31, 32, 65, 0.5);
+      margin-right: 3px; }
+    .formDefault .roomInfoTitle__periodOfTime {
+      font-family: MontserratRegular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      color: rgba(31, 32, 65, 0.5); }
   .formDefault__interactiveInfo {
     display: flex;
     flex-direction: column;
@@ -1572,10 +1570,141 @@ body {
     text-align: center;
     color: #000000; }
 
+.roomInfoTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .roomInfoTitle__roomNumberAndStatus {
+    display: flex;
+    align-items: baseline; }
+  .roomInfoTitle__numberSymbol {
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1f2041;
+    margin-right: 8px; }
+  .roomInfoTitle__roomNumber {
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1f2041;
+    margin-right: 5px; }
+  .roomInfoTitle__roomStatus {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #bc9cff; }
+  .roomInfoTitle__roomPriceAndPeriodOfTime {
+    display: flex;
+    align-items: flex-end; }
+  .roomInfoTitle__roomPrice {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    margin-right: 3px; }
+  .roomInfoTitle__periodOfTime {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5); }
+
+.ratingRadio {
+  position: relative;
+  display: flex;
+  width: 120px;
+  height: 24px; }
+  .ratingRadio__input {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    opacity: 0;
+    z-index: 2; }
+    .ratingRadio__input_1 {
+      margin-left: 0px; }
+    .ratingRadio__input_2 {
+      margin-left: 24px; }
+    .ratingRadio__input_3 {
+      margin-left: 48px; }
+    .ratingRadio__input_4 {
+      margin-left: 72px; }
+    .ratingRadio__input_5 {
+      margin-left: 96px; }
+    .ratingRadio__input + p::before {
+      content: "star_border";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      font-family: Material Icons;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 20px;
+      color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .ratingRadio__input:checked ~ p::after {
+      content: "star";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      font-family: Material Icons;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 20px;
+      color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; }
+  .ratingRadio__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 1; }
+    .ratingRadio__label_1 {
+      margin-left: 0px; }
+    .ratingRadio__label_2 {
+      margin-left: 24px; }
+    .ratingRadio__label_3 {
+      margin-left: 48px; }
+    .ratingRadio__label_4 {
+      margin-left: 72px; }
+    .ratingRadio__label_5 {
+      margin-left: 96px; }
+
 .roomInfo {
   width: 270px;
-  height: 258px;
   display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
   /* &__photoRadioButtons {
         z-index: 2;
 
@@ -1630,18 +1759,6 @@ body {
     position: absolute;
     opacity: 0;
     bottom: 15px;
-    /* &_1 {
-                margin-left: 24px * ($i - 1);
-            } */
-    /* &_2 {
-                margin-left: 24px * ($i - 1);
-            } */
-    /* &_3 {
-                margin-left: 24px * ($i - 1);
-            } */
-    /* &_4 {
-                margin-left: 24px * ($i - 1);
-            } */
     /* &_1 {
             right: 15px + ($radioButtonSize + 3px) * 3;
             & + div {
@@ -1713,6 +1830,42 @@ body {
     box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
     position: absolute;
     bottom: 15px; }
+  .roomInfo__textInfo {
+    padding: 15px 16px 19px 20px; }
+  .roomInfo__roomRateAndReviewsCount {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px; }
+  .roomInfo__reviewsCountContainer {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 3px;
+    padding-right: 4px; }
+  .roomInfo__reviewsCount {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.5);
+    margin-right: 3px; }
+  .roomInfo__reviewsCountText {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.5); }
+  .roomInfo_fontSize19 {
+    font-size: 19px; }
+  .roomInfo_bottomBorder {
+    padding-bottom: 7px;
+    padding-top: 3px;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1); }
+  .roomInfo_alignItemsCenter {
+    align-items: center; }
 
 .colors__background_purpleToBlueGrad {
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }

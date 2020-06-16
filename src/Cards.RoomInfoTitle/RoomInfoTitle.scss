@@ -1,0 +1,67 @@
+.roomInfoTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__roomNumberAndStatus {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__numberSymbol {
+        font-family: OpenSansBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #1f2041;
+
+        margin-right: 8px;
+    }
+
+    &__roomNumber {
+        font-family: OpenSansBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: #1f2041;
+
+        margin-right: 5px;
+    }
+
+    &__roomStatus {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #bc9cff;
+    }
+
+    &__roomPriceAndPeriodOfTime {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__roomPrice {
+        font-family: MontserratBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+
+        margin-right: 3px;
+    }
+
+    &__periodOfTime {
+        font-family: MontserratRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+}

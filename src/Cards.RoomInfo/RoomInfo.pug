@@ -2,9 +2,7 @@ mixin getRoomInfo(options, classes={})
 
     div(class=["roomInfo"].concat(classes.container || []))
         div(class=["roomInfo__photos"])
-            //-div(class=["roomInfo__photoRadioButtons"])
             - for(let i = 1; i <= 4; i++){
-                //-label(class=["roomInfo__photoRadioButton", "roomInfo__photoRadioButton_" + i])
                 input(class=["roomInfo__photoRadioButtonInput", "roomInfo__photoRadioButtonInput_" + i] 
                     type="radio"
                     name="photo"
@@ -18,3 +16,23 @@ mixin getRoomInfo(options, classes={})
             div(class=["roomInfo__arrows"])
                 p(class=["roomInfo__arrowBack"]) expand_more
                 p(class=["roomInfo__arrowForward"]) expand_more
+
+        div(class=["roomInfo__textInfo"])
+            include ../Cards.RoomInfoTitle/RoomInfoTitle.pug
+            +getRoomInfoTitle(options.roomInfoTitleOptions,
+                {
+                    container: ["roomInfo_bottomBorder"],
+                    roomPriceAndPeriodOfTime: ["roomInfo_alignItemsCenter"],
+                    roomNumber: ["roomInfo_fontSize19"]
+                }
+            )
+
+            div(class=["roomInfo__roomRateAndReviewsCount"])
+                include ../FormElements.RateButton/RateButton.pug
+                +getRateButton({
+                    isCheckedArray: options.isCheckedArray,
+                })
+
+                div(class=["roomInfo__reviewsCountContainer"])
+                    p(class=["roomInfo__reviewsCount"])= options.reviewsCount
+                    p(class=["roomInfo__reviewsCountText"])= options.reviewsCountText
