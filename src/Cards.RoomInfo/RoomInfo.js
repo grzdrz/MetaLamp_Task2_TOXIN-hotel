@@ -1,4 +1,7 @@
+/* import { debug } from "webpack";
+ */
 export function roomInfoScript() {
+    //debugger;
     let roomInfoBlocks = document.querySelectorAll(".roomInfo");
     roomInfoBlocks.forEach(e => {
         let arrows = e.querySelector(".roomInfo__arrows");

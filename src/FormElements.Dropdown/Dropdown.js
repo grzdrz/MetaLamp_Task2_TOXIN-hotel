@@ -1,7 +1,7 @@
 import { queryParentElementByClass } from "../queryParentElementByClass.js";
 
 export function dropdownScript() {
-
+    //debugger;
     let dropdownsElems = document.querySelectorAll(".dropdown");
     dropdownsElems.forEach(e => {
         e.querySelector(".dropdown__mainInput").onclick = onDropdownClick;
@@ -13,10 +13,12 @@ export function dropdownScript() {
         inputContainer.onmouseleave = onDropdownLeave;
 
         e.querySelectorAll(".dropdown__dropedListItemHandlerPlus").forEach(e => {
-            e.onclick = onDropdownItemPlus;
+            //e.onclick = onDropdownItemPlus;
+            e.addEventListener("click", onDropdownItemPlus);
         });
         e.querySelectorAll(".dropdown__dropedListItemHandlerMinus").forEach(e => {
-            e.onclick = onDropdownItemMinus;
+            //e.onclick = onDropdownItemMinus;
+            e.addEventListener("click", onDropdownItemMinus);
         });
 
         let clearButton = e.querySelector(".dropdown__clearButton");
@@ -129,6 +131,7 @@ export function dropdownScript() {
                 .parentElement
                 .querySelector(".dropdown__mainInput")
                 .value = sum + " " + doDeclensionOfWord(sum, "гость");
+            curDropdownContainer.closest(".dropdown").dataset.curSum = sum;
         }
         else if (curDropdownContainer.className.match(/dropdown__input_listOfNumbers/i)) {
             let allItemsNames = Array.from(curDropdownContainer.querySelectorAll(".dropdown__dropedListItem"));

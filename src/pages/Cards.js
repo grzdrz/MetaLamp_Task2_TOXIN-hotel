@@ -19,4 +19,8 @@ dateInputScript();
 import { roomInfoScript } from "../Cards.RoomInfo/RoomInfo.js";
 roomInfoScript();
 
+import { priceCalculationFormScript } from "../Cards.FormDefault/formsContent/priceCalculationForm.js";
+priceCalculationFormScript();
+
+
 import "./Cards.scss";

@@ -1,6 +1,6 @@
 mixin getDropdown(options, classes={})
 
-    div(class=["dropdown"].concat(classes.container || []) data-border-radius="")
+    div(class=["dropdown"].concat(classes.container || []) data-border-radius="" data-cur-sum=0)
         div(class=["dropdown__title"].concat(classes.title || []))
             p(class=["dropdown__titleText"].concat(classes.titleText || []))= options.titleText
             - if(options.isTitleTextTestVisible)

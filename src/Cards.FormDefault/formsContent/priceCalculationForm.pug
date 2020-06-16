@@ -44,18 +44,18 @@ mixin getPriceCalculationForm(options, classes={})
 
     div(class=["formDefault__interactiveInfo"])
         div(class=["formDefault__fullPrice"])
-            p(class=["formDefault__priceMultiplyPeriodOfTime"]) 9 990₽ х 4 суток
+            p(class=["formDefault__priceMultiplyPeriodOfTime"]) 9 990₽ х 0 суток
             p(class=["formDefault__priceMultiplyPeriodOfTimeCalculated"]) 39 960₽
         div(class=["formDefault__servicesDiscount"])
             p(class=["formDefault__servicesDiscountCount"]) Сбор за услуги: скидка 2 179₽
             p(class=["formDefault__servicesDiscountCalculated"]) 0₽
         div(class=["formDefault__additionalServices"])
             p(class=["formDefault__additionalServicesPrice"]) Сбор за дополнительные услуги
-            p(class=["formDefault__additionalServicesPriceCalculated"]) 300₽
+            p(class=["formDefault__additionalServicesPriceCalculated"]) 0₽
         div(class=["formDefault__inTotal"])
             p(class=["formDefault__inTotalText"]) Итого
             p(class=["formDefault__inTotalBottomLine"])
-            p(class=["formDefault__inTotalNumber"]) 38 081₽
+            p(class=["formDefault__inTotalNumber"] data-total-number=0) 0₽
 
     include ../../FormElements.ButtonDefault/ButtonDefault.pug
     +getButton({
