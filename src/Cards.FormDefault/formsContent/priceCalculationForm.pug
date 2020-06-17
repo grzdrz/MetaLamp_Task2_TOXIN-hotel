@@ -43,15 +43,23 @@ mixin getPriceCalculationForm(options, classes={})
     )   
 
     div(class=["formDefault__interactiveInfo"])
-        div(class=["formDefault__fullPrice"])
-            p(class=["formDefault__priceMultiplyPeriodOfTime"]) 9 990₽ х 0 суток
-            p(class=["formDefault__priceMultiplyPeriodOfTimeCalculated"]) 39 960₽
+        div(class=["formDefault__priceMultiplyPeriodOfTime"])
+            div(class=["formDefault__priceMultiplyPeriodOfTimeDescription"])
+                p(class=["formDefault__priceMultiplyPeriodOfTimeDescriptionNumber"] data-number=9990) 9 990₽ х
+                p(class=["formDefault__priceMultiplyPeriodOfTimeDescriptionDays"]) 0 суток
+            p(class=["formDefault__priceMultiplyPeriodOfTimePriceCalculated"] data-calculated-number=9990) 9 990₽
         div(class=["formDefault__servicesDiscount"])
-            p(class=["formDefault__servicesDiscountCount"]) Сбор за услуги: скидка 2 179₽
-            p(class=["formDefault__servicesDiscountCalculated"]) 0₽
+            div(class=["formDefault__servicesDiscountDescription"])
+                p(class=["formDefault__servicesDiscountDescriptionText"]) Сбор за услуги: скидка 2 179₽
+                div(class=["formDefault__infoSymbol", "formDefault__servicesDiscountDescriptionInfoSymbol"])
+                    p(class=["formDefault__infoSymbolInnerLetter"]) i
+            p(class=["formDefault__servicesDiscountPriceCalculated"] data-calculated-number=0) 0₽
         div(class=["formDefault__additionalServices"])
-            p(class=["formDefault__additionalServicesPrice"]) Сбор за дополнительные услуги
-            p(class=["formDefault__additionalServicesPriceCalculated"]) 0₽
+            div(class=["formDefault__additionalServicesDescription"])
+                p(class=["formDefault__additionalServicesDescriptionText"]) Сбор за дополнительные услуги
+                div(class=["formDefault__infoSymbol", "formDefault__additionalServicesDescriptionInfoSymbol"])
+                    p(class=["formDefault__infoSymbolInnerLetter"]) i                
+            p(class=["formDefault__additionalServicesPriceCalculated"] data-calculated-number=0) 0₽
         div(class=["formDefault__inTotal"])
             p(class=["formDefault__inTotalText"]) Итого
             p(class=["formDefault__inTotalBottomLine"])

@@ -5,14 +5,14 @@ export function priceCalculationFormScript() {
         let minusButtons = e.querySelectorAll(".dropdown__dropedListItemHandlerMinus");
 
         plusButtons.forEach(e => {
-            e.addEventListener("click", inputChange);
+            e.addEventListener("click", dropdownInputChange);
         });
         minusButtons.forEach(e => {
-            e.addEventListener("click", inputChange);
+            e.addEventListener("click", dropdownInputChange);
         });
     });
 
-    function inputChange(event) {
+    function dropdownInputChange(event) {
         let dropdownContainer = event.currentTarget.closest(".dropdown");
         let curSum = dropdownContainer.dataset.curSum;
 
@@ -20,46 +20,64 @@ export function priceCalculationFormScript() {
         let additionalServicesNumberElem = formContainer.querySelector(".formDefault__additionalServicesPriceCalculated");
         let temp1 = Number.parseInt(curSum) * 100;
         additionalServicesNumberElem.textContent = temp1 + "₽";
+        additionalServicesNumberElem.dataset.calculatedNumber = temp1;
 
-        let totalNumberTextElem = formContainer.querySelector(".formDefault__inTotalNumber");
 
-        let temp2;
-        if (event.currentTarget.matches(".dropdown__dropedListItemHandlerMinus")) {
-            if (Number.parseInt(totalNumberTextElem.dataset.totalNumber) <= 0) return;
-            temp2 = Number.parseInt(totalNumberTextElem.dataset.totalNumber) - 100;
-        }
-        else
-            temp2 = Number.parseInt(totalNumberTextElem.dataset.totalNumber) + 100;
-        totalNumberTextElem.dataset.totalNumber = temp2;
-        totalNumberTextElem.textContent = temp2 + "₽";
+        calculateAndSetTotalPrice(formContainer);
     }
 
 
-    let test = $('.dateInput_double.priceCalculation__dateInput .dateInput__datepickerInput_first');
-    let test2 = test.data('datepicker');
-    //debugger;
-    let oldOnSelect = test2.selectDate;
-    test2.selectDate = getNewOnSelectWrapper(oldOnSelect.bind(test2));
+    let firstDateInput = $('.dateInput_double.priceCalculation__dateInput .dateInput__datepickerInput_first');
+    let datepicker = firstDateInput.data('datepicker');
+    let oldOnSelect = datepicker.selectDate;
+    datepicker.selectDate = getNewOnSelectWrapper(oldOnSelect.bind(datepicker));
 
     function getNewOnSelectWrapper(oldFunc) {
         return function (date/* formattedDate, date, inst */) {
             oldFunc(date/* formattedDate, date, inst */);
 
+            let firstDateInput = this.$el[0];
+            let dateInputValue1 = firstDateInput.value;
+            let dateInputValue2 = firstDateInput.closest(".dateInput").querySelector(".dateInput__datepickerInput_second").value;
+            if (dateInputValue1 && dateInputValue2) {
 
-            let test3 = this.$el[0];
-            let val1 = test3.value;
-            let val2 = test3.closest(".dateInput").querySelector(".dateInput__datepickerInput_second").value;
-            if (val1 && val2) {
-                debugger;
-                let d1 = val1.split(".");
-                let d11 = new Date(d1[2], d1[1], d1[0]);
-                let d2 = val2.split(".");
-                let d22 = new Date(d2[2], d2[1], d2[0]);
-                let d3 = Math.abs(d22 - d11);
-                //debugger;
-                let d4 = d3 / (1000 * 60 * 60 * 24);
-                test3.closest(".formDefault").querySelector(".formDefault__inTotalNumber").textContent = d4;
+                let dateStringsArray1 = dateInputValue1.split(".");
+                let date1 = new Date(dateStringsArray1[2], dateStringsArray1[1], dateStringsArray1[0]);
+                let dateStringsArray2 = dateInputValue2.split(".");
+                let date2 = new Date(dateStringsArray2[2], dateStringsArray2[1], dateStringsArray2[0]);
+                let dDate = Math.abs(date2 - date1);
+                let daysCount = dDate / (1000 * 60 * 60 * 24);
+
+                let formContainer = firstDateInput.closest(".formDefault");
+                let daysField = formContainer.querySelector(".formDefault__priceMultiplyPeriodOfTimeDescriptionDays");
+                let splittedText = daysField.textContent.split(/\s/i);
+                splittedText[0] = daysCount;
+                let joinedText = splittedText.join(" ");
+                daysField.textContent = " " + joinedText;
+
+                let numberField = formContainer.querySelector(".formDefault__priceMultiplyPeriodOfTimeDescriptionNumber");
+                let calculatedPriceField = formContainer.querySelector(".formDefault__priceMultiplyPeriodOfTimePriceCalculated");
+                calculatedPriceField.dataset.calculatedNumber = daysCount * Number.parseInt(numberField.dataset.number);
+                calculatedPriceField.textContent = calculatedPriceField.dataset.calculatedNumber + "₽";
+
+
+                calculateAndSetTotalPrice(formContainer);
             }
         };
+    }
+
+
+    function calculateAndSetTotalPrice(containerElem) {
+        let totalNumberField = containerElem.querySelector(".formDefault__inTotalNumber");
+
+        let numberField1 = containerElem.querySelector(".formDefault__priceMultiplyPeriodOfTimePriceCalculated");
+        let numberField2 = containerElem.querySelector(".formDefault__servicesDiscountPriceCalculated");
+        let numberField3 = containerElem.querySelector(".formDefault__additionalServicesPriceCalculated");
+
+        totalNumberField.dataset.totalNumber =
+            Number.parseInt(numberField1.dataset.calculatedNumber) +
+            Number.parseInt(numberField2.dataset.calculatedNumber) +
+            Number.parseInt(numberField3.dataset.calculatedNumber);
+        totalNumberField.textContent = totalNumberField.dataset.totalNumber + "₽";
     }
 }
