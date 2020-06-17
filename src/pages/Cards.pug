@@ -11,12 +11,12 @@ html
             include ../GlobalLogo/GlobalLogo.pug
 
             include ../Cards.FormDefault/FormDefault.pug
-            //-+getForm({
+            +getForm({
                 titleText: "Найдём номера под ваши пожелания",
                 formType: "guestsAndDateRange",
 
                 dropdownTitleText: "гости",
-                })
+            })
 
             +getForm({
                 titleText: "Регистрация аккаунта",

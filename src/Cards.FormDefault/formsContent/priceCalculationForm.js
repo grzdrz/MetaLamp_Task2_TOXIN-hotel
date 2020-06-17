@@ -35,15 +35,15 @@ export function priceCalculationFormScript() {
     }
 
 
-    let test = $('.dateInput_double .dateInput__datepickerInput_first');
+    let test = $('.dateInput_double.priceCalculation__dateInput .dateInput__datepickerInput_first');
     let test2 = test.data('datepicker');
     //debugger;
     let oldOnSelect = test2.selectDate;
     test2.selectDate = getNewOnSelectWrapper(oldOnSelect.bind(test2));
 
     function getNewOnSelectWrapper(oldFunc) {
-        return function (formattedDate, date, inst) {
-            oldFunc(formattedDate, date, inst);
+        return function (date/* formattedDate, date, inst */) {
+            oldFunc(date/* formattedDate, date, inst */);
 
 
             let test3 = this.$el[0];
