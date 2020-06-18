@@ -1,19 +1,33 @@
-mixin getFormInput(options, classes={})
+//-
+    options.placeholder - фоновый текст в инпуте
+    options.name - имя свойства в которое будет положено значение инпута при отправке на сервер
+    options.type - тип инпута
+    options.value - значение инпута по умолчанию
+    options.titleText - текст заголовка
 
-    div(class=["formInput"].concat(classes.container || []))
+    options.isTitleTextTestVisible - определяет дополнительный заголовок(используется только на странице макета uikit)
+    options.titleTextTestValue - текст дополнительного заголовка
+
+
+    options.hasSubmitButton - встроена ли справо от инпута submit кнопка(цветная стрелка вправо)
+
+mixin getFormInput(options)
+    - let classes = {};
+
+    div(class=["form-input"])
         - if(options.hasTitle)
-            div(class=["formInput__title"].concat(classes.title || []))
-                p(class=["formInput__titleText"].concat(classes.titleText || []))= options.titleText
+            div(class=["form-input__title"])
+                p(class=["form-input__title-text"])= options.titleText
                 - if(options.isTitleTextTestVisible)
-                    p(class=["formInput__titleTextTest"].concat(classes.titleTextTest || []))= options.titleTextTestValue
+                    p(class=["form-input__title-text-test"])= options.titleTextTestValue
 
-        div(class=["formInput__input"].concat(classes.input || []))               
-            input(class=["formInput__mainInput"].concat(classes.mainInput || []),
+        div(class=["form-input__input-container"])
+            input(class=["form-input__input"],
                 placeholder= options.placeholder,
                 name= options.name,
                 type= options.type,
                 value= options.value)
             - if(options.hasSubmitButton)
-                input(class=['formInput__submitInput'].concat(classes.submitInput || [])
+                input(class=['form-input__submit-input']
                     type="submit"
                     value="arrow_forward")

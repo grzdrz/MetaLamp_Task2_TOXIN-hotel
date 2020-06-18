@@ -1,14 +1,42 @@
-mixin getGuestRoomReviews(options, classes={})
+//-
+    options.likeButtonOptions - настройки like button(см. options.reviewsArray)
+    options.reviewsArray - массив объектов с настройками каждого отзыва:
+        {
+            фото пользователя
+            imgSrc: "./src/FormElements.guest-room-reviews/img/....png",
 
-    include ../FormElements.LikeButton/LikeButton.pug
+            полное имя пользователя
+            fullName: "Мурад Сарафанов",
 
-    div(class=["guestRoomReviews"].concat(classes.container || []))
-        p(class=["guestRoomReviews__title"].concat(classes.title || [])) Отзывы посетителей номера
+            сколько времени прошло с момента комментирования
+            numberOfDaysSinceComment: "5 дней назад",
+
+            настройки like button
+            likeButtonOptions: { 
+                hasTitle: false,
+                number: 12,
+                isChecked: true,
+            },
+
+            текст комментария
+            comment: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий." +
+                "И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто" +
+                "не жаловался из соседей.",
+        },
+
+
+include ../FormElements.LikeButton/LikeButton.pug
+
+mixin getGuestRoomReviews(options)
+    - let classes = {};
+
+    div(class=["guest-room-reviews"])
+        p(class=["guest-room-reviews__title"]) Отзывы посетителей номера
         - for(let review of options.reviewsArray)
-            div(class=["guestRoomReviews__reviewContainer"].concat(classes.reviewContainer || []))
-                img(src=review.imgSrc class=["guestRoomReviews__userAvatar"].concat(classes.userAvatar || []))
-                div(class=["guestRoomReviews__userInfo"].concat(classes.userInfo || []))
-                    p(class=["guestRoomReviews__userFullName"].concat(classes.userFullName || []))= review.fullName
-                    p(class=["guestRoomReviews__numberOfDaysSinceComment"].concat(classes.numberOfDaysSinceComment || []))= review.numberOfDaysSinceComment
+            div(class=["guest-room-reviews__review-container"])
+                img(src=review.imgSrc class=["guest-room-reviews__user-avatar"])
+                div(class=["guest-room-reviews__user-info"])
+                    p(class=["guest-room-reviews__user-full-name"])= review.fullName
+                    p(class=["guest-room-reviews__number-of-days-since-comment"])= review.numberOfDaysSinceComment
                 +getLikeButton(review.likeButtonOptions)
-                p(class=["guestRoomReviews__comment"].concat(classes.comment || []))= review.comment
+                p(class=["guest-room-reviews__comment"])= review.comment

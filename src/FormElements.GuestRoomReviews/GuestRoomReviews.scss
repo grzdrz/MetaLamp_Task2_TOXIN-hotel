@@ -1,6 +1,6 @@
-.guestRoomReviews {
+.guest-room-reviews {
     &__title {
-        font-family: OpenSansBold;
+        font-family: Quicksand, OpenSans;
         font-style: normal;
         font-weight: bold;
         font-size: 19px;
@@ -10,7 +10,7 @@
         margin-bottom: 20px;
     }
 
-    &__reviewContainer {
+    &__review-container {
         display: grid;
         grid-template-columns: max-content 653px;
         grid-template-rows: auto auto;
@@ -21,7 +21,7 @@
         }
     }
 
-    &__userAvatar {
+    &__user-avatar {
         border-radius: 50%;
         width: 44px;
         height: 44px;
@@ -32,11 +32,11 @@
         box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
     }
 
-    &__userInfo {
+    &__user-info {
         margin-left: 10px;
     }
-    &__userFullName {
-        font-family: MontserratBold;
+    &__user-full-name {
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -44,8 +44,8 @@
         color: rgba(31, 32, 65, 0.75);
     }
 
-    &__numberOfDaysSinceComment {
-        font-family: MontserratRegular;
+    &__number-of-days-since-comment {
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -54,7 +54,7 @@
     }
 
     &__comment {
-        font-family: MontserratRegular;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;

@@ -1,32 +1,62 @@
 @font-face {
-    font-family: MontserratBold;
-    src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
-}
-@font-face {
-    font-family: MontserratRegular;
-    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
-}
-@font-face {
-    font-family: OpenSansBold;
-    src: url('../fonts/OpenSans/OpenSans-Bold.ttf');
-}
-@font-face {
-    font-family: OpenSansRegular;
-    src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
-}
-
-//--test--
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat/Montserrat-Regular.woff'), url('../fonts/Montserrat/Montserrat-Regular.woff2'),
-        url('../fonts/Montserrat/Montserrat-Regular.ttf');
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/montserrat-v14-latin_cyrillic-regular.woff"),
+        url("../fonts/Montserrat/montserrat-v14-latin_cyrillic-regular.woff2"),
+        url("../fonts/Montserrat/montserrat-v14-latin_cyrillic-regular.eot"),
+        url("../fonts/Montserrat/montserrat-v14-latin_cyrillic-regular.ttf"),
+        url("../fonts/Montserrat/montserrat-v14-latin_cyrillic-regular.svg");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat/Montserrat-Bold.woff'), url('../fonts/Montserrat/Montserrat-Bold.woff2'),
-        url('../fonts/Montserrat/Montserrat-Bold.ttf');
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/montserrat-v14-latin_cyrillic-700.woff"),
+        url("../fonts/Montserrat/montserrat-v14-latin_cyrillic-700.woff2"),
+        url("../fonts/Montserrat/montserrat-v14-latin_cyrillic-700.eot"),
+        url("../fonts/Montserrat/montserrat-v14-latin_cyrillic-700.ttf"),
+        url("../fonts/Montserrat/montserrat-v14-latin_cyrillic-700.svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand/quicksand-v20-latin-regular.woff"),
+        url("../fonts/Quicksand/quicksand-v20-latin-regular.woff2"),
+        url("../fonts/Quicksand/quicksand-v20-latin-regular.eot"),
+        url("../fonts/Quicksand/quicksand-v20-latin-regular.ttf"),
+        url("../fonts/Quicksand/quicksand-v20-latin-regular.svg");
+
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand/quicksand-v20-latin-700.woff"), url("../fonts/Quicksand/quicksand-v20-latin-700.woff2"),
+        url("../fonts/Quicksand/quicksand-v20-latin-700.eot"), url("../fonts/Quicksand/quicksand-v20-latin-700.ttf"),
+        url("../fonts/Quicksand/quicksand-v20-latin-700.svg");
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans/open-sans-v17-latin_cyrillic-regular.woff"),
+        url("../fonts/OpenSans/open-sans-v17-latin_cyrillic-regular.woff2"),
+        url("../fonts/OpenSans/open-sans-v17-latin_cyrillic-regular.eot"),
+        url("../fonts/OpenSans/open-sans-v17-latin_cyrillic-regular.ttf"),
+        url("../fonts/OpenSans/open-sans-v17-latin_cyrillic-regular.svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans/open-sans-v17-latin_cyrillic-700.woff"),
+        url("../fonts/OpenSans/open-sans-v17-latin_cyrillic-700.woff2"),
+        url("../fonts/OpenSans/open-sans-v17-latin_cyrillic-700.eot"),
+        url("../fonts/OpenSans/open-sans-v17-latin_cyrillic-700.ttf"),
+        url("../fonts/OpenSans/open-sans-v17-latin_cyrillic-700.svg");
     font-weight: bold;
     font-style: normal;
 }

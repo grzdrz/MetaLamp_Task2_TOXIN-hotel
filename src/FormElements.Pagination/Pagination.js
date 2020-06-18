@@ -4,22 +4,22 @@
 
 //P.S. Это в первую очередь демонстрационный скрипт, нужный для того чтобы заставить кнопки пагинации реагировать на клики по ним.
 //Но в теории его можно использовать для одностраничных веб приложений, где элементы должны 
-//определенным способом(в данном случае с помощью pug шаблонп) рендериться повторно без перезагрузки всей страницы.
+//определенным способом(в данном случае с помощью pug шаблона) рендериться повторно без перезагрузки всей страницы.
 export function paginationScript() {
     let getPaginationByPugCode = require("./paginationForJSRender.pug");
     {
         function setClickEventsToPagesLinks() {
             let paginations = document.querySelectorAll(".pagination");
             paginations.forEach(e => {
-                let links = e.querySelectorAll(".pagination__pageLink");
+                let links = e.querySelectorAll(".pagination__page-link");
                 links.forEach(ee => {
                     ee.onclick = selectPage;
                 });
 
-                let leftArrow = e.querySelector(".pagination__leftArrow");
+                let leftArrow = e.querySelector(".pagination__left-arrow");
                 if (leftArrow) leftArrow.onclick = selectPage;
 
-                let rightArrow = e.querySelector(".pagination__rightArrow");
+                let rightArrow = e.querySelector(".pagination__right-arrow");
                 if (rightArrow) rightArrow.onclick = selectPage;
             });
         }
@@ -33,15 +33,14 @@ export function paginationScript() {
 
             let selectedPageNumber = event.currentTarget.textContent;
             if (selectedPageNumber === "arrow_forward") {
-                let classes = event.currentTarget.className.split(/\s/i);
-                if (classes.includes("pagination__leftArrow")) {
+                if (event.currentTarget.matches(".pagination__left-arrow")) {
                     let prevPage = --(event.currentTarget.parentElement.dataset.curPageNumber);
                     event.currentTarget.parentElement.parentElement.innerHTML = getPaginationByPugCode({
                         pagesCount: 20,
                         curPageNumber: prevPage,
                     });
                 }
-                else if (classes.includes("pagination__rightArrow")) {
+                else if (event.currentTarget.matches(".pagination__right-arrow")) {
                     let nextPage = ++(event.currentTarget.parentElement.dataset.curPageNumber);
                     event.currentTarget.parentElement.parentElement.innerHTML = getPaginationByPugCode({
                         pagesCount: 20,

@@ -1,9 +1,12 @@
-mixin getLikeButton(options, classes={})
+//-
+    options.isChecked - определяет нажата кнопка или нет
+    options.number - цифра внутри кнопки, отражающая число лайков
 
-    - if(options.hasTitle)
-        p(class=["likeButton__title"].concat(classes.title || []))
-    div(class=["likeButton"].concat(classes.container || []))
-        input(class=["likeButton__input"].concat(classes.input || []) type="checkbox" checked=options.isChecked)
-        label(class=["likeButton__label"].concat(classes.label || []))
-            p(class=["likeButton__buttonLikeSymbol"].concat(classes.buttonLikeSymbol || []))
-            p(class=["likeButton__buttonLikesNumber"].concat(classes.buttonLikesNumber || []))= options.number
+mixin getLikeButton(options)
+    - let classes = {};
+
+    div(class=["like-button"])
+        input(class=["like-button__input"] type="checkbox" checked=options.isChecked)
+        label(class=["like-button__label"])
+            p(class=["like-button__button-like-symbol"])
+            p(class=["like-button__button-likes-number"])= options.number

@@ -3,7 +3,7 @@
     flex-direction: column;
 
     &__title {
-        font-family: MontserratBold;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -13,7 +13,7 @@
         margin-bottom: 16px;
     }
 
-    &__pageList {
+    &__page-list {
         display: flex;
         flex-direction: row;
         width: max-content;
@@ -21,15 +21,15 @@
     }
 
     $buttonSize: 40px;
-    &__leftArrow,
-    &__rightArrow,
-    &__pageLink {
+    &__left-arrow,
+    &__right-arrow,
+    &__page-link {
         width: $buttonSize;
         height: $buttonSize;
         text-decoration: none;
     }
 
-    &__pageLink {
+    &__page-link {
         &_target {
             background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
             border-radius: 50%;
@@ -39,14 +39,14 @@
         }
     }
 
-    &__leftArrow,
-    &__rightArrow {
+    &__left-arrow,
+    &__right-arrow {
         background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
         border-radius: 50%;
     }
 
-    &__leftArrowText,
-    &__rightArrowText {
+    &__left-arrow-text,
+    &__right-arrow-text {
         width: inherit;
         height: inherit;
         background: transparent;
@@ -63,16 +63,16 @@
         color: #ffffff;
     }
 
-    &__leftArrowText {
+    &__left-arrow-text {
         transform: rotate(180deg);
     }
 
-    &__pageLinkText {
+    &__page-link-text {
         width: inherit;
         height: inherit;
         border-radius: 50%;
 
-        font-family: MontserratBold;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -84,9 +84,9 @@
         color: rgba(31, 32, 65, 0.5);
     }
 
-    &__downText {
+    &__bottom-text {
         margin-top: 10px;
-        font-family: MontserratRegular;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;

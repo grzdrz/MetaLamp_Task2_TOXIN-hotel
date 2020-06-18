@@ -1,7 +1,7 @@
-.formInput {
+.form-input {
     width: 320px;
 
-    &_textFieldDefault {
+    &_text-field-default {
         display: flex;
         flex-direction: column;
     }
@@ -13,8 +13,8 @@
 
         margin-bottom: 5px;
     }
-    &__titleText {
-        font-family: MontserratBold;
+    &__title-text {
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -22,8 +22,8 @@
         text-transform: uppercase;
         color: #1f2041;
     }
-    &__titleTextTest {
-        font-family: MontserratRegular;
+    &__title-text-test {
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
@@ -33,7 +33,7 @@
         color: rgba(31, 32, 65, 0.5);
     }
 
-    &__input {
+    &__input-container {
         display: grid;
         grid-template-rows: 42px;
         grid-template-columns: auto min-content;
@@ -50,13 +50,13 @@
         position: relative;
     }
 
-    &__mainInput {
+    &__input {
         padding: 0px 15px;
         height: 44px;
         outline: none;
 
         background: transparent;
-        font-family: MontserratRegular;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -93,10 +93,10 @@
         text-overflow: ellipsis; /* Многоточие */
     }
 
-    &__submitInput {
-        width: 42px;
+    &__submit-input {
+        min-width: 42px;
         height: 42px;
-        outline: none;
+        //outline: none;
 
         font-family: Material Icons;
         font-style: normal;
