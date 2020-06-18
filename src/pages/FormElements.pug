@@ -147,6 +147,7 @@ html
 
             include ../FormElements.RadioButton/RadioButton.pug
             +getRadioButton({
+                blockNumber: "_radio_1",
                 buttonType: "radio",
                 radioButtonList: [
                     {text: "Мужчина", isChecked: true},
@@ -175,12 +176,16 @@ html
 
             include ../FormElements.RateButton/RateButton.pug
             +getRateButton({
-                blockNumber: 1,
-                isCheckedArray: [false, false, true, false, false,]
+                blockNumber: "_rate_1",
+                numberOfCheckedStar: 3,
             })
             +getRateButton({
-                blockNumber: 2,
-                isCheckedArray: [false, false, true, false, false,]
+                blockNumber: "_rate_2",
+                numberOfCheckedStar: 1,
+            })             
+            +getRateButton({
+                blockNumber: "_rate_3",
+                numberOfCheckedStar: 0,
             })            
 
 
@@ -257,6 +262,15 @@ html
                 valueType: "₽",
                 valueRound: 100,
             })
+            +getRangeSlider({
+                title: "range slider",
+                firstValue: 2000,
+                lastValue: 6000,
+                minValue: -50000,
+                maxValue: 66666,
+                valueType: "₽",
+                valueRound: 100,
+            })            
 
 
             include ../FormElements.BulletList/BulletList.pug
@@ -307,6 +321,7 @@ html
                     {icon: "location_city", titleText: "Удобство", mainText: "Окно в каждой из спален",},
                     {icon: "whatshot", titleText: "Уют", mainText: "Номер оснащён камином",},
                 ],
+                hasLastBorderBottom: false,
             })
 
 

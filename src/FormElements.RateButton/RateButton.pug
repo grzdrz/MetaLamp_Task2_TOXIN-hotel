@@ -1,15 +1,16 @@
-mixin getRateButton(options, classes={})
+//-
+    options.blockNumber - постфикс имени радио инпута, для того чтобы разные блоки не влияли друг на друга
+    options.numberOfCheckedStar - индекс выбранной по умолчанию звезды(от 0 до 5, где 0 - невыбрано не одной звезды)
 
-    div(class=["ratingRadio"].concat(classes.container || []))
-        - for(let i=4; i >= 0; i--)
+mixin getRateButton(options)
+    - let classes = {};
+
+    div(class=["rating-radio"])
+        - for(let i=5; i >= 1; i--)
             input(type="radio"
-                class=["ratingRadio__input", "ratingRadio__input_" + (i + 1)].concat(classes.input || [])
-                name="starRating_" + options.blockNumber,
-                value=(i + 1)
-                checked=options.isCheckedArray[i])
-            p(class=["ratingRadio__label", "ratingRadio__label_" + (i + 1)].concat(classes.label || []) 
-                title="Оценка «" + (i + 1) + "»")
-
-//- i + 1 при диапазоне от 4 до 0 включительно для того чтобы массив isCheckedArray мог начинаться с 0го индекса
-//-если же просто i при диапазоне от 5 до 1 включительно, то в массиве isCheckedArray нужно будет не заполнять первый элемент
-//-(хотя 2ой вариант наверное тоже допустим)
+                class=["rating-radio__input", "rating-radio__input_" + i]
+                name="starRating_" + options.blockNumber
+                value=i
+                checked=(options.numberOfCheckedStar === i))
+            p(class=["rating-radio__label", "rating-radio__label_" + i]
+                title="Оценка «" + i + "»")

@@ -1,4 +1,4 @@
-.ratingRadio {
+.rating-radio {
     $size: 24px;
     position: relative;
     display: flex;
@@ -6,6 +6,8 @@
     height: 24px;
 
     &__input {
+        cursor: pointer;
+
         width: 24px;
         height: 24px;
         position: absolute;

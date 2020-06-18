@@ -9,4 +9,5 @@ mixin getLikeButton(options)
         input(class=["like-button__input"] type="checkbox" checked=options.isChecked)
         label(class=["like-button__label"])
             p(class=["like-button__button-like-symbol"])
-            p(class=["like-button__button-likes-number"])= options.number
+            p(class=["like-button__button-likes-number_off"])= options.number
+            p(class=["like-button__button-likes-number_on"])= options.number + 1

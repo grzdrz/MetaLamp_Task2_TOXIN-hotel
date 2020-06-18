@@ -1,97 +1,3 @@
-/* .buttonDefault {
-    //кнопка как отдельный блок
-    border-radius: 22px;
-    display: grid;
-    grid-template-rows: max-content;
-    grid-template-columns: min-content;
-    align-items: center;
-
-    $buttonHeight: 44px;
-    $buttonTexSidetPaddings: 60px;
-    $borderRadius: 22px;
-    $borderThickness: 2px;
-
-    height: $buttonHeight;
-
-    &__buttonBasis {
-        color: #ffffff;
-        text-decoration: none;
-        display: grid;
-        grid-template-columns: max-content;
-        grid-template-rows: auto;
-        align-items: center;
-        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-        height: $buttonHeight;
-        border-radius: $borderRadius;
-
-        outline: none;
-
-        &:hover {
-            background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
-        }
-
-        position: relative;
-    }
-
-    &__buttonText {
-        background: transparent;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        padding: 0px $buttonTexSidetPaddings - $borderThickness;
-        color: #ffffff;
-        margin: $borderThickness;
-        border-radius: $borderRadius;
-        height: $buttonHeight - $borderThickness * 2;
-
-        @import "./buttonTextProperties.scss";
-        @include buttonTextProperties;
-        letter-spacing: -0.03em;
-    }
-
-    //модификатор, делающий кнопку полой
-    &_hollowButton {
-        & > a,
-        & > button {
-            & > p:first-of-type {
-                background: #ffffff;
-                color: #bc9cff;
-            }
-        }
-    }
-
-    &__arrow {
-        font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 24px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        //color: #ffffff;
-
-        position: absolute; 
-        right: 0px;
-        height: $buttonHeight;
-        width: $buttonHeight;
-    }
-
-    &__inputButton {
-        position: absolute;
-        opacity: 0;
-        width: inherit;
-        height: inherit;
-
-        & + label {
-            z-index: -1;
-        }
-    }
-} */
-
 //в этом варианте можно не задавать падинги текста явно, а просто указывать ширину контейнеру
 $buttonHeight: 44px;
 $buttonTexSidetPaddings: 60px;
@@ -114,17 +20,19 @@ $borderThickness: 2px;
         position: absolute;
         left: 0px;
         right: 0px;
+        top: 0px;
+        bottom: 0px;
+
         margin: $borderThickness;
+
+        text-decoration: none;
+        display: flex;
+        align-items: center;
         justify-content: center;
 
         color: #ffffff;
-        text-decoration: none;
-        display: flex;
-        /*         grid-template-columns: max-content;
-        grid-template-rows: auto; */
-        align-items: center;
         background: transparent;
-        height: $buttonHeight - $borderThickness * 2;
+
         border-radius: $borderRadius;
 
         outline: none;
@@ -223,16 +131,8 @@ $borderThickness: 2px;
     height: $buttonHeight;
     &_with-height_34px {
         height: 34px;
-
-        .button-default__button-basis {
-            height: 34px - $borderThickness * 2;
-        }
     }
     &_with-height_44px {
         height: 44px;
-
-        .button-default__button-basis {
-            height: 44px - $borderThickness * 2;
-        }
     }
 }

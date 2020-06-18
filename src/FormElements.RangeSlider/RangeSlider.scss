@@ -1,4 +1,4 @@
-.rangeSlider {
+.range-slider {
     display: flex;
     flex-direction: column;
     background: white;
@@ -9,7 +9,7 @@
     $filledBodyMarginLeft: 30px;
     $sliderSize: 16px;
 
-    &__titleContainer {
+    &__title-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -17,7 +17,7 @@
     }
 
     &__title {
-        font-family: MontserratBold;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -26,8 +26,8 @@
         color: #1f2041;
     }
 
-    &__inputsValueRange {
-        font-family: MontserratRegular;
+    &__inputs-value-range {
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
@@ -38,7 +38,7 @@
         letter-spacing: 0.03em;
     }
 
-    &__sliderContainer {
+    &__slider-container {
         display: flex;
         align-items: center;
         position: relative;
@@ -47,14 +47,14 @@
         background: transparent;
     }
 
-    &__firstInput,
-    &__lastInput {
+    &__first-input,
+    &__last-input {
         position: absolute;
         z-index: -1;
         opacity: 0;
     }
 
-    &__sliderBodyEmpty {
+    &__slider-body-empty {
         width: 266px;
         height: 6px;
         background: #ffffff;
@@ -63,7 +63,7 @@
         position: relative;
     }
 
-    &__sliderBodyFilled {
+    &__slider-body-filled {
         width: $filledBodyWidth; //test
         height: 6px;
         background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
@@ -71,8 +71,8 @@
         position: absolute;
     }
 
-    &__firstSlider,
-    &__lastSlider {
+    &__first-slider,
+    &__last-slider {
         width: $sliderSize - 4px;
         height: $sliderSize - 4px;
         background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
@@ -82,8 +82,8 @@
         //margin-left: $filledBodyMarginLeft + $filledBodyWidth - $sliderSize / 2; //test
     }
 
-    &__firstSliderOutside,
-    &__lastSliderOutside {
+    &__first-slider-outside,
+    &__last-slider-outside {
         width: $sliderSize;
         height: $sliderSize;
         background: white;

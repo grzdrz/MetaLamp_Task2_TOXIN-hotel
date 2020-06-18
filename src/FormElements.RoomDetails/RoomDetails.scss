@@ -1,10 +1,10 @@
-.roomDetails {
+.room-details {
     display: flex;
     flex-direction: column;
 
     width: max-content;
 
-    &__bottomBorder {
+    &__bottom-border {
         width: 280px;
         height: 1px;
         background: rgba(31, 32, 65, 0.1);
@@ -17,7 +17,7 @@
         }
     }
 
-    &__detailContainer {
+    &__detail-container {
         display: flex;
         flex-direction: row;
     }
@@ -42,13 +42,13 @@
         margin-right: 10px;
     }
 
-    &__textContainer {
+    &__text-container {
         display: flex;
         flex-direction: column;
     }
 
-    &__titleText {
-        font-family: MontserratBold;
+    &__title-text {
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -56,8 +56,8 @@
         color: rgba(31, 32, 65, 0.75);
     }
 
-    &__mainText {
-        font-family: MontserratRegular;
+    &__main-text {
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;

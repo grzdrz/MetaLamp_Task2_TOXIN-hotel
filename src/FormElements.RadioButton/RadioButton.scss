@@ -1,21 +1,8 @@
-.radioButton {
+.radio-button {
     width: max-content;
 
-    &__buttonsContainer {
-        display: flex;
-    }
-    &__buttonContainer {
-        display: flex;
-        position: relative;
-
-        margin-right: 20px;
-        &:last-child {
-            margin-right: 0px;
-        }
-    }
-
     &__title {
-        font-family: MontserratBold;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -25,7 +12,22 @@
         margin-bottom: 15px;
     }
 
-    &__labelRadio {
+    &__buttons-container {
+        display: flex;
+    }
+    &__button-label {
+        cursor: pointer;
+
+        display: flex;
+        position: relative;
+
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    &__button-image_radio {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -38,7 +40,7 @@
 
         margin-right: 10px;
     }
-    &__labelToggle {
+    &__button-image_toggle {
         display: flex;
         flex-direction: row;
 
@@ -56,50 +58,54 @@
         transition: padding-left 0.3s;
     }
 
-    &__buttonRadio {
+    &__button {
+        cursor: pointer;
+    }
+
+    &__button_radio {
         position: absolute;
         width: 20px;
         height: 20px;
         opacity: 0;
         z-index: 2;
 
-        &:checked + label {
+        &:checked + div {
             border: 1px solid #bc9cff;
         }
-        &:checked + label::after {
+        &:checked + div::after {
             content: "";
             width: 12px;
             height: 12px;
             background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
             border-radius: 50%;
         }
-        &:not(:checked) + label {
+        &:not(:checked) + div {
             border: 1px solid rgba(31, 32, 65, 0.25);
         }
     }
-    &__buttonToggle {
+    &__button_toggle {
         position: absolute;
         width: 40px;
         height: 20px;
         opacity: 0;
         z-index: 2;
 
-        &:checked + label {
+        &:checked + div {
             border: 1px solid #bc9cff;
             padding-left: 23px;
         }
-        &:not(:checked) + label {
+        &:not(:checked) + div {
             border: 1px solid rgba(31, 32, 65, 0.25);
             padding-left: 3px;
         }
-        &:checked + label::after {
+        &:checked + div::after {
             content: "";
             width: 12px;
             height: 12px;
             background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
             border-radius: 50%;
         }
-        &:not(:checked) + label::after {
+        &:not(:checked) + div::after {
             content: "";
             width: 12px;
             height: 12px;
@@ -109,7 +115,7 @@
     }
 
     &__text {
-        font-family: MontserratRegular;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;

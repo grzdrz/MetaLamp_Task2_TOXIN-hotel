@@ -22,14 +22,14 @@
 
 
 export function rangeSliderScript() {
-    let rangeSliders = document.querySelectorAll(".rangeSlider");
+    let rangeSliders = document.querySelectorAll(".range-slider");
     let targetMaxValue;
     let targetMinValue;
     rangeSliders.forEach(e => {
-        let targetFirstSlider = e.querySelector(".rangeSlider__firstSlider");
-        let targetLastSlider = e.querySelector(".rangeSlider__lastSlider");
-        let targetFirstSliderBorder = e.querySelector(".rangeSlider__firstSliderOutside");
-        let targetLastSliderBorder = e.querySelector(".rangeSlider__lastSliderOutside");
+        let targetFirstSlider = e.querySelector(".range-slider__first-slider");
+        let targetLastSlider = e.querySelector(".range-slider__last-slider");
+        let targetFirstSliderBorder = e.querySelector(".range-slider__first-slider-outside");
+        let targetLastSliderBorder = e.querySelector(".range-slider__last-slider-outside");
 
         targetFirstSlider.ondragstart = function () {
             return false;
@@ -46,15 +46,15 @@ export function rangeSliderScript() {
 
 
 
-        let firstInput = e.querySelector(".rangeSlider__firstInput");
-        let lastInput = e.querySelector(".rangeSlider__lastInput");
+        let firstInput = e.querySelector(".range-slider__first-input");
+        let lastInput = e.querySelector(".range-slider__last-input");
         let inputMaxValue = Number.parseInt(e.dataset.maxValue);
         let inputMinValue = Number.parseInt(e.dataset.minValue);
 
-        let slidersContainer = e.querySelector(".rangeSlider__sliderContainer");
-        let slidersFilledStrip = e.querySelector(".rangeSlider__sliderBodyFilled");
-        let firstSlider = e.querySelector(".rangeSlider__firstSlider");
-        let lastSlider = e.querySelector(".rangeSlider__lastSlider");
+        let slidersContainer = e.querySelector(".range-slider__slider-container");
+        let slidersFilledStrip = e.querySelector(".range-slider__slider-body-filled");
+        let firstSlider = e.querySelector(".range-slider__first-slider");
+        let lastSlider = e.querySelector(".range-slider__last-slider");
         let slidersContainerBoundingCoords = slidersContainer.getBoundingClientRect();
         let firstSliderBoundingCoords = firstSlider.getBoundingClientRect();
         let sliderWidth = firstSliderBoundingCoords.width;
@@ -94,29 +94,29 @@ export function rangeSliderScript() {
 
         if (event.currentTarget.className) {//чтобы не вылететь при кликах по document
             let classArray = event.currentTarget.className.split(/\s/i);
-            if (classArray.includes("rangeSlider__firstSlider")) {
+            if (classArray.includes("range-slider__first-slider")) {
                 targetSlider = event.currentTarget;
                 targetSliderIndex = 0;
 
-                otherSlider = targetSlider.parentElement.querySelector(".rangeSlider__lastSlider");
+                otherSlider = targetSlider.parentElement.querySelector(".range-slider__last-slider");
 
-                targetInput = targetSlider.parentElement.querySelector(".rangeSlider__firstInput");
-                otherInput = targetSlider.parentElement.querySelector(".rangeSlider__lastInput");
+                targetInput = targetSlider.parentElement.querySelector(".range-slider__first-input");
+                otherInput = targetSlider.parentElement.querySelector(".range-slider__last-input");
 
-                targetSliderBorder = targetSlider.parentElement.querySelector(".rangeSlider__firstSliderOutside");
-                otherSliderBorder = targetSlider.parentElement.querySelector(".rangeSlider__lastSliderOutside");
+                targetSliderBorder = targetSlider.parentElement.querySelector(".range-slider__first-slider-outside");
+                otherSliderBorder = targetSlider.parentElement.querySelector(".range-slider__last-slider-outside");
             }
-            else if (classArray.includes("rangeSlider__lastSlider")) {
+            else if (classArray.includes("range-slider__last-slider")) {
                 targetSlider = event.currentTarget;
                 targetSliderIndex = 1;
 
-                otherSlider = targetSlider.parentElement.querySelector(".rangeSlider__firstSlider");
+                otherSlider = targetSlider.parentElement.querySelector(".range-slider__first-slider");
 
-                otherInput = targetSlider.parentElement.querySelector(".rangeSlider__firstInput");
-                targetInput = targetSlider.parentElement.querySelector(".rangeSlider__lastInput");
+                otherInput = targetSlider.parentElement.querySelector(".range-slider__first-input");
+                targetInput = targetSlider.parentElement.querySelector(".range-slider__last-input");
 
-                otherSliderBorder = targetSlider.parentElement.querySelector(".rangeSlider__firstSliderOutside");
-                targetSliderBorder = targetSlider.parentElement.querySelector(".rangeSlider__lastSliderOutside");
+                otherSliderBorder = targetSlider.parentElement.querySelector(".range-slider__first-slider-outside");
+                targetSliderBorder = targetSlider.parentElement.querySelector(".range-slider__last-slider-outside");
             }
             else return;
         }
@@ -125,9 +125,9 @@ export function rangeSliderScript() {
         targetSliderContainer = targetSlider.parentElement.parentElement;
         inputMaxValue = Number.parseInt(targetSliderContainer.dataset.maxValue);
         inputMinValue = Number.parseInt(targetSliderContainer.dataset.minValue);
-        inputsValueRangeInTitle = targetSlider.parentElement.parentElement.querySelector(".rangeSlider__inputsValueRange");
+        inputsValueRangeInTitle = targetSlider.parentElement.parentElement.querySelector(".range-slider__inputs-value-range");
 
-        let slidersFilledStrip = targetSlider.parentElement.querySelector(".rangeSlider__sliderBodyFilled");
+        let slidersFilledStrip = targetSlider.parentElement.querySelector(".range-slider__slider-body-filled");
 
         let slidersContainerBoundingCoords = targetSlider.parentElement.getBoundingClientRect();
         let slidersContainerWidth = slidersContainerBoundingCoords.width;
