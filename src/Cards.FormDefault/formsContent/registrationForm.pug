@@ -90,12 +90,9 @@ mixin getRegistrationForm()
         text: 'перейти к оплате',
         isHollow: false,
         buttonType: "submit",
-        hasArrow: true},
-        {
-            container: ["formDefault_marginBottom30"],
-            buttonText: ["formDefault__registration_paymentButtonText"],
-        }
-    )
+        hasArrow: true,
+        width: "320px",
+    })
 
     div(class=["formDefault__alreadyRegistered"])
         p(class=["formDefault__alreadyRegisteredText"]) Уже есть аккаунт на Toxin
@@ -103,8 +100,6 @@ mixin getRegistrationForm()
             text: "войти",
             isHollow:  true,
             buttonType: "a",
-            hasArrow: false},
-        {
-            buttonText: ["formDefault__registration_authorizationButtonText"],
-        }
-    )    
+            hasArrow: false,
+            width: "99px",
+        }) 

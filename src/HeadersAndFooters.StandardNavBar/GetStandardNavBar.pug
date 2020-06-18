@@ -13,21 +13,18 @@ mixin getStandardNavBar(isAuthorized)
             +getUserName('Cosmin Negoita')
         else
             include ../FormElements.ButtonDefault/ButtonDefault.pug
-            +getButton({
-                text: 'login',
-                isHollow:  true,
-                buttonType: "a",
-                width: "79px",
-                height: "34px",
-                marginRight: "20px",
-            })
-            +getButton({
-                text: 'register',
-                isHollow:  false,
-                buttonType: "a",
-                width: "101px",
-                height: "34px",
-            })
-
-//-container: ["standardNavBar__buttonDefault_height", "standardNavBar__buttonDefault_firstButton"]
-//-container: ["standardNavBar__buttonDefault_height", "standardNavBar__buttonDefault_secondButton"]            
+            div(class=["standardNavBar__button-default-container"])
+                +getButton({
+                    text: 'login',
+                    isHollow:  true,
+                    buttonType: "a",
+                    width: "79px",
+                    height: "34px",
+                })
+                +getButton({
+                    text: 'register',
+                    isHollow:  false,
+                    buttonType: "a",
+                    width: "101px",
+                    height: "34px",
+                })          

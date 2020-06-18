@@ -1,15 +1,14 @@
-.dateInput {
+.date-input {
   display: flex;
   flex-direction: row;
 
-  &_dropdown,
-  &_simple {
-    .dateInput__datepickerLabel {
+  &_single {
+    .date-input__datepicker-label {
       width: 266px;
     }
   }
 
-  &__inputContainer {
+  &__input-container {
     display: flex;
     flex-direction: column;
 
@@ -19,7 +18,7 @@
   }
 
   &__title {
-    font-family: MontserratBold;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -30,7 +29,9 @@
     margin-bottom: 6px;
   }
 
-  &__datepickerLabel {
+  &__datepicker-label {
+    cursor: pointer;
+
     display: grid;
     grid-template-columns: auto 44px;
     grid-template-rows: 44px;
@@ -41,13 +42,15 @@
     width: 150px;
   }
 
-  &__datepickerInput {
+  &__datepicker-input {
+    cursor: pointer;
+
     padding: 0px 0px 0px 15px;
     height: 44px;
     outline: none;
 
     background: transparent;
-    font-family: MontserratRegular;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -84,7 +87,9 @@
     text-overflow: ellipsis; /* Многоточие */
   }
 
-  &__datepickerArrow {
+  &__datepicker-arrow {
+    cursor: pointer;
+
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
@@ -106,10 +111,12 @@
     margin: 20px;
   }
 
-  &__applyButton {
+  &__apply-button {
+    cursor: pointer;
+
     margin-left: auto;
 
-    font-family: MontserratBold;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -118,8 +125,10 @@
     color: #bc9cff;
   }
 
-  &__clearButton {
-    font-family: MontserratBold;
+  &__clear-button {
+    cursor: pointer;
+
+    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;

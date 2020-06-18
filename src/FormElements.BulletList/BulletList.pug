@@ -1,10 +1,15 @@
+//-
+    options.list - массив строк элементов списка
+    options.titleText - текст заголовка
+
 mixin getBulletList(options, classes={})
 
-    div(class=["bulletList"].concat(classes.container || []))
-        div(class=["bulletList__title"].concat(classes.title || []))
-            p(class=["bulletList__titleText"].concat(classes.titleText || []))= options.titleText
-        ul(class=["bulletList__list"].concat(classes.list || []))    
+    div(class=["bullet-list"])
+        - if(options.titleText)
+            div(class=["bullet-list__title"])
+                p(class=["bullet-list__title-text"])= options.titleText
+        ul(class=["bullet-list__list"])    
             - for(let listItem of options.list)
-                li(class=["bulletList__listItem"].concat(classes.listItem || []))
-                    div(class=["bulletList__listItemMarker"].concat(classes.listItemMarker || []))
-                    p(class=["bulletList__listItemText"].concat(classes.listItemText || []))= listItem
+                li(class=["bullet-list__list-item"])
+                    div(class=["bullet-list__list-item-marker"])
+                    p(class=["bullet-list__list-item-text"])= listItem

@@ -1,7 +1,7 @@
 .dropdown {
     width: 320px;
 
-    &_textFieldDefault {
+    &_text-field-default {
         display: flex;
         flex-direction: column;
     }
@@ -13,8 +13,8 @@
 
         margin-bottom: 5px;
     }
-    &__titleText {
-        font-family: MontserratBold;
+    &__title-text {
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -22,8 +22,8 @@
         text-transform: uppercase;
         color: #1f2041;
     }
-    &__titleTextTest {
-        font-family: MontserratRegular;
+    &__title-text-test {
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
@@ -33,7 +33,7 @@
         color: rgba(31, 32, 65, 0.5);
     }
 
-    &__input {
+    &__input-container {
         display: grid;
         grid-template-rows: 42px;
         grid-template-columns: auto min-content;
@@ -50,13 +50,15 @@
         position: relative;
     }
 
-    &__mainInput {
+    &__input {
+        cursor: pointer;
+
         padding: 0px 100px 0px 15px;
         height: 44px;
         outline: none;
 
         background: transparent;
-        font-family: MontserratRegular;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -93,8 +95,7 @@
         text-overflow: ellipsis; /* Многоточие */
     }
 
-    &__dropedList {
-        //border-top: 1px solid rgba(31, 32, 65, 0.5);
+    &__droped-list {
         flex-direction: column;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -119,7 +120,9 @@
         }
     }
 
-    &__dropdownInput {
+    &__dropdown-arrow {
+        cursor: pointer;
+
         width: 42px;
         height: 42px;
         outline: none;
@@ -142,7 +145,7 @@
         -webkit-text-fill-color: transparent;
     }
 
-    &__dropedListItem {
+    &__droped-list-item {
         display: grid;
         grid-template-columns: auto 93px;
         align-items: center;
@@ -154,10 +157,10 @@
         }
     }
 
-    &__dropedListItemText {
+    &__droped-list-item-text {
         overflow: auto;
         word-wrap: break-word;
-        font-family: MontserratBold;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -166,15 +169,17 @@
         color: #1f2041;
     }
 
-    &__dropedListItemHandler {
+    &__droped-list-item-handler {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
 
-    &__dropedListItemHandlerMinus,
-    &__dropedListItemHandlerPlus {
+    &__droped-list-item-handler-minus,
+    &__droped-list-item-handler-plus {
+        cursor: pointer;
+
         outline: none;
         width: 30px;
         height: 30px;
@@ -182,7 +187,7 @@
         border: 1px solid rgba(31, 32, 65, 0.5);
         background: transparent;
 
-        font-family: MontserratBold;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -191,13 +196,13 @@
         text-transform: uppercase;
         color: #1f2041;
     }
-    &__dropedListItemHandlerMinus {
+    &__droped-list-item-handler-minus {
         opacity: 0.38;
     }
 
-    &__dropedListItemHandlerText {
+    &__droped-list-item-handler-text {
         margin: 0px 5px;
-        font-family: MontserratBold;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -207,12 +212,14 @@
         color: #1f2041;
     }
 
-    &__controlButtonsContainer {
+    &__control-buttons-container {
         display: flex;
         margin: 20px 10px 13px 15px;
     }
-    &__applyButton {
-        font-family: MontserratBold;
+    &__apply-button {
+        cursor: pointer;
+
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -223,8 +230,10 @@
         margin-left: auto;
     }
 
-    &__clearButton {
-        font-family: MontserratBold;
+    &__clear-button {
+        cursor: pointer;
+
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;

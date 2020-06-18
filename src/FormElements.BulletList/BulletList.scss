@@ -1,54 +1,54 @@
-.bulletList {
+.bullet-list {
     display: flex;
     flex-direction: column;
 
     &__title {
         margin-bottom: 15px;
-    }
 
-    &__titleText {
-        font-family: MontserratBold;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-        color: #1f2041;
+        &-text {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: #1f2041;
+        }
     }
 
     &__list {
         display: flex;
         flex-direction: column;
         list-style: none;
-    }
 
-    &__listItem {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
+        &-item {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
 
-        margin-bottom: 10px;
-        &:last-of-type{
-            margin-bottom: 0px;
+            margin-bottom: 10px;
+            &:last-of-type {
+                margin-bottom: 0px;
+            }
+
+            &-marker {
+                width: 10px;
+                height: 10px;
+                background: rgba(31, 32, 65, 0.25);
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            &-text {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgba(31, 32, 65, 0.75);
+
+                width: 240px;
+            }
         }
-    }
-
-    &__listItemMarker {
-        width: 10px;
-        height: 10px;
-        background: rgba(31, 32, 65, 0.25);
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-
-    &__listItemText {
-        font-family: MontserratRegular;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
-
-        width: 240px;
     }
 }

@@ -1,31 +1,48 @@
-mixin getCheckbox(options, classes={})
+//-
+    options.titleText - текст заголовка
 
-    - if(options.checkboxType === "expandable"){
-    -    classes.container ? classes.container.push("checkboxList_expandable") : classes.container = ["checkboxList_expandable"];
-    -    classes.itemLabelText ? classes.itemLabelText.push("checkboxList__itemLabelText") : classes.itemLabelText = ["checkboxList__itemLabelText"];
+    options.isExpandable - определяет выпадающий список
+    options.isOpened - открыт ли список по умолчанию
+    (переменной нужно явно присваивать строку "true"/"false", т.к. dataset приводит все к строке автоматически и
+    bool значения записываются некорректно)
+
+    options.hasAdditionalText - определяет дополнительный текст
+
+    options.checkboxList - массив объектов:
+        {
+            isChecked: false/true, - выбран ли пункт по умолчанию
+            text: "...", - текст пункта
+        }
+
+
+mixin getCheckbox(options)
+    - let classes = {};
+
+    - if(options.isExpandable){
+    -    classes.container ? classes.container.push("checkbox-list_expandable") : classes.container = ["checkbox-list_expandable"];
+    -    classes.title ? classes.title.push("checkbox-list__title_expandable") : classes.title = ["checkbox-list__title_expandable"];    
+    -    classes.itemLabelText ? classes.itemLabelText.push("checkbox-list__item-label-text") : classes.itemLabelText = ["checkbox-list__itemLabelText"];
     - }
-    - else if(options.checkboxType === "rich"){
-    -    classes.title ? classes.title.push("checkboxList__titleText_richTitleBottomMargin") : classes.title = ["checkboxList__titleText_richTitleBottomMargin"];
-    -    classes.itemLabelText ? classes.itemLabelText.push("checkboxList__itemLabelMainText") : classes.itemLabelText = ["checkboxList__itemLabelMainText"];
+    - if(options.hasAdditionalText){  
+    -    classes.itemLabelText ? classes.itemLabelText.push("checkbox-list__item-label-text_main") : classes.itemLabelText = ["checkbox-list__item-label-text_main"];
     - }
-    - else if(options.checkboxType === "simple"){
-    -    classes.title ? classes.title.push("checkboxList__titleText_simpleTitleBottomMargin") : classes.title = ["checkboxList__titleText_simpleTitleBottomMargin"];
-    -    classes.itemLabelText ? classes.itemLabelText.push("checkboxList__itemLabelSimpleText") : classes.itemLabelText = ["checkboxList__itemLabelSimpleText"]; 
+    - else {
+    -    classes.itemLabelText ? classes.itemLabelText.push("checkbox-list__item-label-text_simple") : classes.itemLabelText = ["checkbox-list__item-label-text_simple"]; 
     - }
 
-    div(class=["checkboxList"].concat(classes.container || []))
-        div(class=["checkboxList__title"].concat(classes.title || []))
-            p(class=["checkboxList__titleText"].concat(classes.titleText || []))= options.titleText
-            - if(options.checkboxType === "expandable")
-                p(class=["checkboxList__dropdownButton"].concat(classes.dropdownButton || [])) expand_more
-        div(class=["checkboxList__list"].concat(classes.list || []) data-is-opened=options.isOpened)
+    div(class=["checkbox-list"].concat(classes.container || []))
+        div(class=["checkbox-list__title"].concat(classes.title || []))
+            p(class=["checkbox-list__title-text"])= options.titleText
+            - if(options.isExpandable)
+                p(class=["checkbox-list__dropdown-arrow"]) expand_more
+        div(class=["checkbox-list__list"] data-is-opened=options.isOpened)
             - for(let item of options.checkboxList)
-                div(class=["checkboxList__item"].concat(classes.item || []))
-                    label(class=["checkboxList__itemLabel"].concat(classes.itemLabel || []))
-                        input(class=["checkboxList__itemCheckboxInput"].concat(classes.itemCheckboxInput || []) type= "checkbox" checked= item.isChecked)
-                        div(class=["checkboxList__itemCheckboxCheckMarkContainer"].concat(classes.itemCheckboxCheckMarkContainer || []))
-                            img(src="./src/FormElements.CheckboxList/img/checkMark.svg" class=["checkboxList__itemCheckboxCheckMark"].concat(classes.itemCheckboxCheckMark || []))
-                        div(class=["checkboxList__itemCheckboxFrame"].concat(classes.itemCheckboxFrame || []))
-                        p(class=["checkboxList__itemLabelText"].concat(classes.itemLabelText || []))= item.text
-                    - if(options.checkboxType === "rich")
-                        p(class=["checkboxList__itemLabelAdditionalText"].concat(classes.itemLabelAdditionalText || []))= item.additionalText  
+                div(class=["checkbox-list__item"])
+                    label(class=["checkbox-list__item-label"])
+                        input(class=["checkbox-list__item-checkbox-input"] type= "checkbox" checked= item.isChecked)
+                        div(class=["checkbox-list__item-checkbox-checkmark"])
+                            img(class=["checkbox-list__item-checkbox-checkmark-image"] src="./src/FormElements.CheckboxList/img/checkMark.svg")
+                        div(class=["checkbox-list__item-checkbox-frame"])
+                        p(class=["checkbox-list__item-label-text"].concat(classes.itemLabelText || []))= item.text
+                    - if(options.hasAdditionalText)
+                        p(class=["checkbox-list__item-label-additional-text"])= item.additionalText  

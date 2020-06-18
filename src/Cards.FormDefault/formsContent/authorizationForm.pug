@@ -30,12 +30,9 @@ mixin getAuthorizationForm()
         text: 'войти',
         isHollow: false,
         buttonType: "submit",
-        hasArrow: true},
-        {
-            container: ["formDefault_marginBottom30"],
-            buttonText: ["formDefault__authorization_enterButtonText"],
-        }
-    )
+        hasArrow: true,
+        width: "320px",
+    })
 
     div(class=["formDefault__alreadyRegistered"])
         p(class=["formDefault__alreadyRegisteredText"]) Нет аккаунта на Toxin?
@@ -43,8 +40,6 @@ mixin getAuthorizationForm()
             text: "создать",
             isHollow:  true,
             buttonType: "a",
-            hasArrow: false},
-        {
-            buttonText: ["formDefault__authorization_createAccountButtonText"],
-        }
-    )
+            hasArrow: false,
+            width: "99px",
+        })

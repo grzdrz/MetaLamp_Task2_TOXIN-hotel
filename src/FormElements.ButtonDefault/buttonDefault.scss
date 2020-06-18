@@ -201,6 +201,9 @@ $borderThickness: 2px;
     }
 
     width: 99px;
+    &_with-width_99px {
+        width: 99px;
+    }
     &_with-width_320px {
         width: 320px;
     }
@@ -225,8 +228,11 @@ $borderThickness: 2px;
             height: 34px - $borderThickness * 2;
         }
     }
+    &_with-height_44px {
+        height: 44px;
 
-    &_with-margin-right_20px {
-        margin-right: 20px;
+        .button-default__button-basis {
+            height: 44px - $borderThickness * 2;
+        }
     }
 }

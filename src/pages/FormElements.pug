@@ -47,9 +47,7 @@ html
                     {name: "дети", value: 0},
                     {name: "младенцы", value: 0}
                 ],
-            },
-            {
-                input: ["dropdown__input_sumNumber"],
+                withTotalValue: true,
             })
             +getDropdown({
                 titleText: "dropdown",
@@ -66,17 +64,16 @@ html
                     {name: "кровати", value: 0},
                     {name: "ванные комнаты", value: 0}
                 ],
-            },
-            {
-                input: ["dropdown__input_listOfNumbers"],
+                withTotalValue: false,
             })
 
 
             include ../FormElements.CheckboxList/CheckboxList.pug
             +getCheckbox({
-                checkboxType: "expandable",
                 titleText: "expandable checkbox list",
-                isOpened: "true",
+                isExpandable: true,
+                isOpened: "false",
+                hasAdditionalText: false,
                 checkboxList: [
                     {isChecked: false, text: "Завтрак"},
                     {isChecked: true, text: "Письменный стол"}, 
@@ -89,9 +86,10 @@ html
                 ],
             })
             +getCheckbox({
-                checkboxType: "expandable",
                 titleText: "expandable checkbox list",
-                isOpened: "false",
+                isExpandable: true,
+                isOpened: "true",
+                hasAdditionalText: false,
                 checkboxList : [
                     {isChecked: false, text: "Завтрак"},
                     {isChecked: true, text: "Письменный стол"}, 
@@ -104,16 +102,18 @@ html
                 ],
             })
             +getCheckbox({
-                checkboxType: "rich",
                 titleText: "rich checkbox list",
+                isExpandable: false,
+                hasAdditionalText: true,
                 checkboxList: [
                     {isChecked: false, text: "Широкий коридор", additionalText: "Ширина коридоров в номере не менее 91 см."},
                     {isChecked: true, text: "Помощник для инвалидов", additionalText: "На 1 этаже вас встретит специалист и проводит до номера."},
                 ],
             })
             +getCheckbox({
-                checkboxType: "simple",
                 titleText: "Checkbox Buttons",
+                isExpandable: false, 
+                hasAdditionalText: false,               
                 checkboxList: [
                     {isChecked: false, text: "Можно курить"},
                     {isChecked: true, text: "Можно с питомцами"},
@@ -249,18 +249,21 @@ html
 
             include ../FormElements.DateInput/DateInput.pug
             +getDateInput({
-                inputType: "double", 
+                isDoubleInput: true,
+                isDateRange: true,
                 firstTitle: "выезд",
                 secondTitle: "прибытие",
             })
             +getDateInput({
-                inputType: "dropdown", 
-                title: "dropdown",
+                isDoubleInput: false,
+                isDateRange: true, 
+                firstTitle: "datepicker2",
             })
             +getDateInput({
-                inputType: "simple", 
-                title: "simple",
-            })
+                isDoubleInput: false,
+                isDateRange: false, 
+                firstTitle: "datepicker3",
+            })           
 
 
             include ../FormElements.LikeButton/LikeButton.pug

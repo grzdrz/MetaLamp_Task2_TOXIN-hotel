@@ -1,44 +1,38 @@
-mixin getDateInput(options, classes={})
+//-
+    options.firstTitle/secondTitle - текст заголовков у двойного инпута
+    options.isDoubleInput - определяет тип инпута(двойной, одинарный)
+    options.isDateRange - определяет как выбирать дату в датапикере(конкретную дату или диапазон дат)
 
-    - if(options.inputType === "double")
-        div(class=["dateInput", "dateInput_double"].concat(classes.container || []))
-            div(class=["dateInput__inputContainer"].concat(classes.inputContainer || []))
-                p(class=["dateInput__title"].concat(classes.title || []))= options.firstTitle
-                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"].concat(classes.datepickerLabel || []))
-                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"].concat(classes.datepickerInput || []) 
-                        type="text" 
-                        name="first_date" 
-                        placeholder="ДД.ММ.ГГГГ"
-                        readonly=true)
-                    p(class=["dateInput__datepickerArrow"].concat(classes.datepickerArrow || [])) expand_more
-            div(class=["dateInput__inputContainer"].concat(classes.inputContainer || []))
-                p(class=["dateInput__title"].concat(classes.title || []))= options.secondTitle
-                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_second"].concat(classes.datepickerLabel || []))
-                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_second"].concat(classes.datepickerInput || [])  
+mixin getDateInput(options)
+    - let classes = {};
+
+    - if(options.isDoubleInput)
+        - classes.container ? classes.container.push("date-input_double") : classes.container = ["date-input_double"];
+    - else
+        - classes.container ? classes.container.push("date-input_single") : classes.container = ["date-input_single"];        
+
+    - if(options.isDateRange || options.isDoubleInput)
+        - classes.container ? classes.container.push("date-input_with-range-picking") : classes.container = ["date-input_with-range-picking"];
+    - else
+        - classes.container ? classes.container.push("date-input_without-range-picking") : classes.container = ["date-input_without-range-picking"];        
+
+    div(class=["date-input"].concat(classes.container || []))
+        div(class=["date-input__input-container"])
+            p(class=["date-input__title"])= options.firstTitle
+            label(class=["date-input__datepicker-label", "date-input__datepicker-label_first"])
+                input(class=["date-input__datepicker-input", "date-input__datepicker-input_first"] 
+                    type="text" 
+                    name="first_date" 
+                    placeholder="ДД.ММ.ГГГГ"
+                    readonly=true)
+                p(class=["date-input__datepicker-arrow"]) expand_more
+        - if(options.isDoubleInput)                
+            div(class=["date-input__input-container"])
+                p(class=["date-input__title"])= options.secondTitle
+                label(class=["date-input__datepicker-label", "date-input__datepicker-label_second"])
+                    input(class=["date-input__datepicker-input", "date-input__datepicker-input_second"]  
                         type="text" 
                         name="second_date"
                         placeholder="ДД.ММ.ГГГГ"
                         readonly=true)
-                    p(class=["dateInput__datepickerArrow"].concat(classes.datepickerArrow || [])) expand_more
-    - else if(options.inputType === "dropdown")
-        div(class=["dateInput", "dateInput_dropdown"].concat(classes.container || []))
-            div(class=["dateInput__inputContainer"].concat(classes.inputContainer || []))
-                p(class=["dateInput__title"].concat(classes.title || []))= options.title
-                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"].concat(classes.datepickerLabel || []))
-                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"].concat(classes.datepickerInput || []) 
-                        type="text" 
-                        name="first_date" 
-                        placeholder="ДД.ММ.ГГГГ"
-                        readonly=true)
-                    p(class=["dateInput__datepickerArrow"].concat(classes.datepickerArrow || [])) expand_more
-    - else if(options.inputType === "simple")
-        div(class=["dateInput", "dateInput_simple"].concat(classes.container || []))
-            div(class=["dateInput__inputContainer"].concat(classes.inputContainer || []))
-                p(class=["dateInput__title"].concat(classes.title || []))= options.title
-                label(class=["dateInput__datepickerLabel", "dateInput__datepickerLabel_first"].concat(classes.datepickerLabel || []))
-                    input(class=["dateInput__datepickerInput", "dateInput__datepickerInput_first"].concat(classes.datepickerInput || []) 
-                        type="text" 
-                        name="first_date" 
-                        placeholder="ДД.ММ.ГГГГ"
-                        readonly=true)
-                    p(class=["dateInput__datepickerArrow"].concat(classes.datepickerArrow || [])) expand_more                    
+                    p(class=["date-input__datepicker-arrow"]) expand_more                  

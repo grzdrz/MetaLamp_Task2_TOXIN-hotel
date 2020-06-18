@@ -2,7 +2,7 @@
     width: 100%;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: min-content auto min-content min-content;
+    grid-template-columns: min-content auto min-content;
     align-items: center;
     padding: 15px 140px;
     justify-items: start;
@@ -12,7 +12,13 @@
     @import "./navMenu/navMenu.scss";
     @import "./navMenu/navMenuItem.scss";
 
-    @import "./buttonDefault.scss";
+    //@import "./buttonDefault.scss";
+    &__button-default-container {
+        display: flex;
+        & > div:first-child {
+            margin-right: 20px;
+        }
+    }
     @import "./user/user.scss";
 }
 

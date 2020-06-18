@@ -1,32 +1,27 @@
-import { queryParentElementByClass } from "../queryParentElementByClass.js";
-
 export function dropdownScript() {
-    //debugger;
     let dropdownsElems = document.querySelectorAll(".dropdown");
     dropdownsElems.forEach(e => {
-        e.querySelector(".dropdown__mainInput").onclick = onDropdownClick;
-        e.querySelector(".dropdown__dropdownInput").onclick = onDropdownClick;
+        e.querySelector(".dropdown__input").onclick = onDropdownClick;
+        e.querySelector(".dropdown__dropdown-arrow").onclick = onDropdownClick;
         //если обработчик выше повесить на контейнер, то дропдаун будет закрываться при клике по нему, т.к. находится в контейнере
 
-        let inputContainer = e.querySelector(".dropdown__input");
+        let inputContainer = e.querySelector(".dropdown__input-container");
         inputContainer.onmouseenter = onDropdownEnter;
         inputContainer.onmouseleave = onDropdownLeave;
 
-        e.querySelectorAll(".dropdown__dropedListItemHandlerPlus").forEach(e => {
-            //e.onclick = onDropdownItemPlus;
+        e.querySelectorAll(".dropdown__droped-list-item-handler-plus").forEach(e => {
             e.addEventListener("click", onDropdownItemPlus);
         });
-        e.querySelectorAll(".dropdown__dropedListItemHandlerMinus").forEach(e => {
-            //e.onclick = onDropdownItemMinus;
+        e.querySelectorAll(".dropdown__droped-list-item-handler-minus").forEach(e => {
             e.addEventListener("click", onDropdownItemMinus);
         });
 
-        let clearButton = e.querySelector(".dropdown__clearButton");
+        let clearButton = e.querySelector(".dropdown__clear-button");
         if (clearButton) {
             clearButton.style.display = "none";
             clearButton.onclick = onClear;
         }
-        let applyButton = e.querySelector(".dropdown__applyButton");
+        let applyButton = e.querySelector(".dropdown__apply-button");
         if (applyButton) {
             applyButton.onclick = onApply;
         }
@@ -36,8 +31,8 @@ export function dropdownScript() {
 
 
     function onDropdownClick(event) {
-        let inputContainer = queryParentElementByClass(event.currentTarget, "dropdown__input");
-        let dropwdownList = inputContainer.querySelector(".dropdown__dropedList");
+        let inputContainer = event.currentTarget.closest(".dropdown__input-container");
+        let dropwdownList = inputContainer.querySelector(".dropdown__droped-list");
 
         if (dropwdownList.style.display === "none") {
             inputContainer.style.borderBottomLeftRadius = "0px";
@@ -52,7 +47,7 @@ export function dropdownScript() {
     }
     function onDropdownEnter(event) {
         let inputContainer = event.currentTarget;
-        let dropwdownList = inputContainer.querySelector(".dropdown__dropedList");
+        let dropwdownList = inputContainer.querySelector(".dropdown__droped-list");
 
         if (dropwdownList.style.display === "none") {
             inputContainer.style.borderBottomLeftRadius = "0px";
@@ -62,7 +57,7 @@ export function dropdownScript() {
     }
     function onDropdownLeave(event) {
         let inputContainer = event.currentTarget;
-        let dropwdownList = inputContainer.querySelector(".dropdown__dropedList");
+        let dropwdownList = inputContainer.querySelector(".dropdown__droped-list");
 
         if (dropwdownList.style.display === "flex") {
             inputContainer.style.borderBottomLeftRadius = inputContainer.dataset.borderRadius;
@@ -75,25 +70,25 @@ export function dropdownScript() {
     function onDropdownItemPlus(event) {
         event.preventDefault();
 
-        let dropedListItemHandlerText = event.currentTarget.parentElement.querySelector(".dropdown__dropedListItemHandlerText");
+        let dropedListItemHandlerText = event.currentTarget.parentElement.querySelector(".dropdown__droped-list-item-handler-text");
         let curValue = Number.parseInt(dropedListItemHandlerText.textContent);
         curValue++;
         if (curValue !== 0)
-            event.currentTarget.parentElement.querySelector(".dropdown__dropedListItemHandlerMinus").style.opacity = 1;
+            event.currentTarget.parentElement.querySelector(".dropdown__droped-list-item-handler-minus").style.opacity = 1;
         dropedListItemHandlerText.textContent = curValue.toString();
 
-        let listContainer = queryParentElementByClass(event.currentTarget, "dropdown__dropedList");
-        let clearButton = listContainer.querySelector(".dropdown__clearButton");
+        let listContainer = event.currentTarget.closest(".dropdown__droped-list");
+        let clearButton = listContainer.querySelector(".dropdown__clear-button");
         if (clearButton) {
             clearButton.style.display = "flex";
         }
 
-        changeDropdownInputValue(queryParentElementByClass(event.currentTarget, "dropdown__input"));
+        changeDropdownInputValue(event.currentTarget.closest(".dropdown"));
     }
     function onDropdownItemMinus(event) {
         event.preventDefault();
 
-        let dropedListItemHandlerText = event.currentTarget.parentElement.querySelector(".dropdown__dropedListItemHandlerText");
+        let dropedListItemHandlerText = event.currentTarget.parentElement.querySelector(".dropdown__droped-list-item-handler-text");
         let curValue = Number.parseInt(dropedListItemHandlerText.textContent);
         curValue--;
         if (curValue < 0) curValue = 0;
@@ -104,47 +99,46 @@ export function dropdownScript() {
             event.currentTarget.style.opacity = 0.38;
 
             //проверка на наличие нулей в значениях всех элементов выпадающего списка
-            let listContainer = queryParentElementByClass(event.currentTarget, "dropdown__dropedList");
-            let allValues = Array.from(listContainer.querySelectorAll(".dropdown__dropedListItemHandlerText"));
+            let listContainer = event.currentTarget.closest(".dropdown__droped-list");
+            let allValues = Array.from(listContainer.querySelectorAll(".dropdown__droped-list-item-handler-text"));
             let absSum = allValues.reduce((sum, currentValue) => {
                 return sum + Math.abs(Number.parseInt(currentValue.textContent));
             }, 0);
             if (absSum === 0) {
-                let clearButton = listContainer.querySelector(".dropdown__clearButton");
+                let clearButton = listContainer.querySelector(".dropdown__clear-button");
                 if (clearButton) {
                     clearButton.style.display = "none";
                 }
             }
         }
 
-        changeDropdownInputValue(queryParentElementByClass(event.currentTarget, "dropdown__input"));
+        changeDropdownInputValue(event.currentTarget.closest(".dropdown"));
     }
 
-    function changeDropdownInputValue(curDropdownContainer) {
-        let dropdownList = curDropdownContainer.querySelectorAll(".dropdown__dropedListItem");
+    function changeDropdownInputValue(dropdownContainer) {
+        let dropdownList = dropdownContainer.querySelectorAll(".dropdown__droped-list-item");
         let sum = Array.from(dropdownList).reduce((sum, e) => {
-            return sum + Number.parseInt(e.querySelector(".dropdown__dropedListItemHandlerText").textContent)
+            return sum + Number.parseInt(e.querySelector(".dropdown__droped-list-item-handler-text").textContent)
         }, 0);
 
-        if (curDropdownContainer.className.match(/dropdown__input_sumNumber/i)) {
-            curDropdownContainer
-                .parentElement
-                .querySelector(".dropdown__mainInput")
+        if (dropdownContainer.matches(".dropdown__with-total-value")) {
+            dropdownContainer
+                .querySelector(".dropdown__input")
                 .value = sum + " " + doDeclensionOfWord(sum, "гость");
-            curDropdownContainer.closest(".dropdown").dataset.curSum = sum;
+            dropdownContainer.dataset.curSum = sum;
         }
-        else if (curDropdownContainer.className.match(/dropdown__input_listOfNumbers/i)) {
-            let allItemsNames = Array.from(curDropdownContainer.querySelectorAll(".dropdown__dropedListItem"));
+        else if (dropdownContainer.matches(".dropdown__without-total-value")) {
+            let allItemsNames = Array.from(dropdownContainer.querySelectorAll(".dropdown__droped-list-item"));
             let result = allItemsNames.reduce((fullString, e, index) => {
                 let itemName = e.querySelector("p").textContent;
-                let itemValue = Number.parseInt(e.querySelector(".dropdown__dropedListItemHandlerText").textContent);
+                let itemValue = Number.parseInt(e.querySelector(".dropdown__droped-list-item-handler-text").textContent);
 
                 if (index !== allItemsNames.length - 1)
                     return fullString + itemValue + " " + doDeclensionOfWord(itemValue, itemName) + ", ";
                 else
                     return fullString + itemValue + " " + doDeclensionOfWord(itemValue, itemName);
             }, "");
-            curDropdownContainer.parentElement.querySelector(".dropdown__mainInput").value = result;
+            dropdownContainer.querySelector(".dropdown__input").value = result;
         }
     }
 
@@ -169,24 +163,27 @@ export function dropdownScript() {
     function onClear(event) {
         event.currentTarget.style.display = "none";
 
-        let inputContainer = queryParentElementByClass(event.currentTarget, "dropdown__input");
-        inputContainer.querySelector(".dropdown__mainInput").value = inputContainer.dataset.defaultValue;
-        inputContainer.querySelectorAll(".dropdown__dropedListItemHandlerText").forEach(e => {
+        let dropdownContainer = event.currentTarget.closest(".dropdown");
+        let inputContainer = dropdownContainer.querySelector(".dropdown__input-container");
+
+        dropdownContainer.querySelector(".dropdown__input").value = inputContainer.dataset.defaultValue;
+        dropdownContainer.querySelectorAll(".dropdown__droped-list-item-handler-text").forEach(e => {
             e.textContent = "0";
         });
-        inputContainer.querySelectorAll(".dropdown__dropedListItemHandlerMinus").forEach(e => {
+        dropdownContainer.querySelectorAll(".dropdown__droped-list-item-handler-minus").forEach(e => {
             e.style.opacity = 0.38;
         });
     }
 
     function onApply(event) {
-        let inputContainer = queryParentElementByClass(event.currentTarget, "dropdown__input");
-        let dropwdownList = inputContainer.querySelector(".dropdown__dropedList");
+        let dropdownContainer = event.currentTarget.closest(".dropdown");
+        let dropwdownList = dropdownContainer.querySelector(".dropdown__droped-list");
 
+        let inputContainer = dropdownContainer.querySelector(".dropdown__input-container");
         inputContainer.style.borderBottomLeftRadius = inputContainer.dataset.borderRadius;
         inputContainer.style.borderBottomRightRadius = inputContainer.dataset.borderRadius;
         dropwdownList.style.display = "none";
 
-        changeDropdownInputValue(inputContainer);
+        changeDropdownInputValue(dropdownContainer);
     }
 }
