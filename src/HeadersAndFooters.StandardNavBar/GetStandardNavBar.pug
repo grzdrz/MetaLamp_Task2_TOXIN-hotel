@@ -17,13 +17,17 @@ mixin getStandardNavBar(isAuthorized)
                 text: 'login',
                 isHollow:  true,
                 buttonType: "a",
-            },{
-                container: ["standardNavBar__buttonDefault_height", "standardNavBar__buttonDefault_firstButton"]
+                width: "79px",
+                height: "34px",
+                marginRight: "20px",
             })
             +getButton({
                 text: 'register',
                 isHollow:  false,
                 buttonType: "a",
-            },{
-                container: ["standardNavBar__buttonDefault_height", "standardNavBar__buttonDefault_secondButton"]
+                width: "101px",
+                height: "34px",
             })
+
+//-container: ["standardNavBar__buttonDefault_height", "standardNavBar__buttonDefault_firstButton"]
+//-container: ["standardNavBar__buttonDefault_height", "standardNavBar__buttonDefault_secondButton"]            

@@ -167,13 +167,43 @@ html
                 isHollow:  false,
                 buttonType: "button",
                 hasArrow: true,
+                width: "196px",
+            })
+            +getButton({
+                text: "click me",
+                isHollow:  true,
+                buttonType: "button",
+                hasArrow: true,
+                width: "196px",                
+            })            
+            +getButton({
+                text: "click me",
+                isHollow:  false,
+                buttonType: "a",
+                hasArrow: false,
+                width: "101px",                
             })
             +getButton({
                 text: "click me",
                 isHollow:  true,
                 buttonType: "a",
-                hasArrow: true,
+                hasArrow: false,
+                width: "101px",                
             })
+            +getButton({
+                text: "click me",
+                isHollow:  false,
+                buttonType: "submit",
+                hasArrow: false,
+                width: "101px",                
+            })
+            +getButton({
+                text: "click me",
+                isHollow:  true,
+                buttonType: "submit",
+                hasArrow: false,
+                width: "101px",                
+            })                       
 
 
             include ../FormElements.Pagination/Pagination.pug
