@@ -4,10 +4,17 @@ html
         meta(charset="utf-8")
         title HeadersAndFooters
     body
-        .headersAndFooters
-            include ../GlobalLogo/GlobalLogo.pug
-            include ../HeadersAndFooters.StandardNavBar/GetStandardNavBar.pug
-            +getStandardNavBar(false)
-            +getStandardNavBar(true) 
+        div(class=["headersAndFooters"])
+            div(class=["headersAndFooters__global-logo-container"])
+                include ../GlobalLogo/GlobalLogo.pug
+
+            include ../HeadersAndFooters.StandardNavBar/StandardNavBar.pug
+            +getStandardNavBar({
+                isAuthorized: false,
+            })
+            +getStandardNavBar({
+                isAuthorized: true,
+                userFullName: "Юлий Цезарь",
+            })
             include ../HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.pug
             include ../HeadersAndFooters.FooterCreative/FooterCreative.pug

@@ -1,4 +1,4 @@
-.standardNavBar {
+.standard-navigation-bar {
     width: 100%;
     display: grid;
     grid-template-rows: auto;
@@ -9,17 +9,36 @@
     background: #ffffff;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 
-    @import "./navMenu/navMenu.scss";
-    @import "./navMenu/navMenuItem.scss";
+    &__user-full-name {
+        display: flex;
+        align-items: center;
 
-    //@import "./buttonDefault.scss";
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(31, 32, 65, 0.5);
+        white-space: nowrap;
+
+        &:before {
+            content: "";
+            height: 30px;
+            width: 1px;
+            background: transparent;
+            border-left: 1px solid rgba(31, 32, 65, 0.1);
+            padding-right: 20px;
+        }
+    }
+
     &__button-default-container {
         display: flex;
         & > div:first-child {
             margin-right: 20px;
         }
     }
-    @import "./user/user.scss";
+
+    @import "./NavigationMenu/NavigationMenu.scss";
 }
 
 @import "../FormElements.ButtonDefault/ButtonDefault.scss";

@@ -7,8 +7,9 @@ html
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous")
         //-link(href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css" rel="stylesheet")    
     body
-        .cards
-            include ../GlobalLogo/GlobalLogo.pug
+        div(class=["cards"])
+            div(class=["cards__global-logo-container"])
+                include ../GlobalLogo/GlobalLogo.pug
 
             include ../Cards.AuthorizationForm/AuthorizationForm.pug
             +getAuthorizationForm({

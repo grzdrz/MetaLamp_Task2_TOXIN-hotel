@@ -2,12 +2,18 @@
 
 .formElements {
     min-width: 100%;
-    & > div:nth-child(n + 1),
+    & > div:nth-child(n + 2),
     & > label {
         margin-bottom: 20px;
         margin-left: 141px;
     }
+
     padding-bottom: 500px;
+    padding-top: 30px;
+    &__global-logo-container {
+        margin-left: 30px;
+        margin-bottom: 65px;
+    }
 }
 
 @import "../GlobalLogo/GlobalLogo.scss";
@@ -25,7 +31,3 @@
 @import "../FormElements.RoomDetails/RoomDetails.scss";
 @import "../FormElements.GuestRoomReviews/GuestRoomReviews.scss";
 @import "../ColorsAndType/ColorsAndFonts.scss";
-
-.globalLogo {
-    margin-bottom: 65px;
-}

@@ -8,7 +8,8 @@ html
         //-link(href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css" rel="stylesheet")
     body
         div(class=["formElements"])
-            include ../GlobalLogo/GlobalLogo.pug
+            div(class=["formElements__global-logo-container"])
+                include ../GlobalLogo/GlobalLogo.pug
 
             include ../FormElements.FormInput/FormInput.pug
             +getFormInput({

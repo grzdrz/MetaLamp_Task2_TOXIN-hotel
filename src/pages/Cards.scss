@@ -10,7 +10,13 @@
         margin-bottom: 20px;
         margin-left: 141px;
     }
+
     padding-bottom: 500px;
+    padding-top: 30px;
+    &__global-logo-container {
+        margin-left: 30px;
+        margin-bottom: 67px;
+    }
 }
 
 @import "../GlobalLogo/GlobalLogo.scss";
@@ -20,7 +26,3 @@
 @import "../Cards.RegistrationForm/RegistrationForm.scss";
 @import "../Cards.RoomInfo/RoomInfo.scss";
 @import "../ColorsAndType/ColorsAndFonts.scss";
-
-.globalLogo {
-    margin-bottom: 72px;
-}
