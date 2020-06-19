@@ -1,10 +1,7 @@
-@import "../FormElements.DateInput/DateInput.scss";
-@import "../FormElements.Dropdown/Dropdown.scss";
 @import "../FormElements.ButtonDefault/ButtonDefault.scss";
 @import "../FormElements.FormInput/FormInput.scss";
-@import "../FormElements.RadioButton/RadioButton.scss";
 
-.formDefault {
+.authorization-form {
     display: flex;
     flex-direction: column;
 
@@ -18,32 +15,13 @@
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    &_marginBottom10 {
-        margin-bottom: 10px;
-    }
-
-    &_marginBottom20 {
-        margin-bottom: 20px;
-    }
-
-    &_marginBottom30 {
-        margin-bottom: 30px;
-    }
-
-
-    @import "./formsContent/authorizationForm.scss";
-    @import "./formsContent/guestsAndDateRangeForm.scss";
-    @import "./formsContent/registrationForm.scss";
-    @import "./formsContent/priceCalculationForm.scss";
-
-
     &__title {
         display: flex;
         width: 320px;
         margin-bottom: 20px;
     }
-    &__titleText {
-        font-family: OpenSansBold;
+    &__title-text {
+        font-family: Quicksand, OpenSans;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -51,14 +29,24 @@
         color: #1f2041;
     }
 
-    &__alreadyRegistered {
+    &__email-and-password-inputs-container{
+        & > div:first-child{
+            margin-bottom: 10px;
+        }
+        margin-bottom: 20px;
+    }
+    &__submit-button-container{
+        margin-bottom: 30px;
+    }
+
+    &__already-registered {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    &__alreadyRegisteredText {
-        font-family: MontserratRegular;
+    &__already-registered-text {
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;

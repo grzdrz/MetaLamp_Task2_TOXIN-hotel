@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: row;
 
-  &_single {
+  /*  &_single {
     .date-input__datepicker-label {
       width: 266px;
     }
-  }
+  } */
 
   &__input-container {
     display: flex;
@@ -135,6 +135,13 @@
     line-height: 15px;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
+  }
+
+  &_with-width_318px {
+    width: 318px;
+  }
+  &_with-width_266px {
+    width: 266px;
   }
 }
 

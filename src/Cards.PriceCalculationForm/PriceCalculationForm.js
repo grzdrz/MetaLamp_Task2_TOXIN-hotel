@@ -1,8 +1,8 @@
 export function priceCalculationFormScript() {
-    let forms = document.querySelectorAll(".formDefault_priceCalculation");
+    let forms = document.querySelectorAll(".price-calculation-form");
     forms.forEach(e => {
-        let plusButtons = e.querySelectorAll(".dropdown__dropedListItemHandlerPlus");
-        let minusButtons = e.querySelectorAll(".dropdown__dropedListItemHandlerMinus");
+        let plusButtons = e.querySelectorAll(".dropdown__droped-list-item-handler-plus");
+        let minusButtons = e.querySelectorAll(".dropdown__droped-list-item-handler-minus");
 
         plusButtons.forEach(e => {
             e.addEventListener("click", dropdownInputChange);
@@ -16,8 +16,9 @@ export function priceCalculationFormScript() {
         let dropdownContainer = event.currentTarget.closest(".dropdown");
         let curSum = dropdownContainer.dataset.curSum;
 
-        let formContainer = dropdownContainer.closest(".formDefault");
-        let additionalServicesNumberElem = formContainer.querySelector(".formDefault__additionalServicesPriceCalculated");
+        let formContainer = dropdownContainer.closest(".price-calculation-form");
+        let additionalServicesNumberElem = formContainer
+            .querySelector(".price-calculation-form__additional-services-price-calculated");
         let temp1 = Number.parseInt(curSum) * 100;
         additionalServicesNumberElem.textContent = temp1 + "₽";
         additionalServicesNumberElem.dataset.calculatedNumber = temp1;
@@ -27,18 +28,18 @@ export function priceCalculationFormScript() {
     }
 
 
-    let firstDateInput = $('.dateInput_double.priceCalculation__dateInput .dateInput__datepickerInput_first');
+    let firstDateInput = $('.price-calculation-form .date-input_double.date-input_with-range-picking .date-input__datepicker-input_first');
     let datepicker = firstDateInput.data('datepicker');
     let oldOnSelect = datepicker.selectDate;
     datepicker.selectDate = getNewOnSelectWrapper(oldOnSelect.bind(datepicker));
 
     function getNewOnSelectWrapper(oldFunc) {
-        return function (date/* formattedDate, date, inst */) {
-            oldFunc(date/* formattedDate, date, inst */);
+        return function (date) {
+            oldFunc(date);
 
             let firstDateInput = this.$el[0];
             let dateInputValue1 = firstDateInput.value;
-            let dateInputValue2 = firstDateInput.closest(".dateInput").querySelector(".dateInput__datepickerInput_second").value;
+            let dateInputValue2 = firstDateInput.closest(".date-input").querySelector(".date-input__datepicker-input_second").value;
             if (dateInputValue1 && dateInputValue2) {
 
                 let dateStringsArray1 = dateInputValue1.split(".");
@@ -48,15 +49,17 @@ export function priceCalculationFormScript() {
                 let dDate = Math.abs(date2 - date1);
                 let daysCount = dDate / (1000 * 60 * 60 * 24);
 
-                let formContainer = firstDateInput.closest(".formDefault");
-                let daysField = formContainer.querySelector(".formDefault__priceMultiplyPeriodOfTimeDescriptionDays");
+                let formContainer = firstDateInput.closest(".price-calculation-form");
+                let daysField = formContainer.querySelector(".price-calculation-form__price-multiply-period-of-time-description-days");
                 let splittedText = daysField.textContent.split(/\s/i);
                 splittedText[0] = daysCount;
                 let joinedText = splittedText.join(" ");
                 daysField.textContent = " " + joinedText;
 
-                let numberField = formContainer.querySelector(".formDefault__priceMultiplyPeriodOfTimeDescriptionNumber");
-                let calculatedPriceField = formContainer.querySelector(".formDefault__priceMultiplyPeriodOfTimePriceCalculated");
+                let numberField = formContainer
+                    .querySelector(".price-calculation-form__price-multiply-period-of-time-description-number");
+                let calculatedPriceField = formContainer
+                    .querySelector(".price-calculation-form__price-multiply-period-of-time-price-calculated");
                 calculatedPriceField.dataset.calculatedNumber = daysCount * Number.parseInt(numberField.dataset.number);
                 calculatedPriceField.textContent = calculatedPriceField.dataset.calculatedNumber + "₽";
 
@@ -68,11 +71,11 @@ export function priceCalculationFormScript() {
 
 
     function calculateAndSetTotalPrice(containerElem) {
-        let totalNumberField = containerElem.querySelector(".formDefault__inTotalNumber");
+        let totalNumberField = containerElem.querySelector(".price-calculation-form__in-total-number");
 
-        let numberField1 = containerElem.querySelector(".formDefault__priceMultiplyPeriodOfTimePriceCalculated");
-        let numberField2 = containerElem.querySelector(".formDefault__servicesDiscountPriceCalculated");
-        let numberField3 = containerElem.querySelector(".formDefault__additionalServicesPriceCalculated");
+        let numberField1 = containerElem.querySelector(".price-calculation-form__price-multiply-period-of-time-price-calculated");
+        let numberField2 = containerElem.querySelector(".price-calculation-form__services-discount-price-calculated");
+        let numberField3 = containerElem.querySelector(".price-calculation-form__additional-services-price-calculated");
 
         totalNumberField.dataset.totalNumber =
             Number.parseInt(numberField1.dataset.calculatedNumber) +

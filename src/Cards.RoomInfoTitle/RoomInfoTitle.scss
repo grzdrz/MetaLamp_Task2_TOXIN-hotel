@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
 
     &__roomNumberAndStatus {
         display: flex;
@@ -9,7 +10,7 @@
     }
 
     &__numberSymbol {
-        font-family: OpenSansBold;
+        font-family: Quicksand, OpenSans;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -20,7 +21,7 @@
     }
 
     &__roomNumber {
-        font-family: OpenSansBold;
+        font-family: Quicksand, OpenSans;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -31,7 +32,7 @@
     }
 
     &__roomStatus {
-        font-family: MontserratBold;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -43,10 +44,11 @@
     &__roomPriceAndPeriodOfTime {
         display: flex;
         align-items: flex-end;
+        align-items: flex-end;
     }
 
     &__roomPrice {
-        font-family: MontserratBold;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -57,7 +59,7 @@
     }
 
     &__periodOfTime {
-        font-family: MontserratRegular;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;

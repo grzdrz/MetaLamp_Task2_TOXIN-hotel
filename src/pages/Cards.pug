@@ -10,31 +10,26 @@ html
         .cards
             include ../GlobalLogo/GlobalLogo.pug
 
-            include ../Cards.FormDefault/FormDefault.pug
-            +getForm({
-                titleText: "Найдём номера под ваши пожелания",
-                formType: "guestsAndDateRange",
-
-                dropdownTitleText: "гости",
-            })
-
-            +getForm({
-                titleText: "Регистрация аккаунта",
-                formType: "registration",
-            })
-
-            +getForm({
+            include ../Cards.AuthorizationForm/AuthorizationForm.pug
+            +getAuthorizationForm({
                 titleText: "Войти",
-                formType: "authorization",
             })
 
-            +getForm({
-                titleText: "",
-                formType: "priceCalculation",
-            },
-            {
-                form: "formDefault_priceCalculation"
+            include ../Cards.GuestsAndDateRangeForm/GuestsAndDateRangeForm.pug
+            +getGuestsAndDateRangeForm({
+                titleText: "Найдём номера под ваши пожелания",
             })
+
+            include ../Cards.PriceCalculationForm/PriceCalculationForm.pug
+            +getPriceCalculationForm({
+                
+            })
+
+            include ../Cards.RegistrationForm/RegistrationForm.pug
+            +getRegistrationForm({
+                titleText: "Регистрация аккаунта",
+            })
+
 
             include ../Cards.RoomInfo/RoomInfo.pug
             +getRoomInfo({

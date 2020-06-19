@@ -1,0 +1,73 @@
+include ../FormElements.ButtonDefault/ButtonDefault.pug
+include ../FormElements.DateInput/DateInput.pug
+include ../Cards.RoomInfoTitle/RoomInfoTitle.pug
+include ../FormElements.Dropdown/Dropdown.pug
+
+mixin getPriceCalculationForm(options)
+
+    form(class=["price-calculation-form"])
+
+        div(class=["price-calculation-form__title-container"])
+            +getRoomInfoTitle( {
+                roomNumber: 888,
+                roomStatus: "люкс",
+                roomPrice: "9 990₽",
+                periodOfTime: "сутки",
+            })
+
+        div(class=["price-calculation-form__date-input-container"])
+            +getDateInput({
+                isDoubleInput: true,
+                isDateRange: true,
+                firstTitle: "выезд",
+                secondTitle: "прибытие",
+            })
+
+        div(class=["price-calculation-form__dropdown-container"])
+            +getDropdown({
+                titleText: "гости",
+                isTitleTextTestVisible: false,
+                titleTextTestValue: "",
+                placeholder: "Сколько гостей",
+                name: "guestsCount",
+                type: "text",
+                value: "Сколько гостей",
+                dropdownList: [
+                    {name: "взрослые", value: 0},
+                    {name: "дети", value: 0},
+                    {name: "младенцы", value: 0}
+                ],
+                withTotalValue: true,
+            })  
+
+        div(class=["price-calculation-form__interactive-info"])
+            div(class=["price-calculation-form__price-multiply-period-of-time"])
+                div(class=["price-calculation-form__price-multiply-period-of-time-description"])
+                    p(class=["price-calculation-form__price-multiply-period-of-time-description-number"] data-number=9990) 9 990₽ х
+                    p(class=["price-calculation-form__price-multiply-period-of-time-description-days"]) 0 суток
+                p(class=["price-calculation-form__price-multiply-period-of-time-price-calculated"] data-calculated-number=9990) 9 990₽
+            div(class=["price-calculation-form__services-discount"])
+                div(class=["price-calculation-form__services-discount-description"])
+                    p(class=["price-calculation-form__services-discount-description-text"]) Сбор за услуги: скидка 2 179₽
+                    div(class=["price-calculation-form__info-symbol", "price-calculation-form__services-discount-description-info-symbol"])
+                        p(class=["price-calculation-form__info-symbol-inner-letter"]) i
+                p(class=["price-calculation-form__services-discount-price-calculated"] data-calculated-number=0) 0₽
+            div(class=["price-calculation-form__additional-services"])
+                div(class=["price-calculation-form__additional-services-description"])
+                    p(class=["price-calculation-form__additional-services-description-text"]) Сбор за дополнительные услуги
+                    div(class=["price-calculation-form__info-symbol", "price-calculation-form__additional-services-description-info-symbol"])
+                        p(class=["price-calculation-form__info-symbol-inner-letter"]) i                
+                p(class=["price-calculation-form__additional-services-price-calculated"] data-calculated-number=0) 0₽
+            div(class=["price-calculation-form__in-total"])
+                p(class=["price-calculation-form__in-total-text"]) Итого
+                p(class=["price-calculation-form__in-total-bottom-line"])
+                p(class=["price-calculation-form__in-total-number"] data-total-number=0) 0₽
+
+        +getButton({
+            text: 'забронировать',
+            isHollow: false,
+            buttonType: "submit",
+            hasArrow: true,
+            width: "320px",
+        })
+

@@ -1,0 +1,42 @@
+include ../FormElements.DateInput/DateInput.pug
+include ../FormElements.Dropdown/Dropdown.pug
+include ../FormElements.ButtonDefault/ButtonDefault.pug
+
+mixin getGuestsAndDateRangeForm(options)
+
+    form(class=["guests-and-date-range-form"])
+        - if(options.titleText)
+            div(class=["guests-and-date-range-form__title"])
+                p(class=["guests-and-date-range-form__title-text"])= options.titleText
+
+        +getDateInput({
+                isDoubleInput: true,
+                isDateRange: true,
+                firstTitle: "выезд",
+                secondTitle: "прибытие",
+            })
+             
+        +getDropdown({
+                titleText: "гости",
+                isTitleTextTestVisible: false,
+                titleTextTestValue: "",
+                placeholder: "Сколько гостей",
+                name: "guestsCount",
+                type: "text",
+                value: "Сколько гостей",
+                dropdownList: [
+                    {name: "взрослые", value: 0},
+                    {name: "дети", value: 0},
+                    {name: "младенцы", value: 0}
+                ],
+                withTotalValue: true,
+            })
+
+        
+        +getButton({
+            text: 'подобрать номер',
+            isHollow: false,
+            buttonType: "submit",
+            hasArrow: true,
+            width: "320px",
+        })
