@@ -15,7 +15,7 @@
 
     margin: 0px 10px;
 
-    &-url {
+    &-ref {
         text-decoration: none;
         color: rgba(31, 32, 65, 0.5);
     }
@@ -46,6 +46,8 @@
 }
 
 &__dropdown-arrow {
+    cursor: pointer;
+
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;

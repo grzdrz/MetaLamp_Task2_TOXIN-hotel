@@ -2,14 +2,14 @@
     options.isAuthorized - авторизован ли пользователь
     options.userFullName - полное имя пользователя
 
-include ../FormElements.ButtonDefault/ButtonDefault.pug
 include ./NavigationMenu/NavigationMenu.pug
+include ../FormElements.ButtonDefault/ButtonDefault.pug
 
 mixin getStandardNavBar(options)
 
 
     div(class=["standard-navigation-bar"])
-        include ../HeadersAndFooters.LogoColored/logoColored.pug
+        include ../HeadersAndFooters.LogoColored/LogoColored.pug
 
         +getNavigationMenu({
             navList: [

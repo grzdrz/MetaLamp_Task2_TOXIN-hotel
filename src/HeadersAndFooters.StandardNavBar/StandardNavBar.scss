@@ -1,3 +1,6 @@
+@import "../HeadersAndFooters.LogoColored/LogoColored.scss";
+@import "../FormElements.ButtonDefault/ButtonDefault.scss";
+
 .standard-navigation-bar {
     width: 100%;
     display: grid;
@@ -40,5 +43,3 @@
 
     @import "./NavigationMenu/NavigationMenu.scss";
 }
-
-@import "../FormElements.ButtonDefault/ButtonDefault.scss";

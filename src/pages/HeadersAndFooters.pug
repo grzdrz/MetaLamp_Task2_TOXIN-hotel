@@ -5,16 +5,25 @@ html
         title HeadersAndFooters
     body
         div(class=["headersAndFooters"])
+
             div(class=["headersAndFooters__global-logo-container"])
                 include ../GlobalLogo/GlobalLogo.pug
 
             include ../HeadersAndFooters.StandardNavBar/StandardNavBar.pug
-            +getStandardNavBar({
-                isAuthorized: false,
-            })
-            +getStandardNavBar({
-                isAuthorized: true,
-                userFullName: "Юлий Цезарь",
-            })
+            div(class=["headersAndFooters__standard-nav-bar-container_first"])
+                +getStandardNavBar({
+                    isAuthorized: false,
+                })
+
+            div(class=["headersAndFooters__standard-nav-bar-container_second"])
+                +getStandardNavBar({
+                    isAuthorized: true,
+                    userFullName: "Юлий Цезарь",
+                })
+
             include ../HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.pug
-            include ../HeadersAndFooters.FooterCreative/FooterCreative.pug
+            div(class=["headersAndFooters__footer-widgets-and-copyright-bar-container"])
+                +getFooterWidgetsAndCopyrightBar()
+
+            div(class=["headersAndFooters__footer-creative-container"])
+                include ../HeadersAndFooters.FooterCreative/FooterCreative.pug

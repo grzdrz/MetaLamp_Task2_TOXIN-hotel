@@ -1,0 +1,12 @@
+mixin getInfoBarMenu(options)
+
+    ul(class=["footer-widgets-and-copyright-bar__info-bar-menu"])
+        - for(let i = 0; i < options.listOfLinks.length; i++){
+            li(class=["footer-widgets-and-copyright-bar__info-bar-menu-item"])
+                - if(i === 0)
+                    div(class=["footer-widgets-and-copyright-bar__info-bar-menu-item-ref"] href=options.listOfLinks[i].url)
+                        p(class=["footer-widgets-and-copyright-bar__info-bar-menu-item-text"])= options.listOfLinks[i].text
+                - else 
+                    a(class=["footer-widgets-and-copyright-bar__info-bar-menu-item-ref"] href=options.listOfLinks[i].url)
+                                        p(class=["footer-widgets-and-copyright-bar__info-bar-menu-item-text"])= options.listOfLinks[i].text            
+        - }    

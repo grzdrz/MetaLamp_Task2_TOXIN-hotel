@@ -1,19 +1,19 @@
-&__socialMedia {
+.social-media {
     display: flex;
     align-content: center;
 
     $iconSize: 24px;
-    a {
+    &__ref {
         width: $iconSize;
         height: $iconSize;
         margin-right: 20px;
 
-        img {
+        &-image {
             width: $iconSize;
             height: $iconSize;
         }
 
-        &:last-of-type{
+        &:last-of-type {
             margin-right: 0px;
         }
     }

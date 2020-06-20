@@ -15,7 +15,7 @@ mixin getNavigationMenu(options)
                     i === options.navList.length - 1 ? ["standard-navigation-bar__navigation-list-item_last-item"] : [])
                 )
             )
-                a(class=["standard-navigation-bar__navigation-list-item-url"] href=options.navList[i].url)
+                a(class=["standard-navigation-bar__navigation-list-item-ref"] href=options.navList[i].url)
                     p(class=["standard-navigation-bar__navigation-list-item-text"])= options.navList[i].text
                 - if(options.navList[i].hasDropdown)
                     p(class=["standard-navigation-bar__dropdown-arrow"]) expand_more
