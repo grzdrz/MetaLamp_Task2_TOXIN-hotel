@@ -7,6 +7,13 @@
     justify-self: end;
 
     margin-right: 20px;
+
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        //justify-content: space-between;
+        //justify-self: end;
+    }
 }
 
 &__navigation-list-item {

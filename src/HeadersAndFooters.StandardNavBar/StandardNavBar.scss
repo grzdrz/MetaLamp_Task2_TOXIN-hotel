@@ -1,16 +1,38 @@
 @import "../HeadersAndFooters.LogoColored/LogoColored.scss";
 @import "../FormElements.ButtonDefault/ButtonDefault.scss";
 
+/* .standard-navigation-bar {
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    grid-template-columns: auto;
+    @media screen and (max-width: 768px) {
+        grid-template-rows: min-content auto min-content;
+        grid-template-columns: auto;
+    }
+} */
+
 .standard-navigation-bar {
     width: 100%;
+
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: min-content auto min-content;
     align-items: center;
-    padding: 15px 140px;
+    /* padding: 15px 140px; */
+    padding: 15px 9.72%;
     justify-items: start;
     background: #ffffff;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+    @media screen and (max-width: 1024px) {
+        //background: red;
+        display: flex;
+        flex-direction: column;
+        //grid-template-rows: min-content auto min-content;
+        //grid-template-columns: auto;
+
+        padding: 15px 0px;
+    }
 
     &__user-full-name {
         display: flex;
