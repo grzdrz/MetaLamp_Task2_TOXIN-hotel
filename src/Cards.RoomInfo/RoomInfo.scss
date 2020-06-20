@@ -1,8 +1,8 @@
 @import "../Cards.RoomInfoTitle/RoomInfoTitle.scss";
 @import "../FormElements.RateButton/RateButton.scss";
 
-.roomInfo {
-    width: 270px;
+.room-info {
+    width: 271px;
     //height: 258px;
     display: flex;
     flex-direction: column;
@@ -11,12 +11,25 @@
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     border-radius: 4px;
 
+    position: relative;
+    &__ref {
+        width: 271px;
+        height: 55px;
+        opacity: 0;
+        margin-bottom: 52px;
+        position: absolute;
+        bottom: 0px;
+        z-index: 3;
+    }
+
     &__photos {
         position: relative;
         display: flex;
         align-items: center;
         width: 271px;
         height: 152px;
+
+        z-index: 2;
     }
 
     &__photo {
@@ -35,20 +48,22 @@
         justify-content: space-between;
 
         width: 271px;
-
-        //padding: 0px 10px;
+        height: 152px;
     }
 
-    &__arrowBack {
+    &__arrow-back {
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 44px;
-        height: 44px;
+        min-width: 44px;
+        height: 152px;
         background: transparent;
         outline: transparent;
 
-        &Icon {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+
+        &-icon {
             transform: rotate(90deg);
 
             font-family: Material Icons;
@@ -61,17 +76,21 @@
             color: #ffffff;
         }
     }
-    &__arrowForward {
+    &__arrow-forward {
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 44px;
-        height: 44px;
+        min-width: 44px;
+        height: 152px;
         background: transparent;
         outline: transparent;
 
-        &Icon {
-            transform: rotate(-90deg);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+
+        &-icon {
+            transform: rotate(90deg);
 
             font-family: Material Icons;
             font-style: normal;
@@ -105,7 +124,7 @@
         position: relative;
     } */
     $radioButtonSize: 8px;
-    &__photoRadioButtonInput {
+    &__photo-radio-button-input {
         z-index: 3;
 
         width: $radioButtonSize;
@@ -127,7 +146,7 @@
                 & + div {
                     right: 15px + ($radioButtonSize + 3px) * (4 - $i);
                 }
-                &:checked ~ .roomInfo__photo_#{$i} {
+                &:checked ~ .room-info__photo_#{$i} {
                     opacity: 1;
                 }
             }
@@ -170,7 +189,7 @@
             }
         } */
     }
-    &__photoRadioButtonCircle {
+    &__photo-radio-button-circle {
         z-index: 2;
 
         width: 8px;
@@ -184,25 +203,30 @@
         bottom: 15px;
     }
 
-    &__textInfo {
+    &__text-info {
         padding: 15px 16px 19px 20px;
+
+        z-index: 1;
     }
 
-    &__roomRateAndReviewsCount {
+    &__room-info-title-container {
+    }
+
+    &__room-rate-and-reviews-count {
         display: flex;
         justify-content: space-between;
 
         margin-top: 8px;
     }
 
-    &__reviewsCountContainer {
+    &__reviews-count-container {
         display: flex;
         align-items: flex-end;
         padding-bottom: 3px;
         padding-right: 4px;
     }
 
-    &__reviewsCount {
+    &__reviews-count {
         font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
@@ -214,7 +238,7 @@
         margin-right: 3px;
     }
 
-    &__reviewsCountText {
+    &__reviews-count-text {
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
@@ -222,19 +246,5 @@
         line-height: 18px;
         text-align: right;
         color: rgba(31, 32, 65, 0.5);
-    }
-
-    &_fontSize19 {
-        font-size: 19px;
-    }
-
-    &_bottomBorder {
-        padding-bottom: 7px;
-        padding-top: 3px;
-        border-bottom: 1px solid rgba(31, 32, 65, 0.1);
-    }
-
-    &_alignItemsCenter {
-        align-items: center;
     }
 }

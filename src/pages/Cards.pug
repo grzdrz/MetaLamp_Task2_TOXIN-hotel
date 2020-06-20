@@ -23,7 +23,7 @@ html
 
             include ../Cards.PriceCalculationForm/PriceCalculationForm.pug
             +getPriceCalculationForm({
-                
+
             })
 
             include ../Cards.RegistrationForm/RegistrationForm.pug
@@ -37,6 +37,7 @@ html
                 blockNumber: 1,
                 photos: ["test11", "test22", "test33", "test44"],
                 roomInfoTitleOptions: {
+                    inRoomInfoBlock: true,
                     roomNumber: 888,
                     roomStatus: "люкс",
                     roomPrice: "9 990₽",
@@ -44,12 +45,14 @@ html
                 },
                 reviewsCount: 145,
                 reviewsCountText: "Отзывов",
-                isCheckedArray: [false, false, false, false, true,],
+                numberOfCheckedStar: 1,
+                url: "#",
             })
             +getRoomInfo({
                 blockNumber: 2,
                 photos: ["test11", "test22"],
                 roomInfoTitleOptions: {
+                    inRoomInfoBlock: true,
                     roomNumber: 840,
                     roomStatus: "",
                     roomPrice: "9 990₽",
@@ -57,12 +60,14 @@ html
                 },
                 reviewsCount: 65,
                 reviewsCountText: "Отзывов",
-                isCheckedArray: [false, false, false, true, false,],
+                numberOfCheckedStar: 5,
+                url: "#",
             }) 
             +getRoomInfo({
                 blockNumber: 3,
                 photos: ["test11"],
                 roomInfoTitleOptions: {
+                    inRoomInfoBlock: true,
                     roomNumber: 841,
                     roomStatus: "",
                     roomPrice: "9 990₽",
@@ -70,6 +75,7 @@ html
                 },
                 reviewsCount: 1488,
                 reviewsCountText: "Отзывов",
-                isCheckedArray: [true, false, false, false, false,],
+                numberOfCheckedStar: 3,
+                url: "#",
             })                          
 

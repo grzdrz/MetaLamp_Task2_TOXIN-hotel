@@ -1,45 +1,43 @@
 mixin getRoomInfo(options, classes={})
 
-    div(class=["roomInfo"].concat(classes.container || []))
-        div(class=["roomInfo__photos"])
+    div(class=["room-info"].concat(classes.container || []))
+        a(class=["room-info__ref"] href=options.url)
+        div(class=["room-info__photos"])
             - for(let i = 1; i <= 4; i++){
-                input(class=["roomInfo__photoRadioButtonInput", "roomInfo__photoRadioButtonInput_" + i] 
+                input(class=["room-info__photo-radio-button-input", "room-info__photo-radio-button-input_" + i] 
                     type="radio"
                     name="photo_" + options.blockNumber
                     checked=(i === 1)
                     disabled=(i > options.photos.length)
                     data-serial-number=i)
-                div(class=["roomInfo__photoRadioButtonCircle", "roomInfo__photoRadioButtonCircle_" + i])
+                div(class=["room-info__photo-radio-button-circle", "room-info__photo-radio-button-circle_" + i])
             - }
             - let i = 1;
             - for(let photoName of options.photos){
-                img(class=["roomInfo__photo", "roomInfo__photo_" + i] src="./src/Cards.RoomInfo/img/" + photoName + ".png")
+                img(class=["room-info__photo", "room-info__photo_" + i] src="./src/Cards.RoomInfo/img/" + photoName + ".png")
                 - i++;
             - }
             - if(options.photos.length > 1)
-                div(class=["roomInfo__arrows"])
-                    button(class=["roomInfo__arrowBack"])
-                        span(class=["roomInfo__arrowBackIcon"]) expand_more
-                    button(class=["roomInfo__arrowForward"]) 
-                        span(class=["roomInfo__arrowForwardIcon"]) expand_more
+                div(class=["room-info__arrows"])
+                    button(class=["room-info__arrow-back"])
+                        span(class=["room-info__arrow-back-icon"]) expand_more
+                    //-a(class=["room-info__ref-in-photo"] src=options.url)
+                        //-img(class=["room-info__ref-in-photo-image"])
+                    button(class=["room-info__arrow-forward"]) 
+                        span(class=["room-info__arrow-forward-icon"]) expand_more
 
-        div(class=["roomInfo__textInfo"])
+        div(class=["room-info__text-info"])
             include ../Cards.RoomInfoTitle/RoomInfoTitle.pug
-            +getRoomInfoTitle(options.roomInfoTitleOptions,
-                {
-                    container: ["roomInfo_bottomBorder"],
-                    roomPriceAndPeriodOfTime: ["roomInfo_alignItemsCenter"],
-                    roomNumber: ["roomInfo_fontSize19"]
-                }
-            )
+            div(class=["room-info__room-info-title-container"])
+                +getRoomInfoTitle(options.roomInfoTitleOptions)
 
-            div(class=["roomInfo__roomRateAndReviewsCount"])
+            div(class=["room-info__room-rate-and-reviews-count"])
                 include ../FormElements.RateButton/RateButton.pug
                 +getRateButton({
                     blockNumber: options.blockNumber,
-                    isCheckedArray: options.isCheckedArray,
+                    numberOfCheckedStar: options.numberOfCheckedStar,
                 })
 
-                div(class=["roomInfo__reviewsCountContainer"])
-                    p(class=["roomInfo__reviewsCount"])= options.reviewsCount
-                    p(class=["roomInfo__reviewsCountText"])= options.reviewsCountText
+                div(class=["room-info__reviews-count-container"])
+                    p(class=["room-info__reviews-count"])= options.reviewsCount
+                    p(class=["room-info__reviews-count-text"])= options.reviewsCountText
