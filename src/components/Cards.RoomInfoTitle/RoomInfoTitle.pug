@@ -1,0 +1,17 @@
+mixin getRoomInfoTitle(options)
+    - classes = {};
+
+    - if(options.inRoomInfoBlock){
+        - classes.container = ["room-info-title_bottom-border"];
+        - classes.roomNumber = ["room-info-title__room-number_font-size_19"];
+        - classes.roomPriceAndPeriodOfTime = ["room-info-title__period-of-time_align-items-center"];
+    - }
+
+    div(class=["room-info-title"].concat(classes.container || []))
+        div(class=["room-info-title__room-number-and-status"])
+            p(class=["room-info-title__number-symbol"]) №
+            p(class=["room-info-title__room-number"].concat(classes.roomNumber || []))= options.roomNumber
+            p(class=["room-info-title__room-status"])= options.roomStatus
+        div(class=["room-info-title__room-price-and-period-of-time"].concat(classes.roomPriceAndPeriodOfTime || []))
+            p(class=["room-info-title__room-price"])= options.roomPrice
+            p(class=["room-info-title__period-of-time"])= "в " + options.periodOfTime

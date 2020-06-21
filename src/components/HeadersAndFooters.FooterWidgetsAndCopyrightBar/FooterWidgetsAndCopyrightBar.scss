@@ -1,0 +1,143 @@
+@import "../FormElements.FormInput/FormInput.scss";
+@import "../HeadersAndFooters.SocialMedia/SocialMedia.scss";
+
+.footer-widgets-and-copyright-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+    &__info-bar {
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 26% 17% 17.5% 19.5% 20%;
+        //padding: 100px 140px;
+        padding: 100px scalePixelsAsPercentage(140, 1440);
+        justify-items: start;
+        box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+        margin-bottom: 1px;
+
+        @media screen and (max-width: 1300px) {
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: 31% 22% 22.5% 24.5%;
+        }
+        @media screen and (max-width: 1100px) {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: 39% 30% 30.5%;
+            grid-row-gap: 30px;
+        }
+        @media screen and (max-width: 850px) {
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: 55% 45%;
+        }
+        @media screen and (max-width: 600px) {
+            display: grid;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-columns: auto;
+        }
+    }
+
+    &__some-info {
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+
+        &-text {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: rgba(31, 32, 65, 0.75);
+
+            margin-top: 18px;
+        }
+    }
+
+    &__info-bar-menu-container {
+        /*         &_first {
+            margin-left: 40px;
+        }
+        &_second {
+            margin-left: 60px;
+        }
+        &_third {
+            margin-left: 95px;
+        } */
+    }
+
+    &__subscribe-to-our-newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-self: end;
+
+        margin-top: 4px;
+    }
+    &__subscribe-title-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1f2041;
+
+        margin-bottom: 19px;
+    }
+
+    &__subscribe-main-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+
+        margin-bottom: 22px;
+    }
+
+    &__subscribe-to-our-newsletter-email-form {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 260px;
+
+        background: transparent;
+    }
+
+    &__copyright-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        //padding: 23px 140px;
+        padding: 23px scalePixelsAsPercentage(140, 1440);
+        /* align-content: center; */
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+
+        @media screen and (max-width: 850px) {
+            flex-direction: column;
+        }
+    }
+
+    &__copyright {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(31, 32, 65, 0.75);
+        text-align: center;
+
+        @media screen and (max-width: 850px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @import "./InfoBarMenu/InfoBarMenu.scss";
+}

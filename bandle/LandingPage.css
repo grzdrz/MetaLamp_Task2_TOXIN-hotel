@@ -1,0 +1,1959 @@
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede; }
+  .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+    color: #c5c5c5; }
+  .-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+    color: #dedede; }
+  .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+    color: #fff;
+    background: #a2ddf6; }
+    .-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+      background: #8ad5f4; }
+  .-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: rgba(92, 196, 239, 0.1);
+    color: #cccccc; }
+    .-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+      background-color: rgba(92, 196, 239, 0.2); }
+  .datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+    background: none;
+    border: none; }
+
+/* -------------------------------------------------
+    Datepicker cells
+   ------------------------------------------------- */
+.datepicker--cells {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.datepicker--cell {
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 32px;
+  z-index: 1; }
+  .datepicker--cell.-focus- {
+    background: #f0f0f0; }
+  .datepicker--cell.-current- {
+    color: #4EB5E6; }
+    .datepicker--cell.-current-.-focus- {
+      color: #4a4a4a; }
+    .datepicker--cell.-current-.-in-range- {
+      color: #4EB5E6; }
+  .datepicker--cell.-in-range- {
+    background: rgba(92, 196, 239, 0.1);
+    color: #4a4a4a;
+    border-radius: 0; }
+    .datepicker--cell.-in-range-.-focus- {
+      background-color: rgba(92, 196, 239, 0.2); }
+  .datepicker--cell.-disabled- {
+    cursor: default;
+    color: #aeaeae; }
+    .datepicker--cell.-disabled-.-focus- {
+      color: #aeaeae; }
+    .datepicker--cell.-disabled-.-in-range- {
+      color: #a1a1a1; }
+    .datepicker--cell.-disabled-.-current-.-focus- {
+      color: #aeaeae; }
+  .datepicker--cell.-range-from- {
+    border: 1px solid rgba(92, 196, 239, 0.5);
+    background-color: rgba(92, 196, 239, 0.1);
+    border-radius: 4px 0 0 4px; }
+  .datepicker--cell.-range-to- {
+    border: 1px solid rgba(92, 196, 239, 0.5);
+    background-color: rgba(92, 196, 239, 0.1);
+    border-radius: 0 4px 4px 0; }
+  .datepicker--cell.-range-from-.-range-to- {
+    border-radius: 4px; }
+  .datepicker--cell.-selected- {
+    color: #fff;
+    border: none;
+    background: #5cc4ef; }
+    .datepicker--cell.-selected-.-current- {
+      color: #fff;
+      background: #5cc4ef; }
+    .datepicker--cell.-selected-.-focus- {
+      background: #45bced; }
+  .datepicker--cell:empty {
+    cursor: default; }
+
+.datepicker--days-names {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 8px 0 3px; }
+
+.datepicker--day-name {
+  color: #FF9A19;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .8em; }
+
+.datepicker--cell-day {
+  width: 14.28571%; }
+
+.datepicker--cells-months {
+  height: 170px; }
+
+.datepicker--cell-month {
+  width: 33.33%;
+  height: 25%; }
+
+.datepicker--years {
+  height: 170px; }
+
+.datepicker--cells-years {
+  height: 170px; }
+
+.datepicker--cell-year {
+  width: 25%;
+  height: 33.33%; }
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede; }
+  .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+    color: #c5c5c5; }
+  .-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+    color: #dedede; }
+  .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+    color: #fff;
+    background: #a2ddf6; }
+    .-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+      background: #8ad5f4; }
+  .-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: rgba(92, 196, 239, 0.1);
+    color: #cccccc; }
+    .-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+      background-color: rgba(92, 196, 239, 0.2); }
+  .datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+    background: none;
+    border: none; }
+
+/* -------------------------------------------------
+    Datepicker
+   ------------------------------------------------- */
+.datepickers-container {
+  position: absolute;
+  left: 0;
+  top: 0; }
+  @media print {
+    .datepickers-container {
+      display: none; } }
+
+.datepicker {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-sizing: content-box;
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  color: #4a4a4a;
+  width: 250px;
+  position: absolute;
+  left: -100000px;
+  opacity: 0;
+  transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
+  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
+  z-index: 100; }
+  .datepicker.-from-top- {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px); }
+  .datepicker.-from-right- {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px); }
+  .datepicker.-from-bottom- {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px); }
+  .datepicker.-from-left- {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px); }
+  .datepicker.active {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    transition: opacity 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s;
+    transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease; }
+
+.datepicker-inline .datepicker {
+  border-color: #d7d7d7;
+  box-shadow: none;
+  position: static;
+  left: auto;
+  right: auto;
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none; }
+
+.datepicker-inline .datepicker--pointer {
+  display: none; }
+
+.datepicker--content {
+  box-sizing: content-box;
+  padding: 4px; }
+  .-only-timepicker- .datepicker--content {
+    display: none; }
+
+.datepicker--pointer {
+  position: absolute;
+  background: #fff;
+  border-top: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  width: 10px;
+  height: 10px;
+  z-index: -1; }
+  .-top-left- .datepicker--pointer, .-top-center- .datepicker--pointer, .-top-right- .datepicker--pointer {
+    top: calc(100% - 4px);
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
+  .-right-top- .datepicker--pointer, .-right-center- .datepicker--pointer, .-right-bottom- .datepicker--pointer {
+    right: calc(100% - 4px);
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg); }
+  .-bottom-left- .datepicker--pointer, .-bottom-center- .datepicker--pointer, .-bottom-right- .datepicker--pointer {
+    bottom: calc(100% - 4px);
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg); }
+  .-left-top- .datepicker--pointer, .-left-center- .datepicker--pointer, .-left-bottom- .datepicker--pointer {
+    left: calc(100% - 4px);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .-top-left- .datepicker--pointer, .-bottom-left- .datepicker--pointer {
+    left: 10px; }
+  .-top-right- .datepicker--pointer, .-bottom-right- .datepicker--pointer {
+    right: 10px; }
+  .-top-center- .datepicker--pointer, .-bottom-center- .datepicker--pointer {
+    left: calc(50% - 10px / 2); }
+  .-left-top- .datepicker--pointer, .-right-top- .datepicker--pointer {
+    top: 10px; }
+  .-left-bottom- .datepicker--pointer, .-right-bottom- .datepicker--pointer {
+    bottom: 10px; }
+  .-left-center- .datepicker--pointer, .-right-center- .datepicker--pointer {
+    top: calc(50% - 10px / 2); }
+
+.datepicker--body {
+  display: none; }
+  .datepicker--body.active {
+    display: block; }
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede; }
+  .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+    color: #c5c5c5; }
+  .-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+    color: #dedede; }
+  .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+    color: #fff;
+    background: #a2ddf6; }
+    .-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+      background: #8ad5f4; }
+  .-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: rgba(92, 196, 239, 0.1);
+    color: #cccccc; }
+    .-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+      background-color: rgba(92, 196, 239, 0.2); }
+  .datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+    background: none;
+    border: none; }
+
+/* -------------------------------------------------
+    Navigation
+   ------------------------------------------------- */
+.datepicker--nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #efefef;
+  min-height: 32px;
+  padding: 4px; }
+  .-only-timepicker- .datepicker--nav {
+    display: none; }
+
+.datepicker--nav-title,
+.datepicker--nav-action {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.datepicker--nav-action {
+  width: 32px;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .datepicker--nav-action:hover {
+    background: #f0f0f0; }
+  .datepicker--nav-action.-disabled- {
+    visibility: hidden; }
+  .datepicker--nav-action svg {
+    width: 32px;
+    height: 32px; }
+  .datepicker--nav-action path {
+    fill: none;
+    stroke: #9c9c9c;
+    stroke-width: 2px; }
+
+.datepicker--nav-title {
+  border-radius: 4px;
+  padding: 0 8px; }
+  .datepicker--nav-title i {
+    font-style: normal;
+    color: #9c9c9c;
+    margin-left: 5px; }
+  .datepicker--nav-title:hover {
+    background: #f0f0f0; }
+  .datepicker--nav-title.-disabled- {
+    cursor: default;
+    background: none; }
+
+.datepicker--buttons {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px;
+  border-top: 1px solid #efefef; }
+
+.datepicker--button {
+  color: #4EB5E6;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px; }
+  .datepicker--button:hover {
+    color: #4a4a4a;
+    background: #f0f0f0; }
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede; }
+  .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+    color: #c5c5c5; }
+  .-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+    color: #dedede; }
+  .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+    color: #fff;
+    background: #a2ddf6; }
+    .-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+      background: #8ad5f4; }
+  .-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: rgba(92, 196, 239, 0.1);
+    color: #cccccc; }
+    .-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+      background-color: rgba(92, 196, 239, 0.2); }
+  .datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+    background: none;
+    border: none; }
+
+/* -------------------------------------------------
+    Timepicker
+   ------------------------------------------------- */
+.datepicker--time {
+  border-top: 1px solid #efefef;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px;
+  position: relative; }
+  .datepicker--time.-am-pm- .datepicker--time-sliders {
+    -webkit-flex: 0 1 138px;
+        -ms-flex: 0 1 138px;
+            flex: 0 1 138px;
+    max-width: 138px; }
+  .-only-timepicker- .datepicker--time {
+    border-top: none; }
+
+.datepicker--time-sliders {
+  -webkit-flex: 0 1 153px;
+      -ms-flex: 0 1 153px;
+          flex: 0 1 153px;
+  margin-right: 10px;
+  max-width: 153px; }
+
+.datepicker--time-label {
+  display: none;
+  font-size: 12px; }
+
+.datepicker--time-current {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 0 0 10px; }
+
+.datepicker--time-current-colon {
+  margin: 0 2px 3px;
+  line-height: 1; }
+
+.datepicker--time-current-hours,
+.datepicker--time-current-minutes {
+  line-height: 1;
+  font-size: 19px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  position: relative;
+  z-index: 1; }
+  .datepicker--time-current-hours:after,
+  .datepicker--time-current-minutes:after {
+    content: '';
+    background: #f0f0f0;
+    border-radius: 4px;
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    opacity: 0; }
+  .datepicker--time-current-hours.-focus-:after,
+  .datepicker--time-current-minutes.-focus-:after {
+    opacity: 1; }
+
+.datepicker--time-current-ampm {
+  text-transform: uppercase;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  color: #9c9c9c;
+  margin-left: 6px;
+  font-size: 11px;
+  margin-bottom: 1px; }
+
+.datepicker--time-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 11px;
+  height: 17px;
+  background: linear-gradient(to right, #dedede, #dedede) left 50%/100% 1px no-repeat; }
+  .datepicker--time-row:first-child {
+    margin-bottom: 4px; }
+  .datepicker--time-row input[type='range'] {
+    background: none;
+    cursor: pointer;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none; }
+    .datepicker--time-row input[type='range']::-webkit-slider-thumb {
+      -webkit-appearance: none; }
+    .datepicker--time-row input[type='range']::-ms-tooltip {
+      display: none; }
+    .datepicker--time-row input[type='range']:hover::-webkit-slider-thumb {
+      border-color: #b8b8b8; }
+    .datepicker--time-row input[type='range']:hover::-moz-range-thumb {
+      border-color: #b8b8b8; }
+    .datepicker--time-row input[type='range']:hover::-ms-thumb {
+      border-color: #b8b8b8; }
+    .datepicker--time-row input[type='range']:focus {
+      outline: none; }
+      .datepicker--time-row input[type='range']:focus::-webkit-slider-thumb {
+        background: #5cc4ef;
+        border-color: #5cc4ef; }
+      .datepicker--time-row input[type='range']:focus::-moz-range-thumb {
+        background: #5cc4ef;
+        border-color: #5cc4ef; }
+      .datepicker--time-row input[type='range']:focus::-ms-thumb {
+        background: #5cc4ef;
+        border-color: #5cc4ef; }
+    .datepicker--time-row input[type='range']::-webkit-slider-thumb {
+      box-sizing: border-box;
+      height: 12px;
+      width: 12px;
+      border-radius: 3px;
+      border: 1px solid #dedede;
+      background: #fff;
+      cursor: pointer;
+      transition: background .2s; }
+    .datepicker--time-row input[type='range']::-moz-range-thumb {
+      box-sizing: border-box;
+      height: 12px;
+      width: 12px;
+      border-radius: 3px;
+      border: 1px solid #dedede;
+      background: #fff;
+      cursor: pointer;
+      transition: background .2s; }
+    .datepicker--time-row input[type='range']::-ms-thumb {
+      box-sizing: border-box;
+      height: 12px;
+      width: 12px;
+      border-radius: 3px;
+      border: 1px solid #dedede;
+      background: #fff;
+      cursor: pointer;
+      transition: background .2s; }
+    .datepicker--time-row input[type='range']::-webkit-slider-thumb {
+      margin-top: -6px; }
+    .datepicker--time-row input[type='range']::-webkit-slider-runnable-track {
+      border: none;
+      height: 1px;
+      cursor: pointer;
+      color: transparent;
+      background: transparent; }
+    .datepicker--time-row input[type='range']::-moz-range-track {
+      border: none;
+      height: 1px;
+      cursor: pointer;
+      color: transparent;
+      background: transparent; }
+    .datepicker--time-row input[type='range']::-ms-track {
+      border: none;
+      height: 1px;
+      cursor: pointer;
+      color: transparent;
+      background: transparent; }
+    .datepicker--time-row input[type='range']::-ms-fill-lower {
+      background: transparent; }
+    .datepicker--time-row input[type='range']::-ms-fill-upper {
+      background: transparent; }
+  .datepicker--time-row span {
+    padding: 0 12px; }
+
+.datepicker--time-icon {
+  color: #9c9c9c;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 16px;
+  position: relative;
+  margin: 0 5px -1px 0;
+  width: 1em;
+  height: 1em; }
+  .datepicker--time-icon:after, .datepicker--time-icon:before {
+    content: '';
+    background: currentColor;
+    position: absolute; }
+  .datepicker--time-icon:after {
+    height: .4em;
+    width: 1px;
+    left: calc(50% - 1px);
+    top: calc(50% + 1px);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  .datepicker--time-icon:before {
+    width: .4em;
+    height: 1px;
+    top: calc(50% + 1px);
+    left: calc(50% - 1px); }
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede; }
+  .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+    color: #c5c5c5; }
+  .-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+    color: #dedede; }
+  .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+    color: #fff;
+    background: #a2ddf6; }
+    .-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+      background: #8ad5f4; }
+  .-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: rgba(92, 196, 239, 0.1);
+    color: #cccccc; }
+    .-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+      background-color: rgba(92, 196, 239, 0.2); }
+  .datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+    background: none;
+    border: none; }
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(node_modules/material-design-icons/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+       url(node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
+       url(node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.woff), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.eot), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.ttf), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.woff), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.woff2), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.eot), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.ttf), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.woff), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.woff2), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.eot), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.ttf), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.woff), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.woff2), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.eot), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.ttf), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.eot), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.ttf), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.woff), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.eot), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.ttf), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg);
+  font-weight: bold;
+  font-style: normal; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box; }
+
+html,
+body {
+  min-width: 100%;
+  display: flex; }
+
+.logo-colored {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-self: end; }
+  .logo-colored__logo-symbol {
+    margin-right: 12.5px; }
+
+.button-default {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 22px;
+  background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+  width: 99px;
+  height: 44px; }
+  .button-default__button-basis {
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: 2px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: transparent;
+    border-radius: 22px;
+    outline: none; }
+  .button-default > button {
+    width: -webkit-fill-available; }
+  .button-default__button-text {
+    cursor: pointer;
+    background: transparent;
+    text-align: center;
+    color: #ffffff;
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: -0.03em; }
+  .button-default__arrow {
+    cursor: pointer;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    height: 44px;
+    width: 44px; }
+  .button-default__input-button {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    z-index: 2; }
+    .button-default__input-button + p {
+      z-index: 1; }
+  .button-default:hover {
+    background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
+  .button-default_hollow-button > a,
+  .button-default_hollow-button > button,
+  .button-default_hollow-button > label {
+    background: #ffffff; }
+    .button-default_hollow-button > a > p:first-of-type,
+    .button-default_hollow-button > button > p:first-of-type,
+    .button-default_hollow-button > label > p:first-of-type {
+      color: #bc9cff; }
+  .button-default_with-width_99px {
+    width: 99px; }
+  .button-default_with-width_320px {
+    width: 320px; }
+  .button-default_with-width_79px {
+    width: 79px; }
+  .button-default_with-width_101px {
+    width: 101px; }
+  .button-default_with-width_87px {
+    width: 87px; }
+  .button-default_with-width_196px {
+    width: 196px; }
+  .button-default_with-height_34px {
+    height: 34px; }
+  .button-default_with-height_44px {
+    height: 44px; }
+
+.standard-navigation-bar {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: min-content auto min-content;
+  align-items: center;
+  /* padding: 15px 140px; */
+  padding: 15px 9.72222%;
+  justify-items: start;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  @media screen and (max-width: 1150px) and (min-width: 768px) {
+    .standard-navigation-bar {
+      display: grid;
+      grid-template-columns: min-content auto;
+      grid-template-rows: auto auto; } }
+  @media screen and (max-width: 768px) {
+    .standard-navigation-bar {
+      display: grid;
+      grid-template-columns: min-content auto;
+      grid-template-rows: min-content auto; } }
+  @media screen and (max-width: 550px) {
+    .standard-navigation-bar {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: min-content min-content min-content;
+      justify-content: flex-start; } }
+  @media screen and (max-width: 768px) {
+    .standard-navigation-bar__logo-colore-container {
+      justify-self: flex-start; } }
+  .standard-navigation-bar__navigation-menu-container {
+    justify-self: end;
+    margin-right: 20px; }
+    @media screen and (max-width: 1150px) and (min-width: 768px) {
+      .standard-navigation-bar__navigation-menu-container {
+        order: 2;
+        margin-right: 0px;
+        margin-top: 20px;
+        grid-column-start: 2;
+        grid-column-end: 3; } }
+    @media screen and (max-width: 768px) {
+      .standard-navigation-bar__navigation-menu-container {
+        order: 2;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-left: 5px;
+        display: flex;
+        flex-direction: column; } }
+    @media screen and (max-width: 550px) {
+      .standard-navigation-bar__navigation-menu-container {
+        justify-self: flex-start; } }
+  .standard-navigation-bar__user-full-name {
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+    white-space: nowrap; }
+    .standard-navigation-bar__user-full-name:before {
+      content: "";
+      height: 30px;
+      width: 1px;
+      background: transparent;
+      border-left: 1px solid rgba(31, 32, 65, 0.1);
+      padding-right: 20px; }
+    @media screen and (max-width: 1150px) and (min-width: 768px) {
+      .standard-navigation-bar__user-full-name {
+        order: 1;
+        justify-self: end; } }
+    @media screen and (max-width: 768px) {
+      .standard-navigation-bar__user-full-name {
+        order: 1;
+        justify-self: end; } }
+    @media screen and (max-width: 550px) {
+      .standard-navigation-bar__user-full-name {
+        margin-top: 20px; } }
+  .standard-navigation-bar__button-default-container {
+    display: flex; }
+    .standard-navigation-bar__button-default-container > div:first-child {
+      margin-right: 20px; }
+      @media screen and (max-width: 550px) {
+        .standard-navigation-bar__button-default-container > div:first-child {
+          margin-right: 0px;
+          margin-bottom: 10px; } }
+    @media screen and (max-width: 1150px) and (min-width: 768px) {
+      .standard-navigation-bar__button-default-container {
+        order: 1;
+        justify-self: end; } }
+    @media screen and (max-width: 768px) {
+      .standard-navigation-bar__button-default-container {
+        order: 1;
+        justify-self: end; } }
+    @media screen and (max-width: 550px) {
+      .standard-navigation-bar__button-default-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: min-content;
+        margin-top: 20px; } }
+  .standard-navigation-bar__navigation-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .standard-navigation-bar__navigation-list {
+        display: flex;
+        flex-direction: column; } }
+  .standard-navigation-bar__navigation-list-item {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    /* &_first-item  */
+    /* &_last-item */ }
+    .standard-navigation-bar__navigation-list-item-ref {
+      text-decoration: none;
+      color: rgba(31, 32, 65, 0.5); }
+    .standard-navigation-bar__navigation-list-item-text {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      white-space: nowrap;
+      letter-spacing: 0.002em; }
+    .standard-navigation-bar__navigation-list-item:first-child {
+      margin: 0px 10px 0px 0px; }
+      .standard-navigation-bar__navigation-list-item:first-child a {
+        color: rgba(31, 32, 65, 0.75); }
+        .standard-navigation-bar__navigation-list-item:first-child a p {
+          font-weight: bold; }
+      @media screen and (max-width: 768px) {
+        .standard-navigation-bar__navigation-list-item:first-child {
+          margin: 0px 0px 10px 0px; } }
+    .standard-navigation-bar__navigation-list-item:last-child {
+      margin: 0px 0px 0px 10px; }
+      @media screen and (max-width: 768px) {
+        .standard-navigation-bar__navigation-list-item:last-child {
+          margin: 10px 0px 0px 0px; } }
+    @media screen and (max-width: 768px) {
+      .standard-navigation-bar__navigation-list-item {
+        margin: 10px 0px 10px 0px; } }
+  .standard-navigation-bar__dropdown-arrow {
+    cursor: pointer;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5); }
+
+.date-input {
+  display: flex;
+  flex-direction: row;
+  /*  &_single {
+    .date-input__datepicker-label {
+      width: 266px;
+    }
+  } */ }
+  .date-input__input-container {
+    display: flex;
+    flex-direction: column; }
+    .date-input__input-container:first-child {
+      margin-right: 20px; }
+  .date-input__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 6px; }
+  .date-input__datepicker-label {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 44px;
+    grid-template-rows: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 150px; }
+  .date-input__datepicker-input {
+    cursor: pointer;
+    padding: 0px 0px 0px 15px;
+    height: 44px;
+    outline: none;
+    background: transparent;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    white-space: nowrap;
+    /* Отменяем перенос текста */
+    overflow: hidden;
+    /* Обрезаем содержимое */
+    text-overflow: ellipsis;
+    /* Многоточие */ }
+    .date-input__datepicker-input::-webkit-input-placeholder {
+      background: rgba(31, 32, 65, 0.25);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 0px solid transparent; }
+    .date-input__datepicker-input:-webkit-autofill, .date-input__datepicker-input:-webkit-autofill:hover, .date-input__datepicker-input:-webkit-autofill:focus,
+    .date-input__datepicker-input textarea:-webkit-autofill,
+    .date-input__datepicker-input textarea:-webkit-autofill:hover,
+    .date-input__datepicker-input textarea:-webkit-autofill:focus,
+    .date-input__datepicker-input select:-webkit-autofill,
+    .date-input__datepicker-input select:-webkit-autofill:hover,
+    .date-input__datepicker-input select:-webkit-autofill:focus {
+      border: 0px solid rgba(255, 255, 255, 0);
+      -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
+      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      transition: background-color 5000s ease-in-out 0s;
+      color: rgba(31, 32, 65, 0.75); }
+  .date-input__datepicker-arrow {
+    cursor: pointer;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px; }
+  .date-input__buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 20px; }
+  .date-input__apply-button {
+    cursor: pointer;
+    margin-left: auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #bc9cff; }
+  .date-input__clear-button {
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5); }
+  .date-input_with-width_318px {
+    width: 318px; }
+  .date-input_with-width_266px {
+    width: 266px; }
+
+.datepicker {
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  width: max-content; }
+  .datepicker.-bottom-right-, .datepicker.-bottom-right-.active {
+    margin-left: -28px; }
+  .datepicker.-bottom-left-, .datepicker.-bottom-left-.active {
+    margin-left: -2px; }
+  .datepicker.active {
+    width: max-content; }
+  .datepicker--cells {
+    width: 280px; }
+  .datepicker--cell {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    width: 40px;
+    height: 40px; }
+    .datepicker--cell-day.-selected- {
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      border-radius: 50%;
+      position: relative; }
+      .datepicker--cell-day.-selected-.-focus- {
+        background: linear-gradient(to bottom, #bb9cff, #8ba4f9); }
+    .datepicker--cell-day.-current- {
+      background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+      border-radius: 50%;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff; }
+    .datepicker--cell-day.-current-.-in-range- {
+      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      color: rgba(31, 32, 65, 0.5);
+      border-radius: 0px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      text-align: center; }
+    .datepicker--cell-day.-in-range-.-other-month- {
+      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      color: rgba(31, 32, 65, 0.25); }
+    .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-current-, .datepicker--cell-day.-range-to-.-current-, .datepicker--cell-day.-range-from-.-other-month-, .datepicker--cell-day.-range-to-.-other-month- {
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      border-radius: 50%;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      position: relative; }
+    .datepicker--cell-day.-range-from-::after {
+      content: "";
+      width: inherit;
+      height: inherit;
+      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      width: 50%;
+      margin-left: 50%;
+      position: absolute;
+      z-index: -1; }
+    .datepicker--cell-day.-range-to-::after {
+      content: "";
+      width: inherit;
+      height: inherit;
+      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      width: 50%;
+      margin-right: 50%;
+      position: absolute;
+      z-index: -1; }
+    .datepicker--cell-day.-range-from-.-focus-::after {
+      margin-left: 55%; }
+    .datepicker--cell-day.-range-to-.-focus-::after {
+      margin-right: 55%; }
+    .datepicker--cell-day.-in-range- {
+      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      color: rgba(31, 32, 65, 0.5); }
+    .datepicker--cell-day.-disabled- {
+      color: rgba(31, 32, 65, 0.25); }
+    .datepicker--cell-month, .datepicker--cell-year {
+      width: 70px;
+      height: 70px; }
+      .datepicker--cell-month.-current-, .datepicker--cell-year.-current- {
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        color: white;
+        border-radius: 50%; }
+      .datepicker--cell-month.-selected-, .datepicker--cell-month.-selected-.-current-, .datepicker--cell-year.-selected-, .datepicker--cell-year.-selected-.-current- {
+        background: linear-gradient(to bottom, #bb9cff, #8ba4f9);
+        color: white;
+        border-radius: 50%; }
+  .datepicker--content {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .datepicker--nav {
+    padding: 20px 20px 30px 20px;
+    border: 0px solid transparent; }
+    .datepicker--nav-title {
+      font-family: Quicksand, OpenSans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 24px;
+      text-align: center;
+      color: #1f2041; }
+    .datepicker--nav-action {
+      position: relative; }
+      .datepicker--nav-action > svg {
+        opacity: 0; }
+      .datepicker--nav-action:first-child::after {
+        content: "arrow_back";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        border: 0px solid transparent;
+        background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .datepicker--nav-action:last-child::after {
+        content: "arrow_forward";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        border: 0px solid transparent;
+        background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+  .datepicker--days-names {
+    width: 280px; }
+  .datepicker--day-name {
+    min-width: 40px;
+    height: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #bc9cff; }
+  .datepicker--months {
+    height: max-content; }
+    .datepicker--months > .datepicker--cells-months {
+      display: flex;
+      justify-content: space-between;
+      height: max-content; }
+  .datepicker--years {
+    height: max-content; }
+    .datepicker--years > .datepicker--cells-years {
+      display: flex;
+      justify-content: space-between;
+      height: max-content; }
+
+.dropdown {
+  width: 320px; }
+  .dropdown_text-field-default {
+    display: flex;
+    flex-direction: column; }
+  .dropdown__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px; }
+  .dropdown__title-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .dropdown__title-text-test {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5); }
+  .dropdown__input-container {
+    display: grid;
+    grid-template-rows: 42px;
+    grid-template-columns: auto min-content;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative; }
+    .dropdown__input-container:hover, .dropdown__input-container:focus {
+      border: 1px solid rgba(31, 32, 65, 0.5); }
+  .dropdown__input {
+    cursor: pointer;
+    padding: 0px 100px 0px 15px;
+    height: 44px;
+    outline: none;
+    background: transparent;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    white-space: nowrap;
+    /* Отменяем перенос текста */
+    overflow: hidden;
+    /* Обрезаем содержимое */
+    text-overflow: ellipsis;
+    /* Многоточие */ }
+    .dropdown__input::-webkit-input-placeholder {
+      background: rgba(31, 32, 65, 0.25);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 0px solid transparent; }
+    .dropdown__input:-webkit-autofill, .dropdown__input:-webkit-autofill:hover, .dropdown__input:-webkit-autofill:focus,
+    .dropdown__input textarea:-webkit-autofill,
+    .dropdown__input textarea:-webkit-autofill:hover,
+    .dropdown__input textarea:-webkit-autofill:focus,
+    .dropdown__input select:-webkit-autofill,
+    .dropdown__input select:-webkit-autofill:hover,
+    .dropdown__input select:-webkit-autofill:focus {
+      border: 0px solid rgba(255, 255, 255, 0);
+      -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
+      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      transition: background-color 5000s ease-in-out 0s;
+      color: rgba(31, 32, 65, 0.75); }
+  .dropdown__droped-list {
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    background: white;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-top: 0px;
+    box-sizing: content-box;
+    margin: -1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 1; }
+    .dropdown__droped-list:hover, .dropdown__droped-list:focus {
+      /* border: 1px solid rgba(31, 32, 65, 0.5); */
+      border-top: 0px; }
+  .dropdown__dropdown-arrow {
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    border: 0px solid transparent;
+    background: rgba(31, 32, 65, 0.75);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .dropdown__droped-list-item {
+    display: grid;
+    grid-template-columns: auto 93px;
+    align-items: center;
+    padding: 0px 7px 0px 15px;
+    margin-bottom: 7px; }
+    .dropdown__droped-list-item:first-of-type {
+      margin-top: 7px; }
+  .dropdown__droped-list-item-text {
+    overflow: auto;
+    word-wrap: break-word;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .dropdown__droped-list-item-handler {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  .dropdown__droped-list-item-handler-minus, .dropdown__droped-list-item-handler-plus {
+    cursor: pointer;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 31px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    background: transparent;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .dropdown__droped-list-item-handler-minus {
+    opacity: 0.38; }
+  .dropdown__droped-list-item-handler-text {
+    margin: 0px 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .dropdown__control-buttons-container {
+    display: flex;
+    margin: 20px 10px 13px 15px; }
+  .dropdown__apply-button {
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #bc9cff;
+    margin-left: auto; }
+  .dropdown__clear-button {
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5); }
+
+.button-default {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 22px;
+  background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+  width: 99px;
+  height: 44px; }
+  .button-default__button-basis {
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: 2px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: transparent;
+    border-radius: 22px;
+    outline: none; }
+  .button-default > button {
+    width: -webkit-fill-available; }
+  .button-default__button-text {
+    cursor: pointer;
+    background: transparent;
+    text-align: center;
+    color: #ffffff;
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: -0.03em; }
+  .button-default__arrow {
+    cursor: pointer;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    height: 44px;
+    width: 44px; }
+  .button-default__input-button {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    z-index: 2; }
+    .button-default__input-button + p {
+      z-index: 1; }
+  .button-default:hover {
+    background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
+  .button-default_hollow-button > a,
+  .button-default_hollow-button > button,
+  .button-default_hollow-button > label {
+    background: #ffffff; }
+    .button-default_hollow-button > a > p:first-of-type,
+    .button-default_hollow-button > button > p:first-of-type,
+    .button-default_hollow-button > label > p:first-of-type {
+      color: #bc9cff; }
+  .button-default_with-width_99px {
+    width: 99px; }
+  .button-default_with-width_320px {
+    width: 320px; }
+  .button-default_with-width_79px {
+    width: 79px; }
+  .button-default_with-width_101px {
+    width: 101px; }
+  .button-default_with-width_87px {
+    width: 87px; }
+  .button-default_with-width_196px {
+    width: 196px; }
+  .button-default_with-height_34px {
+    height: 34px; }
+  .button-default_with-height_44px {
+    height: 44px; }
+
+.guests-and-date-range-form {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding: 40px 30px 30px 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; }
+  .guests-and-date-range-form__title {
+    display: flex;
+    width: 320px;
+    margin-bottom: 20px; }
+  .guests-and-date-range-form__title-text {
+    font-family: Quicksand, OpenSans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1f2041; }
+  .guests-and-date-range-form__date-inputs-container {
+    margin-bottom: 20px; }
+  .guests-and-date-range-form__dropdown-container {
+    margin-bottom: 31px; }
+
+.form-input {
+  width: 320px; }
+  .form-input_text-field-default {
+    display: flex;
+    flex-direction: column; }
+  .form-input__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px; }
+  .form-input__title-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .form-input__title-text-test {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5); }
+  .form-input__input-container {
+    display: grid;
+    grid-template-rows: 42px;
+    grid-template-columns: auto min-content;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative; }
+    .form-input__input-container:hover, .form-input__input-container:focus {
+      border: 1px solid rgba(31, 32, 65, 0.5); }
+  .form-input__input {
+    padding: 0px 15px;
+    height: 44px;
+    outline: none;
+    background: transparent;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    white-space: nowrap;
+    /* Отменяем перенос текста */
+    overflow: hidden;
+    /* Обрезаем содержимое */
+    text-overflow: ellipsis;
+    /* Многоточие */ }
+    .form-input__input::-webkit-input-placeholder {
+      background: rgba(31, 32, 65, 0.25);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 0px solid transparent; }
+    .form-input__input:-webkit-autofill, .form-input__input:-webkit-autofill:hover, .form-input__input:-webkit-autofill:focus,
+    .form-input__input textarea:-webkit-autofill,
+    .form-input__input textarea:-webkit-autofill:hover,
+    .form-input__input textarea:-webkit-autofill:focus,
+    .form-input__input select:-webkit-autofill,
+    .form-input__input select:-webkit-autofill:hover,
+    .form-input__input select:-webkit-autofill:focus {
+      border: 0px solid rgba(255, 255, 255, 0);
+      -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
+      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      transition: background-color 5000s ease-in-out 0s;
+      color: rgba(31, 32, 65, 0.75); }
+  .form-input__submit-input {
+    cursor: pointer;
+    min-width: 42px;
+    height: 42px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    border: 0px solid transparent;
+    background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+    background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+    background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.social-media {
+  display: flex;
+  align-content: center; }
+  .social-media__ref {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px; }
+    .social-media__ref-image {
+      width: 24px;
+      height: 24px; }
+    .social-media__ref:last-of-type {
+      margin-right: 0px; }
+
+.footer-widgets-and-copyright-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  .footer-widgets-and-copyright-bar__info-bar {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 26% 17% 17.5% 19.5% 20%;
+    padding: 100px 9.72222%;
+    justify-items: start;
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+    margin-bottom: 1px; }
+    @media screen and (max-width: 1300px) {
+      .footer-widgets-and-copyright-bar__info-bar {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 31% 22% 22.5% 24.5%; } }
+    @media screen and (max-width: 1100px) {
+      .footer-widgets-and-copyright-bar__info-bar {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 39% 30% 30.5%;
+        grid-row-gap: 30px; } }
+    @media screen and (max-width: 850px) {
+      .footer-widgets-and-copyright-bar__info-bar {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 55% 45%; } }
+    @media screen and (max-width: 600px) {
+      .footer-widgets-and-copyright-bar__info-bar {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: auto; } }
+  .footer-widgets-and-copyright-bar__some-info {
+    width: 260px;
+    display: flex;
+    flex-direction: column; }
+    .footer-widgets-and-copyright-bar__some-info-text {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(31, 32, 65, 0.75);
+      margin-top: 18px; }
+  .footer-widgets-and-copyright-bar__info-bar-menu-container {
+    /*         &_first {
+            margin-left: 40px;
+        }
+        &_second {
+            margin-left: 60px;
+        }
+        &_third {
+            margin-left: 95px;
+        } */ }
+  .footer-widgets-and-copyright-bar__subscribe-to-our-newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    margin-top: 4px; }
+  .footer-widgets-and-copyright-bar__subscribe-title-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 19px; }
+  .footer-widgets-and-copyright-bar__subscribe-main-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    margin-bottom: 22px; }
+  .footer-widgets-and-copyright-bar__subscribe-to-our-newsletter-email-form {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 260px;
+    background: transparent; }
+  .footer-widgets-and-copyright-bar__copyright-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 23px 9.72222%;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1); }
+    @media screen and (max-width: 850px) {
+      .footer-widgets-and-copyright-bar__copyright-bar {
+        flex-direction: column; } }
+  .footer-widgets-and-copyright-bar__copyright {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.75);
+    text-align: center; }
+    @media screen and (max-width: 850px) {
+      .footer-widgets-and-copyright-bar__copyright {
+        margin-bottom: 20px; } }
+  .footer-widgets-and-copyright-bar__info-bar-menu {
+    list-style: none;
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    /*     &:nth-child(2) {
+        margin-left: 40px;
+    }
+    &:nth-child(3) {
+        margin-left: 119px;
+    }
+    &:nth-child(4) {
+        margin-left: 115px;
+    } */ }
+    .footer-widgets-and-copyright-bar__info-bar-menu-item {
+      margin-bottom: 21px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px; }
+      .footer-widgets-and-copyright-bar__info-bar-menu-item:first-of-type {
+        margin-top: 4px;
+        margin-bottom: 22px; }
+        .footer-widgets-and-copyright-bar__info-bar-menu-item:first-of-type > div > p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 15px;
+          text-transform: uppercase;
+          color: #1f2041; }
+      .footer-widgets-and-copyright-bar__info-bar-menu-item:last-of-type {
+        margin-bottom: 0px; }
+      .footer-widgets-and-copyright-bar__info-bar-menu-item-ref {
+        text-decoration: none; }
+      .footer-widgets-and-copyright-bar__info-bar-menu-item-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(31, 32, 65, 0.5);
+        white-space: nowrap; }
+
+.colors__background_purpleToBlueGrad {
+  background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+
+.colors__background_purple {
+  background: #bc9cff; }
+
+.colors__background_green {
+  background: #6fcf97; }
+
+.colors__background_darkShade5 {
+  background: rgba(31, 32, 65, 0.05); }
+
+.colors__background_darkShade25 {
+  background: rgba(31, 32, 65, 0.25); }
+
+.colors__background_darkShade50 {
+  background: rgba(31, 32, 65, 0.5); }
+
+.colors__background_darkShade75 {
+  background: rgba(31, 32, 65, 0.75); }
+
+.colors__background_darkShade100 {
+  background: #1f2041; }
+
+.colors__font_purple {
+  color: #bc9cff; }
+
+.colors__font_green {
+  color: #6fcf97; }
+
+.colors__font_darkShade5 {
+  color: rgba(31, 32, 65, 0.05); }
+
+.colors__font_darkShade25 {
+  color: rgba(31, 32, 65, 0.25); }
+
+.colors__font_darkShade50 {
+  color: rgba(31, 32, 65, 0.5); }
+
+.colors__font_darkShade75 {
+  color: rgba(31, 32, 65, 0.75); }
+
+.colors__font_darkShade100 {
+  color: #1f2041; }
+
+.colors__font_white {
+  color: white; }
+
+.fonts__family_montserratRegular {
+  font-family: MontserratRegular; }
+
+.fonts__family_quicksandRegular {
+  font-family: OpenSansRegular; }
+
+.fonts__family_montserratBold {
+  font-family: MontserratBold; }
+
+.fonts__family_quicksandBold {
+  font-family: OpenSansBold; }
+
+.fonts__size_24 {
+  font-size: 24px; }
+
+.fonts__size_19 {
+  font-size: 19px; }
+
+.fonts__size_14 {
+  font-size: 14px; }
+
+.fonts__size_12 {
+  font-size: 12px; }
+
+.fonts__lineHeight_30 {
+  line-height: 30px; }
+
+.fonts__lineHeight_24 {
+  line-height: 24px; }
+
+.fonts__lineHeight_15 {
+  line-height: 15px; }
+
+.fonts_uppercase {
+  text-transform: uppercase; }
+
+.landing-page {
+  display: flex;
+  flex-direction: column; }
+  .landing-page__main-content {
+    position: relative; }
+    @media screen and (max-width: 768px) {
+      .landing-page__main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+  .landing-page__background-image-container {
+    z-index: 1;
+    position: relative; }
+    @media screen and (max-width: 768px) {
+      .landing-page__background-image-container {
+        order: 1; } }
+  .landing-page__background-image {
+    width: 100%;
+    height: 100%; }
+  .landing-page__form-container {
+    width: max-content;
+    position: absolute;
+    margin-top: 4.86111%;
+    margin-left: 9.72222%;
+    z-index: 2; }
+    @media screen and (max-width: 768px) {
+      .landing-page__form-container {
+        position: relative;
+        order: 2;
+        margin-top: 0px;
+        margin-left: 0px; } }
+  .landing-page__subtitle {
+    width: 297px;
+    position: absolute;
+    bottom: 2.36111%;
+    right: 9.30556%;
+    z-index: 2; }
+    .landing-page__subtitle-text {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: right;
+      color: rgba(31, 32, 65, 0.75); }
+

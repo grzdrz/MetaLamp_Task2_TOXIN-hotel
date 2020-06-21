@@ -1,0 +1,68 @@
+.guest-room-reviews {
+    &__title {
+        font-family: Quicksand, OpenSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        color: #1f2041;
+
+        margin-bottom: 20px;
+    }
+
+    &__review-container {
+        display: grid;
+        grid-template-columns: max-content 653px;
+        grid-template-rows: auto auto;
+
+        margin-bottom: 22px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__user-avatar {
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+
+        margin-bottom: 12px;
+
+        border: 2px solid #ffffff;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
+    }
+
+    &__user-info {
+        margin-left: 10px;
+    }
+    &__user-full-name {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+
+    &__number-of-days-since-comment {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+
+    &__comment {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+
+        margin-left: 10px;
+    }
+}
+
+@import "../FormElements.LikeButton/LikeButton.scss";

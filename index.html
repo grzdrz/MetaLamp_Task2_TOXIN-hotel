@@ -3,74 +3,121 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta
+        name="viewport"
+        content="width=device-width"
+    >
 </head>
 
 <body>
     <div class="ui-kit">
-        <h1 class="ui-kit__title">UIKit</p>
-            <ul class="ui-kit__refs-list">
-                <li class="ui-kit__item">
-                    <a
-                        class="ui-kit__ref"
-                        href="bandle/HeadersAndFooters.html"
-                    >
-                        <p class="ui-kit__ref-text">HeadersAndFooters</p>
-                    </a>
-                </li>
+        <p class="ui-kit__title">UI kit</p>
+        <ul class="ui-kit__refs-list">
+            <li class="ui-kit__item">
+                <a
+                    class="ui-kit__ref"
+                    href="bandle/HeadersAndFooters.html"
+                >
+                    <p class="ui-kit__ref-text">Headers & Footers</p>
+                </a>
+            </li>
 
-                <li class="ui-kit__item">
-                    <a
-                        class="ui-kit__ref"
-                        href="bandle/FormElements.html"
-                    >
-                        <p class="ui-kit__ref-text">FormElements</p>
-                    </a></li>
+            <li class="ui-kit__item">
+                <a
+                    class="ui-kit__ref"
+                    href="bandle/FormElements.html"
+                >
+                    <p class="ui-kit__ref-text">Form elements</p>
+                </a></li>
 
-                <li class="ui-kit__item">
-                    <a
-                        class="ui-kit__ref"
-                        href="bandle/ColorsAndType.html"
-                    >
-                        <p class="ui-kit__ref-text">ColorsAndType</p>
-                    </a>
-                </li>
+            <li class="ui-kit__item">
+                <a
+                    class="ui-kit__ref"
+                    href="bandle/ColorsAndType.html"
+                >
+                    <p class="ui-kit__ref-text">Colors & Types</p>
+                </a>
+            </li>
 
-                <li class="ui-kit__item">
-                    <a
-                        class="ui-kit__ref"
-                        href="bandle/Cards.html"
-                    >
-                        <p class="ui-kit__ref-text">Cards</p>
-                    </a>
-                </li>
-            </ul>
+            <li class="ui-kit__item">
+                <a
+                    class="ui-kit__ref"
+                    href="bandle/Cards.html"
+                >
+                    <p class="ui-kit__ref-text">Forms</p>
+                </a>
+            </li>
+        </ul>
+
+        <p class="ui-kit__title">Website pages</p>
+        <ul class="ui-kit__refs-list">
+            <li class="ui-kit__item">
+                <a
+                    class="ui-kit__ref"
+                    href="bandle/LandingPage.html"
+                >
+                    <p class="ui-kit__ref-text">Landing page</p>
+                </a>
+            </li>
+        </ul>
     </div>
 
     <style>
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            box-sizing: border-box;
+            background: rgb(226, 226, 226);
+        }
+
         .ui-kit {
             display: flex;
             flex-direction: column;
+            padding: 0px 5%;
         }
 
         .ui-kit__title {
-            margin-bottom: 20px;
+            margin-bottom: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            color: rgb(24, 24, 24);
         }
 
         .ui-kit__refs-list {
             display: flex;
             flex-direction: column;
-            padding-left: 80px;
+            padding-left: 50px;
+            list-style: none;
+        }
+
+        .ui-kit__item {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .ui-kit__item::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgb(63, 63, 63);
+            margin-left: -30px;
         }
 
         .ui-kit__ref-text {
             font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
             font-size: 24px;
-            color: black;
+            color: rgb(63, 63, 63);
         }
 
         .ui-kit__ref-text:hover {
-            color: red;
+            color: rgb(230, 80, 80);
         }
     </style>
 </body>

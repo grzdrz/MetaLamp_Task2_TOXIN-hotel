@@ -1,0 +1,148 @@
+.date-input {
+  display: flex;
+  flex-direction: row;
+
+  /*  &_single {
+    .date-input__datepicker-label {
+      width: 266px;
+    }
+  } */
+
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  &__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+
+    margin-bottom: 6px;
+  }
+
+  &__datepicker-label {
+    cursor: pointer;
+
+    display: grid;
+    grid-template-columns: auto 44px;
+    grid-template-rows: 44px;
+
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 150px;
+  }
+
+  &__datepicker-input {
+    cursor: pointer;
+
+    padding: 0px 0px 0px 15px;
+    height: 44px;
+    outline: none;
+
+    background: transparent;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+
+    &::-webkit-input-placeholder {
+      background: rgba(31, 32, 65, 0.25);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 0px solid transparent;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      border: 0px solid rgba(255, 255, 255, 0);
+      -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
+      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      transition: background-color 5000s ease-in-out 0s;
+      color: rgba(31, 32, 65, 0.75);
+    }
+
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    text-overflow: ellipsis; /* Многоточие */
+  }
+
+  &__datepicker-arrow {
+    cursor: pointer;
+
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+  }
+
+  &__apply-button {
+    cursor: pointer;
+
+    margin-left: auto;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #bc9cff;
+  }
+
+  &__clear-button {
+    cursor: pointer;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  &_with-width_318px {
+    width: 318px;
+  }
+  &_with-width_266px {
+    width: 266px;
+  }
+}
+
+@import "./Datepicker.scss";

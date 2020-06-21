@@ -1,10 +1,10 @@
 @import "./base.scss";
 
-@import "../GlobalLogo/GlobalLogo.scss";
-@import "../HeadersAndFooters.StandardNavBar/StandardNavBar.scss";
-@import "../HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.scss";
-@import "../HeadersAndFooters.FooterCreative/FooterCreative.scss";
-@import "../ColorsAndType/ColorsAndFonts.scss";
+@import "../components/GlobalLogo/GlobalLogo.scss";
+@import "../components/HeadersAndFooters.StandardNavBar/StandardNavBar.scss";
+@import "../components/HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.scss";
+@import "../components/HeadersAndFooters.FooterCreative/FooterCreative.scss";
+@import "../components/ColorsAndType/ColorsAndFonts.scss";
 
 .headersAndFooters {
     min-width: 100%;

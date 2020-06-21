@@ -1,0 +1,51 @@
+//-
+    options.title - текст заголовка
+    options.curPageNumber - текущая страница
+    options.pagesCount - всего страниц
+
+mixin getPagination(options)
+    - let classes = {};
+
+    div(class=["pagination"])
+        - if(options.title)
+            p(class=["pagination__title"])= options.title
+
+        div(class=["pagination__page-list"] data-cur-page-number=options.curPageNumber)
+            - if(options.curPageNumber !== 1)
+                a(href="#" class=["pagination__left-arrow"])
+                    p(class=["pagination__left-arrow-text"]) arrow_forward
+                a(href="#" class=["pagination__page-link"])
+                    p(class=["pagination__page-link-text"])= 1                    
+
+            - if(options.curPageNumber - 3 > 1)
+                a(class=["pagination__page-link"])
+                    p(class=["pagination__page-link-text"])= "..." 
+
+            - if(options.curPageNumber - 2 > 1)
+                a(href="#" class=["pagination__page-link"])
+                    p(class=["pagination__page-link-text"])= options.curPageNumber - 2
+            - if(options.curPageNumber - 1 > 1)
+                a(href="#" class=["pagination__page-link"])
+                    p(class=["pagination__page-link-text"])= options.curPageNumber - 1
+
+            a(href="#" class=["pagination__page-link", "pagination__page-link_target"])
+                p(class=["pagination__page-link-text"])= options.curPageNumber
+
+            - if(options.curPageNumber + 1 < options.pagesCount)
+                a(href="#" class=["pagination__page-link"])
+                    p(class=["pagination__page-link-text"])= options.curPageNumber + 1
+            - if(options.curPageNumber + 2 < options.pagesCount)
+                a(href="#" class=["pagination__page-link"])
+                    p(class=["pagination__page-link-text"])= options.curPageNumber + 2
+            - if(options.curPageNumber + 3 < options.pagesCount)
+                a(class=["pagination__page-link"])
+                    p(class=["pagination__page-link-text"])= "..." 
+
+            - if(options.curPageNumber !== options.pagesCount)
+                a(href="#" class=["pagination__page-link"])
+                    p(class=["pagination__page-link-text"])= options.pagesCount    
+                a(href="#" class=["pagination__right-arrow"])
+                    p(class=["pagination__right-arrow-text"]) arrow_forward
+
+        - if(options.bottomText)
+            p(class=["pagination__bottom-text"])= options.bottomText                

@@ -19,10 +19,10 @@
     }
 }
 
-@import "../GlobalLogo/GlobalLogo.scss";
-@import "../Cards.AuthorizationForm/AuthorizationForm.scss";
-@import "../Cards.GuestsAndDateRangeForm/GuestsAndDateRangeForm.scss";
-@import "../Cards.PriceCalculationForm/PriceCalculationForm.scss";
-@import "../Cards.RegistrationForm/RegistrationForm.scss";
-@import "../Cards.RoomInfo/RoomInfo.scss";
-@import "../ColorsAndType/ColorsAndFonts.scss";
+@import "../components/GlobalLogo/GlobalLogo.scss";
+@import "../components/Cards.AuthorizationForm/AuthorizationForm.scss";
+@import "../components/Cards.GuestsAndDateRangeForm/GuestsAndDateRangeForm.scss";
+@import "../components/Cards.PriceCalculationForm/PriceCalculationForm.scss";
+@import "../components/Cards.RegistrationForm/RegistrationForm.scss";
+@import "../components/Cards.RoomInfo/RoomInfo.scss";
+@import "../components/ColorsAndType/ColorsAndFonts.scss";

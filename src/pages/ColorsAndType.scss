@@ -1,5 +1,9 @@
 @import "./base.scss";
 
+@import "../components/GlobalLogo/GlobalLogo.scss";
+@import "../components/ColorsAndType/ColorAndFontBlocks.scss";
+@import "../components/ColorsAndType/ColorsAndFonts.scss";
+
 body {
     display: flex;
     flex-direction: column;
@@ -19,6 +23,3 @@ body {
     }
 }
 
-@import "../GlobalLogo/GlobalLogo.scss";
-@import "../ColorsAndType/ColorAndFontBlocks.scss";
-@import "../ColorsAndType/ColorsAndFonts.scss";

@@ -1,0 +1,15 @@
+//-
+    options.list - массив строк элементов списка
+    options.titleText - текст заголовка
+
+mixin getBulletList(options, classes={})
+
+    div(class=["bullet-list"])
+        - if(options.titleText)
+            div(class=["bullet-list__title"])
+                p(class=["bullet-list__title-text"])= options.titleText
+        ul(class=["bullet-list__list"])    
+            - for(let listItem of options.list)
+                li(class=["bullet-list__list-item"])
+                    div(class=["bullet-list__list-item-marker"])
+                    p(class=["bullet-list__list-item-text"])= listItem

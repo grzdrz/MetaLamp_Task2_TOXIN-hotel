@@ -1,0 +1,18 @@
+//-
+    options.navList - массив объектов:
+        {
+            url: "..." - адрес ссылки,
+            text: "..." - текст элемента, 
+            hasDropdown: true/false - является ли элемент выпадающим списком
+        }
+
+mixin getNavigationMenu(options)    
+
+    ul(class=["standard-navigation-bar__navigation-list"])
+        - for(let i = 0; i < options.navList.length; i++){
+            li(class=["standard-navigation-bar__navigation-list-item"])
+                a(class=["standard-navigation-bar__navigation-list-item-ref"] href=options.navList[i].url)
+                    p(class=["standard-navigation-bar__navigation-list-item-text"])= options.navList[i].text
+                - if(options.navList[i].hasDropdown)
+                    p(class=["standard-navigation-bar__dropdown-arrow"]) expand_more
+        - }                

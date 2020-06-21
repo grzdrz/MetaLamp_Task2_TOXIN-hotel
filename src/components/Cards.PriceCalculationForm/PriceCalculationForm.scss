@@ -1,0 +1,162 @@
+@import "../Cards.RoomInfoTitle/RoomInfoTitle.scss";
+@import "../Cards.RoomInfoTitle/RoomInfoTitle.scss";
+@import "../FormElements.ButtonDefault/ButtonDefault.scss";
+@import "../FormElements.DateInput/DateInput.scss";
+@import "../FormElements.Dropdown/Dropdown.scss";
+
+@mixin setFontProperties($lineHeight: 24px) {
+    font: {
+        family: Montserrat;
+        style: normal;
+        weight: normal;
+        size: 14px;
+    }
+    line-height: $lineHeight;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.price-calculation-form {
+    display: flex;
+    flex-direction: column;
+
+    width: 380px;
+
+    padding: 40px 30px 30px 30px;
+
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    &__title {
+        display: flex;
+        width: 320px;
+        margin-bottom: 20px;
+    }
+
+    &__title-text {
+        font-family: Quicksand, OpenSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: #1f2041;
+    }
+
+    &__title-container,
+    &__date-input-container,
+    &__dropdown-container {
+        margin-bottom: 20px;
+    }
+
+    &__interactive-info {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 20px;
+    }
+
+    &__price-multiply-period-of-time {
+        display: flex;
+        justify-content: space-between;
+
+        @include setFontProperties();
+
+        margin-bottom: 10px;
+
+        &-description {
+            display: flex;
+
+            &-days {
+                margin-left: 4px;
+            }
+        }
+    }
+
+    &__services-discount {
+        display: flex;
+        justify-content: space-between;
+
+        @include setFontProperties();
+
+        margin-bottom: 10px;
+
+        &-description {
+            display: flex;
+            justify-content: space-between;
+            width: 239px;
+
+            &-info-symbol {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &__additional-services {
+        display: flex;
+        justify-content: space-between;
+
+        @include setFontProperties(18px);
+
+        margin-bottom: 30px;
+
+        &-description {
+            display: flex;
+            justify-content: space-between;
+            width: 239px;
+
+            &-info-symbol {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &__info-symbol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50%;
+        min-width: 20px;
+        height: 20px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        background: transparent;
+
+        &-inner-letter {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: right;
+            color: rgba(31, 32, 65, 0.25);
+        }
+    }
+
+    &__in-total {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: max-content auto max-content;
+        align-items: baseline;
+
+        font-family: Quicksand, OpenSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        color: #1f2041;
+
+        &-text {
+            margin-right: 5px;
+        }
+        &-bottom-line {
+            border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+        }
+        &-number {
+            margin-left: 5px;
+        }
+    }
+}

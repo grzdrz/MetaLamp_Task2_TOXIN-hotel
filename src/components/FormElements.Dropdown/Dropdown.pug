@@ -1,0 +1,51 @@
+//-
+    options.placeholder - фоновый текст в инпуте
+    options.name - имя свойства в которое будет положено значение инпута при отправке на сервер
+    options.type - тип инпута
+    options.value - значение инпута по умолчанию
+    options.titleText - текст заголовка
+
+    options.withTotalValue - определяет что инпут должен содержать суммарное значение гостей
+
+    options.isTitleTextTestVisible - определяет дополнительный заголовок(используется только на странице макета uikit)
+    options.titleTextTestValue - текст дополнительного заголовка
+
+    options.hasApplyButton - определяет есть ли в выпадающем списке кнопка Принять
+    options.hasClearButton - определяет есть ли в выпадающем списке кнопка Очистить
+
+mixin getDropdown(options)
+    - let classes = {};
+
+    -if(options.withTotalValue)
+        - classes.container ? classes.container.push("dropdown__with-total-value") : classes.container = ["dropdown__with-total-value"]; 
+    - else
+        - classes.container ? classes.container.push("dropdown__without-total-value") : classes.container = ["dropdown__without-total-value"];     
+
+    div(class=["dropdown"].concat(classes.container || []) data-border-radius="" data-cur-sum=0)
+        div(class=["dropdown__title"])
+            p(class=["dropdown__title-text"])= options.titleText
+            - if(options.isTitleTextTestVisible)
+                p(class=["dropdown__title-text-test"])= options.titleTextTestValue
+        div(class=["dropdown__input-container"].concat(classes.input || []), data-default-value=options.value)
+            input(class=["dropdown__input"], 
+                placeholder= options.placeholder,
+                name=options.name,
+                type=options.type,
+                value=options.value,
+                readonly=true)
+            p(class=['dropdown__dropdown-arrow']) expand_more
+            div(class=["dropdown__droped-list"]
+                style={display: "none"})
+                - for(let item of options.dropdownList)
+                    div(class=["dropdown__droped-list-item"])
+                        p(class=["dropdown__droped-list-item-text"])= item.name
+                        div(class=["dropdown__droped-list-item-handler"])
+                            button(class=["dropdown__droped-list-item-handler-minus"])= "-"
+                            p(class=["dropdown__droped-list-item-handler-text"])= item.value
+                            button(class=["dropdown__droped-list-item-handler-plus"])= "+"
+                - if(options.hasApplyButton || options.hasClearButton)
+                    div(class=["dropdown__control-buttons-container"])
+                        - if(options.hasClearButton)
+                            p(class=["dropdown__clear-button"]) очистить
+                        - if(options.hasApplyButton)
+                            p(class=["dropdown__apply-button"]) применить

@@ -1,0 +1,35 @@
+//-
+    options.title - текст заголовка
+    options.firstValue: 2000 - значение левого ползунка по умолчанию
+    options.lastValue: 6000 - значение правого ползунка по умолчанию
+    options.minValue: -1000 - крайнее левое значение ползунка
+    options.maxValue: 10000 - крайнее правое значение ползунка
+    options.valueType: "₽" - размерность значения
+    options.valueRound: 100 - размер шага ползунка
+
+mixin getRangeSlider(options)
+
+    div(class=["range-slider"]
+    data-max-value=options.maxValue 
+    data-min-value=options.minValue
+    data-value-type=options.valueType
+    data-value-round=options.valueRound)
+        div(class=["range-slider__title-container"])
+            p(class=["range-slider__title"])= options.title
+            p(class=["range-slider__inputs-value-range"]
+            )= options.firstValue + options.valueType + " - " + options.lastValue + options.valueType
+        div(class=["range-slider__slider-container"])
+            div(class=["range-slider__slider-body-empty"])
+            div(class=["range-slider__slider-body-filled"])
+            div(class=["range-slider__first-slider-outside"])
+            div(class=["range-slider__last-slider-outside"])
+            div(class=["range-slider__first-slider"])
+            div(class=["range-slider__last-slider"])
+            input(class=["range-slider__first-input"]
+                type="hidden"
+                value= options.firstValue)
+            input(class=["range-slider__last-input"] 
+                type="hidden" 
+                value= options.lastValue)
+
+

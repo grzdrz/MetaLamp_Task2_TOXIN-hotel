@@ -1,0 +1,45 @@
+//-
+    options.isHollow - полая кнопка(с градиентной обводкой)
+    options.hasArrow - есть ли символ стрелки внутри кнопки у правой границы
+    options.buttonType - тег используемый в основе кнопки(a/button/input)
+    options.text - текст внутри кнопки
+    options.height - ширина кнопки(дефолтная 44px)
+    options.width - высота кнопки(дефолтная 99px)
+
+mixin getButton(options)
+    - let classes = {};
+    
+    - if(options.isHollow)
+        - classes.container ? classes.container.push("button-default_hollow-button") : classes.container = ["button-default_hollow-button"];
+        - classes.buttonText ? classes.buttonText.push("colors__font_purple") : classes.buttonText = ["colors__font_purple"];
+    - if(options.hasArrow)
+        - if(options.isHollow)
+            - classes.arrow ? classes.arrow.push("colors__font_purple") : classes.arrow = ["colors__font_purple"];
+        - else
+            - classes.arrow ? classes.arrow.push("colors__font_white") : classes.arrow = ["colors__font_white"];
+
+    - if(options.width)
+        - let className1 = "button-default_with-width_" + options.width;
+        - classes.container ? classes.container.push(className1) : classes.container = [className1];
+    - if(options.height)
+        - let className1 = "button-default_with-height_" + options.height;
+        - classes.container ? classes.container.push(className1) : classes.container = [className1];        
+
+
+    div(class=["button-default"].concat(classes.container || []))
+        - if(options.buttonType === "a")
+            a(href='#' class=["button-default__button-basis"])
+                p(class=["button-default__button-text"].concat(classes.buttonText || []))= options.text
+                - if(options.hasArrow)
+                    p(class=["button-default__arrow"].concat(classes.arrow || [])) arrow_forward 
+        - else if(options.buttonType === "button")
+            button(class=["button-default__button-basis"])
+                p(class=["button-default__button-text"].concat(classes.buttonText || []))= options.text
+                - if(options.hasArrow)
+                    p(class=["button-default__arrow"].concat(classes.arrow || [])) arrow_forward
+        - else if(options.buttonType === "submit")
+            label(class=["button-default__button-basis"])
+                input(class=["button-default__input-button"] type="submit")
+                p(class=["button-default__button-text"].concat(classes.buttonText || []))= options.text
+                - if(options.hasArrow)
+                    p(class=["button-default__arrow"].concat(classes.arrow || [])) arrow_forward

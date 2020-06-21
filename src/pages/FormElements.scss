@@ -16,18 +16,18 @@
     }
 }
 
-@import "../GlobalLogo/GlobalLogo.scss";
-@import "../FormElements.FormInput/FormInput.scss";
-@import "../FormElements.Dropdown/Dropdown.scss";
-@import "../FormElements.CheckboxList/CheckboxList.scss";
-@import "../FormElements.RadioButton/RadioButton.scss";
-@import "../FormElements.RateButton/RateButton.scss";
-@import "../FormElements.ButtonDefault/ButtonDefault.scss";
-@import "../FormElements.Pagination/Pagination.scss";
-@import "../FormElements.RangeSlider/RangeSlider.scss";
-@import "../FormElements.BulletList/BulletList.scss";
-@import "../FormElements.DateInput/DateInput.scss";
-@import "../FormElements.LikeButton/LikeButton.scss";
-@import "../FormElements.RoomDetails/RoomDetails.scss";
-@import "../FormElements.GuestRoomReviews/GuestRoomReviews.scss";
-@import "../ColorsAndType/ColorsAndFonts.scss";
+@import "../components/GlobalLogo/GlobalLogo.scss";
+@import "../components/FormElements.FormInput/FormInput.scss";
+@import "../components/FormElements.Dropdown/Dropdown.scss";
+@import "../components/FormElements.CheckboxList/CheckboxList.scss";
+@import "../components/FormElements.RadioButton/RadioButton.scss";
+@import "../components/FormElements.RateButton/RateButton.scss";
+@import "../components/FormElements.ButtonDefault/ButtonDefault.scss";
+@import "../components/FormElements.Pagination/Pagination.scss";
+@import "../components/FormElements.RangeSlider/RangeSlider.scss";
+@import "../components/FormElements.BulletList/BulletList.scss";
+@import "../components/FormElements.DateInput/DateInput.scss";
+@import "../components/FormElements.LikeButton/LikeButton.scss";
+@import "../components/FormElements.RoomDetails/RoomDetails.scss";
+@import "../components/FormElements.GuestRoomReviews/GuestRoomReviews.scss";
+@import "../components/ColorsAndType/ColorsAndFonts.scss";

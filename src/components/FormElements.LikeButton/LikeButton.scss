@@ -1,0 +1,135 @@
+.like-button {
+    width: max-content;
+
+    $buttonHeight: 20px;
+    $buttonWidth: 40px;
+    $buttonTexSidetPaddings: 16px;
+    $borderRadius: 22px;
+    $borderThickness: 2px;
+
+    &__label {
+        z-index: 1;
+
+        padding: 0px 2px;
+
+        color: #ffffff;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+        height: $buttonHeight;
+        border-radius: $borderRadius;
+
+        outline: none;
+
+        position: relative;
+
+        width: $buttonWidth;
+    }
+
+    &__button-likes-number_on,
+    &__button-likes-number_off {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+
+        background: #ffffff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-left: 5px;
+        margin: $borderThickness;
+        border-radius: $borderRadius;
+
+        z-index: 1;
+    }
+
+    &__input {
+        z-index: 2;
+
+        position: absolute;
+
+        width: $buttonWidth;
+        height: $buttonHeight;
+        opacity: 0;
+
+        &:checked + label {
+            background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+
+            & > p {
+                color: #bc9cff;
+            }
+
+            & > .like-button__button-like-symbol::after {
+                content: "favorite";
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            & > .like-button__button-likes-number_off {
+                opacity: 0;
+            }
+            & > .like-button__button-likes-number_on {
+                opacity: 1;
+            }
+        }
+
+        &:not(:checked) + label {
+            background: rgba(31, 32, 65, 0.25);
+
+            & > p {
+                color: rgba(31, 32, 65, 0.25);
+            }
+
+            & > .like-button__button-like-symbol::after {
+                content: "favorite_border";
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 0px solid transparent;
+            }
+            & > .like-button__button-likes-number_off {
+                opacity: 1;
+            }
+            & > .like-button__button-likes-number_on {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__button-like-symbol {
+        left: 0px;
+        z-index: 2;
+
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: $buttonHeight;
+        height: $buttonHeight;
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}

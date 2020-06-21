@@ -40,7 +40,8 @@ let entries = [
     "HeadersAndFooters",
     "FormElements",
     "ColorsAndType",
-    "Cards"
+    "Cards",
+    "LandingPage",
 ];
 
 module.exports = {
@@ -53,12 +54,6 @@ module.exports = {
         path: path.resolve(__dirname, 'bandle'),
         filename: '[name].js?v=[hash]'
     },
-
-    /* optimization: {
-        splitChunks: {
-            chunks: "all"
-        }
-    }, */
 
     plugins: pluginsOptions,
 

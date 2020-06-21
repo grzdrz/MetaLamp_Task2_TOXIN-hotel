@@ -1551,6 +1551,10 @@ body {
     font-size: 24px;
     line-height: 30px;
     color: #1f2041; }
+  .guests-and-date-range-form__date-inputs-container {
+    margin-bottom: 20px; }
+  .guests-and-date-range-form__dropdown-container {
+    margin-bottom: 31px; }
 
 .room-info-title {
   display: flex;

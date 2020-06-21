@@ -10,9 +10,9 @@ html
     body
         div(class=["formElements"])
             div(class=["formElements__global-logo-container"])
-                include ../GlobalLogo/GlobalLogo.pug
+                include ../components/GlobalLogo/GlobalLogo.pug
 
-            include ../FormElements.FormInput/FormInput.pug
+            include ../components/FormElements.FormInput/FormInput.pug
             +getFormInput({
                 hasTitle: true,
                 titleText: "text field",
@@ -58,7 +58,7 @@ html
                 hasSubmitButton: true
             })
 
-            include ../FormElements.Dropdown/Dropdown.pug
+            include ../components/FormElements.Dropdown/Dropdown.pug
             +getDropdown({
                 titleText: "dropdown",
                 isTitleTextTestVisible: false,
@@ -93,7 +93,7 @@ html
             })
 
 
-            include ../FormElements.CheckboxList/CheckboxList.pug
+            include ../components/FormElements.CheckboxList/CheckboxList.pug
             +getCheckbox({
                 titleText: "expandable checkbox list",
                 isExpandable: true,
@@ -147,7 +147,7 @@ html
             })                
 
 
-            include ../FormElements.RadioButton/RadioButton.pug
+            include ../components/FormElements.RadioButton/RadioButton.pug
             +getRadioButton({
                 blockNumber: "_radio_1",
                 buttonType: "radio",
@@ -176,7 +176,7 @@ html
             })
 
 
-            include ../FormElements.RateButton/RateButton.pug
+            include ../components/FormElements.RateButton/RateButton.pug
             +getRateButton({
                 blockNumber: "_rate_1",
                 numberOfCheckedStar: 3,
@@ -191,7 +191,7 @@ html
             })            
 
 
-            include ../FormElements.ButtonDefault/ButtonDefault.pug
+            include ../components/FormElements.ButtonDefault/ButtonDefault.pug
             +getButton({
                 text: "click me",
                 isHollow:  false,
@@ -236,7 +236,7 @@ html
             })                       
 
 
-            include ../FormElements.Pagination/Pagination.pug
+            include ../components/FormElements.Pagination/Pagination.pug
             div(class=["formElements__pagination-container"])
                 +getPagination({
                     pagesCount: 20,
@@ -244,7 +244,7 @@ html
                     title: "pagination",
                     bottomText: "1 – 12 из 100+ вариантов аренды",
                 })
-            include ../FormElements.Pagination/Pagination.pug
+            include ../components/FormElements.Pagination/Pagination.pug
             div(class=["formElements__pagination-container"])
                 +getPagination({
                     pagesCount: 20,
@@ -254,7 +254,7 @@ html
                 })
 
 
-            include ../FormElements.RangeSlider/RangeSlider.pug
+            include ../components/FormElements.RangeSlider/RangeSlider.pug
             +getRangeSlider({
                 title: "range slider",
                 firstValue: 2000,
@@ -275,7 +275,7 @@ html
             })            
 
 
-            include ../FormElements.BulletList/BulletList.pug
+            include ../components/FormElements.BulletList/BulletList.pug
             +getBulletList({
                 titleText: "bullet list",
                 list: [
@@ -286,7 +286,7 @@ html
             })
 
 
-            include ../FormElements.DateInput/DateInput.pug
+            include ../components/FormElements.DateInput/DateInput.pug
             +getDateInput({
                 isDoubleInput: true,
                 isDateRange: true,
@@ -307,7 +307,7 @@ html
             })           
 
 
-            include ../FormElements.LikeButton/LikeButton.pug
+            include ../components/FormElements.LikeButton/LikeButton.pug
             +getLikeButton({
                 number: 2,
                 isChecked: false,
@@ -318,7 +318,7 @@ html
             })
 
 
-            include ../FormElements.RoomDetails/RoomDetails.pug
+            include ../components/FormElements.RoomDetails/RoomDetails.pug
             +getRoomDetails({
                 detailsArray: [
                     {icon: "insert_emoticon", titleText: "Комфорт", mainText: "Шумопоглощающие стены",},
@@ -329,11 +329,11 @@ html
             })
 
 
-            include ../FormElements.GuestRoomReviews/GuestRoomReviews.pug
+            include ../components/FormElements.GuestRoomReviews/GuestRoomReviews.pug
             +getGuestRoomReviews({
                 reviewsArray: [
                     {
-                        imgSrc: "./src/FormElements.GuestRoomReviews/img/image1.png",
+                        imgSrc: "./src/components/FormElements.GuestRoomReviews/img/image1.png",
                         fullName: "Мурад Сарафанов",
                         numberOfDaysSinceComment: "5 дней назад",
                         likeButtonOptions: {
@@ -346,7 +346,7 @@ html
                             "не жаловался из соседей.",
                     },
                     {
-                        imgSrc: "./src/FormElements.GuestRoomReviews/img/image2.png",
+                        imgSrc: "./src/components/FormElements.GuestRoomReviews/img/image2.png",
                         fullName: "Патрисия Стёклышкова",
                         numberOfDaysSinceComment: "Неделю назад",
                         likeButtonOptions: {

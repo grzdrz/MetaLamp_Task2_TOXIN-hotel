@@ -8,9 +8,9 @@ html
         div(class=["headersAndFooters"])
 
             div(class=["headersAndFooters__global-logo-container"])
-                include ../GlobalLogo/GlobalLogo.pug
+                include ../components/GlobalLogo/GlobalLogo.pug
 
-            include ../HeadersAndFooters.StandardNavBar/StandardNavBar.pug
+            include ../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
             div(class=["headersAndFooters__standard-nav-bar-container_first"])
                 +getStandardNavBar({
                     isAuthorized: false,
@@ -22,9 +22,9 @@ html
                     userFullName: "Юлий Цезарь",
                 })
 
-            include ../HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.pug
+            include ../components/HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.pug
             div(class=["headersAndFooters__footer-widgets-and-copyright-bar-container"])
                 +getFooterWidgetsAndCopyrightBar()
 
             div(class=["headersAndFooters__footer-creative-container"])
-                include ../HeadersAndFooters.FooterCreative/FooterCreative.pug
+                include ../components/HeadersAndFooters.FooterCreative/FooterCreative.pug

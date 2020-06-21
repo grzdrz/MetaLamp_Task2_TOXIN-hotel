@@ -1,0 +1,138 @@
+//в этом варианте можно не задавать падинги текста явно, а просто указывать ширину контейнеру
+$buttonHeight: 44px;
+$buttonTexSidetPaddings: 60px;
+$borderRadius: 22px;
+$borderThickness: 2px;
+.button-default {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    border-radius: $borderRadius;
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+
+    &__button-basis {
+        cursor: pointer;
+
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+
+        margin: $borderThickness;
+
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #ffffff;
+        background: transparent;
+
+        border-radius: $borderRadius;
+
+        outline: none;
+    }
+    & > button {
+        //button не хочет растягиваться без этого
+        width: -webkit-fill-available;
+    }
+
+    &__button-text {
+        cursor: pointer;
+
+        background: transparent;
+        text-align: center;
+        color: #ffffff;
+
+        font-family: Montserrat, Arial, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        letter-spacing: -0.03em;
+    }
+
+    &__arrow {
+        cursor: pointer;
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        position: absolute;
+        right: 0px;
+        height: $buttonHeight;
+        width: $buttonHeight;
+    }
+
+    &__input-button {
+        cursor: pointer;
+
+        position: absolute;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+
+        z-index: 2;
+        & + p {
+            z-index: 1;
+        }
+    }
+
+    &:hover {
+        background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
+    }
+
+    //модификатор, делающий кнопку визуально полой(на самом деле основа для полых кнопок заложена в основной блок стилей)
+    &_hollow-button {
+        & > a,
+        & > button,
+        & > label {
+            background: #ffffff;
+            & > p:first-of-type {
+                color: #bc9cff;
+            }
+        }
+    }
+
+    width: 99px;
+    &_with-width_99px {
+        width: 99px;
+    }
+    &_with-width_320px {
+        width: 320px;
+    }
+    &_with-width_79px {
+        width: 79px;
+    }
+    &_with-width_101px {
+        width: 101px;
+    }
+    &_with-width_87px {
+        width: 87px;
+    }
+    &_with-width_196px {
+        width: 196px;
+    }
+
+    height: $buttonHeight;
+    &_with-height_34px {
+        height: 34px;
+    }
+    &_with-height_44px {
+        height: 44px;
+    }
+}

@@ -1,0 +1,43 @@
+//-
+    options.firstTitle/secondTitle - текст заголовков у двойного инпута
+    options.isDoubleInput - определяет тип инпута(двойной, одинарный)
+    options.isDateRange - определяет как выбирать дату в датапикере(конкретную дату или диапазон дат)
+    options.width - ширина инпута(ов)
+
+mixin getDateInput(options)
+    - let classes = {};
+
+    - if(options.isDoubleInput)
+        - classes.container ? classes.container.push("date-input_double") : classes.container = ["date-input_double"];
+    - else
+        - classes.container ? classes.container.push("date-input_single") : classes.container = ["date-input_single"];        
+
+    - if(options.isDateRange || options.isDoubleInput)
+        - classes.container ? classes.container.push("date-input_with-range-picking") : classes.container = ["date-input_with-range-picking"];
+    - else
+        - classes.container ? classes.container.push("date-input_without-range-picking") : classes.container = ["date-input_without-range-picking"];
+
+    - if(options.width)
+        - let width = "date-input_with-width_" + options.width;
+        - classes.width ? classes.width.push(width) : classes.width = [width];
+
+    div(class=["date-input"].concat(classes.container || []))
+        div(class=["date-input__input-container"])
+            p(class=["date-input__title"])= options.firstTitle
+            label(class=["date-input__datepicker-label", "date-input__datepicker-label_first"].concat(classes.width || []))
+                input(class=["date-input__datepicker-input", "date-input__datepicker-input_first"] 
+                    type="text" 
+                    name="first_date" 
+                    placeholder="ДД.ММ.ГГГГ"
+                    readonly=true)
+                p(class=["date-input__datepicker-arrow"]) expand_more
+        - if(options.isDoubleInput)                
+            div(class=["date-input__input-container"])
+                p(class=["date-input__title"])= options.secondTitle
+                label(class=["date-input__datepicker-label", "date-input__datepicker-label_second"].concat(classes.width || []))
+                    input(class=["date-input__datepicker-input", "date-input__datepicker-input_second"]  
+                        type="text" 
+                        name="second_date"
+                        placeholder="ДД.ММ.ГГГГ"
+                        readonly=true)
+                    p(class=["date-input__datepicker-arrow"]) expand_more                  

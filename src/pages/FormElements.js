@@ -11,25 +11,25 @@ import 'air-datepicker/dist/css/datepicker.css';
 import 'material-design-icons/iconfont/material-icons.css';
 
 //dropdown
-import { dropdownScript } from "../FormElements.Dropdown/Dropdown.js";
+import { dropdownScript } from "../components/FormElements.Dropdown/Dropdown.js";
 dropdownScript();
 
-//dropdown
-import { expandableCheckboxListScript } from "../FormElements.CheckboxList/ExpandableCheckboxList.js";
+//dropdown checkbox
+import { expandableCheckboxListScript } from "../components/FormElements.CheckboxList/ExpandableCheckboxList.js";
 expandableCheckboxListScript();
 
 
 //pagination
-import { paginationScript } from "../FormElements.Pagination/Pagination.js";
+import { paginationScript } from "../components/FormElements.Pagination/Pagination.js";
 paginationScript();
 
 
 //rangeSlider
-import { rangeSliderScript } from "../FormElements.RangeSlider/RangeSlider.js";
+import { rangeSliderScript } from "../components/FormElements.RangeSlider/RangeSlider.js";
 rangeSliderScript();
 
 
-import { dateInputScript } from "../FormElements.DateInput/DateInput.js";
+import { dateInputScript } from "../components/FormElements.DateInput/DateInput.js";
 dateInputScript();
 
 
