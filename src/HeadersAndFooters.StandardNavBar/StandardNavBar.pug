@@ -9,17 +9,19 @@ mixin getStandardNavBar(options)
 
 
     div(class=["standard-navigation-bar"])
-        include ../HeadersAndFooters.LogoColored/LogoColored.pug
+        div(class=["standard-navigation-bar__logo-colore-container"])
+            include ../HeadersAndFooters.LogoColored/LogoColored.pug
 
-        +getNavigationMenu({
-            navList: [
-                {url: '#', text: 'О нас', hasDropdown: false},
-                {url: '#', text: 'Услуги', hasDropdown: true},
-                {url: '#', text: 'Вакансии', hasDropdown: false},
-                {url: '#', text: 'Новости', hasDropdown: false},
-                {url: '#', text: 'Соглашения', hasDropdown: true},
-            ]
-        })  
+        div(class=["standard-navigation-bar__navigation-menu-container"])
+            +getNavigationMenu({
+                navList: [
+                    {url: '#', text: 'О нас', hasDropdown: false},
+                    {url: '#', text: 'Услуги', hasDropdown: true},
+                    {url: '#', text: 'Вакансии', hasDropdown: false},
+                    {url: '#', text: 'Новости', hasDropdown: false},
+                    {url: '#', text: 'Соглашения', hasDropdown: true},
+                ]
+            })
 
         - if(options.isAuthorized)
             div(class=["standard-navigation-bar__user-full-name"])

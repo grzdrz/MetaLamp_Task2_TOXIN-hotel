@@ -10,11 +10,7 @@ mixin getNavigationMenu(options)
 
     ul(class=["standard-navigation-bar__navigation-list"])
         - for(let i = 0; i < options.navList.length; i++){
-            li(class=["standard-navigation-bar__navigation-list-item"].concat(
-                i === 0 ? ["standard-navigation-bar__navigation-list-item_first-item"] : (
-                    i === options.navList.length - 1 ? ["standard-navigation-bar__navigation-list-item_last-item"] : [])
-                )
-            )
+            li(class=["standard-navigation-bar__navigation-list-item"])
                 a(class=["standard-navigation-bar__navigation-list-item-ref"] href=options.navList[i].url)
                     p(class=["standard-navigation-bar__navigation-list-item-text"])= options.navList[i].text
                 - if(options.navList[i].hasDropdown)

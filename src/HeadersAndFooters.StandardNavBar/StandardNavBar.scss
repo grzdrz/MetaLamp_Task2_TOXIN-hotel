@@ -1,16 +1,6 @@
 @import "../HeadersAndFooters.LogoColored/LogoColored.scss";
 @import "../FormElements.ButtonDefault/ButtonDefault.scss";
 
-/* .standard-navigation-bar {
-    display: grid;
-    grid-template-rows: min-content auto min-content;
-    grid-template-columns: auto;
-    @media screen and (max-width: 768px) {
-        grid-template-rows: min-content auto min-content;
-        grid-template-columns: auto;
-    }
-} */
-
 .standard-navigation-bar {
     width: 100%;
 
@@ -19,19 +9,56 @@
     grid-template-columns: min-content auto min-content;
     align-items: center;
     /* padding: 15px 140px; */
-    padding: 15px 9.72%;
+    padding: 15px scalePixelsAsPercentage(140, 1440);
     justify-items: start;
     background: #ffffff;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 
-    @media screen and (max-width: 1024px) {
-        //background: red;
-        display: flex;
-        flex-direction: column;
-        //grid-template-rows: min-content auto min-content;
-        //grid-template-columns: auto;
+    @media screen and (max-width: 1150px) and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-template-rows: auto auto;
+    }
+    @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-template-rows: min-content auto;
+    }
+    @media screen and (max-width: 550px) {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: min-content min-content min-content;
+        justify-content: flex-start;
+    }
 
-        padding: 15px 0px;
+    &__logo-colore-container {
+        @media screen and (max-width: 768px) {
+            justify-self: flex-start;
+        }
+    }
+
+    &__navigation-menu-container {
+        justify-self: end;
+        margin-right: 20px;
+
+        @media screen and (max-width: 1150px) and (min-width: 768px) {
+            order: 2;
+            margin-right: 0px;
+            margin-top: 20px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        @media screen and (max-width: 768px) {
+            order: 2;
+            margin-right: 0px;
+            margin-top: 20px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 550px) {
+            justify-self: flex-start;
+        }
     }
 
     &__user-full-name {
@@ -54,12 +81,44 @@
             border-left: 1px solid rgba(31, 32, 65, 0.1);
             padding-right: 20px;
         }
+
+        @media screen and (max-width: 1150px) and (min-width: 768px) {
+            order: 1;
+            justify-self: end;
+        }
+        @media screen and (max-width: 768px) {
+            order: 1;
+            justify-self: end;
+        }
+        @media screen and (max-width: 550px) {
+            margin-top: 20px;
+        }
     }
 
     &__button-default-container {
         display: flex;
         & > div:first-child {
             margin-right: 20px;
+
+            @media screen and (max-width: 550px) {
+                margin-right: 0px;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (max-width: 1150px) and (min-width: 768px) {
+            order: 1;
+            justify-self: end;
+        }
+        @media screen and (max-width: 768px) {
+            order: 1;
+            justify-self: end;
+        }
+        @media screen and (max-width: 550px) {
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: min-content;
+            margin-top: 20px;
         }
     }
 

@@ -3,6 +3,7 @@ html
     head
         meta(charset="utf-8")
         title HeadersAndFooters
+        meta(name="viewport" content="width=device-width")
     body
         div(class=["headersAndFooters"])
 
@@ -21,7 +22,7 @@ html
                     userFullName: "Юлий Цезарь",
                 })
 
-            include ../HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.pug
+        //-    include ../HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.pug
             div(class=["headersAndFooters__footer-widgets-and-copyright-bar-container"])
                 +getFooterWidgetsAndCopyrightBar()
 

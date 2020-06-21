@@ -185,15 +185,6 @@ body {
   .button-default_with-height_44px {
     height: 44px; }
 
-/* .standard-navigation-bar {
-    display: grid;
-    grid-template-rows: min-content auto min-content;
-    grid-template-columns: auto;
-    @media screen and (max-width: 768px) {
-        grid-template-rows: min-content auto min-content;
-        grid-template-columns: auto;
-    }
-} */
 .standard-navigation-bar {
   width: 100%;
   display: grid;
@@ -201,15 +192,50 @@ body {
   grid-template-columns: min-content auto min-content;
   align-items: center;
   /* padding: 15px 140px; */
-  padding: 15px 9.72%;
+  padding: 15px 9.72222%;
   justify-items: start;
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1150px) and (min-width: 768px) {
     .standard-navigation-bar {
-      display: flex;
-      flex-direction: column;
-      padding: 15px 0px; } }
+      display: grid;
+      grid-template-columns: min-content auto;
+      grid-template-rows: auto auto; } }
+  @media screen and (max-width: 768px) {
+    .standard-navigation-bar {
+      display: grid;
+      grid-template-columns: min-content auto;
+      grid-template-rows: min-content auto; } }
+  @media screen and (max-width: 550px) {
+    .standard-navigation-bar {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: min-content min-content min-content;
+      justify-content: flex-start; } }
+  @media screen and (max-width: 768px) {
+    .standard-navigation-bar__logo-colore-container {
+      justify-self: flex-start; } }
+  .standard-navigation-bar__navigation-menu-container {
+    justify-self: end;
+    margin-right: 20px; }
+    @media screen and (max-width: 1150px) and (min-width: 768px) {
+      .standard-navigation-bar__navigation-menu-container {
+        order: 2;
+        margin-right: 0px;
+        margin-top: 20px;
+        grid-column-start: 2;
+        grid-column-end: 3; } }
+    @media screen and (max-width: 768px) {
+      .standard-navigation-bar__navigation-menu-container {
+        order: 2;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-left: 5px;
+        display: flex;
+        flex-direction: column; } }
+    @media screen and (max-width: 550px) {
+      .standard-navigation-bar__navigation-menu-container {
+        justify-self: flex-start; } }
   .standard-navigation-bar__user-full-name {
     display: flex;
     align-items: center;
@@ -227,25 +253,54 @@ body {
       background: transparent;
       border-left: 1px solid rgba(31, 32, 65, 0.1);
       padding-right: 20px; }
+    @media screen and (max-width: 1150px) and (min-width: 768px) {
+      .standard-navigation-bar__user-full-name {
+        order: 1;
+        justify-self: end; } }
+    @media screen and (max-width: 768px) {
+      .standard-navigation-bar__user-full-name {
+        order: 1;
+        justify-self: end; } }
+    @media screen and (max-width: 550px) {
+      .standard-navigation-bar__user-full-name {
+        margin-top: 20px; } }
   .standard-navigation-bar__button-default-container {
     display: flex; }
     .standard-navigation-bar__button-default-container > div:first-child {
       margin-right: 20px; }
+      @media screen and (max-width: 550px) {
+        .standard-navigation-bar__button-default-container > div:first-child {
+          margin-right: 0px;
+          margin-bottom: 10px; } }
+    @media screen and (max-width: 1150px) and (min-width: 768px) {
+      .standard-navigation-bar__button-default-container {
+        order: 1;
+        justify-self: end; } }
+    @media screen and (max-width: 768px) {
+      .standard-navigation-bar__button-default-container {
+        order: 1;
+        justify-self: end; } }
+    @media screen and (max-width: 550px) {
+      .standard-navigation-bar__button-default-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: min-content;
+        margin-top: 20px; } }
   .standard-navigation-bar__navigation-list {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    justify-self: end;
-    margin-right: 20px; }
-    @media screen and (max-width: 1024px) {
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
       .standard-navigation-bar__navigation-list {
         display: flex;
         flex-direction: column; } }
   .standard-navigation-bar__navigation-list-item {
     display: flex;
     align-items: center;
-    margin: 0px 10px; }
+    margin: 0px 10px;
+    /* &_first-item  */
+    /* &_last-item */ }
     .standard-navigation-bar__navigation-list-item-ref {
       text-decoration: none;
       color: rgba(31, 32, 65, 0.5); }
@@ -257,14 +312,23 @@ body {
       line-height: 17px;
       white-space: nowrap;
       letter-spacing: 0.002em; }
-    .standard-navigation-bar__navigation-list-item_first-item {
+    .standard-navigation-bar__navigation-list-item:first-child {
       margin: 0px 10px 0px 0px; }
-      .standard-navigation-bar__navigation-list-item_first-item a {
+      .standard-navigation-bar__navigation-list-item:first-child a {
         color: rgba(31, 32, 65, 0.75); }
-        .standard-navigation-bar__navigation-list-item_first-item a p {
+        .standard-navigation-bar__navigation-list-item:first-child a p {
           font-weight: bold; }
-    .standard-navigation-bar__navigation-list-item_last-item {
+      @media screen and (max-width: 768px) {
+        .standard-navigation-bar__navigation-list-item:first-child {
+          margin: 0px 0px 10px 0px; } }
+    .standard-navigation-bar__navigation-list-item:last-child {
       margin: 0px 0px 0px 10px; }
+      @media screen and (max-width: 768px) {
+        .standard-navigation-bar__navigation-list-item:last-child {
+          margin: 10px 0px 0px 0px; } }
+    @media screen and (max-width: 768px) {
+      .standard-navigation-bar__navigation-list-item {
+        margin: 10px 0px 10px 0px; } }
   .standard-navigation-bar__dropdown-arrow {
     cursor: pointer;
     font-family: Material Icons;
