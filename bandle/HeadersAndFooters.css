@@ -80,7 +80,6 @@
 
 html,
 body {
-  height: 100%;
   min-width: 100%;
   display: flex; }
 
@@ -456,10 +455,31 @@ body {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 26% 17% 17.5% 19.5% 20%;
-    padding: 100px 140px;
+    padding: 100px 9.72222%;
     justify-items: start;
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
     margin-bottom: 1px; }
+    @media screen and (max-width: 1300px) {
+      .footer-widgets-and-copyright-bar__info-bar {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 31% 22% 22.5% 24.5%; } }
+    @media screen and (max-width: 1100px) {
+      .footer-widgets-and-copyright-bar__info-bar {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 39% 30% 30.5%;
+        grid-row-gap: 30px; } }
+    @media screen and (max-width: 850px) {
+      .footer-widgets-and-copyright-bar__info-bar {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 55% 45%; } }
+    @media screen and (max-width: 600px) {
+      .footer-widgets-and-copyright-bar__info-bar {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: auto; } }
   .footer-widgets-and-copyright-bar__some-info {
     width: 260px;
     display: flex;
@@ -513,18 +533,25 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 23px 140px;
+    padding: 23px 9.72222%;
     /* align-content: center; */
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1); }
+    @media screen and (max-width: 850px) {
+      .footer-widgets-and-copyright-bar__copyright-bar {
+        flex-direction: column; } }
   .footer-widgets-and-copyright-bar__copyright {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    color: rgba(31, 32, 65, 0.75); }
+    color: rgba(31, 32, 65, 0.75);
+    text-align: center; }
+    @media screen and (max-width: 850px) {
+      .footer-widgets-and-copyright-bar__copyright {
+        margin-bottom: 20px; } }
   .footer-widgets-and-copyright-bar__info-bar-menu {
     list-style: none;
     justify-self: end;

@@ -13,10 +13,33 @@
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 26% 17% 17.5% 19.5% 20%;
-        padding: 100px 140px;
+        //padding: 100px 140px;
+        padding: 100px scalePixelsAsPercentage(140, 1440);
         justify-items: start;
         box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
         margin-bottom: 1px;
+
+        @media screen and (max-width: 1300px) {
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: 31% 22% 22.5% 24.5%;
+        }
+        @media screen and (max-width: 1100px) {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: 39% 30% 30.5%;
+            grid-row-gap: 30px;
+        }
+        @media screen and (max-width: 850px) {
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: 55% 45%;
+        }
+        @media screen and (max-width: 600px) {
+            display: grid;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-columns: auto;
+        }
     }
 
     &__some-info {
@@ -90,11 +113,16 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        padding: 23px 140px;
+        //padding: 23px 140px;
+        padding: 23px scalePixelsAsPercentage(140, 1440);
         /* align-content: center; */
         align-items: center;
         justify-content: space-between;
         box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+
+        @media screen and (max-width: 850px) {
+            flex-direction: column;
+        }
     }
 
     &__copyright {
@@ -104,6 +132,11 @@
         font-size: 14px;
         line-height: 17px;
         color: rgba(31, 32, 65, 0.75);
+        text-align: center;
+
+        @media screen and (max-width: 850px) {
+            margin-bottom: 20px;
+        }
     }
 
     @import "./InfoBarMenu/InfoBarMenu.scss";
