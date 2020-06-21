@@ -11,20 +11,23 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 
-//Массив объектов-плагинов, описаных выше.
-//Под 2ой плагин создано n экземпляров, где n == числу корневых pug файлов. Это нужно для того, чтобы при сборке получалось множество 
-//html бандлов под каждую страницу веб-приложения.   
-const glob = require('glob');
+
+let entries = [
+    { pageName: "HeadersAndFooters", pageType: "UIKit" },
+    { pageName: "FormElements", pageType: "UIKit" },
+    { pageName: "ColorsAndType", pageType: "UIKit" },
+    { pageName: "Cards", pageType: "UIKit" },
+    { pageName: "LandingPage", pageType: "WebPages" },
+];
+
 const pluginsOptions = [];
-let pages = glob.sync(__dirname + '/src/pages/*.pug');
-pages.forEach(function (file) {
-    let base = path.basename(file, '.pug');
+entries.forEach(e => {
     pluginsOptions.push(
         new HtmlWebpackPlugin({
-            filename: './' + base + '.html',
-            template: './src/pages/' + base + '.pug',
+            filename: `./${e.pageName}.html`,
+            template: `./src/pages/${e.pageType}/${e.pageName}/${e.pageName}.pug`,
             inject: true,
-            chunks: [base],
+            chunks: [e.pageName],
         })
     )
 });
@@ -36,17 +39,9 @@ pluginsOptions.push(new webpack.ProvidePlugin({
     jQuery: 'jquery'
 }));
 
-let entries = [
-    "HeadersAndFooters",
-    "FormElements",
-    "ColorsAndType",
-    "Cards",
-    "LandingPage",
-];
-
 module.exports = {
-    entry: entries.reduce((obj, curStr) => {
-        obj[curStr] = "./src/pages/" + curStr + ".js";
+    entry: entries.reduce((obj, curEntry) => {
+        obj[curEntry.pageName] = `./src/pages/${curEntry.pageType}/${curEntry.pageName}/${curEntry.pageName}.js`;
         return obj;
     }, {}),
 

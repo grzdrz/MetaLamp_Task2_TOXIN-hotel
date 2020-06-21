@@ -1,0 +1,21 @@
+@import "../../../assets/base.scss";
+@import "../../../assets/fonts/fonts.scss";
+@include setFonts("../../../");
+
+@import "../../../components/GlobalLogo/GlobalLogo.scss";
+@import "../../../components/ColorsAndType/ColorAndFontBlocks.scss";
+@import "../../../components/ColorsAndType/ColorsAndFonts.scss";
+
+.colors-and-type {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 30px;
+    &__global-logo-container {
+        margin-left: 30px;
+        margin-bottom: 67px;
+    }
+}
+

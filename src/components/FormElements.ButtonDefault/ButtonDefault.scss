@@ -135,4 +135,13 @@ $borderThickness: 2px;
     &_with-height_44px {
         height: 44px;
     }
+
+    &__font {
+        &_purple {
+            color: #bc9cff;
+        }
+        &_white {
+            color: white;
+        }
+    }
 }

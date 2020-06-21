@@ -36,42 +36,6 @@
 }
 
 @charset "UTF-8";
-@font-face {
-  font-family: "Montserrat";
-  src: url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.woff), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.eot), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.ttf), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg);
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Montserrat";
-  src: url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.woff), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.woff2), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.eot), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.ttf), url(src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg);
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Quicksand";
-  src: url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.woff), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.woff2), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.eot), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.ttf), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg);
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Quicksand";
-  src: url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.woff), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.woff2), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.eot), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.ttf), url(src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg);
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: "OpenSans";
-  src: url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.eot), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.ttf), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg);
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "OpenSans";
-  src: url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.woff), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.eot), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.ttf), url(src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg);
-  font-weight: bold;
-  font-style: normal; }
-
 * {
   margin: 0px;
   padding: 0px;
@@ -82,6 +46,42 @@ html,
 body {
   min-width: 100%;
   display: flex; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.woff), url(src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2), url(src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.eot), url(src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.ttf), url(src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.woff), url(src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.woff2), url(src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.eot), url(src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.ttf), url(src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.woff), url(src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.woff2), url(src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.eot), url(src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.ttf), url(src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.woff), url(src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.woff2), url(src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.eot), url(src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.ttf), url(src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff), url(src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2), url(src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.eot), url(src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.ttf), url(src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.woff), url(src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2), url(src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.eot), url(src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.ttf), url(src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg);
+  font-weight: bold;
+  font-style: normal; }
 
 .globalLogo {
   height: 48px; }
@@ -183,6 +183,10 @@ body {
     height: 34px; }
   .button-default_with-height_44px {
     height: 44px; }
+  .button-default__font_purple {
+    color: #bc9cff; }
+  .button-default__font_white {
+    color: white; }
 
 .standard-navigation-bar {
   width: 100%;
@@ -636,90 +640,6 @@ body {
     line-height: 24px;
     text-align: center;
     color: rgba(31, 32, 65, 0.75); }
-
-.colors__background_purpleToBlueGrad {
-  background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
-
-.colors__background_purple {
-  background: #bc9cff; }
-
-.colors__background_green {
-  background: #6fcf97; }
-
-.colors__background_darkShade5 {
-  background: rgba(31, 32, 65, 0.05); }
-
-.colors__background_darkShade25 {
-  background: rgba(31, 32, 65, 0.25); }
-
-.colors__background_darkShade50 {
-  background: rgba(31, 32, 65, 0.5); }
-
-.colors__background_darkShade75 {
-  background: rgba(31, 32, 65, 0.75); }
-
-.colors__background_darkShade100 {
-  background: #1f2041; }
-
-.colors__font_purple {
-  color: #bc9cff; }
-
-.colors__font_green {
-  color: #6fcf97; }
-
-.colors__font_darkShade5 {
-  color: rgba(31, 32, 65, 0.05); }
-
-.colors__font_darkShade25 {
-  color: rgba(31, 32, 65, 0.25); }
-
-.colors__font_darkShade50 {
-  color: rgba(31, 32, 65, 0.5); }
-
-.colors__font_darkShade75 {
-  color: rgba(31, 32, 65, 0.75); }
-
-.colors__font_darkShade100 {
-  color: #1f2041; }
-
-.colors__font_white {
-  color: white; }
-
-.fonts__family_montserratRegular {
-  font-family: MontserratRegular; }
-
-.fonts__family_quicksandRegular {
-  font-family: OpenSansRegular; }
-
-.fonts__family_montserratBold {
-  font-family: MontserratBold; }
-
-.fonts__family_quicksandBold {
-  font-family: OpenSansBold; }
-
-.fonts__size_24 {
-  font-size: 24px; }
-
-.fonts__size_19 {
-  font-size: 19px; }
-
-.fonts__size_14 {
-  font-size: 14px; }
-
-.fonts__size_12 {
-  font-size: 12px; }
-
-.fonts__lineHeight_30 {
-  line-height: 30px; }
-
-.fonts__lineHeight_24 {
-  line-height: 24px; }
-
-.fonts__lineHeight_15 {
-  line-height: 15px; }
-
-.fonts_uppercase {
-  text-transform: uppercase; }
 
 .headersAndFooters {
   min-width: 100%;

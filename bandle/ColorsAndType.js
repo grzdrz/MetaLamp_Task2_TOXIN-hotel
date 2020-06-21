@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/ColorsAndType.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/UIKit/ColorsAndType/ColorsAndType.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/ColorsAndType.scss":
-/*!*************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/ColorsAndType.scss ***!
-  \*************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/UIKit/ColorsAndType/ColorsAndType.scss":
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/UIKit/ColorsAndType/ColorsAndType.scss ***!
+  \*********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/ColorsAndType.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/UIKit/ColorsAndType/ColorsAndType.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -109,26 +109,26 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
-/***/ "./src/pages/ColorsAndType.js":
-/*!************************************!*\
-  !*** ./src/pages/ColorsAndType.js ***!
-  \************************************/
+/***/ "./src/pages/UIKit/ColorsAndType/ColorsAndType.js":
+/*!********************************************************!*\
+  !*** ./src/pages/UIKit/ColorsAndType/ColorsAndType.js ***!
+  \********************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ColorsAndType_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ColorsAndType.scss */ \"./src/pages/ColorsAndType.scss\");\n/* harmony import */ var _ColorsAndType_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ColorsAndType_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/pages/ColorsAndType.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ColorsAndType_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ColorsAndType.scss */ \"./src/pages/UIKit/ColorsAndType/ColorsAndType.scss\");\n/* harmony import */ var _ColorsAndType_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ColorsAndType_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/pages/UIKit/ColorsAndType/ColorsAndType.js?");
 
 /***/ }),
 
-/***/ "./src/pages/ColorsAndType.scss":
-/*!**************************************!*\
-  !*** ./src/pages/ColorsAndType.scss ***!
-  \**************************************/
+/***/ "./src/pages/UIKit/ColorsAndType/ColorsAndType.scss":
+/*!**********************************************************!*\
+  !*** ./src/pages/UIKit/ColorsAndType/ColorsAndType.scss ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./ColorsAndType.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/ColorsAndType.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/ColorsAndType.scss?");
+eval("var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./ColorsAndType.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/UIKit/ColorsAndType/ColorsAndType.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/UIKit/ColorsAndType/ColorsAndType.scss?");
 
 /***/ })
 

@@ -1,0 +1,29 @@
+@import "../../../assets/base.scss";
+@import "../../../assets/fonts/fonts.scss";
+@include setFonts("../../../");
+
+@import "../../../components/GlobalLogo/GlobalLogo.scss";
+@import "../../../components/Cards.AuthorizationForm/AuthorizationForm.scss";
+@import "../../../components/Cards.GuestsAndDateRangeForm/GuestsAndDateRangeForm.scss";
+@import "../../../components/Cards.PriceCalculationForm/PriceCalculationForm.scss";
+@import "../../../components/Cards.RegistrationForm/RegistrationForm.scss";
+@import "../../../components/Cards.RoomInfo/RoomInfo.scss";
+
+.cards {
+    min-width: 100%;
+    background: #e5e5e5;
+
+    & > div:nth-child(n + 2),
+    & > label,
+    & > form {
+        margin-bottom: 20px;
+        margin-left: 141px;
+    }
+
+    padding-bottom: 500px;
+    padding-top: 30px;
+    &__global-logo-container {
+        margin-left: 30px;
+        margin-bottom: 67px;
+    }
+}

@@ -11,12 +11,12 @@ mixin getButton(options)
     
     - if(options.isHollow)
         - classes.container ? classes.container.push("button-default_hollow-button") : classes.container = ["button-default_hollow-button"];
-        - classes.buttonText ? classes.buttonText.push("colors__font_purple") : classes.buttonText = ["colors__font_purple"];
+        - classes.buttonText ? classes.buttonText.push("button-default__font_purple") : classes.buttonText = ["button-default__font_purple"];
     - if(options.hasArrow)
         - if(options.isHollow)
-            - classes.arrow ? classes.arrow.push("colors__font_purple") : classes.arrow = ["colors__font_purple"];
+            - classes.arrow ? classes.arrow.push("button-default__font_purple") : classes.arrow = ["button-default__font_purple"];
         - else
-            - classes.arrow ? classes.arrow.push("colors__font_white") : classes.arrow = ["colors__font_white"];
+            - classes.arrow ? classes.arrow.push("button-default__font_white") : classes.arrow = ["button-default__font_white"];
 
     - if(options.width)
         - let className1 = "button-default_with-width_" + options.width;

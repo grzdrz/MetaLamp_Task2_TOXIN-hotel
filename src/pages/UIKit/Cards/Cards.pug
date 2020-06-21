@@ -1,0 +1,79 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Cards
+        meta(name="viewport" content="width=device-width")          
+    body
+        div(class=["cards"])
+            div(class=["cards__global-logo-container"])
+                include ../../../components/GlobalLogo/GlobalLogo.pug
+
+            include ../../../components/Cards.AuthorizationForm/AuthorizationForm.pug
+            +getAuthorizationForm({
+                titleText: "Войти",
+            })
+
+            include ../../../components/Cards.GuestsAndDateRangeForm/GuestsAndDateRangeForm.pug
+            +getGuestsAndDateRangeForm({
+                titleText: "Найдём номера под ваши пожелания",
+            })
+
+            include ../../../components/Cards.PriceCalculationForm/PriceCalculationForm.pug
+            +getPriceCalculationForm({
+
+            })
+
+            include ../../../components/Cards.RegistrationForm/RegistrationForm.pug
+            +getRegistrationForm({
+                titleText: "Регистрация аккаунта",
+            })
+
+
+            include ../../../components/Cards.RoomInfo/RoomInfo.pug
+            +getRoomInfo({
+                blockNumber: 1,
+                photos: ["test11", "test22", "test33", "test44"],
+                roomInfoTitleOptions: {
+                    inRoomInfoBlock: true,
+                    roomNumber: 888,
+                    roomStatus: "люкс",
+                    roomPrice: "9 990₽",
+                    periodOfTime: "сутки",
+                },
+                reviewsCount: 145,
+                reviewsCountText: "Отзывов",
+                numberOfCheckedStar: 1,
+                url: "#",
+            })
+            +getRoomInfo({
+                blockNumber: 2,
+                photos: ["test11", "test22"],
+                roomInfoTitleOptions: {
+                    inRoomInfoBlock: true,
+                    roomNumber: 840,
+                    roomStatus: "",
+                    roomPrice: "9 990₽",
+                    periodOfTime: "сутки",
+                },
+                reviewsCount: 65,
+                reviewsCountText: "Отзывов",
+                numberOfCheckedStar: 5,
+                url: "#",
+            }) 
+            +getRoomInfo({
+                blockNumber: 3,
+                photos: ["test11"],
+                roomInfoTitleOptions: {
+                    inRoomInfoBlock: true,
+                    roomNumber: 841,
+                    roomStatus: "",
+                    roomPrice: "9 990₽",
+                    periodOfTime: "сутки",
+                },
+                reviewsCount: 1488,
+                reviewsCountText: "Отзывов",
+                numberOfCheckedStar: 3,
+                url: "#",
+            })                          
+

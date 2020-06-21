@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/HeadersAndFooters.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/UIKit/HeadersAndFooters/HeadersAndFooters.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -108,14 +108,14 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./node
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/HeadersAndFooters.scss":
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/HeadersAndFooters.scss ***!
-  \*****************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/UIKit/HeadersAndFooters/HeadersAndFooters.scss":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/UIKit/HeadersAndFooters/HeadersAndFooters.scss ***!
+  \*****************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/HeadersAndFooters.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/UIKit/HeadersAndFooters/HeadersAndFooters.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -138,7 +138,79 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./components/Cards.RoomInfo/img/test1.png\": \"./src/components/Cards.RoomInfo/img/test1.png\",\n\t\"./components/Cards.RoomInfo/img/test11.png\": \"./src/components/Cards.RoomInfo/img/test11.png\",\n\t\"./components/Cards.RoomInfo/img/test2.png\": \"./src/components/Cards.RoomInfo/img/test2.png\",\n\t\"./components/Cards.RoomInfo/img/test22.png\": \"./src/components/Cards.RoomInfo/img/test22.png\",\n\t\"./components/Cards.RoomInfo/img/test3.png\": \"./src/components/Cards.RoomInfo/img/test3.png\",\n\t\"./components/Cards.RoomInfo/img/test33.png\": \"./src/components/Cards.RoomInfo/img/test33.png\",\n\t\"./components/Cards.RoomInfo/img/test4.png\": \"./src/components/Cards.RoomInfo/img/test4.png\",\n\t\"./components/Cards.RoomInfo/img/test44.png\": \"./src/components/Cards.RoomInfo/img/test44.png\",\n\t\"./components/FormElements.CheckboxList/img/checkMark.svg\": \"./src/components/FormElements.CheckboxList/img/checkMark.svg\",\n\t\"./components/FormElements.GuestRoomReviews/img/image1.png\": \"./src/components/FormElements.GuestRoomReviews/img/image1.png\",\n\t\"./components/FormElements.GuestRoomReviews/img/image2.png\": \"./src/components/FormElements.GuestRoomReviews/img/image2.png\",\n\t\"./components/GlobalLogo/img/logo.svg\": \"./src/components/GlobalLogo/img/logo.svg\",\n\t\"./components/HeadersAndFooters.LogoColored/img/TOXIN.svg\": \"./src/components/HeadersAndFooters.LogoColored/img/TOXIN.svg\",\n\t\"./components/HeadersAndFooters.LogoColored/img/logoColored.svg\": \"./src/components/HeadersAndFooters.LogoColored/img/logoColored.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/instagramIcon2.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon2.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\",\n\t\"./fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg\": \"./src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg\",\n\t\"./fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg\": \"./src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg\",\n\t\"./fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg\": \"./src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg\",\n\t\"./fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg\": \"./src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg\",\n\t\"./fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg\": \"./src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg\",\n\t\"./fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg\": \"./src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg\",\n\t\"./pages/img/LandingPageBackgroundImg.png\": \"./src/pages/img/LandingPageBackgroundImg.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg)$?");
+eval("var map = {\n\t\"./assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg\": \"./src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg\": \"./src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg\": \"./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg\",\n\t\"./components/Cards.RoomInfo/img/test1.png\": \"./src/components/Cards.RoomInfo/img/test1.png\",\n\t\"./components/Cards.RoomInfo/img/test11.png\": \"./src/components/Cards.RoomInfo/img/test11.png\",\n\t\"./components/Cards.RoomInfo/img/test2.png\": \"./src/components/Cards.RoomInfo/img/test2.png\",\n\t\"./components/Cards.RoomInfo/img/test22.png\": \"./src/components/Cards.RoomInfo/img/test22.png\",\n\t\"./components/Cards.RoomInfo/img/test3.png\": \"./src/components/Cards.RoomInfo/img/test3.png\",\n\t\"./components/Cards.RoomInfo/img/test33.png\": \"./src/components/Cards.RoomInfo/img/test33.png\",\n\t\"./components/Cards.RoomInfo/img/test4.png\": \"./src/components/Cards.RoomInfo/img/test4.png\",\n\t\"./components/Cards.RoomInfo/img/test44.png\": \"./src/components/Cards.RoomInfo/img/test44.png\",\n\t\"./components/FormElements.CheckboxList/img/checkMark.svg\": \"./src/components/FormElements.CheckboxList/img/checkMark.svg\",\n\t\"./components/FormElements.GuestRoomReviews/img/image1.png\": \"./src/components/FormElements.GuestRoomReviews/img/image1.png\",\n\t\"./components/FormElements.GuestRoomReviews/img/image2.png\": \"./src/components/FormElements.GuestRoomReviews/img/image2.png\",\n\t\"./components/GlobalLogo/img/logo.svg\": \"./src/components/GlobalLogo/img/logo.svg\",\n\t\"./components/HeadersAndFooters.LogoColored/img/TOXIN.svg\": \"./src/components/HeadersAndFooters.LogoColored/img/TOXIN.svg\",\n\t\"./components/HeadersAndFooters.LogoColored/img/logoColored.svg\": \"./src/components/HeadersAndFooters.LogoColored/img/logoColored.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/instagramIcon2.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon2.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\",\n\t\"./pages/WebPages/LandingPage/img/backgroundImage.png\": \"./src/pages/WebPages/LandingPage/img/backgroundImage.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg)$?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg":
+/*!*************************************************************************************************************!*\
+  !*** ./src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg ***!
+  \*************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg":
+/*!*****************************************************************************************************************!*\
+  !*** ./src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg ***!
+  \*****************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg":
+/*!**************************************************************************************************************************!*\
+  !*** ./src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg ***!
+  \**************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg":
+/*!******************************************************************************************************************************!*\
+  !*** ./src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg ***!
+  \******************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg":
+/*!*************************************************************************************!*\
+  !*** ./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg ***!
+  \*************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg":
+/*!*****************************************************************************************!*\
+  !*** ./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg?");
 
 /***/ }),
 
@@ -358,110 +430,38 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg":
-/*!******************************************************************************************************!*\
-  !*** ./src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg ***!
-  \******************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg\");\n\n//# sourceURL=webpack:///./src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg?");
-
-/***/ }),
-
-/***/ "./src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg":
-/*!**********************************************************************************************************!*\
-  !*** ./src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg ***!
-  \**********************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg\");\n\n//# sourceURL=webpack:///./src/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg?");
-
-/***/ }),
-
-/***/ "./src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg":
-/*!*******************************************************************************************************************!*\
-  !*** ./src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg ***!
-  \*******************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg\");\n\n//# sourceURL=webpack:///./src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg?");
-
-/***/ }),
-
-/***/ "./src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg":
-/*!***********************************************************************************************************************!*\
-  !*** ./src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg ***!
-  \***********************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg\");\n\n//# sourceURL=webpack:///./src/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg?");
-
-/***/ }),
-
-/***/ "./src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg":
-/*!******************************************************************************!*\
-  !*** ./src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg ***!
-  \******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg\");\n\n//# sourceURL=webpack:///./src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg?");
-
-/***/ }),
-
-/***/ "./src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg":
-/*!**********************************************************************************!*\
-  !*** ./src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg ***!
-  \**********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg\");\n\n//# sourceURL=webpack:///./src/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg?");
-
-/***/ }),
-
-/***/ "./src/pages/HeadersAndFooters.js":
-/*!****************************************!*\
-  !*** ./src/pages/HeadersAndFooters.js ***!
-  \****************************************/
+/***/ "./src/pages/UIKit/HeadersAndFooters/HeadersAndFooters.js":
+/*!****************************************************************!*\
+  !*** ./src/pages/UIKit/HeadersAndFooters/HeadersAndFooters.js ***!
+  \****************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _HeadersAndFooters_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeadersAndFooters.scss */ \"./src/pages/HeadersAndFooters.scss\");\n/* harmony import */ var _HeadersAndFooters_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_HeadersAndFooters_scss__WEBPACK_IMPORTED_MODULE_1__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/pages/HeadersAndFooters.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _HeadersAndFooters_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeadersAndFooters.scss */ \"./src/pages/UIKit/HeadersAndFooters/HeadersAndFooters.scss\");\n/* harmony import */ var _HeadersAndFooters_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_HeadersAndFooters_scss__WEBPACK_IMPORTED_MODULE_1__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/pages/UIKit/HeadersAndFooters/HeadersAndFooters.js?");
 
 /***/ }),
 
-/***/ "./src/pages/HeadersAndFooters.scss":
-/*!******************************************!*\
-  !*** ./src/pages/HeadersAndFooters.scss ***!
-  \******************************************/
+/***/ "./src/pages/UIKit/HeadersAndFooters/HeadersAndFooters.scss":
+/*!******************************************************************!*\
+  !*** ./src/pages/UIKit/HeadersAndFooters/HeadersAndFooters.scss ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./HeadersAndFooters.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/HeadersAndFooters.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/HeadersAndFooters.scss?");
+eval("var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./HeadersAndFooters.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/UIKit/HeadersAndFooters/HeadersAndFooters.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/UIKit/HeadersAndFooters/HeadersAndFooters.scss?");
 
 /***/ }),
 
-/***/ "./src/pages/img/LandingPageBackgroundImg.png":
-/*!****************************************************!*\
-  !*** ./src/pages/img/LandingPageBackgroundImg.png ***!
-  \****************************************************/
+/***/ "./src/pages/WebPages/LandingPage/img/backgroundImage.png":
+/*!****************************************************************!*\
+  !*** ./src/pages/WebPages/LandingPage/img/backgroundImage.png ***!
+  \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/img/LandingPageBackgroundImg.png\");\n\n//# sourceURL=webpack:///./src/pages/img/LandingPageBackgroundImg.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/WebPages/LandingPage/img/backgroundImage.png\");\n\n//# sourceURL=webpack:///./src/pages/WebPages/LandingPage/img/backgroundImage.png?");
 
 /***/ })
 
