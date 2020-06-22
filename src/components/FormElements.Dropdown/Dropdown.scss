@@ -53,7 +53,7 @@
     &__input {
         cursor: pointer;
 
-        padding: 0px 100px 0px 15px;
+        padding: 0px 15px 0px 15px;
         height: 44px;
         outline: none;
 
@@ -240,5 +240,9 @@
         line-height: 15px;
         text-transform: uppercase;
         color: rgba(31, 32, 65, 0.5);
+    }
+
+    &_width_266px {
+        width: 266px;
     }
 }

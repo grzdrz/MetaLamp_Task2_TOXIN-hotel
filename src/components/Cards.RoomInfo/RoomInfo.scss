@@ -2,7 +2,7 @@
 @import "../FormElements.RateButton/RateButton.scss";
 
 .room-info {
-    width: 271px;
+    width: 270px;
     //height: 258px;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
 
     position: relative;
     &__ref {
-        width: 271px;
+        width: 270px;
         height: 55px;
         opacity: 0;
         margin-bottom: 52px;
@@ -26,13 +26,14 @@
         position: relative;
         display: flex;
         align-items: center;
-        width: 271px;
-        height: 152px;
+        width: 270px;
+        height: 151px;
 
         z-index: 2;
     }
 
     &__photo {
+        width: 100%;
         position: absolute;
         z-index: 1;
         opacity: 0;
@@ -47,8 +48,8 @@
         display: flex;
         justify-content: space-between;
 
-        width: 271px;
-        height: 152px;
+        width: 270px;
+        height: 151px;
     }
 
     &__arrow-back {
@@ -57,7 +58,7 @@
         justify-content: center;
         align-items: center;
         min-width: 44px;
-        height: 152px;
+        height: 151px;
         background: transparent;
         outline: transparent;
 
@@ -82,7 +83,7 @@
         justify-content: center;
         align-items: center;
         min-width: 44px;
-        height: 152px;
+        height: 151px;
         background: transparent;
         outline: transparent;
 

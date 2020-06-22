@@ -2,17 +2,11 @@
   display: flex;
   flex-direction: row;
 
-  /*  &_single {
-    .date-input__datepicker-label {
-      width: 266px;
-    }
-  } */
-
   &__input-container {
     display: flex;
     flex-direction: column;
 
-    &:first-child {
+    &_first {
       margin-right: 20px;
     }
   }
@@ -34,7 +28,7 @@
 
     display: grid;
     grid-template-columns: auto 44px;
-    grid-template-rows: 44px;
+    grid-template-rows: 42px;
 
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;

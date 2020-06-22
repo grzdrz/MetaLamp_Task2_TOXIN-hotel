@@ -31,5 +31,7 @@ mixin getRangeSlider(options)
             input(class=["range-slider__last-input"] 
                 type="hidden" 
                 value= options.lastValue)
+        div(class=["range-slider__subtitle"])
+            p(class=["range-slider__subtitle-text"])= options.subtitleText
 
 

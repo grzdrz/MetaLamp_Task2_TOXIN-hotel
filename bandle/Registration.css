@@ -1153,16 +1153,11 @@ body {
 
 .date-input {
   display: flex;
-  flex-direction: row;
-  /*  &_single {
-    .date-input__datepicker-label {
-      width: 266px;
-    }
-  } */ }
+  flex-direction: row; }
   .date-input__input-container {
     display: flex;
     flex-direction: column; }
-    .date-input__input-container:first-child {
+    .date-input__input-container_first {
       margin-right: 20px; }
   .date-input__title {
     font-family: Montserrat;
@@ -1177,7 +1172,7 @@ body {
     cursor: pointer;
     display: grid;
     grid-template-columns: auto 44px;
-    grid-template-rows: 44px;
+    grid-template-rows: 42px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;

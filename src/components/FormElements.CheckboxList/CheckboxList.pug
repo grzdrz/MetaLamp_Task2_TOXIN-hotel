@@ -23,12 +23,22 @@ mixin getCheckbox(options)
     -    classes.title ? classes.title.push("checkbox-list__title_expandable") : classes.title = ["checkbox-list__title_expandable"];    
     -    classes.itemLabelText ? classes.itemLabelText.push("checkbox-list__item-label-text") : classes.itemLabelText = ["checkbox-list__itemLabelText"];
     - }
+    - else {
+        - let titleClass = "checkbox-list__title_width-margin-bottom_16px";
+        - classes.title ? classes.title.push(titleClass) : classes.title = [titleClass];
+    - }
     - if(options.hasAdditionalText){  
     -    classes.itemLabelText ? classes.itemLabelText.push("checkbox-list__item-label-text_main") : classes.itemLabelText = ["checkbox-list__item-label-text_main"];
     - }
     - else {
     -    classes.itemLabelText ? classes.itemLabelText.push("checkbox-list__item-label-text_simple") : classes.itemLabelText = ["checkbox-list__item-label-text_simple"]; 
     - }
+
+    - if(options.width){
+        - let titleContainerClass = "checkbox-list_width_" + options.width;
+        - classes.title ? classes.title.push(titleContainerClass) : classes.title = [titleContainerClass];
+    - }
+
 
     div(class=["checkbox-list"].concat(classes.container || []))
         div(class=["checkbox-list__title"].concat(classes.title || []))

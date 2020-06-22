@@ -7,8 +7,10 @@
 mixin getDateInput(options)
     - let classes = {};
 
-    - if(options.isDoubleInput)
+    - if(options.isDoubleInput){
         - classes.container ? classes.container.push("date-input_double") : classes.container = ["date-input_double"];
+        - classes.inputContainer ? classes.inputContainer.push("date-input__input-container_first") : classes.inputContainer = ["date-input__input-container_first"];
+    - }
     - else
         - classes.container ? classes.container.push("date-input_single") : classes.container = ["date-input_single"];        
 
@@ -22,7 +24,7 @@ mixin getDateInput(options)
         - classes.width ? classes.width.push(width) : classes.width = [width];
 
     div(class=["date-input"].concat(classes.container || []))
-        div(class=["date-input__input-container"])
+        div(class=["date-input__input-container"].concat(classes.inputContainer || []))
             p(class=["date-input__title"])= options.firstTitle
             label(class=["date-input__datepicker-label", "date-input__datepicker-label_first"].concat(classes.width || []))
                 input(class=["date-input__datepicker-input", "date-input__datepicker-input_first"] 

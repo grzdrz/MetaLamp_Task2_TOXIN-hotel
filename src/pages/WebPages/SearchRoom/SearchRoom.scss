@@ -28,6 +28,40 @@
         padding: 30px scalePixelsAsPercentage(140, 1440) 70px scalePixelsAsPercentage(140, 1440);
     }
 
+    &__filters {
+        margin-right: scalePixelsAsPercentage(75, 1440);
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+
+    &__date-input-container {
+        margin-bottom: 20px;
+        display: flex;
+        width: max-content;
+    }
+    &__dropdown-1-container,
+    &__range-slider-container {
+        margin-bottom: 30px;
+        display: flex;
+        width: max-content;
+    }
+    &__checkbox-list-1-container {
+        margin-bottom: 31px;
+        display: flex;
+        width: max-content;
+    }
+    &__checkbox-list-2-container {
+        margin-bottom: 30px;
+        display: flex;
+        width: max-content;
+    }
+    &__dropdown-2-container {
+        margin-bottom: 15px;
+        display: flex;
+        width: max-content;
+    }
+
     &__rooms {
         display: flex;
         flex-direction: column;
@@ -36,7 +70,7 @@
         margin-bottom: 21px;
 
         &-text {
-            font-family: Quicksand;
+            font-family: Quicksand, OpenSans;
             font-style: normal;
             font-weight: bold;
             font-size: 24px;

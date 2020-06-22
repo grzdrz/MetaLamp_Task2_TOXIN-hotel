@@ -249,7 +249,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg\": \"./src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg\": \"./src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg\": \"./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg\",\n\t\"./components/Cards.RoomInfo/img/test1.png\": \"./src/components/Cards.RoomInfo/img/test1.png\",\n\t\"./components/Cards.RoomInfo/img/test11.png\": \"./src/components/Cards.RoomInfo/img/test11.png\",\n\t\"./components/Cards.RoomInfo/img/test2.png\": \"./src/components/Cards.RoomInfo/img/test2.png\",\n\t\"./components/Cards.RoomInfo/img/test22.png\": \"./src/components/Cards.RoomInfo/img/test22.png\",\n\t\"./components/Cards.RoomInfo/img/test3.png\": \"./src/components/Cards.RoomInfo/img/test3.png\",\n\t\"./components/Cards.RoomInfo/img/test33.png\": \"./src/components/Cards.RoomInfo/img/test33.png\",\n\t\"./components/Cards.RoomInfo/img/test4.png\": \"./src/components/Cards.RoomInfo/img/test4.png\",\n\t\"./components/Cards.RoomInfo/img/test44.png\": \"./src/components/Cards.RoomInfo/img/test44.png\",\n\t\"./components/FormElements.CheckboxList/img/checkMark.svg\": \"./src/components/FormElements.CheckboxList/img/checkMark.svg\",\n\t\"./components/FormElements.GuestRoomReviews/img/image1.png\": \"./src/components/FormElements.GuestRoomReviews/img/image1.png\",\n\t\"./components/FormElements.GuestRoomReviews/img/image2.png\": \"./src/components/FormElements.GuestRoomReviews/img/image2.png\",\n\t\"./components/GlobalLogo/img/logo.svg\": \"./src/components/GlobalLogo/img/logo.svg\",\n\t\"./components/HeadersAndFooters.LogoColored/img/TOXIN.svg\": \"./src/components/HeadersAndFooters.LogoColored/img/TOXIN.svg\",\n\t\"./components/HeadersAndFooters.LogoColored/img/logoColored.svg\": \"./src/components/HeadersAndFooters.LogoColored/img/logoColored.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/instagramIcon2.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon2.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\",\n\t\"./pages/WebPages/LandingPage/img/backgroundImage.png\": \"./src/pages/WebPages/LandingPage/img/backgroundImage.png\",\n\t\"./pages/WebPages/Registration/img/backgroundImage.png\": \"./src/pages/WebPages/Registration/img/backgroundImage.png\",\n\t\"./pages/WebPages/SignIn/img/backgroundImage.png\": \"./src/pages/WebPages/SignIn/img/backgroundImage.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg)$?");
+eval("var map = {\n\t\"./assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg\": \"./src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg\": \"./src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg\": \"./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg\",\n\t\"./components/Cards.RoomInfo/img/test1.png\": \"./src/components/Cards.RoomInfo/img/test1.png\",\n\t\"./components/Cards.RoomInfo/img/test11.png\": \"./src/components/Cards.RoomInfo/img/test11.png\",\n\t\"./components/Cards.RoomInfo/img/test110.png\": \"./src/components/Cards.RoomInfo/img/test110.png\",\n\t\"./components/Cards.RoomInfo/img/test120.png\": \"./src/components/Cards.RoomInfo/img/test120.png\",\n\t\"./components/Cards.RoomInfo/img/test130.png\": \"./src/components/Cards.RoomInfo/img/test130.png\",\n\t\"./components/Cards.RoomInfo/img/test2.png\": \"./src/components/Cards.RoomInfo/img/test2.png\",\n\t\"./components/Cards.RoomInfo/img/test22.png\": \"./src/components/Cards.RoomInfo/img/test22.png\",\n\t\"./components/Cards.RoomInfo/img/test3.png\": \"./src/components/Cards.RoomInfo/img/test3.png\",\n\t\"./components/Cards.RoomInfo/img/test33.png\": \"./src/components/Cards.RoomInfo/img/test33.png\",\n\t\"./components/Cards.RoomInfo/img/test4.png\": \"./src/components/Cards.RoomInfo/img/test4.png\",\n\t\"./components/Cards.RoomInfo/img/test44.png\": \"./src/components/Cards.RoomInfo/img/test44.png\",\n\t\"./components/Cards.RoomInfo/img/test55.png\": \"./src/components/Cards.RoomInfo/img/test55.png\",\n\t\"./components/Cards.RoomInfo/img/test66.png\": \"./src/components/Cards.RoomInfo/img/test66.png\",\n\t\"./components/Cards.RoomInfo/img/test77.png\": \"./src/components/Cards.RoomInfo/img/test77.png\",\n\t\"./components/Cards.RoomInfo/img/test88.png\": \"./src/components/Cards.RoomInfo/img/test88.png\",\n\t\"./components/Cards.RoomInfo/img/test99.png\": \"./src/components/Cards.RoomInfo/img/test99.png\",\n\t\"./components/FormElements.CheckboxList/img/checkMark.svg\": \"./src/components/FormElements.CheckboxList/img/checkMark.svg\",\n\t\"./components/FormElements.GuestRoomReviews/img/image1.png\": \"./src/components/FormElements.GuestRoomReviews/img/image1.png\",\n\t\"./components/FormElements.GuestRoomReviews/img/image2.png\": \"./src/components/FormElements.GuestRoomReviews/img/image2.png\",\n\t\"./components/GlobalLogo/img/logo.svg\": \"./src/components/GlobalLogo/img/logo.svg\",\n\t\"./components/HeadersAndFooters.LogoColored/img/TOXIN.svg\": \"./src/components/HeadersAndFooters.LogoColored/img/TOXIN.svg\",\n\t\"./components/HeadersAndFooters.LogoColored/img/logoColored.svg\": \"./src/components/HeadersAndFooters.LogoColored/img/logoColored.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/instagramIcon2.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon2.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\",\n\t\"./pages/WebPages/LandingPage/img/backgroundImage.png\": \"./src/pages/WebPages/LandingPage/img/backgroundImage.png\",\n\t\"./pages/WebPages/Registration/img/backgroundImage.png\": \"./src/pages/WebPages/Registration/img/backgroundImage.png\",\n\t\"./pages/WebPages/SignIn/img/backgroundImage.png\": \"./src/pages/WebPages/SignIn/img/backgroundImage.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg)$?");
 
 /***/ }),
 
@@ -361,6 +361,42 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/components/Cards.RoomInfo/img/test110.png":
+/*!*******************************************************!*\
+  !*** ./src/components/Cards.RoomInfo/img/test110.png ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test110.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test110.png?");
+
+/***/ }),
+
+/***/ "./src/components/Cards.RoomInfo/img/test120.png":
+/*!*******************************************************!*\
+  !*** ./src/components/Cards.RoomInfo/img/test120.png ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test120.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test120.png?");
+
+/***/ }),
+
+/***/ "./src/components/Cards.RoomInfo/img/test130.png":
+/*!*******************************************************!*\
+  !*** ./src/components/Cards.RoomInfo/img/test130.png ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test130.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test130.png?");
+
+/***/ }),
+
 /***/ "./src/components/Cards.RoomInfo/img/test2.png":
 /*!*****************************************************!*\
   !*** ./src/components/Cards.RoomInfo/img/test2.png ***!
@@ -430,6 +466,66 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test44.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test44.png?");
+
+/***/ }),
+
+/***/ "./src/components/Cards.RoomInfo/img/test55.png":
+/*!******************************************************!*\
+  !*** ./src/components/Cards.RoomInfo/img/test55.png ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test55.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test55.png?");
+
+/***/ }),
+
+/***/ "./src/components/Cards.RoomInfo/img/test66.png":
+/*!******************************************************!*\
+  !*** ./src/components/Cards.RoomInfo/img/test66.png ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test66.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test66.png?");
+
+/***/ }),
+
+/***/ "./src/components/Cards.RoomInfo/img/test77.png":
+/*!******************************************************!*\
+  !*** ./src/components/Cards.RoomInfo/img/test77.png ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test77.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test77.png?");
+
+/***/ }),
+
+/***/ "./src/components/Cards.RoomInfo/img/test88.png":
+/*!******************************************************!*\
+  !*** ./src/components/Cards.RoomInfo/img/test88.png ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test88.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test88.png?");
+
+/***/ }),
+
+/***/ "./src/components/Cards.RoomInfo/img/test99.png":
+/*!******************************************************!*\
+  !*** ./src/components/Cards.RoomInfo/img/test99.png ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test99.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test99.png?");
 
 /***/ }),
 

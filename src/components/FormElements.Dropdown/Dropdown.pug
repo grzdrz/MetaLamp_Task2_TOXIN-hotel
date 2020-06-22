@@ -19,7 +19,12 @@ mixin getDropdown(options)
     -if(options.withTotalValue)
         - classes.container ? classes.container.push("dropdown__with-total-value") : classes.container = ["dropdown__with-total-value"]; 
     - else
-        - classes.container ? classes.container.push("dropdown__without-total-value") : classes.container = ["dropdown__without-total-value"];     
+        - classes.container ? classes.container.push("dropdown__without-total-value") : classes.container = ["dropdown__without-total-value"];
+
+    - if(options.width){
+        - let widthClass = "dropdown_width_" + options.width;
+        - classes.container ? classes.container.push(widthClass) : classes.container = [widthClass];
+    - }
 
     div(class=["dropdown"].concat(classes.container || []) data-border-radius="" data-cur-sum=0)
         div(class=["dropdown__title"])

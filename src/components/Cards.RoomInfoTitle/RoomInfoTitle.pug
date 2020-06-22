@@ -11,7 +11,7 @@ mixin getRoomInfoTitle(options)
         div(class=["room-info-title__room-number-and-status"])
             p(class=["room-info-title__number-symbol"]) №
             p(class=["room-info-title__room-number"].concat(classes.roomNumber || []))= options.roomNumber
-            p(class=["room-info-title__room-status"])= options.roomStatus
+            p(class=["room-info-title__room-status"])= (options.isLuxury ? "люкс" : "")
         div(class=["room-info-title__room-price-and-period-of-time"].concat(classes.roomPriceAndPeriodOfTime || []))
             p(class=["room-info-title__room-price"])= options.roomPrice
             p(class=["room-info-title__period-of-time"])= "в " + options.periodOfTime

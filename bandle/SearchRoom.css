@@ -1003,7 +1003,7 @@ body {
       border: 1px solid rgba(31, 32, 65, 0.5); }
   .dropdown__input {
     cursor: pointer;
-    padding: 0px 100px 0px 15px;
+    padding: 0px 15px 0px 15px;
     height: 44px;
     outline: none;
     background: transparent;
@@ -1149,6 +1149,8 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
+  .dropdown_width_266px {
+    width: 266px; }
 
 .checkbox-list {
   display: grid;
@@ -1167,6 +1169,8 @@ body {
       cursor: pointer; }
       .checkbox-list__title_expandable p {
         cursor: pointer; }
+    .checkbox-list__title_width-margin-bottom_16px {
+      margin-bottom: 16px; }
     .checkbox-list__title-text {
       font-family: Montserrat;
       font-style: normal;
@@ -1174,9 +1178,7 @@ body {
       font-size: 12px;
       line-height: 15px;
       text-transform: uppercase;
-      color: #1f2041;
-      word-wrap: none;
-      margin-right: 31px; }
+      color: #1f2041; }
   .checkbox-list__dropdown-arrow {
     display: flex;
     justify-content: center;
@@ -1283,6 +1285,8 @@ body {
     height: 20px;
     border-radius: 4px;
     position: absolute; }
+  .checkbox-list_width_266px {
+    width: 266px; }
 
 .rating-radio {
   position: relative;
@@ -1423,7 +1427,10 @@ body {
     text-align: center;
     color: rgba(31, 32, 65, 0.5); }
   .pagination__bottom-text {
+    display: inline-flex;
+    justify-content: center;
     margin-top: 10px;
+    width: 100%;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -1496,19 +1503,23 @@ body {
     background: white;
     border-radius: 50%;
     position: absolute; }
+  .range-slider__subtitle {
+    margin-top: 10px; }
+    .range-slider__subtitle-text {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(31, 32, 65, 0.5); }
 
 .date-input {
   display: flex;
-  flex-direction: row;
-  /*  &_single {
-    .date-input__datepicker-label {
-      width: 266px;
-    }
-  } */ }
+  flex-direction: row; }
   .date-input__input-container {
     display: flex;
     flex-direction: column; }
-    .date-input__input-container:first-child {
+    .date-input__input-container_first {
       margin-right: 20px; }
   .date-input__title {
     font-family: Montserrat;
@@ -1523,7 +1534,7 @@ body {
     cursor: pointer;
     display: grid;
     grid-template-columns: auto 44px;
-    grid-template-rows: 44px;
+    grid-template-rows: 42px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
@@ -1993,7 +2004,7 @@ body {
       margin-left: 96px; }
 
 .room-info {
-  width: 271px;
+  width: 270px;
   display: flex;
   flex-direction: column;
   background: #ffffff;
@@ -2020,7 +2031,7 @@ body {
         position: relative;
     } */ }
   .room-info__ref {
-    width: 271px;
+    width: 270px;
     height: 55px;
     opacity: 0;
     margin-bottom: 52px;
@@ -2031,10 +2042,11 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    width: 271px;
-    height: 152px;
+    width: 270px;
+    height: 151px;
     z-index: 2; }
   .room-info__photo {
+    width: 100%;
     position: absolute;
     z-index: 1;
     opacity: 0;
@@ -2044,15 +2056,15 @@ body {
     z-index: 3;
     display: flex;
     justify-content: space-between;
-    width: 271px;
-    height: 152px; }
+    width: 270px;
+    height: 151px; }
   .room-info__arrow-back {
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 44px;
-    height: 152px;
+    height: 151px;
     background: transparent;
     outline: transparent;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%); }
@@ -2071,7 +2083,7 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 44px;
-    height: 152px;
+    height: 151px;
     background: transparent;
     outline: transparent;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
@@ -2458,13 +2470,38 @@ body {
     display: flex;
     flex-direction: row;
     padding: 30px 9.72222% 70px 9.72222%; }
+  .search-room__filters {
+    margin-right: 5.20833%;
+    display: flex;
+    flex-direction: column;
+    width: max-content; }
+  .search-room__date-input-container {
+    margin-bottom: 20px;
+    display: flex;
+    width: max-content; }
+  .search-room__dropdown-1-container, .search-room__range-slider-container {
+    margin-bottom: 30px;
+    display: flex;
+    width: max-content; }
+  .search-room__checkbox-list-1-container {
+    margin-bottom: 31px;
+    display: flex;
+    width: max-content; }
+  .search-room__checkbox-list-2-container {
+    margin-bottom: 30px;
+    display: flex;
+    width: max-content; }
+  .search-room__dropdown-2-container {
+    margin-bottom: 15px;
+    display: flex;
+    width: max-content; }
   .search-room__rooms {
     display: flex;
     flex-direction: column; }
   .search-room__rooms-title {
     margin-bottom: 21px; }
     .search-room__rooms-title-text {
-      font-family: Quicksand;
+      font-family: Quicksand, OpenSans;
       font-style: normal;
       font-weight: bold;
       font-size: 24px;

@@ -839,7 +839,7 @@ body {
       border: 1px solid rgba(31, 32, 65, 0.5); }
   .dropdown__input {
     cursor: pointer;
-    padding: 0px 100px 0px 15px;
+    padding: 0px 15px 0px 15px;
     height: 44px;
     outline: none;
     background: transparent;
@@ -985,6 +985,8 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
+  .dropdown_width_266px {
+    width: 266px; }
 
 .checkbox-list {
   display: grid;
@@ -1003,6 +1005,8 @@ body {
       cursor: pointer; }
       .checkbox-list__title_expandable p {
         cursor: pointer; }
+    .checkbox-list__title_width-margin-bottom_16px {
+      margin-bottom: 16px; }
     .checkbox-list__title-text {
       font-family: Montserrat;
       font-style: normal;
@@ -1010,9 +1014,7 @@ body {
       font-size: 12px;
       line-height: 15px;
       text-transform: uppercase;
-      color: #1f2041;
-      word-wrap: none;
-      margin-right: 31px; }
+      color: #1f2041; }
   .checkbox-list__dropdown-arrow {
     display: flex;
     justify-content: center;
@@ -1119,6 +1121,8 @@ body {
     height: 20px;
     border-radius: 4px;
     position: absolute; }
+  .checkbox-list_width_266px {
+    width: 266px; }
 
 .radio-button {
   width: max-content; }
@@ -1449,7 +1453,10 @@ body {
     text-align: center;
     color: rgba(31, 32, 65, 0.5); }
   .pagination__bottom-text {
+    display: inline-flex;
+    justify-content: center;
     margin-top: 10px;
+    width: 100%;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -1522,6 +1529,15 @@ body {
     background: white;
     border-radius: 50%;
     position: absolute; }
+  .range-slider__subtitle {
+    margin-top: 10px; }
+    .range-slider__subtitle-text {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(31, 32, 65, 0.5); }
 
 .bullet-list {
   display: flex;
@@ -1564,16 +1580,11 @@ body {
 
 .date-input {
   display: flex;
-  flex-direction: row;
-  /*  &_single {
-    .date-input__datepicker-label {
-      width: 266px;
-    }
-  } */ }
+  flex-direction: row; }
   .date-input__input-container {
     display: flex;
     flex-direction: column; }
-    .date-input__input-container:first-child {
+    .date-input__input-container_first {
       margin-right: 20px; }
   .date-input__title {
     font-family: Montserrat;
@@ -1588,7 +1599,7 @@ body {
     cursor: pointer;
     display: grid;
     grid-template-columns: auto 44px;
-    grid-template-rows: 44px;
+    grid-template-rows: 42px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;

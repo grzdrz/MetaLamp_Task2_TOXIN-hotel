@@ -15,6 +15,9 @@
                 cursor: pointer;
             }
         }
+        &_width-margin-bottom_16px{
+            margin-bottom: 16px;
+        }
 
         display: flex;
         flex-direction: row;
@@ -30,8 +33,6 @@
             line-height: 15px;
             text-transform: uppercase;
             color: #1f2041;
-            word-wrap: none;
-            margin-right: 31px;
         }
     }
 
@@ -184,5 +185,9 @@
         height: $checkboxSize;
         border-radius: 4px;
         position: absolute;
+    }
+
+    &_width_266px {
+        width: 266px;
     }
 }

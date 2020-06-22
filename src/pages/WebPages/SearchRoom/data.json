@@ -1,0 +1,199 @@
+{
+    "roomsInfo": [
+        {
+            "blockNumber": "0",
+            "photos": [
+                "test11",
+                "test22",
+                "test33",
+                "test44"
+            ],
+            "roomInfoTitleOptions": {
+                "inRoomInfoBlock": true,
+                "roomNumber": 888,
+                "isLuxury": true,
+                "roomPrice": "9 990₽",
+                "periodOfTime": "сутки"
+            },
+            "reviewsCount": "145",
+            "numberOfCheckedStar": 5,
+            "url": "#"
+        },
+        {
+            "blockNumber": "1",
+            "photos": [
+                "test22"
+            ],
+            "roomInfoTitleOptions": {
+                "inRoomInfoBlock": true,
+                "roomNumber": 840,
+                "isLuxury": false,
+                "roomPrice": "9 990₽",
+                "periodOfTime": "сутки"
+            },
+            "reviewsCount": "65",
+            "numberOfCheckedStar": 4,
+            "url": "#"
+        },
+        {
+            "blockNumber": "2",
+            "photos": [
+                "test33"
+            ],
+            "roomInfoTitleOptions": {
+                "inRoomInfoBlock": true,
+                "roomNumber": 980,
+                "isLuxury": true,
+                "roomPrice": "8 500₽",
+                "periodOfTime": "сутки"
+            },
+            "reviewsCount": "35",
+            "numberOfCheckedStar": 3,
+            "url": "#"
+        },
+        {
+            "blockNumber": "3",
+            "photos": [
+                "test44"
+            ],
+            "roomInfoTitleOptions": {
+                "inRoomInfoBlock": true,
+                "roomNumber": 856,
+                "isLuxury": false,
+                "roomPrice": "7 300₽",
+                "periodOfTime": "сутки"
+            },
+            "reviewsCount": "19",
+            "numberOfCheckedStar": 5,
+            "url": "#"
+        },
+        {
+            "blockNumber": "4",
+            "photos": [
+                "test55"
+            ],
+            "roomInfoTitleOptions": {
+                "inRoomInfoBlock": true,
+                "roomNumber": 740,
+                "isLuxury": false,
+                "roomPrice": "6 000₽",
+                "periodOfTime": "сутки"
+            },
+            "reviewsCount": "44",
+            "numberOfCheckedStar": 4,
+            "url": "#"
+        },
+        {
+            "blockNumber": "5",
+            "photos": [
+                "test66"
+            ],
+            "roomInfoTitleOptions": {
+                "inRoomInfoBlock": true,
+                "roomNumber": 982,
+                "isLuxury": false,
+                "roomPrice": "5 800₽",
+                "periodOfTime": "сутки"
+            },
+            "reviewsCount": "56",
+            "numberOfCheckedStar": 3,
+            "url": "#"
+        },
+        {
+            "blockNumber": "6",
+            "photos": [
+                "test77"
+            ],
+            "roomInfoTitleOptions": {
+                "inRoomInfoBlock": true,
+                "roomNumber": 678,
+                "isLuxury": false,
+                "roomPrice": "5 500₽",
+                "periodOfTime": "сутки"
+            },
+            "reviewsCount": "45",
+            "numberOfCheckedStar": 5,
+            "url": "#"
+        },
+        {
+            "blockNumber": "7",
+            "photos": [
+                "test88"
+            ],
+            "roomInfoTitleOptions": {
+                "inRoomInfoBlock": true,
+                "roomNumber": 450,
+                "isLuxury": false,
+                "roomPrice": "5 300₽",
+                "periodOfTime": "сутки"
+            },
+            "reviewsCount": "39",
+            "numberOfCheckedStar": 4,
+            "url": "#"
+        },
+        {
+            "blockNumber": "8",
+            "photos": [
+                "test99"
+            ],
+            "roomInfoTitleOptions": {
+                "inRoomInfoBlock": true,
+                "roomNumber": 350,
+                "isLuxury": false,
+                "roomPrice": "5 000₽",
+                "periodOfTime": "сутки"
+            },
+            "reviewsCount": "77",
+            "numberOfCheckedStar": 3,
+            "url": "#"
+        },
+        {
+            "blockNumber": "9",
+            "photos": [
+                "test110"
+            ],
+            "roomInfoTitleOptions": {
+                "inRoomInfoBlock": true,
+                "roomNumber": 666,
+                "isLuxury": false,
+                "roomPrice": "5 000₽",
+                "periodOfTime": "сутки"
+            },
+            "reviewsCount": "25",
+            "numberOfCheckedStar": 5,
+            "url": "#"
+        },
+        {
+            "blockNumber": "10",
+            "photos": [
+                "test120"
+            ],
+            "roomInfoTitleOptions": {
+                "inRoomInfoBlock": true,
+                "roomNumber": 444,
+                "isLuxury": false,
+                "roomPrice": "5 000₽",
+                "periodOfTime": "сутки"
+            },
+            "reviewsCount": "15",
+            "numberOfCheckedStar": 3,
+            "url": "#"
+        },
+        {
+            "blockNumber": "11",
+            "photos": [
+                "test130"
+            ],
+            "roomInfoTitleOptions": {
+                "inRoomInfoBlock": true,
+                "roomNumber": 352,
+                "isLuxury": false,
+                "roomPrice": "5 000₽",
+                "periodOfTime": "сутки"
+            },
+            "reviewsCount": "55",
+            "numberOfCheckedStar": 3,
+            "url": "#"
+        }
+    ]
+}
