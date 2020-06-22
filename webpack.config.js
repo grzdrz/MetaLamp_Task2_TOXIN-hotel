@@ -18,6 +18,7 @@ let entries = [
     { pageName: "ColorsAndType", pageType: "UIKit" },
     { pageName: "Cards", pageType: "UIKit" },
     { pageName: "LandingPage", pageType: "WebPages" },
+    { pageName:"SearchRoom", pageType: "WebPages"},
 ];
 
 const pluginsOptions = [];

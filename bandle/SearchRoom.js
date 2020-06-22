@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/UIKit/FormElements/FormElements.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/WebPages/SearchRoom/SearchRoom.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -196,14 +196,14 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./node
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/UIKit/FormElements/FormElements.scss":
-/*!*******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/UIKit/FormElements/FormElements.scss ***!
-  \*******************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/WebPages/SearchRoom/SearchRoom.scss":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/WebPages/SearchRoom/SearchRoom.scss ***!
+  \******************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/UIKit/FormElements/FormElements.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/WebPages/SearchRoom/SearchRoom.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -322,6 +322,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg?");
+
+/***/ }),
+
+/***/ "./src/components/Cards.RoomInfo/RoomInfo.js":
+/*!***************************************************!*\
+  !*** ./src/components/Cards.RoomInfo/RoomInfo.js ***!
+  \***************************************************/
+/*! exports provided: roomInfoScript */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"roomInfoScript\", function() { return roomInfoScript; });\n/* import { debug } from \"webpack\";\r\n */\r\nfunction roomInfoScript() {\r\n    let roomInfoBlocks = document.querySelectorAll(\".room-info\");\r\n    roomInfoBlocks.forEach(e => {\r\n        let arrows = e.querySelector(\".room-info__arrows\");\r\n        if (arrows) {\r\n            let leftArrow = arrows.querySelector(\".room-info__arrow-back\");\r\n            let rightArrow = arrows.querySelector(\".room-info__arrow-forward\");\r\n\r\n            leftArrow.onclick = OnLeftArrowClick;\r\n            rightArrow.onclick = OnRightArrowClick;\r\n        }\r\n    });\r\n\r\n    function OnLeftArrowClick(event) {\r\n        if (event.currentTarget.disabled) return;\r\n\r\n        let containerElem = event.currentTarget.closest(\".room-info\");\r\n\r\n        let radioButtons = Array.from(containerElem.querySelectorAll(\".room-info__photo-radio-button-input\"));\r\n        let checkedButton = radioButtons.find(e => e.checked);\r\n\r\n        if (!checkedButton.previousElementSibling) return;\r\n\r\n        if (checkedButton.dataset.serialNumber === \"2\") {\r\n            checkedButton.checked = false;\r\n            checkedButton.previousElementSibling.previousElementSibling.checked = true;\r\n        }\r\n        else if (checkedButton.dataset.serialNumber === \"4\") {\r\n            checkedButton.checked = false;\r\n            checkedButton.previousElementSibling.previousElementSibling.checked = true;\r\n        }\r\n        else {\r\n            checkedButton.checked = false;\r\n            checkedButton.previousElementSibling.previousElementSibling.checked = true;\r\n        }\r\n    }\r\n\r\n    function OnRightArrowClick(event) {\r\n        if (event.currentTarget.disabled) return;\r\n\r\n        let containerElem = event.currentTarget.closest(\".room-info\");\r\n\r\n        let radioButtons = Array.from(containerElem.querySelectorAll(\".room-info__photo-radio-button-input\"));\r\n        let checkedButton = radioButtons.find(e => e.checked);\r\n\r\n        if (!checkedButton.nextElementSibling.nextElementSibling.matches(\".room-info__photo-radio-button-input\")) return;\r\n        else if (checkedButton.nextElementSibling.nextElementSibling.disabled) return;\r\n\r\n        if (checkedButton.dataset.serialNumber === \"3\") {\r\n            checkedButton.checked = false;\r\n            checkedButton.nextElementSibling.nextElementSibling.checked = true;\r\n        }\r\n        else if (checkedButton.dataset.serialNumber === \"1\") {\r\n            checkedButton.checked = false;\r\n            checkedButton.nextElementSibling.nextElementSibling.checked = true;\r\n        }\r\n        else {\r\n            checkedButton.checked = false;\r\n            checkedButton.nextElementSibling.nextElementSibling.checked = true;\r\n        }\r\n    }\r\n}\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/RoomInfo.js?");
 
 /***/ }),
 
@@ -612,29 +624,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./src/pages/UIKit/FormElements/FormElements.js":
-/*!******************************************************!*\
-  !*** ./src/pages/UIKit/FormElements/FormElements.js ***!
-  \******************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! air-datepicker/dist/css/datepicker.css */ \"./node_modules/air-datepicker/dist/css/datepicker.css\");\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _components_FormElements_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/FormElements.Dropdown/Dropdown.js */ \"./src/components/FormElements.Dropdown/Dropdown.js\");\n/* harmony import */ var _components_FormElements_CheckboxList_ExpandableCheckboxList_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/FormElements.CheckboxList/ExpandableCheckboxList.js */ \"./src/components/FormElements.CheckboxList/ExpandableCheckboxList.js\");\n/* harmony import */ var _components_FormElements_Pagination_Pagination_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/FormElements.Pagination/Pagination.js */ \"./src/components/FormElements.Pagination/Pagination.js\");\n/* harmony import */ var _components_FormElements_RangeSlider_RangeSlider_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../components/FormElements.RangeSlider/RangeSlider.js */ \"./src/components/FormElements.RangeSlider/RangeSlider.js\");\n/* harmony import */ var _components_FormElements_DateInput_DateInput_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../components/FormElements.DateInput/DateInput.js */ \"./src/components/FormElements.DateInput/DateInput.js\");\n/* harmony import */ var _FormElements_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./FormElements.scss */ \"./src/pages/UIKit/FormElements/FormElements.scss\");\n/* harmony import */ var _FormElements_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_FormElements_scss__WEBPACK_IMPORTED_MODULE_9__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\nconst $ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;\r\nglobal.jQuery = $;\r\nglobal.$ = $;\r\n\r\n\r\n\r\n\r\n\r\n\r\n//dropdown\r\n\r\nObject(_components_FormElements_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_4__[\"dropdownScript\"])();\r\n\r\n//dropdown checkbox\r\n\r\nObject(_components_FormElements_CheckboxList_ExpandableCheckboxList_js__WEBPACK_IMPORTED_MODULE_5__[\"expandableCheckboxListScript\"])();\r\n\r\n\r\n//pagination\r\n\r\nObject(_components_FormElements_Pagination_Pagination_js__WEBPACK_IMPORTED_MODULE_6__[\"paginationScript\"])();\r\n\r\n\r\n//rangeSlider\r\n\r\nObject(_components_FormElements_RangeSlider_RangeSlider_js__WEBPACK_IMPORTED_MODULE_7__[\"rangeSliderScript\"])();\r\n\r\n\r\n\r\nObject(_components_FormElements_DateInput_DateInput_js__WEBPACK_IMPORTED_MODULE_8__[\"dateInputScript\"])();\r\n\r\n\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../node_modules/webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=webpack:///./src/pages/UIKit/FormElements/FormElements.js?");
-
-/***/ }),
-
-/***/ "./src/pages/UIKit/FormElements/FormElements.scss":
-/*!********************************************************!*\
-  !*** ./src/pages/UIKit/FormElements/FormElements.scss ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./FormElements.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/UIKit/FormElements/FormElements.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/UIKit/FormElements/FormElements.scss?");
-
-/***/ }),
-
 /***/ "./src/pages/WebPages/LandingPage/img/backgroundImage.png":
 /*!****************************************************************!*\
   !*** ./src/pages/WebPages/LandingPage/img/backgroundImage.png ***!
@@ -644,6 +633,29 @@ eval("var api = __webpack_require__(/*! ../../../../node_modules/style-loader/di
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/WebPages/LandingPage/img/backgroundImage.png\");\n\n//# sourceURL=webpack:///./src/pages/WebPages/LandingPage/img/backgroundImage.png?");
+
+/***/ }),
+
+/***/ "./src/pages/WebPages/SearchRoom/SearchRoom.js":
+/*!*****************************************************!*\
+  !*** ./src/pages/WebPages/SearchRoom/SearchRoom.js ***!
+  \*****************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! air-datepicker/dist/css/datepicker.css */ \"./node_modules/air-datepicker/dist/css/datepicker.css\");\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _components_FormElements_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/FormElements.Dropdown/Dropdown.js */ \"./src/components/FormElements.Dropdown/Dropdown.js\");\n/* harmony import */ var _components_FormElements_CheckboxList_ExpandableCheckboxList_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/FormElements.CheckboxList/ExpandableCheckboxList.js */ \"./src/components/FormElements.CheckboxList/ExpandableCheckboxList.js\");\n/* harmony import */ var _components_FormElements_Pagination_Pagination_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/FormElements.Pagination/Pagination.js */ \"./src/components/FormElements.Pagination/Pagination.js\");\n/* harmony import */ var _components_FormElements_RangeSlider_RangeSlider_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../components/FormElements.RangeSlider/RangeSlider.js */ \"./src/components/FormElements.RangeSlider/RangeSlider.js\");\n/* harmony import */ var _components_FormElements_DateInput_DateInput_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../components/FormElements.DateInput/DateInput.js */ \"./src/components/FormElements.DateInput/DateInput.js\");\n/* harmony import */ var _components_Cards_RoomInfo_RoomInfo_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../components/Cards.RoomInfo/RoomInfo.js */ \"./src/components/Cards.RoomInfo/RoomInfo.js\");\n/* harmony import */ var _SearchRoom_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./SearchRoom.scss */ \"./src/pages/WebPages/SearchRoom/SearchRoom.scss\");\n/* harmony import */ var _SearchRoom_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_SearchRoom_scss__WEBPACK_IMPORTED_MODULE_10__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\nconst $ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;\r\nglobal.jQuery = $;\r\nglobal.$ = $;\r\n\r\n\r\n\r\n\r\n\r\n\r\n//dropdown\r\n\r\nObject(_components_FormElements_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_4__[\"dropdownScript\"])();\r\n\r\n//dropdown checkbox\r\n\r\nObject(_components_FormElements_CheckboxList_ExpandableCheckboxList_js__WEBPACK_IMPORTED_MODULE_5__[\"expandableCheckboxListScript\"])();\r\n\r\n\r\n//pagination\r\n\r\nObject(_components_FormElements_Pagination_Pagination_js__WEBPACK_IMPORTED_MODULE_6__[\"paginationScript\"])();\r\n\r\n\r\n//rangeSlider\r\n\r\nObject(_components_FormElements_RangeSlider_RangeSlider_js__WEBPACK_IMPORTED_MODULE_7__[\"rangeSliderScript\"])();\r\n\r\n\r\n\r\nObject(_components_FormElements_DateInput_DateInput_js__WEBPACK_IMPORTED_MODULE_8__[\"dateInputScript\"])();\r\n\r\n\r\nObject(_components_Cards_RoomInfo_RoomInfo_js__WEBPACK_IMPORTED_MODULE_9__[\"roomInfoScript\"])();\r\n\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../node_modules/webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=webpack:///./src/pages/WebPages/SearchRoom/SearchRoom.js?");
+
+/***/ }),
+
+/***/ "./src/pages/WebPages/SearchRoom/SearchRoom.scss":
+/*!*******************************************************!*\
+  !*** ./src/pages/WebPages/SearchRoom/SearchRoom.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./SearchRoom.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/WebPages/SearchRoom/SearchRoom.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/WebPages/SearchRoom/SearchRoom.scss?");
 
 /***/ }),
 

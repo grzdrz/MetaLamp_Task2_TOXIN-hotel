@@ -51,9 +51,11 @@ export function paginationScript() {
             else if (selectedPageNumber === "...") return;
             else {
                 event.currentTarget.parentElement.dataset.curPageNumber = Number.parseInt(selectedPageNumber);
+                let title = event.currentTarget.closest(".pagination").querySelector(".pagination__title");
                 event.currentTarget.parentElement.parentElement.innerHTML = getPaginationByPugCode({
                     pagesCount: 20,
                     curPageNumber: Number.parseInt(selectedPageNumber),
+                    titleText: (title ? title.textContent : ""),
                 });
             }
             //переустановка ивентов на обновленный объект пагинации, т.к. элемент был полностью пересоздан.

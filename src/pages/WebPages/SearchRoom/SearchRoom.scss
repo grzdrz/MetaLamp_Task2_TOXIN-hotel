@@ -1,0 +1,66 @@
+@import "../../../assets/base.scss";
+@import "../../../assets/fonts/fonts.scss";
+@include setFonts("../../../");
+
+@import "../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.scss";
+@import "../../../components/FormElements.Dropdown/Dropdown.scss";
+@import "../../../components/FormElements.CheckboxList/CheckboxList.scss";
+@import "../../../components/FormElements.RateButton/RateButton.scss";
+@import "../../../components/FormElements.Pagination/Pagination.scss";
+@import "../../../components/FormElements.RangeSlider/RangeSlider.scss";
+@import "../../../components/FormElements.DateInput/DateInput.scss";
+@import "../../../components/FormElements.RoomDetails/RoomDetails.scss";
+@import "../../../components/Cards.RoomInfo/RoomInfo.scss";
+@import "../../../components/HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.scss";
+
+.search-room {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__header-container {
+        //width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        padding: 30px scalePixelsAsPercentage(140, 1440) 70px scalePixelsAsPercentage(140, 1440);
+    }
+
+    &__rooms {
+        display: flex;
+        flex-direction: column;
+    }
+    &__rooms-title {
+        margin-bottom: 21px;
+
+        &-text {
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            color: #1f2041;
+        }
+    }
+
+    &__rooms-container {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 12px;
+        grid-row-gap: 20px;
+    }
+
+    &__pagination-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 41px;
+    }
+
+    &__footer-container {
+        //width: 100%;
+    }
+}

@@ -1,0 +1,153 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Landing page
+        meta(name="viewport" content="width=device-width")
+    body
+        div(class=["search-room"])
+            div(class=["search-room__header-container"])
+                include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
+                +getStandardNavBar({
+                    isAuthorized: false,
+                })
+
+            include ../../../components/Cards.RoomInfo/RoomInfo.pug
+            div(class=["search-room__content"])
+                div(class=["search-room__filters"])
+                    div(class=["search-room__date-input-container"])
+                        include ../../../components/FormElements.DateInput/DateInput.pug
+                        +getDateInput({
+                            isDoubleInput: false,
+                            isDateRange: true, 
+                            firstTitle: "даты пребывания в отеле",
+                            width: "266px",
+                        })
+
+                    div(class=["search-room__dropdown-1-container"])
+                        include ../../../components/FormElements.Dropdown/Dropdown.pug
+                        +getDropdown({
+                            titleText: "гости",
+                            isTitleTextTestVisible: false,
+                            titleTextTestValue: "",
+                            placeholder: "Сколько гостей",
+                            name: "guests",
+                            type: "text",
+                            value: "Сколько гостей",
+                            dropdownList: [
+                                {name: "взрослые", value: 0},
+                                {name: "дети", value: 0},
+                                {name: "младенцы", value: 0}
+                            ],
+                            withTotalValue: true,
+                        })
+
+                    div(class=["search-room__range-slider-container"])
+                        include ../../../components/FormElements.RangeSlider/RangeSlider.pug
+                        +getRangeSlider({
+                            title: "диапазон цены",
+                            firstValue: 5000,
+                            lastValue: 10000,
+                            minValue: 0,
+                            maxValue: 15000,
+                            valueType: "₽",
+                            valueRound: 100,
+                        })
+
+                    div(class=["search-room__checkbox-list-1-container"])
+                        include ../../../components/FormElements.CheckboxList/CheckboxList.pug
+                        +getCheckbox({
+                            titleText: "Checkbox Buttons",
+                            isExpandable: false, 
+                            hasAdditionalText: false,               
+                            checkboxList: [
+                                {isChecked: false, text: "Можно курить"},
+                                {isChecked: true, text: "Можно с питомцами"},
+                                {isChecked: true, text: "Можно пригласить гостей (до 10 человек)"},
+                            ],
+                        }) 
+
+                    div(class=["search-room__checkbox-list-2-container"])
+                        include ../../../components/FormElements.CheckboxList/CheckboxList.pug
+                        +getCheckbox({
+                            titleText: "доступность",
+                            isExpandable: false,
+                            hasAdditionalText: true,
+                            checkboxList: [
+                                {isChecked: false, text: "Широкий коридор", additionalText: "Ширина коридоров в номере не менее 91 см."},
+                                {isChecked: true, text: "Помощник для инвалидов", additionalText: "На 1 этаже вас встретит специалист и проводит до номера."},
+                            ],
+                        })
+
+                    div(class=["search-room__dropdown-1-container"])
+                        +getDropdown({
+                            titleText: "удобства номера",
+                            isTitleTextTestVisible: false,
+                            titleTextTestValue: "",
+                            placeholder: "Сколько комнат",
+                            name: "rooms",
+                            type: "text",
+                            value: "Сколько комнат",
+                            hasApplyButton: false,
+                            hasClearButton: false,
+                            dropdownList: [
+                                {name: "спальни", value: 0},
+                                {name: "кровати", value: 0},
+                                {name: "ванные комнаты", value: 0}
+                            ],
+                            withTotalValue: false,
+                        })
+
+                    div(class=["search-room__checkbox-list-3-container"])
+                        +getCheckbox({
+                            titleText: "дополнительные удобства",
+                            isExpandable: true,
+                            isOpened: "true",
+                            hasAdditionalText: false,
+                            checkboxList : [
+                                {isChecked: false, text: "Завтрак"},
+                                {isChecked: true, text: "Письменный стол"}, 
+                                {isChecked: true, text: "Стул для кормления"},
+                                {isChecked: true, text: "Кроватка"},
+                                {isChecked: false, text: "Телевизор"},
+                                {isChecked: false, text: "Шампунь"},
+                                {isChecked: false, text: "Телевизор"},
+                                {isChecked: false, text: "Шампунь"}
+                            ],
+                        })
+
+                div(class=["search-room__rooms"])
+                    div(class=["search-room__rooms-title"])
+                        p(class=["search-room__rooms-title-text"])
+                            | Номера, которые мы для вас подобрали
+                    div(class=["search-room__rooms-container"])
+                        - for(let i = 0; i < 12; i++){
+                            div(class=["search-room__room-container", "search-room__room-container_" + i])
+                                +getRoomInfo({
+                                    blockNumber: i,
+                                    photos: ["test11", "test22", "test33", "test44"],
+                                    roomInfoTitleOptions: {
+                                        inRoomInfoBlock: true,
+                                        roomNumber: 888,
+                                        roomStatus: "люкс",
+                                        roomPrice: "9 990₽",
+                                        periodOfTime: "сутки",
+                                    },
+                                    reviewsCount: 145,
+                                    reviewsCountText: "Отзывов",
+                                    numberOfCheckedStar: 1,
+                                    url: "#",
+                                })
+                        - }
+                    div(class=["search-room__pagination-container"])
+                        include ../../../components/FormElements.Pagination/Pagination.pug
+                        +getPagination({
+                            pagesCount: 15,
+                            curPageNumber: 1,
+                            title: "",
+                            bottomText: "1 – 12 из 100+ вариантов аренды",
+                        })
+
+            div(class=["search-room__footer-container"])
+                include ../../../components/HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.pug
+                +getFooterWidgetsAndCopyrightBar()
