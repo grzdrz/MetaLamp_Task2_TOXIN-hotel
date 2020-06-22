@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/WebPages/LandingPage/LandingPage.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/WebPages/Registration/Registration.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -196,14 +196,14 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./node
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/WebPages/LandingPage/LandingPage.scss":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/WebPages/LandingPage/LandingPage.scss ***!
-  \********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/WebPages/Registration/Registration.scss":
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/WebPages/Registration/Registration.scss ***!
+  \**********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/WebPages/LandingPage/LandingPage.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/WebPages/Registration/Registration.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -553,29 +553,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./src/pages/WebPages/LandingPage/LandingPage.js":
-/*!*******************************************************!*\
-  !*** ./src/pages/WebPages/LandingPage/LandingPage.js ***!
-  \*******************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! air-datepicker/dist/css/datepicker.css */ \"./node_modules/air-datepicker/dist/css/datepicker.css\");\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _components_FormElements_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/FormElements.Dropdown/Dropdown.js */ \"./src/components/FormElements.Dropdown/Dropdown.js\");\n/* harmony import */ var _components_FormElements_DateInput_DateInput_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/FormElements.DateInput/DateInput.js */ \"./src/components/FormElements.DateInput/DateInput.js\");\n/* harmony import */ var _LandingPage_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./LandingPage.scss */ \"./src/pages/WebPages/LandingPage/LandingPage.scss\");\n/* harmony import */ var _LandingPage_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_LandingPage_scss__WEBPACK_IMPORTED_MODULE_6__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\nconst $ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;\r\nglobal.jQuery = $;\r\nglobal.$ = $;\r\n\r\n\r\n\r\n\r\n\r\n\r\n//dropdown\r\n\r\nObject(_components_FormElements_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_4__[\"dropdownScript\"])();\r\n\r\n\r\nObject(_components_FormElements_DateInput_DateInput_js__WEBPACK_IMPORTED_MODULE_5__[\"dateInputScript\"])();\r\n\r\n\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../node_modules/webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=webpack:///./src/pages/WebPages/LandingPage/LandingPage.js?");
-
-/***/ }),
-
-/***/ "./src/pages/WebPages/LandingPage/LandingPage.scss":
-/*!*********************************************************!*\
-  !*** ./src/pages/WebPages/LandingPage/LandingPage.scss ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./LandingPage.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/WebPages/LandingPage/LandingPage.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/WebPages/LandingPage/LandingPage.scss?");
-
-/***/ }),
-
 /***/ "./src/pages/WebPages/LandingPage/img/backgroundImage.png":
 /*!****************************************************************!*\
   !*** ./src/pages/WebPages/LandingPage/img/backgroundImage.png ***!
@@ -585,6 +562,29 @@ eval("var api = __webpack_require__(/*! ../../../../node_modules/style-loader/di
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/WebPages/LandingPage/img/backgroundImage.png\");\n\n//# sourceURL=webpack:///./src/pages/WebPages/LandingPage/img/backgroundImage.png?");
+
+/***/ }),
+
+/***/ "./src/pages/WebPages/Registration/Registration.js":
+/*!*********************************************************!*\
+  !*** ./src/pages/WebPages/Registration/Registration.js ***!
+  \*********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! air-datepicker/dist/css/datepicker.css */ \"./node_modules/air-datepicker/dist/css/datepicker.css\");\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _components_FormElements_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/FormElements.Dropdown/Dropdown.js */ \"./src/components/FormElements.Dropdown/Dropdown.js\");\n/* harmony import */ var _components_FormElements_DateInput_DateInput_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/FormElements.DateInput/DateInput.js */ \"./src/components/FormElements.DateInput/DateInput.js\");\n/* harmony import */ var _Registration_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Registration.scss */ \"./src/pages/WebPages/Registration/Registration.scss\");\n/* harmony import */ var _Registration_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Registration_scss__WEBPACK_IMPORTED_MODULE_6__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\nconst $ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;\r\nglobal.jQuery = $;\r\nglobal.$ = $;\r\n\r\n\r\n\r\n\r\n\r\n\r\n//dropdown\r\n\r\nObject(_components_FormElements_Dropdown_Dropdown_js__WEBPACK_IMPORTED_MODULE_4__[\"dropdownScript\"])();\r\n\r\n\r\nObject(_components_FormElements_DateInput_DateInput_js__WEBPACK_IMPORTED_MODULE_5__[\"dateInputScript\"])();\r\n\r\n\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../node_modules/webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=webpack:///./src/pages/WebPages/Registration/Registration.js?");
+
+/***/ }),
+
+/***/ "./src/pages/WebPages/Registration/Registration.scss":
+/*!***********************************************************!*\
+  !*** ./src/pages/WebPages/Registration/Registration.scss ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./Registration.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/WebPages/Registration/Registration.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/WebPages/Registration/Registration.scss?");
 
 /***/ }),
 

@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Registration
+        meta(name="viewport" content="width=device-width")
+    body
+        div(class=["registration"])
+
+            div(class=["registration__header-container"])
+                include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
+                +getStandardNavBar({
+                    isAuthorized: false,
+                })
+
+            div(class=["registration__main-content"])
+                div(class=["registration__form-container"])
+                    include ../../../components/Cards.RegistrationForm/RegistrationForm.pug
+                    +getRegistrationForm({
+                        titleText: "Регистрация аккаунта",
+                    })
+                div(class=["registration__background-image-container"])
+                    img(class=["registration__background-image"] src="./src/pages/WebPages/Registration/img/backgroundImage.png")
+
+            div(class=["registration__footer-container"])
+                include ../../../components/HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.pug
+                +getFooterWidgetsAndCopyrightBar()

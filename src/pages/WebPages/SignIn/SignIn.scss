@@ -1,0 +1,51 @@
+@import "../../../assets/base.scss";
+@import "../../../assets/fonts/fonts.scss";
+@include setFonts("../../../");
+
+@import "../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.scss";
+@import "../../../components/Cards.AuthorizationForm/AuthorizationForm.scss";
+@import "../../../components/HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.scss";
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media screen and (max-width: 400px) {
+        width: auto;
+    }
+
+    &__main-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__background-image-container {
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        @media screen and (max-width: 900px) {
+            order: 1;
+        }
+    }
+    &__background-image {
+        width: 100%;
+        height: 100%;
+    }
+    &__form-container {
+        width: maax-content;
+        position: absolute;
+        z-index: 2;
+        @media screen and (max-width: 900px) {
+            position: relative;
+            order: 2;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        @media screen and (max-width: 380px) {
+            width: 100%;
+        }
+    }
+}
