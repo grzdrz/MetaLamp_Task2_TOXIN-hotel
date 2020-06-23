@@ -32,27 +32,29 @@ export function paginationScript() {
             /* if(запрос успешен? === false) return; */
 
             let selectedPageNumber = event.currentTarget.textContent;
+            let title = event.currentTarget.closest(".pagination").querySelector(".pagination__title");
             if (selectedPageNumber === "arrow_forward") {
                 if (event.currentTarget.matches(".pagination__left-arrow")) {
                     let prevPage = --(event.currentTarget.parentElement.dataset.curPageNumber);
-                    event.currentTarget.parentElement.parentElement.innerHTML = getPaginationByPugCode({
+                    event.currentTarget.closest(".pagination").parentElement.innerHTML = getPaginationByPugCode({
                         pagesCount: 20,
                         curPageNumber: prevPage,
+                        titleText: (title ? title.textContent : ""),
                     });
                 }
                 else if (event.currentTarget.matches(".pagination__right-arrow")) {
                     let nextPage = ++(event.currentTarget.parentElement.dataset.curPageNumber);
-                    event.currentTarget.parentElement.parentElement.innerHTML = getPaginationByPugCode({
+                    event.currentTarget.closest(".pagination").parentElement.innerHTML = getPaginationByPugCode({
                         pagesCount: 20,
                         curPageNumber: nextPage,
+                        titleText: (title ? title.textContent : ""),
                     });
                 }
             }
             else if (selectedPageNumber === "...") return;
             else {
                 event.currentTarget.parentElement.dataset.curPageNumber = Number.parseInt(selectedPageNumber);
-                let title = event.currentTarget.closest(".pagination").querySelector(".pagination__title");
-                event.currentTarget.parentElement.parentElement.innerHTML = getPaginationByPugCode({
+                event.currentTarget.closest(".pagination").parentElement.innerHTML = getPaginationByPugCode({
                     pagesCount: 20,
                     curPageNumber: Number.parseInt(selectedPageNumber),
                     titleText: (title ? title.textContent : ""),

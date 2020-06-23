@@ -1,3 +1,18 @@
+include ../../../components/FormElements.FormInput/FormInput.pug
+include ../../../components/FormElements.Dropdown/Dropdown.pug
+include ../../../components/FormElements.CheckboxList/CheckboxList.pug
+include ../../../components/FormElements.RadioButton/RadioButton.pug
+include ../../../components/FormElements.RateButton/RateButton.pug
+include ../../../components/FormElements.ButtonDefault/ButtonDefault.pug
+include ../../../components/FormElements.Pagination/Pagination.pug
+include ../../../components/FormElements.RangeSlider/RangeSlider.pug
+include ../../../components/FormElements.BulletList/BulletList.pug
+include ../../../components/FormElements.DateInput/DateInput.pug
+include ../../../components/FormElements.LikeButton/LikeButton.pug
+include ../../../components/FormElements.RoomDetails/RoomDetails.pug
+include ../../../components/FormElements.GuestRoomReviews/GuestRoomReviews.pug
+include ../../../components/FormElements.PieChart/PieChart.pug
+
 doctype html
 html
     head
@@ -5,361 +20,407 @@ html
         title FormElements
         meta(name="viewport" content="width=device-width")        
     body
-        div(class=["formElements"])
-            div(class=["formElements__global-logo-container"])
+        div(class=["form-elements"])
+            div(class=["form-elements__global-logo-container"])
                 include ../../../components/GlobalLogo/GlobalLogo.pug
 
-            include ../../../components/FormElements.FormInput/FormInput.pug
-            +getFormInput({
-                hasTitle: true,
-                titleText: "text field",
-                isTitleTextTestVisible: true,
-                titleTextTestValue: "default",
-                placeholder: "Email",
-                name: "email",
-                type: "email",
-                value: "",
-                hasSubmitButton: false
-            })
-            +getFormInput({
-                hasTitle: true,
-                titleText: "text field",
-                isTitleTextTestVisible: true,
-                titleTextTestValue: "hover / focus",
-                placeholder: "Some text",
-                name: "someText",
-                type: "text",
-                value: "This is pretty awesome",
-                hasSubmitButton: false
-            })
-            +getFormInput({
-                hasTitle: true,
-                titleText: "text field",
-                isTitleTextTestVisible: true,
-                titleTextTestValue: "default",
-                placeholder: "Email",
-                name: "email",
-                type: "email",
-                value: "",
-                hasSubmitButton: true
-            })
-            +getFormInput({
-                hasTitle: true,
-                titleText: "text field",
-                isTitleTextTestVisible: true,
-                titleTextTestValue: "hover / focus",
-                placeholder: "Some text",
-                name: "someText",
-                type: "text",
-                value: "This is pretty awesome",
-                hasSubmitButton: true
-            })
+            div(class=["form-elements__columns"])
+                div(class=["form-elements__column-1"])
+                    div(class=["form-elements__form-input-container-1"])
+                        +getFormInput({
+                            hasTitle: true,
+                            titleText: "text field",
+                            isTitleTextTestVisible: true,
+                            titleTextTestValue: "default",
+                            placeholder: "Email",
+                            name: "email",
+                            type: "email",
+                            value: "",
+                            hasSubmitButton: false
+                        })
+                    div(class=["form-elements__form-input-container-2"])
+                        +getFormInput({
+                            hasTitle: true,
+                            titleText: "text field",
+                            isTitleTextTestVisible: true,
+                            titleTextTestValue: "hover / focus",
+                            placeholder: "Some text",
+                            name: "someText",
+                            type: "text",
+                            value: "This is pretty awesome",
+                            hasSubmitButton: false
+                        })
+                    div(class=["form-elements__form-input-container-3"])
+                        +getFormInput({
+                            hasTitle: true,
+                            titleText: "text field",
+                            isTitleTextTestVisible: true,
+                            titleTextTestValue: "default",
+                            placeholder: "Email",
+                            name: "email",
+                            type: "email",
+                            value: "",
+                            hasSubmitButton: true
+                        })
+                    div(class=["form-elements__form-input-container-4"])
+                        +getFormInput({
+                            hasTitle: true,
+                            titleText: "text field",
+                            isTitleTextTestVisible: true,
+                            titleTextTestValue: "hover / focus",
+                            placeholder: "Some text",
+                            name: "someText",
+                            type: "text",
+                            value: "This is pretty awesome",
+                            hasSubmitButton: true
+                        })
 
-            include ../../../components/FormElements.Dropdown/Dropdown.pug
-            +getDropdown({
-                titleText: "dropdown",
-                isTitleTextTestVisible: false,
-                titleTextTestValue: "",
-                placeholder: "dropdown",
-                name: "dropdown",
-                type: "text",
-                value: "Сколько гостей",
-                dropdownList: [
-                    {name: "взрослые", value: 0},
-                    {name: "дети", value: 0},
-                    {name: "младенцы", value: 0}
-                ],
-                withTotalValue: true,
-            })
-            +getDropdown({
-                titleText: "dropdown",
-                isTitleTextTestVisible: false,
-                titleTextTestValue: "",
-                placeholder: "dropdown",
-                name: "dropdown",
-                type: "text",
-                value: "Сколько комнат",
-                hasApplyButton: true,
-                hasClearButton: true,
-                dropdownList: [
-                    {name: "спальни", value: 0},
-                    {name: "кровати", value: 0},
-                    {name: "ванные комнаты", value: 0}
-                ],
-                withTotalValue: false,
-            })
+                    div(class=["form-elements__date-input-container-1"])
+                        +getDateInput({
+                            isDoubleInput: true,
+                            isDateRange: true,
+                            firstTitle: "выезд",
+                            secondTitle: "прибытие",
+                        }) 
+                    div(class=["form-elements__date-input-container-2"])
+                        +getDateInput({
+                            isDoubleInput: false,
+                            isDateRange: true, 
+                            firstTitle: "datepicker2",
+                            width: "266px",
+                        })
+                    div(class=["form-elements__date-input-container-3"])
+                        +getDateInput({
+                            isDoubleInput: false,
+                            isDateRange: false, 
+                            firstTitle: "datepicker3",
+                            width: "266px",
+                        })
 
+                    div(class=["form-elements__dropdown-container-1"]) 
+                        +getDropdown({
+                            titleText: "dropdown",
+                            isTitleTextTestVisible: false,
+                            titleTextTestValue: "",
+                            placeholder: "dropdown",
+                            name: "dropdown",
+                            type: "text",
+                            value: "Сколько комнат",
+                            hasApplyButton: false,
+                            hasClearButton: false,
+                            dropdownList: [
+                                {name: "спальни", value: 0},
+                                {name: "кровати", value: 0},
+                                {name: "ванные комнаты", value: 0}
+                            ],
+                            withTotalValue: false,
+                        })
+                    div(class=["form-elements__dropdown-container-2"]) 
+                        +getDropdown({
+                            titleText: "dropdown",
+                            isTitleTextTestVisible: false,
+                            titleTextTestValue: "",
+                            placeholder: "dropdown",
+                            name: "dropdown",
+                            type: "text",
+                            value: "Сколько комнат",
+                            hasApplyButton: true,
+                            hasClearButton: true,
+                            dropdownList: [
+                                {name: "спальни", value: 0},
+                                {name: "кровати", value: 0},
+                                {name: "ванные комнаты", value: 0}
+                            ],
+                            withTotalValue: false,
+                        })                        
 
-            include ../../../components/FormElements.CheckboxList/CheckboxList.pug
-            +getCheckbox({
-                titleText: "expandable checkbox list",
-                isExpandable: true,
-                isOpened: "false",
-                hasAdditionalText: false,
-                checkboxList: [
-                    {isChecked: false, text: "Завтрак"},
-                    {isChecked: true, text: "Письменный стол"}, 
-                    {isChecked: true, text: "Стул для кормления"},
-                    {isChecked: true, text: "Кроватка"},
-                    {isChecked: false, text: "Телевизор"},
-                    {isChecked: false, text: "Шампунь"},
-                    {isChecked: false, text: "Телевизор"},
-                    {isChecked: false, text: "Шампунь"},
-                ],
-            })
-            +getCheckbox({
-                titleText: "expandable checkbox list",
-                isExpandable: true,
-                isOpened: "true",
-                hasAdditionalText: false,
-                checkboxList : [
-                    {isChecked: false, text: "Завтрак"},
-                    {isChecked: true, text: "Письменный стол"}, 
-                    {isChecked: true, text: "Стул для кормления"},
-                    {isChecked: true, text: "Кроватка"},
-                    {isChecked: false, text: "Телевизор"},
-                    {isChecked: false, text: "Шампунь"},
-                    {isChecked: false, text: "Телевизор"},
-                    {isChecked: false, text: "Шампунь"}
-                ],
-            })
-            +getCheckbox({
-                titleText: "rich checkbox list",
-                isExpandable: false,
-                hasAdditionalText: true,
-                checkboxList: [
-                    {isChecked: false, text: "Широкий коридор", additionalText: "Ширина коридоров в номере не менее 91 см."},
-                    {isChecked: true, text: "Помощник для инвалидов", additionalText: "На 1 этаже вас встретит специалист и проводит до номера."},
-                ],
-            })
-            +getCheckbox({
-                titleText: "Checkbox Buttons",
-                isExpandable: false, 
-                hasAdditionalText: false,               
-                checkboxList: [
-                    {isChecked: false, text: "Можно курить"},
-                    {isChecked: true, text: "Можно с питомцами"},
-                    {isChecked: true, text: "Можно пригласить гостей (до 10 человек)"},
-                ],
-            })                
+                    div(class=["form-elements__checkbox-container-1"]) 
+                        +getCheckbox({
+                            titleText: "expandable checkbox list",
+                            isExpandable: true,
+                            isOpened: "false",
+                            hasAdditionalText: false,
+                            checkboxList: [
+                                {isChecked: false, text: "Завтрак"},
+                                {isChecked: true, text: "Письменный стол"}, 
+                                {isChecked: true, text: "Стул для кормления"},
+                                {isChecked: true, text: "Кроватка"},
+                                {isChecked: false, text: "Телевизор"},
+                                {isChecked: false, text: "Шампунь"},
+                                {isChecked: false, text: "Телевизор"},
+                                {isChecked: false, text: "Шампунь"},
+                            ],
+                        })
+                    div(class=["form-elements__checkbox-container-2"]) 
+                        +getCheckbox({
+                            titleText: "expandable checkbox list",
+                            isExpandable: true,
+                            isOpened: "true",
+                            hasAdditionalText: false,
+                            checkboxList : [
+                                {isChecked: false, text: "Завтрак"},
+                                {isChecked: true, text: "Письменный стол"}, 
+                                {isChecked: true, text: "Стул для кормления"},
+                                {isChecked: true, text: "Кроватка"},
+                                {isChecked: false, text: "Телевизор"},
+                                {isChecked: false, text: "Шампунь"},
+                                {isChecked: false, text: "Телевизор"},
+                                {isChecked: false, text: "Шампунь"}
+                            ],
+                        })
 
-
-            include ../../../components/FormElements.RadioButton/RadioButton.pug
-            +getRadioButton({
-                blockNumber: "_radio_1",
-                buttonType: "radio",
-                radioButtonList: [
-                    {text: "Мужчина", isChecked: true},
-                    {text: "Женщина", isChecked: false},
-                ],
-                title: "Radio Buttons",
-                name: "gender",
-            })
-            +getRadioButton({
-                buttonType: "toggle",
-                radioButtonList: [
-                    {text: "Получать спецпредложения", isChecked: true}
-                ],
-                title: "Toggle",
-                name: "specialOffer"
-            })
-            +getRadioButton({
-                buttonType: "toggle",
-                radioButtonList: [
-                    {text: "Получать спецпредложения", isChecked: false}
-                ],
-                title: "",
-                name: "specialOffer"
-            })
+                    div(class=["form-elements__room-details-container-1"])
+                        +getRoomDetails({
+                            detailsArray: [
+                                {icon: "insert_emoticon", titleText: "Комфорт", mainText: "Шумопоглощающие стены",},
+                                {icon: "location_city", titleText: "Удобство", mainText: "Окно в каждой из спален",},
+                                {icon: "whatshot", titleText: "Уют", mainText: "Номер оснащён камином",},
+                            ],
+                            hasLastBorderBottom: false,
+                        })
 
 
-            include ../../../components/FormElements.RateButton/RateButton.pug
-            +getRateButton({
-                blockNumber: "_rate_1",
-                numberOfCheckedStar: 3,
-            })
-            +getRateButton({
-                blockNumber: "_rate_2",
-                numberOfCheckedStar: 1,
-            })             
-            +getRateButton({
-                blockNumber: "_rate_3",
-                numberOfCheckedStar: 0,
-            })            
+                div(class=["form-elements__column-2"])
+                    div(class=["form-elements__checkbox-container-4"]) 
+                        +getCheckbox({
+                            titleText: "Checkbox Buttons",
+                            isExpandable: false, 
+                            hasAdditionalText: false,               
+                            checkboxList: [
+                                {isChecked: false, text: "Можно курить"},
+                                {isChecked: true, text: "Можно с питомцами"},
+                                {isChecked: true, text: "Можно пригласить гостей (до 10 человек)"},
+                            ],
+                        })
 
+                    div(class=["form-elements__radio-button-container-1"]) 
+                        +getRadioButton({
+                            blockNumber: "_radio_1",
+                            buttonType: "radio",
+                            radioButtonList: [
+                                {text: "Мужчина", isChecked: true},
+                                {text: "Женщина", isChecked: false},
+                            ],
+                            title: "Radio Buttons",
+                            name: "gender",
+                        })
+                    div(class=["form-elements__radio-button-container-2"]) 
+                        +getRadioButton({
+                            buttonType: "toggle",
+                            radioButtonList: [
+                                {text: "Получать спецпредложения", isChecked: true}
+                            ],
+                            title: "Toggle",
+                            name: "specialOffer"
+                        })
+                    div(class=["form-elements__radio-button-container-3"]) 
+                        +getRadioButton({
+                            buttonType: "toggle",
+                            radioButtonList: [
+                                {text: "Получать спецпредложения", isChecked: false}
+                            ],
+                            title: "",
+                            name: "specialOffer"
+                        })
 
-            include ../../../components/FormElements.ButtonDefault/ButtonDefault.pug
-            +getButton({
-                text: "click me",
-                isHollow:  false,
-                buttonType: "button",
-                hasArrow: true,
-                width: "196px",
-            })
-            +getButton({
-                text: "click me",
-                isHollow:  true,
-                buttonType: "button",
-                hasArrow: true,
-                width: "196px",                
-            })            
-            +getButton({
-                text: "click me",
-                isHollow:  false,
-                buttonType: "a",
-                hasArrow: false,
-                width: "101px",                
-            })
-            +getButton({
-                text: "click me",
-                isHollow:  true,
-                buttonType: "a",
-                hasArrow: false,
-                width: "101px",                
-            })
-            +getButton({
-                text: "click me",
-                isHollow:  false,
-                buttonType: "submit",
-                hasArrow: false,
-                width: "101px",                
-            })
-            +getButton({
-                text: "click me",
-                isHollow:  true,
-                buttonType: "submit",
-                hasArrow: false,
-                width: "101px",                
-            })                       
-
-
-            include ../../../components/FormElements.Pagination/Pagination.pug
-            div(class=["formElements__pagination-container"])
-                +getPagination({
-                    pagesCount: 20,
-                    curPageNumber: 7,
-                    title: "pagination",
-                    bottomText: "1 – 12 из 100+ вариантов аренды",
-                })
-            include ../../../components/FormElements.Pagination/Pagination.pug
-            div(class=["formElements__pagination-container"])
-                +getPagination({
-                    pagesCount: 20,
-                    curPageNumber: 2,
-                    title: "pagination",
-                    bottomText: "1 – 12 из 100+ вариантов аренды",
-                })
-
-
-            include ../../../components/FormElements.RangeSlider/RangeSlider.pug
-            +getRangeSlider({
-                title: "range slider",
-                firstValue: 2000,
-                lastValue: 6000,
-                minValue: -1000,
-                maxValue: 10000,
-                valueType: "₽",
-                valueRound: 100,
-            })
-            +getRangeSlider({
-                title: "range slider",
-                firstValue: 2000,
-                lastValue: 6000,
-                minValue: -50000,
-                maxValue: 66666,
-                valueType: "₽",
-                valueRound: 100,
-            })            
-
-
-            include ../../../components/FormElements.BulletList/BulletList.pug
-            +getBulletList({
-                titleText: "bullet list",
-                list: [
-                    "Нельзя с питомцами",
-                    "Без вечеринок и мероприятий",
-                    "Время прибытия — после 13:00, а выезд до 12:00",
-                ],
-            })
-
-
-            include ../../../components/FormElements.DateInput/DateInput.pug
-            +getDateInput({
-                isDoubleInput: true,
-                isDateRange: true,
-                firstTitle: "выезд",
-                secondTitle: "прибытие",
-            }) 
-            +getDateInput({
-                isDoubleInput: false,
-                isDateRange: true, 
-                firstTitle: "datepicker2",
-                width: "266px",
-            })
-            +getDateInput({
-                isDoubleInput: false,
-                isDateRange: false, 
-                firstTitle: "datepicker3",
-                width: "266px",
-            })
-
-
-            include ../../../components/FormElements.LikeButton/LikeButton.pug
-            +getLikeButton({
-                number: 2,
-                isChecked: false,
-            })
-            +getLikeButton({
-                number: 3,
-                isChecked: true,
-            })
-
-
-            include ../../../components/FormElements.RoomDetails/RoomDetails.pug
-            +getRoomDetails({
-                detailsArray: [
-                    {icon: "insert_emoticon", titleText: "Комфорт", mainText: "Шумопоглощающие стены",},
-                    {icon: "location_city", titleText: "Удобство", mainText: "Окно в каждой из спален",},
-                    {icon: "whatshot", titleText: "Уют", mainText: "Номер оснащён камином",},
-                ],
-                hasLastBorderBottom: false,
-            })
-
-
-            include ../../../components/FormElements.GuestRoomReviews/GuestRoomReviews.pug
-            +getGuestRoomReviews({
-                reviewsArray: [
-                    {
-                        imgSrc: "./src/components/FormElements.GuestRoomReviews/img/image1.png",
-                        fullName: "Мурад Сарафанов",
-                        numberOfDaysSinceComment: "5 дней назад",
-                        likeButtonOptions: {
-                            hasTitle: false,
-                            number: 12,
-                            isChecked: true,
-                        },
-                        comment: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий." +
-                            "И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто" +
-                            "не жаловался из соседей.",
-                    },
-                    {
-                        imgSrc: "./src/components/FormElements.GuestRoomReviews/img/image2.png",
-                        fullName: "Патрисия Стёклышкова",
-                        numberOfDaysSinceComment: "Неделю назад",
-                        likeButtonOptions: {
-                            hasTitle: false,
+                    div(class=["form-elements__like-button-container-1"])
+                        +getLikeButton({
                             number: 2,
                             isChecked: false,
-                        },
-                        comment: "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать," +
-                            "каждый день новое блюдо и десерт как комплимент", 
-                    },                
-                ]
-            })
+                        })
+                    div(class=["form-elements__like-button-container-2"])
+                        +getLikeButton({
+                            number: 3,
+                            isChecked: true,
+                        })
 
+                    div(class=["form-elements__rate-button-container-1"])
+                        +getRateButton({
+                            blockNumber: "_rate_1",
+                            numberOfCheckedStar: 3,
+                        })
+                    div(class=["form-elements__rate-button-container-2"])
+                        +getRateButton({
+                            blockNumber: "_rate_2",
+                            numberOfCheckedStar: 1,
+                        })             
+                    div(class=["form-elements__rate-button-container-3"])
+                        +getRateButton({
+                            blockNumber: "_rate_3",
+                            numberOfCheckedStar: 0,
+                        })
 
-            include ../../../components/FormElements.PieChart/PieChart.pug
-            +getPieChart({
-                totalValue: 260,
-                legends: ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"]
-            })
+                    div(class=["form-elements__dropdown-container-3"]) 
+                        +getDropdown({
+                            titleText: "dropdown",
+                            isTitleTextTestVisible: false,
+                            titleTextTestValue: "",
+                            placeholder: "dropdown",
+                            name: "dropdown",
+                            type: "text",
+                            value: "Сколько гостей",
+                            hasApplyButton: false,
+                            hasClearButton: false,
+                            dropdownList: [
+                                {name: "взрослые", value: 0},
+                                {name: "дети", value: 0},
+                                {name: "младенцы", value: 0}
+                            ],
+                            withTotalValue: true,
+                        })
+
+                    div(class=["form-elements__checkbox-container-3"]) 
+                        +getCheckbox({
+                            titleText: "rich checkbox list",
+                            isExpandable: false,
+                            hasAdditionalText: true,
+                            checkboxList: [
+                                {isChecked: false, text: "Широкий коридор", additionalText: "Ширина коридоров в номере не менее 91 см."},
+                                {isChecked: true, text: "Помощник для инвалидов", additionalText: "На 1 этаже вас встретит специалист и проводит до номера."},
+                            ],
+                        })  
+
+                div(class=["form-elements__column-3"]) 
+                    div(class=["form-elements__range-slider-container-1"])
+                        +getRangeSlider({
+                            title: "range slider",
+                            firstValue: 2000,
+                            lastValue: 6000,
+                            minValue: -1000,
+                            maxValue: 10000,
+                            valueType: "₽",
+                            valueRound: 100,
+                        })
+                    div(class=["form-elements__range-slider-container-2"])
+                        +getRangeSlider({
+                            title: "range slider",
+                            firstValue: 2000,
+                            lastValue: 6000,
+                            minValue: -50000,
+                            maxValue: 66666,
+                            valueType: "₽",
+                            valueRound: 100,
+                        })
+
+                    div(class=["form-elements__button-container-1"])
+                        +getButton({
+                            text: "click me",
+                            isHollow:  false,
+                            buttonType: "button",
+                            hasArrow: true,
+                            width: "196px",
+                        })
+                    div(class=["form-elements__button-container-2"])
+                        +getButton({
+                            text: "click me",
+                            isHollow:  true,
+                            buttonType: "button",
+                            hasArrow: true,
+                            width: "196px",                
+                        })   
+                    div(class=["form-elements__button-container-3"])         
+                        +getButton({
+                            text: "click me",
+                            isHollow:  false,
+                            buttonType: "a",
+                            hasArrow: false,
+                            width: "101px",                
+                        })
+                    div(class=["form-elements__button-container-4"])
+                        +getButton({
+                            text: "click me",
+                            isHollow:  true,
+                            buttonType: "a",
+                            hasArrow: false,
+                            width: "101px",                
+                        })
+                    div(class=["form-elements__button-container-5"])
+                        +getButton({
+                            text: "click me",
+                            isHollow:  false,
+                            buttonType: "submit",
+                            hasArrow: false,
+                            width: "101px",                
+                        })
+                    div(class=["form-elements__button-container-6"])
+                        +getButton({
+                            text: "click me",
+                            isHollow:  true,
+                            buttonType: "submit",
+                            hasArrow: false,
+                            width: "101px",                
+                        })  
+
+                    div(class=["form-elements__pagination-container-1"])
+                        +getPagination({
+                            pagesCount: 20,
+                            curPageNumber: 7,
+                            title: "pagination",
+                            bottomText: "1 – 12 из 100+ вариантов аренды",
+                        })
+
+                    div(class=["form-elements__dropdown-container-4"]) 
+                        +getDropdown({
+                            titleText: "dropdown",
+                            isTitleTextTestVisible: false,
+                            titleTextTestValue: "",
+                            placeholder: "dropdown",
+                            name: "dropdown",
+                            type: "text",
+                            value: "Сколько гостей",
+                            hasApplyButton: true,
+                            hasClearButton: true,
+                            dropdownList: [
+                                {name: "взрослые", value: 0},
+                                {name: "дети", value: 0},
+                                {name: "младенцы", value: 0}
+                            ],
+                            withTotalValue: true,
+                        })
+
+                    div(class=["form-elements__bullet-list-container-1"])
+                        +getBulletList({
+                            titleText: "bullet list",
+                            list: [
+                                "Нельзя с питомцами",
+                                "Без вечеринок и мероприятий",
+                                "Время прибытия — после 13:00, а выезд до 12:00",
+                            ],
+                        })
+
+                    div(class=["form-elements__guest-room-reviews-container-1"])
+                        +getGuestRoomReviews({
+                            reviewsArray: [
+                                {
+                                    imgSrc: "./src/components/FormElements.GuestRoomReviews/img/image1.png",
+                                    fullName: "Мурад Сарафанов",
+                                    numberOfDaysSinceComment: "5 дней назад",
+                                    likeButtonOptions: {
+                                        hasTitle: false,
+                                        number: 12,
+                                        isChecked: true,
+                                    },
+                                    comment: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий." +
+                                        "И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто" +
+                                        "не жаловался из соседей.",
+                                },
+                                {
+                                    imgSrc: "./src/components/FormElements.GuestRoomReviews/img/image2.png",
+                                    fullName: "Патрисия Стёклышкова",
+                                    numberOfDaysSinceComment: "Неделю назад",
+                                    likeButtonOptions: {
+                                        hasTitle: false,
+                                        number: 2,
+                                        isChecked: false,
+                                    },
+                                    comment: "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать," +
+                                        "каждый день новое блюдо и десерт как комплимент", 
+                                },                
+                            ]
+                        })
+
+                    div(class=["form-elements__pie-chart-container-1"])
+                        +getPieChart({
+                            totalValue: 260,
+                            legends: ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"]
+                        })
