@@ -47,13 +47,34 @@
         @media screen and (max-width: 1340px) {
             flex-direction: column;
         }
+        @media screen and (max-width: 950px) {
+            width: 100%;
+            padding: scalePixelsAsPercentage(70, 1440) 0px;
+            flex-direction: column;
+            align-items: center;
+        }
     }
+
+    &__room-info {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+        @media screen and (max-width: 1340px) {
+            align-items: center;
+        }
+    }
+
     &__price-calculation-form-container {
+        width: 380px;
         @media screen and (max-width: 1340px) {
             display: flex;
             justify-content: center;
 
             margin-top: 20px;
+        }
+        @media screen and (max-width: 380px) {
+            width: 100%;
         }
     }
 
@@ -69,23 +90,26 @@
         }
     }
     &__room-details-container {
-        @media screen and (max-width: 800px) {
-            align-self: flex-start;
-        }
     }
     &__rating-pie-chart-container {
         @media screen and (max-width: 800px) {
             margin-top: 30px;
-            align-self: flex-end;
         }
     }
 
     &__room-details-container {
         margin-right: 66px;
+        @media screen and (max-width: 800px) {
+            margin-right: 0px;
+        }
     }
 
     &__guest-room-reviews-container {
         margin-bottom: 30px;
+        @media screen and (max-width: 800px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 
     &__rules {
@@ -94,19 +118,25 @@
 
         @media screen and (max-width: 800px) {
             flex-direction: column;
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
     &__bullet-list-container {
         margin-right: 70px;
 
         @media screen and (max-width: 800px) {
-            align-self: flex-start;
             margin-bottom: 20px;
+            margin-right: 0px;
+        }
+        @media screen and (max-width: 800px) and (min-width: 500px) {
+            align-self: flex-start;
         }
     }
 
     &__cancel-rule {
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 800px) and (min-width: 500px) {
             align-self: flex-end;
         }
     }
