@@ -39,16 +39,10 @@
 
   &__input-container_first,
   &__input-container_second {
-    /*     @media screen and (max-width: 425px) {
-      width: scalePixelsAsPercentage(150, 388);
-    } */
     width: scalePixelsAsPercentage(150, 320);
   }
   &__datepicker-label_first,
   &__datepicker-label_second {
-    /*     @media screen and (max-width: 425px) {
-      width: 100%;
-    } */
     width: 100%;
   }
 
@@ -118,7 +112,7 @@
   &__buttons {
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    margin: 18px 20px 0px 20px;
   }
 
   &__apply-button {
@@ -145,13 +139,6 @@
     line-height: 15px;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
-  }
-
-  &_with-width_318px {
-    width: 318px;
-  }
-  &_with-width_266px {
-    width: 266px;
   }
 }
 

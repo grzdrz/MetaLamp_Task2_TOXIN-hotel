@@ -88,12 +88,13 @@ mixin getRegistrationForm(options)
                 width: "320px",
             })
 
-        div(class=["registration-form__alreadyRegistered"])
-            p(class=["registration-form__alreadyRegisteredText"]) Уже есть аккаунт на Toxin
-            +getButton({
-                text: "войти",
-                isHollow:  true,
-                buttonType: "a",
-                hasArrow: false,
-                width: "99px",
-            }) 
+        div(class=["registration-form__already-registered"])
+            p(class=["registration-form__already-registered-text"]) Уже есть аккаунт на Toxin
+            div(class=["registration-form__sign-in-button-container"])
+                +getButton({
+                    text: "войти",
+                    isHollow:  true,
+                    buttonType: "a",
+                    hasArrow: false,
+                    width: "99px",
+                }) 

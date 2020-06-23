@@ -41,10 +41,11 @@ mixin getAuthorizationForm(options)
 
         div(class=["authorization-form__already-registered"])
             p(class=["authorization-form__already-registered-text"]) Нет аккаунта на Toxin?
-            +getButton({
-                text: "создать",
-                isHollow:  true,
-                buttonType: "a",
-                hasArrow: false,
-                width: "99px",
-            })
+            div(class=["authorization-form__create-button-container"])
+                +getButton({
+                    text: "создать",
+                    isHollow:  true,
+                    buttonType: "a",
+                    hasArrow: false,
+                    width: "99px",
+                })

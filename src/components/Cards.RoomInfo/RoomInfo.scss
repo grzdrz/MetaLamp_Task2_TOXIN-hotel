@@ -59,10 +59,11 @@
         align-items: center;
         min-width: 44px;
         height: 151px;
-        background: transparent;
+
         outline: transparent;
 
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        border-top-left-radius: 4px;
 
         &-icon {
             transform: rotate(90deg);
@@ -84,10 +85,11 @@
         align-items: center;
         min-width: 44px;
         height: 151px;
-        background: transparent;
+
         outline: transparent;
 
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        border-top-left-radius: 4px;
         transform: matrix(-1, 0, 0, 1, 0, 0);
 
         &-icon {

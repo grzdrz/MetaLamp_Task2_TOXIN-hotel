@@ -45,7 +45,7 @@ mixin getPriceCalculationForm(options)
                 div(class=["price-calculation-form__price-multiply-period-of-time-description"])
                     p(class=["price-calculation-form__price-multiply-period-of-time-description-number"] data-number=9990) 9 990₽ х
                     p(class=["price-calculation-form__price-multiply-period-of-time-description-days"]) 0 суток
-                p(class=["price-calculation-form__price-multiply-period-of-time-price-calculated"] data-calculated-number=9990) 9 990₽
+                p(class=["price-calculation-form__price-multiply-period-of-time-price-calculated"] data-calculated-number=0) 9 990₽
             div(class=["price-calculation-form__services-discount"])
                 div(class=["price-calculation-form__services-discount-description"])
                     p(class=["price-calculation-form__services-discount-description-text"]) Сбор за услуги: скидка 2 179₽
@@ -63,6 +63,7 @@ mixin getPriceCalculationForm(options)
                 p(class=["price-calculation-form__in-total-bottom-line"])
                 p(class=["price-calculation-form__in-total-number"] data-total-number=0) 0₽
 
+        div(class=["price-calculation__submit-button-container"])
         +getButton({
             text: 'забронировать',
             isHollow: false,

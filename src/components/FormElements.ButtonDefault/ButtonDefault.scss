@@ -90,7 +90,7 @@ $borderThickness: 2px;
 
         z-index: 2;
         & + p {
-            z-index: 1;
+            /* z-index: 1; */
         }
     }
 

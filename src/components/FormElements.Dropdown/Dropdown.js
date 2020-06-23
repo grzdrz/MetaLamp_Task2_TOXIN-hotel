@@ -10,10 +10,12 @@ export function dropdownScript() {
         //inputContainer.onmouseleave = onDropdownLeave;
 
         e.querySelectorAll(".dropdown__droped-list-item-handler-plus").forEach(e => {
-            e.addEventListener("click", onDropdownItemPlus);
+            //e.addEventListener("click", onDropdownItemPlus);
+            e.onclick = onDropdownItemPlus;
         });
         e.querySelectorAll(".dropdown__droped-list-item-handler-minus").forEach(e => {
-            e.addEventListener("click", onDropdownItemMinus);
+            //e.addEventListener("click", onDropdownItemMinus);
+            e.onclick = onDropdownItemMinus;
         });
 
         let clearButton = e.querySelector(".dropdown__clear-button");

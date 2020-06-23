@@ -34,12 +34,12 @@ export function dateInputScript() {
                                 '<p class="date-input__apply-button">применить</p>' +
                                 '</div>'
                             );
-                            dp.$datepicker.find('.date-input__clear-button').click(function (event) {
+                            dp.$datepicker[0].querySelector(".date-input__clear-button").onclick = (event) => {
                                 dp.clear();
-                            });
-                            dp.$datepicker.find('.date-input__apply-button').click(function (event) {
+                            };
+                            dp.$datepicker[0].querySelector(".date-input__apply-button").onclick = (event) => {
                                 dp.hide();
-                            });
+                            };
 
                             dp.$datepicker.find('.datepicker--pointer').css("display", "none");
 
@@ -48,7 +48,6 @@ export function dateInputScript() {
                     }
                 },
                 onSelect: function (formattedDate, date, inst) {
-                    //debugger;
                     if (doubleDatepicker.selectedDates[0]) {
                         let firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1)
                             .format(doubleDatepicker.selectedDates[0]);
@@ -65,6 +64,8 @@ export function dateInputScript() {
                     }
                 },
             }).data('datepicker');
+            doubleDatepicker.show();
+            doubleDatepicker.hide();
         }
 
 

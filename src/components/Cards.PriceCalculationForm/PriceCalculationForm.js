@@ -39,6 +39,10 @@ export function priceCalculationFormScript() {
     let oldOnSelect = datepicker.selectDate;
     datepicker.selectDate = getNewOnSelectWrapper(oldOnSelect.bind(datepicker));
 
+    let buttonClear = datepicker.$datepicker[0].querySelector(".date-input__clear-button");
+    let oldOnLClear = buttonClear.onclick;
+    buttonClear.onclick = getNewOnClearClickWrapper(oldOnLClear);
+
     function getNewOnSelectWrapper(oldFunc) {
         return function (date) {
             oldFunc(date);
@@ -73,6 +77,21 @@ export function priceCalculationFormScript() {
                 calculateAndSetTotalPrice(formContainer);
             }
         };
+    }
+
+    function getNewOnClearClickWrapper(oldFunc) {
+
+        let newFunc = function (event) {
+            oldFunc(event);
+
+            let firstDateInput = this.$el[0];
+            let formContainer = firstDateInput.closest(".price-calculation-form");
+            let sumField = formContainer.querySelector(".price-calculation-form__price-multiply-period-of-time-price-calculated");
+            sumField.dataset.calculatedNumber = 0;
+
+            calculateAndSetTotalPrice(formContainer);
+        };
+        return newFunc.bind(datepicker);
     }
 
 
