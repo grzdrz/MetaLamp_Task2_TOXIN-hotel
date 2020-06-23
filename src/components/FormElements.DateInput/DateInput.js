@@ -1,3 +1,11 @@
+import jQueryTest from 'jquery';
+const $ = jQueryTest;
+global.jQuery = $;
+global.$ = $;
+
+import 'air-datepicker';
+import 'air-datepicker/dist/css/datepicker.css';
+
 const dateFormatOptions1 = { year: "numeric", month: "2-digit", day: "2-digit", };
 const dateFormatOptions2 = {
     month: "short", day: "2-digit",

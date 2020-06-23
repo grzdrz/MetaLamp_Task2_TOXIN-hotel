@@ -1,6 +1,7 @@
 .date-input {
   display: flex;
   flex-direction: row;
+  width: 100%;
 
   &__input-container {
     display: flex;
@@ -34,6 +35,21 @@
     box-sizing: border-box;
     border-radius: 4px;
     width: 150px;
+  }
+
+  &__input-container_first,
+  &__input-container_second {
+    /*     @media screen and (max-width: 425px) {
+      width: scalePixelsAsPercentage(150, 388);
+    } */
+    width: scalePixelsAsPercentage(150, 320);
+  }
+  &__datepicker-label_first,
+  &__datepicker-label_second {
+    /*     @media screen and (max-width: 425px) {
+      width: 100%;
+    } */
+    width: 100%;
   }
 
   &__datepicker-input {

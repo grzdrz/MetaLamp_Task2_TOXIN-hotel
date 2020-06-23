@@ -1,3 +1,9 @@
+import { dropdownScript } from "../FormElements.Dropdown/Dropdown.js";
+dropdownScript();
+
+import { dateInputScript } from "../FormElements.DateInput/DateInput.js";
+dateInputScript();
+
 export function priceCalculationFormScript() {
     let forms = document.querySelectorAll(".price-calculation-form");
     forms.forEach(e => {

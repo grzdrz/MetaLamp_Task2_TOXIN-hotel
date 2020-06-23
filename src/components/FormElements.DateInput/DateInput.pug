@@ -34,7 +34,7 @@ mixin getDateInput(options)
                     readonly=true)
                 p(class=["date-input__datepicker-arrow"]) expand_more
         - if(options.isDoubleInput)                
-            div(class=["date-input__input-container"])
+            div(class=["date-input__input-container", "date-input__input-container_second"])
                 p(class=["date-input__title"])= options.secondTitle
                 label(class=["date-input__datepicker-label", "date-input__datepicker-label_second"].concat(classes.width || []))
                     input(class=["date-input__datepicker-input", "date-input__datepicker-input_second"]  

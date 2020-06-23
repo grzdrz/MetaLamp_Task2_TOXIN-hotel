@@ -1,0 +1,25 @@
+mixin getPieChart(options)
+
+    - let number = options.totalValue;
+    - let word = "";
+    - if (number.toString()[number.toString().length - 1] === "1" && number !== 11)
+        - word = "голос";
+    - else if ((number.toString()[number.toString().length - 1] > 1 && number.toString()[number.toString().length - 1] <= 4) && (number < 12 || number > 14))
+        - word = "голоса";
+    - else
+        - word = "голосов";
+
+    div(class=["pie-chart"])
+        div(class=["pie-chart__title"])
+            p(class=["pie-chart__title-text"]) Впечатления от номера
+        div(class=["pie-chart__content"])
+            div(class=["pie-chart__pie"])
+            div(class=["pie-chart__inner-text"])
+                p(class=["pie-chart__inner-text-number"])= number
+                p(class=["pie-chart__inner-text-word"])= word
+            ul(class=["pie-chart__legend"])
+                - for(let i = 0; i < 4; i++){
+                    li(class=["pie-chart__legend-item"])
+                        div(class=["pie-chart__legend-item-marker", "pie-chart__legend-item-marker_" + (i + 1)])
+                        p(class=["pie-chart__legend-item-text"])= options.legends[i]
+                - }

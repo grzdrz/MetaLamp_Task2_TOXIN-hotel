@@ -301,7 +301,7 @@ html
                 isDateRange: false, 
                 firstTitle: "datepicker3",
                 width: "266px",
-            })           
+            })
 
 
             include ../../../components/FormElements.LikeButton/LikeButton.pug
@@ -355,4 +355,11 @@ html
                             "каждый день новое блюдо и десерт как комплимент", 
                     },                
                 ]
+            })
+
+
+            include ../../../components/FormElements.PieChart/PieChart.pug
+            +getPieChart({
+                totalValue: 260,
+                legends: ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"]
             })

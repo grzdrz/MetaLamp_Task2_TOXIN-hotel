@@ -1,13 +1,5 @@
 require.context('../../../', true, /\.(png|svg|jpg)$/);
 
-import jQueryTest from 'jquery';
-const $ = jQueryTest;
-global.jQuery = $;
-global.$ = $;
-
-import 'air-datepicker';
-import 'air-datepicker/dist/css/datepicker.css';
-
 import 'material-design-icons/iconfont/material-icons.css';
 
 //dropdown
@@ -32,5 +24,7 @@ rangeSliderScript();
 import { dateInputScript } from "../../../components/FormElements.DateInput/DateInput.js";
 dateInputScript();
 
+import { pieChartScript } from "../../../components/FormElements.PieChart/PieChart.js";
+pieChartScript();
 
 import "./FormElements.scss";

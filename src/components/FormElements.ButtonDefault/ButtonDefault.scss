@@ -4,6 +4,8 @@ $buttonTexSidetPaddings: 60px;
 $borderRadius: 22px;
 $borderThickness: 2px;
 .button-default {
+    width: 100%;
+
     cursor: pointer;
 
     display: flex;
@@ -15,6 +17,8 @@ $borderThickness: 2px;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
 
     &__button-basis {
+        width: 100%;
+
         cursor: pointer;
 
         position: absolute;
@@ -108,7 +112,7 @@ $borderThickness: 2px;
         }
     }
 
-    width: 99px;
+/*     width: 99px;
     &_with-width_99px {
         width: 99px;
     }
@@ -126,7 +130,7 @@ $borderThickness: 2px;
     }
     &_with-width_196px {
         width: 196px;
-    }
+    } */
 
     height: $buttonHeight;
     &_with-height_34px {

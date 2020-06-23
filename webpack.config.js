@@ -13,14 +13,15 @@ const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 
 
 let entries = [
-    { pageName: "HeadersAndFooters", pageType: "UIKit" },
-    { pageName: "FormElements", pageType: "UIKit" },
-    { pageName: "ColorsAndType", pageType: "UIKit" },
+    /* { pageName: "HeadersAndFooters", pageType: "UIKit" }, */
+    /* { pageName: "FormElements", pageType: "UIKit" }, */
+    /* { pageName: "ColorsAndType", pageType: "UIKit" },
     { pageName: "Cards", pageType: "UIKit" },
     { pageName: "LandingPage", pageType: "WebPages" },
     { pageName: "SearchRoom", pageType: "WebPages" },
     { pageName: "Registration", pageType: "WebPages" },
-    { pageName: "SignIn", pageType: "WebPages" },
+    { pageName: "SignIn", pageType: "WebPages" }, */
+    { pageName: "RoomDetails", pageType: "WebPages" },
 ];
 
 const pluginsOptions = [];
@@ -66,7 +67,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(ttf|eot|woff|woff2|svg|png)$/,
+                test: /\.(ttf|eot|woff|woff2|svg|png|jpg)$/,
                 loader: 'file-loader',
                 options: {
                     name: '[path][name].[ext]',

@@ -12,7 +12,7 @@
 
     &__review-container {
         display: grid;
-        grid-template-columns: max-content 653px;
+        grid-template-columns: max-content 92%;
         grid-template-rows: auto auto;
 
         margin-bottom: 22px;
@@ -62,6 +62,8 @@
         color: rgba(31, 32, 65, 0.75);
 
         margin-left: 10px;
+
+        max-width: 653px; 
     }
 }
 

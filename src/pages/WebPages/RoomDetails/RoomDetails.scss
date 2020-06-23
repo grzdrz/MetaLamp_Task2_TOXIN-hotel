@@ -1,0 +1,134 @@
+@import "../../../assets/base.scss";
+@import "../../../assets/fonts/fonts.scss";
+@include setFonts("../../../");
+
+@import "../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.scss";
+@import "../../../components/FormElements.RoomDetails/RoomDetails.scss";
+@import "../../../components/FormElements.BulletList/BulletList.scss";
+@import "../../../components/FormElements.GuestRoomReviews/GuestRoomReviews.scss";
+@import "../../../components/Cards.PriceCalculationForm/PriceCalculationForm.scss";
+@import "../../../components/HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.scss";
+
+.room-details {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    &__room-photos {
+        display: flex;
+        width: 100%;
+    }
+    &__room-big-photo-container {
+        width: scalePixelsAsPercentage(981, 1440);
+        height: 100%;
+    }
+    &__room-small-photos-container {
+        width: scalePixelsAsPercentage((1440 - 981), 1440);
+        height: 100%;
+    }
+    &__room-small-photo-container {
+        height: 50%;
+        width: 100%;
+    }
+    &__room-big-photo,
+    &__room-small-photo {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__room-full-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: scalePixelsAsPercentage(70, 1440) scalePixelsAsPercentage(140, 1440);
+
+        @media screen and (max-width: 1340px) {
+            flex-direction: column;
+        }
+    }
+    &__price-calculation-form-container {
+        @media screen and (max-width: 1340px) {
+            display: flex;
+            justify-content: center;
+
+            margin-top: 20px;
+        }
+    }
+
+    &__room-details-and-rating-pie-chart {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 33px;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            //align-items: center;
+            margin-bottom: 30px;
+        }
+    }
+    &__room-details-container {
+        @media screen and (max-width: 800px) {
+            align-self: flex-start;
+        }
+    }
+    &__rating-pie-chart-container {
+        @media screen and (max-width: 800px) {
+            margin-top: 30px;
+            align-self: flex-end;
+        }
+    }
+
+    &__room-details-container {
+        margin-right: 66px;
+    }
+
+    &__guest-room-reviews-container {
+        margin-bottom: 30px;
+    }
+
+    &__rules {
+        display: flex;
+        flex-direction: row;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+    &__bullet-list-container {
+        margin-right: 70px;
+
+        @media screen and (max-width: 800px) {
+            align-self: flex-start;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__cancel-rule {
+        @media screen and (max-width: 800px) {
+            align-self: flex-end;
+        }
+    }
+    &__cancel-rule-title {
+        font-family: Quicksand, OpenSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        color: #1f2041;
+
+        margin-bottom: 20px;
+    }
+
+    &__cancel-rule-main-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+
+        max-width: 341px;
+    }
+}

@@ -1,5 +1,6 @@
 .dropdown {
-    width: 320px;
+    //width: 320px;
+    width: 100%;
 
     &_text-field-default {
         display: flex;
@@ -242,7 +243,19 @@
         color: rgba(31, 32, 65, 0.5);
     }
 
-    &_width_266px {
+/*     &_width_266px {
         width: 266px;
+    } */
+
+/*     &__with-total-value {
+        @media screen and (max-width: 425px) {
+            width: 100%;
+        }
     }
+    &__input-container_first,
+    &__input-container_second {
+        @media screen and (max-width: 425px) {
+            width: scalePixelsAsPercentage(150, 388);
+        }
+    } */
 }
