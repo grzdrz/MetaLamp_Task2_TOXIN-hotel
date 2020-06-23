@@ -6,8 +6,8 @@ export function dropdownScript() {
         //если обработчик выше повесить на контейнер, то дропдаун будет закрываться при клике по нему, т.к. находится в контейнере
 
         let inputContainer = e.querySelector(".dropdown__input-container");
-        inputContainer.onmouseenter = onDropdownEnter;
-        inputContainer.onmouseleave = onDropdownLeave;
+        //inputContainer.onmouseenter = onDropdownEnter;
+        //inputContainer.onmouseleave = onDropdownLeave;
 
         e.querySelectorAll(".dropdown__droped-list-item-handler-plus").forEach(e => {
             e.addEventListener("click", onDropdownItemPlus);
@@ -117,14 +117,33 @@ export function dropdownScript() {
 
     function changeDropdownInputValue(dropdownContainer) {
         let dropdownList = dropdownContainer.querySelectorAll(".dropdown__droped-list-item");
-        let sum = Array.from(dropdownList).reduce((sum, e) => {
-            return sum + Number.parseInt(e.querySelector(".dropdown__droped-list-item-handler-text").textContent)
+
+        let sum = 0;
+        let babiesCount = 0;
+        sum = Array.from(dropdownList).reduce((sum, e) => {
+            let itemText = e.querySelector(".dropdown__droped-list-item-text").textContent;
+            if (itemText.toLowerCase() !== "младенцы") {
+                return sum + Number.parseInt(e.querySelector(".dropdown__droped-list-item-handler-text").textContent);
+            }
+            else {
+                babiesCount = Number.parseInt(e.querySelector(".dropdown__droped-list-item-handler-text").textContent);
+                return sum;
+            }
         }, 0);
 
         if (dropdownContainer.matches(".dropdown__with-total-value")) {
-            dropdownContainer
-                .querySelector(".dropdown__input")
-                .value = sum + " " + doDeclensionOfWord(sum, "гость");
+            if (babiesCount !== 0) {
+                let resultStr1 = sum + " " + doDeclensionOfWord(sum, "гость");
+                let resultStr2 = resultStr1 + ", " + babiesCount + " " + doDeclensionOfWord(babiesCount, "младенец");
+                dropdownContainer
+                    .querySelector(".dropdown__input")
+                    .value = resultStr2;
+            }
+            else {
+                dropdownContainer
+                    .querySelector(".dropdown__input")
+                    .value = sum + " " + doDeclensionOfWord(sum, "гость");
+            }
             dropdownContainer.dataset.curSum = sum;
         }
         else if (dropdownContainer.matches(".dropdown__without-total-value")) {
@@ -149,6 +168,7 @@ export function dropdownScript() {
         else if (word === "спальни") words = ["спальня", "спальни", "спален"];
         else if (word === "кровати") words = ["кровать", "кровати", "кроватей"];
         else if (word === "ванные комнаты") words = ["ванная комната", "ванные комнаты", "ванных комнат"];
+        else if (word === "младенец") words = ["младенец", "младенца", "младенцев"];
 
         if (number.toString()[number.toString().length - 1] === "1" && number !== 11)
             return words[0];
