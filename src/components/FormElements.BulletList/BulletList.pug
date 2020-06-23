@@ -2,12 +2,19 @@
     options.list - массив строк элементов списка
     options.titleText - текст заголовка
 
-mixin getBulletList(options, classes={})
+mixin getBulletList(options)
+
+    - let classes = {};
+
+    - if(options.inRoomDetailsPage){
+        - let className = "bullet-list__title-text_with-font-family_quicksand";
+        - classes.titleText ? classes.titleText.push(className) : classes.titleText = [className];
+    - }
 
     div(class=["bullet-list"])
         - if(options.titleText)
             div(class=["bullet-list__title"])
-                p(class=["bullet-list__title-text"])= options.titleText
+                p(class=["bullet-list__title-text"].concat(classes.titleText || []))= options.titleText
         ul(class=["bullet-list__list"])    
             - for(let listItem of options.list)
                 li(class=["bullet-list__list-item"])

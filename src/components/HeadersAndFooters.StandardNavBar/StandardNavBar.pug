@@ -27,18 +27,18 @@ mixin getStandardNavBar(options)
             div(class=["standard-navigation-bar__user-full-name"])
                 p(class=["standard-navigation-bar__user-full-name-text"])= options.userFullName
         - else
-            div(class=["standard-navigation-bar__button-default-container"])
-                +getButton({
-                    text: 'войти',
-                    isHollow:  true,
-                    buttonType: "a",
-                    width: "87px",
-                    height: "34px",
-                })
-                +getButton({
-                    text: 'зарегистрироваться',
-                    isHollow:  false,
-                    buttonType: "a",
-                    width: "196px",
-                    height: "34px",
-                })          
+            div(class=["standard-navigation-bar__buttons"])
+                div(class=["standard-navigation-bar__first-button-container"])
+                    +getButton({
+                        text: 'войти',
+                        isHollow:  true,
+                        buttonType: "a",
+                        height: "34px",
+                    })
+                div(class=["standard-navigation-bar__second-button-container"])
+                    +getButton({
+                        text: 'зарегистрироваться',
+                        isHollow:  false,
+                        buttonType: "a",
+                        height: "34px",
+                    })          

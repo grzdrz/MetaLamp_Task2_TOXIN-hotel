@@ -13,8 +13,8 @@ const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 
 
 let entries = [
-    /* { pageName: "HeadersAndFooters", pageType: "UIKit" }, */
-    { pageName: "FormElements", pageType: "UIKit" },
+    { pageName: "HeadersAndFooters", pageType: "UIKit" },
+    //{ pageName: "FormElements", pageType: "UIKit" },
     /* { pageName: "ColorsAndType", pageType: "UIKit" },
     { pageName: "Cards", pageType: "UIKit" },
     { pageName: "LandingPage", pageType: "WebPages" },
