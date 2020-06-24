@@ -1404,7 +1404,8 @@ body {
   .pagination__page-list {
     display: flex;
     flex-direction: row;
-    width: max-content;
+    flex-wrap: wrap;
+    justify-content: center;
     background: transparent; }
   .pagination__left-arrow, .pagination__right-arrow, .pagination__page-link {
     width: 40px;
@@ -2571,5 +2572,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 41px; }
+    margin-top: 41px;
+    padding: 0px 20px; }
 

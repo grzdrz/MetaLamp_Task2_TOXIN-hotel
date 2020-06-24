@@ -4,12 +4,11 @@
 
 @import "../../../components/GlobalLogo/GlobalLogo.scss";
 @import "../../../components/ColorsAndType/ColorAndFontBlocks.scss";
-@import "../../../components/ColorsAndType/ColorsAndFonts.scss";
 
 .colors-and-type {
     min-width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 
     padding-top: 30px;
@@ -17,5 +16,37 @@
         margin-left: 30px;
         margin-bottom: 67px;
     }
-}
 
+    &__colors-and-fonts-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 191px 145px 150px;
+
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 20px 145px 20px;
+        }
+    }
+
+    &__color-blocks-container {
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__color-block-container {
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__font-block-container {
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}

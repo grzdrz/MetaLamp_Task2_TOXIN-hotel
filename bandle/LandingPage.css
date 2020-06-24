@@ -715,13 +715,32 @@ body {
     margin-right: 12.5px; }
 
 .button-default {
+  width: 100%;
   cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
   border-radius: 22px;
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-  width: 99px;
+  /*     width: 99px;
+    &_with-width_99px {
+        width: 99px;
+    }
+    &_with-width_320px {
+        width: 320px;
+    }
+    &_with-width_79px {
+        width: 79px;
+    }
+    &_with-width_101px {
+        width: 101px;
+    }
+    &_with-width_87px {
+        width: 87px;
+    }
+    &_with-width_196px {
+        width: 196px;
+    } */
   height: 44px; }
   .button-default__button-basis {
     cursor: pointer;
@@ -776,7 +795,7 @@ body {
     height: inherit;
     z-index: 2; }
     .button-default__input-button + p {
-      z-index: 1; }
+      /* z-index: 1; */ }
   .button-default:hover {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
   .button-default_hollow-button > a,
@@ -787,18 +806,6 @@ body {
     .button-default_hollow-button > button > p:first-of-type,
     .button-default_hollow-button > label > p:first-of-type {
       color: #bc9cff; }
-  .button-default_with-width_99px {
-    width: 99px; }
-  .button-default_with-width_320px {
-    width: 320px; }
-  .button-default_with-width_79px {
-    width: 79px; }
-  .button-default_with-width_101px {
-    width: 101px; }
-  .button-default_with-width_87px {
-    width: 87px; }
-  .button-default_with-width_196px {
-    width: 196px; }
   .button-default_with-height_34px {
     height: 34px; }
   .button-default_with-height_44px {
@@ -887,28 +894,31 @@ body {
     @media screen and (max-width: 550px) {
       .standard-navigation-bar__user-full-name {
         margin-top: 20px; } }
-  .standard-navigation-bar__button-default-container {
+  .standard-navigation-bar__buttons {
     display: flex; }
-    .standard-navigation-bar__button-default-container > div:first-child {
-      margin-right: 20px; }
-      @media screen and (max-width: 550px) {
-        .standard-navigation-bar__button-default-container > div:first-child {
-          margin-right: 0px;
-          margin-bottom: 10px; } }
     @media screen and (max-width: 1150px) and (min-width: 768px) {
-      .standard-navigation-bar__button-default-container {
+      .standard-navigation-bar__buttons {
         order: 1;
         justify-self: end; } }
     @media screen and (max-width: 768px) {
-      .standard-navigation-bar__button-default-container {
+      .standard-navigation-bar__buttons {
         order: 1;
         justify-self: end; } }
     @media screen and (max-width: 550px) {
-      .standard-navigation-bar__button-default-container {
+      .standard-navigation-bar__buttons {
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: min-content;
         margin-top: 20px; } }
+  .standard-navigation-bar__first-button-container {
+    width: 87px;
+    margin-right: 20px; }
+    @media screen and (max-width: 550px) {
+      .standard-navigation-bar__first-button-container {
+        margin-right: 0px;
+        margin-bottom: 10px; } }
+  .standard-navigation-bar__second-button-container {
+    width: 196px; }
   .standard-navigation-bar__navigation-list {
     list-style: none;
     display: flex;
@@ -966,10 +976,12 @@ body {
 
 .date-input {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  width: 100%; }
   .date-input__input-container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
     .date-input__input-container_first {
       margin-right: 20px; }
   .date-input__title {
@@ -990,6 +1002,10 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     width: 150px; }
+  .date-input__input-container_first, .date-input__input-container_second {
+    width: 46.875%; }
+  .date-input__datepicker-label_first, .date-input__datepicker-label_second {
+    width: 100%; }
   .date-input__datepicker-input {
     cursor: pointer;
     padding: 0px 0px 0px 15px;
@@ -1044,7 +1060,7 @@ body {
   .date-input__buttons {
     display: flex;
     flex-direction: row;
-    margin: 20px; }
+    margin: 18px 20px 0px 20px; }
   .date-input__apply-button {
     cursor: pointer;
     margin-left: auto;
@@ -1064,10 +1080,6 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
-  .date-input_with-width_318px {
-    width: 318px; }
-  .date-input_with-width_266px {
-    width: 266px; }
 
 .datepicker {
   background: #ffffff;
@@ -1075,11 +1087,21 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
+  padding-bottom: 20px;
   width: max-content; }
+  @media screen and (max-width: 320px) {
+    .datepicker.active {
+      border: 0px; } }
   .datepicker.-bottom-right-, .datepicker.-bottom-right-.active {
     margin-left: -28px; }
+    @media screen and (max-width: 320px) {
+      .datepicker.-bottom-right-, .datepicker.-bottom-right-.active {
+        margin-left: -58px; } }
   .datepicker.-bottom-left-, .datepicker.-bottom-left-.active {
     margin-left: -2px; }
+    @media screen and (max-width: 320px) {
+      .datepicker.-bottom-left-, .datepicker.-bottom-left-.active {
+        margin-left: -32px; } }
   .datepicker.active {
     width: max-content; }
   .datepicker--cells {
@@ -1132,6 +1154,7 @@ body {
     .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-current-, .datepicker--cell-day.-range-to-.-current-, .datepicker--cell-day.-range-from-.-other-month-, .datepicker--cell-day.-range-to-.-other-month- {
       background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
       border-radius: 50%;
+      border: 0px;
       font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
@@ -1160,10 +1183,6 @@ body {
       margin-right: 50%;
       position: absolute;
       z-index: -1; }
-    .datepicker--cell-day.-range-from-.-focus-::after {
-      margin-left: 55%; }
-    .datepicker--cell-day.-range-to-.-focus-::after {
-      margin-right: 55%; }
     .datepicker--cell-day.-in-range- {
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
       color: rgba(31, 32, 65, 0.5); }
@@ -1184,7 +1203,7 @@ body {
     padding-left: 20px;
     padding-right: 20px; }
   .datepicker--nav {
-    padding: 20px 20px 30px 20px;
+    padding: 15px 20px 15px 20px;
     border: 0px solid transparent; }
     .datepicker--nav-title {
       font-family: Quicksand, OpenSans;
@@ -1241,7 +1260,8 @@ body {
         background-clip: text;
         -webkit-text-fill-color: transparent; }
   .datepicker--days-names {
-    width: 280px; }
+    width: 280px;
+    margin: 5px 0 0px; }
   .datepicker--day-name {
     min-width: 40px;
     height: 40px;
@@ -1253,7 +1273,8 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #bc9cff; }
+    color: #bc9cff;
+    text-transform: none; }
   .datepicker--months {
     height: max-content; }
     .datepicker--months > .datepicker--cells-months {
@@ -1268,7 +1289,21 @@ body {
       height: max-content; }
 
 .dropdown {
-  width: 320px; }
+  width: 100%;
+  /*     &_width_266px {
+        width: 266px;
+    } */
+  /*     &__with-total-value {
+        @media screen and (max-width: 425px) {
+            width: 100%;
+        }
+    }
+    &__input-container_first,
+    &__input-container_second {
+        @media screen and (max-width: 425px) {
+            width: scalePixelsAsPercentage(150, 388);
+        }
+    } */ }
   .dropdown_text-field-default {
     display: flex;
     flex-direction: column; }
@@ -1452,17 +1487,34 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
-  .dropdown_width_266px {
-    width: 266px; }
 
 .button-default {
+  width: 100%;
   cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
   border-radius: 22px;
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-  width: 99px;
+  /*     width: 99px;
+    &_with-width_99px {
+        width: 99px;
+    }
+    &_with-width_320px {
+        width: 320px;
+    }
+    &_with-width_79px {
+        width: 79px;
+    }
+    &_with-width_101px {
+        width: 101px;
+    }
+    &_with-width_87px {
+        width: 87px;
+    }
+    &_with-width_196px {
+        width: 196px;
+    } */
   height: 44px; }
   .button-default__button-basis {
     cursor: pointer;
@@ -1517,7 +1569,7 @@ body {
     height: inherit;
     z-index: 2; }
     .button-default__input-button + p {
-      z-index: 1; }
+      /* z-index: 1; */ }
   .button-default:hover {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
   .button-default_hollow-button > a,
@@ -1528,18 +1580,6 @@ body {
     .button-default_hollow-button > button > p:first-of-type,
     .button-default_hollow-button > label > p:first-of-type {
       color: #bc9cff; }
-  .button-default_with-width_99px {
-    width: 99px; }
-  .button-default_with-width_320px {
-    width: 320px; }
-  .button-default_with-width_79px {
-    width: 79px; }
-  .button-default_with-width_101px {
-    width: 101px; }
-  .button-default_with-width_87px {
-    width: 87px; }
-  .button-default_with-width_196px {
-    width: 196px; }
   .button-default_with-height_34px {
     height: 34px; }
   .button-default_with-height_44px {
@@ -1552,7 +1592,7 @@ body {
 .guests-and-date-range-form {
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 100%;
   padding: 40px 30px 30px 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -1561,7 +1601,7 @@ body {
   border-radius: 4px; }
   .guests-and-date-range-form__title {
     display: flex;
-    width: 320px;
+    width: 100%;
     margin-bottom: 20px; }
   .guests-and-date-range-form__title-text {
     font-family: Quicksand, OpenSans;
@@ -1571,12 +1611,16 @@ body {
     line-height: 30px;
     color: #1f2041; }
   .guests-and-date-range-form__date-inputs-container {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    width: 100%; }
   .guests-and-date-range-form__dropdown-container {
-    margin-bottom: 31px; }
+    margin-bottom: 31px;
+    width: 100%; }
+  .guests-and-date-range-form__submit-button-container {
+    width: 100%; }
 
 .form-input {
-  width: 320px; }
+  width: 100%; }
   .form-input_text-field-default {
     display: flex;
     flex-direction: column; }
@@ -1853,7 +1897,7 @@ body {
     width: 100%;
     height: 100%; }
   .landing-page__form-container {
-    width: max-content;
+    width: 380px;
     position: absolute;
     margin-top: 4.86111%;
     margin-left: 9.72222%;
@@ -1864,6 +1908,9 @@ body {
         order: 2;
         margin-top: 0px;
         margin-left: 0px; } }
+    @media screen and (max-width: 380px) {
+      .landing-page__form-container {
+        width: 100%; } }
   .landing-page__subtitle {
     width: 297px;
     position: absolute;

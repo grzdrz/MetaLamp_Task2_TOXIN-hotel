@@ -1,83 +1,48 @@
-.colorsAndTypeBlock {
-    min-width: 100%;
+.color-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-    &__colorsContainer {
-        display: flex;
-        flex-direction: column;
-
-        margin-left: 150px;
-        margin-bottom: 145px;
-    }
-
-    &__colorContainer {
-        display: flex;
-        flex-direction: row;
-
-        margin-bottom: 20px;
-        &:last-child {
-            margin-bottom: 0px;
-        }
-    }
-
-    &__colorRectangle {
-        width: 70px;
+    &__colored-square {
+        min-width: 70px;
         height: 70px;
         border-radius: 6px;
     }
 
-    &__textContainer {
+    &__text-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-left: 40px;
     }
 
-    &__colorName {
+    &__color-name {
         display: flex;
         align-items: center;
 
-        font-family: OpenSansBold;
+        font-family: Quicksand, OpenSans;
         font-style: normal;
         font-weight: bold;
         font-size: 19px;
         line-height: 29px;
         color: #1f2041;
-
-        letter-spacing: -0.015em;
     }
 
-    &__colorCode {
+    &__color-code {
         display: flex;
         align-items: center;
 
-        font-family: OpenSansRegular;
+        font-family: Quicksand, OpenSans;
         font-style: normal;
         font-weight: normal;
         font-size: 19px;
         line-height: 29px;
         color: #1f2041;
-
-        letter-spacing: -0.04em;
     }
+}
 
-    &__fontsContainer {
-        display: flex;
-        flex-direction: column;
-        width: 403px;
-        margin-right: 191px;
-    }
-
-    &__fontContainer {
-        display: flex;
-        flex-direction: row;
-
-        margin-bottom: 50px;
-        &:last-child {
-            margin-bottom: 0px;
-        }
-    }
+.font-block {
+    display: flex;
+    flex-direction: row;
 
     &__tag {
         margin-right: 30px;
@@ -86,6 +51,94 @@
     }
 
     &__description {
-        letter-spacing: -0.02em;
+        //letter-spacing: -0.02em;
+        max-width: 336px;
+    }
+}
+
+.colors {
+    &__background-color {
+        &_purpleToBlueGrad {
+            background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+        }
+
+        &_purple {
+            background: #bc9cff;
+        }
+
+        &_green {
+            background: #6fcf97;
+        }
+
+        &_darkShade5 {
+            background: rgba(31, 32, 65, 0.05);
+        }
+
+        &_darkShade25 {
+            background: rgba(31, 32, 65, 0.25);
+        }
+
+        &_darkShade50 {
+            background: rgba(31, 32, 65, 0.5);
+        }
+
+        &_darkShade75 {
+            background: rgba(31, 32, 65, 0.75);
+        }
+
+        &_darkShade100 {
+            background: #1f2041;
+        }
+    }
+}
+
+.fonts {
+    &__family {
+        &_montserrat {
+            font-family: Montserrat;
+        }
+        &_quicksand {
+            font-family: Quicksand, OpenSans;
+        }
+    }
+
+    &__weight {
+        &_regular {
+            font-weight: normal;
+        }
+        &_bold {
+            font-weight: bold;
+        }
+    }
+
+    &__size {
+        &_24px {
+            font-size: 24px;
+        }
+        &_19px {
+            font-size: 19px;
+        }
+        &_14px {
+            font-size: 14px;
+        }
+        &_12px {
+            font-size: 12px;
+        }
+    }
+
+    &__lineHeight {
+        &_30px {
+            line-height: 30px;
+        }
+        &_24px {
+            line-height: 24px;
+        }
+        &_15px {
+            line-height: 15px;
+        }
+    }
+
+    &_uppercase {
+        text-transform: uppercase;
     }
 }

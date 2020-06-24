@@ -16,7 +16,8 @@
     &__page-list {
         display: flex;
         flex-direction: row;
-        width: max-content;
+        flex-wrap: wrap;
+        justify-content: center;
         background: transparent;
     }
 

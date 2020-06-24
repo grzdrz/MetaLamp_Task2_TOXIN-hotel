@@ -175,7 +175,7 @@ body {
     height: inherit;
     z-index: 2; }
     .button-default__input-button + p {
-      z-index: 1; }
+      /* z-index: 1; */ }
   .button-default:hover {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
   .button-default_hollow-button > a,

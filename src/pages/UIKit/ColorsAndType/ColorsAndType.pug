@@ -1,3 +1,5 @@
+include ../../../components/ColorsAndType/ColorAndFontBlocks.pug
+
 doctype html
 html
     head
@@ -9,101 +11,114 @@ html
             div(class=["colors-and-type__global-logo-container"])
                 include ../../../components/GlobalLogo/GlobalLogo.pug
 
-            include ../../../components/ColorsAndType/ColorAndFontBlocks.pug
-            div(class=["colors-and-type__colorsAndFontsContainer"])
+            div(class=["colors-and-type__colors-and-fonts-container"])
 
-                div(class=["colors-and-type__colorsContainer"])
+                div(class=["colors-and-type__color-blocks-container"])
                     - for(let i = 100; i >= 25; i-=25)
+                        div(class=["colors-and-type__color-block-container"])
+                            +getColorBlock({
+                                colorName: "Dark Shade " + i + "%",
+                                colorCode: "#1F2041",
+                                backgroundColor: "darkShade" + i,
+                            })
+                    
+                    div(class=["colors-and-type__color-block-container"])
                         +getColorBlock({
-                            colorName: "Dark Shade " + i + "%",
+                            colorName: "Dark Shade 5%",
                             colorCode: "#1F2041",
-                        },
-                        {
-                            colorRectangle: [
-                                "colors__background_darkShade" + i
-                            ]
+                            backgroundColor: "darkShade5",
+                        })
+                    
+                    div(class=["colors-and-type__color-block-container"])
+                        +getColorBlock({
+                            colorName: "Purple",
+                            colorCode: "#BC9CFF",
+                            backgroundColor: "purple",
                         })
 
-                    +getColorBlock({
-                        colorName: "Dark Shade 5%",
-                        colorCode: "#1F2041",
-                    },
-                    {
-                        colorRectangle: [
-                            "colors__background_darkShade5"
-                        ]
-                    })
+                    div(class=["colors-and-type__color-block-container"])
+                        +getColorBlock({
+                            colorName: "Green",
+                            colorCode: "#6FCF97",
+                            backgroundColor: "green",
+                        })
 
-                    +getColorBlock({
-                        colorName: "Purple",
-                        colorCode: "#BC9CFF",
-                    },
-                    {
-                        colorRectangle: [
-                            "colors__background_purple"
-                        ]
-                    })
 
-                    +getColorBlock({
-                        colorName: "Green",
-                        colorCode: "#6FCF97",
-                    },
-                    {
-                        colorRectangle: [
-                            "colors__background_green"
-                        ]
-                    })
+                div(class=["colors-and-type__font-blocks-container"])
+                    div(class=["colors-and-type__font-block-container"])
+                        +getFontBlock({
+                            tagOptions: {
+                                tagName: "H1",
+                                family: "montserrat",
+                                weight: "regular",
+                                size: "24px",
+                                color: "darkShade25"
+                            },
+                            descriptionOptions: {
+                                text: "This one is the sub-section or widget title",
+                                family: "quicksand",
+                                weight: "bold",                                
+                                size: "24px",
+                                color: "darkShade100",
+                                lineHeight: "30px",
+                            }
+                        })  
 
-                div(class=["colors-and-type__fontsContainer"])
-                    +getFontBlock({
-                        tagName: "H1",
-                        descriptionText: "This one is the sub-section or widget title",
-                    },
-                    {
-                        tag: [
-                            "fonts__family_montserratRegular", "fonts__size_24", "colors__font_darkShade25"
-                        ],
-                        description: [
-                            "fonts__family_quicksandBold", "fonts__size_24", "colors__font_darkShade100", "fonts__lineHeight_30"
-                        ]
-                    })
+                    div(class=["colors-and-type__font-block-container"])
+                        +getFontBlock({
+                            tagOptions: {
+                                tagName: "H2",
+                                family: "montserrat",
+                                weight: "regular",
+                                size: "19px",
+                                color: "darkShade25"
+                            },
+                            descriptionOptions: {
+                                text: "Next one is the item title inside widgets",
+                                family: "quicksand",
+                                weight: "bold",
+                                size: "19px",
+                                color: "darkShade100",
+                                lineHeight: "24px",
+                            }
+                        })
 
-                    +getFontBlock({
-                        tagName: "H2",
-                        descriptionText: "Next one is the item title inside widgets",
-                    },
-                    {
-                        tag: [
-                            "fonts__family_montserratRegular", "fonts__size_19", "colors__font_darkShade25"
-                        ],
-                        description: [
-                            "fonts__family_quicksandBold", "fonts__size_19", "colors__font_darkShade100", "fonts__lineHeight_24"
-                        ]
-                    })
+                    div(class=["colors-and-type__font-block-container"])
+                        +getFontBlock({
+                            tagOptions: {
+                                tagName: "H3",
+                                family: "montserrat",
+                                weight: "regular",
+                                size: "12px",
+                                color: "darkShade25"
+                            },
+                            descriptionOptions: {
+                                text: "This is a label or CTA text",
+                                family: "montserrat",
+                                weight: "bold",
+                                size: "12px",
+                                color: "darkShade100",
+                                lineHeight: "15px",
+                                inUppercase: true,
+                            }
+                        })
 
-                    +getFontBlock({
-                        tagName: "H3",
-                        descriptionText: "This is a label or CTA text",
-                    },
-                    {
-                        tag: [
-                            "fonts__family_montserratRegular", "fonts__size_12", "colors__font_darkShade25"
-                        ],
-                        description: [
-                            "fonts__family_montserratBold", "fonts__size_12", "colors__font_darkShade100", "fonts__lineHeight_15", "fonts_uppercase"
-                        ]
-                    })
-
-                    +getFontBlock({
-                        tagName: "Body",
-                        descriptionText: "This is the body text which is used for most of the design, like paragraphs, lists, etc.",
-                    },
-                    {
-                        tag: [
-                            "fonts__family_montserratRegular", "fonts__size_14", "colors__font_darkShade25"
-                        ],
-                        description: [
-                            "fonts__family_montserratRegular", "fonts__size_14", "colors__font_darkShade75", "fonts__lineHeight_24"
-                        ]
-                    })
+                    div(class=["colors-and-type__font-block-container"])
+                        +getFontBlock({
+                            tagOptions: {
+                                tagName: "Body",
+                                family: "montserrat",
+                                weight: "regular",
+                                size: "14px",
+                                color: "darkShade25"
+                            },
+                            descriptionOptions: {
+                                text: "This is the body text which is used for most of the design, like paragraphs, lists, etc.",
+                                family: "montserrat",
+                                weight: "regular",                                
+                                size: "14px",
+                                color: "darkShade75",
+                                lineHeight: "24px",
+                            }
+                        })
 

@@ -48,147 +48,102 @@ body {
 .globalLogo {
   height: 48px; }
 
-.colorsAndTypeBlock {
-  min-width: 100%;
+.color-block {
   display: flex;
-  flex-direction: column; }
-  .colorsAndTypeBlock__colorsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-left: 150px;
-    margin-bottom: 145px; }
-  .colorsAndTypeBlock__colorContainer {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px; }
-    .colorsAndTypeBlock__colorContainer:last-child {
-      margin-bottom: 0px; }
-  .colorsAndTypeBlock__colorRectangle {
-    width: 70px;
+  flex-direction: row; }
+  .color-block__colored-square {
+    min-width: 70px;
     height: 70px;
     border-radius: 6px; }
-  .colorsAndTypeBlock__textContainer {
+  .color-block__text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 40px; }
-  .colorsAndTypeBlock__colorName {
+  .color-block__color-name {
     display: flex;
     align-items: center;
-    font-family: OpenSansBold;
+    font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
     line-height: 29px;
-    color: #1f2041;
-    letter-spacing: -0.015em; }
-  .colorsAndTypeBlock__colorCode {
+    color: #1f2041; }
+  .color-block__color-code {
     display: flex;
     align-items: center;
-    font-family: OpenSansRegular;
+    font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: normal;
     font-size: 19px;
     line-height: 29px;
-    color: #1f2041;
-    letter-spacing: -0.04em; }
-  .colorsAndTypeBlock__fontsContainer {
-    display: flex;
-    flex-direction: column;
-    width: 403px;
-    margin-right: 191px; }
-  .colorsAndTypeBlock__fontContainer {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 50px; }
-    .colorsAndTypeBlock__fontContainer:last-child {
-      margin-bottom: 0px; }
-  .colorsAndTypeBlock__tag {
+    color: #1f2041; }
+
+.font-block {
+  display: flex;
+  flex-direction: row; }
+  .font-block__tag {
     margin-right: 30px;
     min-width: 37px;
     text-align: end; }
-  .colorsAndTypeBlock__description {
-    letter-spacing: -0.02em; }
+  .font-block__description {
+    max-width: 336px; }
 
-.colors__background_purpleToBlueGrad {
+.colors__background-color_purpleToBlueGrad {
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
 
-.colors__background_purple {
+.colors__background-color_purple {
   background: #bc9cff; }
 
-.colors__background_green {
+.colors__background-color_green {
   background: #6fcf97; }
 
-.colors__background_darkShade5 {
+.colors__background-color_darkShade5 {
   background: rgba(31, 32, 65, 0.05); }
 
-.colors__background_darkShade25 {
+.colors__background-color_darkShade25 {
   background: rgba(31, 32, 65, 0.25); }
 
-.colors__background_darkShade50 {
+.colors__background-color_darkShade50 {
   background: rgba(31, 32, 65, 0.5); }
 
-.colors__background_darkShade75 {
+.colors__background-color_darkShade75 {
   background: rgba(31, 32, 65, 0.75); }
 
-.colors__background_darkShade100 {
+.colors__background-color_darkShade100 {
   background: #1f2041; }
 
-.colors__font_purple {
-  color: #bc9cff; }
+.fonts__family_montserrat {
+  font-family: Montserrat; }
 
-.colors__font_green {
-  color: #6fcf97; }
+.fonts__family_quicksand {
+  font-family: Quicksand, OpenSans; }
 
-.colors__font_darkShade5 {
-  color: rgba(31, 32, 65, 0.05); }
+.fonts__weight_regular {
+  font-weight: normal; }
 
-.colors__font_darkShade25 {
-  color: rgba(31, 32, 65, 0.25); }
+.fonts__weight_bold {
+  font-weight: bold; }
 
-.colors__font_darkShade50 {
-  color: rgba(31, 32, 65, 0.5); }
-
-.colors__font_darkShade75 {
-  color: rgba(31, 32, 65, 0.75); }
-
-.colors__font_darkShade100 {
-  color: #1f2041; }
-
-.colors__font_white {
-  color: white; }
-
-.fonts__family_montserratRegular {
-  font-family: MontserratRegular; }
-
-.fonts__family_quicksandRegular {
-  font-family: OpenSansRegular; }
-
-.fonts__family_montserratBold {
-  font-family: MontserratBold; }
-
-.fonts__family_quicksandBold {
-  font-family: OpenSansBold; }
-
-.fonts__size_24 {
+.fonts__size_24px {
   font-size: 24px; }
 
-.fonts__size_19 {
+.fonts__size_19px {
   font-size: 19px; }
 
-.fonts__size_14 {
+.fonts__size_14px {
   font-size: 14px; }
 
-.fonts__size_12 {
+.fonts__size_12px {
   font-size: 12px; }
 
-.fonts__lineHeight_30 {
+.fonts__lineHeight_30px {
   line-height: 30px; }
 
-.fonts__lineHeight_24 {
+.fonts__lineHeight_24px {
   line-height: 24px; }
 
-.fonts__lineHeight_15 {
+.fonts__lineHeight_15px {
   line-height: 15px; }
 
 .fonts_uppercase {
@@ -197,10 +152,31 @@ body {
 .colors-and-type {
   min-width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding-top: 30px; }
   .colors-and-type__global-logo-container {
     margin-left: 30px;
     margin-bottom: 67px; }
+  .colors-and-type__colors-and-fonts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 191px 145px 150px; }
+    @media screen and (max-width: 1024px) {
+      .colors-and-type__colors-and-fonts-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 20px 145px 20px; } }
+  @media screen and (max-width: 1024px) {
+    .colors-and-type__color-blocks-container {
+      margin-bottom: 50px; } }
+  .colors-and-type__color-block-container {
+    margin-bottom: 20px; }
+    .colors-and-type__color-block-container:last-child {
+      margin-bottom: 0px; }
+  .colors-and-type__font-block-container {
+    margin-bottom: 50px; }
+    .colors-and-type__font-block-container:last-child {
+      margin-bottom: 0px; }
 

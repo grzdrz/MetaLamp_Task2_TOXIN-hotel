@@ -1532,7 +1532,8 @@ body {
   width: 100%; }
   .date-input__input-container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
     .date-input__input-container_first {
       margin-right: 20px; }
   .date-input__title {
