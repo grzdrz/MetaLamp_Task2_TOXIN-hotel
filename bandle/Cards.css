@@ -954,7 +954,8 @@ body {
   width: 100%; }
   .date-input__input-container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
     .date-input__input-container_first {
       margin-right: 20px; }
   .date-input__title {
@@ -1819,7 +1820,8 @@ body {
   width: 100%; }
   .date-input__input-container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
     .date-input__input-container_first {
       margin-right: 20px; }
   .date-input__title {
@@ -2633,7 +2635,8 @@ body {
   width: 100%; }
   .date-input__input-container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
     .date-input__input-container_first {
       margin-right: 20px; }
   .date-input__title {
@@ -3317,7 +3320,7 @@ body {
     height: 151px;
     outline: transparent;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
-    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
     transform: matrix(-1, 0, 0, 1, 0, 0); }
     .room-info__arrow-forward-icon {
       transform: rotate(90deg);
