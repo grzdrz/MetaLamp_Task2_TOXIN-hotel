@@ -1,8 +1,4 @@
-//в этом варианте можно не задавать падинги текста явно, а просто указывать ширину контейнеру
-$buttonHeight: 44px;
-$buttonTexSidetPaddings: 60px;
 $borderRadius: 22px;
-$borderThickness: 2px;
 .button-default {
     width: 100%;
     height: 100%;
@@ -26,7 +22,7 @@ $borderThickness: 2px;
         top: 0px;
         bottom: 0px;
 
-        margin: $borderThickness;
+        margin: 2px;
 
         text-decoration: none;
         display: flex;
@@ -58,14 +54,6 @@ $borderThickness: 2px;
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
-        letter-spacing: -0.03em;
-
-        &_purple {
-            color: #bc9cff;
-        }
-        &_white {
-            color: white;
-        }
     }
 
     &__arrow {
@@ -84,8 +72,7 @@ $borderThickness: 2px;
 
         position: absolute;
         right: 0px;
-        height: $buttonHeight;
-        width: $buttonHeight;
+        width: 44px;
     }
 
     &__submit {
@@ -96,7 +83,6 @@ $borderThickness: 2px;
         height: inherit;
 
         opacity: 0;
-
         z-index: 2;
     }
 
@@ -104,11 +90,11 @@ $borderThickness: 2px;
         background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
     }
 
-    //модификатор, делающий кнопку визуально полой(на самом деле основа для полых кнопок заложена в основной блок стилей)
     &_hollow {
         & > .button-default__basis {
             background: #ffffff;
-            & > .button-default__text {
+            & > .button-default__text,
+            & > .button-default__arrow {
                 color: #bc9cff;
             }
         }

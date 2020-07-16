@@ -5,35 +5,27 @@
     text - текст внутри кнопки
 
 mixin getButton(options)
-    - const { isHollow, hasArrow, buttonType, text } = options;
-    - const container = [], buttonText = [], arrow = [];
+    - const { isHollow, hasArrow, buttonType, text, url } = options;
+    - const container = [];
 
-    - if(isHollow) {
+    - if(isHollow)
         - container.push("button-default_hollow");
-        - buttonText.push("button-default__text_purple");
-    - }
-    - if(hasArrow) {
-        - if(isHollow)
-            - arrow.push("button-default__text_purple");
-        - else
-            - arrow.push("button-default__text_white");
-    - }
 
 
     div(class=["button-default"].concat(container || []))
         - if(buttonType === "a")
-            a(href='#' class=["button-default__basis"])
-                p(class=["button-default__text"].concat(buttonText || []))= text
+            a(href=(url ? url : 'https://www.google.com/') class=["button-default__basis"])
+                span(class=["button-default__text"])= text
                 - if(hasArrow)
-                    p(class=["button-default__arrow"].concat(arrow || [])) arrow_forward 
+                    span(class=["button-default__arrow"]) arrow_forward 
         - else if(buttonType === "button")
             button(class=["button-default__basis"])
-                p(class=["button-default__text"].concat(buttonText || []))= text
+                span(class=["button-default__text"])= text
                 - if(hasArrow)
-                    p(class=["button-default__arrow"].concat(arrow || [])) arrow_forward
+                    span(class=["button-default__arrow"]) arrow_forward
         - else if(buttonType === "submit")
             label(class=["button-default__basis"])
                 input(class=["button-default__submit"] type="submit")
-                p(class=["button-default__text"].concat(buttonText || []))= text
+                span(class=["button-default__text"])= text
                 - if(hasArrow)
-                    p(class=["button-default__arrow"].concat(arrow || [])) arrow_forward
+                    span(class=["button-default__arrow"]) arrow_forward

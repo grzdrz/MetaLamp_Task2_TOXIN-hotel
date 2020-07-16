@@ -1443,12 +1443,7 @@ body {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
-    text-transform: uppercase;
-    letter-spacing: -0.03em; }
-    .button-default__text_purple {
-      color: #bc9cff; }
-    .button-default__text_white {
-      color: white; }
+    text-transform: uppercase; }
   .button-default__arrow {
     cursor: pointer;
     font-family: Material Icons;
@@ -1462,7 +1457,6 @@ body {
     text-align: center;
     position: absolute;
     right: 0px;
-    height: 44px;
     width: 44px; }
   .button-default__submit {
     cursor: pointer;
@@ -1475,7 +1469,8 @@ body {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
   .button-default_hollow > .button-default__basis {
     background: #ffffff; }
-    .button-default_hollow > .button-default__basis > .button-default__text {
+    .button-default_hollow > .button-default__basis > .button-default__text,
+    .button-default_hollow > .button-default__basis > .button-default__arrow {
       color: #bc9cff; }
 
 .pagination {

@@ -1,0 +1,8 @@
+mixin getInfoBarMenu(options)
+    - const { listOfLinks } = options;
+
+    ul(class=["info-bar"])
+        - for(let i = 0; i < options.listOfLinks.length; i++) {
+            li(class=["info-bar__item"])
+                a(class=["info-bar__item-ref"] href=options.listOfLinks[i].url)= options.listOfLinks[i].text  
+        - }

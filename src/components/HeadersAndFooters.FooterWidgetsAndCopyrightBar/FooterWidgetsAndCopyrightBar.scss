@@ -1,5 +1,7 @@
 @import "../FormElements.FormInput/FormInput.scss";
+@import "../HeadersAndFooters.ColoredLogo/ColoredLogo.scss";
 @import "../HeadersAndFooters.SocialMedia/SocialMedia.scss";
+@import "../HeadersAndFooters.InfoBarMenu/InfoBarMenu.scss";
 
 .footer-widgets-and-copyright-bar {
     width: 100%;
@@ -138,6 +140,4 @@
             margin-bottom: 20px;
         }
     }
-
-    @import "./InfoBarMenu/InfoBarMenu.scss";
 }

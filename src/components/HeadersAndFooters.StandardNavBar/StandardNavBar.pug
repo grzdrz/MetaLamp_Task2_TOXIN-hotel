@@ -1,44 +1,52 @@
 //-
-    options.isAuthorized - авторизован ли пользователь
-    options.userFullName - полное имя пользователя
+    isAuthorized - авторизован ли пользователь
+    userFullName - полное имя пользователя
+    navList - список адресов и подписей для элементов меню навигации
 
-include ./NavigationMenu/NavigationMenu.pug
 include ../FormElements.ButtonDefault/ButtonDefault.pug
+include ../HeadersAndFooters.ColoredLogo/ColoredLogo.pug
 
 mixin getStandardNavBar(options)
+    - const { isAuthorized, userFullName } = options;
+    - const navList = [
+    -    {url: 'https://www.google.com/', text: 'О нас', hasDropdown: false},
+    -    {url: 'https://www.google.com/', text: 'Услуги', hasDropdown: true},
+    -    {url: 'https://www.google.com/', text: 'Вакансии', hasDropdown: false},
+    -    {url: 'https://www.google.com/', text: 'Новости', hasDropdown: false},
+    -    {url: 'https://www.google.com/', text: 'Соглашения', hasDropdown: true},
+    - ]
 
 
-    div(class=["standard-navigation-bar"])
-        div(class=["standard-navigation-bar__logo-colore-container"])
-            include ../HeadersAndFooters.LogoColored/LogoColored.pug
+    div(class=["header"])
+        div(class=["header__colored-logo-container"])
+            +getColoredLogo()
 
-        div(class=["standard-navigation-bar__navigation-menu-container"])
-            +getNavigationMenu({
-                navList: [
-                    {url: '#', text: 'О нас', hasDropdown: false},
-                    {url: '#', text: 'Услуги', hasDropdown: true},
-                    {url: '#', text: 'Вакансии', hasDropdown: false},
-                    {url: '#', text: 'Новости', hasDropdown: false},
-                    {url: '#', text: 'Соглашения', hasDropdown: true},
-                ]
-            })
+        div(class=["header__navigation-menu"])
+            ul(class=["header__list"])
+                - for(let i = 0; i < navList.length; i++){
+                    li(class=["header__item"])
+                        a(class=["header__item-ref"] href=navList[i].url)= navList[i].text
+                        - if(navList[i].hasDropdown)
+                            span(class=["header__dropdown-arrow"]) expand_more
+                - }  
 
-        - if(options.isAuthorized)
-            div(class=["standard-navigation-bar__user-full-name"])
-                p(class=["standard-navigation-bar__user-full-name-text"])= options.userFullName
+        - if(isAuthorized)
+            div(class=["header__user-full-name"])
+                span(class=["header__name-text"])= userFullName
         - else
-            div(class=["standard-navigation-bar__buttons"])
-                div(class=["standard-navigation-bar__first-button-container"])
+            div(class=["header__buttons"])
+                div(class=["header__first-button-container"])
                     +getButton({
                         text: 'войти',
                         isHollow:  true,
                         buttonType: "a",
-                        height: "34px",
+                        hasArrow: false,
+                        url: 'https://www.google.com/',
                     })
-                div(class=["standard-navigation-bar__second-button-container"])
+                div(class=["header__second-button-container"])
                     +getButton({
                         text: 'зарегистрироваться',
                         isHollow:  false,
                         buttonType: "a",
-                        height: "34px",
+                        hasArrow: false,
                     })          

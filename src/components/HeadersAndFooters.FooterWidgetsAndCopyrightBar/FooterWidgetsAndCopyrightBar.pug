@@ -1,12 +1,14 @@
-include ./InfoBarMenu/InfoBarMenu.pug
+include ../HeadersAndFooters.InfoBarMenu/InfoBarMenu.pug
 include ../FormElements.FormInput/FormInput.pug
+include ../HeadersAndFooters.ColoredLogo/ColoredLogo.pug
+include ../HeadersAndFooters.SocialMedia/SocialMedia.pug
 
 mixin getFooterWidgetsAndCopyrightBar(options)
     div(class=["footer-widgets-and-copyright-bar"])
         div(class=["footer-widgets-and-copyright-bar__info-bar"])
 
             div(class=["footer-widgets-and-copyright-bar__some-info"])
-                include ../HeadersAndFooters.LogoColored/logoColored.pug
+                +getColoredLogo()
                 p(class=["footer-widgets-and-copyright-bar__some-info-text"]) 
                     | Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
 
@@ -59,4 +61,4 @@ mixin getFooterWidgetsAndCopyrightBar(options)
             div(class=["footer-widgets-and-copyright-bar__copyright"])
                 p(class=["footer-widgets-and-copyright-bar__copyright-text"]) 
                     | Copyright © 2018 Toxin отель. Все права зачищены.
-            include ../HeadersAndFooters.SocialMedia/SocialMedia.pug
+            +getSocialMedia()

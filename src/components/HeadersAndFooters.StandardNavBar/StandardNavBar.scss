@@ -1,16 +1,17 @@
-@import "../HeadersAndFooters.LogoColored/LogoColored.scss";
+@import "../HeadersAndFooters.ColoredLogo/ColoredLogo.scss";
 @import "../FormElements.ButtonDefault/ButtonDefault.scss";
 
-.standard-navigation-bar {
+.header {
     width: 100%;
 
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: min-content auto min-content;
     align-items: center;
-    /* padding: 15px 140px; */
-    padding: 15px scalePixelsAsPercentage(140, 1440);
     justify-items: start;
+
+    padding: 15px scalePixelsAsPercentage(140, 1440);
+
     background: #ffffff;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 
@@ -31,13 +32,13 @@
         justify-content: flex-start;
     }
 
-    &__logo-colore-container {
+    &__colored-logo-container {
         @media screen and (max-width: 768px) {
             justify-self: flex-start;
         }
     }
 
-    &__navigation-menu-container {
+    &__navigation-menu {
         justify-self: end;
         margin-right: 20px;
 
@@ -59,6 +60,75 @@
         @media screen and (max-width: 550px) {
             justify-self: flex-start;
         }
+    }
+
+    &__list {
+        list-style: none;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        margin: 0px 10px;
+        @media screen and (max-width: 768px) {
+            margin: 10px 0px;
+        }
+
+        &:first-child {
+            margin: 0px 10px 0px 0px;
+            .header__item-ref {
+                color: rgba(31, 32, 65, 0.75);
+                font-weight: bold;
+            }
+            @media screen and (max-width: 768px) {
+                margin: 0px 0px 10px 0px;
+            }
+        }
+
+        &:last-child {
+            margin: 0px 0px 0px 10px;
+            @media screen and (max-width: 768px) {
+                margin: 10px 0px 0px 0px;
+            }
+        }
+    }
+
+    &__item-ref {
+        text-decoration: none;
+        color: rgba(31, 32, 65, 0.5);
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        white-space: nowrap;
+        letter-spacing: 0.005em;
+    }
+
+    &__dropdown-arrow {
+        cursor: pointer;
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 20px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: rgba(31, 32, 65, 0.5);
     }
 
     &__user-full-name {
@@ -129,6 +199,4 @@
         width: 196px;
         height: 34px;
     }
-
-    @import "./NavigationMenu/NavigationMenu.scss";
 }
