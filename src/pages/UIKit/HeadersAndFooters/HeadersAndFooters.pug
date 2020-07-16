@@ -1,3 +1,8 @@
+include ../../../components/GlobalLogo/GlobalLogo.pug
+include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
+include ../../../components/HeadersAndFooters.LongFooter/LongFooter.pug
+include ../../../components/HeadersAndFooters.ShortFooter/ShortFooter.pug
+
 doctype html
 html
     head
@@ -8,9 +13,8 @@ html
         div(class=["headersAndFooters"])
 
             div(class=["headersAndFooters__global-logo-container"])
-                include ../../../components/GlobalLogo/GlobalLogo.pug
+                +getGlobalLogo()
 
-            include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
             div(class=["headersAndFooters__standard-nav-bar-container_first"])
                 +getStandardNavBar({
                     isAuthorized: false,
@@ -22,9 +26,8 @@ html
                     userFullName: "Юлий Цезарь",
                 })
 
-            include ../../../components/HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.pug
             div(class=["headersAndFooters__footer-widgets-and-copyright-bar-container"])
-                +getFooterWidgetsAndCopyrightBar()
+                +getLongFooter()
 
             div(class=["headersAndFooters__footer-creative-container"])
-                include ../../../components/HeadersAndFooters.FooterCreative/FooterCreative.pug
+                +getShortFooter()

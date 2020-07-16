@@ -3,16 +3,16 @@ include ../FormElements.FormInput/FormInput.pug
 include ../HeadersAndFooters.ColoredLogo/ColoredLogo.pug
 include ../HeadersAndFooters.SocialMedia/SocialMedia.pug
 
-mixin getFooterWidgetsAndCopyrightBar(options)
-    div(class=["footer-widgets-and-copyright-bar"])
-        div(class=["footer-widgets-and-copyright-bar__info-bar"])
+mixin getLongFooter(options)
+    div(class=["long-footer"])
+        div(class=["long-footer__info-bar"])
 
-            div(class=["footer-widgets-and-copyright-bar__some-info"])
+            div(class=["long-footer__general-info"])
                 +getColoredLogo()
-                p(class=["footer-widgets-and-copyright-bar__some-info-text"]) 
+                p(class=["long-footer__general-info-text"]) 
                     | Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
 
-            div(class=["footer-widgets-and-copyright-bar__info-bar-menu-container_first"])
+            div(class=["long-footer__info-menu-container"])
                 +getInfoBarMenu({
                     listOfLinks: [
                         {url: "#", text: "навигация"}, 
@@ -22,7 +22,7 @@ mixin getFooterWidgetsAndCopyrightBar(options)
                         {url: "#", text: "Услуги"},
                     ]
                 })
-            div(class=["footer-widgets-and-copyright-bar__info-bar-menu-container_second"])
+            div(class=["long-footer__info-menu-container"])
                 +getInfoBarMenu({
                     listOfLinks: [
                         {url: "#", text: "о нас"}, 
@@ -32,7 +32,7 @@ mixin getFooterWidgetsAndCopyrightBar(options)
                         {url: "#", text: "Инвесторы"},
                     ]
                 })
-            div(class=["footer-widgets-and-copyright-bar__info-bar-menu-container_third"])
+            div(class=["long-footer__info-menu-container"])
                 +getInfoBarMenu({
                     listOfLinks: [
                         {url: "#", text: "Служба поддержки"}, 
@@ -42,11 +42,11 @@ mixin getFooterWidgetsAndCopyrightBar(options)
                     ]
                 })           
 
-            div(class=["footer-widgets-and-copyright-bar__subscribe-to-our-newsletter"])
-                p(class=["footer-widgets-and-copyright-bar__subscribe-title-text"]) Подписка
-                p(class=["footer-widgets-and-copyright-bar__subscribe-main-text"]) 
+            div(class=["long-footer__subscribe"])
+                p(class=["long-footer__subscribe-title-text"]) Подписка
+                p(class=["long-footer__subscribe-main-text"]) 
                     | Получайте специальные предложения и новости сервиса
-                form(class=["footer-widgets-and-copyright-bar__subscribe-to-our-newsletter-email-form"])
+                form(class=["long-footer__subscribe-email-form"])
                     +getFormInput({
                         hasTitle: false,
                         isTitleTextTestVisible: false,
@@ -57,8 +57,7 @@ mixin getFooterWidgetsAndCopyrightBar(options)
                         hasSubmitButton: true
                     })
 
-        div(class=["footer-widgets-and-copyright-bar__copyright-bar"])
-            div(class=["footer-widgets-and-copyright-bar__copyright"])
-                p(class=["footer-widgets-and-copyright-bar__copyright-text"]) 
-                    | Copyright © 2018 Toxin отель. Все права зачищены.
+        div(class=["long-footer__copyright-bar"])
+            p(class=["long-footer__copyright"]) 
+                | Copyright © 2018 Toxin отель. Все права зачищены.
             +getSocialMedia()

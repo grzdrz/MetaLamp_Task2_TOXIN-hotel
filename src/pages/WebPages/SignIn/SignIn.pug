@@ -1,3 +1,7 @@
+include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
+include ../../../components/Cards.AuthorizationForm/AuthorizationForm.pug
+include ../../../components/HeadersAndFooters.LongFooter/LongFooter.pug
+
 doctype html
 html
     head
@@ -6,16 +10,13 @@ html
         meta(name="viewport" content="width=device-width")
     body
         div(class=["sign-in"])
-
             div(class=["sign-in__header-container"])
-                include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
                 +getStandardNavBar({
                     isAuthorized: false,
                 })
 
             div(class=["sign-in__main-content"])
-                div(class=["sign-in__form-container"])
-                    include ../../../components/Cards.AuthorizationForm/AuthorizationForm.pug
+                div(class=["sign-in__form-container"])  
                     +getAuthorizationForm({
                         titleText: "Войти",
                     })
@@ -23,5 +24,4 @@ html
                     img(class=["sign-in__background-image"] src="./src/pages/WebPages/SignIn/img/backgroundImage.png")
 
             div(class=["sign-in__footer-container"])
-                include ../../../components/HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.pug
-                +getFooterWidgetsAndCopyrightBar()
+                +getLongFooter()

@@ -1,3 +1,13 @@
+include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
+include ../../../components/Cards.RoomInfo/RoomInfo.pug
+include ../../../components/FormElements.DateInput/DateInput.pug
+include ../../../components/FormElements.Dropdown/Dropdown.pug
+include ../../../components/FormElements.RangeSlider/RangeSlider.pug
+include ../../../components/FormElements.CheckboxList/CheckboxList.pug
+include ../../../components/FormElements.CheckboxList/CheckboxList.pug
+include ../../../components/FormElements.Pagination/Pagination.pug
+include ../../../components/HeadersAndFooters.LongFooter/LongFooter.pug
+
 doctype html
 html
     head
@@ -7,16 +17,13 @@ html
     body
         div(class=["search-room"])
             div(class=["search-room__header-container"])
-                include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
                 +getStandardNavBar({
                     isAuthorized: false,
                 })
 
-            include ../../../components/Cards.RoomInfo/RoomInfo.pug
             div(class=["search-room__content"])
                 div(class=["search-room__filters"])
                     div(class=["search-room__date-input-container"])
-                        include ../../../components/FormElements.DateInput/DateInput.pug
                         +getDateInput({
                             isDoubleInput: false,
                             isDateRange: true, 
@@ -25,7 +32,6 @@ html
                         })
 
                     div(class=["search-room__dropdown-1-container"])
-                        include ../../../components/FormElements.Dropdown/Dropdown.pug
                         +getDropdown({
                             titleText: "гости",
                             isTitleTextTestVisible: false,
@@ -44,7 +50,6 @@ html
                         })
 
                     div(class=["search-room__range-slider-container"])
-                        include ../../../components/FormElements.RangeSlider/RangeSlider.pug
                         +getRangeSlider({
                             title: "диапазон цены",
                             firstValue: 5000,
@@ -57,7 +62,6 @@ html
                         })
 
                     div(class=["search-room__checkbox-list-1-container"])
-                        include ../../../components/FormElements.CheckboxList/CheckboxList.pug
                         +getCheckbox({
                             titleText: "Checkbox Buttons",
                             isExpandable: false, 
@@ -70,7 +74,6 @@ html
                         }) 
 
                     div(class=["search-room__checkbox-list-2-container"])
-                        include ../../../components/FormElements.CheckboxList/CheckboxList.pug
                         +getCheckbox({
                             titleText: "доступность",
                             isExpandable: false,
@@ -131,7 +134,6 @@ html
                                 +getRoomInfo(roomsInfo[i])
                         - }
                     div(class=["search-room__pagination-container"])
-                        include ../../../components/FormElements.Pagination/Pagination.pug
                         +getPagination({
                             pagesCount: 15,
                             curPageNumber: 1,
@@ -140,5 +142,4 @@ html
                         })
 
             div(class=["search-room__footer-container"])
-                include ../../../components/HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.pug
-                +getFooterWidgetsAndCopyrightBar()
+                +getLongFooter()

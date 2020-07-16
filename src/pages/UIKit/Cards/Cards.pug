@@ -1,3 +1,4 @@
+include ../../../components/GlobalLogo/GlobalLogo.pug
 include ../../../components/Cards.AuthorizationForm/AuthorizationForm.pug
 include ../../../components/Cards.GuestsAndDateRangeForm/GuestsAndDateRangeForm.pug
 include ../../../components/Cards.PriceCalculationForm/PriceCalculationForm.pug
@@ -13,7 +14,7 @@ html
     body
         div(class=["cards"])
             div(class=["cards__global-logo-container"])
-                include ../../../components/GlobalLogo/GlobalLogo.pug
+                +getGlobalLogo()
 
             div(class=["cards__content"])
                 div(class=["cards__column-1"])

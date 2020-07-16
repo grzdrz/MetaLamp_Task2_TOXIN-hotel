@@ -1,3 +1,7 @@
+include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
+include ../../../components/Cards.RegistrationForm/RegistrationForm.pug
+include ../../../components/HeadersAndFooters.LongFooter/LongFooter.pug
+
 doctype html
 html
     head
@@ -8,14 +12,12 @@ html
         div(class=["registration"])
 
             div(class=["registration__header-container"])
-                include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
                 +getStandardNavBar({
                     isAuthorized: false,
                 })
 
             div(class=["registration__main-content"])
                 div(class=["registration__form-container"])
-                    include ../../../components/Cards.RegistrationForm/RegistrationForm.pug
                     +getRegistrationForm({
                         titleText: "Регистрация аккаунта",
                     })
@@ -23,5 +25,4 @@ html
                     img(class=["registration__background-image"] src="./src/pages/WebPages/Registration/img/backgroundImage.png")
 
             div(class=["registration__footer-container"])
-                include ../../../components/HeadersAndFooters.FooterWidgetsAndCopyrightBar/FooterWidgetsAndCopyrightBar.pug
-                +getFooterWidgetsAndCopyrightBar()
+                +getLongFooter()
