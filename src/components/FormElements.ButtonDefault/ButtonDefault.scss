@@ -5,6 +5,7 @@ $borderRadius: 22px;
 $borderThickness: 2px;
 .button-default {
     width: 100%;
+    height: 100%;
 
     cursor: pointer;
 
@@ -16,7 +17,7 @@ $borderThickness: 2px;
     border-radius: $borderRadius;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
 
-    &__button-basis {
+    &__basis {
         cursor: pointer;
 
         position: absolute;
@@ -44,7 +45,7 @@ $borderThickness: 2px;
         width: -webkit-fill-available;
     }
 
-    &__button-text {
+    &__text {
         cursor: pointer;
 
         background: transparent;
@@ -58,6 +59,13 @@ $borderThickness: 2px;
         line-height: 15px;
         text-transform: uppercase;
         letter-spacing: -0.03em;
+
+        &_purple {
+            color: #bc9cff;
+        }
+        &_white {
+            color: white;
+        }
     }
 
     &__arrow {
@@ -80,18 +88,16 @@ $borderThickness: 2px;
         width: $buttonHeight;
     }
 
-    &__input-button {
+    &__submit {
         cursor: pointer;
 
         position: absolute;
-        opacity: 0;
         width: inherit;
         height: inherit;
 
+        opacity: 0;
+
         z-index: 2;
-        & + p {
-            /* z-index: 1; */
-        }
     }
 
     &:hover {
@@ -99,51 +105,12 @@ $borderThickness: 2px;
     }
 
     //модификатор, делающий кнопку визуально полой(на самом деле основа для полых кнопок заложена в основной блок стилей)
-    &_hollow-button {
-        & > a,
-        & > button,
-        & > label {
+    &_hollow {
+        & > .button-default__basis {
             background: #ffffff;
-            & > p:first-of-type {
+            & > .button-default__text {
                 color: #bc9cff;
             }
-        }
-    }
-
-/*     width: 99px;
-    &_with-width_99px {
-        width: 99px;
-    }
-    &_with-width_320px {
-        width: 320px;
-    }
-    &_with-width_79px {
-        width: 79px;
-    }
-    &_with-width_101px {
-        width: 101px;
-    }
-    &_with-width_87px {
-        width: 87px;
-    }
-    &_with-width_196px {
-        width: 196px;
-    } */
-
-    height: $buttonHeight;
-    &_with-height_34px {
-        height: 34px;
-    }
-    &_with-height_44px {
-        height: 44px;
-    }
-
-    &__font {
-        &_purple {
-            color: #bc9cff;
-        }
-        &_white {
-            color: white;
         }
     }
 }

@@ -57,6 +57,7 @@
     &__submit-button-container {
         margin-bottom: 30px;
         width: 100%;
+        height: 44px;
     }
 
     &__already-registered {
@@ -82,5 +83,6 @@
 
     &__sign-in-button-container {
         width: scalePixelsAsPercentage(99, 320);
+        height: 44px;
     }
 }

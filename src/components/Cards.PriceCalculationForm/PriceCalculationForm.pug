@@ -63,12 +63,11 @@ mixin getPriceCalculationForm(options)
                 p(class=["price-calculation-form__in-total-bottom-line"])
                 p(class=["price-calculation-form__in-total-number"] data-total-number=0) 0₽
 
-        div(class=["price-calculation__submit-button-container"])
-        +getButton({
-            text: 'забронировать',
-            isHollow: false,
-            buttonType: "submit",
-            hasArrow: true,
-            width: "320px",
-        })
+        div(class=["price-calculation-form__submit-button-container"])
+            +getButton({
+                text: 'забронировать',
+                isHollow: false,
+                buttonType: "submit",
+                hasArrow: true,
+            })
 

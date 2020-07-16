@@ -116,6 +116,7 @@
 
     &__first-button-container {
         width: 87px;
+        height: 34px;
 
         margin-right: 20px;
 
@@ -126,6 +127,7 @@
     }
     &__second-button-container {
         width: 196px;
+        height: 34px;
     }
 
     @import "./NavigationMenu/NavigationMenu.scss";

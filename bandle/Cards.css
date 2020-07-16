@@ -711,33 +711,14 @@ body {
 
 .button-default {
   width: 100%;
+  height: 100%;
   cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
   border-radius: 22px;
-  background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-  /*     width: 99px;
-    &_with-width_99px {
-        width: 99px;
-    }
-    &_with-width_320px {
-        width: 320px;
-    }
-    &_with-width_79px {
-        width: 79px;
-    }
-    &_with-width_101px {
-        width: 101px;
-    }
-    &_with-width_87px {
-        width: 87px;
-    }
-    &_with-width_196px {
-        width: 196px;
-    } */
-  height: 44px; }
-  .button-default__button-basis {
+  background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+  .button-default__basis {
     cursor: pointer;
     position: absolute;
     left: 0px;
@@ -755,7 +736,7 @@ body {
     outline: none; }
   .button-default > button {
     width: -webkit-fill-available; }
-  .button-default__button-text {
+  .button-default__text {
     cursor: pointer;
     background: transparent;
     text-align: center;
@@ -767,6 +748,10 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     letter-spacing: -0.03em; }
+    .button-default__text_purple {
+      color: #bc9cff; }
+    .button-default__text_white {
+      color: white; }
   .button-default__arrow {
     cursor: pointer;
     font-family: Material Icons;
@@ -782,33 +767,19 @@ body {
     right: 0px;
     height: 44px;
     width: 44px; }
-  .button-default__input-button {
+  .button-default__submit {
     cursor: pointer;
     position: absolute;
-    opacity: 0;
     width: inherit;
     height: inherit;
+    opacity: 0;
     z-index: 2; }
-    .button-default__input-button + p {
-      /* z-index: 1; */ }
   .button-default:hover {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
-  .button-default_hollow-button > a,
-  .button-default_hollow-button > button,
-  .button-default_hollow-button > label {
+  .button-default_hollow > .button-default__basis {
     background: #ffffff; }
-    .button-default_hollow-button > a > p:first-of-type,
-    .button-default_hollow-button > button > p:first-of-type,
-    .button-default_hollow-button > label > p:first-of-type {
+    .button-default_hollow > .button-default__basis > .button-default__text {
       color: #bc9cff; }
-  .button-default_with-height_34px {
-    height: 34px; }
-  .button-default_with-height_44px {
-    height: 44px; }
-  .button-default__font_purple {
-    color: #bc9cff; }
-  .button-default__font_white {
-    color: white; }
 
 .form-input {
   width: 100%; }
@@ -929,7 +900,8 @@ body {
       margin-bottom: 10px; }
   .authorization-form__submit-button-container {
     margin-bottom: 30px;
-    width: 100%; }
+    width: 100%;
+    height: 44px; }
   .authorization-form__already-registered {
     display: flex;
     justify-content: space-between;
@@ -946,7 +918,8 @@ body {
     text-align: center;
     color: #000000; }
   .authorization-form__create-button-container {
-    width: 30.9375%; }
+    width: 30.9375%;
+    height: 44px; }
 
 .date-input {
   display: flex;
@@ -1464,33 +1437,14 @@ body {
 
 .button-default {
   width: 100%;
+  height: 100%;
   cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
   border-radius: 22px;
-  background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-  /*     width: 99px;
-    &_with-width_99px {
-        width: 99px;
-    }
-    &_with-width_320px {
-        width: 320px;
-    }
-    &_with-width_79px {
-        width: 79px;
-    }
-    &_with-width_101px {
-        width: 101px;
-    }
-    &_with-width_87px {
-        width: 87px;
-    }
-    &_with-width_196px {
-        width: 196px;
-    } */
-  height: 44px; }
-  .button-default__button-basis {
+  background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+  .button-default__basis {
     cursor: pointer;
     position: absolute;
     left: 0px;
@@ -1508,7 +1462,7 @@ body {
     outline: none; }
   .button-default > button {
     width: -webkit-fill-available; }
-  .button-default__button-text {
+  .button-default__text {
     cursor: pointer;
     background: transparent;
     text-align: center;
@@ -1520,6 +1474,10 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     letter-spacing: -0.03em; }
+    .button-default__text_purple {
+      color: #bc9cff; }
+    .button-default__text_white {
+      color: white; }
   .button-default__arrow {
     cursor: pointer;
     font-family: Material Icons;
@@ -1535,33 +1493,19 @@ body {
     right: 0px;
     height: 44px;
     width: 44px; }
-  .button-default__input-button {
+  .button-default__submit {
     cursor: pointer;
     position: absolute;
-    opacity: 0;
     width: inherit;
     height: inherit;
+    opacity: 0;
     z-index: 2; }
-    .button-default__input-button + p {
-      /* z-index: 1; */ }
   .button-default:hover {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
-  .button-default_hollow-button > a,
-  .button-default_hollow-button > button,
-  .button-default_hollow-button > label {
+  .button-default_hollow > .button-default__basis {
     background: #ffffff; }
-    .button-default_hollow-button > a > p:first-of-type,
-    .button-default_hollow-button > button > p:first-of-type,
-    .button-default_hollow-button > label > p:first-of-type {
+    .button-default_hollow > .button-default__basis > .button-default__text {
       color: #bc9cff; }
-  .button-default_with-height_34px {
-    height: 34px; }
-  .button-default_with-height_44px {
-    height: 44px; }
-  .button-default__font_purple {
-    color: #bc9cff; }
-  .button-default__font_white {
-    color: white; }
 
 .guests-and-date-range-form {
   display: flex;
@@ -1591,7 +1535,8 @@ body {
     margin-bottom: 31px;
     width: 100%; }
   .guests-and-date-range-form__submit-button-container {
-    width: 100%; }
+    width: 100%;
+    height: 44px; }
 
 .room-info-title {
   display: flex;
@@ -1715,33 +1660,14 @@ body {
 
 .button-default {
   width: 100%;
+  height: 100%;
   cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
   border-radius: 22px;
-  background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-  /*     width: 99px;
-    &_with-width_99px {
-        width: 99px;
-    }
-    &_with-width_320px {
-        width: 320px;
-    }
-    &_with-width_79px {
-        width: 79px;
-    }
-    &_with-width_101px {
-        width: 101px;
-    }
-    &_with-width_87px {
-        width: 87px;
-    }
-    &_with-width_196px {
-        width: 196px;
-    } */
-  height: 44px; }
-  .button-default__button-basis {
+  background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+  .button-default__basis {
     cursor: pointer;
     position: absolute;
     left: 0px;
@@ -1759,7 +1685,7 @@ body {
     outline: none; }
   .button-default > button {
     width: -webkit-fill-available; }
-  .button-default__button-text {
+  .button-default__text {
     cursor: pointer;
     background: transparent;
     text-align: center;
@@ -1771,6 +1697,10 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     letter-spacing: -0.03em; }
+    .button-default__text_purple {
+      color: #bc9cff; }
+    .button-default__text_white {
+      color: white; }
   .button-default__arrow {
     cursor: pointer;
     font-family: Material Icons;
@@ -1786,33 +1716,19 @@ body {
     right: 0px;
     height: 44px;
     width: 44px; }
-  .button-default__input-button {
+  .button-default__submit {
     cursor: pointer;
     position: absolute;
-    opacity: 0;
     width: inherit;
     height: inherit;
+    opacity: 0;
     z-index: 2; }
-    .button-default__input-button + p {
-      /* z-index: 1; */ }
   .button-default:hover {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
-  .button-default_hollow-button > a,
-  .button-default_hollow-button > button,
-  .button-default_hollow-button > label {
+  .button-default_hollow > .button-default__basis {
     background: #ffffff; }
-    .button-default_hollow-button > a > p:first-of-type,
-    .button-default_hollow-button > button > p:first-of-type,
-    .button-default_hollow-button > label > p:first-of-type {
+    .button-default_hollow > .button-default__basis > .button-default__text {
       color: #bc9cff; }
-  .button-default_with-height_34px {
-    height: 34px; }
-  .button-default_with-height_44px {
-    height: 44px; }
-  .button-default__font_purple {
-    color: #bc9cff; }
-  .button-default__font_white {
-    color: white; }
 
 .date-input {
   display: flex;
@@ -2357,8 +2273,6 @@ body {
     flex-direction: column;
     margin-bottom: 20px;
     width: 100%; }
-  .price-calculation-form__submit-button-container {
-    width: 100%; }
   .price-calculation-form__price-multiply-period-of-time {
     display: flex;
     justify-content: space-between;
@@ -2441,6 +2355,9 @@ body {
       box-sizing: border-box; }
     .price-calculation-form__in-total-number {
       margin-left: 5px; }
+  .price-calculation-form__submit-button-container {
+    width: 100%;
+    height: 44px; }
 
 .form-input {
   width: 100%; }
@@ -2945,33 +2862,14 @@ body {
 
 .button-default {
   width: 100%;
+  height: 100%;
   cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
   border-radius: 22px;
-  background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-  /*     width: 99px;
-    &_with-width_99px {
-        width: 99px;
-    }
-    &_with-width_320px {
-        width: 320px;
-    }
-    &_with-width_79px {
-        width: 79px;
-    }
-    &_with-width_101px {
-        width: 101px;
-    }
-    &_with-width_87px {
-        width: 87px;
-    }
-    &_with-width_196px {
-        width: 196px;
-    } */
-  height: 44px; }
-  .button-default__button-basis {
+  background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+  .button-default__basis {
     cursor: pointer;
     position: absolute;
     left: 0px;
@@ -2989,7 +2887,7 @@ body {
     outline: none; }
   .button-default > button {
     width: -webkit-fill-available; }
-  .button-default__button-text {
+  .button-default__text {
     cursor: pointer;
     background: transparent;
     text-align: center;
@@ -3001,6 +2899,10 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     letter-spacing: -0.03em; }
+    .button-default__text_purple {
+      color: #bc9cff; }
+    .button-default__text_white {
+      color: white; }
   .button-default__arrow {
     cursor: pointer;
     font-family: Material Icons;
@@ -3016,33 +2918,19 @@ body {
     right: 0px;
     height: 44px;
     width: 44px; }
-  .button-default__input-button {
+  .button-default__submit {
     cursor: pointer;
     position: absolute;
-    opacity: 0;
     width: inherit;
     height: inherit;
+    opacity: 0;
     z-index: 2; }
-    .button-default__input-button + p {
-      /* z-index: 1; */ }
   .button-default:hover {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
-  .button-default_hollow-button > a,
-  .button-default_hollow-button > button,
-  .button-default_hollow-button > label {
+  .button-default_hollow > .button-default__basis {
     background: #ffffff; }
-    .button-default_hollow-button > a > p:first-of-type,
-    .button-default_hollow-button > button > p:first-of-type,
-    .button-default_hollow-button > label > p:first-of-type {
+    .button-default_hollow > .button-default__basis > .button-default__text {
       color: #bc9cff; }
-  .button-default_with-height_34px {
-    height: 34px; }
-  .button-default_with-height_44px {
-    height: 44px; }
-  .button-default__font_purple {
-    color: #bc9cff; }
-  .button-default__font_white {
-    color: white; }
 
 .registration-form {
   display: flex;
@@ -3079,7 +2967,8 @@ body {
     width: 100%; }
   .registration-form__submit-button-container {
     margin-bottom: 30px;
-    width: 100%; }
+    width: 100%;
+    height: 44px; }
   .registration-form__already-registered {
     display: flex;
     justify-content: space-between;
@@ -3096,7 +2985,8 @@ body {
     text-align: center;
     color: #000000; }
   .registration-form__sign-in-button-container {
-    width: 30.9375%; }
+    width: 30.9375%;
+    height: 44px; }
 
 .room-info-title {
   display: flex;
