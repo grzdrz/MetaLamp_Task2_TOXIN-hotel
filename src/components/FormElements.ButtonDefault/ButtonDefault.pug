@@ -6,26 +6,26 @@
 
 mixin getButton(options)
     - const { isHollow, hasArrow, buttonType, text, url } = options;
-    - const container = [];
+    - const containerClasses = [];
 
     - if(isHollow)
-        - container.push("button-default_hollow");
+        - containerClasses.push("button-default_hollow");
 
 
-    div(class=["button-default"].concat(container || []))
+    div(class=["button-default"].concat(containerClasses || []))
         - if(buttonType === "a")
             a(href=(url ? url : 'https://www.google.com/') class=["button-default__basis"])
-                span(class=["button-default__text"])= text
+                p(class=["button-default__text"])= text
                 - if(hasArrow)
-                    span(class=["button-default__arrow"]) arrow_forward 
+                    p(class=["button-default__arrow"]) arrow_forward 
         - else if(buttonType === "button")
             button(class=["button-default__basis"])
-                span(class=["button-default__text"])= text
+                p(class=["button-default__text"])= text
                 - if(hasArrow)
-                    span(class=["button-default__arrow"]) arrow_forward
+                    p(class=["button-default__arrow"]) arrow_forward
         - else if(buttonType === "submit")
             label(class=["button-default__basis"])
                 input(class=["button-default__submit"] type="submit")
-                span(class=["button-default__text"])= text
+                p(class=["button-default__text"])= text
                 - if(hasArrow)
-                    span(class=["button-default__arrow"]) arrow_forward
+                    p(class=["button-default__arrow"]) arrow_forward

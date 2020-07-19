@@ -794,7 +794,7 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: #1f2041; }
-  .form-input__title-text-test {
+  .form-input__additional-title-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -859,8 +859,6 @@ body {
     font-size: 24px;
     line-height: 24px;
     border: 0px solid transparent;
-    background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-    background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
     background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -2362,7 +2360,7 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: #1f2041; }
-  .form-input__title-text-test {
+  .form-input__additional-title-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -2427,8 +2425,6 @@ body {
     font-size: 24px;
     line-height: 24px;
     border: 0px solid transparent;
-    background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-    background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
     background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -2446,14 +2442,14 @@ body {
     text-transform: uppercase;
     color: #1f2041;
     margin-bottom: 15px; }
-  .radio-button__buttons-container {
+  .radio-button__labels {
     display: flex; }
-  .radio-button__button-label {
+  .radio-button__label {
     cursor: pointer;
     display: flex;
     position: relative;
     margin-right: 20px; }
-    .radio-button__button-label:last-child {
+    .radio-button__label:last-child {
       margin-right: 0px; }
   .radio-button__button-image_radio {
     display: flex;
@@ -2478,7 +2474,7 @@ body {
     margin-right: 10px;
     padding: 0px 3px;
     transition: padding-left 0.3s; }
-  .radio-button__button {
+  .radio-button__input {
     cursor: pointer; }
   .radio-button__button_radio {
     position: absolute;

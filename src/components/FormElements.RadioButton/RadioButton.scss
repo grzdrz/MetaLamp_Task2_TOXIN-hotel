@@ -12,10 +12,11 @@
         margin-bottom: 15px;
     }
 
-    &__buttons-container {
+    &__labels {
         display: flex;
     }
-    &__button-label {
+
+    &__label {
         cursor: pointer;
 
         display: flex;
@@ -58,7 +59,7 @@
         transition: padding-left 0.3s;
     }
 
-    &__button {
+    &__input {
         cursor: pointer;
     }
 

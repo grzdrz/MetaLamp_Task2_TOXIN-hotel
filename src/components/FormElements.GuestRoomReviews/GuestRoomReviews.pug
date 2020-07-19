@@ -1,6 +1,5 @@
 //-
-    options.likeButtonOptions - настройки like button(см. options.reviewsArray)
-    options.reviewsArray - массив объектов с настройками каждого отзыва:
+    reviewsArray - массив объектов с настройками каждого отзыва:
         {
             фото пользователя
             imgSrc: "./src/FormElements.guest-room-reviews/img/....png",
@@ -28,7 +27,7 @@
 include ../FormElements.LikeButton/LikeButton.pug
 
 mixin getGuestRoomReviews(options)
-    - let classes = {};
+    - const {reviewsArray} = options;
 
     div(class=["guest-room-reviews"])
         p(class=["guest-room-reviews__title"]) Отзывы посетителей номера

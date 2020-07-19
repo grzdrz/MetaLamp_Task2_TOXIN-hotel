@@ -29,8 +29,8 @@
         width: $buttonWidth;
     }
 
-    &__button-likes-number_on,
-    &__button-likes-number_off {
+    &__likes-number_on,
+    &__likes-number_off {
         position: absolute;
         left: 0px;
         right: 0px;
@@ -71,17 +71,17 @@
                 color: #bc9cff;
             }
 
-            & > .like-button__button-like-symbol::after {
+            & > .like-button__like-symbol::after {
                 content: "favorite";
                 position: absolute;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
-            & > .like-button__button-likes-number_off {
+            & > .like-button__likes-number_off {
                 opacity: 0;
             }
-            & > .like-button__button-likes-number_on {
+            & > .like-button__likes-number_on {
                 opacity: 1;
             }
         }
@@ -93,7 +93,7 @@
                 color: rgba(31, 32, 65, 0.25);
             }
 
-            & > .like-button__button-like-symbol::after {
+            & > .like-button__like-symbol::after {
                 content: "favorite_border";
                 position: absolute;
                 display: flex;
@@ -101,16 +101,16 @@
                 align-items: center;
                 border: 0px solid transparent;
             }
-            & > .like-button__button-likes-number_off {
+            & > .like-button__likes-number_off {
                 opacity: 1;
             }
-            & > .like-button__button-likes-number_on {
+            & > .like-button__likes-number_on {
                 opacity: 0;
             }
         }
     }
 
-    &__button-like-symbol {
+    &__like-symbol {
         left: 0px;
         z-index: 2;
 

@@ -1,22 +1,22 @@
 //-
-    options.detailsArray - массив объектов:
+    detailsArray - массив объектов:
         {
             icon - название иконки из Material Icons
             titleText - текст заголовка
             mainText - основной текст
         }
-    options.hasLastBorderBottom - вставлять ли в конец черту
+    hasLastBorderBottom - вставлять ли в конец черту
 
 mixin getRoomDetails(options)
-    - let classes = {};
+    - const {detailsArray, hasLastBorderBottom} = options;
 
     div(class=["room-details"])
-        - for(let i = 0; i < options.detailsArray.length; i++)
+        - for(let i = 0; i < detailsArray.length; i++)
             div(class=["room-details__detail-container"])
-                p(class=["room-details__icon"])= options.detailsArray[i].icon
+                p(class=["room-details__icon"])= detailsArray[i].icon
                 div(class=["room-details__text-container"])
-                    p(class=["room-details__title-text"])= options.detailsArray[i].titleText
-                    p(class=["room-details__main-text"])= options.detailsArray[i].mainText
-            - if((i === options.detailsArray.length - 1 && options.hasLastBorderBottom) || i < options.detailsArray.length - 1)
+                    p(class=["room-details__title-text"])= detailsArray[i].titleText
+                    p(class=["room-details__main-text"])= detailsArray[i].mainText
+            - if((i === detailsArray.length - 1 && hasLastBorderBottom) || i < detailsArray.length - 1)
                 div(class=["room-details__bottom-border"])
 

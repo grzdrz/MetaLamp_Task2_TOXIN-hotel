@@ -1,7 +1,7 @@
 //-
-    options.title - текст заголовка
-    options.blockNumber - постфикс имени радио инпута, для того чтобы разные блоки не влияли друг на друга    
-    options.radioButtonList - список объектов:
+    title - текст заголовка
+    blockNumber - постфикс имени радио инпута, для того чтобы разные блоки не влияли друг на друга    
+    radioButtonList - список объектов:
         {
             текст справа от переключателя
             text: "...",
@@ -9,25 +9,24 @@
             включен или нет
             isChecked: true/false,
         }
-    options.buttonType - тип переключателя(radio/toggle)
+    buttonType - тип переключателя(radio/toggle)
 
 
 mixin getRadioButton(options)
-    - let classes = {};
+    - const {title, blockNumber, radioButtonList, buttonType} = options; 
 
-    - let buttonClass = "radio-button__button_" + options.buttonType;
-    -  classes.button ? classes.button.push(buttonClass) : classes.button = [buttonClass];
+    - const buttonClasses = [`radio-button__button_${buttonType}`];
 
     div(class=["radio-button"])
-        - if(options.title)
-            p(class=["radio-button__title"])= options.title
-        div(class=["radio-button__buttons-container"])
-            - for(let item of options.radioButtonList)
-                label(class=["radio-button__button-label"])
-                    input(class=["radio-button__button"].concat(classes.button || []) 
-                        type=(options.buttonType === "radio" ? "radio" : "checkbox") 
-                        name= options.name + options.blockNumber
+        - if(title)
+            p(class=["radio-button__title"])= title
+        div(class=["radio-button__labels"])
+            - for(let item of radioButtonList)
+                label(class=["radio-button__label"])
+                    input(class=["radio-button__input"].concat(buttonClasses || []) 
+                        type=(buttonType === "radio" ? "radio" : "checkbox") 
+                        name= name + blockNumber
                         checked= item.isChecked)
-                    div(class=["radio-button__button-image_" + options.buttonType])
+                    div(class=[`radio-button__button-image_${buttonType}`])
                     p(class=["radio-button__text"])= item.text
 

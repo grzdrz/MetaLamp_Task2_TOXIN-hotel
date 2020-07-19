@@ -822,7 +822,7 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: #1f2041; }
-  .form-input__title-text-test {
+  .form-input__additional-title-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -887,8 +887,6 @@ body {
     font-size: 24px;
     line-height: 24px;
     border: 0px solid transparent;
-    background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-    background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
     background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -1242,14 +1240,14 @@ body {
     text-transform: uppercase;
     color: #1f2041;
     margin-bottom: 15px; }
-  .radio-button__buttons-container {
+  .radio-button__labels {
     display: flex; }
-  .radio-button__button-label {
+  .radio-button__label {
     cursor: pointer;
     display: flex;
     position: relative;
     margin-right: 20px; }
-    .radio-button__button-label:last-child {
+    .radio-button__label:last-child {
       margin-right: 0px; }
   .radio-button__button-image_radio {
     display: flex;
@@ -1274,7 +1272,7 @@ body {
     margin-right: 10px;
     padding: 0px 3px;
     transition: padding-left 0.3s; }
-  .radio-button__button {
+  .radio-button__input {
     cursor: pointer; }
   .radio-button__button_radio {
     position: absolute;
@@ -1625,39 +1623,39 @@ body {
   flex-direction: column; }
   .bullet-list__title {
     margin-bottom: 15px; }
-    .bullet-list__title-text {
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase;
-      color: #1f2041; }
+  .bullet-list__title-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041; }
   .bullet-list__list {
     display: flex;
     flex-direction: column;
     list-style: none; }
-    .bullet-list__list-item {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-      margin-bottom: 10px; }
-      .bullet-list__list-item:last-of-type {
-        margin-bottom: 0px; }
-      .bullet-list__list-item-marker {
-        width: 10px;
-        height: 10px;
-        background: rgba(31, 32, 65, 0.25);
-        border-radius: 50%;
-        margin-right: 10px; }
-      .bullet-list__list-item-text {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
-        width: 240px; }
+  .bullet-list__list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 10px; }
+    .bullet-list__list-item:last-of-type {
+      margin-bottom: 0px; }
+  .bullet-list__list-item-marker {
+    width: 10px;
+    height: 10px;
+    background: rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+    margin-right: 10px; }
+  .bullet-list__list-item-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    width: 240px; }
   .bullet-list__title-text_with-font-family_quicksand {
     font-family: Quicksand, OpenSans;
     font-style: normal;
@@ -1997,7 +1995,7 @@ body {
     outline: none;
     position: relative;
     width: 40px; }
-  .like-button__button-likes-number_on, .like-button__button-likes-number_off {
+  .like-button__likes-number_on, .like-button__likes-number_off {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -2026,32 +2024,32 @@ body {
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
       .like-button__input:checked + label > p {
         color: #bc9cff; }
-      .like-button__input:checked + label > .like-button__button-like-symbol::after {
+      .like-button__input:checked + label > .like-button__like-symbol::after {
         content: "favorite";
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center; }
-      .like-button__input:checked + label > .like-button__button-likes-number_off {
+      .like-button__input:checked + label > .like-button__likes-number_off {
         opacity: 0; }
-      .like-button__input:checked + label > .like-button__button-likes-number_on {
+      .like-button__input:checked + label > .like-button__likes-number_on {
         opacity: 1; }
     .like-button__input:not(:checked) + label {
       background: rgba(31, 32, 65, 0.25); }
       .like-button__input:not(:checked) + label > p {
         color: rgba(31, 32, 65, 0.25); }
-      .like-button__input:not(:checked) + label > .like-button__button-like-symbol::after {
+      .like-button__input:not(:checked) + label > .like-button__like-symbol::after {
         content: "favorite_border";
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         border: 0px solid transparent; }
-      .like-button__input:not(:checked) + label > .like-button__button-likes-number_off {
+      .like-button__input:not(:checked) + label > .like-button__likes-number_off {
         opacity: 1; }
-      .like-button__input:not(:checked) + label > .like-button__button-likes-number_on {
+      .like-button__input:not(:checked) + label > .like-button__likes-number_on {
         opacity: 0; }
-  .like-button__button-like-symbol {
+  .like-button__like-symbol {
     left: 0px;
     z-index: 2;
     position: absolute;
@@ -2187,7 +2185,7 @@ body {
     outline: none;
     position: relative;
     width: 40px; }
-  .like-button__button-likes-number_on, .like-button__button-likes-number_off {
+  .like-button__likes-number_on, .like-button__likes-number_off {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -2216,32 +2214,32 @@ body {
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
       .like-button__input:checked + label > p {
         color: #bc9cff; }
-      .like-button__input:checked + label > .like-button__button-like-symbol::after {
+      .like-button__input:checked + label > .like-button__like-symbol::after {
         content: "favorite";
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center; }
-      .like-button__input:checked + label > .like-button__button-likes-number_off {
+      .like-button__input:checked + label > .like-button__likes-number_off {
         opacity: 0; }
-      .like-button__input:checked + label > .like-button__button-likes-number_on {
+      .like-button__input:checked + label > .like-button__likes-number_on {
         opacity: 1; }
     .like-button__input:not(:checked) + label {
       background: rgba(31, 32, 65, 0.25); }
       .like-button__input:not(:checked) + label > p {
         color: rgba(31, 32, 65, 0.25); }
-      .like-button__input:not(:checked) + label > .like-button__button-like-symbol::after {
+      .like-button__input:not(:checked) + label > .like-button__like-symbol::after {
         content: "favorite_border";
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         border: 0px solid transparent; }
-      .like-button__input:not(:checked) + label > .like-button__button-likes-number_off {
+      .like-button__input:not(:checked) + label > .like-button__likes-number_off {
         opacity: 1; }
-      .like-button__input:not(:checked) + label > .like-button__button-likes-number_on {
+      .like-button__input:not(:checked) + label > .like-button__likes-number_on {
         opacity: 0; }
-  .like-button__button-like-symbol {
+  .like-button__like-symbol {
     left: 0px;
     z-index: 2;
     position: absolute;
