@@ -16,7 +16,7 @@
 mixin getDropdown(options)
     - let classes = {};
 
-    -if(options.withTotalValue)
+    - if(options.withTotalValue)
         - classes.container ? classes.container.push("dropdown__with-total-value") : classes.container = ["dropdown__with-total-value"]; 
     - else
         - classes.container ? classes.container.push("dropdown__without-total-value") : classes.container = ["dropdown__without-total-value"];

@@ -3,8 +3,9 @@ require.context('../../../', true, /\.(png|svg|jpg)$/);
 import 'material-design-icons/iconfont/material-icons.css';
 
 //dropdown
-import { dropdownScript } from "../../../components/FormElements.Dropdown/Dropdown.js";
-dropdownScript();
+import Dropdown from "../../../components/FormElements.Dropdown/Dropdown";
+const dropdowns = Array.from(document.querySelectorAll(".js-form-elements__dropdown-container"))
+    .map(element => new Dropdown(element));
 
 //dropdown checkbox
 import { expandableCheckboxListScript } from "../../../components/FormElements.CheckboxList/ExpandableCheckboxList.js";
@@ -14,18 +15,22 @@ expandableCheckboxListScript();
 //paginations
 import Pagination from "../../../components/FormElements.Pagination/Pagination";
 const paginationContainer1 = document.querySelector(".js-form-elements__pagination-container-1");
+let pagesCount = 20;
+let curPage = 7;
 const pagination1 = new Pagination({
-    pagesCount: 20,
-    curPageNumber: 7,
+    pagesCount: pagesCount,
+    curPageNumber: curPage,
     title: "pagination",
-    bottomText: "1 – 20 из 100+ вариантов аренды",
+    bottomText: `1 – ${pagesCount} из 100+ вариантов аренды`,
 }, paginationContainer1);
 const paginationContainer2 = document.querySelector(".js-form-elements__pagination-container-2");
+pagesCount = 10;
+curPage = 1;
 const pagination2 = new Pagination({
-    pagesCount: 10,
-    curPageNumber: 7,
+    pagesCount: pagesCount,
+    curPageNumber: curPage,
     title: "pagination",
-    bottomText: "1 – 10 из 100+ вариантов аренды",
+    bottomText: `1 – ${pagesCount} из 100+ вариантов аренды`,
 }, paginationContainer2);
 
 

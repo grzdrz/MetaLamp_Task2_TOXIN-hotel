@@ -7,7 +7,9 @@
 //определенным способом(в данном случае с помощью pug шаблона) рендериться повторно без перезагрузки всей страницы.
 class Pagination {
     constructor(options, containerElement) {
-        this.options = options;
+        this.options = {};
+        Object.assign(this.options, options);
+        
         this.containerElement = containerElement;
 
         this.paginationPugCode = require("./PaginationRender.pug");
