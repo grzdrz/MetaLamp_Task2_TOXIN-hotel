@@ -6,13 +6,9 @@
 
 mixin getButton(options)
     - const { isHollow, hasArrow, buttonType, text, url } = options;
-    - const containerClasses = [];
+    - const containerClasses = (isHollow ? ["button-default_hollow"] : []);
 
-    - if(isHollow)
-        - containerClasses.push("button-default_hollow");
-
-
-    div(class=["button-default"].concat(containerClasses || []))
+    div(class=["button-default"].concat(containerClasses))
         - if(buttonType === "a")
             a(href=(url ? url : 'https://www.google.com/') class=["button-default__basis"])
                 p(class=["button-default__text"])= text

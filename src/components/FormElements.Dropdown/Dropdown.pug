@@ -14,24 +14,28 @@
     options.hasClearButton - определяет есть ли в выпадающем списке кнопка Очистить
 
 mixin getDropdown(options)
-    - let classes = {};
+    - 
+        const {
+            placeholder,
+            name,
+            type,
+            value,
+            titleText,
+            withTotalValue,
+            isTitleTextTestVisible,
+            titleTextTestValue,
+            hasApplyButton,
+            hasClearButton,
+        } = options;
 
-    - if(options.withTotalValue)
-        - classes.container ? classes.container.push("dropdown__with-total-value") : classes.container = ["dropdown__with-total-value"]; 
-    - else
-        - classes.container ? classes.container.push("dropdown__without-total-value") : classes.container = ["dropdown__without-total-value"];
+    - const containerClasses = [`dropdown__${options.withTotalValue ? "with" : "without"}-total-value`];
 
-    - if(options.width){
-        - let widthClass = "dropdown_width_" + options.width;
-        - classes.container ? classes.container.push(widthClass) : classes.container = [widthClass];
-    - }
-
-    div(class=["dropdown"].concat(classes.container || []) data-border-radius="" data-cur-sum=0)
+    div(class=["dropdown"].concat(containerClasses))
         div(class=["dropdown__title"])
             p(class=["dropdown__title-text"])= options.titleText
             - if(options.isTitleTextTestVisible)
                 p(class=["dropdown__title-text-test"])= options.titleTextTestValue
-        div(class=["dropdown__input-container"].concat(classes.input || []), data-default-value=options.value)
+        div(class=["dropdown__input-container"] data-default-value=options.value)
             input(class=["dropdown__input"], 
                 placeholder= options.placeholder,
                 name=options.name,
@@ -42,12 +46,12 @@ mixin getDropdown(options)
             div(class=["dropdown__droped-list"]
                 style={display: "none"})
                 - for(let item of options.dropdownList)
-                    div(class=["dropdown__droped-list-item"])
-                        p(class=["dropdown__droped-list-item-text"])= item.name
-                        div(class=["dropdown__droped-list-item-handler"])
-                            button(class=["dropdown__droped-list-item-handler-minus"])= "-"
-                            p(class=["dropdown__droped-list-item-handler-text"])= item.value
-                            button(class=["dropdown__droped-list-item-handler-plus"])= "+"
+                    div(class=["dropdown__list-item"])
+                        p(class=["dropdown__item-name"])= item.name
+                        div(class=["dropdown__item-handler"])
+                            button(class=["dropdown__item-minus"])= "-"
+                            p(class=["dropdown__item-value"])= item.value
+                            button(class=["dropdown__item-plus"])= "+"
                 - if(options.hasApplyButton || options.hasClearButton)
                     div(class=["dropdown__control-buttons-container"])
                         - if(options.hasClearButton)

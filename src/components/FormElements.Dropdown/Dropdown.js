@@ -8,81 +8,49 @@ class Dropdown {
         this.totalValue = 0;
 
         this.inputContainer = this.containerElement.querySelector(".dropdown__input-container");
+        this.borderRadius = this.inputContainer.style.borderTopLeftRadius;
         this.input = this.containerElement.querySelector(".dropdown__input");
+        this.inputDefaultValue = this.inputContainer.dataset.defaultValue;
         this.dropdownArrow = this.containerElement.querySelector(".dropdown__dropdown-arrow");
 
         this.dropdownListElement = this.containerElement.querySelector(".dropdown__droped-list");
-        this.dropdownList = Array.from(this.dropdownListElement.querySelectorAll(".dropdown__droped-list-item"))
+        this.dropdownList = Array.from(this.dropdownListElement.querySelectorAll(".dropdown__list-item"))
             .map((itemElement) => new ListItem(this, itemElement));
 
 
         this.clearButton = this.containerElement.querySelector(".dropdown__clear-button");
         this.applyButton = this.containerElement.querySelector(".dropdown__apply-button");
 
-        this.handlerDropdownClick = this.handlerDropdownClick.bind(this);
-        this.handlerDropdownEnter = this.handlerDropdownEnter.bind(this);
-        this.handlerDropdownLeave = this.handlerDropdownLeave.bind(this);
+        this._handlerDropdownClick = this._handlerDropdownClick.bind(this);
+        this._handlerDropdownEnter = this._handlerDropdownEnter.bind(this);
+        this._handlerDropdownLeave = this._handlerDropdownLeave.bind(this);
 
-        this.handlerClear = this.handlerClear.bind(this);
-        this.handlerApply = this.handlerApply.bind(this);
+        this._handlerClear = this._handlerClear.bind(this);
+        this._handlerApply = this._handlerApply.bind(this);
 
         this.initialize();
     }
 
     initialize() {
-        this.input.onclick = this.handlerDropdownClick;
-        this.dropdownArrow.onclick = this.handlerDropdownClick;
-        //если обработчик выше повесить на контейнер, то дропдаун будет закрываться при клике по нему, т.к. находится в контейнере
-
+        this.input.onclick = this._handlerDropdownClick;
+        this.dropdownArrow.onclick = this._handlerDropdownClick;
+        // если обработчик выше повесить на контейнер, то дропдаун будет закрываться при клике по нему, т.к. находится в контейнере
 
         if (this.clearButton) {
             this.clearButton.style.display = "none";
-            this.clearButton.onclick = this.handlerClear;
+            this.clearButton.onclick = this._handlerClear;
         }
 
-        if (this.applyButton) this.applyButton.onclick = this.handlerApply;
-
-        this.inputContainer.dataset.borderRadius = this.inputContainer.style.borderTopLeftRadius;
-    }
-
-    handlerDropdownClick(event) {
-        if (this.dropdownListElement.style.display === "none") {
-            this.inputContainer.style.borderBottomLeftRadius = "0px";
-            this.inputContainer.style.borderBottomRightRadius = "0px";
-            this.dropdownListElement.style.display = "flex";
-        }
-        else {
-            this.inputContainer.style.borderBottomLeftRadius = this.inputContainer.dataset.borderRadius;
-            this.inputContainer.style.borderBottomRightRadius = this.inputContainer.dataset.borderRadius;
-            this.dropdownListElement.style.display = "none";
-        }
-    }
-
-    handlerDropdownEnter(event) {
-        if (this.dropdownListElement.style.display === "none") {
-            this.inputContainer.style.borderBottomLeftRadius = "0px";
-            this.inputContainer.style.borderBottomRightRadius = "0px";
-            this.dropdownListElement.style.display = "flex";
-        }
-    }
-
-    handlerDropdownLeave(event) {
-        if (this.dropdownListElement.style.display === "flex") {
-            this.inputContainer.style.borderBottomLeftRadius = this.inputContainer.dataset.borderRadius;
-            this.inputContainer.style.borderBottomRightRadius = this.inputContainer.dataset.borderRadius;
-            this.dropdownListElement.style.display = "none";
-        }
+        if (this.applyButton) this.applyButton.onclick = this._handlerApply;
     }
 
     changeDropdownInputValue() {
-        let sum = 0;
         let babiesCount = 0;
-        sum = this.dropdownList.reduce((sum, item) => {
+        const sum = this.dropdownList.reduce((sum, item) => {
             const itemText = item.name.textContent;
             if (itemText.toLowerCase() !== "младенцы") {
                 return sum + Number.parseInt(item.value.textContent);
-            }
-            else {
+            } else {
                 babiesCount = Number.parseInt(item.value.textContent);
                 return sum;
             }
@@ -90,24 +58,23 @@ class Dropdown {
 
         if (this.withTotalValue) {
             if (babiesCount !== 0) {
-                let resultStr1 = sum + " " + this.doDeclensionOfWord(sum, "гость");
-                let resultStr2 = resultStr1 + ", " + babiesCount + " " + this.doDeclensionOfWord(babiesCount, "младенец");
-                this.input.value = resultStr2;
-            }
-            else {
-                this.input.value = sum + " " + this.doDeclensionOfWord(sum, "гость");
+                const mainText = `${sum} ${this.doDeclensionOfWord(sum, "гость")}`;
+                const fullText = `${mainText}, ${babiesCount} ${this.doDeclensionOfWord(babiesCount, "младенец")}`;
+                this.input.value = fullText;
+            } else {
+                this.input.value = `${sum} ${this.doDeclensionOfWord(sum, "гость")}`;
             }
             this.totalValue = sum;
-        }
-        else {
+        } else {
             const result = this.dropdownList.reduce((fullString, item, index) => {
-                let itemName = item.name.textContent;
-                let itemValue = Number.parseInt(item.value.textContent);
+                const itemName = item.name.textContent;
+                const itemValue = Number.parseInt(item.value.textContent);
 
-                if (index !== this.dropdownList.length - 1)
-                    return fullString + itemValue + " " + this.doDeclensionOfWord(itemValue, itemName) + ", ";
-                else
-                    return fullString + itemValue + " " + this.doDeclensionOfWord(itemValue, itemName);
+                if (index !== this.dropdownList.length - 1) {
+                    return `${fullString}${itemValue} ${this.doDeclensionOfWord(itemValue, itemName)}, `;
+                } else {
+                    return `${fullString}${itemValue} ${this.doDeclensionOfWord(itemValue, itemName)}`;
+                }
             }, "");
             this.input.value = result;
         }
@@ -131,19 +98,48 @@ class Dropdown {
             return words[2];
     }
 
-    handlerClear() {
+    _handlerDropdownClick() {
+        if (this.dropdownListElement.style.display === "none") {
+            this.inputContainer.style.borderBottomLeftRadius = "0px";
+            this.inputContainer.style.borderBottomRightRadius = "0px";
+            this.dropdownListElement.style.display = "flex";
+        }
+        else {
+            this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;
+            this.inputContainer.style.borderBottomRightRadius = this.borderRadius;
+            this.dropdownListElement.style.display = "none";
+        }
+    }
+
+    _handlerDropdownEnter() {
+        if (this.dropdownListElement.style.display === "none") {
+            this.inputContainer.style.borderBottomLeftRadius = "0px";
+            this.inputContainer.style.borderBottomRightRadius = "0px";
+            this.dropdownListElement.style.display = "flex";
+        }
+    }
+
+    _handlerDropdownLeave() {
+        if (this.dropdownListElement.style.display === "flex") {
+            this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;
+            this.inputContainer.style.borderBottomRightRadius = this.borderRadius;
+            this.dropdownListElement.style.display = "none";
+        }
+    }
+
+    _handlerClear() {
         this.clearButton.style.display = "none";
 
-        this.input.value = this.inputContainer.dataset.defaultValue;
+        this.input.value = this.inputDefaultValue;
         this.dropdownList.forEach(item => {
             item.value.textContent = "0";
             item.minus.style.opacity = 0.38;
         });
     }
 
-    handlerApply() {
-        this.inputContainer.style.borderBottomLeftRadius = this.inputContainer.dataset.borderRadius;
-        this.inputContainer.style.borderBottomRightRadius = this.inputContainer.dataset.borderRadius;
+    _handlerApply() {
+        this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;
+        this.inputContainer.style.borderBottomRightRadius = this.borderRadius;
         this.dropdownListElement.style.display = "none";
 
         this.changeDropdownInputValue();

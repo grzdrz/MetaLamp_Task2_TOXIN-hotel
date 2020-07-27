@@ -1,52 +1,52 @@
 //-
-    options.title - текст заголовка
-    options.curPageNumber - текущая страница
-    options.pagesCount - всего страниц
+    title - текст заголовка
+    curPageNumber - текущая страница
+    pagesCount - всего страниц
 
 mixin getPagination(options)
-    - let classes = {};
+    - const {title, curPageNumber, pagesCount} = options;
 
     div(class=["pagination"])
-        - if(options.title)
-            p(class=["pagination__title"])= options.title
+        - if(title)
+            p(class=["pagination__title"])= title
 
         div(class=["pagination__page-list"])
-            - if(options.curPageNumber !== 1)
+            - if(curPageNumber !== 1)
                 a(href="#" class=["pagination__left-arrow", "js-pagination__page-link"] data-page-number="leftArrow")
                     p(class=["pagination__left-arrow-text"]) arrow_forward
                 a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number="1")
                     p(class=["pagination__page-link-text"])= 1                    
 
-            - if(options.curPageNumber - 3 > 1)
+            - if(curPageNumber - 3 > 1)
                 a(class=["pagination__page-link"] data-page-number="...")
                     p(class=["pagination__page-link-text"])= "..." 
 
-            - if(options.curPageNumber - 2 > 1)
-                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${options.curPageNumber - 2}`)
-                    p(class=["pagination__page-link-text"])= options.curPageNumber - 2
-            - if(options.curPageNumber - 1 > 1)
-                a(href="#" class=["pagination__page-link", "js-pagination__page-link"]  data-page-number=`${options.curPageNumber - 1}`)
-                    p(class=["pagination__page-link-text"])= options.curPageNumber - 1
+            - if(curPageNumber - 2 > 1)
+                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${curPageNumber - 2}`)
+                    p(class=["pagination__page-link-text"])= curPageNumber - 2
+            - if(curPageNumber - 1 > 1)
+                a(href="#" class=["pagination__page-link", "js-pagination__page-link"]  data-page-number=`${curPageNumber - 1}`)
+                    p(class=["pagination__page-link-text"])= curPageNumber - 1
 
-            a(href="#" class=["pagination__page-link", "pagination__page-link_target", "js-pagination__page-link"]  data-page-number=`${options.curPageNumber}`)
-                p(class=["pagination__page-link-text"])= options.curPageNumber
+            a(href="#" class=["pagination__page-link", "pagination__page-link_target", "js-pagination__page-link"]  data-page-number=`${curPageNumber}`)
+                p(class=["pagination__page-link-text"])= curPageNumber
 
-            - if(options.curPageNumber + 1 < options.pagesCount)
-                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${options.curPageNumber + 1}`)
-                    p(class=["pagination__page-link-text"])= options.curPageNumber + 1
-            - if(options.curPageNumber + 2 < options.pagesCount)
-                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${options.curPageNumber + 2}`)
-                    p(class=["pagination__page-link-text"])= options.curPageNumber + 2
+            - if(curPageNumber + 1 < pagesCount)
+                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${curPageNumber + 1}`)
+                    p(class=["pagination__page-link-text"])= curPageNumber + 1
+            - if(curPageNumber + 2 < pagesCount)
+                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${curPageNumber + 2}`)
+                    p(class=["pagination__page-link-text"])= curPageNumber + 2
 
-            - if(options.curPageNumber + 3 < options.pagesCount)
+            - if(curPageNumber + 3 < pagesCount)
                 a(class=["pagination__page-link"] data-page-number="...")
                     p(class=["pagination__page-link-text"])= "..." 
 
-            - if(options.curPageNumber !== options.pagesCount)
-                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${options.pagesCount}`)
-                    p(class=["pagination__page-link-text"])= options.pagesCount    
+            - if(curPageNumber !== pagesCount)
+                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${pagesCount}`)
+                    p(class=["pagination__page-link-text"])= pagesCount    
                 a(href="#" class=["pagination__right-arrow", "js-pagination__page-link"] data-page-number="rightArrow")
                     p(class=["pagination__right-arrow-text"]) arrow_forward
 
-        - if(options.bottomText)
-            p(class=["pagination__bottom-text"])= options.bottomText
+        - if(bottomText)
+            p(class=["pagination__bottom-text"])= bottomText
