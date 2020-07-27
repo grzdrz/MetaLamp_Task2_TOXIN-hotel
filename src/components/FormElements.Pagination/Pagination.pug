@@ -10,42 +10,43 @@ mixin getPagination(options)
         - if(options.title)
             p(class=["pagination__title"])= options.title
 
-        div(class=["pagination__page-list"] data-cur-page-number=options.curPageNumber)
+        div(class=["pagination__page-list"])
             - if(options.curPageNumber !== 1)
-                a(href="#" class=["pagination__left-arrow"])
+                a(href="#" class=["pagination__left-arrow", "js-pagination__page-link"] data-page-number="leftArrow")
                     p(class=["pagination__left-arrow-text"]) arrow_forward
-                a(href="#" class=["pagination__page-link"])
+                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number="1")
                     p(class=["pagination__page-link-text"])= 1                    
 
             - if(options.curPageNumber - 3 > 1)
-                a(class=["pagination__page-link"])
+                a(class=["pagination__page-link"] data-page-number="...")
                     p(class=["pagination__page-link-text"])= "..." 
 
             - if(options.curPageNumber - 2 > 1)
-                a(href="#" class=["pagination__page-link"])
+                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${options.curPageNumber - 2}`)
                     p(class=["pagination__page-link-text"])= options.curPageNumber - 2
             - if(options.curPageNumber - 1 > 1)
-                a(href="#" class=["pagination__page-link"])
+                a(href="#" class=["pagination__page-link", "js-pagination__page-link"]  data-page-number=`${options.curPageNumber - 1}`)
                     p(class=["pagination__page-link-text"])= options.curPageNumber - 1
 
-            a(href="#" class=["pagination__page-link", "pagination__page-link_target"])
+            a(href="#" class=["pagination__page-link", "pagination__page-link_target", "js-pagination__page-link"]  data-page-number=`${options.curPageNumber}`)
                 p(class=["pagination__page-link-text"])= options.curPageNumber
 
             - if(options.curPageNumber + 1 < options.pagesCount)
-                a(href="#" class=["pagination__page-link"])
+                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${options.curPageNumber + 1}`)
                     p(class=["pagination__page-link-text"])= options.curPageNumber + 1
             - if(options.curPageNumber + 2 < options.pagesCount)
-                a(href="#" class=["pagination__page-link"])
+                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${options.curPageNumber + 2}`)
                     p(class=["pagination__page-link-text"])= options.curPageNumber + 2
+
             - if(options.curPageNumber + 3 < options.pagesCount)
-                a(class=["pagination__page-link"])
+                a(class=["pagination__page-link"] data-page-number="...")
                     p(class=["pagination__page-link-text"])= "..." 
 
             - if(options.curPageNumber !== options.pagesCount)
-                a(href="#" class=["pagination__page-link"])
+                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${options.pagesCount}`)
                     p(class=["pagination__page-link-text"])= options.pagesCount    
-                a(href="#" class=["pagination__right-arrow"])
+                a(href="#" class=["pagination__right-arrow", "js-pagination__page-link"] data-page-number="rightArrow")
                     p(class=["pagination__right-arrow-text"]) arrow_forward
 
         - if(options.bottomText)
-            p(class=["pagination__bottom-text"])= options.bottomText                
+            p(class=["pagination__bottom-text"])= options.bottomText

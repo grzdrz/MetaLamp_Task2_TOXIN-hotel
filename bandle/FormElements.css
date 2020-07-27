@@ -1531,6 +1531,11 @@ body {
     align-items: center;
     text-align: center;
     color: rgba(31, 32, 65, 0.5); }
+    .pagination__page-link-text:hover {
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .pagination__bottom-text {
     display: inline-flex;
     justify-content: center;
@@ -2305,7 +2310,7 @@ body {
   .form-elements__button-container-1, .form-elements__button-container-2, .form-elements__button-container-3, .form-elements__button-container-4, .form-elements__button-container-5, .form-elements__button-container-6 {
     width: 150px;
     height: 44px; }
-  .form-elements__pagination-container-1 {
+  .form-elements__pagination-container {
     width: max-content; }
   .form-elements__dropdown-container-4 {
     width: 320px; }

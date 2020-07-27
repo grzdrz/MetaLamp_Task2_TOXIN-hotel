@@ -11,9 +11,22 @@ import { expandableCheckboxListScript } from "../../../components/FormElements.C
 expandableCheckboxListScript();
 
 
-//pagination
-import { paginationScript } from "../../../components/FormElements.Pagination/Pagination.js";
-paginationScript();
+//paginations
+import Pagination from "../../../components/FormElements.Pagination/Pagination";
+const paginationContainer1 = document.querySelector(".js-form-elements__pagination-container-1");
+const pagination1 = new Pagination({
+    pagesCount: 20,
+    curPageNumber: 7,
+    title: "pagination",
+    bottomText: "1 – 20 из 100+ вариантов аренды",
+}, paginationContainer1);
+const paginationContainer2 = document.querySelector(".js-form-elements__pagination-container-2");
+const pagination2 = new Pagination({
+    pagesCount: 10,
+    curPageNumber: 7,
+    title: "pagination",
+    bottomText: "1 – 10 из 100+ вариантов аренды",
+}, paginationContainer2);
 
 
 //rangeSlider

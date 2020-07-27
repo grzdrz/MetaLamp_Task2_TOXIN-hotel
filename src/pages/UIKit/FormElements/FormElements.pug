@@ -346,13 +346,8 @@ html
                             hasArrow: false,               
                         })  
 
-                    div(class=["form-elements__pagination-container-1"])
-                        +getPagination({
-                            pagesCount: 20,
-                            curPageNumber: 7,
-                            title: "pagination",
-                            bottomText: "1 – 12 из 100+ вариантов аренды",
-                        })
+                    div(class=["form-elements__pagination-container js-form-elements__pagination-container-1"])
+                    div(class=["form-elements__pagination-container js-form-elements__pagination-container-2"])
 
                     div(class=["form-elements__dropdown-container-4"]) 
                         +getDropdown({
