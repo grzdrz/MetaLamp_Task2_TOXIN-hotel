@@ -4,11 +4,20 @@ include ../Cards.RoomInfoTitle/RoomInfoTitle.pug
 include ../FormElements.Dropdown/Dropdown.pug
 
 mixin getPriceCalculationForm(options)
+    - 
+        const {
+            roomNumber,
+            roomStatus,
+            roomPrice,
+            currencyType,
+            periodOfTime,
+            discount,
+        } = options;
 
     form(class=["price-calculation-form"])
 
         div(class=["price-calculation-form__title-container"])
-            +getRoomInfoTitle( {
+            +getRoomInfoTitle({
                 roomNumber: 888,
                 roomStatus: "люкс",
                 roomPrice: "9 990₽",
@@ -39,28 +48,21 @@ mixin getPriceCalculationForm(options)
                 withTotalValue: true,
             })  
 
-        div(class=["price-calculation-form__interactive-info"])
-            div(class=["price-calculation-form__price-multiply-period-of-time"])
-                div(class=["price-calculation-form__price-multiply-period-of-time-description"])
-                    p(class=["price-calculation-form__price-multiply-period-of-time-description-number"] data-number=9990) 9 990₽ х
-                    p(class=["price-calculation-form__price-multiply-period-of-time-description-days"]) 0 суток
-                p(class=["price-calculation-form__price-multiply-period-of-time-price-calculated"] data-calculated-number=0) 9 990₽
-            div(class=["price-calculation-form__services-discount"])
-                div(class=["price-calculation-form__services-discount-description"])
-                    p(class=["price-calculation-form__services-discount-description-text"]) Сбор за услуги: скидка 2 179₽
-                    div(class=["price-calculation-form__info-symbol", "price-calculation-form__services-discount-description-info-symbol"])
-                        p(class=["price-calculation-form__info-symbol-inner-letter"]) i
-                p(class=["price-calculation-form__services-discount-price-calculated"] data-calculated-number=0) 0₽
-            div(class=["price-calculation-form__additional-services"])
-                div(class=["price-calculation-form__additional-services-description"])
-                    p(class=["price-calculation-form__additional-services-description-text"]) Сбор за дополнительные услуги
-                    div(class=["price-calculation-form__info-symbol", "price-calculation-form__additional-services-description-info-symbol"])
-                        p(class=["price-calculation-form__info-symbol-inner-letter"]) i                
-                p(class=["price-calculation-form__additional-services-price-calculated"] data-calculated-number=0) 0₽
-            div(class=["price-calculation-form__in-total"])
-                p(class=["price-calculation-form__in-total-text"]) Итого
-                p(class=["price-calculation-form__in-total-bottom-line"])
-                p(class=["price-calculation-form__in-total-number"] data-total-number=0) 0₽
+        div(class=["price-calculation-form__calculated-data"])
+            p(class=["price-calculation-form__main-sum"] data-value=roomPrice data-currency-type=currencyType)
+                span(class=["price-calculation-form__main-sum-formula"])= `${roomPrice}${currencyType} x 0 суток`
+                span(class=["price-calculation-form__main-sum-result"])= `${roomPrice}${currencyType}`
+            p(class=["price-calculation-form__services"] data-value=discount)
+                span(class=["price-calculation-form__discount-description"])= `Сбор за услуги: скидка ${discount}${currencyType}`
+                span(class=["price-calculation-form__services-tooltip", "price-calculation-form__discount-tooltip"]) i
+                span(class=["price-calculation-form__discount-value"])= `0${currencyType}`
+                span(class=["price-calculation-form__additional-services-description"]) Сбор за дополнительные услуги
+                span(class=["price-calculation-form__services-tooltip", "price-calculation-form__additional-services-tooltip"]) i                
+                span(class=["price-calculation-form__additional-services-value"])= `0${currencyType}`
+            p(class=["price-calculation-form__total-result"] data-value=0)
+                span(class=["price-calculation-form__total-result-text"]) Итого
+                span(class=["price-calculation-form__total-result-bottom-line"])
+                span(class=["price-calculation-form__total-result-value"])= `0${currencyType}`
 
         div(class=["price-calculation-form__submit-button-container"])
             +getButton({
