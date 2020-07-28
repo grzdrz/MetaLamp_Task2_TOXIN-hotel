@@ -1,43 +1,45 @@
 @mixin setFonts($path) {
     @font-face {
         font-family: "Montserrat";
-        src: url("#{$path}assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.woff"),
-            url("#{$path}assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2"),
-            url("#{$path}assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.eot"),
-            url("#{$path}assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.ttf"),
-            url("#{$path}assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.svg");
+        src: url("#{$path}assets/fonts/Montserrat/montserrat-regular.woff"),
+            url("#{$path}assets/fonts/Montserrat/montserrat-regular.woff2"),
+            url("#{$path}assets/fonts/Montserrat/montserrat-regular.eot"),
+            url("#{$path}assets/fonts/Montserrat/montserrat-regular.ttf"),
+            url("#{$path}assets/fonts/Montserrat/montserrat-regular.svg");
         font-weight: normal;
         font-style: normal;
     }
-     @font-face {
+
+    @font-face {
         font-family: "Montserrat";
-        src: url("#{$path}assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.woff"),
-            url("#{$path}assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.woff2"),
-            url("#{$path}assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.eot"),
-            url("#{$path}assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.ttf"),
-            url("#{$path}assets/fonts/Montserrat/montserrat-v14-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.svg");
+        src: url("#{$path}assets/fonts/Montserrat/montserrat-bold.woff"),
+            url("#{$path}assets/fonts/Montserrat/montserrat-bold.woff2"),
+            url("#{$path}assets/fonts/Montserrat/montserrat-bold.eot"),
+            url("#{$path}assets/fonts/Montserrat/montserrat-bold.ttf"),
+            url("#{$path}assets/fonts/Montserrat/montserrat-bold.svg");
         font-weight: bold;
         font-style: normal;
     }
 
     @font-face {
         font-family: "Quicksand";
-        src: url("#{$path}assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.woff"),
-            url("#{$path}assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.woff2"),
-            url("#{$path}assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.eot"),
-            url("#{$path}assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.ttf"),
-            url("#{$path}assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-regular.svg");
+        src: url("#{$path}assets/fonts/Quicksand/quicksand-regular.woff"),
+            url("#{$path}assets/fonts/Quicksand/quicksand-regular.woff2"),
+            url("#{$path}assets/fonts/Quicksand/quicksand-regular.eot"),
+            url("#{$path}assets/fonts/Quicksand/quicksand-regular.ttf"),
+            url("#{$path}assets/fonts/Quicksand/quicksand-regular.svg");
 
         font-weight: normal;
         font-style: normal;
     }
+
     @font-face {
         font-family: "Quicksand";
-        src: url("#{$path}assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.woff"),
-            url("#{$path}assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.woff2"),
-            url("#{$path}assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.eot"),
-            url("#{$path}assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.ttf"),
-            url("#{$path}assets/fonts/Quicksand/quicksand-v20-vietnamese_latin-ext_latin-700.svg");
+        src: url("#{$path}assets/fonts/Quicksand/quicksand-bold.woff"),
+            url("#{$path}assets/fonts/Quicksand/quicksand-bold.woff2"),
+            url("#{$path}assets/fonts/Quicksand/quicksand-bold.eot"),
+            url("#{$path}assets/fonts/Quicksand/quicksand-bold.ttf"),
+            url("#{$path}assets/fonts/Quicksand/quicksand-bold.svg");
 
         font-weight: bold;
         font-style: normal;
@@ -45,21 +47,22 @@
 
     @font-face {
         font-family: "OpenSans";
-        src: url("#{$path}assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff"),
-            url("#{$path}assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2"),
-            url("#{$path}assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.eot"),
-            url("#{$path}assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.ttf"),
-            url("#{$path}assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg");
+        src: url("#{$path}assets/fonts/OpenSans/open-sans-regular.woff"),
+            url("#{$path}assets/fonts/OpenSans/open-sans-regular.woff2"),
+            url("#{$path}assets/fonts/OpenSans/open-sans-regular.eot"),
+            url("#{$path}assets/fonts/OpenSans/open-sans-regular.ttf"),
+            url("#{$path}assets/fonts/OpenSans/open-sans-regular.svg");
         font-weight: normal;
         font-style: normal;
     }
+
     @font-face {
         font-family: "OpenSans";
-        src: url("#{$path}assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.woff"),
-            url("#{$path}assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2"),
-            url("#{$path}assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.eot"),
-            url("#{$path}assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.ttf"),
-            url("#{$path}assets/fonts/OpenSans/open-sans-v17-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg");
+        src: url("#{$path}assets/fonts/OpenSans/open-sans-bold.woff"),
+            url("#{$path}assets/fonts/OpenSans/open-sans-bold.woff2"),
+            url("#{$path}assets/fonts/OpenSans/open-sans-bold.eot"),
+            url("#{$path}assets/fonts/OpenSans/open-sans-bold.ttf"),
+            url("#{$path}assets/fonts/OpenSans/open-sans-bold.svg");
         font-weight: bold;
         font-style: normal;
     }

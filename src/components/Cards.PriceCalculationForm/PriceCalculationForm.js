@@ -6,9 +6,12 @@ class PriceCalculator {
     constructor(outerContainerElement) {
         this.containerElement = outerContainerElement.querySelector(".price-calculation-form");
 
-        this.additionalServicesNumberElem = this.containerElement.querySelector(".price-calculation-form__additional-services-value");
         this.mainSum = this.containerElement.querySelector(".price-calculation-form__main-sum");
-        this.roomRentalPrice = Number.parseInt(this.mainSum.dataset.value);
+        this.mainSumFormula = this.containerElement.querySelector(".price-calculation-form__main-sum-formula");
+        this.mainSumValue = this.containerElement.querySelector(".price-calculation-form__main-sum-result");
+        this.services = this.containerElement.querySelector(".price-calculation-form__services");
+        this.additionalServicesValue = this.containerElement.querySelector(".price-calculation-form__additional-services-value");
+        this.totalResultValue = this.containerElement.querySelector(".price-calculation-form__total-result-value");
 
         const dropdownContainer = this.containerElement.querySelector(".price-calculation-form__dropdown-container");
         this.dropdown = new Dropdown(dropdownContainer);
@@ -16,92 +19,86 @@ class PriceCalculator {
         const dateInputContainer = this.containerElement.querySelector(".price-calculation-form__date-input-container");
         this.dateInput = new DateInput(dateInputContainer);
 
+        this.roomRentalPrice = Number.parseInt(this.mainSum.dataset.value);
+        this.currencyType = this.mainSum.dataset.currencyType;
+        this.discountValue = Number.parseInt(this.services.dataset.value);
         this.totalSum = 0;
-        this.additionalServicesSum = 0;
-        this.roomsPriceSum = 0;
+        this.servicesSum = 0;
+        this.roomRentalSum = 0;
 
-        this.dropdownInputChange = this.dropdownInputChange.bind(this);
-        this.getNewHandlerSelectWrapper = this.getNewHandlerSelectWrapper.bind(this);
-        this.getNewHandlerClearClickWrapper = this.getNewHandlerClearClickWrapper.bind(this);
-        this.calculateAndSetTotalPrice = this.calculateAndSetTotalPrice.bind(this);
+        this.handlerDropdownInputChange = this.handlerDropdownInputChange.bind(this);
+        this.getHandlerSelectWrapper = this.getHandlerSelectWrapper.bind(this);
+        this.getHandlerClearClickWrapper = this.getHandlerClearClickWrapper.bind(this);
+        this.setTotalPrice = this.setTotalPrice.bind(this);
 
         this.initialize();
     }
 
     initialize() {
         this.dropdown.dropdownList.forEach(item => {
-            item.minus.addEventListener("click", this.dropdownInputChange);
-            item.plus.addEventListener("click", this.dropdownInputChange);
+            item.minus.addEventListener("click", this.handlerDropdownInputChange);
+            item.plus.addEventListener("click", this.handlerDropdownInputChange);
         });
 
 
         const datepicker = this.dateInput.datepickerInstance;
         const oldHandlerSelect = datepicker.selectDate;
-        datepicker.selectDate = this.getNewHandlerSelectWrapper(oldHandlerSelect.bind(datepicker));
+        datepicker.selectDate = this.getHandlerSelectWrapper(oldHandlerSelect.bind(datepicker));
 
         const clearButton = datepicker.$datepicker[0].querySelector(".date-input__clear-button");
         const oldOnClear = clearButton.onclick;
-        clearButton.onclick = this.getNewHandlerClearClickWrapper(oldOnClear);
+        clearButton.onclick = this.getHandlerClearClickWrapper(oldOnClear);
     }
 
-    dropdownInputChange() {
-        this.additionalServicesSum = this.dropdown.totalValue * 100;
-        this.additionalServicesNumberElem.textContent = this.additionalServicesSum + "₽";
+    handlerDropdownInputChange() {
+        this.servicesSum = this.dropdown.totalValue * 100;
+        this.additionalServicesValue.textContent = `${this.servicesSum}${this.currencyType}`;
 
-        this.calculateAndSetTotalPrice();
+        this.setTotalPrice();
     }
 
-    getNewHandlerSelectWrapper(oldFunc) {
+    getHandlerSelectWrapper(oldHandler) {
         return function (date) {
-            oldFunc(date);
+            oldHandler(date);
 
             const firstDateInput = this.dateInput.jqDateInputs.eq(0);
             const secondDateInput = this.dateInput.jqDateInputs.eq(1);
             const firstDate = firstDateInput[0].value;
             const secondDate = secondDateInput[0].value;
             if (firstDate && secondDate) {
+                const firstDateStrings = firstDate.split(".");
+                const firstDate = new Date(firstDateStrings[2], firstDateStrings[1], firstDateStrings[0]);
+                const secondDateStrings = secondDate.split(".");
+                const secondDate = new Date(secondDateStrings[2], secondDateStrings[1], secondDateStrings[0]);
+                const dDate = Math.abs(secondDate - firstDate);
+                const daysCount = dDate / (1000 * 60 * 60 * 24);
 
-                let dateStringsArray1 = firstDate.split(".");
-                let date1 = new Date(dateStringsArray1[2], dateStringsArray1[1], dateStringsArray1[0]);
-                let dateStringsArray2 = secondDate.split(".");
-                let date2 = new Date(dateStringsArray2[2], dateStringsArray2[1], dateStringsArray2[0]);
-                let dDate = Math.abs(date2 - date1);
-                let daysCount = dDate / (1000 * 60 * 60 * 24);
-
-                let daysField = this.containerElement.querySelector(".price-calculation-form__main-sum-formula");
-                let splittedText = daysField.textContent.split(/\s/i);
+                const splittedText = this.mainSumFormula.textContent.split(/\s/i);
                 splittedText[2] = daysCount;
-                let joinedText = splittedText.join(" ");
-                daysField.textContent = " " + joinedText;
+                this.mainSumFormula.textContent = splittedText.join(" ");
 
-                let discountValue = this.containerElement.querySelector(".price-calculation-form__main-sum-result");
+                this.roomRentalSum = daysCount * this.roomRentalPrice;
+                this.mainSumValue.textContent = `${this.roomRentalSum}${this.currencyType}`;
 
-                this.roomsPriceSum = daysCount * this.roomRentalPrice;
-                discountValue.textContent = this.roomsPriceSum + "₽";
-
-
-                this.calculateAndSetTotalPrice();
+                this.setTotalPrice();
             }
         }.bind(this);
     }
 
-    getNewHandlerClearClickWrapper(oldFunc) {
-        let newFunc = function (event) {
-            oldFunc(event);
+    getHandlerClearClickWrapper(oldHandler) {
+        return function (event) {
+            oldHandler(event);
 
-            this.roomsPriceSum = 0;
+            this.roomRentalSum = 0;
 
-            this.calculateAndSetTotalPrice();
-        };
-        return newFunc.bind(this);
+            this.setTotalPrice();
+        }.bind(this);
     }
 
-
-    calculateAndSetTotalPrice() {
-        let totalNumberField = this.containerElement.querySelector(".price-calculation-form__total-result-value");
-
-        this.totalSum = this.additionalServicesSum + this.roomsPriceSum/* + скидка */;
-        totalNumberField.textContent = this.totalSum + "₽";
+    setTotalPrice() {
+        this.totalSum = this.servicesSum + this.roomRentalSum - this.discountValue;
+        if (this.totalSum < 0) this.totalSum = 0;
+        this.totalResultValue.textContent = `${this.totalSum}${this.currencyType}`;
     }
 }
 

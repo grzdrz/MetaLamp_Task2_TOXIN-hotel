@@ -2,23 +2,15 @@ require.context('../../../', true, /\.(png|svg|jpg)$/);
 
 import 'material-design-icons/iconfont/material-icons.css';
 
-/* import { dropdownScript } from "../../../components/FormElements.Dropdown/Dropdown.js";
-dropdownScript(); */
-
-/* import { dateInputScript } from "../../../components/FormElements.DateInput/DateInput.js";
-dateInputScript(); */
-
 import { roomInfoScript } from "../../../components/Cards.RoomInfo/RoomInfo.js";
 roomInfoScript();
 
-/* import { priceCalculationFormScript } from "../../../components/Cards.priceCalculationForm/PriceCalculationForm.js";
-priceCalculationFormScript(); */
 import PriceCalculator from "../../../components/Cards.priceCalculationForm/PriceCalculationForm";
 const priceCalculatorForm = document.querySelector(".cards__form-container-3");
 const priceCalculator = new PriceCalculator(priceCalculatorForm);
 
 
-let datepicker1 = $(".cards__date-picker-container").datepicker({
+let staticDatepicker = $(".cards__date-picker-container").datepicker({
     range: true,
     position: 'bottom left',
     navTitles: {
@@ -39,7 +31,7 @@ let datepicker1 = $(".cards__date-picker-container").datepicker({
         }
     }
 }).data('datepicker');
-datepicker1.show();
+staticDatepicker.show();
 
 
 import "./Cards.scss";
