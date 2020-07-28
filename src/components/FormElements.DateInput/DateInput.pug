@@ -1,42 +1,39 @@
 //-
-    options.firstTitle/secondTitle - текст заголовков у двойного инпута
-    options.isDoubleInput - определяет тип инпута(двойной, одинарный)
-    options.isDateRange - определяет как выбирать дату в датапикере(конкретную дату или диапазон дат)
-    options.width - ширина инпута(ов)
+    firstTitle/secondTitle - текст заголовков у двойного инпута
+    isDoubleInput - определяет тип инпута(двойной, одинарный)
+    isDateRange - определяет как выбирать дату в датапикере(конкретную дату или диапазон дат)
+    width - ширина инпута(ов)
 
 mixin getDateInput(options)
-    - let classes = {};
+    -
+        const {
+            firstTitle,
+            secondTitle,
+            isDouble,
+            withRange,
+        } = options;
+    - const containerClasses = [];
+    - const inputContainerClasses = [];
 
-    - if(options.isDoubleInput){
-        - classes.container ? classes.container.push("date-input_double") : classes.container = ["date-input_double"];
-        - classes.inputContainer ? classes.inputContainer.push("date-input__input-container_first") : classes.inputContainer = ["date-input__input-container_first"];
-    - }
-    - else
-        - classes.container ? classes.container.push("date-input_single") : classes.container = ["date-input_single"];        
+    - containerClasses.push(`date-input_${(withRange || isDouble) ? "with" : "without"}-range-picking`);
+    - containerClasses.push(`date-input_${(isDouble) ? "double" : "single"}`);
+    - inputContainerClasses.push(`${isDouble ? "date-input__input-container_first" : ""}`);
 
-    - if(options.isDateRange || options.isDoubleInput)
-        - classes.container ? classes.container.push("date-input_with-range-picking") : classes.container = ["date-input_with-range-picking"];
-    - else
-        - classes.container ? classes.container.push("date-input_without-range-picking") : classes.container = ["date-input_without-range-picking"];
 
-    - if(options.width)
-        - let width = "date-input_with-width_" + options.width;
-        - classes.width ? classes.width.push(width) : classes.width = [width];
-
-    div(class=["date-input"].concat(classes.container || []))
-        div(class=["date-input__input-container"].concat(classes.inputContainer || []))
-            p(class=["date-input__title"])= options.firstTitle
-            label(class=["date-input__datepicker-label", "date-input__datepicker-label_first"].concat(classes.width || []))
+    div(class=["date-input"].concat(containerClasses))
+        div(class=["date-input__input-container"].concat(inputContainerClasses))
+            p(class=["date-input__title"])= firstTitle
+            label(class=["date-input__datepicker-label", "date-input__datepicker-label_first"])
                 input(class=["date-input__datepicker-input", "date-input__datepicker-input_first"] 
                     type="text" 
                     name="first_date" 
                     placeholder="ДД.ММ.ГГГГ"
                     readonly=true)
                 p(class=["date-input__datepicker-arrow"]) expand_more
-        - if(options.isDoubleInput)                
+        - if(isDouble)                
             div(class=["date-input__input-container", "date-input__input-container_second"])
-                p(class=["date-input__title"])= options.secondTitle
-                label(class=["date-input__datepicker-label", "date-input__datepicker-label_second"].concat(classes.width || []))
+                p(class=["date-input__title"])= secondTitle
+                label(class=["date-input__datepicker-label", "date-input__datepicker-label_second"])
                     input(class=["date-input__datepicker-input", "date-input__datepicker-input_second"]  
                         type="text" 
                         name="second_date"

@@ -78,24 +78,21 @@ html
 
                     div(class=["form-elements__date-input-container-1 js-form-elements__date-input-container"])
                         +getDateInput({
-                            isDoubleInput: true,
-                            isDateRange: true,
+                            isDouble: true,
                             firstTitle: "выезд",
                             secondTitle: "прибытие",
                         }) 
                     div(class=["form-elements__date-input-container-2 js-form-elements__date-input-container"])
                         +getDateInput({
-                            isDoubleInput: false,
-                            isDateRange: true, 
+                            isDouble: false,
+                            withRange: true, 
                             firstTitle: "datepicker2",
-                            width: "266px",
                         })
                     div(class=["form-elements__date-input-container-3 js-form-elements__date-input-container"])
                         +getDateInput({
-                            isDoubleInput: false,
-                            isDateRange: false, 
+                            isDouble: false,
+                            withRange: false, 
                             firstTitle: "datepicker3",
-                            width: "266px",
                         })
 
                     div(class=["js-form-elements__dropdown-container form-elements__dropdown-container-1"]) 

@@ -14,30 +14,29 @@ const dateFormatOptions2 = {
 class DateInput {
     constructor(outerContainerElement) {
         this.outerContainerElement = outerContainerElement;
+        this.containerElement = this.outerContainerElement.find(".date-input");
 
-        this.firstDateInput = this.outerContainerElement.find(".date-input_double.date-input_with-range-picking .date-input__datepicker-input_first");
-        this.secondDateInput = this.outerContainerElement.find(".date-input_double.date-input_with-range-picking .date-input__datepicker-input_second");
-        this.singleDateInput = this.outerContainerElement.find('.date-input_single.date-input_with-range-picking .date-input__datepicker-input');
-        this.singleDateInputWithoutInterval = this.outerContainerElement.find('.date-input_single.date-input_without-range-picking .date-input__datepicker-input');
-
+        this.isDouble = this.containerElement.hasClass("date-input_double");
+        this.withRangePicking = this.containerElement.hasClass("date-input_with-range-picking");
 
         this.initialize();
     }
 
     initialize() {
-        if (this.firstDateInput.length && this.secondDateInput.length)
+        if (this.isDouble)
             this.setDoubleDatepicker();
-        if (this.singleDateInput.length)
-            this.setSingleDatepicker();
-        if (this.singleDateInputWithoutInterval.length)
-            this.singleDatepickerWithoutInterval();
+        else if (this.withRangePicking)
+            this.setSingleDatepickerWithRange();
+        else
+            this.singleDatepickerWithoutRange();
     }
 
     setDoubleDatepicker() {
-        const firstDateInput = this.firstDateInput.eq(0);
-        const secondDateInput = this.secondDateInput.eq(0);
+        const dateInputs = this.containerElement.find(".date-input__datepicker-input");
+        const firstDateInput = dateInputs.eq(0);
+        const secondDateInput = dateInputs.eq(1);
 
-        const doubleDatepicker = this.firstDateInput.datepicker({
+        const doubleDatepicker = firstDateInput.datepicker({
             range: true,
             position: 'bottom left',
             navTitles: {
@@ -85,8 +84,9 @@ class DateInput {
     }
 
 
-    setSingleDatepicker() {
-        const dateInput = this.singleDateInput.eq(0);
+    setSingleDatepickerWithRange() {
+        const dateInputs = this.containerElement.find(".date-input__datepicker-input");
+        const dateInput = dateInputs.eq(0);
 
         const datepickerInstance = dateInput.datepicker({
             range: true,
@@ -131,10 +131,13 @@ class DateInput {
                 }
             },
         }).data('datepicker');
+        datepickerInstance.show();
+        datepickerInstance.hide();
     }
 
-    singleDatepickerWithoutInterval() {
-        const dateInput = this.singleDateInputWithoutInterval.eq(0);
+    singleDatepickerWithoutRange() {
+        const dateInputs = this.containerElement.find(".date-input__datepicker-input");
+        const dateInput = dateInputs.eq(0);
 
         const datepickerInstance = dateInput.datepicker({
             position: 'bottom left',
@@ -162,6 +165,8 @@ class DateInput {
                 }
             },
         }).data('datepicker');
+        datepickerInstance.show();
+        datepickerInstance.hide();
     }
 }
 
