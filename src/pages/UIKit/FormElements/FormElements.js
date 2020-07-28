@@ -8,8 +8,9 @@ const dropdowns = Array.from(document.querySelectorAll(".js-form-elements__dropd
     .map(element => new Dropdown(element));
 
 //dropdown checkbox
-import { expandableCheckboxListScript } from "../../../components/FormElements.CheckboxList/ExpandableCheckboxList.js";
-expandableCheckboxListScript();
+import ExpandableCheckbox from "../../../components/FormElements.CheckboxList/ExpandableCheckboxList";
+const expandableCheckboxes = Array.from(document.querySelectorAll(".js-form-elements__checkbox-container_expandable"))
+    .map(element => new ExpandableCheckbox(element));
 
 
 //paginations
@@ -23,6 +24,7 @@ const pagination1 = new Pagination({
     title: "pagination",
     bottomText: `1 – ${pagesCount} из 100+ вариантов аренды`,
 }, paginationContainer1);
+
 const paginationContainer2 = document.querySelector(".js-form-elements__pagination-container-2");
 pagesCount = 10;
 curPage = 1;
@@ -39,8 +41,15 @@ import { rangeSliderScript } from "../../../components/FormElements.RangeSlider/
 rangeSliderScript();
 
 
-import { dateInputScript } from "../../../components/FormElements.DateInput/DateInput.js";
-dateInputScript();
+/* import { dateInputScript } from "../../../components/FormElements.DateInput/DateInput.js";
+dateInputScript(); */
+import DateInput from "../../../components/FormElements.DateInput/DateInput";
+/* const dateInputs = Array.from(document.querySelectorAll(".js-form-elements__date-input-container")).map(element => new Date(element)); */
+const dateInputs = [];
+const dateInputsContainers = $(".js-form-elements__date-input-container");
+for (let i = 0; i < dateInputsContainers.length; i += 1) {
+    dateInputs.push(new DateInput(dateInputsContainers.eq(i)));
+}
 
 import { pieChartScript } from "../../../components/FormElements.PieChart/PieChart.js";
 pieChartScript();

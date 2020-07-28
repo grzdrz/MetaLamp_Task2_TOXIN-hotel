@@ -1,31 +1,40 @@
-export function expandableCheckboxListScript() {
-    let expandableCheckboxLists = document.querySelectorAll(".checkbox-list_expandable");
-    expandableCheckboxLists.forEach(e => {
-        let dropdownButton = e.querySelector(".checkbox-list__title");
-        dropdownButton.onclick = expandCheckboxList;
+class ExpandableCheckbox {
+    constructor(outerContainerElement) {
+        this.containerElement = outerContainerElement.querySelector(".checkbox-list");
 
-        let list = e.querySelector(".checkbox-list__list");
-        if (list.dataset.isOpened === "true") {
-            list.style.display = "grid";
-            e.querySelector(".checkbox-list__dropdown-arrow").style.transform = "none";
-        }
-        else {
-            list.style.display = "none";
-            e.querySelector(".checkbox-list__dropdown-arrow").style.transform = "rotate(180deg)";
-        }
-    });
+        this.dropdownButton = this.containerElement.querySelector(".checkbox-list__title");
+        this.list = this.containerElement.querySelector(".checkbox-list__list");
+        this.dropdownArrow = this.containerElement.querySelector(".checkbox-list__dropdown-arrow");
 
-    function expandCheckboxList(event) {
-        let list = event.currentTarget.parentElement.querySelector(".checkbox-list__list");
-        if (list.dataset.isOpened === "true") {
-            list.style.display = "none";
-            list.dataset.isOpened = "false";
-            event.currentTarget.querySelector(".checkbox-list__dropdown-arrow").style.transform = "rotate(180deg)";
+        this._handlerExpand = this._handlerExpand.bind(this);
+
+        this.initialize();
+    }
+
+    initialize() {
+        this.dropdownButton.onclick = this._handlerExpand;
+
+        if (this.list.dataset.isOpened === "true") {
+            this.list.style.display = "grid";
+            this.dropdownArrow.style.transform = "none";
+        } else {
+            this.list.style.display = "none";
+            this.dropdownArrow.style.transform = "rotate(180deg)";
         }
-        else {
-            list.style.display = "grid";
-            list.dataset.isOpened = "true";
-            event.currentTarget.querySelector(".checkbox-list__dropdown-arrow").style.transform = "none";
+
+    }
+
+    _handlerExpand() {
+        if (this.list.dataset.isOpened === "true") {
+            this.list.style.display = "none";
+            this.list.dataset.isOpened = "false";
+            this.dropdownArrow.style.transform = "rotate(180deg)";
+        } else {
+            this.list.style.display = "grid";
+            this.list.dataset.isOpened = "true";
+            this.dropdownArrow.style.transform = "none";
         }
     }
 }
+
+export default ExpandableCheckbox;

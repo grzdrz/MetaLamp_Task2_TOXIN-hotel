@@ -76,21 +76,21 @@ html
                             hasSubmitButton: true
                         })
 
-                    div(class=["form-elements__date-input-container-1"])
+                    div(class=["form-elements__date-input-container-1 js-form-elements__date-input-container"])
                         +getDateInput({
                             isDoubleInput: true,
                             isDateRange: true,
                             firstTitle: "выезд",
                             secondTitle: "прибытие",
                         }) 
-                    div(class=["form-elements__date-input-container-2"])
+                    div(class=["form-elements__date-input-container-2 js-form-elements__date-input-container"])
                         +getDateInput({
                             isDoubleInput: false,
                             isDateRange: true, 
                             firstTitle: "datepicker2",
                             width: "266px",
                         })
-                    div(class=["form-elements__date-input-container-3"])
+                    div(class=["form-elements__date-input-container-3 js-form-elements__date-input-container"])
                         +getDateInput({
                             isDoubleInput: false,
                             isDateRange: false, 
@@ -135,7 +135,7 @@ html
                             withTotalValue: false,
                         })                        
 
-                    div(class=["form-elements__checkbox-container-1"]) 
+                    div(class=["form-elements__checkbox-container-1 js-form-elements__checkbox-container_expandable"]) 
                         +getCheckbox({
                             titleText: "expandable checkbox list",
                             isExpandable: true,
@@ -152,7 +152,7 @@ html
                                 {isChecked: false, text: "Шампунь"},
                             ],
                         })
-                    div(class=["form-elements__checkbox-container-2"]) 
+                    div(class=["form-elements__checkbox-container-2 js-form-elements__checkbox-container_expandable"]) 
                         +getCheckbox({
                             titleText: "expandable checkbox list",
                             isExpandable: true,
