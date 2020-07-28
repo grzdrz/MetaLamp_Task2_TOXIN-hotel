@@ -11,10 +11,9 @@ mixin getGuestsAndDateRangeForm(options)
 
         div(class=["guests-and-date-range-form__date-inputs-container"])
             +getDateInput({
-                isDoubleInput: true,
-                isDateRange: true,
-                firstTitle: "прибытие",
-                secondTitle: "выезд",
+                isDouble: true,
+                firstTitle: "выезд",
+                secondTitle: "прибытие",
             })
 
         div(class=["guests-and-date-range-form__dropdown-container"])

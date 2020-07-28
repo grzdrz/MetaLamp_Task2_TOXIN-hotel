@@ -14,10 +14,16 @@ const dateFormatOptions2 = {
 class DateInput {
     constructor(outerContainerElement) {
         this.outerContainerElement = outerContainerElement;
-        this.containerElement = this.outerContainerElement.find(".date-input");
+        const jqOuterContainerElement = $("html").find(this.outerContainerElement);
+        this.jqContainerElement = jqOuterContainerElement.find(".date-input");
+        this.jqDateInputs = this.jqContainerElement.find(".date-input__datepicker-input");
 
-        this.isDouble = this.containerElement.hasClass("date-input_double");
-        this.withRangePicking = this.containerElement.hasClass("date-input_with-range-picking");
+        this.isDouble = this.jqContainerElement.hasClass("date-input_double");
+        this.withRangePicking = this.jqContainerElement.hasClass("date-input_with-range-picking");
+
+
+        this.datepickerInstance = {};
+        // this.setDoubleDatepicker = this.setDoubleDatepicker.bind(this);
 
         this.initialize();
     }
@@ -32,11 +38,10 @@ class DateInput {
     }
 
     setDoubleDatepicker() {
-        const dateInputs = this.containerElement.find(".date-input__datepicker-input");
-        const firstDateInput = dateInputs.eq(0);
-        const secondDateInput = dateInputs.eq(1);
+        const firstDateInput = this.jqDateInputs.eq(0);
+        const secondDateInput = this.jqDateInputs.eq(1);
 
-        const doubleDatepicker = firstDateInput.datepicker({
+        this.datepickerInstance = firstDateInput.datepicker({
             range: true,
             position: 'bottom left',
             navTitles: {
@@ -65,30 +70,29 @@ class DateInput {
                 }
             },
             onSelect: function (formattedDate, date, inst) {
-                if (doubleDatepicker.selectedDates[0]) {
-                    let firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1).format(doubleDatepicker.selectedDates[0]);
+                if (this.datepickerInstance.selectedDates[0]) {
+                    let firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1).format(this.datepickerInstance.selectedDates[0]);
                     firstDateInput.prop("value", firstFormattedDate);
                 }
-                if (doubleDatepicker.selectedDates[1]) {
-                    let secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1).format(doubleDatepicker.selectedDates[1]);
+                if (this.datepickerInstance.selectedDates[1]) {
+                    let secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1).format(this.datepickerInstance.selectedDates[1]);
                     secondDateInput.prop("value", secondFormattedDate);
                 }
                 else {
                     firstDateInput.prop("value", "");
                     secondDateInput.prop("value", "");
                 }
-            },
+            }.bind(this),
         }).data('datepicker');
-        doubleDatepicker.show();
-        doubleDatepicker.hide();
+        this.datepickerInstance.show();
+        this.datepickerInstance.hide();
     }
 
 
     setSingleDatepickerWithRange() {
-        const dateInputs = this.containerElement.find(".date-input__datepicker-input");
-        const dateInput = dateInputs.eq(0);
+        const dateInput = this.jqDateInputs.eq(0);
 
-        const datepickerInstance = dateInput.datepicker({
+        this.datepickerInstance = dateInput.datepicker({
             range: true,
             position: 'bottom left',
             navTitles: {
@@ -115,13 +119,13 @@ class DateInput {
                 }
             },
             onSelect: function (formattedDate, date, inst) {
-                if (datepickerInstance.selectedDates[0] && datepickerInstance.selectedDates[1]) {
+                if (this.datepickerInstance.selectedDates[0] && this.datepickerInstance.selectedDates[1]) {
                     let formattedDate1 = (new Intl.DateTimeFormat("ru-RU", dateFormatOptions2)
-                        .format(datepickerInstance.selectedDates[0]))
+                        .format(this.datepickerInstance.selectedDates[0]))
                         .toString();
                     formattedDate1 = formattedDate1.slice(0, formattedDate1.length - 1);
                     let formattedDate2 = (new Intl.DateTimeFormat("ru-RU", dateFormatOptions2)
-                        .format(datepickerInstance.selectedDates[1]))
+                        .format(this.datepickerInstance.selectedDates[1]))
                         .toString();
                     formattedDate2 = formattedDate2.slice(0, formattedDate2.length - 1);
                     dateInput.prop("value", formattedDate1 + " - " + formattedDate2);
@@ -129,17 +133,16 @@ class DateInput {
                 else {
                     dateInput.prop("value", "");
                 }
-            },
+            }.bind(this),
         }).data('datepicker');
-        datepickerInstance.show();
-        datepickerInstance.hide();
+        /* this.datepickerInstance.show();
+        this.datepickerInstance.hide(); */
     }
 
     singleDatepickerWithoutRange() {
-        const dateInputs = this.containerElement.find(".date-input__datepicker-input");
-        const dateInput = dateInputs.eq(0);
+        const dateInput = this.jqDateInputs.eq(0);
 
-        const datepickerInstance = dateInput.datepicker({
+        this.datepickerInstance = dateInput.datepicker({
             position: 'bottom left',
             navTitles: {
                 days: 'MM yyyy',
@@ -165,8 +168,8 @@ class DateInput {
                 }
             },
         }).data('datepicker');
-        datepickerInstance.show();
-        datepickerInstance.hide();
+        /* this.datepickerInstance.show();
+        this.datepickerInstance.hide(); */
     }
 }
 

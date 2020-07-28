@@ -43,11 +43,10 @@ mixin getRegistrationForm(options)
 
         div(class=["registration-form__date-input-container"])
             +getDateInput({
-                isDoubleInput: false,
-                isDateRange: false, 
+                isDouble: false,
+                withRange: false, 
                 firstTitle: "дата рождения",
-                width: "318px",
-            })  
+            })
 
         div(class=["registration-form__email-input-container"])
             +getFormInput({

@@ -41,15 +41,12 @@ import { rangeSliderScript } from "../../../components/FormElements.RangeSlider/
 rangeSliderScript();
 
 
-/* import { dateInputScript } from "../../../components/FormElements.DateInput/DateInput.js";
-dateInputScript(); */
 import DateInput from "../../../components/FormElements.DateInput/DateInput";
-/* const dateInputs = Array.from(document.querySelectorAll(".js-form-elements__date-input-container")).map(element => new Date(element)); */
 const dateInputs = [];
-const dateInputsContainers = $(".js-form-elements__date-input-container");
-for (let i = 0; i < dateInputsContainers.length; i += 1) {
-    dateInputs.push(new DateInput(dateInputsContainers.eq(i)));
-}
+const dateInputsContainers = Array.from(document.querySelectorAll(".js-form-elements__date-input-container"));
+dateInputsContainers.forEach(element => {
+    dateInputs.push(new DateInput(element));
+});
 
 import { pieChartScript } from "../../../components/FormElements.PieChart/PieChart.js";
 pieChartScript();
