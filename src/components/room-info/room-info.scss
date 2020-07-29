@@ -1,0 +1,263 @@
+@import "../FormElements.RateButton/RateButton.scss";
+
+.room-info {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+
+    position: relative;
+
+    &__ref {
+        width: 270px;
+        height: 107px;
+        opacity: 0;
+        position: absolute;
+        bottom: 0px;
+        z-index: 3;
+    }
+
+    &__photos {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 270px;
+        height: 151px;
+
+        z-index: 2;
+    }
+
+    &__photo {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    &__arrows {
+        z-index: 3;
+
+        display: flex;
+        justify-content: space-between;
+
+        width: 270px;
+        height: 151px;
+    }
+
+    &__arrow-back {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 44px;
+        height: 151px;
+
+        outline: transparent;
+
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        border-top-left-radius: 4px;
+    }
+
+    &__arrow-back-icon {
+        transform: rotate(90deg);
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+
+        text-align: center;
+        color: #ffffff;
+    }
+
+    &__arrow-forward {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 44px;
+        height: 151px;
+
+        outline: transparent;
+
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        border-top-left-radius: 4px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    &__arrow-forward-icon {
+        transform: rotate(90deg);
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+
+        text-align: center;
+        color: #ffffff;
+    }
+
+    $radioButtonSize: 8px;
+    &__radio-button {
+        z-index: 3;
+
+        width: $radioButtonSize;
+        height: $radioButtonSize;
+
+        position: absolute;
+        opacity: 0;
+
+        bottom: 15px;
+
+        &:checked + div {
+            background: #ffffff;
+        }
+
+        $test: 6px;
+        @for $i from 1 through 4 {
+            &_#{$i} {
+                right: 15px + ($radioButtonSize + 3px) * (4 - $i);
+                & + div {
+                    right: 15px + ($radioButtonSize + 3px) * (4 - $i);
+                }
+                &:checked ~ .room-info__photo_#{$i} {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__radio-button-image {
+        z-index: 2;
+
+        width: 8px;
+        height: 8px;
+
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+
+        position: absolute;
+        bottom: 15px;
+    }
+
+    &__text-info {
+        padding: 15px 16px 19px 20px;
+
+        z-index: 1;
+    }
+
+    &__title {
+        display: grid;
+        grid-template-columns: max-content max-content max-content auto min-content;
+        margin-top: 3px;
+        margin-bottom: 23px;
+    }
+
+    &__number-symbol {
+        align-self: end;
+        margin-right: 3px;
+
+        font-family: Quicksand, OpenSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #1f2041;
+    }
+
+    &__room-number {
+        align-self: end;
+        margin-right: 5px;
+
+        font-family: Quicksand, OpenSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        color: #1f2041;
+    }
+
+    &__room-status {
+        align-self: end;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #bc9cff;
+    }
+
+    &__room-price {
+        justify-self: end;
+        align-self: end;
+        margin-right: 4px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 15px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+
+    &__period-of-time {
+        justify-self: end;
+        align-self: end;
+        white-space: nowrap;
+        margin-right: 1px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+
+    &__room-rate {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 8px;
+    }
+
+    &__reviews-count {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 3px;
+        padding-right: 4px;
+    }
+
+    &__reviews-count-value {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        color: rgba(31, 32, 65, 0.5);
+
+        margin-right: 3px;
+    }
+
+    &__reviews-count-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        color: rgba(31, 32, 65, 0.5);
+    }
+}

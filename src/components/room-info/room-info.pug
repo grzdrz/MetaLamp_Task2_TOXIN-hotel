@@ -1,0 +1,59 @@
+include ../FormElements.RateButton/RateButton.pug
+
+mixin room-info(options)
+    -
+        const {
+            url,
+            blockNumber,
+            photos,
+            numberOfCheckedStar,
+            reviewsCount,
+            roomNumber,
+            roomStatus,
+            roomPrice,
+            currencyType,
+        } = options;
+
+    - const formateNumber = function(number) {
+    -     return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+    - };
+
+    div(class=["room-info"])
+        a(class=["room-info__ref"] href=url)
+        div(class=["room-info__photos"])
+            - for(let i = 1; i <= 4; i++) {
+                input(class=["room-info__radio-button", `room-info__radio-button_${i}`] 
+                    type="radio"
+                    name="photo_" + blockNumber
+                    checked=(i === 1)
+                    disabled=(i > photos.length)
+                    data-serial-number=i)
+                div(class=["room-info__radio-button-image"])
+            - }
+            - for(let i = 0; i < photos.length; i++){
+                img(class=["room-info__photo", `room-info__photo_${i + 1}`] src=`./src/components/Cards.RoomInfo/img/${photos[i]}.png`)
+            - }
+            - if(photos.length > 1)
+                div(class=["room-info__arrows"])
+                    button(class=["room-info__arrow-back"])
+                        span(class=["room-info__arrow-back-icon"]) expand_more
+                    button(class=["room-info__arrow-forward"])
+                        span(class=["room-info__arrow-forward-icon"]) expand_more
+
+        div(class=["room-info__text-info"])
+            p(class=["room-info__title"])
+                span(class=["room-info__number-symbol"]) №
+                span(class=["room-info__room-number"])= roomNumber
+                span(class=["room-info__room-status"])= (roomStatus ? roomStatus : "")
+                span(class=["room-info__room-price"])= `${formateNumber(roomPrice)}${currencyType}`
+                span(class=["room-info__period-of-time"])= `в сутки`
+
+            div(class=["room-info__room-rate"])
+                +getRateButton({
+                    blockNumber: blockNumber,
+                    numberOfCheckedStar: numberOfCheckedStar,
+                })
+
+                p(class=["room-info__reviews-count"])
+                    span(class=["room-info__reviews-count-value"])= reviewsCount
+                    span(class=["room-info__reviews-count-text"]) Отзывов

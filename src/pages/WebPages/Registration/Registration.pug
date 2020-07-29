@@ -1,6 +1,6 @@
-include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
+include ../../../components/header/header.pug
 include ../../../components/sign-up-form/sign-up-form.pug
-include ../../../components/HeadersAndFooters.LongFooter/LongFooter.pug
+include ../../../components/long-footer/long-footer.pug
 
 doctype html
 html
@@ -12,7 +12,7 @@ html
         div(class=["registration"])
 
             div(class=["registration__header-container"])
-                +getStandardNavBar({
+                +header({
                     isAuthorized: false,
                 })
 
@@ -25,4 +25,4 @@ html
                     img(class=["registration__background-image"] src="./src/pages/WebPages/Registration/img/backgroundImage.png")
 
             div(class=["registration__footer-container"])
-                +getLongFooter()
+                +long-footer()

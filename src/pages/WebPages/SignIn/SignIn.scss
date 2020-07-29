@@ -2,9 +2,9 @@
 @import "../../../assets/fonts/fonts.scss";
 @include setFonts("../../../");
 
-@import "../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.scss";
+@import "../../../components/header/header.scss";
 @import "../../../components/sign-in-form/sign-in-form.scss";
-@import "../../../components/HeadersAndFooters.LongFooter/LongFooter.scss";
+@import "../../../components/long-footer/long-footer.scss";
 
 .sign-in {
     display: flex;

@@ -1,6 +1,6 @@
-include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
+include ../../../components/header/header.pug
 include ../../../components/sign-in-form/sign-in-form.pug
-include ../../../components/HeadersAndFooters.LongFooter/LongFooter.pug
+include ../../../components/long-footer/long-footer.pug
 
 doctype html
 html
@@ -11,7 +11,7 @@ html
     body
         div(class=["sign-in"])
             div(class=["sign-in__header-container"])
-                +getStandardNavBar({
+                +header({
                     isAuthorized: false,
                 })
 
@@ -24,4 +24,4 @@ html
                     img(class=["sign-in__background-image"] src="./src/pages/WebPages/SignIn/img/backgroundImage.png")
 
             div(class=["sign-in__footer-container"])
-                +getLongFooter()
+                +long-footer()

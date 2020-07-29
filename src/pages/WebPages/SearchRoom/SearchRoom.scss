@@ -2,7 +2,7 @@
 @import "../../../assets/fonts/fonts.scss";
 @include setFonts("../../../");
 
-@import "../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.scss";
+@import "../../../components/header/header.scss";
 @import "../../../components/FormElements.Dropdown/Dropdown.scss";
 @import "../../../components/FormElements.CheckboxList/CheckboxList.scss";
 @import "../../../components/FormElements.RateButton/RateButton.scss";
@@ -10,8 +10,8 @@
 @import "../../../components/FormElements.RangeSlider/RangeSlider.scss";
 @import "../../../components/FormElements.DateInput/DateInput.scss";
 @import "../../../components/FormElements.RoomDetails/RoomDetails.scss";
-@import "../../../components/Cards.RoomInfo/RoomInfo.scss";
-@import "../../../components/HeadersAndFooters.LongFooter/LongFooter.scss";
+@import "../../../components/room-info/room-info.scss";
+@import "../../../components/long-footer/long-footer.scss";
 
 .search-room {
     display: flex;

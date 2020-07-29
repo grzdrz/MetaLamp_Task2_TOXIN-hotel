@@ -808,7 +808,7 @@ body {
       grid-template-rows: min-content min-content min-content;
       justify-content: flex-start; } }
   @media screen and (max-width: 768px) {
-    .header__colored-logo-container {
+    .header__colored-logo {
       justify-self: flex-start; } }
   .header__navigation-menu {
     justify-self: end;
@@ -925,15 +925,15 @@ body {
         grid-template-rows: auto auto;
         grid-template-columns: min-content;
         margin-top: 20px; } }
-  .header__first-button-container {
+  .header__sign-in-button {
     width: 87px;
     height: 34px;
     margin-right: 20px; }
     @media screen and (max-width: 550px) {
-      .header__first-button-container {
+      .header__sign-in-button {
         margin-right: 0px;
         margin-bottom: 10px; } }
-  .header__second-button-container {
+  .header__sign-up-button {
     width: 196px;
     height: 34px; }
 
@@ -1668,22 +1668,22 @@ body {
     width: 24px;
     height: 24px; }
 
-.info-bar {
+.menu-bar {
   list-style: none;
   justify-self: end;
   display: flex;
   flex-direction: column; }
-  .info-bar__item {
+  .menu-bar__item {
     margin-bottom: 21px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px; }
-    .info-bar__item:first-of-type {
+    .menu-bar__item:first-of-type {
       margin-top: 4px;
       margin-bottom: 22px; }
-      .info-bar__item:first-of-type > .info-bar__item-ref {
+      .menu-bar__item:first-of-type > .menu-bar__item-ref {
         font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
@@ -1691,9 +1691,9 @@ body {
         line-height: 15px;
         text-transform: uppercase;
         color: #1f2041; }
-    .info-bar__item:last-of-type {
+    .menu-bar__item:last-of-type {
       margin-bottom: 0px; }
-  .info-bar__item-ref {
+  .menu-bar__item-ref {
     text-decoration: none;
     font-family: Montserrat;
     font-style: normal;
@@ -1751,12 +1751,12 @@ body {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     margin-top: 18px; }
-  .long-footer__subscribe {
+  .long-footer__subscription {
     display: flex;
     flex-direction: column;
     justify-self: end;
     margin-top: 4px; }
-  .long-footer__subscribe-title-text {
+  .long-footer__subscription-title {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -1765,7 +1765,7 @@ body {
     text-transform: uppercase;
     color: #1f2041;
     margin-bottom: 19px; }
-  .long-footer__subscribe-main-text {
+  .long-footer__subscription-description {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -1773,7 +1773,7 @@ body {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     margin-bottom: 22px; }
-  .long-footer__subscribe-email-form {
+  .long-footer__subscription-form {
     display: flex;
     flex-wrap: nowrap;
     width: 260px;

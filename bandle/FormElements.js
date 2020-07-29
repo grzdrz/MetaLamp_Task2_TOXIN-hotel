@@ -294,7 +294,7 @@ eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpack
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./components/Cards.RoomInfo/img/test1.png\": \"./src/components/Cards.RoomInfo/img/test1.png\",\n\t\"./components/Cards.RoomInfo/img/test11.png\": \"./src/components/Cards.RoomInfo/img/test11.png\",\n\t\"./components/Cards.RoomInfo/img/test110.png\": \"./src/components/Cards.RoomInfo/img/test110.png\",\n\t\"./components/Cards.RoomInfo/img/test120.png\": \"./src/components/Cards.RoomInfo/img/test120.png\",\n\t\"./components/Cards.RoomInfo/img/test130.png\": \"./src/components/Cards.RoomInfo/img/test130.png\",\n\t\"./components/Cards.RoomInfo/img/test2.png\": \"./src/components/Cards.RoomInfo/img/test2.png\",\n\t\"./components/Cards.RoomInfo/img/test22.png\": \"./src/components/Cards.RoomInfo/img/test22.png\",\n\t\"./components/Cards.RoomInfo/img/test3.png\": \"./src/components/Cards.RoomInfo/img/test3.png\",\n\t\"./components/Cards.RoomInfo/img/test33.png\": \"./src/components/Cards.RoomInfo/img/test33.png\",\n\t\"./components/Cards.RoomInfo/img/test4.png\": \"./src/components/Cards.RoomInfo/img/test4.png\",\n\t\"./components/Cards.RoomInfo/img/test44.png\": \"./src/components/Cards.RoomInfo/img/test44.png\",\n\t\"./components/Cards.RoomInfo/img/test55.png\": \"./src/components/Cards.RoomInfo/img/test55.png\",\n\t\"./components/Cards.RoomInfo/img/test66.png\": \"./src/components/Cards.RoomInfo/img/test66.png\",\n\t\"./components/Cards.RoomInfo/img/test77.png\": \"./src/components/Cards.RoomInfo/img/test77.png\",\n\t\"./components/Cards.RoomInfo/img/test88.png\": \"./src/components/Cards.RoomInfo/img/test88.png\",\n\t\"./components/Cards.RoomInfo/img/test99.png\": \"./src/components/Cards.RoomInfo/img/test99.png\",\n\t\"./components/FormElements.CheckboxList/img/checkMark.svg\": \"./src/components/FormElements.CheckboxList/img/checkMark.svg\",\n\t\"./components/FormElements.GuestRoomReviews/img/image1.png\": \"./src/components/FormElements.GuestRoomReviews/img/image1.png\",\n\t\"./components/FormElements.GuestRoomReviews/img/image2.png\": \"./src/components/FormElements.GuestRoomReviews/img/image2.png\",\n\t\"./components/GlobalLogo/img/logo.svg\": \"./src/components/GlobalLogo/img/logo.svg\",\n\t\"./components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg\": \"./src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg\",\n\t\"./components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg\": \"./src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\",\n\t\"./pages/WebPages/LandingPage/img/backgroundImage.png\": \"./src/pages/WebPages/LandingPage/img/backgroundImage.png\",\n\t\"./pages/WebPages/Registration/img/backgroundImage.png\": \"./src/pages/WebPages/Registration/img/backgroundImage.png\",\n\t\"./pages/WebPages/RoomDetails/img/background1.jpg\": \"./src/pages/WebPages/RoomDetails/img/background1.jpg\",\n\t\"./pages/WebPages/RoomDetails/img/background2.jpg\": \"./src/pages/WebPages/RoomDetails/img/background2.jpg\",\n\t\"./pages/WebPages/RoomDetails/img/background3.jpg\": \"./src/pages/WebPages/RoomDetails/img/background3.jpg\",\n\t\"./pages/WebPages/SignIn/img/backgroundImage.png\": \"./src/pages/WebPages/SignIn/img/backgroundImage.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg)$?");
+eval("var map = {\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./components/FormElements.CheckboxList/img/checkMark.svg\": \"./src/components/FormElements.CheckboxList/img/checkMark.svg\",\n\t\"./components/FormElements.GuestRoomReviews/img/image1.png\": \"./src/components/FormElements.GuestRoomReviews/img/image1.png\",\n\t\"./components/FormElements.GuestRoomReviews/img/image2.png\": \"./src/components/FormElements.GuestRoomReviews/img/image2.png\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./components/logo/img/logo.svg\": \"./src/components/logo/img/logo.svg\",\n\t\"./components/room-info/img/test1.png\": \"./src/components/room-info/img/test1.png\",\n\t\"./components/room-info/img/test11.png\": \"./src/components/room-info/img/test11.png\",\n\t\"./components/room-info/img/test110.png\": \"./src/components/room-info/img/test110.png\",\n\t\"./components/room-info/img/test120.png\": \"./src/components/room-info/img/test120.png\",\n\t\"./components/room-info/img/test130.png\": \"./src/components/room-info/img/test130.png\",\n\t\"./components/room-info/img/test2.png\": \"./src/components/room-info/img/test2.png\",\n\t\"./components/room-info/img/test22.png\": \"./src/components/room-info/img/test22.png\",\n\t\"./components/room-info/img/test3.png\": \"./src/components/room-info/img/test3.png\",\n\t\"./components/room-info/img/test33.png\": \"./src/components/room-info/img/test33.png\",\n\t\"./components/room-info/img/test4.png\": \"./src/components/room-info/img/test4.png\",\n\t\"./components/room-info/img/test44.png\": \"./src/components/room-info/img/test44.png\",\n\t\"./components/room-info/img/test55.png\": \"./src/components/room-info/img/test55.png\",\n\t\"./components/room-info/img/test66.png\": \"./src/components/room-info/img/test66.png\",\n\t\"./components/room-info/img/test77.png\": \"./src/components/room-info/img/test77.png\",\n\t\"./components/room-info/img/test88.png\": \"./src/components/room-info/img/test88.png\",\n\t\"./components/room-info/img/test99.png\": \"./src/components/room-info/img/test99.png\",\n\t\"./components/social-media/img/facebook-icon.svg\": \"./src/components/social-media/img/facebook-icon.svg\",\n\t\"./components/social-media/img/instagram-icon.svg\": \"./src/components/social-media/img/instagram-icon.svg\",\n\t\"./components/social-media/img/twitter-icon.svg\": \"./src/components/social-media/img/twitter-icon.svg\",\n\t\"./pages/WebPages/LandingPage/img/backgroundImage.png\": \"./src/pages/WebPages/LandingPage/img/backgroundImage.png\",\n\t\"./pages/WebPages/Registration/img/backgroundImage.png\": \"./src/pages/WebPages/Registration/img/backgroundImage.png\",\n\t\"./pages/WebPages/RoomDetails/img/background1.jpg\": \"./src/pages/WebPages/RoomDetails/img/background1.jpg\",\n\t\"./pages/WebPages/RoomDetails/img/background2.jpg\": \"./src/pages/WebPages/RoomDetails/img/background2.jpg\",\n\t\"./pages/WebPages/RoomDetails/img/background3.jpg\": \"./src/pages/WebPages/RoomDetails/img/background3.jpg\",\n\t\"./pages/WebPages/SignIn/img/backgroundImage.png\": \"./src/pages/WebPages/SignIn/img/backgroundImage.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg)$?");
 
 /***/ }),
 
@@ -367,198 +367,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-regular.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-regular.svg?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test1.png":
-/*!*****************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test1.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test1.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test1.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test11.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test11.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test11.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test11.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test110.png":
-/*!*******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test110.png ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test110.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test110.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test120.png":
-/*!*******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test120.png ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test120.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test120.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test130.png":
-/*!*******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test130.png ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test130.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test130.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test2.png":
-/*!*****************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test2.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test2.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test2.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test22.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test22.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test22.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test22.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test3.png":
-/*!*****************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test3.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test3.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test3.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test33.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test33.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test33.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test33.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test4.png":
-/*!*****************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test4.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test4.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test4.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test44.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test44.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test44.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test44.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test55.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test55.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test55.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test55.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test66.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test66.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test66.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test66.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test77.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test77.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test77.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test77.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test88.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test88.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test88.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test88.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test99.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test99.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test99.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test99.png?");
 
 /***/ }),
 
@@ -704,75 +512,267 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "./src/components/GlobalLogo/img/logo.svg":
+/***/ "./src/components/colored-logo/img/TOXIN.svg":
+/*!***************************************************!*\
+  !*** ./src/components/colored-logo/img/TOXIN.svg ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/colored-logo/img/TOXIN.svg\");\n\n//# sourceURL=webpack:///./src/components/colored-logo/img/TOXIN.svg?");
+
+/***/ }),
+
+/***/ "./src/components/colored-logo/img/colored-logo.svg":
+/*!**********************************************************!*\
+  !*** ./src/components/colored-logo/img/colored-logo.svg ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/colored-logo/img/colored-logo.svg\");\n\n//# sourceURL=webpack:///./src/components/colored-logo/img/colored-logo.svg?");
+
+/***/ }),
+
+/***/ "./src/components/logo/img/logo.svg":
+/*!******************************************!*\
+  !*** ./src/components/logo/img/logo.svg ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/logo/img/logo.svg\");\n\n//# sourceURL=webpack:///./src/components/logo/img/logo.svg?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test1.png":
 /*!************************************************!*\
-  !*** ./src/components/GlobalLogo/img/logo.svg ***!
+  !*** ./src/components/room-info/img/test1.png ***!
   \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/GlobalLogo/img/logo.svg\");\n\n//# sourceURL=webpack:///./src/components/GlobalLogo/img/logo.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test1.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test1.png?");
 
 /***/ }),
 
-/***/ "./src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg":
-/*!********************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg ***!
-  \********************************************************************/
+/***/ "./src/components/room-info/img/test11.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test11.png ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test11.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test11.png?");
 
 /***/ }),
 
-/***/ "./src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg":
-/*!**************************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg ***!
-  \**************************************************************************/
+/***/ "./src/components/room-info/img/test110.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test110.png ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test110.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test110.png?");
 
 /***/ }),
 
-/***/ "./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg":
-/*!***************************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg ***!
-  \***************************************************************************/
+/***/ "./src/components/room-info/img/test120.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test120.png ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test120.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test120.png?");
 
 /***/ }),
 
-/***/ "./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg":
-/*!****************************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg ***!
-  \****************************************************************************/
+/***/ "./src/components/room-info/img/test130.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test130.png ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test130.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test130.png?");
 
 /***/ }),
 
-/***/ "./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg":
-/*!**************************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg ***!
-  \**************************************************************************/
+/***/ "./src/components/room-info/img/test2.png":
+/*!************************************************!*\
+  !*** ./src/components/room-info/img/test2.png ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test2.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test2.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test22.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test22.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test22.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test22.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test3.png":
+/*!************************************************!*\
+  !*** ./src/components/room-info/img/test3.png ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test3.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test3.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test33.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test33.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test33.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test33.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test4.png":
+/*!************************************************!*\
+  !*** ./src/components/room-info/img/test4.png ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test4.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test4.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test44.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test44.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test44.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test44.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test55.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test55.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test55.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test55.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test66.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test66.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test66.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test66.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test77.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test77.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test77.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test77.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test88.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test88.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test88.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test88.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test99.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test99.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test99.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test99.png?");
+
+/***/ }),
+
+/***/ "./src/components/social-media/img/facebook-icon.svg":
+/*!***********************************************************!*\
+  !*** ./src/components/social-media/img/facebook-icon.svg ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/social-media/img/facebook-icon.svg\");\n\n//# sourceURL=webpack:///./src/components/social-media/img/facebook-icon.svg?");
+
+/***/ }),
+
+/***/ "./src/components/social-media/img/instagram-icon.svg":
+/*!************************************************************!*\
+  !*** ./src/components/social-media/img/instagram-icon.svg ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/social-media/img/instagram-icon.svg\");\n\n//# sourceURL=webpack:///./src/components/social-media/img/instagram-icon.svg?");
+
+/***/ }),
+
+/***/ "./src/components/social-media/img/twitter-icon.svg":
+/*!**********************************************************!*\
+  !*** ./src/components/social-media/img/twitter-icon.svg ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/social-media/img/twitter-icon.svg\");\n\n//# sourceURL=webpack:///./src/components/social-media/img/twitter-icon.svg?");
 
 /***/ }),
 
@@ -784,7 +784,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_FormElements_Dropdown_Dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/FormElements.Dropdown/Dropdown */ \"./src/components/FormElements.Dropdown/Dropdown.js\");\n/* harmony import */ var _components_FormElements_CheckboxList_ExpandableCheckboxList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/FormElements.CheckboxList/ExpandableCheckboxList */ \"./src/components/FormElements.CheckboxList/ExpandableCheckboxList.js\");\n/* harmony import */ var _components_FormElements_Pagination_Pagination__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/FormElements.Pagination/Pagination */ \"./src/components/FormElements.Pagination/Pagination.js\");\n/* harmony import */ var _components_FormElements_RangeSlider_RangeSlider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/FormElements.RangeSlider/RangeSlider.js */ \"./src/components/FormElements.RangeSlider/RangeSlider.js\");\n/* harmony import */ var _components_FormElements_DateInput_DateInput__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/FormElements.DateInput/DateInput */ \"./src/components/FormElements.DateInput/DateInput.js\");\n/* harmony import */ var _components_FormElements_PieChart_PieChart_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/FormElements.PieChart/PieChart.js */ \"./src/components/FormElements.PieChart/PieChart.js\");\n/* harmony import */ var _FormElements_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./FormElements.scss */ \"./src/pages/UIKit/FormElements/FormElements.scss\");\n/* harmony import */ var _FormElements_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_FormElements_scss__WEBPACK_IMPORTED_MODULE_7__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\n\r\n//dropdown\r\n\r\nconst dropdowns = Array.from(document.querySelectorAll(\".js-form-elements__dropdown-container\"))\r\n    .map(element => new _components_FormElements_Dropdown_Dropdown__WEBPACK_IMPORTED_MODULE_1__[\"default\"](element));\r\n\r\n//dropdown checkbox\r\n\r\nconst expandableCheckboxes = Array.from(document.querySelectorAll(\".js-form-elements__checkbox-container_expandable\"))\r\n    .map(element => new _components_FormElements_CheckboxList_ExpandableCheckboxList__WEBPACK_IMPORTED_MODULE_2__[\"default\"](element));\r\n\r\n\r\n//paginations\r\n\r\nconst paginationContainer1 = document.querySelector(\".js-form-elements__pagination-container-1\");\r\nlet pagesCount = 20;\r\nlet curPage = 7;\r\nconst pagination1 = new _components_FormElements_Pagination_Pagination__WEBPACK_IMPORTED_MODULE_3__[\"default\"]({\r\n    pagesCount: pagesCount,\r\n    curPageNumber: curPage,\r\n    title: \"pagination\",\r\n    bottomText: `1 – ${pagesCount} из 100+ вариантов аренды`,\r\n}, paginationContainer1);\r\n\r\nconst paginationContainer2 = document.querySelector(\".js-form-elements__pagination-container-2\");\r\npagesCount = 10;\r\ncurPage = 1;\r\nconst pagination2 = new _components_FormElements_Pagination_Pagination__WEBPACK_IMPORTED_MODULE_3__[\"default\"]({\r\n    pagesCount: pagesCount,\r\n    curPageNumber: curPage,\r\n    title: \"pagination\",\r\n    bottomText: `1 – ${pagesCount} из 100+ вариантов аренды`,\r\n}, paginationContainer2);\r\n\r\n\r\n//rangeSlider\r\n\r\nObject(_components_FormElements_RangeSlider_RangeSlider_js__WEBPACK_IMPORTED_MODULE_4__[\"rangeSliderScript\"])();\r\n\r\n\r\n\r\nconst dateInputs = [];\r\nconst dateInputsContainers = Array.from(document.querySelectorAll(\".js-form-elements__date-input-container\"));\r\ndateInputsContainers.forEach(element => {\r\n    dateInputs.push(new _components_FormElements_DateInput_DateInput__WEBPACK_IMPORTED_MODULE_5__[\"default\"](element));\r\n});\r\n\r\n\r\nObject(_components_FormElements_PieChart_PieChart_js__WEBPACK_IMPORTED_MODULE_6__[\"pieChartScript\"])();\r\n\r\n\n\n//# sourceURL=webpack:///./src/pages/UIKit/FormElements/FormElements.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_FormElements_Dropdown_Dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/FormElements.Dropdown/Dropdown */ \"./src/components/FormElements.Dropdown/Dropdown.js\");\n/* harmony import */ var _components_FormElements_CheckboxList_ExpandableCheckboxList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/FormElements.CheckboxList/ExpandableCheckboxList */ \"./src/components/FormElements.CheckboxList/ExpandableCheckboxList.js\");\n/* harmony import */ var _components_FormElements_Pagination_Pagination__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/FormElements.Pagination/Pagination */ \"./src/components/FormElements.Pagination/Pagination.js\");\n/* harmony import */ var _components_FormElements_RangeSlider_RangeSlider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/FormElements.RangeSlider/RangeSlider.js */ \"./src/components/FormElements.RangeSlider/RangeSlider.js\");\n/* harmony import */ var _components_FormElements_DateInput_DateInput__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/FormElements.DateInput/DateInput */ \"./src/components/FormElements.DateInput/DateInput.js\");\n/* harmony import */ var _components_FormElements_PieChart_PieChart_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/FormElements.PieChart/PieChart.js */ \"./src/components/FormElements.PieChart/PieChart.js\");\n/* harmony import */ var _FormElements_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./FormElements.scss */ \"./src/pages/UIKit/FormElements/FormElements.scss\");\n/* harmony import */ var _FormElements_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_FormElements_scss__WEBPACK_IMPORTED_MODULE_7__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\n\r\n//dropdown\r\n\r\nconst dropdowns = Array.from(document.querySelectorAll(\".js-form-elements__dropdown-container\"))\r\n    .map(element => new _components_FormElements_Dropdown_Dropdown__WEBPACK_IMPORTED_MODULE_1__[\"default\"](element));\r\n\r\n//dropdown checkbox\r\n\r\nconst expandableCheckboxes = Array.from(document.querySelectorAll(\".js-form-elements__checkbox-container_expandable\"))\r\n    .map(element => new _components_FormElements_CheckboxList_ExpandableCheckboxList__WEBPACK_IMPORTED_MODULE_2__[\"default\"](element));\r\n\r\n\r\n//paginations\r\n\r\nconst paginationContainer1 = document.querySelector(\".js-form-elements__pagination-container-1\");\r\nlet pagesCount = 20;\r\nlet curPage = 7;\r\nconst pagination1 = new _components_FormElements_Pagination_Pagination__WEBPACK_IMPORTED_MODULE_3__[\"default\"]({\r\n    pagesCount: pagesCount,\r\n    curPageNumber: curPage,\r\n    title: \"pagination\",\r\n    bottomText: `1 – ${pagesCount} из 100+ вариантов аренды`,\r\n}, paginationContainer1);\r\n\r\nconst paginationContainer2 = document.querySelector(\".js-form-elements__pagination-container-2\");\r\npagesCount = 10;\r\ncurPage = 1;\r\nconst pagination2 = new _components_FormElements_Pagination_Pagination__WEBPACK_IMPORTED_MODULE_3__[\"default\"]({\r\n    pagesCount: pagesCount,\r\n    curPageNumber: curPage,\r\n    title: \"pagination\",\r\n    bottomText: `1 – ${pagesCount} из 100+ вариантов аренды`,\r\n}, paginationContainer2);\r\n\r\n\r\n//rangeSlider\r\n\r\nObject(_components_FormElements_RangeSlider_RangeSlider_js__WEBPACK_IMPORTED_MODULE_4__[\"rangeSliderScript\"])();\r\n\r\n\r\n\r\nconst calendars = [];\r\nconst calendarsContainers = Array.from(document.querySelectorAll(\".js-form-elements__date-input-container\"));\r\ncalendarsContainers.forEach(element => {\r\n    calendars.push(new _components_FormElements_DateInput_DateInput__WEBPACK_IMPORTED_MODULE_5__[\"default\"](element));\r\n});\r\n\r\n\r\nObject(_components_FormElements_PieChart_PieChart_js__WEBPACK_IMPORTED_MODULE_6__[\"pieChartScript\"])();\r\n\r\n\n\n//# sourceURL=webpack:///./src/pages/UIKit/FormElements/FormElements.js?");
 
 /***/ }),
 

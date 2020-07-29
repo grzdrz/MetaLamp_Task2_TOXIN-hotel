@@ -1,0 +1,11 @@
+include ../colored-logo/colored-logo.pug
+include ../social-media/social-media.pug
+
+mixin short-footer()
+
+    div(class=["short-footer"])
+        div(class=["short-footer__content"])
+            +colored-logo()
+            p(class=["short-footer__text"])
+                | Copyright © 2018 Toxin отель. Все права зачищены.
+            +social-media()

@@ -1,0 +1,52 @@
+//-
+    isAuthorized - авторизован ли пользователь
+    userFullName - полное имя пользователя
+    navList - список адресов и подписей для элементов меню навигации
+
+include ../FormElements.ButtonDefault/ButtonDefault.pug
+include ../colored-logo/colored-logo.pug
+
+mixin header(options)
+    - const { isAuthorized, userFullName } = options;
+    - const navList = [
+    -    {url: 'https://www.google.com/', text: 'О нас', hasDropdown: false},
+    -    {url: 'https://www.google.com/', text: 'Услуги', hasDropdown: true},
+    -    {url: 'https://www.google.com/', text: 'Вакансии', hasDropdown: false},
+    -    {url: 'https://www.google.com/', text: 'Новости', hasDropdown: false},
+    -    {url: 'https://www.google.com/', text: 'Соглашения', hasDropdown: true},
+    - ]
+
+
+    div(class=["header"])
+        div(class=["header__colored-logo"])
+            +colored-logo()
+
+        div(class=["header__navigation-menu"])
+            ul(class=["header__list"])
+                - for(let i = 0; i < navList.length; i++){
+                    li(class=["header__item"])
+                        a(class=["header__item-ref"] href=navList[i].url)= navList[i].text
+                        - if(navList[i].hasDropdown)
+                            span(class=["header__dropdown-arrow"]) expand_more
+                - }  
+
+        - if(isAuthorized)
+            div(class=["header__user-full-name"])
+                span(class=["header__name-text"])= userFullName
+        - else
+            div(class=["header__buttons"])
+                div(class=["header__sign-in-button"])
+                    +getButton({
+                        text: 'войти',
+                        isHollow:  true,
+                        buttonType: "a",
+                        hasArrow: false,
+                        url: 'https://www.google.com/',
+                    })
+                div(class=["header__sign-up-button"])
+                    +getButton({
+                        text: 'зарегистрироваться',
+                        isHollow:  false,
+                        buttonType: "a",
+                        hasArrow: false,
+                    })          

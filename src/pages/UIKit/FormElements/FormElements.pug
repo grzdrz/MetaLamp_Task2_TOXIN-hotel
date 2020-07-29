@@ -1,5 +1,5 @@
 include ../../../components/FormElements.FormInput/FormInput.pug
-include ../../../components/GlobalLogo/GlobalLogo.pug
+include ../../../components/logo/logo.pug
 include ../../../components/FormElements.Dropdown/Dropdown.pug
 include ../../../components/FormElements.CheckboxList/CheckboxList.pug
 include ../../../components/FormElements.RadioButton/RadioButton.pug
@@ -23,7 +23,7 @@ html
     body
         div(class=["form-elements"])
             div(class=["form-elements__global-logo-container"])
-                +getGlobalLogo()
+                +logo()
 
             div(class=["form-elements__columns"])
                 div(class=["form-elements__column-1"])

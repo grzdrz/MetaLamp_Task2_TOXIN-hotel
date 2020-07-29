@@ -1,10 +1,10 @@
-include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
+include ../../../components/header/header.pug
 include ../../../components/FormElements.RoomDetails/RoomDetails.pug
 include ../../../components/FormElements.PieChart/PieChart.pug
 include ../../../components/FormElements.BulletList/BulletList.pug
 include ../../../components/FormElements.GuestRoomReviews/GuestRoomReviews.pug
 include ../../../components/price-calculation-form/price-calculation-form.pug
-include ../../../components/HeadersAndFooters.LongFooter/LongFooter.pug
+include ../../../components/long-footer/long-footer.pug
 
 doctype html
 html
@@ -15,7 +15,7 @@ html
     body
         div(class=["room-details"])
             div(class=["room-details__header-container"])
-                +getStandardNavBar({
+                +header({
                     isAuthorized: false,
                 })
 
@@ -99,4 +99,4 @@ html
 
 
             div(class=["room-details__footer-container"])
-                +getLongFooter()
+                +long-footer()

@@ -42,10 +42,10 @@ rangeSliderScript();
 
 
 import DateInput from "../../../components/FormElements.DateInput/DateInput";
-const dateInputs = [];
-const dateInputsContainers = Array.from(document.querySelectorAll(".js-form-elements__date-input-container"));
-dateInputsContainers.forEach(element => {
-    dateInputs.push(new DateInput(element));
+const calendars = [];
+const calendarsContainers = Array.from(document.querySelectorAll(".js-form-elements__date-input-container"));
+calendarsContainers.forEach(element => {
+    calendars.push(new DateInput(element));
 });
 
 import { pieChartScript } from "../../../components/FormElements.PieChart/PieChart.js";

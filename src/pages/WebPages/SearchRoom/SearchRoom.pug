@@ -1,12 +1,12 @@
-include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
-include ../../../components/Cards.RoomInfo/RoomInfo.pug
+include ../../../components/header/header.pug
+include ../../../components/room-info/room-info.pug
 include ../../../components/FormElements.DateInput/DateInput.pug
 include ../../../components/FormElements.Dropdown/Dropdown.pug
 include ../../../components/FormElements.RangeSlider/RangeSlider.pug
 include ../../../components/FormElements.CheckboxList/CheckboxList.pug
 include ../../../components/FormElements.CheckboxList/CheckboxList.pug
 include ../../../components/FormElements.Pagination/Pagination.pug
-include ../../../components/HeadersAndFooters.LongFooter/LongFooter.pug
+include ../../../components/long-footer/long-footer.pug
 
 doctype html
 html
@@ -17,7 +17,7 @@ html
     body
         div(class=["search-room"])
             div(class=["search-room__header-container"])
-                +getStandardNavBar({
+                +header({
                     isAuthorized: false,
                 })
 
@@ -31,7 +31,7 @@ html
                             width: "266px",
                         })
 
-                    div(class=["search-room__dropdown-1-container"])
+                    div(class=["search-room__dropdown-1-container js-search-room__dropdown"])
                         +getDropdown({
                             titleText: "гости",
                             isTitleTextTestVisible: false,
@@ -84,7 +84,7 @@ html
                             ],
                         })
 
-                    div(class=["search-room__dropdown-2-container"])
+                    div(class=["search-room__dropdown-2-container js-search-room__dropdown"])
                         +getDropdown({
                             titleText: "удобства номера",
                             isTitleTextTestVisible: false,
@@ -104,7 +104,7 @@ html
                             width: "266px",
                         })
 
-                    div(class=["search-room__checkbox-list-3-container"])
+                    div(class=["search-room__checkbox-list-3-container js-search-room__checkbox-container_expandable"])
                         +getCheckbox({
                             titleText: "дополнительные удобства",
                             isExpandable: true,
@@ -131,7 +131,7 @@ html
                         - let roomsInfo = require("./data.json").roomsInfo;
                         - for(let i = 0; i < 12; i++){
                             div(class=["search-room__room-container", "search-room__room-container_" + i])
-                                +getRoomInfo(roomsInfo[i])
+                                +room-info(roomsInfo[i])
                         - }
                     div(class=["search-room__pagination-container"])
                         +getPagination({
@@ -142,4 +142,4 @@ html
                         })
 
             div(class=["search-room__footer-container"])
-                +getLongFooter()
+                +long-footer()

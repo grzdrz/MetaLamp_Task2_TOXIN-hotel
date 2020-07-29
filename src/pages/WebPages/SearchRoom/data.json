@@ -8,13 +8,10 @@
                 "test33",
                 "test44"
             ],
-            "roomInfoTitleOptions": {
-                "inRoomInfoBlock": true,
-                "roomNumber": 888,
-                "isLuxury": true,
-                "roomPrice": "9 990₽",
-                "periodOfTime": "сутки"
-            },
+            "roomNumber": 888,
+            "roomStatus": "люкс",
+            "roomPrice": 9990,
+            "currencyType": "₽",
             "reviewsCount": "145",
             "numberOfCheckedStar": 5,
             "url": "#"
@@ -24,13 +21,9 @@
             "photos": [
                 "test22"
             ],
-            "roomInfoTitleOptions": {
-                "inRoomInfoBlock": true,
-                "roomNumber": 840,
-                "isLuxury": false,
-                "roomPrice": "9 990₽",
-                "periodOfTime": "сутки"
-            },
+            "roomNumber": 840,
+            "roomPrice": 9990,
+            "currencyType": "₽",
             "reviewsCount": "65",
             "numberOfCheckedStar": 4,
             "url": "#"
@@ -40,13 +33,10 @@
             "photos": [
                 "test33"
             ],
-            "roomInfoTitleOptions": {
-                "inRoomInfoBlock": true,
-                "roomNumber": 980,
-                "isLuxury": true,
-                "roomPrice": "8 500₽",
-                "periodOfTime": "сутки"
-            },
+            "roomNumber": 980,
+            "roomStatus": "люкс",
+            "roomPrice": 8500,
+            "currencyType": "₽",
             "reviewsCount": "35",
             "numberOfCheckedStar": 3,
             "url": "#"
@@ -56,13 +46,9 @@
             "photos": [
                 "test44"
             ],
-            "roomInfoTitleOptions": {
-                "inRoomInfoBlock": true,
-                "roomNumber": 856,
-                "isLuxury": false,
-                "roomPrice": "7 300₽",
-                "periodOfTime": "сутки"
-            },
+            "roomNumber": 856,
+            "roomPrice": 7300,
+            "currencyType": "₽",
             "reviewsCount": "19",
             "numberOfCheckedStar": 5,
             "url": "#"
@@ -72,13 +58,9 @@
             "photos": [
                 "test55"
             ],
-            "roomInfoTitleOptions": {
-                "inRoomInfoBlock": true,
-                "roomNumber": 740,
-                "isLuxury": false,
-                "roomPrice": "6 000₽",
-                "periodOfTime": "сутки"
-            },
+            "roomNumber": 740,
+            "roomPrice": 6000,
+            "currencyType": "₽",
             "reviewsCount": "44",
             "numberOfCheckedStar": 4,
             "url": "#"
@@ -88,13 +70,9 @@
             "photos": [
                 "test66"
             ],
-            "roomInfoTitleOptions": {
-                "inRoomInfoBlock": true,
-                "roomNumber": 982,
-                "isLuxury": false,
-                "roomPrice": "5 800₽",
-                "periodOfTime": "сутки"
-            },
+            "roomNumber": 982,
+            "roomPrice": 5800,
+            "currencyType": "₽",
             "reviewsCount": "56",
             "numberOfCheckedStar": 3,
             "url": "#"
@@ -104,13 +82,9 @@
             "photos": [
                 "test77"
             ],
-            "roomInfoTitleOptions": {
-                "inRoomInfoBlock": true,
-                "roomNumber": 678,
-                "isLuxury": false,
-                "roomPrice": "5 500₽",
-                "periodOfTime": "сутки"
-            },
+            "roomNumber": 678,
+            "roomPrice": 5500,
+            "currencyType": "₽",
             "reviewsCount": "45",
             "numberOfCheckedStar": 5,
             "url": "#"
@@ -120,13 +94,9 @@
             "photos": [
                 "test88"
             ],
-            "roomInfoTitleOptions": {
-                "inRoomInfoBlock": true,
-                "roomNumber": 450,
-                "isLuxury": false,
-                "roomPrice": "5 300₽",
-                "periodOfTime": "сутки"
-            },
+            "roomNumber": 450,
+            "roomPrice": 5300,
+            "currencyType": "₽",
             "reviewsCount": "39",
             "numberOfCheckedStar": 4,
             "url": "#"
@@ -136,13 +106,9 @@
             "photos": [
                 "test99"
             ],
-            "roomInfoTitleOptions": {
-                "inRoomInfoBlock": true,
-                "roomNumber": 350,
-                "isLuxury": false,
-                "roomPrice": "5 000₽",
-                "periodOfTime": "сутки"
-            },
+            "roomNumber": 350,
+            "roomPrice": 5000,
+            "currencyType": "₽",
             "reviewsCount": "77",
             "numberOfCheckedStar": 3,
             "url": "#"
@@ -152,13 +118,9 @@
             "photos": [
                 "test110"
             ],
-            "roomInfoTitleOptions": {
-                "inRoomInfoBlock": true,
-                "roomNumber": 666,
-                "isLuxury": false,
-                "roomPrice": "5 000₽",
-                "periodOfTime": "сутки"
-            },
+            "roomNumber": 666,
+            "roomPrice": 5000,
+            "currencyType": "₽",
             "reviewsCount": "25",
             "numberOfCheckedStar": 5,
             "url": "#"
@@ -168,13 +130,9 @@
             "photos": [
                 "test120"
             ],
-            "roomInfoTitleOptions": {
-                "inRoomInfoBlock": true,
-                "roomNumber": 444,
-                "isLuxury": false,
-                "roomPrice": "5 000₽",
-                "periodOfTime": "сутки"
-            },
+            "roomNumber": 444,
+            "roomPrice": 5000,
+            "currencyType": "₽",
             "reviewsCount": "15",
             "numberOfCheckedStar": 3,
             "url": "#"
@@ -184,13 +142,9 @@
             "photos": [
                 "test130"
             ],
-            "roomInfoTitleOptions": {
-                "inRoomInfoBlock": true,
-                "roomNumber": 352,
-                "isLuxury": false,
-                "roomPrice": "5 000₽",
-                "periodOfTime": "сутки"
-            },
+            "roomNumber": 352,
+            "roomPrice": 5000,
+            "currencyType": "₽",
             "reviewsCount": "55",
             "numberOfCheckedStar": 3,
             "url": "#"

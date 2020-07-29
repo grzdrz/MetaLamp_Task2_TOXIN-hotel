@@ -1,0 +1,63 @@
+include ../menu-bar/menu-bar.pug
+include ../FormElements.FormInput/FormInput.pug
+include ../colored-logo/colored-logo.pug
+include ../social-media/social-media.pug
+
+mixin long-footer(options)
+    div(class=["long-footer"])
+        div(class=["long-footer__info-bar"])
+
+            div(class=["long-footer__general-info"])
+                +colored-logo()
+                p(class=["long-footer__general-info-text"]) 
+                    | Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+
+            div(class=["long-footer__menu-bar"])
+                +menu-bar({
+                    listOfLinks: [
+                        {url: "#", text: "навигация"}, 
+                        {url: "#", text: "О нас"}, 
+                        {url: "#", text: "Новости"}, 
+                        {url: "#", text: "Служба поддержки"}, 
+                        {url: "#", text: "Услуги"},
+                    ]
+                })
+            div(class=["long-footer__menu-bar"])
+                +menu-bar({
+                    listOfLinks: [
+                        {url: "#", text: "о нас"}, 
+                        {url: "#", text: "О сервисе"}, 
+                        {url: "#", text: "Наша команда"}, 
+                        {url: "#", text: "Вакансии"}, 
+                        {url: "#", text: "Инвесторы"},
+                    ]
+                })
+            div(class=["long-footer__menu-bar"])
+                +menu-bar({
+                    listOfLinks: [
+                        {url: "#", text: "Служба поддержки"}, 
+                        {url: "#", text: "Соглашения"}, 
+                        {url: "#", text: "Сообщества"},
+                        {url: "#", text: "Связь с нами"},
+                    ]
+                })           
+
+            div(class=["long-footer__subscription"])
+                p(class=["long-footer__subscription-title"]) Подписка
+                p(class=["long-footer__subscription-description"]) 
+                    | Получайте специальные предложения и новости сервиса
+                form(class=["long-footer__subscription-form"])
+                    +getFormInput({
+                        hasTitle: false,
+                        isTitleTextTestVisible: false,
+                        placeholder: "Email",
+                        name: "email",
+                        type: "email",
+                        value: "",
+                        hasSubmitButton: true
+                    })
+
+        div(class=["long-footer__copyright-bar"])
+            p(class=["long-footer__copyright"]) 
+                | Copyright © 2018 Toxin отель. Все права зачищены.
+            +social-media()

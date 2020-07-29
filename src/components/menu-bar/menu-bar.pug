@@ -1,0 +1,8 @@
+mixin menu-bar(options)
+    - const { listOfLinks } = options;
+
+    ul(class=["menu-bar"])
+        - for(let i = 0; i < listOfLinks.length; i++) {
+            li(class=["menu-bar__item"])
+                a(class=["menu-bar__item-ref"] href=listOfLinks[i].url)= listOfLinks[i].text  
+        - }

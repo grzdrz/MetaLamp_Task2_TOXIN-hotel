@@ -237,7 +237,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./components/Cards.RoomInfo/img/test1.png\": \"./src/components/Cards.RoomInfo/img/test1.png\",\n\t\"./components/Cards.RoomInfo/img/test11.png\": \"./src/components/Cards.RoomInfo/img/test11.png\",\n\t\"./components/Cards.RoomInfo/img/test110.png\": \"./src/components/Cards.RoomInfo/img/test110.png\",\n\t\"./components/Cards.RoomInfo/img/test120.png\": \"./src/components/Cards.RoomInfo/img/test120.png\",\n\t\"./components/Cards.RoomInfo/img/test130.png\": \"./src/components/Cards.RoomInfo/img/test130.png\",\n\t\"./components/Cards.RoomInfo/img/test2.png\": \"./src/components/Cards.RoomInfo/img/test2.png\",\n\t\"./components/Cards.RoomInfo/img/test22.png\": \"./src/components/Cards.RoomInfo/img/test22.png\",\n\t\"./components/Cards.RoomInfo/img/test3.png\": \"./src/components/Cards.RoomInfo/img/test3.png\",\n\t\"./components/Cards.RoomInfo/img/test33.png\": \"./src/components/Cards.RoomInfo/img/test33.png\",\n\t\"./components/Cards.RoomInfo/img/test4.png\": \"./src/components/Cards.RoomInfo/img/test4.png\",\n\t\"./components/Cards.RoomInfo/img/test44.png\": \"./src/components/Cards.RoomInfo/img/test44.png\",\n\t\"./components/Cards.RoomInfo/img/test55.png\": \"./src/components/Cards.RoomInfo/img/test55.png\",\n\t\"./components/Cards.RoomInfo/img/test66.png\": \"./src/components/Cards.RoomInfo/img/test66.png\",\n\t\"./components/Cards.RoomInfo/img/test77.png\": \"./src/components/Cards.RoomInfo/img/test77.png\",\n\t\"./components/Cards.RoomInfo/img/test88.png\": \"./src/components/Cards.RoomInfo/img/test88.png\",\n\t\"./components/Cards.RoomInfo/img/test99.png\": \"./src/components/Cards.RoomInfo/img/test99.png\",\n\t\"./components/FormElements.CheckboxList/img/checkMark.svg\": \"./src/components/FormElements.CheckboxList/img/checkMark.svg\",\n\t\"./components/FormElements.GuestRoomReviews/img/image1.png\": \"./src/components/FormElements.GuestRoomReviews/img/image1.png\",\n\t\"./components/FormElements.GuestRoomReviews/img/image2.png\": \"./src/components/FormElements.GuestRoomReviews/img/image2.png\",\n\t\"./components/GlobalLogo/img/logo.svg\": \"./src/components/GlobalLogo/img/logo.svg\",\n\t\"./components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg\": \"./src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg\",\n\t\"./components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg\": \"./src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\",\n\t\"./pages/WebPages/LandingPage/img/backgroundImage.png\": \"./src/pages/WebPages/LandingPage/img/backgroundImage.png\",\n\t\"./pages/WebPages/Registration/img/backgroundImage.png\": \"./src/pages/WebPages/Registration/img/backgroundImage.png\",\n\t\"./pages/WebPages/RoomDetails/img/background1.jpg\": \"./src/pages/WebPages/RoomDetails/img/background1.jpg\",\n\t\"./pages/WebPages/RoomDetails/img/background2.jpg\": \"./src/pages/WebPages/RoomDetails/img/background2.jpg\",\n\t\"./pages/WebPages/RoomDetails/img/background3.jpg\": \"./src/pages/WebPages/RoomDetails/img/background3.jpg\",\n\t\"./pages/WebPages/SignIn/img/backgroundImage.png\": \"./src/pages/WebPages/SignIn/img/backgroundImage.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg)$?");
+eval("var map = {\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./components/FormElements.CheckboxList/img/checkMark.svg\": \"./src/components/FormElements.CheckboxList/img/checkMark.svg\",\n\t\"./components/FormElements.GuestRoomReviews/img/image1.png\": \"./src/components/FormElements.GuestRoomReviews/img/image1.png\",\n\t\"./components/FormElements.GuestRoomReviews/img/image2.png\": \"./src/components/FormElements.GuestRoomReviews/img/image2.png\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./components/logo/img/logo.svg\": \"./src/components/logo/img/logo.svg\",\n\t\"./components/room-info/img/test1.png\": \"./src/components/room-info/img/test1.png\",\n\t\"./components/room-info/img/test11.png\": \"./src/components/room-info/img/test11.png\",\n\t\"./components/room-info/img/test110.png\": \"./src/components/room-info/img/test110.png\",\n\t\"./components/room-info/img/test120.png\": \"./src/components/room-info/img/test120.png\",\n\t\"./components/room-info/img/test130.png\": \"./src/components/room-info/img/test130.png\",\n\t\"./components/room-info/img/test2.png\": \"./src/components/room-info/img/test2.png\",\n\t\"./components/room-info/img/test22.png\": \"./src/components/room-info/img/test22.png\",\n\t\"./components/room-info/img/test3.png\": \"./src/components/room-info/img/test3.png\",\n\t\"./components/room-info/img/test33.png\": \"./src/components/room-info/img/test33.png\",\n\t\"./components/room-info/img/test4.png\": \"./src/components/room-info/img/test4.png\",\n\t\"./components/room-info/img/test44.png\": \"./src/components/room-info/img/test44.png\",\n\t\"./components/room-info/img/test55.png\": \"./src/components/room-info/img/test55.png\",\n\t\"./components/room-info/img/test66.png\": \"./src/components/room-info/img/test66.png\",\n\t\"./components/room-info/img/test77.png\": \"./src/components/room-info/img/test77.png\",\n\t\"./components/room-info/img/test88.png\": \"./src/components/room-info/img/test88.png\",\n\t\"./components/room-info/img/test99.png\": \"./src/components/room-info/img/test99.png\",\n\t\"./components/social-media/img/facebook-icon.svg\": \"./src/components/social-media/img/facebook-icon.svg\",\n\t\"./components/social-media/img/instagram-icon.svg\": \"./src/components/social-media/img/instagram-icon.svg\",\n\t\"./components/social-media/img/twitter-icon.svg\": \"./src/components/social-media/img/twitter-icon.svg\",\n\t\"./pages/WebPages/LandingPage/img/backgroundImage.png\": \"./src/pages/WebPages/LandingPage/img/backgroundImage.png\",\n\t\"./pages/WebPages/Registration/img/backgroundImage.png\": \"./src/pages/WebPages/Registration/img/backgroundImage.png\",\n\t\"./pages/WebPages/RoomDetails/img/background1.jpg\": \"./src/pages/WebPages/RoomDetails/img/background1.jpg\",\n\t\"./pages/WebPages/RoomDetails/img/background2.jpg\": \"./src/pages/WebPages/RoomDetails/img/background2.jpg\",\n\t\"./pages/WebPages/RoomDetails/img/background3.jpg\": \"./src/pages/WebPages/RoomDetails/img/background3.jpg\",\n\t\"./pages/WebPages/SignIn/img/backgroundImage.png\": \"./src/pages/WebPages/SignIn/img/backgroundImage.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg)$?");
 
 /***/ }),
 
@@ -313,210 +313,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./src/components/Cards.RoomInfo/RoomInfo.js":
-/*!***************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/RoomInfo.js ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nclass RoomInfo {\r\n    constructor(outerContainerElement) {\r\n        this.containerElement = outerContainerElement.querySelector(\".room-info\");\r\n        this.arrows = this.containerElement.querySelector(\".room-info__arrows\");\r\n        if (this.arrows) {\r\n            this.leftArrow = this.arrows.querySelector(\".room-info__arrow-back\");\r\n            this.rightArrow = this.arrows.querySelector(\".room-info__arrow-forward\");\r\n        }\r\n        this.radioButtons = Array.from(this.containerElement.querySelectorAll(\".room-info__radio-button\"));\r\n\r\n        this.handlerLeftArrowClick = this.handlerLeftArrowClick.bind(this);\r\n        this.handlerRightArrowClick = this.handlerRightArrowClick.bind(this);\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        if (this.leftArrow && this.rightArrow) {\r\n            this.leftArrow.onclick = this.handlerLeftArrowClick;\r\n            this.rightArrow.onclick = this.handlerRightArrowClick;\r\n        }\r\n    }\r\n\r\n    handlerLeftArrowClick(event) {\r\n        if (event.currentTarget.disabled) return;\r\n\r\n        const checkedButton = this.radioButtons.find((button) => button.checked);\r\n\r\n        if (!checkedButton.previousElementSibling) return;\r\n\r\n        if (checkedButton.dataset.serialNumber === \"2\") {\r\n            checkedButton.checked = false;\r\n            checkedButton.previousElementSibling.previousElementSibling.checked = true;\r\n        }\r\n        else if (checkedButton.dataset.serialNumber === \"4\") {\r\n            checkedButton.checked = false;\r\n            checkedButton.previousElementSibling.previousElementSibling.checked = true;\r\n        }\r\n        else {\r\n            checkedButton.checked = false;\r\n            checkedButton.previousElementSibling.previousElementSibling.checked = true;\r\n        }\r\n    }\r\n\r\n    handlerRightArrowClick(event) {\r\n        if (event.currentTarget.disabled) return;\r\n\r\n        const checkedButton = this.radioButtons.find((button) => button.checked);\r\n\r\n        if (!checkedButton.nextElementSibling.nextElementSibling.matches(\".room-info__radio-button\")) return;\r\n        else if (checkedButton.nextElementSibling.nextElementSibling.disabled) return;\r\n\r\n        if (checkedButton.dataset.serialNumber === \"3\") {\r\n            checkedButton.checked = false;\r\n            checkedButton.nextElementSibling.nextElementSibling.checked = true;\r\n        }\r\n        else if (checkedButton.dataset.serialNumber === \"1\") {\r\n            checkedButton.checked = false;\r\n            checkedButton.nextElementSibling.nextElementSibling.checked = true;\r\n        }\r\n        else {\r\n            checkedButton.checked = false;\r\n            checkedButton.nextElementSibling.nextElementSibling.checked = true;\r\n        }\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (RoomInfo);\r\n\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/RoomInfo.js?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test1.png":
-/*!*****************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test1.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test1.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test1.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test11.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test11.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test11.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test11.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test110.png":
-/*!*******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test110.png ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test110.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test110.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test120.png":
-/*!*******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test120.png ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test120.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test120.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test130.png":
-/*!*******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test130.png ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test130.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test130.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test2.png":
-/*!*****************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test2.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test2.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test2.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test22.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test22.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test22.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test22.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test3.png":
-/*!*****************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test3.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test3.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test3.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test33.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test33.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test33.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test33.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test4.png":
-/*!*****************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test4.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test4.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test4.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test44.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test44.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test44.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test44.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test55.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test55.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test55.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test55.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test66.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test66.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test66.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test66.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test77.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test77.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test77.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test77.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test88.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test88.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test88.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test88.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test99.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test99.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test99.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test99.png?");
-
-/***/ }),
-
 /***/ "./src/components/FormElements.CheckboxList/img/checkMark.svg":
 /*!********************************************************************!*\
   !*** ./src/components/FormElements.CheckboxList/img/checkMark.svg ***!
@@ -589,75 +385,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./src/components/GlobalLogo/img/logo.svg":
-/*!************************************************!*\
-  !*** ./src/components/GlobalLogo/img/logo.svg ***!
-  \************************************************/
+/***/ "./src/components/colored-logo/img/TOXIN.svg":
+/*!***************************************************!*\
+  !*** ./src/components/colored-logo/img/TOXIN.svg ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/GlobalLogo/img/logo.svg\");\n\n//# sourceURL=webpack:///./src/components/GlobalLogo/img/logo.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/colored-logo/img/TOXIN.svg\");\n\n//# sourceURL=webpack:///./src/components/colored-logo/img/TOXIN.svg?");
 
 /***/ }),
 
-/***/ "./src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg":
-/*!********************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg ***!
-  \********************************************************************/
+/***/ "./src/components/colored-logo/img/colored-logo.svg":
+/*!**********************************************************!*\
+  !*** ./src/components/colored-logo/img/colored-logo.svg ***!
+  \**********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg?");
-
-/***/ }),
-
-/***/ "./src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg":
-/*!**************************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg ***!
-  \**************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg?");
-
-/***/ }),
-
-/***/ "./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg":
-/*!***************************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg?");
-
-/***/ }),
-
-/***/ "./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg":
-/*!****************************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg ***!
-  \****************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg?");
-
-/***/ }),
-
-/***/ "./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg":
-/*!**************************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg ***!
-  \**************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/colored-logo/img/colored-logo.svg\");\n\n//# sourceURL=webpack:///./src/components/colored-logo/img/colored-logo.svg?");
 
 /***/ }),
 
@@ -673,6 +421,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _For
 
 /***/ }),
 
+/***/ "./src/components/logo/img/logo.svg":
+/*!******************************************!*\
+  !*** ./src/components/logo/img/logo.svg ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/logo/img/logo.svg\");\n\n//# sourceURL=webpack:///./src/components/logo/img/logo.svg?");
+
+/***/ }),
+
 /***/ "./src/components/price-calculation-form/price-calculation-form.js":
 /*!*************************************************************************!*\
   !*** ./src/components/price-calculation-form/price-calculation-form.js ***!
@@ -682,6 +442,210 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _For
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _FormElements_Dropdown_Dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../FormElements.Dropdown/Dropdown */ \"./src/components/FormElements.Dropdown/Dropdown.js\");\n/* harmony import */ var _FormElements_DateInput_DateInput__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../FormElements.DateInput/DateInput */ \"./src/components/FormElements.DateInput/DateInput.js\");\n\r\n\r\n\r\nclass PriceCalculationForm {\r\n    constructor(outerContainerElement) {\r\n        this.containerElement = outerContainerElement.querySelector(\".price-calculation-form\");\r\n\r\n        this.mainSum = this.containerElement.querySelector(\".price-calculation-form__main-sum\");\r\n        this.mainSumFormula = this.containerElement.querySelector(\".price-calculation-form__main-sum-formula\");\r\n        this.mainSumValue = this.containerElement.querySelector(\".price-calculation-form__main-sum-result\");\r\n        this.services = this.containerElement.querySelector(\".price-calculation-form__services\");\r\n        this.additionalServicesValue = this.containerElement.querySelector(\".price-calculation-form__additional-services-value\");\r\n        this.totalResultValue = this.containerElement.querySelector(\".price-calculation-form__total-result-value\");\r\n\r\n        const dropdownContainer = this.containerElement.querySelector(\".price-calculation-form__dropdown\");\r\n        this.dropdown = new _FormElements_Dropdown_Dropdown__WEBPACK_IMPORTED_MODULE_0__[\"default\"](dropdownContainer);\r\n\r\n        const calendarContainer = this.containerElement.querySelector(\".price-calculation-form__calendar\");\r\n        this.calendar = new _FormElements_DateInput_DateInput__WEBPACK_IMPORTED_MODULE_1__[\"default\"](calendarContainer);\r\n\r\n        this.roomRentalPrice = Number.parseInt(this.mainSum.dataset.value);\r\n        this.currencyType = this.mainSum.dataset.currencyType;\r\n        this.discountValue = Number.parseInt(this.services.dataset.value);\r\n        this.totalSum = 0;\r\n        this.servicesSum = 0;\r\n        this.roomRentalSum = 0;\r\n\r\n        this.handlerDropdownInputChange = this.handlerDropdownInputChange.bind(this);\r\n        this.getHandlerSelectWrapper = this.getHandlerSelectWrapper.bind(this);\r\n        this.getHandlerClearClickWrapper = this.getHandlerClearClickWrapper.bind(this);\r\n        this.setTotalPrice = this.setTotalPrice.bind(this);\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        this.dropdown.dropdownList.forEach(item => {\r\n            item.minus.addEventListener(\"click\", this.handlerDropdownInputChange);\r\n            item.plus.addEventListener(\"click\", this.handlerDropdownInputChange);\r\n        });\r\n\r\n\r\n        const datepicker = this.calendar.datepickerInstance;\r\n        const oldHandlerSelect = datepicker.selectDate;\r\n        datepicker.selectDate = this.getHandlerSelectWrapper(oldHandlerSelect.bind(datepicker));\r\n\r\n        const clearButton = datepicker.$datepicker[0].querySelector(\".date-input__clear-button\");\r\n        const oldOnClear = clearButton.onclick;\r\n        clearButton.onclick = this.getHandlerClearClickWrapper(oldOnClear);\r\n    }\r\n\r\n    handlerDropdownInputChange() {\r\n        this.servicesSum = this.dropdown.totalValue * 100;\r\n        this.additionalServicesValue.textContent = `${this.formateNumber(this.servicesSum)}${this.currencyType}`;\r\n\r\n        this.setTotalPrice();\r\n    }\r\n\r\n    getHandlerSelectWrapper(oldHandler) {\r\n        return function (date) {\r\n            oldHandler(date);\r\n\r\n            const firstDateInput = this.calendar.jqDateInputs.eq(0);\r\n            const secondDateInput = this.calendar.jqDateInputs.eq(1);\r\n            const firstDateValue = firstDateInput[0].value;\r\n            const secondDateValue = secondDateInput[0].value;\r\n            if (firstDateValue && secondDateValue) {\r\n                const firstDateStrings = firstDateValue.split(\".\");\r\n                const firstDate = new Date(firstDateStrings[2], firstDateStrings[1], firstDateStrings[0]);\r\n                const secondDateStrings = secondDateValue.split(\".\");\r\n                const secondDate = new Date(secondDateStrings[2], secondDateStrings[1], secondDateStrings[0]);\r\n                const dDate = Math.abs(secondDate - firstDate);\r\n                const daysCount = dDate / (1000 * 60 * 60 * 24);\r\n\r\n                const splittedText = this.mainSumFormula.textContent.split(\"x\");\r\n                splittedText[1] = ` ${daysCount} ${this.doDeclensionOfWord(daysCount)}`;\r\n                this.mainSumFormula.textContent = splittedText.join(\"x\");\r\n\r\n                this.roomRentalSum = daysCount * this.roomRentalPrice;\r\n                this.mainSumValue.textContent = `${this.formateNumber(this.roomRentalSum)}${this.currencyType}`;\r\n\r\n                this.setTotalPrice();\r\n            }\r\n        }.bind(this);\r\n    }\r\n\r\n    getHandlerClearClickWrapper(oldHandler) {\r\n        return function (event) {\r\n            oldHandler(event);\r\n\r\n            this.roomRentalSum = 0;\r\n\r\n            this.setTotalPrice();\r\n        }.bind(this);\r\n    }\r\n\r\n    setTotalPrice() {\r\n        this.totalSum = this.servicesSum + this.roomRentalSum - this.discountValue;\r\n        if (this.totalSum < 0) this.totalSum = 0;\r\n        this.totalResultValue.textContent = `${this.formateNumber(this.totalSum)}${this.currencyType}`;\r\n    }\r\n\r\n    formateNumber(number) {\r\n        return number.toString().replace(/(\\d)(?=(\\d{3})+$)/g, '$1 ');\r\n    }\r\n\r\n    doDeclensionOfWord(number) {\r\n        const words = [\"сутки\", \"суток\", \"суток\"];\r\n\r\n        if (number.toString()[number.toString().length - 1] === \"1\" && number !== 11)\r\n            return words[0];\r\n        else if ((number.toString()[number.toString().length - 1] > 1 && number.toString()[number.toString().length - 1] <= 4)\r\n            && (number < 12 || number > 14))\r\n            return words[1];\r\n        else\r\n            return words[2];\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (PriceCalculationForm);\r\n\n\n//# sourceURL=webpack:///./src/components/price-calculation-form/price-calculation-form.js?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test1.png":
+/*!************************************************!*\
+  !*** ./src/components/room-info/img/test1.png ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test1.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test1.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test11.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test11.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test11.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test11.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test110.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test110.png ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test110.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test110.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test120.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test120.png ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test120.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test120.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test130.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test130.png ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test130.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test130.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test2.png":
+/*!************************************************!*\
+  !*** ./src/components/room-info/img/test2.png ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test2.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test2.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test22.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test22.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test22.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test22.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test3.png":
+/*!************************************************!*\
+  !*** ./src/components/room-info/img/test3.png ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test3.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test3.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test33.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test33.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test33.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test33.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test4.png":
+/*!************************************************!*\
+  !*** ./src/components/room-info/img/test4.png ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test4.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test4.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test44.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test44.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test44.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test44.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test55.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test55.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test55.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test55.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test66.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test66.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test66.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test66.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test77.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test77.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test77.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test77.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test88.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test88.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test88.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test88.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test99.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test99.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test99.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test99.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/room-info.js":
+/*!***********************************************!*\
+  !*** ./src/components/room-info/room-info.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nclass RoomInfo {\r\n    constructor(outerContainerElement) {\r\n        this.containerElement = outerContainerElement.querySelector(\".room-info\");\r\n        this.arrows = this.containerElement.querySelector(\".room-info__arrows\");\r\n        if (this.arrows) {\r\n            this.leftArrow = this.arrows.querySelector(\".room-info__arrow-back\");\r\n            this.rightArrow = this.arrows.querySelector(\".room-info__arrow-forward\");\r\n        }\r\n        this.radioButtons = Array.from(this.containerElement.querySelectorAll(\".room-info__radio-button\"));\r\n\r\n        this.handlerLeftArrowClick = this.handlerLeftArrowClick.bind(this);\r\n        this.handlerRightArrowClick = this.handlerRightArrowClick.bind(this);\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        if (this.leftArrow && this.rightArrow) {\r\n            this.leftArrow.onclick = this.handlerLeftArrowClick;\r\n            this.rightArrow.onclick = this.handlerRightArrowClick;\r\n        }\r\n    }\r\n\r\n    handlerLeftArrowClick(event) {\r\n        if (event.currentTarget.disabled) return;\r\n\r\n        const checkedButton = this.radioButtons.find((button) => button.checked);\r\n\r\n        if (!checkedButton.previousElementSibling) return;\r\n\r\n        if (checkedButton.dataset.serialNumber === \"2\") {\r\n            checkedButton.checked = false;\r\n            checkedButton.previousElementSibling.previousElementSibling.checked = true;\r\n        }\r\n        else if (checkedButton.dataset.serialNumber === \"4\") {\r\n            checkedButton.checked = false;\r\n            checkedButton.previousElementSibling.previousElementSibling.checked = true;\r\n        }\r\n        else {\r\n            checkedButton.checked = false;\r\n            checkedButton.previousElementSibling.previousElementSibling.checked = true;\r\n        }\r\n    }\r\n\r\n    handlerRightArrowClick(event) {\r\n        if (event.currentTarget.disabled) return;\r\n\r\n        const checkedButton = this.radioButtons.find((button) => button.checked);\r\n\r\n        if (!checkedButton.nextElementSibling.nextElementSibling.matches(\".room-info__radio-button\")) return;\r\n        else if (checkedButton.nextElementSibling.nextElementSibling.disabled) return;\r\n\r\n        if (checkedButton.dataset.serialNumber === \"3\") {\r\n            checkedButton.checked = false;\r\n            checkedButton.nextElementSibling.nextElementSibling.checked = true;\r\n        }\r\n        else if (checkedButton.dataset.serialNumber === \"1\") {\r\n            checkedButton.checked = false;\r\n            checkedButton.nextElementSibling.nextElementSibling.checked = true;\r\n        }\r\n        else {\r\n            checkedButton.checked = false;\r\n            checkedButton.nextElementSibling.nextElementSibling.checked = true;\r\n        }\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (RoomInfo);\r\n\n\n//# sourceURL=webpack:///./src/components/room-info/room-info.js?");
 
 /***/ }),
 
@@ -697,6 +661,42 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _For
 
 /***/ }),
 
+/***/ "./src/components/social-media/img/facebook-icon.svg":
+/*!***********************************************************!*\
+  !*** ./src/components/social-media/img/facebook-icon.svg ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/social-media/img/facebook-icon.svg\");\n\n//# sourceURL=webpack:///./src/components/social-media/img/facebook-icon.svg?");
+
+/***/ }),
+
+/***/ "./src/components/social-media/img/instagram-icon.svg":
+/*!************************************************************!*\
+  !*** ./src/components/social-media/img/instagram-icon.svg ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/social-media/img/instagram-icon.svg\");\n\n//# sourceURL=webpack:///./src/components/social-media/img/instagram-icon.svg?");
+
+/***/ }),
+
+/***/ "./src/components/social-media/img/twitter-icon.svg":
+/*!**********************************************************!*\
+  !*** ./src/components/social-media/img/twitter-icon.svg ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/social-media/img/twitter-icon.svg\");\n\n//# sourceURL=webpack:///./src/components/social-media/img/twitter-icon.svg?");
+
+/***/ }),
+
 /***/ "./src/pages/UIKit/Cards/Cards.js":
 /*!****************************************!*\
   !*** ./src/pages/UIKit/Cards/Cards.js ***!
@@ -705,7 +705,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _For
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_find_room_form_find_room_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/find-room-form/find-room-form */ \"./src/components/find-room-form/find-room-form.js\");\n/* harmony import */ var _components_sign_up_form_sign_up_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/sign-up-form/sign-up-form */ \"./src/components/sign-up-form/sign-up-form.js\");\n/* harmony import */ var _components_Cards_RoomInfo_RoomInfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/Cards.RoomInfo/RoomInfo */ \"./src/components/Cards.RoomInfo/RoomInfo.js\");\n/* harmony import */ var _components_price_calculation_form_price_calculation_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/price-calculation-form/price-calculation-form */ \"./src/components/price-calculation-form/price-calculation-form.js\");\n/* harmony import */ var _Cards_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Cards.scss */ \"./src/pages/UIKit/Cards/Cards.scss\");\n/* harmony import */ var _Cards_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Cards_scss__WEBPACK_IMPORTED_MODULE_5__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\n\r\n\r\nconst findRoomFormContainer = document.querySelector(\".cards__form-container-1\");\r\nconst findRoomForm = new _components_find_room_form_find_room_form__WEBPACK_IMPORTED_MODULE_1__[\"default\"](findRoomFormContainer);\r\n\r\n\r\nconst signUpFormContainer = document.querySelector(\".cards__form-container-2\");\r\nconst signUpForm = new _components_sign_up_form_sign_up_form__WEBPACK_IMPORTED_MODULE_2__[\"default\"](signUpFormContainer);\r\n\r\n\r\nconst roomInfoElements = Array.from(document.querySelectorAll(\".cards__room-info-container\"));\r\nconst roomsInfo = roomInfoElements.map((element) => new _components_Cards_RoomInfo_RoomInfo__WEBPACK_IMPORTED_MODULE_3__[\"default\"](element));\r\n\r\n\r\nconst priceCalculationFormContainer = document.querySelector(\".cards__form-container-3\");\r\nconst priceCalculationForm = new _components_price_calculation_form_price_calculation_form__WEBPACK_IMPORTED_MODULE_4__[\"default\"](priceCalculationFormContainer);\r\n\r\n\r\nconst staticDatepicker = $(\".cards__date-picker-container\").datepicker({\r\n    range: true,\r\n    position: 'bottom left',\r\n    navTitles: {\r\n        days: 'MM yyyy',\r\n    },\r\n    autoClose: false,\r\n    onShow: function (dp, animationCompleted) {\r\n        if (!animationCompleted) {\r\n            if (!dp.$datepicker.find('.date-input__buttons').html()) {\r\n                dp.$datepicker.append(\r\n                    '<div class=\"date-input__buttons\">' +\r\n                    '<p class=\"date-input__clear-button\">очистить</p>' +\r\n                    '<p class=\"date-input__apply-button\">применить</p>' +\r\n                    '</div>'\r\n                );\r\n                dp.$datepicker.find('.datepicker--pointer').css(\"display\", \"none\");\r\n            }\r\n        }\r\n    }\r\n}).data('datepicker');\r\nstaticDatepicker.show();\r\n\r\n\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/pages/UIKit/Cards/Cards.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_find_room_form_find_room_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/find-room-form/find-room-form */ \"./src/components/find-room-form/find-room-form.js\");\n/* harmony import */ var _components_sign_up_form_sign_up_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/sign-up-form/sign-up-form */ \"./src/components/sign-up-form/sign-up-form.js\");\n/* harmony import */ var _components_room_info_room_info__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/room-info/room-info */ \"./src/components/room-info/room-info.js\");\n/* harmony import */ var _components_price_calculation_form_price_calculation_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/price-calculation-form/price-calculation-form */ \"./src/components/price-calculation-form/price-calculation-form.js\");\n/* harmony import */ var _Cards_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Cards.scss */ \"./src/pages/UIKit/Cards/Cards.scss\");\n/* harmony import */ var _Cards_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Cards_scss__WEBPACK_IMPORTED_MODULE_5__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\n\r\n\r\nconst findRoomFormContainer = document.querySelector(\".cards__form-container-1\");\r\nconst findRoomForm = new _components_find_room_form_find_room_form__WEBPACK_IMPORTED_MODULE_1__[\"default\"](findRoomFormContainer);\r\n\r\n\r\nconst signUpFormContainer = document.querySelector(\".cards__form-container-2\");\r\nconst signUpForm = new _components_sign_up_form_sign_up_form__WEBPACK_IMPORTED_MODULE_2__[\"default\"](signUpFormContainer);\r\n\r\n\r\nconst roomInfoElements = Array.from(document.querySelectorAll(\".cards__room-info-container\"));\r\nconst roomsInfo = roomInfoElements.map((element) => new _components_room_info_room_info__WEBPACK_IMPORTED_MODULE_3__[\"default\"](element));\r\n\r\n\r\nconst priceCalculationFormContainer = document.querySelector(\".cards__form-container-3\");\r\nconst priceCalculationForm = new _components_price_calculation_form_price_calculation_form__WEBPACK_IMPORTED_MODULE_4__[\"default\"](priceCalculationFormContainer);\r\n\r\n\r\nconst staticDatepicker = $(\".cards__date-picker-container\").datepicker({\r\n    range: true,\r\n    position: 'bottom left',\r\n    navTitles: {\r\n        days: 'MM yyyy',\r\n    },\r\n    autoClose: false,\r\n    onShow: function (dp, animationCompleted) {\r\n        if (!animationCompleted) {\r\n            if (!dp.$datepicker.find('.date-input__buttons').html()) {\r\n                dp.$datepicker.append(\r\n                    '<div class=\"date-input__buttons\">' +\r\n                    '<p class=\"date-input__clear-button\">очистить</p>' +\r\n                    '<p class=\"date-input__apply-button\">применить</p>' +\r\n                    '</div>'\r\n                );\r\n                dp.$datepicker.find('.datepicker--pointer').css(\"display\", \"none\");\r\n            }\r\n        }\r\n    }\r\n}).data('datepicker');\r\nstaticDatepicker.show();\r\n\r\n\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/pages/UIKit/Cards/Cards.js?");
 
 /***/ }),
 

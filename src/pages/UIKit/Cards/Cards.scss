@@ -2,12 +2,12 @@
 @import "../../../assets/fonts/fonts.scss";
 @include setFonts("../../../");
 
-@import "../../../components/GlobalLogo/GlobalLogo.scss";
+@import "../../../components/logo/logo.scss";
 @import "../../../components/sign-in-form/sign-in-form.scss";
 @import "../../../components/find-room-form/find-room-form.scss";
 @import "../../../components/price-calculation-form/price-calculation-form.scss";
 @import "../../../components/sign-up-form/sign-up-form.scss";
-@import "../../../components/Cards.RoomInfo/RoomInfo.scss";
+@import "../../../components/room-info/room-info.scss";
 
 .cards {
     min-width: 100%;

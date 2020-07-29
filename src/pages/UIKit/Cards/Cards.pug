@@ -1,9 +1,9 @@
-include ../../../components/GlobalLogo/GlobalLogo.pug
+include ../../../components/logo/logo.pug
 include ../../../components/sign-in-form/sign-in-form.pug
 include ../../../components/find-room-form/find-room-form.pug
 include ../../../components/price-calculation-form/price-calculation-form.pug
 include ../../../components/sign-up-form/sign-up-form.pug
-include ../../../components/Cards.RoomInfo/RoomInfo.pug
+include ../../../components/room-info/room-info.pug
 
 doctype html
 html
@@ -14,7 +14,7 @@ html
     body
         div(class=["cards"])
             div(class=["cards__global-logo-container"])
-                +getGlobalLogo()
+                +logo()
 
             div(class=["cards__content"])
                 div(class=["cards__column-1"])
@@ -43,7 +43,7 @@ html
                     div(class=["cards__date-picker-container"])
 
                     div(class=["cards__room-info-container cards__room-info-container-1"])
-                        +getRoomInfo({
+                        +room-info({
                             blockNumber: 1,
                             photos: ["test11", "test22", "test33", "test44"],
                             reviewsCount: 145,
@@ -55,7 +55,7 @@ html
                             currencyType: "₽",
                         })
                     div(class=["cards__room-info-container cards__room-info-container-2"])
-                        +getRoomInfo({
+                        +room-info({
                             blockNumber: 2,
                             photos: ["test11", "test22"],
                             reviewsCount: 65,
@@ -67,7 +67,7 @@ html
                             currencyType: "₽",
                         }) 
                     div(class=["cards__room-info-container cards__room-info-container-3"])
-                        +getRoomInfo({
+                        +room-info({
                             blockNumber: 3,
                             photos: ["test11"],
                             reviewsCount: 1488,
