@@ -3,14 +3,14 @@ include ../FormElements.RadioButton/RadioButton.pug
 include ../FormElements.DateInput/DateInput.pug
 include ../FormElements.ButtonDefault/ButtonDefault.pug
 
-mixin getRegistrationForm(options)
+mixin sign-up-form(options)
+    - const { titleText } = options;
 
-    form(class=["registration-form"])
-        - if(options.titleText)
-            div(class=["registration-form__title"])
-                p(class=["registration-form__title-text"])= options.titleText
+    form(class=["sign-up-form"])
+        - if(titleText)
+            p(class=["sign-up-form__title"])= titleText
 
-        div(class=["registration-form__first-name-input-container"])
+        div(class=["sign-up-form__first-name-field"])
             +getFormInput({
                 hasTitle: false,
                 placeholder: "Имя",
@@ -20,7 +20,7 @@ mixin getRegistrationForm(options)
                 hasSubmitButton: false
             })
 
-        div(class=["registration-form__second-name-input-container"])
+        div(class=["sign-up-form__second-name-field"])
             +getFormInput({
                 hasTitle: false,
                 placeholder: "Фамилия",
@@ -30,7 +30,7 @@ mixin getRegistrationForm(options)
                 hasSubmitButton: false
             })
 
-        div(class=["registration-form__gender-radio-buttons-container"])
+        div(class=["sign-up-form__radio-buttons"])
             +getRadioButton({
                 blockNumber: "_radio_1",
                 buttonType: "radio",
@@ -41,14 +41,14 @@ mixin getRegistrationForm(options)
                 name: "gender",
             })
 
-        div(class=["registration-form__date-input-container"])
+        div(class=["sign-up-form__calendar"])
             +getDateInput({
                 isDouble: false,
                 withRange: false, 
                 firstTitle: "дата рождения",
             })
 
-        div(class=["registration-form__email-input-container"])
+        div(class=["sign-up-form__email-field"])
             +getFormInput({
                 hasTitle: true,
                 titleText: "данные для входа в сервис",                
@@ -59,7 +59,7 @@ mixin getRegistrationForm(options)
                 hasSubmitButton: false
             })
 
-        div(class=["registration-form__password-input-container"])
+        div(class=["sign-up-form__password-field"])
             +getFormInput({
                 hasTitle: false,
                 placeholder: "Пароль",
@@ -69,7 +69,7 @@ mixin getRegistrationForm(options)
                 hasSubmitButton: false
             })
 
-        div(class=["registration-form__toggle-container"])
+        div(class=["sign-up-form__toggle"])
             +getRadioButton({
                 buttonType: "toggle",
                 radioButtonList: [
@@ -78,22 +78,20 @@ mixin getRegistrationForm(options)
                 name: "specialOffer"
             })
 
-        div(class=["registration-form__submit-button-container"])
+        div(class=["sign-up-form__submit-button"])
             +getButton({
                 text: 'перейти к оплате',
                 isHollow: false,
                 buttonType: "submit",
                 hasArrow: true,
-                width: "320px",
             })
 
-        div(class=["registration-form__already-registered"])
-            p(class=["registration-form__already-registered-text"]) Уже есть аккаунт на Toxin
-            div(class=["registration-form__sign-in-button-container"])
+        div(class=["sign-up-form__sign-in-field"])
+            p(class=["sign-up-form__confirmation-text"]) Уже есть аккаунт на Toxin
+            div(class=["sign-up-form__sign-in-button"])
                 +getButton({
                     text: "войти",
                     isHollow:  true,
                     buttonType: "a",
                     hasArrow: false,
-                    width: "99px",
-                }) 
+                })

@@ -1,17 +1,14 @@
-//-
-
-
 include ../FormElements.ButtonDefault/ButtonDefault.pug
 include ../FormElements.FormInput/FormInput.pug
 
-mixin getAuthorizationForm(options)
+mixin sign-in-form(options)
+    - const { titleText } = options;
 
-    form(class=["authorization-form"])
-        - if(options.titleText)
-            div(class=["authorization-form__title"])
-                p(class=["authorization-form__title-text"])= options.titleText
+    form(class=["sign-in-form"])
+        - if(titleText)
+            p(class=["sign-in-form__title"])= titleText
 
-        div(class=["authorization-form__email-and-password-inputs-container"])
+        div(class=["sign-in-form__fields"])
             +getFormInput({
                 hasTitle: false,
                 titleText: "",                
@@ -30,7 +27,7 @@ mixin getAuthorizationForm(options)
                 hasSubmitButton: false
             })
 
-        div(class=["authorization-form__submit-button-container"])
+        div(class=["sign-in-form__submit-button"])
             +getButton({
                 text: 'войти',
                 isHollow: false,
@@ -38,9 +35,9 @@ mixin getAuthorizationForm(options)
                 hasArrow: true,
             })
 
-        div(class=["authorization-form__already-registered"])
-            p(class=["authorization-form__already-registered-text"]) Нет аккаунта на Toxin?
-            div(class=["authorization-form__create-button-container"])
+        div(class=["sign-in-form__account-create-field"])
+            p(class=["sign-in-form__question-text"]) Нет аккаунта на Toxin?
+            div(class=["sign-in-form__create-button"])
                 +getButton({
                     text: "создать",
                     isHollow:  true,

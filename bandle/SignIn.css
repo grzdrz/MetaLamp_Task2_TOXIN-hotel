@@ -1093,7 +1093,7 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent; }
 
-.authorization-form {
+.sign-in-form {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1103,32 +1103,31 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
-  .authorization-form__title {
+  .sign-in-form__title {
     display: flex;
     width: 100%;
-    margin-bottom: 20px; }
-  .authorization-form__title-text {
+    margin-bottom: 20px;
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     color: #1f2041; }
-  .authorization-form__email-and-password-inputs-container {
+  .sign-in-form__fields {
     margin-bottom: 20px;
     width: 100%; }
-    .authorization-form__email-and-password-inputs-container > div:first-child {
+    .sign-in-form__fields > div:first-child {
       margin-bottom: 10px; }
-  .authorization-form__submit-button-container {
+  .sign-in-form__submit-button {
     margin-bottom: 30px;
     width: 100%;
     height: 44px; }
-  .authorization-form__already-registered {
+  .sign-in-form__account-create-field {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%; }
-  .authorization-form__already-registered-text {
+  .sign-in-form__question-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -1138,7 +1137,7 @@ body {
     align-items: center;
     text-align: center;
     color: #000000; }
-  .authorization-form__create-button-container {
+  .sign-in-form__create-button {
     width: 30.9375%;
     height: 44px; }
 

@@ -3,10 +3,10 @@
 @include setFonts("../../../");
 
 @import "../../../components/GlobalLogo/GlobalLogo.scss";
-@import "../../../components/Cards.AuthorizationForm/AuthorizationForm.scss";
-@import "../../../components/Cards.GuestsAndDateRangeForm/GuestsAndDateRangeForm.scss";
-@import "../../../components/Cards.PriceCalculationForm/PriceCalculationForm.scss";
-@import "../../../components/Cards.RegistrationForm/RegistrationForm.scss";
+@import "../../../components/sign-in-form/sign-in-form.scss";
+@import "../../../components/find-room-form/find-room-form.scss";
+@import "../../../components/price-calculation-form/price-calculation-form.scss";
+@import "../../../components/sign-up-form/sign-up-form.scss";
 @import "../../../components/Cards.RoomInfo/RoomInfo.scss";
 
 .cards {

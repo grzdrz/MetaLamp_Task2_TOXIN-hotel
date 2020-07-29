@@ -3,7 +3,7 @@ include ../../../components/FormElements.RoomDetails/RoomDetails.pug
 include ../../../components/FormElements.PieChart/PieChart.pug
 include ../../../components/FormElements.BulletList/BulletList.pug
 include ../../../components/FormElements.GuestRoomReviews/GuestRoomReviews.pug
-include ../../../components/Cards.PriceCalculationForm/PriceCalculationForm.pug
+include ../../../components/price-calculation-form/price-calculation-form.pug
 include ../../../components/HeadersAndFooters.LongFooter/LongFooter.pug
 
 doctype html
@@ -95,7 +95,7 @@ html
                                 | вычетом сбора за услуги.
 
                 div(class=["room-details__price-calculation-form-container"])
-                    +getPriceCalculationForm({})
+                    +price-calculation-form({})
 
 
             div(class=["room-details__footer-container"])

@@ -2,21 +2,20 @@ include ../FormElements.DateInput/DateInput.pug
 include ../FormElements.Dropdown/Dropdown.pug
 include ../FormElements.ButtonDefault/ButtonDefault.pug
 
-mixin getGuestsAndDateRangeForm(options)
+mixin find-room-form(options)
 
-    form(class=["guests-and-date-range-form"])
+    form(class=["find-room-form"])
         - if(options.titleText)
-            div(class=["guests-and-date-range-form__title"])
-                p(class=["guests-and-date-range-form__title-text"])= options.titleText
+            p(class=["find-room-form__title"])= options.titleText
 
-        div(class=["guests-and-date-range-form__date-inputs-container"])
+        div(class=["find-room-form__calendar"])
             +getDateInput({
                 isDouble: true,
                 firstTitle: "выезд",
                 secondTitle: "прибытие",
             })
 
-        div(class=["guests-and-date-range-form__dropdown-container"])
+        div(class=["find-room-form__dropdown"])
             +getDropdown({
                 titleText: "гости",
                 isTitleTextTestVisible: false,
@@ -33,7 +32,7 @@ mixin getGuestsAndDateRangeForm(options)
                 withTotalValue: true,
             })
 
-        div(class=["guests-and-date-range-form__submit-button-container"])
+        div(class=["find-room-form__submit-button"])
             +getButton({
                 text: 'подобрать номер',
                 isHollow: false,

@@ -1504,7 +1504,7 @@ body {
     .button-default_hollow > .button-default__basis > .button-default__arrow {
       color: #bc9cff; }
 
-.guests-and-date-range-form {
+.find-room-form {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1514,24 +1514,23 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
-  .guests-and-date-range-form__title {
+  .find-room-form__title {
     display: flex;
     width: 100%;
-    margin-bottom: 20px; }
-  .guests-and-date-range-form__title-text {
+    margin-bottom: 20px;
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     color: #1f2041; }
-  .guests-and-date-range-form__date-inputs-container {
+  .find-room-form__calendar {
     margin-bottom: 20px;
     width: 100%; }
-  .guests-and-date-range-form__dropdown-container {
+  .find-room-form__dropdown {
     margin-bottom: 31px;
     width: 100%; }
-  .guests-and-date-range-form__submit-button-container {
+  .find-room-form__submit-button {
     width: 100%;
     height: 44px; }
 

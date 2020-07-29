@@ -1,5 +1,5 @@
 include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
-include ../../../components/Cards.AuthorizationForm/AuthorizationForm.pug
+include ../../../components/sign-in-form/sign-in-form.pug
 include ../../../components/HeadersAndFooters.LongFooter/LongFooter.pug
 
 doctype html
@@ -17,7 +17,7 @@ html
 
             div(class=["sign-in__main-content"])
                 div(class=["sign-in__form-container"])  
-                    +getAuthorizationForm({
+                    +sign-in-form({
                         titleText: "Войти",
                     })
                 div(class=["sign-in__background-image-container"])

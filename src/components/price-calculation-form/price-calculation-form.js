@@ -1,8 +1,7 @@
 import Dropdown from "../FormElements.Dropdown/Dropdown";
-
 import DateInput from "../FormElements.DateInput/DateInput";
 
-class PriceCalculator {
+class PriceCalculationForm {
     constructor(outerContainerElement) {
         this.containerElement = outerContainerElement.querySelector(".price-calculation-form");
 
@@ -13,11 +12,11 @@ class PriceCalculator {
         this.additionalServicesValue = this.containerElement.querySelector(".price-calculation-form__additional-services-value");
         this.totalResultValue = this.containerElement.querySelector(".price-calculation-form__total-result-value");
 
-        const dropdownContainer = this.containerElement.querySelector(".price-calculation-form__dropdown-container");
+        const dropdownContainer = this.containerElement.querySelector(".price-calculation-form__dropdown");
         this.dropdown = new Dropdown(dropdownContainer);
 
-        const dateInputContainer = this.containerElement.querySelector(".price-calculation-form__date-input-container");
-        this.dateInput = new DateInput(dateInputContainer);
+        const calendarContainer = this.containerElement.querySelector(".price-calculation-form__calendar");
+        this.calendar = new DateInput(calendarContainer);
 
         this.roomRentalPrice = Number.parseInt(this.mainSum.dataset.value);
         this.currencyType = this.mainSum.dataset.currencyType;
@@ -41,7 +40,7 @@ class PriceCalculator {
         });
 
 
-        const datepicker = this.dateInput.datepickerInstance;
+        const datepicker = this.calendar.datepickerInstance;
         const oldHandlerSelect = datepicker.selectDate;
         datepicker.selectDate = this.getHandlerSelectWrapper(oldHandlerSelect.bind(datepicker));
 
@@ -61,8 +60,8 @@ class PriceCalculator {
         return function (date) {
             oldHandler(date);
 
-            const firstDateInput = this.dateInput.jqDateInputs.eq(0);
-            const secondDateInput = this.dateInput.jqDateInputs.eq(1);
+            const firstDateInput = this.calendar.jqDateInputs.eq(0);
+            const secondDateInput = this.calendar.jqDateInputs.eq(1);
             const firstDateValue = firstDateInput[0].value;
             const secondDateValue = secondDateInput[0].value;
             if (firstDateValue && secondDateValue) {
@@ -118,4 +117,4 @@ class PriceCalculator {
     }
 }
 
-export default PriceCalculator;
+export default PriceCalculationForm;

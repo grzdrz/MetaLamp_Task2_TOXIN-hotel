@@ -2,7 +2,7 @@
 @import "../FormElements.Dropdown/Dropdown.scss";
 @import "../FormElements.ButtonDefault/ButtonDefault.scss";
 
-.guests-and-date-range-form {
+.find-room-form {
     display: flex;
     flex-direction: column;
 
@@ -20,8 +20,7 @@
         display: flex;
         width: 100%;
         margin-bottom: 20px;
-    }
-    &__title-text {
+
         font-family: Quicksand, OpenSans;
         font-style: normal;
         font-weight: bold;
@@ -30,15 +29,17 @@
         color: #1f2041;
     }
 
-    &__date-inputs-container {
+    &__calendar {
         margin-bottom: 20px;
         width: 100%;
     }
-    &__dropdown-container {
+
+    &__dropdown {
         margin-bottom: 31px;
         width: 100%;
     }
-    &__submit-button-container {
+
+    &__submit-button {
         width: 100%;
         height: 44px;
     }

@@ -1,5 +1,5 @@
 include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
-include ../../../components/Cards.RegistrationForm/RegistrationForm.pug
+include ../../../components/sign-up-form/sign-up-form.pug
 include ../../../components/HeadersAndFooters.LongFooter/LongFooter.pug
 
 doctype html
@@ -18,7 +18,7 @@ html
 
             div(class=["registration__main-content"])
                 div(class=["registration__form-container"])
-                    +getRegistrationForm({
+                    +sign-up-form({
                         titleText: "Регистрация аккаунта",
                     })
                 div(class=["registration__background-image-container"])

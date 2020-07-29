@@ -865,7 +865,7 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent; }
 
-.authorization-form {
+.sign-in-form {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -875,32 +875,31 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
-  .authorization-form__title {
+  .sign-in-form__title {
     display: flex;
     width: 100%;
-    margin-bottom: 20px; }
-  .authorization-form__title-text {
+    margin-bottom: 20px;
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     color: #1f2041; }
-  .authorization-form__email-and-password-inputs-container {
+  .sign-in-form__fields {
     margin-bottom: 20px;
     width: 100%; }
-    .authorization-form__email-and-password-inputs-container > div:first-child {
+    .sign-in-form__fields > div:first-child {
       margin-bottom: 10px; }
-  .authorization-form__submit-button-container {
+  .sign-in-form__submit-button {
     margin-bottom: 30px;
     width: 100%;
     height: 44px; }
-  .authorization-form__already-registered {
+  .sign-in-form__account-create-field {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%; }
-  .authorization-form__already-registered-text {
+  .sign-in-form__question-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -910,7 +909,7 @@ body {
     align-items: center;
     text-align: center;
     color: #000000; }
-  .authorization-form__create-button-container {
+  .sign-in-form__create-button {
     width: 30.9375%;
     height: 44px; }
 
@@ -1481,7 +1480,7 @@ body {
     .button-default_hollow > .button-default__basis > .button-default__arrow {
       color: #bc9cff; }
 
-.guests-and-date-range-form {
+.find-room-form {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1491,24 +1490,23 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
-  .guests-and-date-range-form__title {
+  .find-room-form__title {
     display: flex;
     width: 100%;
-    margin-bottom: 20px; }
-  .guests-and-date-range-form__title-text {
+    margin-bottom: 20px;
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     color: #1f2041; }
-  .guests-and-date-range-form__date-inputs-container {
+  .find-room-form__calendar {
     margin-bottom: 20px;
     width: 100%; }
-  .guests-and-date-range-form__dropdown-container {
+  .find-room-form__dropdown {
     margin-bottom: 31px;
     width: 100%; }
-  .guests-and-date-range-form__submit-button-container {
+  .find-room-form__submit-button {
     width: 100%;
     height: 44px; }
 
@@ -2088,7 +2086,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
-  .price-calculation-form__title-container {
+  .price-calculation-form__title {
     display: grid;
     grid-template-columns: max-content max-content max-content auto min-content;
     margin-top: 3px;
@@ -2141,10 +2139,10 @@ body {
     font-size: 12px;
     line-height: 15px;
     color: rgba(31, 32, 65, 0.5); }
-  .price-calculation-form__date-input-container {
+  .price-calculation-form__calendar {
     margin-bottom: 20px;
     width: 100%; }
-  .price-calculation-form__dropdown-container {
+  .price-calculation-form__dropdown {
     margin-bottom: 19px;
     width: 100%; }
   .price-calculation-form__calculated-data {
@@ -2207,7 +2205,7 @@ body {
   .price-calculation-form__total-result-value {
     justify-self: end;
     white-space: nowrap; }
-  .price-calculation-form__submit-button-container {
+  .price-calculation-form__submit-button {
     width: 100%;
     height: 44px; }
 
@@ -2777,7 +2775,7 @@ body {
     .button-default_hollow > .button-default__basis > .button-default__arrow {
       color: #bc9cff; }
 
-.registration-form {
+.sign-up-form {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -2787,39 +2785,38 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
-  .registration-form__title {
+  .sign-up-form__title {
     display: flex;
     width: 100%;
-    margin-bottom: 20px; }
-  .registration-form__title-text {
+    margin-bottom: 20px;
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     color: #1f2041; }
-  .registration-form__first-name-input-container, .registration-form__second-name-input-container {
+  .sign-up-form__first-name-field, .sign-up-form__second-name-field {
     margin-bottom: 10px;
     width: 100%; }
-  .registration-form__gender-radio-buttons-container, .registration-form__date-input-container {
+  .sign-up-form__radio-buttons, .sign-up-form__calendar {
     margin-bottom: 20px;
     width: 100%; }
-  .registration-form__email-input-container, .registration-form__password-input-container {
+  .sign-up-form__email-field, .sign-up-form__password-field {
     margin-bottom: 10px;
     width: 100%; }
-  .registration-form__toggle-container {
+  .sign-up-form__toggle {
     margin-bottom: 20px;
     width: 100%; }
-  .registration-form__submit-button-container {
+  .sign-up-form__submit-button {
     margin-bottom: 30px;
     width: 100%;
     height: 44px; }
-  .registration-form__already-registered {
+  .sign-up-form__sign-in-field {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%; }
-  .registration-form__already-registered-text {
+  .sign-up-form__confirmation-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -2829,7 +2826,7 @@ body {
     align-items: center;
     text-align: center;
     color: #000000; }
-  .registration-form__sign-in-button-container {
+  .sign-up-form__sign-in-button {
     width: 30.9375%;
     height: 44px; }
 

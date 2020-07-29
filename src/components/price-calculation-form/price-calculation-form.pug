@@ -2,7 +2,7 @@ include ../FormElements.ButtonDefault/ButtonDefault.pug
 include ../FormElements.DateInput/DateInput.pug
 include ../FormElements.Dropdown/Dropdown.pug
 
-mixin getPriceCalculationForm(options)
+mixin price-calculation-form(options)
     - 
         const {
             roomNumber,
@@ -18,21 +18,21 @@ mixin getPriceCalculationForm(options)
 
     form(class=["price-calculation-form"])
 
-        p(class=["price-calculation-form__title-container"])
+        p(class=["price-calculation-form__title"])
             span(class=["price-calculation-form__number-symbol"]) №
             span(class=["price-calculation-form__room-number"])= roomNumber
             span(class=["price-calculation-form__room-status"])= (roomStatus ? roomStatus : "")
             span(class=["price-calculation-form__room-price"])= `${formateNumber(roomPrice)}${currencyType}`
             span(class=["price-calculation-form__period-of-time"])= `в сутки`
 
-        div(class=["price-calculation-form__date-input-container"])
+        div(class=["price-calculation-form__calendar"])
             +getDateInput({
                 isDouble: true,
                 firstTitle: "прибытие",
                 secondTitle: "выезд",
             })
 
-        div(class=["price-calculation-form__dropdown-container"])
+        div(class=["price-calculation-form__dropdown"])
             +getDropdown({
                 titleText: "гости",
                 isTitleTextTestVisible: false,
@@ -65,7 +65,7 @@ mixin getPriceCalculationForm(options)
                 span(class=["price-calculation-form__total-result-bottom-line"])
                 span(class=["price-calculation-form__total-result-value"])= `0${currencyType}`
 
-        div(class=["price-calculation-form__submit-button-container"])
+        div(class=["price-calculation-form__submit-button"])
             +getButton({
                 text: 'забронировать',
                 isHollow: false,

@@ -1,5 +1,5 @@
 include ../../../components/HeadersAndFooters.StandardNavBar/StandardNavBar.pug
-include ../../../components/Cards.GuestsAndDateRangeForm/GuestsAndDateRangeForm.pug
+include ../../../components/find-room-form/find-room-form.pug
 include ../../../components/HeadersAndFooters.LongFooter/LongFooter.pug
 
 doctype html
@@ -18,7 +18,7 @@ html
 
             div(class=["landing-page__main-content"])
                 div(class=["landing-page__form-container"])
-                    +getGuestsAndDateRangeForm({
+                    +find-room-form({
                         titleText: "Найдём номера под ваши пожелания",
                     })
                 div(class=["landing-page__background-image-container"])

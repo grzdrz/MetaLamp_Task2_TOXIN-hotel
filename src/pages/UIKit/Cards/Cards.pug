@@ -1,8 +1,8 @@
 include ../../../components/GlobalLogo/GlobalLogo.pug
-include ../../../components/Cards.AuthorizationForm/AuthorizationForm.pug
-include ../../../components/Cards.GuestsAndDateRangeForm/GuestsAndDateRangeForm.pug
-include ../../../components/Cards.PriceCalculationForm/PriceCalculationForm.pug
-include ../../../components/Cards.RegistrationForm/RegistrationForm.pug
+include ../../../components/sign-in-form/sign-in-form.pug
+include ../../../components/find-room-form/find-room-form.pug
+include ../../../components/price-calculation-form/price-calculation-form.pug
+include ../../../components/sign-up-form/sign-up-form.pug
 include ../../../components/Cards.RoomInfo/RoomInfo.pug
 
 doctype html
@@ -19,16 +19,16 @@ html
             div(class=["cards__content"])
                 div(class=["cards__column-1"])
                     div(class=["cards__form-container-1"])
-                        +getGuestsAndDateRangeForm({
+                        +find-room-form({
                             titleText: "Найдём номера под ваши пожелания",
                         })
                     div(class=["cards__form-container-2"])        
-                        +getRegistrationForm({
+                        +sign-up-form({
                             titleText: "Регистрация аккаунта",
                         })                        
                 div(class=["cards__column-2"])
                     div(class=["cards__form-container-3"])
-                        +getPriceCalculationForm({
+                        +price-calculation-form({
                             roomNumber: 888,
                             roomStatus: "люкс",
                             roomPrice: 9990,
@@ -36,7 +36,7 @@ html
                             discount: 2179,
                         })
                     div(class=["cards__form-container-4"])
-                        +getAuthorizationForm({
+                        +sign-in-form({
                             titleText: "Войти",
                         })
                 div(class=["cards__column-3"])
