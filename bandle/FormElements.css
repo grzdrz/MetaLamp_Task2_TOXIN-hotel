@@ -933,7 +933,7 @@ body {
   .dropdown__input {
     cursor: pointer;
     padding: 0px 15px 0px 15px;
-    height: 44px;
+    height: 40px;
     outline: none;
     background: transparent;
     font-family: Montserrat;
@@ -1690,7 +1690,7 @@ body {
   .date-input__datepicker-input {
     cursor: pointer;
     padding: 0px 0px 0px 15px;
-    height: 44px;
+    height: 40px;
     outline: none;
     background: transparent;
     font-family: Montserrat;

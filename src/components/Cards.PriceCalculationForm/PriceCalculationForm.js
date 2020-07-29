@@ -52,7 +52,7 @@ class PriceCalculator {
 
     handlerDropdownInputChange() {
         this.servicesSum = this.dropdown.totalValue * 100;
-        this.additionalServicesValue.textContent = `${this.servicesSum}${this.currencyType}`;
+        this.additionalServicesValue.textContent = `${this.formateNumber(this.servicesSum)}${this.currencyType}`;
 
         this.setTotalPrice();
     }
@@ -63,22 +63,22 @@ class PriceCalculator {
 
             const firstDateInput = this.dateInput.jqDateInputs.eq(0);
             const secondDateInput = this.dateInput.jqDateInputs.eq(1);
-            const firstDate = firstDateInput[0].value;
-            const secondDate = secondDateInput[0].value;
-            if (firstDate && secondDate) {
-                const firstDateStrings = firstDate.split(".");
+            const firstDateValue = firstDateInput[0].value;
+            const secondDateValue = secondDateInput[0].value;
+            if (firstDateValue && secondDateValue) {
+                const firstDateStrings = firstDateValue.split(".");
                 const firstDate = new Date(firstDateStrings[2], firstDateStrings[1], firstDateStrings[0]);
-                const secondDateStrings = secondDate.split(".");
+                const secondDateStrings = secondDateValue.split(".");
                 const secondDate = new Date(secondDateStrings[2], secondDateStrings[1], secondDateStrings[0]);
                 const dDate = Math.abs(secondDate - firstDate);
                 const daysCount = dDate / (1000 * 60 * 60 * 24);
 
-                const splittedText = this.mainSumFormula.textContent.split(/\s/i);
-                splittedText[2] = daysCount;
-                this.mainSumFormula.textContent = splittedText.join(" ");
+                const splittedText = this.mainSumFormula.textContent.split("x");
+                splittedText[1] = ` ${daysCount} ${this.doDeclensionOfWord(daysCount)}`;
+                this.mainSumFormula.textContent = splittedText.join("x");
 
                 this.roomRentalSum = daysCount * this.roomRentalPrice;
-                this.mainSumValue.textContent = `${this.roomRentalSum}${this.currencyType}`;
+                this.mainSumValue.textContent = `${this.formateNumber(this.roomRentalSum)}${this.currencyType}`;
 
                 this.setTotalPrice();
             }
@@ -98,7 +98,23 @@ class PriceCalculator {
     setTotalPrice() {
         this.totalSum = this.servicesSum + this.roomRentalSum - this.discountValue;
         if (this.totalSum < 0) this.totalSum = 0;
-        this.totalResultValue.textContent = `${this.totalSum}${this.currencyType}`;
+        this.totalResultValue.textContent = `${this.formateNumber(this.totalSum)}${this.currencyType}`;
+    }
+
+    formateNumber(number) {
+        return number.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+    }
+
+    doDeclensionOfWord(number) {
+        const words = ["сутки", "суток", "суток"];
+
+        if (number.toString()[number.toString().length - 1] === "1" && number !== 11)
+            return words[0];
+        else if ((number.toString()[number.toString().length - 1] > 1 && number.toString()[number.toString().length - 1] <= 4)
+            && (number < 12 || number > 14))
+            return words[1];
+        else
+            return words[2];
     }
 }
 

@@ -3,6 +3,10 @@ include ../FormElements.DateInput/DateInput.pug
 include ../Cards.RoomInfoTitle/RoomInfoTitle.pug
 include ../FormElements.Dropdown/Dropdown.pug
 
+- const formateNumber = function(number) {
+-     return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+- };
+
 mixin getPriceCalculationForm(options)
     - 
         const {
@@ -10,25 +14,23 @@ mixin getPriceCalculationForm(options)
             roomStatus,
             roomPrice,
             currencyType,
-            periodOfTime,
             discount,
         } = options;
 
     form(class=["price-calculation-form"])
 
-        div(class=["price-calculation-form__title-container"])
-            +getRoomInfoTitle({
-                roomNumber: 888,
-                roomStatus: "люкс",
-                roomPrice: "9 990₽",
-                periodOfTime: "сутки",
-            })
+        p(class=["price-calculation-form__title-container"])
+            span(class=["price-calculation-form__number-symbol"]) №
+            span(class=["price-calculation-form__room-number"])= roomNumber
+            span(class=["price-calculation-form__room-status"])= (roomStatus ? roomStatus : "")
+            span(class=["price-calculation-form__room-price"])= `${formateNumber(roomPrice)}${currencyType}`
+            span(class=["price-calculation-form__period-of-time"])= `в сутки`
 
         div(class=["price-calculation-form__date-input-container"])
             +getDateInput({
                 isDouble: true,
-                firstTitle: "выезд",
-                secondTitle: "прибытие",
+                firstTitle: "прибытие",
+                secondTitle: "выезд",
             })
 
         div(class=["price-calculation-form__dropdown-container"])
@@ -50,10 +52,10 @@ mixin getPriceCalculationForm(options)
 
         div(class=["price-calculation-form__calculated-data"])
             p(class=["price-calculation-form__main-sum"] data-value=roomPrice data-currency-type=currencyType)
-                span(class=["price-calculation-form__main-sum-formula"])= `${roomPrice}${currencyType} x 0 суток`
-                span(class=["price-calculation-form__main-sum-result"])= `${roomPrice}${currencyType}`
+                span(class=["price-calculation-form__main-sum-formula"])= `${formateNumber(roomPrice)}${currencyType} x 0 суток`
+                span(class=["price-calculation-form__main-sum-result"])= `${formateNumber(roomPrice)}${currencyType}`
             p(class=["price-calculation-form__services"] data-value=discount)
-                span(class=["price-calculation-form__discount-description"])= `Сбор за услуги: скидка ${discount}${currencyType}`
+                span(class=["price-calculation-form__discount-description"])= `Сбор за услуги: скидка ${formateNumber(discount)}${currencyType}`
                 span(class=["price-calculation-form__services-tooltip", "price-calculation-form__discount-tooltip"]) i
                 span(class=["price-calculation-form__discount-value"])= `0${currencyType}`
                 span(class=["price-calculation-form__additional-services-description"]) Сбор за дополнительные услуги

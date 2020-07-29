@@ -949,7 +949,7 @@ body {
   .date-input__datepicker-input {
     cursor: pointer;
     padding: 0px 0px 0px 15px;
-    height: 44px;
+    height: 40px;
     outline: none;
     background: transparent;
     font-family: Montserrat;
@@ -1268,7 +1268,7 @@ body {
   .dropdown__input {
     cursor: pointer;
     padding: 0px 15px 0px 15px;
-    height: 44px;
+    height: 40px;
     outline: none;
     background: transparent;
     font-family: Montserrat;
@@ -1734,7 +1734,7 @@ body {
   .date-input__datepicker-input {
     cursor: pointer;
     padding: 0px 0px 0px 15px;
-    height: 44px;
+    height: 40px;
     outline: none;
     background: transparent;
     font-family: Montserrat;
@@ -2053,7 +2053,7 @@ body {
   .dropdown__input {
     cursor: pointer;
     padding: 0px 15px 0px 15px;
-    height: 44px;
+    height: 40px;
     outline: none;
     background: transparent;
     font-family: Montserrat;
@@ -2199,29 +2199,89 @@ body {
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
 
+/* @mixin setFontProperties($lineHeight: 24px) {
+    font: {
+        family: Montserrat;
+        style: normal;
+        weight: normal;
+        size: 14px;
+    }
+    line-height: $lineHeight;
+    color: rgba(31, 32, 65, 0.75);
+} */
 .price-calculation-form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 40px 30px 30px 30px;
+  padding: 40px 29px 30px 29px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; }
-  .price-calculation-form__title {
-    display: flex;
-    width: 320px;
-    margin-bottom: 20px; }
-  .price-calculation-form__title-text {
+  border-radius: 4px;
+  /* &__discount-tooltip {
+        justify-self: baseline;
+    } */
+  /* &__additional-services-tooltip {
+        justify-self: baseline;
+    } */ }
+  .price-calculation-form__title-container {
+    display: grid;
+    grid-template-columns: max-content max-content max-content auto min-content;
+    margin-top: 3px;
+    margin-bottom: 23px; }
+  .price-calculation-form__number-symbol {
+    align-self: end;
+    margin-right: 3px;
+    font-family: Quicksand, OpenSans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1f2041; }
+  .price-calculation-form__room-number {
+    align-self: end;
+    margin-right: 5px;
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 23px;
     color: #1f2041; }
-  .price-calculation-form__title-container, .price-calculation-form__date-input-container, .price-calculation-form__dropdown-container {
+  .price-calculation-form__room-status {
+    align-self: end;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #bc9cff; }
+  .price-calculation-form__room-price {
+    justify-self: end;
+    align-self: end;
+    margin-right: 4px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    color: rgba(31, 32, 65, 0.5); }
+  .price-calculation-form__period-of-time {
+    justify-self: end;
+    align-self: end;
+    white-space: nowrap;
+    margin-right: 1px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(31, 32, 65, 0.5); }
+  .price-calculation-form__date-input-container {
     margin-bottom: 20px;
+    width: 100%; }
+  .price-calculation-form__dropdown-container {
+    margin-bottom: 19px;
     width: 100%; }
   .price-calculation-form__calculated-data {
     margin-bottom: 20px;
@@ -2229,19 +2289,19 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 19px;
     color: rgba(31, 32, 65, 0.75); }
   .price-calculation-form__main-sum {
     display: grid;
     grid-template-columns: max-content auto;
-    margin-bottom: 20px; }
+    margin-bottom: 17px; }
   .price-calculation-form__main-sum-result {
     justify-self: end; }
   .price-calculation-form__services {
     display: grid;
-    grid-template-columns: max-content auto auto;
-    grid-row-gap: 20px;
-    margin-bottom: 20px; }
+    grid-template-columns: 220px auto auto;
+    grid-row-gap: 14px;
+    margin-bottom: 28px; }
   .price-calculation-form__discount {
     display: grid;
     grid-template-columns: max-content auto auto; }
@@ -2249,6 +2309,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    justify-self: baseline;
     border-radius: 50%;
     min-width: 20px;
     height: 20px;
@@ -2262,12 +2323,8 @@ body {
     line-height: 14px;
     text-align: right;
     color: rgba(31, 32, 65, 0.25); }
-  .price-calculation-form__discount-tooltip {
-    justify-self: center; }
   .price-calculation-form__discount-value {
     justify-self: end; }
-  .price-calculation-form__additional-services-tooltip {
-    justify-self: center; }
   .price-calculation-form__additional-services-value {
     justify-self: end; }
   .price-calculation-form__total-result {
@@ -2280,10 +2337,12 @@ body {
     line-height: 24px;
     color: #1f2041; }
   .price-calculation-form__total-result-bottom-line {
+    margin-bottom: 5px;
     border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
     box-sizing: border-box; }
   .price-calculation-form__total-result-value {
-    justify-self: end; }
+    justify-self: end;
+    white-space: nowrap; }
   .price-calculation-form__submit-button-container {
     width: 100%;
     height: 44px; }
@@ -2508,7 +2567,7 @@ body {
   .date-input__datepicker-input {
     cursor: pointer;
     padding: 0px 0px 0px 15px;
-    height: 44px;
+    height: 40px;
     outline: none;
     background: transparent;
     font-family: Montserrat;
