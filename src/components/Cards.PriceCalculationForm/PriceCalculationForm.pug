@@ -1,11 +1,6 @@
 include ../FormElements.ButtonDefault/ButtonDefault.pug
 include ../FormElements.DateInput/DateInput.pug
-include ../Cards.RoomInfoTitle/RoomInfoTitle.pug
 include ../FormElements.Dropdown/Dropdown.pug
-
-- const formateNumber = function(number) {
--     return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
-- };
 
 mixin getPriceCalculationForm(options)
     - 
@@ -16,6 +11,10 @@ mixin getPriceCalculationForm(options)
             currencyType,
             discount,
         } = options;
+
+    - const formateNumber = function(number) {
+    -     return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+    - };
 
     form(class=["price-calculation-form"])
 

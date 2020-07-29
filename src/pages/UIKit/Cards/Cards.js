@@ -2,15 +2,16 @@ require.context('../../../', true, /\.(png|svg|jpg)$/);
 
 import 'material-design-icons/iconfont/material-icons.css';
 
-import { roomInfoScript } from "../../../components/Cards.RoomInfo/RoomInfo.js";
-roomInfoScript();
+import RoomInfo from "../../../components/Cards.RoomInfo/RoomInfo";
+const roomInfoElements = Array.from(document.querySelectorAll(".cards__room-info-container"));
+const roomsInfo = roomInfoElements.map((element) => new RoomInfo(element));
 
 import PriceCalculator from "../../../components/Cards.priceCalculationForm/PriceCalculationForm";
 const priceCalculatorForm = document.querySelector(".cards__form-container-3");
 const priceCalculator = new PriceCalculator(priceCalculatorForm);
 
 
-let staticDatepicker = $(".cards__date-picker-container").datepicker({
+const staticDatepicker = $(".cards__date-picker-container").datepicker({
     range: true,
     position: 'bottom left',
     navTitles: {

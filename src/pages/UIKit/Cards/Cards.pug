@@ -42,49 +42,40 @@ html
                 div(class=["cards__column-3"])
                     div(class=["cards__date-picker-container"])
 
-                    div(class=["cards__room-info-container-1"])
+                    div(class=["cards__room-info-container cards__room-info-container-1"])
                         +getRoomInfo({
                             blockNumber: 1,
                             photos: ["test11", "test22", "test33", "test44"],
-                            roomInfoTitleOptions: {
-                                inRoomInfoBlock: true,
-                                roomNumber: 888,
-                                isLuxury: true,
-                                roomPrice: "9 990₽",
-                                periodOfTime: "сутки",
-                            },
                             reviewsCount: 145,
                             numberOfCheckedStar: 1,
                             url: "#",
+                            roomNumber: 888,
+                            roomStatus: "люкс",
+                            roomPrice: 9990,
+                            currencyType: "₽",
                         })
-                    div(class=["cards__room-info-container-2"])
+                    div(class=["cards__room-info-container cards__room-info-container-2"])
                         +getRoomInfo({
                             blockNumber: 2,
                             photos: ["test11", "test22"],
-                            roomInfoTitleOptions: {
-                                inRoomInfoBlock: true,
-                                roomNumber: 840,
-                                isLuxury: false,
-                                roomPrice: "9 990₽",
-                                periodOfTime: "сутки",
-                            },
                             reviewsCount: 65,
                             numberOfCheckedStar: 5,
                             url: "#",
+                            roomNumber: 888,
+                            roomStatus: "люкс",
+                            roomPrice: 9990,
+                            currencyType: "₽",
                         }) 
-                    div(class=["cards__room-info-container-3"])
+                    div(class=["cards__room-info-container cards__room-info-container-3"])
                         +getRoomInfo({
                             blockNumber: 3,
                             photos: ["test11"],
-                            roomInfoTitleOptions: {
-                                inRoomInfoBlock: true,
-                                roomNumber: 841,
-                                isLuxury: false,
-                                roomPrice: "9 990₽",
-                                periodOfTime: "сутки",
-                            },
                             reviewsCount: 1488,
                             numberOfCheckedStar: 3,
                             url: "#",
+                            roomNumber: 888,
+                            roomStatus: "люкс",
+                            roomPrice: 9990,
+                            currencyType: "₽",
                         })                          
 

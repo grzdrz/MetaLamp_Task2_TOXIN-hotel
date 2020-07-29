@@ -1,9 +1,7 @@
-@import "../Cards.RoomInfoTitle/RoomInfoTitle.scss";
 @import "../FormElements.RateButton/RateButton.scss";
 
 .room-info {
     width: 270px;
-    //height: 258px;
     display: flex;
     flex-direction: column;
 
@@ -12,11 +10,11 @@
     border-radius: 4px;
 
     position: relative;
+
     &__ref {
         width: 270px;
-        height: 55px;
+        height: 107px;
         opacity: 0;
-        margin-bottom: 52px;
         position: absolute;
         bottom: 0px;
         z-index: 3;
@@ -64,20 +62,21 @@
 
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
         border-top-left-radius: 4px;
-
-        &-icon {
-            transform: rotate(90deg);
-
-            font-family: Material Icons;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 24px;
-
-            text-align: center;
-            color: #ffffff;
-        }
     }
+
+    &__arrow-back-icon {
+        transform: rotate(90deg);
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+
+        text-align: center;
+        color: #ffffff;
+    }
+
     &__arrow-forward {
         cursor: pointer;
         display: flex;
@@ -91,43 +90,23 @@
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
         border-top-left-radius: 4px;
         transform: matrix(-1, 0, 0, 1, 0, 0);
-
-        &-icon {
-            transform: rotate(90deg);
-
-            font-family: Material Icons;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 24px;
-
-            text-align: center;
-            color: #ffffff;
-        }
     }
 
-    /* &__photoRadioButtons {
-        z-index: 2;
+    &__arrow-forward-icon {
+        transform: rotate(90deg);
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
 
-        width: 42px;
+        text-align: center;
+        color: #ffffff;
+    }
 
-        position: absolute;
-        right: 15px;
-        bottom: 15px;
-    } */
-
-    /* &__photoRadioButton {
-        width: 8px;
-        height: 8px;
-
-        position: relative;
-    } */
     $radioButtonSize: 8px;
-    &__photo-radio-button-input {
+    &__radio-button {
         z-index: 3;
 
         width: $radioButtonSize;
@@ -154,45 +133,8 @@
                 }
             }
         }
-
-        /* &_1 {
-            right: 15px + ($radioButtonSize + 3px) * 3;
-            & + div {
-                right: 15px + ($radioButtonSize + 3px) * 3;
-            }
-            &:checked ~ .roomInfo__photo_1 {
-                opacity: 1;
-            }
-        }
-        &_2 {
-            right: 15px + (8px + 3px) * 2;
-            & + div {
-                right: 15px + (8px + 3px) * 2;
-            }
-            &:checked ~ .roomInfo__photo_2 {
-                opacity: 1;
-            }
-        }
-        &_3 {
-            right: 15px + (8px + 3px) * 1;
-            & + div {
-                right: 15px + (8px + 3px) * 1;
-            }
-            &:checked ~ .roomInfo__photo_3 {
-                opacity: 1;
-            }
-        }
-        &_4 {
-            right: 15px + (8px + 3px) * 0;
-            & + div {
-                right: 15px + (8px + 3px) * 0;
-            }
-            &:checked ~ .roomInfo__photo_4 {
-                opacity: 1;
-            }
-        } */
     }
-    &__photo-radio-button-circle {
+    &__radio-button-image {
         z-index: 2;
 
         width: 8px;
@@ -212,24 +154,91 @@
         z-index: 1;
     }
 
-    &__room-info-title-container {
+    &__title-container {
+        display: grid;
+        grid-template-columns: max-content max-content max-content auto min-content;
+        margin-top: 3px;
+        margin-bottom: 23px;
     }
 
-    &__room-rate-and-reviews-count {
+    &__number-symbol {
+        align-self: end;
+        margin-right: 3px;
+
+        font-family: Quicksand, OpenSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #1f2041;
+    }
+
+    &__room-number {
+        align-self: end;
+        margin-right: 5px;
+
+        font-family: Quicksand, OpenSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        color: #1f2041;
+    }
+
+    &__room-status {
+        align-self: end;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #bc9cff;
+    }
+
+    &__room-price {
+        justify-self: end;
+        align-self: end;
+        margin-right: 4px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 15px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+
+    &__period-of-time {
+        justify-self: end;
+        align-self: end;
+        white-space: nowrap;
+        margin-right: 1px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+
+    &__room-rate {
         display: flex;
         justify-content: space-between;
 
         margin-top: 8px;
     }
 
-    &__reviews-count-container {
+    &__reviews-count {
         display: flex;
         align-items: flex-end;
         padding-bottom: 3px;
         padding-right: 4px;
     }
 
-    &__reviews-count {
+    &__reviews-count-value {
         font-family: Montserrat;
         font-style: normal;
         font-weight: bold;

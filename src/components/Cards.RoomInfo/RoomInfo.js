@@ -1,25 +1,30 @@
-/* import { debug } from "webpack";
- */
-export function roomInfoScript() {
-    let roomInfoBlocks = document.querySelectorAll(".room-info");
-    roomInfoBlocks.forEach(e => {
-        let arrows = e.querySelector(".room-info__arrows");
-        if (arrows) {
-            let leftArrow = arrows.querySelector(".room-info__arrow-back");
-            let rightArrow = arrows.querySelector(".room-info__arrow-forward");
-
-            leftArrow.onclick = OnLeftArrowClick;
-            rightArrow.onclick = OnRightArrowClick;
+class RoomInfo {
+    constructor(outerContainerElement) {
+        this.containerElement = outerContainerElement.querySelector(".room-info");
+        this.arrows = this.containerElement.querySelector(".room-info__arrows");
+        if (this.arrows) {
+            this.leftArrow = this.arrows.querySelector(".room-info__arrow-back");
+            this.rightArrow = this.arrows.querySelector(".room-info__arrow-forward");
         }
-    });
+        this.radioButtons = Array.from(this.containerElement.querySelectorAll(".room-info__radio-button"));
 
-    function OnLeftArrowClick(event) {
+        this.handlerLeftArrowClick = this.handlerLeftArrowClick.bind(this);
+        this.handlerRightArrowClick = this.handlerRightArrowClick.bind(this);
+
+        this.initialize();
+    }
+
+    initialize() {
+        if (this.leftArrow && this.rightArrow) {
+            this.leftArrow.onclick = this.handlerLeftArrowClick;
+            this.rightArrow.onclick = this.handlerRightArrowClick;
+        }
+    }
+
+    handlerLeftArrowClick(event) {
         if (event.currentTarget.disabled) return;
 
-        let containerElem = event.currentTarget.closest(".room-info");
-
-        let radioButtons = Array.from(containerElem.querySelectorAll(".room-info__photo-radio-button-input"));
-        let checkedButton = radioButtons.find(e => e.checked);
+        const checkedButton = this.radioButtons.find((button) => button.checked);
 
         if (!checkedButton.previousElementSibling) return;
 
@@ -37,15 +42,12 @@ export function roomInfoScript() {
         }
     }
 
-    function OnRightArrowClick(event) {
+    handlerRightArrowClick(event) {
         if (event.currentTarget.disabled) return;
 
-        let containerElem = event.currentTarget.closest(".room-info");
+        const checkedButton = this.radioButtons.find((button) => button.checked);
 
-        let radioButtons = Array.from(containerElem.querySelectorAll(".room-info__photo-radio-button-input"));
-        let checkedButton = radioButtons.find(e => e.checked);
-
-        if (!checkedButton.nextElementSibling.nextElementSibling.matches(".room-info__photo-radio-button-input")) return;
+        if (!checkedButton.nextElementSibling.nextElementSibling.matches(".room-info__radio-button")) return;
         else if (checkedButton.nextElementSibling.nextElementSibling.disabled) return;
 
         if (checkedButton.dataset.serialNumber === "3") {
@@ -62,3 +64,5 @@ export function roomInfoScript() {
         }
     }
 }
+
+export default RoomInfo;
