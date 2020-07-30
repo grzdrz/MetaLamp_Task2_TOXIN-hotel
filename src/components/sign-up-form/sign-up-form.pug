@@ -1,5 +1,6 @@
-include ../FormElements.FormInput/FormInput.pug
-include ../FormElements.RadioButton/RadioButton.pug
+include ../form-input/form-input.pug
+include ../radio/radio.pug
+include ../toggle/toggle.pug
 include ../calendar/calendar.pug
 include ../button/button.pug
 
@@ -11,8 +12,7 @@ mixin sign-up-form(options)
             p(class=["sign-up-form__title"])= titleText
 
         div(class=["sign-up-form__first-name-field"])
-            +getFormInput({
-                hasTitle: false,
+            +form-input({
                 placeholder: "Имя",
                 name: "clientFirstName",
                 type: "text",
@@ -21,8 +21,7 @@ mixin sign-up-form(options)
             })
 
         div(class=["sign-up-form__second-name-field"])
-            +getFormInput({
-                hasTitle: false,
+            +form-input({
                 placeholder: "Фамилия",
                 name: "clientSecondName",
                 type: "text",
@@ -31,10 +30,9 @@ mixin sign-up-form(options)
             })
 
         div(class=["sign-up-form__radio-buttons"])
-            +getRadioButton({
-                blockNumber: "_radio_1",
-                buttonType: "radio",
-                radioButtonList: [
+            +radio({
+                blockNumber: 1,
+                buttonsList: [
                     {text: "Мужчина", isChecked: true},
                     {text: "Женщина", isChecked: false},
                 ],
@@ -49,8 +47,7 @@ mixin sign-up-form(options)
             })
 
         div(class=["sign-up-form__email-field"])
-            +getFormInput({
-                hasTitle: true,
+            +form-input({
                 titleText: "данные для входа в сервис",                
                 placeholder: "Email",
                 name: "email",
@@ -60,8 +57,7 @@ mixin sign-up-form(options)
             })
 
         div(class=["sign-up-form__password-field"])
-            +getFormInput({
-                hasTitle: false,
+            +form-input({
                 placeholder: "Пароль",
                 name: "password",
                 type: "password",
@@ -70,12 +66,10 @@ mixin sign-up-form(options)
             })
 
         div(class=["sign-up-form__toggle"])
-            +getRadioButton({
-                buttonType: "toggle",
-                radioButtonList: [
-                    {text: "Получать спецпредложения", isChecked: false}
-                ],
-                name: "specialOffer"
+            +toggle({
+                text: "Получать спецпредложения",
+                isChecked: false,
+                name: "special-offer",
             })
 
         div(class=["sign-up-form__submit-button"])

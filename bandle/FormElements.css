@@ -1193,27 +1193,17 @@ body {
     line-height: 14px;
     color: rgba(31, 32, 65, 0.5); }
 
-.radio-button {
+.radio {
+  display: flex;
   width: max-content; }
-  .radio-button__title {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1f2041;
-    margin-bottom: 15px; }
-  .radio-button__labels {
-    display: flex; }
-  .radio-button__label {
+  .radio__label {
     cursor: pointer;
     display: flex;
     position: relative;
     margin-right: 20px; }
-    .radio-button__label:last-child {
+    .radio__label:last-child {
       margin-right: 0px; }
-  .radio-button__button-image_radio {
+  .radio__button-image {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1224,7 +1214,40 @@ body {
     height: 20px;
     border-radius: 50%;
     margin-right: 10px; }
-  .radio-button__button-image_toggle {
+  .radio__input {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    z-index: 2; }
+    .radio__input:checked + div {
+      border: 1px solid #bc9cff; }
+    .radio__input:checked + div::after {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      border-radius: 50%; }
+    .radio__input:not(:checked) + div {
+      border: 1px solid rgba(31, 32, 65, 0.25); }
+  .radio__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+
+.toggle {
+  display: flex;
+  position: relative;
+  width: max-content;
+  cursor: pointer; }
+  .toggle__button-image {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1236,49 +1259,32 @@ body {
     margin-right: 10px;
     padding: 0px 3px;
     transition: padding-left 0.3s; }
-  .radio-button__input {
-    cursor: pointer; }
-  .radio-button__button_radio {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    opacity: 0;
-    z-index: 2; }
-    .radio-button__button_radio:checked + div {
-      border: 1px solid #bc9cff; }
-    .radio-button__button_radio:checked + div::after {
-      content: "";
-      width: 12px;
-      height: 12px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      border-radius: 50%; }
-    .radio-button__button_radio:not(:checked) + div {
-      border: 1px solid rgba(31, 32, 65, 0.25); }
-  .radio-button__button_toggle {
+  .toggle__input {
+    cursor: pointer;
     position: absolute;
     width: 40px;
     height: 20px;
     opacity: 0;
     z-index: 2; }
-    .radio-button__button_toggle:checked + div {
+    .toggle__input:checked + div {
       border: 1px solid #bc9cff;
       padding-left: 23px; }
-    .radio-button__button_toggle:not(:checked) + div {
+    .toggle__input:not(:checked) + div {
       border: 1px solid rgba(31, 32, 65, 0.25);
       padding-left: 3px; }
-    .radio-button__button_toggle:checked + div::after {
+    .toggle__input:checked + div::after {
       content: "";
       width: 12px;
       height: 12px;
       background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
       border-radius: 50%; }
-    .radio-button__button_toggle:not(:checked) + div::after {
+    .toggle__input:not(:checked) + div::after {
       content: "";
       width: 12px;
       height: 12px;
       background: rgba(31, 32, 65, 0.25);
       border-radius: 50%; }
-  .radio-button__text {
+  .toggle__text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -1460,7 +1466,7 @@ body {
   .pagination__page-link_target {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 50%; }
-    .pagination__page-link_target > p {
+    .pagination__page-link_target > .pagination__page-link-text {
       color: white; }
   .pagination__left-arrow, .pagination__right-arrow {
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
@@ -1482,6 +1488,10 @@ body {
   .pagination__left-arrow-text {
     transform: rotate(180deg); }
   .pagination__page-link-text {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: inherit;
     height: inherit;
     border-radius: 50%;
@@ -1490,10 +1500,6 @@ body {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     color: rgba(31, 32, 65, 0.5); }
     .pagination__page-link-text:hover {
       width: inherit;
@@ -1983,6 +1989,7 @@ body {
     border-radius: 22px;
     z-index: 1; }
   .like-button__input {
+    cursor: pointer;
     z-index: 2;
     position: absolute;
     width: 40px;
@@ -2082,60 +2089,6 @@ body {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75); }
 
-.guest-room-reviews__title {
-  font-family: Quicksand, OpenSans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  color: #1f2041;
-  margin-bottom: 20px; }
-
-.guest-room-reviews__review-container {
-  display: grid;
-  grid-template-columns: max-content 84%;
-  grid-template-rows: auto auto;
-  margin-bottom: 22px; }
-  .guest-room-reviews__review-container:last-child {
-    margin-bottom: 0px; }
-
-.guest-room-reviews__user-avatar {
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  margin-bottom: 12px;
-  border: 2px solid #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1); }
-
-.guest-room-reviews__user-info {
-  margin-left: 10px; }
-
-.guest-room-reviews__user-full-name {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75); }
-
-.guest-room-reviews__number-of-days-since-comment {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75); }
-
-.guest-room-reviews__comment {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-left: 10px;
-  max-width: 653px; }
-
 .like-button {
   width: max-content; }
   .like-button__label {
@@ -2173,6 +2126,7 @@ body {
     border-radius: 22px;
     z-index: 1; }
   .like-button__input {
+    cursor: pointer;
     z-index: 2;
     position: absolute;
     width: 40px;
@@ -2223,6 +2177,60 @@ body {
     display: flex;
     align-items: center;
     text-align: center; }
+
+.room-reviews__title {
+  font-family: Quicksand, OpenSans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1f2041;
+  margin-bottom: 20px; }
+
+.room-reviews__review-container {
+  display: grid;
+  grid-template-columns: max-content 84%;
+  grid-template-rows: auto auto;
+  margin-bottom: 22px; }
+  .room-reviews__review-container:last-child {
+    margin-bottom: 0px; }
+
+.room-reviews__user-avatar {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 12px;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1); }
+
+.room-reviews__user-info {
+  margin-left: 10px; }
+
+.room-reviews__user-full-name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75); }
+
+.room-reviews__number-of-days-since-comment {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75); }
+
+.room-reviews__comment {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-left: 10px;
+  max-width: 653px; }
 
 .form-elements {
   min-width: 100%;

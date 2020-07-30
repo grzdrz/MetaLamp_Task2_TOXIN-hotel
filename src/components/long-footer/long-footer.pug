@@ -1,5 +1,5 @@
 include ../menu-bar/menu-bar.pug
-include ../FormElements.FormInput/FormInput.pug
+include ../form-input/form-input.pug
 include ../colored-logo/colored-logo.pug
 include ../social-media/social-media.pug
 
@@ -47,7 +47,7 @@ mixin long-footer(options)
                 p(class=["long-footer__subscription-description"]) 
                     | Получайте специальные предложения и новости сервиса
                 form(class=["long-footer__subscription-form"])
-                    +getFormInput({
+                    +form-input({
                         hasTitle: false,
                         isTitleTextTestVisible: false,
                         placeholder: "Email",

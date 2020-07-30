@@ -34,7 +34,7 @@
         &_target {
             background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
             border-radius: 50%;
-            & > p {
+            & > .pagination__page-link-text {
                 color: white;
             }
         }
@@ -69,6 +69,11 @@
     }
 
     &__page-link-text {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
         width: inherit;
         height: inherit;
         border-radius: 50%;
@@ -78,10 +83,6 @@
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         color: rgba(31, 32, 65, 0.5);
 
         &:hover {

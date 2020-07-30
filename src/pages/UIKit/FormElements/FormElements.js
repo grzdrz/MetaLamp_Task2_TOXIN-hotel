@@ -13,7 +13,7 @@ const expandableCheckboxes = Array.from(document.querySelectorAll(".js-form-elem
     .map(element => new ExpandableCheckbox(element));
 
 
-import Pagination from "../../../components/FormElements.Pagination/Pagination";
+import Pagination from "../../../components/pagination/pagination";
 const paginationContainer1 = document.querySelector(".js-form-elements__pagination-container-1");
 let pagesCount = 20;
 let curPage = 7;

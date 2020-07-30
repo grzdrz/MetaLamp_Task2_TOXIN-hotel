@@ -1,0 +1,29 @@
+mixin form-input(options)
+    - 
+        const {
+            titleText,
+            additionalTitleText,
+            placeholder, 
+            name, 
+            type,
+            value, 
+            hasSubmitButton,
+        } = options;
+
+    div(class=["form-input"])
+        - if(titleText)
+            p(class=["form-input__title"])
+                span(class=["form-input__title-text"])= titleText
+                - if(additionalTitleText)
+                    span(class=["form-input__additional-title-text"])= additionalTitleText
+
+        div(class=["form-input__input-container"])
+            input(class=["form-input__input"],
+                placeholder= placeholder,
+                name= name,
+                type= type,
+                value= value)
+            - if(hasSubmitButton)
+                input(class=['form-input__submit-input']
+                    type="submit"
+                    value="arrow_forward")

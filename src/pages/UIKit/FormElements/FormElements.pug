@@ -1,17 +1,17 @@
-include ../../../components/FormElements.FormInput/FormInput.pug
+include ../../../components/form-input/form-input.pug
 include ../../../components/logo/logo.pug
 include ../../../components/dropdown/dropdown.pug
 include ../../../components/checkbox-list/checkbox-list.pug
-include ../../../components/FormElements.RadioButton/RadioButton.pug
+include ../../../components/radio/radio.pug
+include ../../../components/toggle/toggle.pug
 include ../../../components/FormElements.RateButton/RateButton.pug
 include ../../../components/button/button.pug
-include ../../../components/FormElements.Pagination/Pagination.pug
 include ../../../components/FormElements.RangeSlider/RangeSlider.pug
 include ../../../components/bullet-list/bullet-list.pug
 include ../../../components/calendar/calendar.pug
-include ../../../components/FormElements.LikeButton/LikeButton.pug
+include ../../../components/like-button/like-button.pug
 include ../../../components/FormElements.RoomDetails/RoomDetails.pug
-include ../../../components/FormElements.GuestRoomReviews/GuestRoomReviews.pug
+include ../../../components/room-reviews/room-reviews.pug
 include ../../../components/FormElements.PieChart/PieChart.pug
 
 doctype html
@@ -28,11 +28,10 @@ html
             div(class=["form-elements__columns"])
                 div(class=["form-elements__column-1"])
                     div(class=["form-elements__form-input-container-1"])
-                        +getFormInput({
+                        +form-input({
                             hasTitle: true,
                             titleText: "text field",
-                            isTitleTextTestVisible: true,
-                            titleTextTestValue: "default",
+                            additionalTitleText: "default",
                             placeholder: "Email",
                             name: "email",
                             type: "email",
@@ -40,11 +39,10 @@ html
                             hasSubmitButton: false
                         })
                     div(class=["form-elements__form-input-container-2"])
-                        +getFormInput({
+                        +form-input({
                             hasTitle: true,
                             titleText: "text field",
-                            isTitleTextTestVisible: true,
-                            titleTextTestValue: "hover / focus",
+                            additionalTitleText: "hover / focus",
                             placeholder: "Some text",
                             name: "someText",
                             type: "text",
@@ -52,11 +50,10 @@ html
                             hasSubmitButton: false
                         })
                     div(class=["form-elements__form-input-container-3"])
-                        +getFormInput({
+                        +form-input({
                             hasTitle: true,
                             titleText: "text field",
-                            isTitleTextTestVisible: true,
-                            titleTextTestValue: "default",
+                            additionalTitleText: "default",
                             placeholder: "Email",
                             name: "email",
                             type: "email",
@@ -64,11 +61,10 @@ html
                             hasSubmitButton: true
                         })
                     div(class=["form-elements__form-input-container-4"])
-                        +getFormInput({
+                        +form-input({
                             hasTitle: true,
                             titleText: "text field",
-                            isTitleTextTestVisible: true,
-                            titleTextTestValue: "hover / focus",
+                            additionalTitleText: "hover / focus",
                             placeholder: "Some text",
                             name: "someText",
                             type: "text",
@@ -192,42 +188,43 @@ html
                         })
 
                     div(class=["form-elements__radio-button-container-1"]) 
-                        +getRadioButton({
-                            blockNumber: "_radio_1",
-                            buttonType: "radio",
-                            radioButtonList: [
+                        +radio({
+                            blockNumber: 1,
+                            buttonsList: [
                                 {text: "Мужчина", isChecked: true},
                                 {text: "Женщина", isChecked: false},
                             ],
-                            title: "Radio Buttons",
                             name: "gender",
                         })
                     div(class=["form-elements__radio-button-container-2"]) 
-                        +getRadioButton({
-                            buttonType: "toggle",
-                            radioButtonList: [
-                                {text: "Получать спецпредложения", isChecked: true}
+                        +radio({
+                            blockNumber: 2,
+                            buttonsList: [
+                                {text: "Мужчина", isChecked: false},
+                                {text: "Женщина", isChecked: true},
                             ],
-                            title: "Toggle",
-                            name: "specialOffer"
+                            name: "gender",
                         })
-                    div(class=["form-elements__radio-button-container-3"]) 
-                        +getRadioButton({
-                            buttonType: "toggle",
-                            radioButtonList: [
-                                {text: "Получать спецпредложения", isChecked: false}
-                            ],
-                            title: "",
-                            name: "specialOffer"
+                    div(class=["form-elements__toggle-button-container-1"]) 
+                        +toggle({
+                            text: "Получать спецпредложения",
+                            isChecked: true,
+                            name: "special-offer",
+                        })
+                    div(class=["form-elements__toggle-button-container-2"]) 
+                        +toggle({
+                            text: "Получать спецпредложения",
+                            isChecked: false,
+                            name: "special-offer",
                         })
 
                     div(class=["form-elements__like-button-container-1"])
-                        +getLikeButton({
+                        +like-button({
                             number: 2,
                             isChecked: false,
                         })
                     div(class=["form-elements__like-button-container-2"])
-                        +getLikeButton({
+                        +like-button({
                             number: 3,
                             isChecked: true,
                         })
@@ -376,7 +373,7 @@ html
                         })
 
                     div(class=["form-elements__guest-room-reviews-container-1"])
-                        +getGuestRoomReviews({
+                        +room-reviews({
                             reviewsArray: [
                                 {
                                     imgSrc: "./src/components/FormElements.GuestRoomReviews/img/image1.png",

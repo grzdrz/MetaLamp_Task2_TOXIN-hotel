@@ -2298,27 +2298,17 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent; }
 
-.radio-button {
+.radio {
+  display: flex;
   width: max-content; }
-  .radio-button__title {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1f2041;
-    margin-bottom: 15px; }
-  .radio-button__labels {
-    display: flex; }
-  .radio-button__label {
+  .radio__label {
     cursor: pointer;
     display: flex;
     position: relative;
     margin-right: 20px; }
-    .radio-button__label:last-child {
+    .radio__label:last-child {
       margin-right: 0px; }
-  .radio-button__button-image_radio {
+  .radio__button-image {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -2329,7 +2319,40 @@ body {
     height: 20px;
     border-radius: 50%;
     margin-right: 10px; }
-  .radio-button__button-image_toggle {
+  .radio__input {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    z-index: 2; }
+    .radio__input:checked + div {
+      border: 1px solid #bc9cff; }
+    .radio__input:checked + div::after {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      border-radius: 50%; }
+    .radio__input:not(:checked) + div {
+      border: 1px solid rgba(31, 32, 65, 0.25); }
+  .radio__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+
+.toggle {
+  display: flex;
+  position: relative;
+  width: max-content;
+  cursor: pointer; }
+  .toggle__button-image {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2341,49 +2364,32 @@ body {
     margin-right: 10px;
     padding: 0px 3px;
     transition: padding-left 0.3s; }
-  .radio-button__input {
-    cursor: pointer; }
-  .radio-button__button_radio {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    opacity: 0;
-    z-index: 2; }
-    .radio-button__button_radio:checked + div {
-      border: 1px solid #bc9cff; }
-    .radio-button__button_radio:checked + div::after {
-      content: "";
-      width: 12px;
-      height: 12px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      border-radius: 50%; }
-    .radio-button__button_radio:not(:checked) + div {
-      border: 1px solid rgba(31, 32, 65, 0.25); }
-  .radio-button__button_toggle {
+  .toggle__input {
+    cursor: pointer;
     position: absolute;
     width: 40px;
     height: 20px;
     opacity: 0;
     z-index: 2; }
-    .radio-button__button_toggle:checked + div {
+    .toggle__input:checked + div {
       border: 1px solid #bc9cff;
       padding-left: 23px; }
-    .radio-button__button_toggle:not(:checked) + div {
+    .toggle__input:not(:checked) + div {
       border: 1px solid rgba(31, 32, 65, 0.25);
       padding-left: 3px; }
-    .radio-button__button_toggle:checked + div::after {
+    .toggle__input:checked + div::after {
       content: "";
       width: 12px;
       height: 12px;
       background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
       border-radius: 50%; }
-    .radio-button__button_toggle:not(:checked) + div::after {
+    .toggle__input:not(:checked) + div::after {
       content: "";
       width: 12px;
       height: 12px;
       background: rgba(31, 32, 65, 0.25);
       border-radius: 50%; }
-  .radio-button__text {
+  .toggle__text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;

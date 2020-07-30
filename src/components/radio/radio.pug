@@ -1,0 +1,13 @@
+mixin radio(options)
+    - const {blockNumber, buttonsList, name} = options; 
+
+    div(class=["radio"])
+        - for(let item of buttonsList)
+            label(class=["radio__label"])
+                input(class=["radio__input"] 
+                    type="radio"
+                    name= `${name}-${blockNumber}`
+                    checked= item.isChecked)
+                div(class=["radio__button-image"])
+                p(class=["radio__text"])= item.text
+

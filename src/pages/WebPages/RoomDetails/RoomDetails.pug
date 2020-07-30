@@ -2,7 +2,7 @@ include ../../../components/header/header.pug
 include ../../../components/FormElements.RoomDetails/RoomDetails.pug
 include ../../../components/FormElements.PieChart/PieChart.pug
 include ../../../components/bullet-list/bullet-list.pug
-include ../../../components/FormElements.GuestRoomReviews/GuestRoomReviews.pug
+include ../../../components/room-reviews/room-reviews.pug
 include ../../../components/price-calculation-form/price-calculation-form.pug
 include ../../../components/long-footer/long-footer.pug
 
@@ -46,7 +46,7 @@ html
                                 legends: ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"]
                             })
                     div(class=["room-details__guest-room-reviews-container"])
-                        +getGuestRoomReviews({
+                        +room-reviews({
                             reviewsArray: [
                                 {
                                     imgSrc: "./src/components/FormElements.GuestRoomReviews/img/image1.png",

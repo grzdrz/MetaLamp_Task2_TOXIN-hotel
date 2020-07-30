@@ -4,7 +4,6 @@ include ../../../components/calendar/calendar.pug
 include ../../../components/dropdown/dropdown.pug
 include ../../../components/FormElements.RangeSlider/RangeSlider.pug
 include ../../../components/checkbox-list/checkbox-list.pug
-include ../../../components/FormElements.Pagination/Pagination.pug
 include ../../../components/long-footer/long-footer.pug
 
 doctype html
@@ -133,12 +132,6 @@ html
                                 +room-info(roomsInfo[i])
                         - }
                     div(class=["search-room__pagination-container"])
-                        +getPagination({
-                            pagesCount: 15,
-                            curPageNumber: 1,
-                            title: "",
-                            bottomText: "1 – 12 из 100+ вариантов аренды",
-                        })
 
             div(class=["search-room__footer-container"])
                 +long-footer()

@@ -1,0 +1,15 @@
+include ../like-button/like-button.pug
+
+mixin room-reviews(options)
+    - const {reviewsArray} = options;
+
+    div(class=["room-reviews"])
+        p(class=["room-reviews__title"]) Отзывы посетителей номера
+        - for(let review of reviewsArray)
+            div(class=["room-reviews__review-container"])
+                img(src=review.imgSrc class=["room-reviews__user-avatar"])
+                div(class=["room-reviews__user-info"])
+                    p(class=["room-reviews__user-full-name"])= review.fullName
+                    p(class=["room-reviews__number-of-days-since-comment"])= review.numberOfDaysSinceComment
+                +like-button(review.likeButtonOptions)
+                p(class=["room-reviews__comment"])= review.comment

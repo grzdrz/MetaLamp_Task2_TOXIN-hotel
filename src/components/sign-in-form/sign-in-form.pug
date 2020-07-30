@@ -1,5 +1,5 @@
 include ../button/button.pug
-include ../FormElements.FormInput/FormInput.pug
+include ../form-input/form-input.pug
 
 mixin sign-in-form(options)
     - const { titleText } = options;
@@ -9,17 +9,14 @@ mixin sign-in-form(options)
             p(class=["sign-in-form__title"])= titleText
 
         div(class=["sign-in-form__fields"])
-            +getFormInput({
-                hasTitle: false,
-                titleText: "",                
+            +form-input({              
                 placeholder: "Email",
                 name: "email",
                 type: "email",
                 value: "",
                 hasSubmitButton: false
             })
-            +getFormInput({
-                hasTitle: false,
+            +form-input({
                 placeholder: "Пароль",
                 name: "password",
                 type: "password",
