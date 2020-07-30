@@ -35,9 +35,9 @@ const pagination2 = new Pagination({
 }, paginationContainer2);
 
 
-import { rangeSliderScript } from "../../../components/FormElements.RangeSlider/RangeSlider.js";
-rangeSliderScript();
-
+import RangeSlider from "../../../components/range-slider/range-slider";
+const rangeSliderContainers = Array.from(document.querySelectorAll(".js-form-elements__range-slider-container"));
+const rangeSliders = rangeSliderContainers.map((element) => new RangeSlider(element));
 
 import Calendar from "../../../components/calendar/calendar";
 const calendars = [];
@@ -46,7 +46,8 @@ calendarsContainers.forEach(element => {
     calendars.push(new Calendar(element));
 });
 
-import { pieChartScript } from "../../../components/FormElements.PieChart/PieChart.js";
-pieChartScript();
+import PieChart from "../../../components/pie-chart/pie-chart";
+const pieChartContainer = document.querySelector(".js-form-elements__pie-chart-container");
+const pieChart = new PieChart(pieChartContainer);
 
 import "./FormElements.scss";

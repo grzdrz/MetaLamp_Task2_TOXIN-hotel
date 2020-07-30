@@ -1,0 +1,12 @@
+mixin star-rating(options)
+    - const {blockNumber, numberOfCheckedStar} = options;
+
+    div(class=["star-rating"])
+        - for(let i=5; i >= 1; i--)
+            input(type="radio"
+                class=["star-rating__input", `star-rating__input_${i}`]
+                name=`star-rating-${blockNumber}`
+                value=i
+                checked=(numberOfCheckedStar === i))
+            p(class=["star-rating__image", `star-rating__image_${i}`]
+                title=`Оценка «${i}»`)

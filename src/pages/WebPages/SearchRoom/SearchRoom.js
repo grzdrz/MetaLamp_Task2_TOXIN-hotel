@@ -26,8 +26,9 @@ const pagination1 = new Pagination({
 
 
 
-import { rangeSliderScript } from "../../../components/FormElements.RangeSlider/RangeSlider.js";
-rangeSliderScript();
+import RangeSlider from "../../../components/range-slider/range-slider";
+const rangeSliderContainers = Array.from(document.querySelectorAll(".js-search-room__range-slider-container"));
+const rangeSliders = rangeSliderContainers.map((element) => new RangeSlider(element));
 
 
 import Calendar from "../../../components/calendar/calendar";

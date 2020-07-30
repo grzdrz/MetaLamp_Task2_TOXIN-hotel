@@ -208,17 +208,6 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./node
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/FormElements.PieChart/PieChart.scss":
-/*!***********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/FormElements.PieChart/PieChart.scss ***!
-  \***********************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/FormElements.PieChart/PieChart.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
 /***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/WebPages/RoomDetails/RoomDetails.scss":
 /*!********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/WebPages/RoomDetails/RoomDetails.scss ***!
@@ -282,7 +271,7 @@ eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpack
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./components/Cards.RoomInfo/img/test1.png\": \"./src/components/Cards.RoomInfo/img/test1.png\",\n\t\"./components/Cards.RoomInfo/img/test11.png\": \"./src/components/Cards.RoomInfo/img/test11.png\",\n\t\"./components/Cards.RoomInfo/img/test110.png\": \"./src/components/Cards.RoomInfo/img/test110.png\",\n\t\"./components/Cards.RoomInfo/img/test120.png\": \"./src/components/Cards.RoomInfo/img/test120.png\",\n\t\"./components/Cards.RoomInfo/img/test130.png\": \"./src/components/Cards.RoomInfo/img/test130.png\",\n\t\"./components/Cards.RoomInfo/img/test2.png\": \"./src/components/Cards.RoomInfo/img/test2.png\",\n\t\"./components/Cards.RoomInfo/img/test22.png\": \"./src/components/Cards.RoomInfo/img/test22.png\",\n\t\"./components/Cards.RoomInfo/img/test3.png\": \"./src/components/Cards.RoomInfo/img/test3.png\",\n\t\"./components/Cards.RoomInfo/img/test33.png\": \"./src/components/Cards.RoomInfo/img/test33.png\",\n\t\"./components/Cards.RoomInfo/img/test4.png\": \"./src/components/Cards.RoomInfo/img/test4.png\",\n\t\"./components/Cards.RoomInfo/img/test44.png\": \"./src/components/Cards.RoomInfo/img/test44.png\",\n\t\"./components/Cards.RoomInfo/img/test55.png\": \"./src/components/Cards.RoomInfo/img/test55.png\",\n\t\"./components/Cards.RoomInfo/img/test66.png\": \"./src/components/Cards.RoomInfo/img/test66.png\",\n\t\"./components/Cards.RoomInfo/img/test77.png\": \"./src/components/Cards.RoomInfo/img/test77.png\",\n\t\"./components/Cards.RoomInfo/img/test88.png\": \"./src/components/Cards.RoomInfo/img/test88.png\",\n\t\"./components/Cards.RoomInfo/img/test99.png\": \"./src/components/Cards.RoomInfo/img/test99.png\",\n\t\"./components/FormElements.CheckboxList/img/checkMark.svg\": \"./src/components/FormElements.CheckboxList/img/checkMark.svg\",\n\t\"./components/FormElements.GuestRoomReviews/img/image1.png\": \"./src/components/FormElements.GuestRoomReviews/img/image1.png\",\n\t\"./components/FormElements.GuestRoomReviews/img/image2.png\": \"./src/components/FormElements.GuestRoomReviews/img/image2.png\",\n\t\"./components/GlobalLogo/img/logo.svg\": \"./src/components/GlobalLogo/img/logo.svg\",\n\t\"./components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg\": \"./src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg\",\n\t\"./components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg\": \"./src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\",\n\t\"./components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\": \"./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\",\n\t\"./pages/WebPages/LandingPage/img/backgroundImage.png\": \"./src/pages/WebPages/LandingPage/img/backgroundImage.png\",\n\t\"./pages/WebPages/Registration/img/backgroundImage.png\": \"./src/pages/WebPages/Registration/img/backgroundImage.png\",\n\t\"./pages/WebPages/RoomDetails/img/background1.jpg\": \"./src/pages/WebPages/RoomDetails/img/background1.jpg\",\n\t\"./pages/WebPages/RoomDetails/img/background2.jpg\": \"./src/pages/WebPages/RoomDetails/img/background2.jpg\",\n\t\"./pages/WebPages/RoomDetails/img/background3.jpg\": \"./src/pages/WebPages/RoomDetails/img/background3.jpg\",\n\t\"./pages/WebPages/SignIn/img/backgroundImage.png\": \"./src/pages/WebPages/SignIn/img/backgroundImage.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg)$?");
+eval("var map = {\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./components/checkbox-list/img/check-mark.svg\": \"./src/components/checkbox-list/img/check-mark.svg\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./components/logo/img/logo.svg\": \"./src/components/logo/img/logo.svg\",\n\t\"./components/room-info/img/test1.png\": \"./src/components/room-info/img/test1.png\",\n\t\"./components/room-info/img/test11.png\": \"./src/components/room-info/img/test11.png\",\n\t\"./components/room-info/img/test110.png\": \"./src/components/room-info/img/test110.png\",\n\t\"./components/room-info/img/test120.png\": \"./src/components/room-info/img/test120.png\",\n\t\"./components/room-info/img/test130.png\": \"./src/components/room-info/img/test130.png\",\n\t\"./components/room-info/img/test2.png\": \"./src/components/room-info/img/test2.png\",\n\t\"./components/room-info/img/test22.png\": \"./src/components/room-info/img/test22.png\",\n\t\"./components/room-info/img/test3.png\": \"./src/components/room-info/img/test3.png\",\n\t\"./components/room-info/img/test33.png\": \"./src/components/room-info/img/test33.png\",\n\t\"./components/room-info/img/test4.png\": \"./src/components/room-info/img/test4.png\",\n\t\"./components/room-info/img/test44.png\": \"./src/components/room-info/img/test44.png\",\n\t\"./components/room-info/img/test55.png\": \"./src/components/room-info/img/test55.png\",\n\t\"./components/room-info/img/test66.png\": \"./src/components/room-info/img/test66.png\",\n\t\"./components/room-info/img/test77.png\": \"./src/components/room-info/img/test77.png\",\n\t\"./components/room-info/img/test88.png\": \"./src/components/room-info/img/test88.png\",\n\t\"./components/room-info/img/test99.png\": \"./src/components/room-info/img/test99.png\",\n\t\"./components/room-reviews/img/image1.png\": \"./src/components/room-reviews/img/image1.png\",\n\t\"./components/room-reviews/img/image2.png\": \"./src/components/room-reviews/img/image2.png\",\n\t\"./components/social-media/img/facebook-icon.svg\": \"./src/components/social-media/img/facebook-icon.svg\",\n\t\"./components/social-media/img/instagram-icon.svg\": \"./src/components/social-media/img/instagram-icon.svg\",\n\t\"./components/social-media/img/twitter-icon.svg\": \"./src/components/social-media/img/twitter-icon.svg\",\n\t\"./pages/WebPages/LandingPage/img/backgroundImage.png\": \"./src/pages/WebPages/LandingPage/img/backgroundImage.png\",\n\t\"./pages/WebPages/Registration/img/backgroundImage.png\": \"./src/pages/WebPages/Registration/img/backgroundImage.png\",\n\t\"./pages/WebPages/RoomDetails/img/background1.jpg\": \"./src/pages/WebPages/RoomDetails/img/background1.jpg\",\n\t\"./pages/WebPages/RoomDetails/img/background2.jpg\": \"./src/pages/WebPages/RoomDetails/img/background2.jpg\",\n\t\"./pages/WebPages/RoomDetails/img/background3.jpg\": \"./src/pages/WebPages/RoomDetails/img/background3.jpg\",\n\t\"./pages/WebPages/SignIn/img/backgroundImage.png\": \"./src/pages/WebPages/SignIn/img/backgroundImage.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg)$?");
 
 /***/ }),
 
@@ -358,374 +347,363 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./src/components/Cards.RoomInfo/img/test1.png":
-/*!*****************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test1.png ***!
-  \*****************************************************/
+/***/ "./src/components/calendar/calendar.js":
+/*!*********************************************!*\
+  !*** ./src/components/calendar/calendar.js ***!
+  \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test1.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test1.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! air-datepicker/dist/css/datepicker.css */ \"./node_modules/air-datepicker/dist/css/datepicker.css\");\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__);\n\r\nconst $ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;\r\nglobal.jQuery = $;\r\nglobal.$ = $;\r\n\r\n\r\n\r\n\r\nconst dateFormatOptions1 = { year: \"numeric\", month: \"2-digit\", day: \"2-digit\", };\r\nconst dateFormatOptions2 = {\r\n    month: \"short\", day: \"2-digit\",\r\n};\r\n\r\nclass Calendar {\r\n    constructor(outerContainerElement) {\r\n        this.outerContainerElement = outerContainerElement;\r\n        const jqOuterContainerElement = $(\"html\").find(this.outerContainerElement);\r\n        this.jqContainerElement = jqOuterContainerElement.find(\".calendar\");\r\n        this.jqDateInputs = this.jqContainerElement.find(\".calendar__input\");\r\n\r\n        this.isDouble = this.jqContainerElement.hasClass(\"calendar_double\");\r\n        this.withRangePicking = this.jqContainerElement.hasClass(\"calendar_with-range-picking\");\r\n\r\n\r\n        this.datepickerInstance = {};\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        if (this.isDouble)\r\n            this.setDoubleDatepicker();\r\n        else if (this.withRangePicking)\r\n            this.setSingleDatepickerWithRange();\r\n        else\r\n            this.singleDatepickerWithoutRange();\r\n    }\r\n\r\n    setDoubleDatepicker() {\r\n        const firstDateInput = this.jqDateInputs.eq(0);\r\n        const secondDateInput = this.jqDateInputs.eq(1);\r\n\r\n        this.datepickerInstance = firstDateInput.datepicker({\r\n            range: true,\r\n            position: 'bottom left',\r\n            navTitles: {\r\n                days: 'MM yyyy',\r\n            },\r\n            onShow: function (dp, animationCompleted) {\r\n                if (!animationCompleted) {\r\n                    if (!dp.$datepicker.find('.calendar__buttons').html()) {\r\n                        dp.$datepicker.append(\r\n                            '<div class=\"calendar__buttons\">' +\r\n                            '<p class=\"calendar__clear-button\">очистить</p>' +\r\n                            '<p class=\"calendar__apply-button\">применить</p>' +\r\n                            '</div>'\r\n                        );\r\n                        dp.$datepicker[0].querySelector(\".calendar__clear-button\").onclick = (event) => {\r\n                            dp.clear();\r\n                        };\r\n                        dp.$datepicker[0].querySelector(\".calendar__apply-button\").onclick = (event) => {\r\n                            dp.hide();\r\n                        };\r\n\r\n                        dp.$datepicker.find('.datepicker--pointer').css(\"display\", \"none\");\r\n\r\n                        secondDateInput.bind('click', dp.show.bind(dp));\r\n                    }\r\n                }\r\n            },\r\n            onSelect: function (formattedDate, date, inst) {\r\n                if (this.datepickerInstance.selectedDates[0]) {\r\n                    let firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1).format(this.datepickerInstance.selectedDates[0]);\r\n                    firstDateInput.prop(\"value\", firstFormattedDate);\r\n                }\r\n                if (this.datepickerInstance.selectedDates[1]) {\r\n                    let secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1).format(this.datepickerInstance.selectedDates[1]);\r\n                    secondDateInput.prop(\"value\", secondFormattedDate);\r\n                }\r\n                else {\r\n                    firstDateInput.prop(\"value\", \"\");\r\n                    secondDateInput.prop(\"value\", \"\");\r\n                }\r\n            }.bind(this),\r\n        }).data('datepicker');\r\n        this.datepickerInstance.show();\r\n        this.datepickerInstance.hide();\r\n    }\r\n\r\n\r\n    setSingleDatepickerWithRange() {\r\n        const dateInput = this.jqDateInputs.eq(0);\r\n\r\n        this.datepickerInstance = dateInput.datepicker({\r\n            range: true,\r\n            position: 'bottom left',\r\n            navTitles: {\r\n                days: 'MM yyyy',\r\n            },\r\n            onShow: function (dp, animationCompleted) {\r\n                if (!animationCompleted) {\r\n                    if (!dp.$datepicker.find('.calendar__buttons').html()) {\r\n                        dp.$datepicker.append(\r\n                            '<div class=\"calendar__buttons\">' +\r\n                            '<p class=\"calendar__clear-button\">очистить</p>' +\r\n                            '<p class=\"calendar__apply-button\">применить</p>' +\r\n                            '</div>'\r\n                        );\r\n                        dp.$datepicker.find('.calendar__clear-button').click(function (event) {\r\n                            dp.clear();\r\n                        });\r\n                        dp.$datepicker.find('.calendar__apply-button').click(function (event) {\r\n                            dp.hide();\r\n                        });\r\n\r\n                        dp.$datepicker.find('.datepicker--pointer').css(\"display\", \"none\");\r\n                    }\r\n                }\r\n            },\r\n            onSelect: function (formattedDate, date, inst) {\r\n                if (this.datepickerInstance.selectedDates[0] && this.datepickerInstance.selectedDates[1]) {\r\n                    let formattedDate1 = (new Intl.DateTimeFormat(\"ru-RU\", dateFormatOptions2)\r\n                        .format(this.datepickerInstance.selectedDates[0]))\r\n                        .toString();\r\n                    formattedDate1 = formattedDate1.slice(0, formattedDate1.length - 1);\r\n                    let formattedDate2 = (new Intl.DateTimeFormat(\"ru-RU\", dateFormatOptions2)\r\n                        .format(this.datepickerInstance.selectedDates[1]))\r\n                        .toString();\r\n                    formattedDate2 = formattedDate2.slice(0, formattedDate2.length - 1);\r\n                    dateInput.prop(\"value\", formattedDate1 + \" - \" + formattedDate2);\r\n                }\r\n                else {\r\n                    dateInput.prop(\"value\", \"\");\r\n                }\r\n            }.bind(this),\r\n        }).data('datepicker');\r\n    }\r\n\r\n    singleDatepickerWithoutRange() {\r\n        const dateInput = this.jqDateInputs.eq(0);\r\n\r\n        this.datepickerInstance = dateInput.datepicker({\r\n            position: 'bottom left',\r\n            navTitles: {\r\n                days: 'MM yyyy',\r\n            },\r\n            onShow: function (dp, animationCompleted) {\r\n                if (!animationCompleted) {\r\n                    if (!dp.$datepicker.find('.calendar__buttons').html()) {\r\n                        dp.$datepicker.append(\r\n                            '<div class=\"calendar__buttons\">' +\r\n                            '<p class=\"calendar__clear-button\">очистить</p>' +\r\n                            '<p class=\"calendar__apply-button\">применить</p>' +\r\n                            '</div>'\r\n                        );\r\n                        dp.$datepicker.find('.calendar__clear-button').click(function (event) {\r\n                            dp.clear();\r\n                        });\r\n                        dp.$datepicker.find('.calendar__apply-button').click(function (event) {\r\n                            dp.hide();\r\n                        });\r\n\r\n                        dp.$datepicker.find('.datepicker--pointer').css(\"display\", \"none\");\r\n                    }\r\n                }\r\n            },\r\n        }).data('datepicker');\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Calendar);\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=webpack:///./src/components/calendar/calendar.js?");
 
 /***/ }),
 
-/***/ "./src/components/Cards.RoomInfo/img/test11.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test11.png ***!
-  \******************************************************/
+/***/ "./src/components/checkbox-list/img/check-mark.svg":
+/*!*********************************************************!*\
+  !*** ./src/components/checkbox-list/img/check-mark.svg ***!
+  \*********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test11.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test11.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/checkbox-list/img/check-mark.svg\");\n\n//# sourceURL=webpack:///./src/components/checkbox-list/img/check-mark.svg?");
 
 /***/ }),
 
-/***/ "./src/components/Cards.RoomInfo/img/test110.png":
-/*!*******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test110.png ***!
-  \*******************************************************/
+/***/ "./src/components/colored-logo/img/TOXIN.svg":
+/*!***************************************************!*\
+  !*** ./src/components/colored-logo/img/TOXIN.svg ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test110.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test110.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/colored-logo/img/TOXIN.svg\");\n\n//# sourceURL=webpack:///./src/components/colored-logo/img/TOXIN.svg?");
 
 /***/ }),
 
-/***/ "./src/components/Cards.RoomInfo/img/test120.png":
-/*!*******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test120.png ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test120.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test120.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test130.png":
-/*!*******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test130.png ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test130.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test130.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test2.png":
-/*!*****************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test2.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test2.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test2.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test22.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test22.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test22.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test22.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test3.png":
-/*!*****************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test3.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test3.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test3.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test33.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test33.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test33.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test33.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test4.png":
-/*!*****************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test4.png ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test4.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test4.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test44.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test44.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test44.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test44.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test55.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test55.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test55.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test55.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test66.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test66.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test66.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test66.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test77.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test77.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test77.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test77.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test88.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test88.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test88.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test88.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.RoomInfo/img/test99.png":
-/*!******************************************************!*\
-  !*** ./src/components/Cards.RoomInfo/img/test99.png ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/Cards.RoomInfo/img/test99.png\");\n\n//# sourceURL=webpack:///./src/components/Cards.RoomInfo/img/test99.png?");
-
-/***/ }),
-
-/***/ "./src/components/Cards.priceCalculationForm/PriceCalculationForm.js":
-/*!***************************************************************************!*\
-  !*** ./src/components/Cards.priceCalculationForm/PriceCalculationForm.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _FormElements_Dropdown_Dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../FormElements.Dropdown/Dropdown */ \"./src/components/FormElements.Dropdown/Dropdown.js\");\n/* harmony import */ var _FormElements_DateInput_DateInput__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../FormElements.DateInput/DateInput */ \"./src/components/FormElements.DateInput/DateInput.js\");\n\r\n\r\n\r\n\r\nclass PriceCalculator {\r\n    constructor(outerContainerElement) {\r\n        this.containerElement = outerContainerElement.querySelector(\".price-calculation-form\");\r\n\r\n        this.mainSum = this.containerElement.querySelector(\".price-calculation-form__main-sum\");\r\n        this.mainSumFormula = this.containerElement.querySelector(\".price-calculation-form__main-sum-formula\");\r\n        this.mainSumValue = this.containerElement.querySelector(\".price-calculation-form__main-sum-result\");\r\n        this.services = this.containerElement.querySelector(\".price-calculation-form__services\");\r\n        this.additionalServicesValue = this.containerElement.querySelector(\".price-calculation-form__additional-services-value\");\r\n        this.totalResultValue = this.containerElement.querySelector(\".price-calculation-form__total-result-value\");\r\n\r\n        const dropdownContainer = this.containerElement.querySelector(\".price-calculation-form__dropdown-container\");\r\n        this.dropdown = new _FormElements_Dropdown_Dropdown__WEBPACK_IMPORTED_MODULE_0__[\"default\"](dropdownContainer);\r\n\r\n        const dateInputContainer = this.containerElement.querySelector(\".price-calculation-form__date-input-container\");\r\n        this.dateInput = new _FormElements_DateInput_DateInput__WEBPACK_IMPORTED_MODULE_1__[\"default\"](dateInputContainer);\r\n\r\n        this.roomRentalPrice = Number.parseInt(this.mainSum.dataset.value);\r\n        this.currencyType = this.mainSum.dataset.currencyType;\r\n        this.discountValue = Number.parseInt(this.services.dataset.value);\r\n        this.totalSum = 0;\r\n        this.servicesSum = 0;\r\n        this.roomRentalSum = 0;\r\n\r\n        this.handlerDropdownInputChange = this.handlerDropdownInputChange.bind(this);\r\n        this.getHandlerSelectWrapper = this.getHandlerSelectWrapper.bind(this);\r\n        this.getHandlerClearClickWrapper = this.getHandlerClearClickWrapper.bind(this);\r\n        this.setTotalPrice = this.setTotalPrice.bind(this);\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        this.dropdown.dropdownList.forEach(item => {\r\n            item.minus.addEventListener(\"click\", this.handlerDropdownInputChange);\r\n            item.plus.addEventListener(\"click\", this.handlerDropdownInputChange);\r\n        });\r\n\r\n\r\n        const datepicker = this.dateInput.datepickerInstance;\r\n        const oldHandlerSelect = datepicker.selectDate;\r\n        datepicker.selectDate = this.getHandlerSelectWrapper(oldHandlerSelect.bind(datepicker));\r\n\r\n        const clearButton = datepicker.$datepicker[0].querySelector(\".date-input__clear-button\");\r\n        const oldOnClear = clearButton.onclick;\r\n        clearButton.onclick = this.getHandlerClearClickWrapper(oldOnClear);\r\n    }\r\n\r\n    handlerDropdownInputChange() {\r\n        this.servicesSum = this.dropdown.totalValue * 100;\r\n        this.additionalServicesValue.textContent = `${this.formateNumber(this.servicesSum)}${this.currencyType}`;\r\n\r\n        this.setTotalPrice();\r\n    }\r\n\r\n    getHandlerSelectWrapper(oldHandler) {\r\n        return function (date) {\r\n            oldHandler(date);\r\n\r\n            const firstDateInput = this.dateInput.jqDateInputs.eq(0);\r\n            const secondDateInput = this.dateInput.jqDateInputs.eq(1);\r\n            const firstDateValue = firstDateInput[0].value;\r\n            const secondDateValue = secondDateInput[0].value;\r\n            if (firstDateValue && secondDateValue) {\r\n                const firstDateStrings = firstDateValue.split(\".\");\r\n                const firstDate = new Date(firstDateStrings[2], firstDateStrings[1], firstDateStrings[0]);\r\n                const secondDateStrings = secondDateValue.split(\".\");\r\n                const secondDate = new Date(secondDateStrings[2], secondDateStrings[1], secondDateStrings[0]);\r\n                const dDate = Math.abs(secondDate - firstDate);\r\n                const daysCount = dDate / (1000 * 60 * 60 * 24);\r\n\r\n                const splittedText = this.mainSumFormula.textContent.split(\"x\");\r\n                splittedText[1] = ` ${daysCount} ${this.doDeclensionOfWord(daysCount)}`;\r\n                this.mainSumFormula.textContent = splittedText.join(\"x\");\r\n\r\n                this.roomRentalSum = daysCount * this.roomRentalPrice;\r\n                this.mainSumValue.textContent = `${this.formateNumber(this.roomRentalSum)}${this.currencyType}`;\r\n\r\n                this.setTotalPrice();\r\n            }\r\n        }.bind(this);\r\n    }\r\n\r\n    getHandlerClearClickWrapper(oldHandler) {\r\n        return function (event) {\r\n            oldHandler(event);\r\n\r\n            this.roomRentalSum = 0;\r\n\r\n            this.setTotalPrice();\r\n        }.bind(this);\r\n    }\r\n\r\n    setTotalPrice() {\r\n        this.totalSum = this.servicesSum + this.roomRentalSum - this.discountValue;\r\n        if (this.totalSum < 0) this.totalSum = 0;\r\n        this.totalResultValue.textContent = `${this.formateNumber(this.totalSum)}${this.currencyType}`;\r\n    }\r\n\r\n    formateNumber(number) {\r\n        return number.toString().replace(/(\\d)(?=(\\d{3})+$)/g, '$1 ');\r\n    }\r\n\r\n    doDeclensionOfWord(number) {\r\n        const words = [\"сутки\", \"суток\", \"суток\"];\r\n\r\n        if (number.toString()[number.toString().length - 1] === \"1\" && number !== 11)\r\n            return words[0];\r\n        else if ((number.toString()[number.toString().length - 1] > 1 && number.toString()[number.toString().length - 1] <= 4)\r\n            && (number < 12 || number > 14))\r\n            return words[1];\r\n        else\r\n            return words[2];\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (PriceCalculator);\r\n\n\n//# sourceURL=webpack:///./src/components/Cards.priceCalculationForm/PriceCalculationForm.js?");
-
-/***/ }),
-
-/***/ "./src/components/FormElements.CheckboxList/img/checkMark.svg":
-/*!********************************************************************!*\
-  !*** ./src/components/FormElements.CheckboxList/img/checkMark.svg ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/FormElements.CheckboxList/img/checkMark.svg\");\n\n//# sourceURL=webpack:///./src/components/FormElements.CheckboxList/img/checkMark.svg?");
-
-/***/ }),
-
-/***/ "./src/components/FormElements.DateInput/DateInput.js":
-/*!************************************************************!*\
-  !*** ./src/components/FormElements.DateInput/DateInput.js ***!
-  \************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! air-datepicker/dist/css/datepicker.css */ \"./node_modules/air-datepicker/dist/css/datepicker.css\");\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__);\n\r\nconst $ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;\r\nglobal.jQuery = $;\r\nglobal.$ = $;\r\n\r\n\r\n\r\n\r\nconst dateFormatOptions1 = { year: \"numeric\", month: \"2-digit\", day: \"2-digit\", };\r\nconst dateFormatOptions2 = {\r\n    month: \"short\", day: \"2-digit\",\r\n};\r\n\r\nclass DateInput {\r\n    constructor(outerContainerElement) {\r\n        this.outerContainerElement = outerContainerElement;\r\n        const jqOuterContainerElement = $(\"html\").find(this.outerContainerElement);\r\n        this.jqContainerElement = jqOuterContainerElement.find(\".date-input\");\r\n        this.jqDateInputs = this.jqContainerElement.find(\".date-input__datepicker-input\");\r\n\r\n        this.isDouble = this.jqContainerElement.hasClass(\"date-input_double\");\r\n        this.withRangePicking = this.jqContainerElement.hasClass(\"date-input_with-range-picking\");\r\n\r\n\r\n        this.datepickerInstance = {};\r\n        // this.setDoubleDatepicker = this.setDoubleDatepicker.bind(this);\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        if (this.isDouble)\r\n            this.setDoubleDatepicker();\r\n        else if (this.withRangePicking)\r\n            this.setSingleDatepickerWithRange();\r\n        else\r\n            this.singleDatepickerWithoutRange();\r\n    }\r\n\r\n    setDoubleDatepicker() {\r\n        const firstDateInput = this.jqDateInputs.eq(0);\r\n        const secondDateInput = this.jqDateInputs.eq(1);\r\n\r\n        this.datepickerInstance = firstDateInput.datepicker({\r\n            range: true,\r\n            position: 'bottom left',\r\n            navTitles: {\r\n                days: 'MM yyyy',\r\n            },\r\n            onShow: function (dp, animationCompleted) {\r\n                if (!animationCompleted) {\r\n                    if (!dp.$datepicker.find('.date-input__buttons').html()) {\r\n                        dp.$datepicker.append(\r\n                            '<div class=\"date-input__buttons\">' +\r\n                            '<p class=\"date-input__clear-button\">очистить</p>' +\r\n                            '<p class=\"date-input__apply-button\">применить</p>' +\r\n                            '</div>'\r\n                        );\r\n                        dp.$datepicker[0].querySelector(\".date-input__clear-button\").onclick = (event) => {\r\n                            dp.clear();\r\n                        };\r\n                        dp.$datepicker[0].querySelector(\".date-input__apply-button\").onclick = (event) => {\r\n                            dp.hide();\r\n                        };\r\n\r\n                        dp.$datepicker.find('.datepicker--pointer').css(\"display\", \"none\");\r\n\r\n                        secondDateInput.bind('click', dp.show.bind(dp));\r\n                    }\r\n                }\r\n            },\r\n            onSelect: function (formattedDate, date, inst) {\r\n                if (this.datepickerInstance.selectedDates[0]) {\r\n                    let firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1).format(this.datepickerInstance.selectedDates[0]);\r\n                    firstDateInput.prop(\"value\", firstFormattedDate);\r\n                }\r\n                if (this.datepickerInstance.selectedDates[1]) {\r\n                    let secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1).format(this.datepickerInstance.selectedDates[1]);\r\n                    secondDateInput.prop(\"value\", secondFormattedDate);\r\n                }\r\n                else {\r\n                    firstDateInput.prop(\"value\", \"\");\r\n                    secondDateInput.prop(\"value\", \"\");\r\n                }\r\n            }.bind(this),\r\n        }).data('datepicker');\r\n        this.datepickerInstance.show();\r\n        this.datepickerInstance.hide();\r\n    }\r\n\r\n\r\n    setSingleDatepickerWithRange() {\r\n        const dateInput = this.jqDateInputs.eq(0);\r\n\r\n        this.datepickerInstance = dateInput.datepicker({\r\n            range: true,\r\n            position: 'bottom left',\r\n            navTitles: {\r\n                days: 'MM yyyy',\r\n            },\r\n            onShow: function (dp, animationCompleted) {\r\n                if (!animationCompleted) {\r\n                    if (!dp.$datepicker.find('.date-input__buttons').html()) {\r\n                        dp.$datepicker.append(\r\n                            '<div class=\"date-input__buttons\">' +\r\n                            '<p class=\"date-input__clear-button\">очистить</p>' +\r\n                            '<p class=\"date-input__apply-button\">применить</p>' +\r\n                            '</div>'\r\n                        );\r\n                        dp.$datepicker.find('.date-input__clear-button').click(function (event) {\r\n                            dp.clear();\r\n                        });\r\n                        dp.$datepicker.find('.date-input__apply-button').click(function (event) {\r\n                            dp.hide();\r\n                        });\r\n\r\n                        dp.$datepicker.find('.datepicker--pointer').css(\"display\", \"none\");\r\n                    }\r\n                }\r\n            },\r\n            onSelect: function (formattedDate, date, inst) {\r\n                if (this.datepickerInstance.selectedDates[0] && this.datepickerInstance.selectedDates[1]) {\r\n                    let formattedDate1 = (new Intl.DateTimeFormat(\"ru-RU\", dateFormatOptions2)\r\n                        .format(this.datepickerInstance.selectedDates[0]))\r\n                        .toString();\r\n                    formattedDate1 = formattedDate1.slice(0, formattedDate1.length - 1);\r\n                    let formattedDate2 = (new Intl.DateTimeFormat(\"ru-RU\", dateFormatOptions2)\r\n                        .format(this.datepickerInstance.selectedDates[1]))\r\n                        .toString();\r\n                    formattedDate2 = formattedDate2.slice(0, formattedDate2.length - 1);\r\n                    dateInput.prop(\"value\", formattedDate1 + \" - \" + formattedDate2);\r\n                }\r\n                else {\r\n                    dateInput.prop(\"value\", \"\");\r\n                }\r\n            }.bind(this),\r\n        }).data('datepicker');\r\n        /* this.datepickerInstance.show();\r\n        this.datepickerInstance.hide(); */\r\n    }\r\n\r\n    singleDatepickerWithoutRange() {\r\n        const dateInput = this.jqDateInputs.eq(0);\r\n\r\n        this.datepickerInstance = dateInput.datepicker({\r\n            position: 'bottom left',\r\n            navTitles: {\r\n                days: 'MM yyyy',\r\n            },\r\n            onShow: function (dp, animationCompleted) {\r\n                if (!animationCompleted) {\r\n                    if (!dp.$datepicker.find('.date-input__buttons').html()) {\r\n                        dp.$datepicker.append(\r\n                            '<div class=\"date-input__buttons\">' +\r\n                            '<p class=\"date-input__clear-button\">очистить</p>' +\r\n                            '<p class=\"date-input__apply-button\">применить</p>' +\r\n                            '</div>'\r\n                        );\r\n                        dp.$datepicker.find('.date-input__clear-button').click(function (event) {\r\n                            dp.clear();\r\n                        });\r\n                        dp.$datepicker.find('.date-input__apply-button').click(function (event) {\r\n                            dp.hide();\r\n                        });\r\n\r\n                        dp.$datepicker.find('.datepicker--pointer').css(\"display\", \"none\");\r\n                    }\r\n                }\r\n            },\r\n        }).data('datepicker');\r\n        /* this.datepickerInstance.show();\r\n        this.datepickerInstance.hide(); */\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (DateInput);\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=webpack:///./src/components/FormElements.DateInput/DateInput.js?");
-
-/***/ }),
-
-/***/ "./src/components/FormElements.Dropdown/Dropdown.js":
+/***/ "./src/components/colored-logo/img/colored-logo.svg":
 /*!**********************************************************!*\
-  !*** ./src/components/FormElements.Dropdown/Dropdown.js ***!
+  !*** ./src/components/colored-logo/img/colored-logo.svg ***!
   \**********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ListItem__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ListItem */ \"./src/components/FormElements.Dropdown/ListItem.js\");\n\r\n\r\nclass Dropdown {\r\n    constructor(outerContainerElement) {\r\n        this.containerElement = outerContainerElement.querySelector(\".dropdown\");\r\n\r\n        this.withTotalValue = (this.containerElement.matches(\".dropdown__with-total-value\") ? true : false);\r\n        this.totalValue = 0;\r\n\r\n        this.inputContainer = this.containerElement.querySelector(\".dropdown__input-container\");\r\n        this.borderRadius = this.inputContainer.style.borderTopLeftRadius;\r\n        this.input = this.containerElement.querySelector(\".dropdown__input\");\r\n        this.inputDefaultValue = this.inputContainer.dataset.defaultValue;\r\n        this.dropdownArrow = this.containerElement.querySelector(\".dropdown__dropdown-arrow\");\r\n\r\n        this.dropdownListElement = this.containerElement.querySelector(\".dropdown__droped-list\");\r\n        this.dropdownList = Array.from(this.dropdownListElement.querySelectorAll(\".dropdown__list-item\"))\r\n            .map((itemElement) => new _ListItem__WEBPACK_IMPORTED_MODULE_0__[\"default\"](this, itemElement));\r\n\r\n\r\n        this.clearButton = this.containerElement.querySelector(\".dropdown__clear-button\");\r\n        this.applyButton = this.containerElement.querySelector(\".dropdown__apply-button\");\r\n\r\n        this._handlerDropdownClick = this._handlerDropdownClick.bind(this);\r\n        this._handlerDropdownEnter = this._handlerDropdownEnter.bind(this);\r\n        this._handlerDropdownLeave = this._handlerDropdownLeave.bind(this);\r\n\r\n        this._handlerClear = this._handlerClear.bind(this);\r\n        this._handlerApply = this._handlerApply.bind(this);\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        this.input.onclick = this._handlerDropdownClick;\r\n        this.dropdownArrow.onclick = this._handlerDropdownClick;\r\n        // если обработчик выше повесить на контейнер, то дропдаун будет закрываться при клике по нему, т.к. находится в контейнере\r\n\r\n        if (this.clearButton) {\r\n            this.clearButton.style.display = \"none\";\r\n            this.clearButton.onclick = this._handlerClear;\r\n        }\r\n\r\n        if (this.applyButton) this.applyButton.onclick = this._handlerApply;\r\n    }\r\n\r\n    changeDropdownInputValue() {\r\n        let babiesCount = 0;\r\n        const sum = this.dropdownList.reduce((sum, item) => {\r\n            const itemText = item.name.textContent;\r\n            if (itemText.toLowerCase() !== \"младенцы\") {\r\n                return sum + Number.parseInt(item.value.textContent);\r\n            } else {\r\n                babiesCount = Number.parseInt(item.value.textContent);\r\n                return sum;\r\n            }\r\n        }, 0);\r\n\r\n        if (this.withTotalValue) {\r\n            if (babiesCount !== 0) {\r\n                const mainText = `${sum} ${this.doDeclensionOfWord(sum, \"гость\")}`;\r\n                const fullText = `${mainText}, ${babiesCount} ${this.doDeclensionOfWord(babiesCount, \"младенец\")}`;\r\n                this.input.value = fullText;\r\n            } else {\r\n                this.input.value = `${sum} ${this.doDeclensionOfWord(sum, \"гость\")}`;\r\n            }\r\n            this.totalValue = sum;\r\n        } else {\r\n            const result = this.dropdownList.reduce((fullString, item, index) => {\r\n                const itemName = item.name.textContent;\r\n                const itemValue = Number.parseInt(item.value.textContent);\r\n\r\n                if (index !== this.dropdownList.length - 1) {\r\n                    return `${fullString}${itemValue} ${this.doDeclensionOfWord(itemValue, itemName)}, `;\r\n                } else {\r\n                    return `${fullString}${itemValue} ${this.doDeclensionOfWord(itemValue, itemName)}`;\r\n                }\r\n            }, \"\");\r\n            this.input.value = result;\r\n        }\r\n    }\r\n\r\n    //склонение слов\r\n    doDeclensionOfWord(number, word) {\r\n        let words;\r\n        if (word === \"гость\") words = [\"гость\", \"гостя\", \"гостей\"];\r\n        else if (word === \"спальни\") words = [\"спальня\", \"спальни\", \"спален\"];\r\n        else if (word === \"кровати\") words = [\"кровать\", \"кровати\", \"кроватей\"];\r\n        else if (word === \"ванные комнаты\") words = [\"ванная комната\", \"ванные комнаты\", \"ванных комнат\"];\r\n        else if (word === \"младенец\") words = [\"младенец\", \"младенца\", \"младенцев\"];\r\n\r\n        if (number.toString()[number.toString().length - 1] === \"1\" && number !== 11)\r\n            return words[0];\r\n        else if ((number.toString()[number.toString().length - 1] > 1 && number.toString()[number.toString().length - 1] <= 4)\r\n            && (number < 12 || number > 14))\r\n            return words[1];\r\n        else\r\n            return words[2];\r\n    }\r\n\r\n    _handlerDropdownClick() {\r\n        if (this.dropdownListElement.style.display === \"none\") {\r\n            this.inputContainer.style.borderBottomLeftRadius = \"0px\";\r\n            this.inputContainer.style.borderBottomRightRadius = \"0px\";\r\n            this.dropdownListElement.style.display = \"flex\";\r\n        }\r\n        else {\r\n            this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;\r\n            this.inputContainer.style.borderBottomRightRadius = this.borderRadius;\r\n            this.dropdownListElement.style.display = \"none\";\r\n        }\r\n    }\r\n\r\n    _handlerDropdownEnter() {\r\n        if (this.dropdownListElement.style.display === \"none\") {\r\n            this.inputContainer.style.borderBottomLeftRadius = \"0px\";\r\n            this.inputContainer.style.borderBottomRightRadius = \"0px\";\r\n            this.dropdownListElement.style.display = \"flex\";\r\n        }\r\n    }\r\n\r\n    _handlerDropdownLeave() {\r\n        if (this.dropdownListElement.style.display === \"flex\") {\r\n            this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;\r\n            this.inputContainer.style.borderBottomRightRadius = this.borderRadius;\r\n            this.dropdownListElement.style.display = \"none\";\r\n        }\r\n    }\r\n\r\n    _handlerClear() {\r\n        this.clearButton.style.display = \"none\";\r\n\r\n        this.input.value = this.inputDefaultValue;\r\n        this.dropdownList.forEach(item => {\r\n            item.value.textContent = \"0\";\r\n            item.minus.style.opacity = 0.38;\r\n        });\r\n    }\r\n\r\n    _handlerApply() {\r\n        this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;\r\n        this.inputContainer.style.borderBottomRightRadius = this.borderRadius;\r\n        this.dropdownListElement.style.display = \"none\";\r\n\r\n        this.changeDropdownInputValue();\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Dropdown);\r\n\r\n\n\n//# sourceURL=webpack:///./src/components/FormElements.Dropdown/Dropdown.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/colored-logo/img/colored-logo.svg\");\n\n//# sourceURL=webpack:///./src/components/colored-logo/img/colored-logo.svg?");
 
 /***/ }),
 
-/***/ "./src/components/FormElements.Dropdown/ListItem.js":
-/*!**********************************************************!*\
-  !*** ./src/components/FormElements.Dropdown/ListItem.js ***!
-  \**********************************************************/
+/***/ "./src/components/dropdown/dropdown.js":
+/*!*********************************************!*\
+  !*** ./src/components/dropdown/dropdown.js ***!
+  \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nclass ListItem {\r\n    constructor(dropdown, containerElement) {\r\n        this.dropdown = dropdown;\r\n        this.containerElement = containerElement;\r\n\r\n        this.name = this.containerElement.querySelector(\".dropdown__item-name\");\r\n        this.value = this.containerElement.querySelector(\".dropdown__item-value\");\r\n        this.plus = this.containerElement.querySelector(\".dropdown__item-plus\");\r\n        this.minus = this.containerElement.querySelector(\".dropdown__item-minus\");\r\n\r\n        this._handlerDropdownItemPlus = this._handlerDropdownItemPlus.bind(this);\r\n        this._handlerDropdownItemMinus = this._handlerDropdownItemMinus.bind(this);\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        //e.addEventListener(\"click\", handlerDropdownItemPlus);\r\n        this.plus.onclick = this._handlerDropdownItemPlus;\r\n        this.minus.onclick = this._handlerDropdownItemMinus;\r\n    }\r\n\r\n    _handlerDropdownItemPlus(event) {\r\n        event.preventDefault();\r\n\r\n        let curValue = Number.parseInt(this.value.textContent);\r\n        curValue += 1;\r\n        if (curValue !== 0)\r\n            this.minus.style.opacity = 1;\r\n        this.value.textContent = curValue.toString();\r\n\r\n        if (this.dropdown.clearButton) {\r\n            this.dropdown.clearButton.style.display = \"flex\";\r\n        }\r\n\r\n        this.dropdown.changeDropdownInputValue();\r\n    }\r\n\r\n    _handlerDropdownItemMinus(event) {\r\n        event.preventDefault();\r\n\r\n        let curValue = Number.parseInt(this.value.textContent);\r\n        curValue -= 1;\r\n        if (curValue < 0) curValue = 0;\r\n\r\n        this.value.textContent = curValue.toString();\r\n\r\n        if (curValue === 0) {\r\n            event.currentTarget.style.opacity = 0.38;\r\n\r\n            //проверка на наличие нулей в значениях всех элементов выпадающего списка\r\n            const values = this.dropdown.dropdownList.map(item => item.value);\r\n            const absoluteSum = values.reduce((sum, value) => {\r\n                return sum + Math.abs(Number.parseInt(value.textContent));\r\n            }, 0);\r\n\r\n            if (absoluteSum === 0) {\r\n                if (this.dropdown.clearButton) {\r\n                    this.dropdown.clearButton.style.display = \"none\";\r\n                }\r\n            }\r\n        }\r\n\r\n        this.dropdown.changeDropdownInputValue();\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (ListItem);\r\n\n\n//# sourceURL=webpack:///./src/components/FormElements.Dropdown/ListItem.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _list_item__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list-item */ \"./src/components/dropdown/list-item.js\");\n\r\n\r\nclass Dropdown {\r\n    constructor(outerContainerElement) {\r\n        this.containerElement = outerContainerElement.querySelector(\".dropdown\");\r\n\r\n        this.withTotalValue = (this.containerElement.matches(\".dropdown__with-total-value\") ? true : false);\r\n        this.totalValue = 0;\r\n\r\n        this.inputContainer = this.containerElement.querySelector(\".dropdown__input-container\");\r\n        this.borderRadius = this.inputContainer.style.borderTopLeftRadius;\r\n        this.input = this.containerElement.querySelector(\".dropdown__input\");\r\n        this.inputDefaultValue = this.inputContainer.dataset.defaultValue;\r\n        this.dropdownArrow = this.containerElement.querySelector(\".dropdown__dropdown-arrow\");\r\n\r\n        this.dropdownListElement = this.containerElement.querySelector(\".dropdown__droped-list\");\r\n        this.dropdownList = Array.from(this.dropdownListElement.querySelectorAll(\".dropdown__list-item\"))\r\n            .map((itemElement) => new _list_item__WEBPACK_IMPORTED_MODULE_0__[\"default\"](this, itemElement));\r\n\r\n\r\n        this.clearButton = this.containerElement.querySelector(\".dropdown__clear-button\");\r\n        this.applyButton = this.containerElement.querySelector(\".dropdown__apply-button\");\r\n\r\n        this._handlerDropdownClick = this._handlerDropdownClick.bind(this);\r\n        this._handlerDropdownEnter = this._handlerDropdownEnter.bind(this);\r\n        this._handlerDropdownLeave = this._handlerDropdownLeave.bind(this);\r\n\r\n        this._handlerClear = this._handlerClear.bind(this);\r\n        this._handlerApply = this._handlerApply.bind(this);\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        this.input.onclick = this._handlerDropdownClick;\r\n        this.dropdownArrow.onclick = this._handlerDropdownClick;\r\n        // если обработчик выше повесить на контейнер, то дропдаун будет закрываться при клике по нему, т.к. находится в контейнере\r\n\r\n        if (this.clearButton) {\r\n            this.clearButton.style.display = \"none\";\r\n            this.clearButton.onclick = this._handlerClear;\r\n        }\r\n\r\n        if (this.applyButton) this.applyButton.onclick = this._handlerApply;\r\n    }\r\n\r\n    changeDropdownInputValue() {\r\n        let babiesCount = 0;\r\n        const sum = this.dropdownList.reduce((sum, item) => {\r\n            const itemText = item.name.textContent;\r\n            if (itemText.toLowerCase() !== \"младенцы\") {\r\n                return sum + Number.parseInt(item.value.textContent);\r\n            } else {\r\n                babiesCount = Number.parseInt(item.value.textContent);\r\n                return sum;\r\n            }\r\n        }, 0);\r\n\r\n        if (this.withTotalValue) {\r\n            if (babiesCount !== 0) {\r\n                const mainText = `${sum} ${this.doDeclensionOfWord(sum, \"гость\")}`;\r\n                const fullText = `${mainText}, ${babiesCount} ${this.doDeclensionOfWord(babiesCount, \"младенец\")}`;\r\n                this.input.value = fullText;\r\n            } else {\r\n                this.input.value = `${sum} ${this.doDeclensionOfWord(sum, \"гость\")}`;\r\n            }\r\n            this.totalValue = sum;\r\n        } else {\r\n            const result = this.dropdownList.reduce((fullString, item, index) => {\r\n                const itemName = item.name.textContent;\r\n                const itemValue = Number.parseInt(item.value.textContent);\r\n\r\n                if (index !== this.dropdownList.length - 1) {\r\n                    return `${fullString}${itemValue} ${this.doDeclensionOfWord(itemValue, itemName)}, `;\r\n                } else {\r\n                    return `${fullString}${itemValue} ${this.doDeclensionOfWord(itemValue, itemName)}`;\r\n                }\r\n            }, \"\");\r\n            this.input.value = result;\r\n        }\r\n    }\r\n\r\n    //склонение слов\r\n    doDeclensionOfWord(number, word) {\r\n        let words;\r\n        if (word === \"гость\") words = [\"гость\", \"гостя\", \"гостей\"];\r\n        else if (word === \"спальни\") words = [\"спальня\", \"спальни\", \"спален\"];\r\n        else if (word === \"кровати\") words = [\"кровать\", \"кровати\", \"кроватей\"];\r\n        else if (word === \"ванные комнаты\") words = [\"ванная комната\", \"ванные комнаты\", \"ванных комнат\"];\r\n        else if (word === \"младенец\") words = [\"младенец\", \"младенца\", \"младенцев\"];\r\n\r\n        if (number.toString()[number.toString().length - 1] === \"1\" && number !== 11)\r\n            return words[0];\r\n        else if ((number.toString()[number.toString().length - 1] > 1 && number.toString()[number.toString().length - 1] <= 4)\r\n            && (number < 12 || number > 14))\r\n            return words[1];\r\n        else\r\n            return words[2];\r\n    }\r\n\r\n    _handlerDropdownClick() {\r\n        if (this.dropdownListElement.style.display === \"none\") {\r\n            this.inputContainer.style.borderBottomLeftRadius = \"0px\";\r\n            this.inputContainer.style.borderBottomRightRadius = \"0px\";\r\n            this.dropdownListElement.style.display = \"flex\";\r\n        }\r\n        else {\r\n            this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;\r\n            this.inputContainer.style.borderBottomRightRadius = this.borderRadius;\r\n            this.dropdownListElement.style.display = \"none\";\r\n        }\r\n    }\r\n\r\n    _handlerDropdownEnter() {\r\n        if (this.dropdownListElement.style.display === \"none\") {\r\n            this.inputContainer.style.borderBottomLeftRadius = \"0px\";\r\n            this.inputContainer.style.borderBottomRightRadius = \"0px\";\r\n            this.dropdownListElement.style.display = \"flex\";\r\n        }\r\n    }\r\n\r\n    _handlerDropdownLeave() {\r\n        if (this.dropdownListElement.style.display === \"flex\") {\r\n            this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;\r\n            this.inputContainer.style.borderBottomRightRadius = this.borderRadius;\r\n            this.dropdownListElement.style.display = \"none\";\r\n        }\r\n    }\r\n\r\n    _handlerClear() {\r\n        this.clearButton.style.display = \"none\";\r\n\r\n        this.input.value = this.inputDefaultValue;\r\n        this.dropdownList.forEach(item => {\r\n            item.value.textContent = \"0\";\r\n            item.minus.style.opacity = 0.38;\r\n        });\r\n    }\r\n\r\n    _handlerApply() {\r\n        this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;\r\n        this.inputContainer.style.borderBottomRightRadius = this.borderRadius;\r\n        this.dropdownListElement.style.display = \"none\";\r\n\r\n        this.changeDropdownInputValue();\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Dropdown);\r\n\r\n\n\n//# sourceURL=webpack:///./src/components/dropdown/dropdown.js?");
 
 /***/ }),
 
-/***/ "./src/components/FormElements.GuestRoomReviews/img/image1.png":
-/*!*********************************************************************!*\
-  !*** ./src/components/FormElements.GuestRoomReviews/img/image1.png ***!
-  \*********************************************************************/
+/***/ "./src/components/dropdown/list-item.js":
+/*!**********************************************!*\
+  !*** ./src/components/dropdown/list-item.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/FormElements.GuestRoomReviews/img/image1.png\");\n\n//# sourceURL=webpack:///./src/components/FormElements.GuestRoomReviews/img/image1.png?");
+eval("__webpack_require__.r(__webpack_exports__);\nclass ListItem {\r\n    constructor(dropdown, containerElement) {\r\n        this.dropdown = dropdown;\r\n        this.containerElement = containerElement;\r\n\r\n        this.name = this.containerElement.querySelector(\".dropdown__item-name\");\r\n        this.value = this.containerElement.querySelector(\".dropdown__item-value\");\r\n        this.plus = this.containerElement.querySelector(\".dropdown__item-plus\");\r\n        this.minus = this.containerElement.querySelector(\".dropdown__item-minus\");\r\n\r\n        this._handlerDropdownItemPlus = this._handlerDropdownItemPlus.bind(this);\r\n        this._handlerDropdownItemMinus = this._handlerDropdownItemMinus.bind(this);\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        //e.addEventListener(\"click\", handlerDropdownItemPlus);\r\n        this.plus.onclick = this._handlerDropdownItemPlus;\r\n        this.minus.onclick = this._handlerDropdownItemMinus;\r\n    }\r\n\r\n    _handlerDropdownItemPlus(event) {\r\n        event.preventDefault();\r\n\r\n        let curValue = Number.parseInt(this.value.textContent);\r\n        curValue += 1;\r\n        if (curValue !== 0)\r\n            this.minus.style.opacity = 1;\r\n        this.value.textContent = curValue.toString();\r\n\r\n        if (this.dropdown.clearButton) {\r\n            this.dropdown.clearButton.style.display = \"flex\";\r\n        }\r\n\r\n        this.dropdown.changeDropdownInputValue();\r\n    }\r\n\r\n    _handlerDropdownItemMinus(event) {\r\n        event.preventDefault();\r\n\r\n        let curValue = Number.parseInt(this.value.textContent);\r\n        curValue -= 1;\r\n        if (curValue < 0) curValue = 0;\r\n\r\n        this.value.textContent = curValue.toString();\r\n\r\n        if (curValue === 0) {\r\n            event.currentTarget.style.opacity = 0.38;\r\n\r\n            //проверка на наличие нулей в значениях всех элементов выпадающего списка\r\n            const values = this.dropdown.dropdownList.map(item => item.value);\r\n            const absoluteSum = values.reduce((sum, value) => {\r\n                return sum + Math.abs(Number.parseInt(value.textContent));\r\n            }, 0);\r\n\r\n            if (absoluteSum === 0) {\r\n                if (this.dropdown.clearButton) {\r\n                    this.dropdown.clearButton.style.display = \"none\";\r\n                }\r\n            }\r\n        }\r\n\r\n        this.dropdown.changeDropdownInputValue();\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (ListItem);\r\n\n\n//# sourceURL=webpack:///./src/components/dropdown/list-item.js?");
 
 /***/ }),
 
-/***/ "./src/components/FormElements.GuestRoomReviews/img/image2.png":
-/*!*********************************************************************!*\
-  !*** ./src/components/FormElements.GuestRoomReviews/img/image2.png ***!
-  \*********************************************************************/
+/***/ "./src/components/logo/img/logo.svg":
+/*!******************************************!*\
+  !*** ./src/components/logo/img/logo.svg ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/FormElements.GuestRoomReviews/img/image2.png\");\n\n//# sourceURL=webpack:///./src/components/FormElements.GuestRoomReviews/img/image2.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/logo/img/logo.svg\");\n\n//# sourceURL=webpack:///./src/components/logo/img/logo.svg?");
 
 /***/ }),
 
-/***/ "./src/components/FormElements.PieChart/PieChart.js":
-/*!**********************************************************!*\
-  !*** ./src/components/FormElements.PieChart/PieChart.js ***!
-  \**********************************************************/
-/*! exports provided: pieChartScript */
+/***/ "./src/components/pie-chart/pie-chart.js":
+/*!***********************************************!*\
+  !*** ./src/components/pie-chart/pie-chart.js ***!
+  \***********************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"pieChartScript\", function() { return pieChartScript; });\n/* harmony import */ var apexcharts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! apexcharts */ \"./node_modules/apexcharts/dist/apexcharts.esm.js\");\n/* harmony import */ var _PieChart_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PieChart.scss */ \"./src/components/FormElements.PieChart/PieChart.scss\");\n/* harmony import */ var _PieChart_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_PieChart_scss__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\nfunction pieChartScript() {\r\n    let options = {\r\n        chart: {\r\n            offsetX: 0,\r\n            type: 'donut',\r\n            height: \"150px\",\r\n            width: \"150px\",\r\n        },\r\n        dataLabels: {\r\n            enabled: false,\r\n        },\r\n        legend: {\r\n            show: false,\r\n        },\r\n        series: [25, 25, 50, 0],\r\n        labels: ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован'],\r\n        plotOptions: {\r\n            pie: {\r\n                donut: {\r\n                    size: \"112px\",\r\n                }\r\n            },\r\n        },\r\n        colors: ['#BC9CFF', '#6FCF97', '#FFE39C', '#919191'],\r\n        fill: {\r\n            type: 'gradient',\r\n            gradient: {\r\n                //type: \"diagonal2\",\r\n                gradientToColors: [\"#8BA4F9\", \"#66D2EA\", \"#FFBA9C\", \"#3D4975\"],\r\n                stops: [80, 100]\r\n            },\r\n        },\r\n    }\r\n\r\n    let chart = new apexcharts__WEBPACK_IMPORTED_MODULE_0__[\"default\"](document.querySelector(\".pie-chart .pie-chart__pie\"), options);\r\n\r\n    chart.render();\r\n}\r\n\r\n\n\n//# sourceURL=webpack:///./src/components/FormElements.PieChart/PieChart.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var apexcharts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! apexcharts */ \"./node_modules/apexcharts/dist/apexcharts.esm.js\");\n\r\n\r\nclass PieChart {\r\n    constructor(outerContainerElement) {\r\n        this.containerElement = outerContainerElement.querySelector(\".pie-chart .pie-chart__pie\");\r\n        this.chart = {};\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        const options = {\r\n            chart: {\r\n                offsetX: 0,\r\n                type: 'donut',\r\n                height: \"150px\",\r\n                width: \"150px\",\r\n            },\r\n            dataLabels: {\r\n                enabled: false,\r\n            },\r\n            legend: {\r\n                show: false,\r\n            },\r\n            series: [25, 25, 50, 0],\r\n            labels: ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован'],\r\n            plotOptions: {\r\n                pie: {\r\n                    donut: {\r\n                        size: \"112px\",\r\n                    }\r\n                },\r\n            },\r\n            colors: ['#BC9CFF', '#6FCF97', '#FFE39C', '#919191'],\r\n            fill: {\r\n                type: 'gradient',\r\n                gradient: {\r\n                    gradientToColors: [\"#8BA4F9\", \"#66D2EA\", \"#FFBA9C\", \"#3D4975\"],\r\n                    stops: [80, 100]\r\n                },\r\n            },\r\n        }\r\n\r\n        this.chart = new apexcharts__WEBPACK_IMPORTED_MODULE_0__[\"default\"](this.containerElement, options);\r\n        this.chart.render();\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (PieChart);\r\n\n\n//# sourceURL=webpack:///./src/components/pie-chart/pie-chart.js?");
 
 /***/ }),
 
-/***/ "./src/components/FormElements.PieChart/PieChart.scss":
-/*!************************************************************!*\
-  !*** ./src/components/FormElements.PieChart/PieChart.scss ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./src/components/price-calculation-form/price-calculation-form.js":
+/*!*************************************************************************!*\
+  !*** ./src/components/price-calculation-form/price-calculation-form.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./PieChart.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/FormElements.PieChart/PieChart.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/components/FormElements.PieChart/PieChart.scss?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dropdown_dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../dropdown/dropdown */ \"./src/components/dropdown/dropdown.js\");\n/* harmony import */ var _calendar_calendar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../calendar/calendar */ \"./src/components/calendar/calendar.js\");\n\r\n\r\n\r\nclass PriceCalculationForm {\r\n    constructor(outerContainerElement) {\r\n        this.containerElement = outerContainerElement.querySelector(\".price-calculation-form\");\r\n\r\n        this.mainSum = this.containerElement.querySelector(\".price-calculation-form__main-sum\");\r\n        this.mainSumFormula = this.containerElement.querySelector(\".price-calculation-form__main-sum-formula\");\r\n        this.mainSumValue = this.containerElement.querySelector(\".price-calculation-form__main-sum-result\");\r\n        this.services = this.containerElement.querySelector(\".price-calculation-form__services\");\r\n        this.additionalServicesValue = this.containerElement.querySelector(\".price-calculation-form__additional-services-value\");\r\n        this.totalResultValue = this.containerElement.querySelector(\".price-calculation-form__total-result-value\");\r\n\r\n        const dropdownContainer = this.containerElement.querySelector(\".price-calculation-form__dropdown\");\r\n        this.dropdown = new _dropdown_dropdown__WEBPACK_IMPORTED_MODULE_0__[\"default\"](dropdownContainer);\r\n\r\n        const calendarContainer = this.containerElement.querySelector(\".price-calculation-form__calendar\");\r\n        this.calendar = new _calendar_calendar__WEBPACK_IMPORTED_MODULE_1__[\"default\"](calendarContainer);\r\n\r\n        this.roomRentalPrice = Number.parseInt(this.mainSum.dataset.value);\r\n        this.currencyType = this.mainSum.dataset.currencyType;\r\n        this.discountValue = Number.parseInt(this.services.dataset.value);\r\n        this.totalSum = 0;\r\n        this.servicesSum = 0;\r\n        this.roomRentalSum = 0;\r\n\r\n        this.handlerDropdownInputChange = this.handlerDropdownInputChange.bind(this);\r\n        this.getHandlerSelectWrapper = this.getHandlerSelectWrapper.bind(this);\r\n        this.getHandlerClearClickWrapper = this.getHandlerClearClickWrapper.bind(this);\r\n        this.setTotalPrice = this.setTotalPrice.bind(this);\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        this.dropdown.dropdownList.forEach(item => {\r\n            item.minus.addEventListener(\"click\", this.handlerDropdownInputChange);\r\n            item.plus.addEventListener(\"click\", this.handlerDropdownInputChange);\r\n        });\r\n\r\n\r\n        const datepicker = this.calendar.datepickerInstance;\r\n        const oldHandlerSelect = datepicker.selectDate;\r\n        datepicker.selectDate = this.getHandlerSelectWrapper(oldHandlerSelect.bind(datepicker));\r\n\r\n        const clearButton = datepicker.$datepicker[0].querySelector(\".calendar__clear-button\");\r\n        const oldOnClear = clearButton.onclick;\r\n        clearButton.onclick = this.getHandlerClearClickWrapper(oldOnClear);\r\n    }\r\n\r\n    handlerDropdownInputChange() {\r\n        this.servicesSum = this.dropdown.totalValue * 100;\r\n        this.additionalServicesValue.textContent = `${this.formateNumber(this.servicesSum)}${this.currencyType}`;\r\n\r\n        this.setTotalPrice();\r\n    }\r\n\r\n    getHandlerSelectWrapper(oldHandler) {\r\n        return function (date) {\r\n            oldHandler(date);\r\n\r\n            const firstDateInput = this.calendar.jqDateInputs.eq(0);\r\n            const secondDateInput = this.calendar.jqDateInputs.eq(1);\r\n            const firstDateValue = firstDateInput[0].value;\r\n            const secondDateValue = secondDateInput[0].value;\r\n            if (firstDateValue && secondDateValue) {\r\n                const firstDateStrings = firstDateValue.split(\".\");\r\n                const firstDate = new Date(firstDateStrings[2], firstDateStrings[1], firstDateStrings[0]);\r\n                const secondDateStrings = secondDateValue.split(\".\");\r\n                const secondDate = new Date(secondDateStrings[2], secondDateStrings[1], secondDateStrings[0]);\r\n                const dDate = Math.abs(secondDate - firstDate);\r\n                const daysCount = dDate / (1000 * 60 * 60 * 24);\r\n\r\n                const splittedText = this.mainSumFormula.textContent.split(\"x\");\r\n                splittedText[1] = ` ${daysCount} ${this.doDeclensionOfWord(daysCount)}`;\r\n                this.mainSumFormula.textContent = splittedText.join(\"x\");\r\n\r\n                this.roomRentalSum = daysCount * this.roomRentalPrice;\r\n                this.mainSumValue.textContent = `${this.formateNumber(this.roomRentalSum)}${this.currencyType}`;\r\n\r\n                this.setTotalPrice();\r\n            }\r\n        }.bind(this);\r\n    }\r\n\r\n    getHandlerClearClickWrapper(oldHandler) {\r\n        return function (event) {\r\n            oldHandler(event);\r\n\r\n            this.roomRentalSum = 0;\r\n\r\n            this.setTotalPrice();\r\n        }.bind(this);\r\n    }\r\n\r\n    setTotalPrice() {\r\n        this.totalSum = this.servicesSum + this.roomRentalSum - this.discountValue;\r\n        if (this.totalSum < 0) this.totalSum = 0;\r\n        this.totalResultValue.textContent = `${this.formateNumber(this.totalSum)}${this.currencyType}`;\r\n    }\r\n\r\n    formateNumber(number) {\r\n        return number.toString().replace(/(\\d)(?=(\\d{3})+$)/g, '$1 ');\r\n    }\r\n\r\n    doDeclensionOfWord(number) {\r\n        const words = [\"сутки\", \"суток\", \"суток\"];\r\n\r\n        if (number.toString()[number.toString().length - 1] === \"1\" && number !== 11)\r\n            return words[0];\r\n        else if ((number.toString()[number.toString().length - 1] > 1 && number.toString()[number.toString().length - 1] <= 4)\r\n            && (number < 12 || number > 14))\r\n            return words[1];\r\n        else\r\n            return words[2];\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (PriceCalculationForm);\r\n\n\n//# sourceURL=webpack:///./src/components/price-calculation-form/price-calculation-form.js?");
 
 /***/ }),
 
-/***/ "./src/components/GlobalLogo/img/logo.svg":
+/***/ "./src/components/room-info/img/test1.png":
 /*!************************************************!*\
-  !*** ./src/components/GlobalLogo/img/logo.svg ***!
+  !*** ./src/components/room-info/img/test1.png ***!
   \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/GlobalLogo/img/logo.svg\");\n\n//# sourceURL=webpack:///./src/components/GlobalLogo/img/logo.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test1.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test1.png?");
 
 /***/ }),
 
-/***/ "./src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg":
-/*!********************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg ***!
-  \********************************************************************/
+/***/ "./src/components/room-info/img/test11.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test11.png ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.ColoredLogo/img/TOXIN.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test11.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test11.png?");
 
 /***/ }),
 
-/***/ "./src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg":
-/*!**************************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg ***!
-  \**************************************************************************/
+/***/ "./src/components/room-info/img/test110.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test110.png ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.ColoredLogo/img/coloredLogo.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test110.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test110.png?");
 
 /***/ }),
 
-/***/ "./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg":
-/*!***************************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg ***!
-  \***************************************************************************/
+/***/ "./src/components/room-info/img/test120.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test120.png ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.SocialMedia/img/facebookIcon.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test120.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test120.png?");
 
 /***/ }),
 
-/***/ "./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg":
-/*!****************************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg ***!
-  \****************************************************************************/
+/***/ "./src/components/room-info/img/test130.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test130.png ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.SocialMedia/img/instagramIcon.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test130.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test130.png?");
 
 /***/ }),
 
-/***/ "./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg":
-/*!**************************************************************************!*\
-  !*** ./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg ***!
-  \**************************************************************************/
+/***/ "./src/components/room-info/img/test2.png":
+/*!************************************************!*\
+  !*** ./src/components/room-info/img/test2.png ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg\");\n\n//# sourceURL=webpack:///./src/components/HeadersAndFooters.SocialMedia/img/twitterIcon.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test2.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test2.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test22.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test22.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test22.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test22.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test3.png":
+/*!************************************************!*\
+  !*** ./src/components/room-info/img/test3.png ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test3.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test3.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test33.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test33.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test33.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test33.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test4.png":
+/*!************************************************!*\
+  !*** ./src/components/room-info/img/test4.png ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test4.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test4.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test44.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test44.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test44.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test44.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test55.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test55.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test55.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test55.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test66.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test66.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test66.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test66.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test77.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test77.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test77.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test77.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test88.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test88.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test88.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test88.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test99.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test99.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test99.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test99.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-reviews/img/image1.png":
+/*!****************************************************!*\
+  !*** ./src/components/room-reviews/img/image1.png ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-reviews/img/image1.png\");\n\n//# sourceURL=webpack:///./src/components/room-reviews/img/image1.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-reviews/img/image2.png":
+/*!****************************************************!*\
+  !*** ./src/components/room-reviews/img/image2.png ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-reviews/img/image2.png\");\n\n//# sourceURL=webpack:///./src/components/room-reviews/img/image2.png?");
+
+/***/ }),
+
+/***/ "./src/components/social-media/img/facebook-icon.svg":
+/*!***********************************************************!*\
+  !*** ./src/components/social-media/img/facebook-icon.svg ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/social-media/img/facebook-icon.svg\");\n\n//# sourceURL=webpack:///./src/components/social-media/img/facebook-icon.svg?");
+
+/***/ }),
+
+/***/ "./src/components/social-media/img/instagram-icon.svg":
+/*!************************************************************!*\
+  !*** ./src/components/social-media/img/instagram-icon.svg ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/social-media/img/instagram-icon.svg\");\n\n//# sourceURL=webpack:///./src/components/social-media/img/instagram-icon.svg?");
+
+/***/ }),
+
+/***/ "./src/components/social-media/img/twitter-icon.svg":
+/*!**********************************************************!*\
+  !*** ./src/components/social-media/img/twitter-icon.svg ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/social-media/img/twitter-icon.svg\");\n\n//# sourceURL=webpack:///./src/components/social-media/img/twitter-icon.svg?");
 
 /***/ }),
 
@@ -761,7 +739,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_FormElements_PieChart_PieChart_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/FormElements.PieChart/PieChart.js */ \"./src/components/FormElements.PieChart/PieChart.js\");\n/* harmony import */ var _components_Cards_priceCalculationForm_PriceCalculationForm_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/Cards.priceCalculationForm/PriceCalculationForm.js */ \"./src/components/Cards.priceCalculationForm/PriceCalculationForm.js\");\n/* harmony import */ var _RoomDetails_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RoomDetails.scss */ \"./src/pages/WebPages/RoomDetails/RoomDetails.scss\");\n/* harmony import */ var _RoomDetails_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_RoomDetails_scss__WEBPACK_IMPORTED_MODULE_3__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\n\r\n\r\nObject(_components_FormElements_PieChart_PieChart_js__WEBPACK_IMPORTED_MODULE_1__[\"pieChartScript\"])();\r\n\r\n\r\nObject(_components_Cards_priceCalculationForm_PriceCalculationForm_js__WEBPACK_IMPORTED_MODULE_2__[\"priceCalculationFormScript\"])();\r\n\r\n\n\n//# sourceURL=webpack:///./src/pages/WebPages/RoomDetails/RoomDetails.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_pie_chart_pie_chart__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/pie-chart/pie-chart */ \"./src/components/pie-chart/pie-chart.js\");\n/* harmony import */ var _components_price_calculation_form_price_calculation_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/price-calculation-form/price-calculation-form */ \"./src/components/price-calculation-form/price-calculation-form.js\");\n/* harmony import */ var _RoomDetails_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RoomDetails.scss */ \"./src/pages/WebPages/RoomDetails/RoomDetails.scss\");\n/* harmony import */ var _RoomDetails_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_RoomDetails_scss__WEBPACK_IMPORTED_MODULE_3__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\n\r\n\r\nconst pieChartContainer = document.querySelector(\".js-form-elements__pie-chart-container\");\r\nconst pieChart = new _components_pie_chart_pie_chart__WEBPACK_IMPORTED_MODULE_1__[\"default\"](pieChartContainer);\r\n\r\n\r\nconst priceCalculationFormContainer = document.querySelector(\".room-details__price-calculation-form-container\");\r\nconst priceCalculationForm = new _components_price_calculation_form_price_calculation_form__WEBPACK_IMPORTED_MODULE_2__[\"default\"](priceCalculationFormContainer);\r\n\r\n\n\n//# sourceURL=webpack:///./src/pages/WebPages/RoomDetails/RoomDetails.js?");
 
 /***/ }),
 

@@ -2,7 +2,6 @@ include ../../../components/header/header.pug
 include ../../../components/room-info/room-info.pug
 include ../../../components/calendar/calendar.pug
 include ../../../components/dropdown/dropdown.pug
-include ../../../components/FormElements.RangeSlider/RangeSlider.pug
 include ../../../components/checkbox-list/checkbox-list.pug
 include ../../../components/long-footer/long-footer.pug
 
@@ -47,17 +46,7 @@ html
                             width: "266px",
                         })
 
-                    div(class=["search-room__range-slider-container"])
-                        +getRangeSlider({
-                            title: "диапазон цены",
-                            firstValue: 5000,
-                            lastValue: 10000,
-                            minValue: 0,
-                            maxValue: 15000,
-                            valueType: "₽",
-                            valueRound: 100,
-                            subtitleText: "Стоимость за сутки пребывания в номере",
-                        })
+                    div(class=["search-room__range-slider-container js-search-room__range-slider-container"])
 
                     div(class=["search-room__checkbox-list-1-container"])
                         +checkbox-list({

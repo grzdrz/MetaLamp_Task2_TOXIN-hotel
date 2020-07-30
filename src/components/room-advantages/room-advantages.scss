@@ -1,4 +1,4 @@
-.room-details {
+.room-advantages {
     display: flex;
     flex-direction: column;
 
@@ -17,7 +17,7 @@
         }
     }
 
-    &__detail-container {
+    &__detail {
         display: flex;
         flex-direction: row;
     }
@@ -42,8 +42,8 @@
         margin-right: 10px;
     }
 
-    &__text-container {
-        display: flex;
+    &__text {
+        display: inline-flex;
         flex-direction: column;
     }
 

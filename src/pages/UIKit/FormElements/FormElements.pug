@@ -4,15 +4,14 @@ include ../../../components/dropdown/dropdown.pug
 include ../../../components/checkbox-list/checkbox-list.pug
 include ../../../components/radio/radio.pug
 include ../../../components/toggle/toggle.pug
-include ../../../components/FormElements.RateButton/RateButton.pug
+include ../../../components/star-rating/star-rating.pug
 include ../../../components/button/button.pug
-include ../../../components/FormElements.RangeSlider/RangeSlider.pug
 include ../../../components/bullet-list/bullet-list.pug
 include ../../../components/calendar/calendar.pug
 include ../../../components/like-button/like-button.pug
-include ../../../components/FormElements.RoomDetails/RoomDetails.pug
+include ../../../components/room-advantages/room-advantages.pug
 include ../../../components/room-reviews/room-reviews.pug
-include ../../../components/FormElements.PieChart/PieChart.pug
+include ../../../components/pie-chart/pie-chart.pug
 
 doctype html
 html
@@ -164,13 +163,13 @@ html
                         })
 
                     div(class=["form-elements__room-details-container-1"])
-                        +getRoomDetails({
-                            detailsArray: [
+                        +room-advantages({
+                            details: [
                                 {icon: "insert_emoticon", titleText: "Комфорт", mainText: "Шумопоглощающие стены",},
                                 {icon: "location_city", titleText: "Удобство", mainText: "Окно в каждой из спален",},
                                 {icon: "whatshot", titleText: "Уют", mainText: "Номер оснащён камином",},
                             ],
-                            hasLastBorderBottom: false,
+                            hasLastBorderBottom: true,
                         })
 
 
@@ -230,18 +229,18 @@ html
                         })
 
                     div(class=["form-elements__rate-button-container-1"])
-                        +getRateButton({
-                            blockNumber: "_rate_1",
+                        +star-rating({
+                            blockNumber: 1,
                             numberOfCheckedStar: 3,
                         })
                     div(class=["form-elements__rate-button-container-2"])
-                        +getRateButton({
-                            blockNumber: "_rate_2",
+                        +star-rating({
+                            blockNumber: 2,
                             numberOfCheckedStar: 1,
                         })             
                     div(class=["form-elements__rate-button-container-3"])
-                        +getRateButton({
-                            blockNumber: "_rate_3",
+                        +star-rating({
+                            blockNumber: 3,
                             numberOfCheckedStar: 0,
                         })
 
@@ -276,26 +275,8 @@ html
                         })  
 
                 div(class=["form-elements__column-3"]) 
-                    div(class=["form-elements__range-slider-container-1"])
-                        +getRangeSlider({
-                            title: "range slider",
-                            firstValue: 2000,
-                            lastValue: 6000,
-                            minValue: -1000,
-                            maxValue: 10000,
-                            valueType: "₽",
-                            valueRound: 100,
-                        })
-                    div(class=["form-elements__range-slider-container-2"])
-                        +getRangeSlider({
-                            title: "range slider",
-                            firstValue: 2000,
-                            lastValue: 6000,
-                            minValue: -50000,
-                            maxValue: 66666,
-                            valueType: "₽",
-                            valueRound: 100,
-                        })
+                    div(class=["form-elements__range-slider-container-1 js-form-elements__range-slider-container"])
+                    div(class=["form-elements__range-slider-container-2 js-form-elements__range-slider-container"])
 
                     div(class=["form-elements__button-container-1"])
                         +button({
@@ -403,8 +384,8 @@ html
                             ]
                         })
 
-                    div(class=["form-elements__pie-chart-container-1"])
-                        +getPieChart({
+                    div(class=["form-elements__pie-chart-container-1 js-form-elements__pie-chart-container"])
+                        +pie-chart({
                             totalValue: 260,
                             legends: ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"]
                         })

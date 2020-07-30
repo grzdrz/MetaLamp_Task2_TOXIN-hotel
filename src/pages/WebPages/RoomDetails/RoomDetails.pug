@@ -1,6 +1,6 @@
 include ../../../components/header/header.pug
-include ../../../components/FormElements.RoomDetails/RoomDetails.pug
-include ../../../components/FormElements.PieChart/PieChart.pug
+include ../../../components/room-advantages/room-advantages.pug
+include ../../../components/pie-chart/pie-chart.pug
 include ../../../components/bullet-list/bullet-list.pug
 include ../../../components/room-reviews/room-reviews.pug
 include ../../../components/price-calculation-form/price-calculation-form.pug
@@ -32,16 +32,16 @@ html
                 div(class=["room-details__room-info"])
                     div(class=["room-details__room-details-and-rating-pie-chart"])
                         div(class=["room-details__room-details-container"])
-                            +getRoomDetails({
-                                detailsArray: [
+                            +room-advantages({
+                                details: [
                                     {icon: "insert_emoticon", titleText: "Комфорт", mainText: "Шумопоглощающие стены",},
                                     {icon: "location_city", titleText: "Удобство", mainText: "Окно в каждой из спален",},
                                     {icon: "whatshot", titleText: "Уют", mainText: "Номер оснащён камином",},
                                 ],
                                 hasLastBorderBottom: false,
                             })
-                        div(class=["room-details__rating-pie-chart-container"])
-                            +getPieChart({
+                        div(class=["room-details__rating-pie-chart-container js-form-elements__pie-chart-container"])
+                            +pie-chart({
                                 totalValue: 260,
                                 legends: ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"]
                             })

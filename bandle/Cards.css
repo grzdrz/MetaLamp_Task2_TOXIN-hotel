@@ -2836,29 +2836,29 @@ body {
     width: 30.9375%;
     height: 44px; }
 
-.rating-radio {
+.star-rating {
   position: relative;
   display: flex;
   width: 120px;
   height: 24px; }
-  .rating-radio__input {
+  .star-rating__input {
     cursor: pointer;
     width: 24px;
     height: 24px;
     position: absolute;
     opacity: 0;
     z-index: 2; }
-    .rating-radio__input_1 {
+    .star-rating__input_1 {
       margin-left: 0px; }
-    .rating-radio__input_2 {
+    .star-rating__input_2 {
       margin-left: 24px; }
-    .rating-radio__input_3 {
+    .star-rating__input_3 {
       margin-left: 48px; }
-    .rating-radio__input_4 {
+    .star-rating__input_4 {
       margin-left: 72px; }
-    .rating-radio__input_5 {
+    .star-rating__input_5 {
       margin-left: 96px; }
-    .rating-radio__input + p::before {
+    .star-rating__input + .star-rating__image::before {
       content: "star_border";
       position: absolute;
       width: 24px;
@@ -2877,7 +2877,7 @@ body {
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent; }
-    .rating-radio__input:checked ~ p::after {
+    .star-rating__input:checked ~ .star-rating__image::after {
       content: "star";
       position: absolute;
       width: 24px;
@@ -2896,7 +2896,7 @@ body {
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent; }
-  .rating-radio__label {
+  .star-rating__image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2904,15 +2904,15 @@ body {
     height: 24px;
     position: absolute;
     z-index: 1; }
-    .rating-radio__label_1 {
+    .star-rating__image_1 {
       margin-left: 0px; }
-    .rating-radio__label_2 {
+    .star-rating__image_2 {
       margin-left: 24px; }
-    .rating-radio__label_3 {
+    .star-rating__image_3 {
       margin-left: 48px; }
-    .rating-radio__label_4 {
+    .star-rating__image_4 {
       margin-left: 72px; }
-    .rating-radio__label_5 {
+    .star-rating__image_5 {
       margin-left: 96px; }
 
 .room-info {

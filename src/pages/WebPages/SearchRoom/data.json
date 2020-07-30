@@ -1,7 +1,7 @@
 {
     "roomsInfo": [
         {
-            "blockNumber": "0",
+            "blockNumber": 0,
             "photos": [
                 "test11",
                 "test22",
@@ -17,7 +17,7 @@
             "url": "#"
         },
         {
-            "blockNumber": "1",
+            "blockNumber": 1,
             "photos": [
                 "test22"
             ],
@@ -29,7 +29,7 @@
             "url": "#"
         },
         {
-            "blockNumber": "2",
+            "blockNumber": 2,
             "photos": [
                 "test33"
             ],
@@ -42,7 +42,7 @@
             "url": "#"
         },
         {
-            "blockNumber": "3",
+            "blockNumber": 3,
             "photos": [
                 "test44"
             ],
@@ -54,7 +54,7 @@
             "url": "#"
         },
         {
-            "blockNumber": "4",
+            "blockNumber": 4,
             "photos": [
                 "test55"
             ],
@@ -66,7 +66,7 @@
             "url": "#"
         },
         {
-            "blockNumber": "5",
+            "blockNumber": 5,
             "photos": [
                 "test66"
             ],
@@ -78,7 +78,7 @@
             "url": "#"
         },
         {
-            "blockNumber": "6",
+            "blockNumber": 6,
             "photos": [
                 "test77"
             ],
@@ -90,7 +90,7 @@
             "url": "#"
         },
         {
-            "blockNumber": "7",
+            "blockNumber": 7,
             "photos": [
                 "test88"
             ],
@@ -102,7 +102,7 @@
             "url": "#"
         },
         {
-            "blockNumber": "8",
+            "blockNumber": 8,
             "photos": [
                 "test99"
             ],
@@ -114,7 +114,7 @@
             "url": "#"
         },
         {
-            "blockNumber": "9",
+            "blockNumber": 9,
             "photos": [
                 "test110"
             ],
@@ -126,7 +126,7 @@
             "url": "#"
         },
         {
-            "blockNumber": "10",
+            "blockNumber": 10,
             "photos": [
                 "test120"
             ],
@@ -138,7 +138,7 @@
             "url": "#"
         },
         {
-            "blockNumber": "11",
+            "blockNumber": 11,
             "photos": [
                 "test130"
             ],

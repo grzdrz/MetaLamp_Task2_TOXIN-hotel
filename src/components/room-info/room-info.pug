@@ -1,4 +1,4 @@
-include ../FormElements.RateButton/RateButton.pug
+include ../star-rating/star-rating.pug
 
 mixin room-info(options)
     -
@@ -49,7 +49,7 @@ mixin room-info(options)
                 span(class=["room-info__period-of-time"])= `в сутки`
 
             div(class=["room-info__room-rate"])
-                +getRateButton({
+                +star-rating({
                     blockNumber: blockNumber,
                     numberOfCheckedStar: numberOfCheckedStar,
                 })

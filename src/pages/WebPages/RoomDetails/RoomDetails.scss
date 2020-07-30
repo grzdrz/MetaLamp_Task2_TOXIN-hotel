@@ -3,11 +3,12 @@
 @include setFonts("../../../");
 
 @import "../../../components/header/header.scss";
-@import "../../../components/FormElements.RoomDetails/RoomDetails.scss";
+@import "../../../components/room-advantages/room-advantages.scss";
 @import "../../../components/bullet-list/bullet-list.scss";
 @import "../../../components/room-reviews/room-reviews.scss";
 @import "../../../components/price-calculation-form/price-calculation-form.scss";
 @import "../../../components/long-footer/long-footer.scss";
+@import "../../../components/pie-chart/pie-chart.scss";
 
 .room-details {
     display: flex;

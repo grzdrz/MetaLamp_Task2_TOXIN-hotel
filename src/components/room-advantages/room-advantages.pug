@@ -1,0 +1,13 @@
+mixin room-advantages(options)
+    - const {details, hasLastBorderBottom} = options;
+
+    div(class=["room-advantages"])
+        - for(let i = 0; i < details.length; i++)
+            div(class=["room-advantages__detail"])
+                p(class=["room-advantages__icon"])= details[i].icon
+                p(class=["room-advantages__text"])
+                    span(class=["room-advantages__title-text"])= details[i].titleText
+                    span(class=["room-advantages__main-text"])= details[i].mainText
+            - if((i === details.length - 1 && hasLastBorderBottom) || i < details.length - 1)
+                div(class=["room-advantages__bottom-border"])
+
