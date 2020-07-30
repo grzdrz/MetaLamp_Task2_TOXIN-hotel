@@ -1,7 +1,7 @@
 include ../../../components/header/header.pug
 include ../../../components/FormElements.RoomDetails/RoomDetails.pug
 include ../../../components/FormElements.PieChart/PieChart.pug
-include ../../../components/FormElements.BulletList/BulletList.pug
+include ../../../components/bullet-list/bullet-list.pug
 include ../../../components/FormElements.GuestRoomReviews/GuestRoomReviews.pug
 include ../../../components/price-calculation-form/price-calculation-form.pug
 include ../../../components/long-footer/long-footer.pug
@@ -77,7 +77,7 @@ html
                         })
                     div(class=["room-details__rules"])
                         div(class=["room-details__bullet-list-container"])
-                            +getBulletList({
+                            +bullet-list({
                                 titleText: "Правила",
                                 inRoomDetailsPage: true,
                                 list: [

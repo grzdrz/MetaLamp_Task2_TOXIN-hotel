@@ -1,5 +1,5 @@
-import Dropdown from "../FormElements.Dropdown/Dropdown";
-import DateInput from "../FormElements.DateInput/DateInput";
+import Dropdown from "../dropdown/dropdown";
+import Calendar from "../calendar/calendar";
 
 class PriceCalculationForm {
     constructor(outerContainerElement) {
@@ -16,7 +16,7 @@ class PriceCalculationForm {
         this.dropdown = new Dropdown(dropdownContainer);
 
         const calendarContainer = this.containerElement.querySelector(".price-calculation-form__calendar");
-        this.calendar = new DateInput(calendarContainer);
+        this.calendar = new Calendar(calendarContainer);
 
         this.roomRentalPrice = Number.parseInt(this.mainSum.dataset.value);
         this.currencyType = this.mainSum.dataset.currencyType;
@@ -44,7 +44,7 @@ class PriceCalculationForm {
         const oldHandlerSelect = datepicker.selectDate;
         datepicker.selectDate = this.getHandlerSelectWrapper(oldHandlerSelect.bind(datepicker));
 
-        const clearButton = datepicker.$datepicker[0].querySelector(".date-input__clear-button");
+        const clearButton = datepicker.$datepicker[0].querySelector(".calendar__clear-button");
         const oldOnClear = clearButton.onclick;
         clearButton.onclick = this.getHandlerClearClickWrapper(oldOnClear);
     }

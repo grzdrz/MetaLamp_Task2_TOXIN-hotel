@@ -1081,7 +1081,7 @@ body {
 
 .checkbox-list {
   display: grid;
-  grid-template-columns: max-content;
+  grid-template-columns: 100%;
   grid-template-rows: auto auto; }
   .checkbox-list__title {
     cursor: context-menu;
@@ -1090,22 +1090,18 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4px; }
-    .checkbox-list__title p {
-      cursor: context-menu; }
     .checkbox-list__title_expandable {
       cursor: pointer; }
-      .checkbox-list__title_expandable p {
-        cursor: pointer; }
     .checkbox-list__title_width-margin-bottom_16px {
       margin-bottom: 16px; }
-    .checkbox-list__title-text {
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase;
-      color: #1f2041; }
+  .checkbox-list__title-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041; }
   .checkbox-list__dropdown-arrow {
     display: flex;
     justify-content: center;
@@ -1134,10 +1130,43 @@ body {
     margin-bottom: 10px; }
     .checkbox-list__item:last-child {
       margin-bottom: 0px; }
-  .checkbox-list__item-label {
+  .checkbox-list__label {
     display: flex;
     align-items: end; }
-  .checkbox-list__item-label-text {
+  .checkbox-list__input {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-right: 10px;
+    opacity: 0; }
+    .checkbox-list__input:not(:checked) + .checkbox-list__checkmark {
+      opacity: 0; }
+    .checkbox-list__input:not(:checked) ~ .checkbox-list__frame {
+      border: 1px solid #adb5bd; }
+    .checkbox-list__input:checked + .checkbox-list__checkmark {
+      opacity: 1; }
+    .checkbox-list__input:checked ~ .checkbox-list__frame {
+      border: 1px solid #bc9cff; }
+  .checkbox-list__checkmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-bottom: 2px;
+    width: 20px;
+    height: 20px; }
+  .checkbox-list__checkmark-image {
+    display: flex;
+    width: 10px;
+    height: 10px; }
+  .checkbox-list__frame {
+    cursor: pointer;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    position: absolute; }
+  .checkbox-list__item-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -1148,28 +1177,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center; }
-  .checkbox-list__item-label-text_main {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 0.75);
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .checkbox-list__item-label-text_simple {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 0.5);
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .checkbox-list__item-label-additional-text {
+    .checkbox-list__item-text_main {
+      font-weight: bold;
+      color: rgba(31, 32, 65, 0.75); }
+    .checkbox-list__item-text_single {
+      width: 200px; }
+  .checkbox-list__item-additional-text {
     margin-left: 30px;
     margin-top: 5px;
     width: 230px;
@@ -1179,41 +1192,6 @@ body {
     font-size: 12px;
     line-height: 14px;
     color: rgba(31, 32, 65, 0.5); }
-  .checkbox-list__item-checkbox-input {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    margin-right: 10px;
-    opacity: 0; }
-    .checkbox-list__item-checkbox-input:not(:checked) + .checkbox-list__item-checkbox-checkmark {
-      opacity: 0; }
-    .checkbox-list__item-checkbox-input:not(:checked) ~ .checkbox-list__item-checkbox-frame {
-      border: 1px solid #adb5bd; }
-    .checkbox-list__item-checkbox-input:checked + .checkbox-list__item-checkbox-checkmark {
-      opacity: 1; }
-    .checkbox-list__item-checkbox-input:checked ~ .checkbox-list__item-checkbox-frame {
-      border: 1px solid #bc9cff; }
-  .checkbox-list__item-checkbox-checkmark {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    padding-bottom: 2px;
-    width: 20px;
-    height: 20px; }
-  .checkbox-list__item-checkbox-checkmark-image {
-    display: flex;
-    width: 10px;
-    height: 10px; }
-  .checkbox-list__item-checkbox-frame {
-    cursor: pointer;
-    display: flex;
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    position: absolute; }
-  .checkbox-list_width_266px {
-    width: 266px; }
 
 .radio-button {
   width: max-content; }
@@ -1390,7 +1368,7 @@ body {
     .rating-radio__label_5 {
       margin-left: 96px; }
 
-.button-default {
+.button {
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -1399,7 +1377,7 @@ body {
   position: relative;
   border-radius: 22px;
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
-  .button-default__basis {
+  .button__basis {
     cursor: pointer;
     position: absolute;
     left: 0px;
@@ -1415,9 +1393,9 @@ body {
     background: transparent;
     border-radius: 22px;
     outline: none; }
-  .button-default > button {
+  .button > button {
     width: -webkit-fill-available; }
-  .button-default__text {
+  .button__text {
     cursor: pointer;
     background: transparent;
     text-align: center;
@@ -1428,7 +1406,7 @@ body {
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase; }
-  .button-default__arrow {
+  .button__arrow {
     cursor: pointer;
     font-family: Material Icons;
     font-style: normal;
@@ -1442,19 +1420,19 @@ body {
     position: absolute;
     right: 0px;
     width: 44px; }
-  .button-default__submit {
+  .button__submit {
     cursor: pointer;
     position: absolute;
     width: inherit;
     height: inherit;
     opacity: 0;
     z-index: 2; }
-  .button-default:hover {
+  .button:hover {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
-  .button-default_hollow > .button-default__basis {
+  .button_hollow > .button__basis {
     background: #ffffff; }
-    .button-default_hollow > .button-default__basis > .button-default__text,
-    .button-default_hollow > .button-default__basis > .button-default__arrow {
+    .button_hollow > .button__basis > .button__text,
+    .button_hollow > .button__basis > .button__arrow {
       color: #bc9cff; }
 
 .pagination {
@@ -1613,8 +1591,7 @@ body {
   display: flex;
   flex-direction: column; }
   .bullet-list__title {
-    margin-bottom: 15px; }
-  .bullet-list__title-text {
+    margin-bottom: 15px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -1626,20 +1603,20 @@ body {
     display: flex;
     flex-direction: column;
     list-style: none; }
-  .bullet-list__list-item {
+  .bullet-list__item {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     margin-bottom: 10px; }
-    .bullet-list__list-item:last-of-type {
+    .bullet-list__item:last-of-type {
       margin-bottom: 0px; }
-  .bullet-list__list-item-marker {
+  .bullet-list__item-marker {
     width: 10px;
     height: 10px;
     background: rgba(31, 32, 65, 0.25);
     border-radius: 50%;
     margin-right: 10px; }
-  .bullet-list__list-item-text {
+  .bullet-list__item-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -1647,7 +1624,7 @@ body {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     width: 240px; }
-  .bullet-list__title-text_with-font-family_quicksand {
+  .bullet-list__title_with-font-family_quicksand {
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
@@ -1655,17 +1632,17 @@ body {
     line-height: 24px;
     color: #1f2041; }
 
-.date-input {
+.calendar {
   display: flex;
   flex-direction: row;
   width: 100%; }
-  .date-input__input-container {
+  .calendar__input-container {
     display: flex;
     flex-direction: column;
     width: 100%; }
-    .date-input__input-container_first {
+    .calendar__input-container_first {
       margin-right: 20px; }
-  .date-input__title {
+  .calendar__title {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -1674,7 +1651,7 @@ body {
     text-transform: uppercase;
     color: #1f2041;
     margin-bottom: 6px; }
-  .date-input__datepicker-label {
+  .calendar__label {
     cursor: pointer;
     display: grid;
     grid-template-columns: auto 44px;
@@ -1683,11 +1660,11 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     width: 150px; }
-  .date-input__input-container_first, .date-input__input-container_second {
+  .calendar__input-container_first, .calendar__input-container_second {
     width: 46.875%; }
-  .date-input__datepicker-label_first, .date-input__datepicker-label_second {
+  .calendar__label_first, .calendar__label_second {
     width: 100%; }
-  .date-input__datepicker-input {
+  .calendar__input {
     cursor: pointer;
     padding: 0px 0px 0px 15px;
     height: 40px;
@@ -1705,26 +1682,26 @@ body {
     /* Обрезаем содержимое */
     text-overflow: ellipsis;
     /* Многоточие */ }
-    .date-input__datepicker-input::-webkit-input-placeholder {
+    .calendar__input::-webkit-input-placeholder {
       background: rgba(31, 32, 65, 0.25);
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       border: 0px solid transparent; }
-    .date-input__datepicker-input:-webkit-autofill, .date-input__datepicker-input:-webkit-autofill:hover, .date-input__datepicker-input:-webkit-autofill:focus,
-    .date-input__datepicker-input textarea:-webkit-autofill,
-    .date-input__datepicker-input textarea:-webkit-autofill:hover,
-    .date-input__datepicker-input textarea:-webkit-autofill:focus,
-    .date-input__datepicker-input select:-webkit-autofill,
-    .date-input__datepicker-input select:-webkit-autofill:hover,
-    .date-input__datepicker-input select:-webkit-autofill:focus {
+    .calendar__input:-webkit-autofill, .calendar__input:-webkit-autofill:hover, .calendar__input:-webkit-autofill:focus,
+    .calendar__input textarea:-webkit-autofill,
+    .calendar__input textarea:-webkit-autofill:hover,
+    .calendar__input textarea:-webkit-autofill:focus,
+    .calendar__input select:-webkit-autofill,
+    .calendar__input select:-webkit-autofill:hover,
+    .calendar__input select:-webkit-autofill:focus {
       border: 0px solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
       -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
-  .date-input__datepicker-arrow {
+  .calendar__dropdown-arrow {
     cursor: pointer;
     font-family: Material Icons;
     font-style: normal;
@@ -1738,11 +1715,11 @@ body {
     align-items: center;
     width: 44px;
     height: 44px; }
-  .date-input__buttons {
+  .calendar__buttons {
     display: flex;
     flex-direction: row;
     margin: 18px 20px 0px 20px; }
-  .date-input__apply-button {
+  .calendar__apply-button {
     cursor: pointer;
     margin-left: auto;
     font-family: Montserrat;
@@ -1752,7 +1729,7 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: #bc9cff; }
-  .date-input__clear-button {
+  .calendar__clear-button {
     cursor: pointer;
     font-family: Montserrat;
     font-style: normal;

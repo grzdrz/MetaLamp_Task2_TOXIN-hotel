@@ -3,7 +3,7 @@
     userFullName - полное имя пользователя
     navList - список адресов и подписей для элементов меню навигации
 
-include ../FormElements.ButtonDefault/ButtonDefault.pug
+include ../button/button.pug
 include ../colored-logo/colored-logo.pug
 
 mixin header(options)
@@ -36,7 +36,7 @@ mixin header(options)
         - else
             div(class=["header__buttons"])
                 div(class=["header__sign-in-button"])
-                    +getButton({
+                    +button({
                         text: 'войти',
                         isHollow:  true,
                         buttonType: "a",
@@ -44,7 +44,7 @@ mixin header(options)
                         url: 'https://www.google.com/',
                     })
                 div(class=["header__sign-up-button"])
-                    +getButton({
+                    +button({
                         text: 'зарегистрироваться',
                         isHollow:  false,
                         buttonType: "a",

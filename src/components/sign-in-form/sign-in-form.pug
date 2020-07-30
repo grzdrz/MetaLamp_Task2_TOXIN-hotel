@@ -1,4 +1,4 @@
-include ../FormElements.ButtonDefault/ButtonDefault.pug
+include ../button/button.pug
 include ../FormElements.FormInput/FormInput.pug
 
 mixin sign-in-form(options)
@@ -28,7 +28,7 @@ mixin sign-in-form(options)
             })
 
         div(class=["sign-in-form__submit-button"])
-            +getButton({
+            +button({
                 text: 'войти',
                 isHollow: false,
                 buttonType: "submit",
@@ -38,7 +38,7 @@ mixin sign-in-form(options)
         div(class=["sign-in-form__account-create-field"])
             p(class=["sign-in-form__question-text"]) Нет аккаунта на Toxin?
             div(class=["sign-in-form__create-button"])
-                +getButton({
+                +button({
                     text: "создать",
                     isHollow:  true,
                     buttonType: "a",

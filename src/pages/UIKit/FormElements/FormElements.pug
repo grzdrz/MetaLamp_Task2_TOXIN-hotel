@@ -1,14 +1,14 @@
 include ../../../components/FormElements.FormInput/FormInput.pug
 include ../../../components/logo/logo.pug
-include ../../../components/FormElements.Dropdown/Dropdown.pug
-include ../../../components/FormElements.CheckboxList/CheckboxList.pug
+include ../../../components/dropdown/dropdown.pug
+include ../../../components/checkbox-list/checkbox-list.pug
 include ../../../components/FormElements.RadioButton/RadioButton.pug
 include ../../../components/FormElements.RateButton/RateButton.pug
-include ../../../components/FormElements.ButtonDefault/ButtonDefault.pug
+include ../../../components/button/button.pug
 include ../../../components/FormElements.Pagination/Pagination.pug
 include ../../../components/FormElements.RangeSlider/RangeSlider.pug
-include ../../../components/FormElements.BulletList/BulletList.pug
-include ../../../components/FormElements.DateInput/DateInput.pug
+include ../../../components/bullet-list/bullet-list.pug
+include ../../../components/calendar/calendar.pug
 include ../../../components/FormElements.LikeButton/LikeButton.pug
 include ../../../components/FormElements.RoomDetails/RoomDetails.pug
 include ../../../components/FormElements.GuestRoomReviews/GuestRoomReviews.pug
@@ -77,26 +77,26 @@ html
                         })
 
                     div(class=["form-elements__date-input-container-1 js-form-elements__date-input-container"])
-                        +getDateInput({
+                        +calendar({
                             isDouble: true,
                             firstTitle: "выезд",
                             secondTitle: "прибытие",
                         })
                     div(class=["form-elements__date-input-container-2 js-form-elements__date-input-container"])
-                        +getDateInput({
+                        +calendar({
                             isDouble: false,
                             withRange: true, 
                             firstTitle: "datepicker2",
                         })
                     div(class=["form-elements__date-input-container-3 js-form-elements__date-input-container"])
-                        +getDateInput({
+                        +calendar({
                             isDouble: false,
                             withRange: false, 
                             firstTitle: "datepicker3",
                         })
 
                     div(class=["js-form-elements__dropdown-container form-elements__dropdown-container-1"]) 
-                        +getDropdown({
+                        +dropdown({
                             titleText: "dropdown",
                             isTitleTextTestVisible: false,
                             titleTextTestValue: "",
@@ -114,7 +114,7 @@ html
                             withTotalValue: false,
                         })
                     div(class=["js-form-elements__dropdown-container form-elements__dropdown-container-2"]) 
-                        +getDropdown({
+                        +dropdown({
                             titleText: "dropdown",
                             isTitleTextTestVisible: false,
                             titleTextTestValue: "",
@@ -133,7 +133,7 @@ html
                         })                        
 
                     div(class=["form-elements__checkbox-container-1 js-form-elements__checkbox-container_expandable"]) 
-                        +getCheckbox({
+                        +checkbox-list({
                             titleText: "expandable checkbox list",
                             isExpandable: true,
                             isOpened: "false",
@@ -150,7 +150,7 @@ html
                             ],
                         })
                     div(class=["form-elements__checkbox-container-2 js-form-elements__checkbox-container_expandable"]) 
-                        +getCheckbox({
+                        +checkbox-list({
                             titleText: "expandable checkbox list",
                             isExpandable: true,
                             isOpened: "true",
@@ -180,7 +180,7 @@ html
 
                 div(class=["form-elements__column-2"])
                     div(class=["form-elements__checkbox-container-4"]) 
-                        +getCheckbox({
+                        +checkbox-list({
                             titleText: "Checkbox Buttons",
                             isExpandable: false, 
                             hasAdditionalText: false,               
@@ -249,7 +249,7 @@ html
                         })
 
                     div(class=["js-form-elements__dropdown-container form-elements__dropdown-container-3"]) 
-                        +getDropdown({
+                        +dropdown({
                             titleText: "dropdown",
                             isTitleTextTestVisible: false,
                             titleTextTestValue: "",
@@ -268,7 +268,7 @@ html
                         })
 
                     div(class=["form-elements__checkbox-container-3"]) 
-                        +getCheckbox({
+                        +checkbox-list({
                             titleText: "rich checkbox list",
                             isExpandable: false,
                             hasAdditionalText: true,
@@ -301,42 +301,42 @@ html
                         })
 
                     div(class=["form-elements__button-container-1"])
-                        +getButton({
+                        +button({
                             text: "click me",
                             isHollow:  false,
                             buttonType: "button",
                             hasArrow: true,
                         })
                     div(class=["form-elements__button-container-2"])
-                        +getButton({
+                        +button({
                             text: "click me",
                             isHollow:  true,
                             buttonType: "button",
                             hasArrow: true,              
                         })   
                     div(class=["form-elements__button-container-3"])         
-                        +getButton({
+                        +button({
                             text: "click me",
                             isHollow:  false,
                             buttonType: "a",
                             hasArrow: false,               
                         })
                     div(class=["form-elements__button-container-4"])
-                        +getButton({
+                        +button({
                             text: "click me",
                             isHollow:  true,
                             buttonType: "a",
                             hasArrow: false,               
                         })
                     div(class=["form-elements__button-container-5"])
-                        +getButton({
+                        +button({
                             text: "click me",
                             isHollow:  false,
                             buttonType: "submit",
                             hasArrow: false,               
                         })
                     div(class=["form-elements__button-container-6"])
-                        +getButton({
+                        +button({
                             text: "click me",
                             isHollow:  true,
                             buttonType: "submit",
@@ -347,7 +347,7 @@ html
                     div(class=["form-elements__pagination-container js-form-elements__pagination-container-2"])
 
                     div(class=["js-form-elements__dropdown-container form-elements__dropdown-container-4"]) 
-                        +getDropdown({
+                        +dropdown({
                             titleText: "dropdown",
                             isTitleTextTestVisible: false,
                             titleTextTestValue: "",
@@ -366,7 +366,7 @@ html
                         })
 
                     div(class=["form-elements__bullet-list-container-1"])
-                        +getBulletList({
+                        +bullet-list({
                             titleText: "bullet list",
                             list: [
                                 "Нельзя с питомцами",

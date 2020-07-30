@@ -1,6 +1,6 @@
-include ../FormElements.DateInput/DateInput.pug
-include ../FormElements.Dropdown/Dropdown.pug
-include ../FormElements.ButtonDefault/ButtonDefault.pug
+include ../calendar/calendar.pug
+include ../dropdown/dropdown.pug
+include ../button/button.pug
 
 mixin find-room-form(options)
 
@@ -9,14 +9,14 @@ mixin find-room-form(options)
             p(class=["find-room-form__title"])= options.titleText
 
         div(class=["find-room-form__calendar"])
-            +getDateInput({
+            +calendar({
                 isDouble: true,
                 firstTitle: "выезд",
                 secondTitle: "прибытие",
             })
 
         div(class=["find-room-form__dropdown"])
-            +getDropdown({
+            +dropdown({
                 titleText: "гости",
                 isTitleTextTestVisible: false,
                 titleTextTestValue: "",
@@ -33,7 +33,7 @@ mixin find-room-form(options)
             })
 
         div(class=["find-room-form__submit-button"])
-            +getButton({
+            +button({
                 text: 'подобрать номер',
                 isHollow: false,
                 buttonType: "submit",

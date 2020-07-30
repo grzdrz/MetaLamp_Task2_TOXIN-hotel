@@ -1,0 +1,20 @@
+//-
+    list - массив строк элементов списка
+    titleText - текст заголовка
+
+mixin bullet-list(options)
+    - const {inRoomDetailsPage, titleText, list} = options;
+    - const titleClasses = [];
+
+    - if(inRoomDetailsPage){
+        - titleClasses.push("bullet-list__title_with-font-family_quicksand");
+    - }
+
+    div(class=["bullet-list"])
+        - if(titleText)
+            p(class=["bullet-list__title"].concat(titleClasses || []))= titleText
+        ul(class=["bullet-list__list"])    
+            - for(let listItem of list)
+                li(class=["bullet-list__item"])
+                    div(class=["bullet-list__item-marker"])
+                    p(class=["bullet-list__item-text"])= listItem

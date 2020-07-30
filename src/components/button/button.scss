@@ -1,5 +1,5 @@
 $borderRadius: 22px;
-.button-default {
+.button {
     width: 100%;
     height: 100%;
 
@@ -91,10 +91,10 @@ $borderRadius: 22px;
     }
 
     &_hollow {
-        & > .button-default__basis {
+        & > .button__basis {
             background: #ffffff;
-            & > .button-default__text,
-            & > .button-default__arrow {
+            & > .button__text,
+            & > .button__arrow {
                 color: #bc9cff;
             }
         }

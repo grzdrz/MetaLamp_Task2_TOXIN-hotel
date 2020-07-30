@@ -2,18 +2,17 @@ require.context('../../../', true, /\.(png|svg|jpg)$/);
 
 import 'material-design-icons/iconfont/material-icons.css';
 
-//dropdown
-import Dropdown from "../../../components/FormElements.Dropdown/Dropdown";
+
+import Dropdown from "../../../components/dropdown/dropdown";
 const dropdowns = Array.from(document.querySelectorAll(".js-search-room__dropdown"))
     .map(element => new Dropdown(element));
 
-//dropdown checkbox
-import ExpandableCheckbox from "../../../components/FormElements.CheckboxList/ExpandableCheckboxList";
+
+import ExpandableCheckbox from "../../../components/checkbox-list/expandable-checkbox-list";
 const expandableCheckboxes = Array.from(document.querySelectorAll(".js-search-room__checkbox-container_expandable"))
     .map(element => new ExpandableCheckbox(element));
 
 
-//pagination
 import Pagination from "../../../components/FormElements.Pagination/Pagination";
 const paginationContainer1 = document.querySelector(".search-room__pagination-container");
 let pagesCount = 20;
@@ -26,17 +25,18 @@ const pagination1 = new Pagination({
 }, paginationContainer1);
 
 
-//rangeSlider
+
 import { rangeSliderScript } from "../../../components/FormElements.RangeSlider/RangeSlider.js";
 rangeSliderScript();
 
 
-import DateInput from "../../../components/FormElements.DateInput/DateInput";
+import Calendar from "../../../components/calendar/calendar";
 const calendars = [];
 const calendarsContainers = Array.from(document.querySelectorAll(".search-room__date-input-container"));
 calendarsContainers.forEach(element => {
-    calendars.push(new DateInput(element));
+    calendars.push(new Calendar(element));
 });
+
 
 import RoomInfo from "../../../components/room-info/room-info";
 const roomInfoElements = Array.from(document.querySelectorAll(".search-room__room-container"));

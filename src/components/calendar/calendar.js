@@ -11,19 +11,18 @@ const dateFormatOptions2 = {
     month: "short", day: "2-digit",
 };
 
-class DateInput {
+class Calendar {
     constructor(outerContainerElement) {
         this.outerContainerElement = outerContainerElement;
         const jqOuterContainerElement = $("html").find(this.outerContainerElement);
-        this.jqContainerElement = jqOuterContainerElement.find(".date-input");
-        this.jqDateInputs = this.jqContainerElement.find(".date-input__datepicker-input");
+        this.jqContainerElement = jqOuterContainerElement.find(".calendar");
+        this.jqDateInputs = this.jqContainerElement.find(".calendar__input");
 
-        this.isDouble = this.jqContainerElement.hasClass("date-input_double");
-        this.withRangePicking = this.jqContainerElement.hasClass("date-input_with-range-picking");
+        this.isDouble = this.jqContainerElement.hasClass("calendar_double");
+        this.withRangePicking = this.jqContainerElement.hasClass("calendar_with-range-picking");
 
 
         this.datepickerInstance = {};
-        // this.setDoubleDatepicker = this.setDoubleDatepicker.bind(this);
 
         this.initialize();
     }
@@ -49,17 +48,17 @@ class DateInput {
             },
             onShow: function (dp, animationCompleted) {
                 if (!animationCompleted) {
-                    if (!dp.$datepicker.find('.date-input__buttons').html()) {
+                    if (!dp.$datepicker.find('.calendar__buttons').html()) {
                         dp.$datepicker.append(
-                            '<div class="date-input__buttons">' +
-                            '<p class="date-input__clear-button">очистить</p>' +
-                            '<p class="date-input__apply-button">применить</p>' +
+                            '<div class="calendar__buttons">' +
+                            '<p class="calendar__clear-button">очистить</p>' +
+                            '<p class="calendar__apply-button">применить</p>' +
                             '</div>'
                         );
-                        dp.$datepicker[0].querySelector(".date-input__clear-button").onclick = (event) => {
+                        dp.$datepicker[0].querySelector(".calendar__clear-button").onclick = (event) => {
                             dp.clear();
                         };
-                        dp.$datepicker[0].querySelector(".date-input__apply-button").onclick = (event) => {
+                        dp.$datepicker[0].querySelector(".calendar__apply-button").onclick = (event) => {
                             dp.hide();
                         };
 
@@ -100,17 +99,17 @@ class DateInput {
             },
             onShow: function (dp, animationCompleted) {
                 if (!animationCompleted) {
-                    if (!dp.$datepicker.find('.date-input__buttons').html()) {
+                    if (!dp.$datepicker.find('.calendar__buttons').html()) {
                         dp.$datepicker.append(
-                            '<div class="date-input__buttons">' +
-                            '<p class="date-input__clear-button">очистить</p>' +
-                            '<p class="date-input__apply-button">применить</p>' +
+                            '<div class="calendar__buttons">' +
+                            '<p class="calendar__clear-button">очистить</p>' +
+                            '<p class="calendar__apply-button">применить</p>' +
                             '</div>'
                         );
-                        dp.$datepicker.find('.date-input__clear-button').click(function (event) {
+                        dp.$datepicker.find('.calendar__clear-button').click(function (event) {
                             dp.clear();
                         });
-                        dp.$datepicker.find('.date-input__apply-button').click(function (event) {
+                        dp.$datepicker.find('.calendar__apply-button').click(function (event) {
                             dp.hide();
                         });
 
@@ -135,8 +134,6 @@ class DateInput {
                 }
             }.bind(this),
         }).data('datepicker');
-        /* this.datepickerInstance.show();
-        this.datepickerInstance.hide(); */
     }
 
     singleDatepickerWithoutRange() {
@@ -149,17 +146,17 @@ class DateInput {
             },
             onShow: function (dp, animationCompleted) {
                 if (!animationCompleted) {
-                    if (!dp.$datepicker.find('.date-input__buttons').html()) {
+                    if (!dp.$datepicker.find('.calendar__buttons').html()) {
                         dp.$datepicker.append(
-                            '<div class="date-input__buttons">' +
-                            '<p class="date-input__clear-button">очистить</p>' +
-                            '<p class="date-input__apply-button">применить</p>' +
+                            '<div class="calendar__buttons">' +
+                            '<p class="calendar__clear-button">очистить</p>' +
+                            '<p class="calendar__apply-button">применить</p>' +
                             '</div>'
                         );
-                        dp.$datepicker.find('.date-input__clear-button').click(function (event) {
+                        dp.$datepicker.find('.calendar__clear-button').click(function (event) {
                             dp.clear();
                         });
-                        dp.$datepicker.find('.date-input__apply-button').click(function (event) {
+                        dp.$datepicker.find('.calendar__apply-button').click(function (event) {
                             dp.hide();
                         });
 
@@ -168,9 +165,7 @@ class DateInput {
                 }
             },
         }).data('datepicker');
-        /* this.datepickerInstance.show();
-        this.datepickerInstance.hide(); */
     }
 }
 
-export default DateInput;
+export default Calendar;

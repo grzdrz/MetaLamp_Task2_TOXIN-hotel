@@ -1,10 +1,9 @@
 include ../../../components/header/header.pug
 include ../../../components/room-info/room-info.pug
-include ../../../components/FormElements.DateInput/DateInput.pug
-include ../../../components/FormElements.Dropdown/Dropdown.pug
+include ../../../components/calendar/calendar.pug
+include ../../../components/dropdown/dropdown.pug
 include ../../../components/FormElements.RangeSlider/RangeSlider.pug
-include ../../../components/FormElements.CheckboxList/CheckboxList.pug
-include ../../../components/FormElements.CheckboxList/CheckboxList.pug
+include ../../../components/checkbox-list/checkbox-list.pug
 include ../../../components/FormElements.Pagination/Pagination.pug
 include ../../../components/long-footer/long-footer.pug
 
@@ -24,7 +23,7 @@ html
             div(class=["search-room__content"])
                 div(class=["search-room__filters"])
                     div(class=["search-room__date-input-container"])
-                        +getDateInput({
+                        +calendar({
                             isDoubleInput: false,
                             isDateRange: true, 
                             firstTitle: "даты пребывания в отеле",
@@ -32,7 +31,7 @@ html
                         })
 
                     div(class=["search-room__dropdown-1-container js-search-room__dropdown"])
-                        +getDropdown({
+                        +dropdown({
                             titleText: "гости",
                             isTitleTextTestVisible: false,
                             titleTextTestValue: "",
@@ -62,7 +61,7 @@ html
                         })
 
                     div(class=["search-room__checkbox-list-1-container"])
-                        +getCheckbox({
+                        +checkbox-list({
                             titleText: "Checkbox Buttons",
                             isExpandable: false, 
                             hasAdditionalText: false,               
@@ -74,7 +73,7 @@ html
                         }) 
 
                     div(class=["search-room__checkbox-list-2-container"])
-                        +getCheckbox({
+                        +checkbox-list({
                             titleText: "доступность",
                             isExpandable: false,
                             hasAdditionalText: true,
@@ -85,7 +84,7 @@ html
                         })
 
                     div(class=["search-room__dropdown-2-container js-search-room__dropdown"])
-                        +getDropdown({
+                        +dropdown({
                             titleText: "удобства номера",
                             isTitleTextTestVisible: false,
                             titleTextTestValue: "",
@@ -105,7 +104,7 @@ html
                         })
 
                     div(class=["search-room__checkbox-list-3-container js-search-room__checkbox-container_expandable"])
-                        +getCheckbox({
+                        +checkbox-list({
                             titleText: "дополнительные удобства",
                             isExpandable: true,
                             isOpened: "true",

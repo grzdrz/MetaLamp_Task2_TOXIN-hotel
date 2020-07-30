@@ -1,4 +1,4 @@
-.date-input {
+.calendar {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -25,7 +25,7 @@
     margin-bottom: 6px;
   }
 
-  &__datepicker-label {
+  &__label {
     cursor: pointer;
 
     display: grid;
@@ -42,12 +42,12 @@
   &__input-container_second {
     width: scalePixelsAsPercentage(150, 320);
   }
-  &__datepicker-label_first,
-  &__datepicker-label_second {
+  &__label_first,
+  &__label_second {
     width: 100%;
   }
 
-  &__datepicker-input {
+  &__input {
     cursor: pointer;
 
     padding: 0px 0px 0px 15px;
@@ -92,7 +92,7 @@
     text-overflow: ellipsis; /* Многоточие */
   }
 
-  &__datepicker-arrow {
+  &__dropdown-arrow {
     cursor: pointer;
 
     font-family: Material Icons;
@@ -143,4 +143,4 @@
   }
 }
 
-@import "./Datepicker.scss";
+@import "./datepicker.scss";

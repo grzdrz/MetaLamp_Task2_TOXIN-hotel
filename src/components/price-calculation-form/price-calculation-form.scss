@@ -1,6 +1,6 @@
-@import "../FormElements.ButtonDefault/ButtonDefault.scss";
-@import "../FormElements.DateInput/DateInput.scss";
-@import "../FormElements.Dropdown/Dropdown.scss";
+@import "../button/button.scss";
+@import "../calendar/calendar.scss";
+@import "../dropdown/dropdown.scss";
 
 .price-calculation-form {
     display: flex;

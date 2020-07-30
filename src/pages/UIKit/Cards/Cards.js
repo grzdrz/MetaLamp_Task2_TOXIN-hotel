@@ -28,11 +28,11 @@ const staticDatepicker = $(".cards__date-picker-container").datepicker({
     autoClose: false,
     onShow: function (dp, animationCompleted) {
         if (!animationCompleted) {
-            if (!dp.$datepicker.find('.date-input__buttons').html()) {
+            if (!dp.$datepicker.find('.calendar__buttons').html()) {
                 dp.$datepicker.append(
-                    '<div class="date-input__buttons">' +
-                    '<p class="date-input__clear-button">очистить</p>' +
-                    '<p class="date-input__apply-button">применить</p>' +
+                    '<div class="calendar__buttons">' +
+                    '<p class="calendar__clear-button">очистить</p>' +
+                    '<p class="calendar__apply-button">применить</p>' +
                     '</div>'
                 );
                 dp.$datepicker.find('.datepicker--pointer').css("display", "none");
