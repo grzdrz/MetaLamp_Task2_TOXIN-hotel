@@ -1,0 +1,145 @@
+@import "../../base.scss";
+@import "../../../assets/fonts/fonts.scss";
+@include setFonts("../../../");
+
+@import "../../../components/logo/logo.scss";
+@import "../../../components/form-input/form-input.scss";
+@import "../../../components/dropdown/dropdown.scss";
+@import "../../../components/checkbox-list/checkbox-list.scss";
+@import "../../../components/radio/radio.scss";
+@import "../../../components/toggle/toggle.scss";
+@import "../../../components/star-rating/star-rating.scss";
+@import "../../../components/button/button.scss";
+@import "../../../components/pagination/pagination.scss";
+@import "../../../components/range-slider/range-slider.scss";
+@import "../../../components/bullet-list/bullet-list.scss";
+@import "../../../components/calendar/calendar.scss";
+@import "../../../components/like-button/like-button.scss";
+@import "../../../components/room-advantages/room-advantages.scss";
+@import "../../../components/room-reviews/room-reviews.scss";
+@import "../../../components/pie-chart/pie-chart.scss";
+
+.form-elements {
+    min-width: 100%;
+
+    padding-top: 30px;
+
+    &__global-logo-container {
+        margin-left: 30px;
+        margin-bottom: 65px;
+    }
+
+    &__columns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 140px 150px 140px;
+    }
+    &__column {
+        &-1 {
+            display: flex;
+            flex-direction: column;
+            & > * {
+                margin-bottom: 20px;
+            }
+        }
+        &-2 {
+            display: flex;
+            flex-direction: column;
+            & > * {
+                margin-bottom: 20px;
+            }
+        }
+        &-3 {
+            display: flex;
+            flex-direction: column;
+            & > * {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__form-input-container-1,
+    &__form-input-container-2,
+    &__form-input-container-4 {
+        width: 320px;
+    }
+
+    &__date-input-container-1 {
+        width: 320px;
+    }
+    &__date-input-container-2,
+    &__date-input-container-3 {
+        width: 266px;
+    }
+
+    &__form-input-container-3 {
+        width: 267px;
+    }
+
+    &__dropdown-container-1,
+    &__dropdown-container-2 {
+        width: 266px;
+    }
+
+    &__checkbox-container-1,
+    &__checkbox-container-2,
+    &__room-details-container-1 {
+        width: max-content;
+    }
+
+    &__checkbox-container-4,
+    &__radio-button-container-1,
+    &__radio-button-container-2,
+    &__radio-button-container-3,
+    &__like-button-container-1,
+    &__like-button-container-2,
+    &__rate-button-container-1,
+    &__rate-button-container-2,
+    &__rate-button-container-3 {
+        width: max-content;
+    }
+
+    &__dropdown-container-3 {
+        width: 320px;
+    }
+
+    &__checkbox-container-3 {
+        width: max-content;
+    }
+
+    &__range-slider-container-1,
+    &__range-slider-container-2 {
+        width: max-content;
+    }
+
+    &__button-container-1,
+    &__button-container-2,
+    &__button-container-3,
+    &__button-container-4,
+    &__button-container-5,
+    &__button-container-6 {
+        width: 150px;
+        height: 44px;
+    }
+
+    &__pagination-container {
+        width: max-content;
+    }
+
+    &__dropdown-container-4 {
+        width: 320px;
+    }
+
+    &__bullet-list-container-1 {
+        width: max-content;
+    }
+
+    &__guest-room-reviews-container-1 {
+        width: 520px;
+    }
+
+    &__pie-chart-container-1 {
+        width: max-content;
+    }
+}

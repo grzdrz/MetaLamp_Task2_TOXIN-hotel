@@ -1,0 +1,13 @@
+extends base
+
+include ../components/header/header
+include ../components/long-footer/long-footer
+
+block body
+    +header({
+        isAuthorized: false,
+    })
+
+    block content
+
+    +long-footer()

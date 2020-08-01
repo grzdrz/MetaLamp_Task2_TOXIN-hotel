@@ -1,0 +1,19 @@
+extends ../../page-base
+
+include ../../../components/header/header.pug
+include ../../../components/find-room-form/find-room-form.pug
+include ../../../components/long-footer/long-footer.pug
+
+block content
+    div(class=["landing-page"])
+        div(class=["landing-page__main-content"])
+            div(class=["landing-page__form-container"])
+                +find-room-form({
+                    titleText: "Найдём номера под ваши пожелания",
+                })
+            div(class=["landing-page__background-image-container"])
+                div(class=["landing-page__subtitle"])
+                    p(class=["landing-page__subtitle-text"])
+                        | Лучшие номера для вашей работы,
+                        | отдыха и просто вдохновения
+                img(class=["landing-page__background-image"] src="./src/pages/WebPages/LandingPage/img/backgroundImage.png")

@@ -668,7 +668,8 @@
 html,
 body {
   min-width: 100%;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
 
 @font-face {
   font-family: "Montserrat";

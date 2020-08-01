@@ -13,15 +13,15 @@ const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 
 
 let entries = [
-    { pageName: "HeadersAndFooters", pageType: "UIKit" },
-    { pageName: "FormElements", pageType: "UIKit" },
-    { pageName: "ColorsAndType", pageType: "UIKit" },
-    { pageName: "Cards", pageType: "UIKit" },
-    { pageName: "LandingPage", pageType: "WebPages" },
-    { pageName: "SearchRoom", pageType: "WebPages" },
-    { pageName: "Registration", pageType: "WebPages" },
-    { pageName: "SignIn", pageType: "WebPages" },
-    { pageName: "RoomDetails", pageType: "WebPages" },
+    { pageName: "headers-and-footers", pageType: "ui-kit" },
+    { pageName: "form-elements", pageType: "ui-kit" },
+    { pageName: "colors-and-type", pageType: "ui-kit" },
+    { pageName: "cards", pageType: "ui-kit" },
+    { pageName: "landing-page", pageType: "web-pages" },
+    { pageName: "search-room", pageType: "web-pages" },
+    { pageName: "registration", pageType: "web-pages" },
+    { pageName: "sign-in", pageType: "web-pages" },
+    { pageName: "room-details", pageType: "web-pages" },
 ];
 
 const pluginsOptions = [];
