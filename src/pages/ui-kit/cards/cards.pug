@@ -1,77 +1,73 @@
-extends ../../base
+extends ../../ui-kit-base
 
 include ../../../components/logo/logo.pug
 include ../../../components/sign-in-form/sign-in-form.pug
-include ../../../components/find-room-form/find-room-form.pug
+include ../../../components/room-finder-form/room-finder-form.pug
 include ../../../components/price-calculation-form/price-calculation-form.pug
 include ../../../components/sign-up-form/sign-up-form.pug
 include ../../../components/room-info/room-info.pug
 
-block body
+block content
     div(class=["cards"])
-        div(class=["cards__global-logo-container"])
-            +logo()
+        div(class=["cards__column-1"])
+            div(class=["cards__room-finder-form"])
+                +room-finder-form({
+                    titleText: "Найдём номера под ваши пожелания",
+                })
+            div(class=["cards__sign-up-form"])        
+                +sign-up-form({
+                    titleText: "Регистрация аккаунта",
+                })                        
+        div(class=["cards__column-2"])
+            div(class=["cards__price-calculation-form"])
+                +price-calculation-form({
+                    roomNumber: 888,
+                    roomStatus: "люкс",
+                    roomPrice: 9990,
+                    currencyType: "₽",
+                    discount: 2179,
+                })
+            div(class=["cards__sign-in-form"])
+                +sign-in-form({
+                    titleText: "Войти",
+                })
+        div(class=["cards__column-3"])
+            div(class=["cards__datepicker"])
 
-        div(class=["cards__content"])
-            div(class=["cards__column-1"])
-                div(class=["cards__form-container-1"])
-                    +find-room-form({
-                        titleText: "Найдём номера под ваши пожелания",
-                    })
-                div(class=["cards__form-container-2"])        
-                    +sign-up-form({
-                        titleText: "Регистрация аккаунта",
-                    })                        
-            div(class=["cards__column-2"])
-                div(class=["cards__form-container-3"])
-                    +price-calculation-form({
-                        roomNumber: 888,
-                        roomStatus: "люкс",
-                        roomPrice: 9990,
-                        currencyType: "₽",
-                        discount: 2179,
-                    })
-                div(class=["cards__form-container-4"])
-                    +sign-in-form({
-                        titleText: "Войти",
-                    })
-            div(class=["cards__column-3"])
-                div(class=["cards__date-picker-container"])
-
-                div(class=["cards__room-info-container cards__room-info-container-1"])
-                    +room-info({
-                        blockNumber: 1,
-                        photos: ["test11", "test22", "test33", "test44"],
-                        reviewsCount: 145,
-                        numberOfCheckedStar: 1,
-                        url: "#",
-                        roomNumber: 888,
-                        roomStatus: "люкс",
-                        roomPrice: 9990,
-                        currencyType: "₽",
-                    })
-                div(class=["cards__room-info-container cards__room-info-container-2"])
-                    +room-info({
-                        blockNumber: 2,
-                        photos: ["test11", "test22"],
-                        reviewsCount: 65,
-                        numberOfCheckedStar: 5,
-                        url: "#",
-                        roomNumber: 888,
-                        roomStatus: "люкс",
-                        roomPrice: 9990,
-                        currencyType: "₽",
-                    }) 
-                div(class=["cards__room-info-container cards__room-info-container-3"])
-                    +room-info({
-                        blockNumber: 3,
-                        photos: ["test11"],
-                        reviewsCount: 1488,
-                        numberOfCheckedStar: 3,
-                        url: "#",
-                        roomNumber: 888,
-                        roomStatus: "люкс",
-                        roomPrice: 9990,
-                        currencyType: "₽",
-                    })                          
+            div(class=["cards__room-info"])
+                +room-info({
+                    blockNumber: 1,
+                    photos: ["test11", "test22", "test33", "test44"],
+                    reviewsCount: 145,
+                    numberOfCheckedStar: 1,
+                    url: "#",
+                    roomNumber: 888,
+                    roomStatus: "люкс",
+                    roomPrice: 9990,
+                    currencyType: "₽",
+                })
+            div(class=["cards__room-info"])
+                +room-info({
+                    blockNumber: 2,
+                    photos: ["test11", "test22"],
+                    reviewsCount: 65,
+                    numberOfCheckedStar: 5,
+                    url: "#",
+                    roomNumber: 888,
+                    roomStatus: "люкс",
+                    roomPrice: 9990,
+                    currencyType: "₽",
+                }) 
+            div(class=["cards__room-info"])
+                +room-info({
+                    blockNumber: 3,
+                    photos: ["test11"],
+                    reviewsCount: 1488,
+                    numberOfCheckedStar: 3,
+                    url: "#",
+                    roomNumber: 888,
+                    roomStatus: "люкс",
+                    roomPrice: 9990,
+                    currencyType: "₽",
+                })                          
 

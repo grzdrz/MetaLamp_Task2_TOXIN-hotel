@@ -1,16 +1,12 @@
-extends ../../base
+extends ../../ui-kit-base
 
 include ../../../components/logo/logo.pug
 include ../../../components/header/header.pug
 include ../../../components/long-footer/long-footer.pug
 include ../../../components/short-footer/short-footer.pug
 
-block body
+block content
     div(class=["headersAndFooters"])
-
-        div(class=["headersAndFooters__global-logo-container"])
-            +logo()
-
         div(class=["headersAndFooters__standard-nav-bar-container_first"])
             +header({
                 isAuthorized: false,

@@ -3,50 +3,54 @@
 @include setFonts("../../../");
 
 @import "../../../components/logo/logo.scss";
-@import "../../../components/ColorsAndType/ColorAndFontBlocks.scss";
+@import "../../../components/font-demo/font-demo.scss";
+@import "../../../components/color-demo/color-demo.scss";
+
+body {
+    padding-bottom: 40px;
+}
+
+.logo {
+    margin-bottom: 63px;
+}
 
 .colors-and-type {
     min-width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 0px 10.4%;
 
-    padding-top: 30px;
-    &__global-logo-container {
-        margin-left: 30px;
-        margin-bottom: 67px;
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
     }
 
-    &__colors-and-fonts-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0px 191px 145px 150px;
-
-        @media screen and (max-width: 1024px) {
-            flex-direction: column;
-            align-items: center;
-            padding: 0px 20px 145px 20px;
-        }
-    }
-
-    &__color-blocks-container {
+    &__color-demos {
         @media screen and (max-width: 1024px) {
             margin-bottom: 50px;
         }
     }
 
-    &__color-block-container {
+    &__color-demo {
         margin-bottom: 20px;
         &:last-child {
             margin-bottom: 0px;
         }
     }
 
-    &__font-block-container {
+    &__font-demos {
+        margin-right: 42px;
+    }
+
+    &__font-demo {
         margin-bottom: 50px;
         &:last-child {
             margin-bottom: 0px;
+            max-width: 380px;
+            & .font-demo__description {
+                line-height: 22px;
+            }
         }
     }
 }

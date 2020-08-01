@@ -1384,7 +1384,10 @@ body {
   font-style: normal; }
 
 .logo {
-  height: 48px; }
+  height: max-content;
+  margin-left: 30px;
+  margin-bottom: 68px;
+  padding-top: 30px; }
 
 .form-input {
   width: 100%; }
@@ -2910,15 +2913,11 @@ body {
 
 .form-elements {
   min-width: 100%;
-  padding-top: 30px; }
-  .form-elements__global-logo-container {
-    margin-left: 30px;
-    margin-bottom: 65px; }
-  .form-elements__columns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0px 140px 150px 140px; }
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 9.6222%; }
   .form-elements__column-1 {
     display: flex;
     flex-direction: column; }
@@ -2934,37 +2933,33 @@ body {
     flex-direction: column; }
     .form-elements__column-3 > * {
       margin-bottom: 20px; }
-  .form-elements__form-input-container-1, .form-elements__form-input-container-2, .form-elements__form-input-container-4 {
+  .form-elements__form-input-1, .form-elements__form-input-2, .form-elements__form-input-4 {
     width: 320px; }
-  .form-elements__date-input-container-1 {
+  .form-elements__calendar-1 {
     width: 320px; }
-  .form-elements__date-input-container-2, .form-elements__date-input-container-3 {
+  .form-elements__calendar-2, .form-elements__calendar-3 {
     width: 266px; }
-  .form-elements__form-input-container-3 {
-    width: 267px; }
-  .form-elements__dropdown-container-1, .form-elements__dropdown-container-2 {
+  .form-elements__dropdown-1, .form-elements__dropdown-2 {
     width: 266px; }
-  .form-elements__checkbox-container-1, .form-elements__checkbox-container-2, .form-elements__room-details-container-1 {
-    width: max-content; }
-  .form-elements__checkbox-container-4, .form-elements__radio-button-container-1, .form-elements__radio-button-container-2, .form-elements__radio-button-container-3, .form-elements__like-button-container-1, .form-elements__like-button-container-2, .form-elements__rate-button-container-1, .form-elements__rate-button-container-2, .form-elements__rate-button-container-3 {
-    width: max-content; }
-  .form-elements__dropdown-container-3 {
+  .form-elements__dropdown-3, .form-elements__dropdown-4 {
     width: 320px; }
-  .form-elements__checkbox-container-3 {
+  .form-elements__checkbox-1, .form-elements__checkbox-2, .form-elements__room-details-1 {
     width: max-content; }
-  .form-elements__range-slider-container-1, .form-elements__range-slider-container-2 {
+  .form-elements__checkbox-3, .form-elements__checkbox-4 {
     width: max-content; }
-  .form-elements__button-container-1, .form-elements__button-container-2, .form-elements__button-container-3, .form-elements__button-container-4, .form-elements__button-container-5, .form-elements__button-container-6 {
+  .form-elements__radio-1, .form-elements__radio-2, .form-elements__toggle-1, .form-elements__toggle-2, .form-elements__like-button-1, .form-elements__like-button-2, .form-elements__star-rating-1, .form-elements__star-rating-2, .form-elements__star-rating-3 {
+    width: max-content; }
+  .form-elements__range-slider-1, .form-elements__range-slider-2 {
+    width: max-content; }
+  .form-elements__button-1, .form-elements__button-2, .form-elements__button-3, .form-elements__button-4, .form-elements__button-5, .form-elements__button-6 {
     width: 150px;
     height: 44px; }
-  .form-elements__pagination-container {
+  .form-elements__pagination {
     width: max-content; }
-  .form-elements__dropdown-container-4 {
-    width: 320px; }
-  .form-elements__bullet-list-container-1 {
+  .form-elements__bullet-list {
     width: max-content; }
-  .form-elements__guest-room-reviews-container-1 {
+  .form-elements__guest-room-reviews-1 {
     width: 520px; }
-  .form-elements__pie-chart-container-1 {
+  .form-elements__pie-chart {
     width: max-content; }
 

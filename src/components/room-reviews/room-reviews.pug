@@ -7,7 +7,7 @@ mixin room-reviews(options)
         p(class=["room-reviews__title"]) Отзывы посетителей номера
         - for(let review of reviewsArray)
             div(class=["room-reviews__review-container"])
-                img(src=review.imgSrc class=["room-reviews__user-avatar"])
+                img(src=`./src/components/room-reviews/img/${review.imageName}.png` class=["room-reviews__user-avatar"])
                 div(class=["room-reviews__user-info"])
                     p(class=["room-reviews__user-full-name"])= review.fullName
                     p(class=["room-reviews__number-of-days-since-comment"])= review.numberOfDaysSinceComment

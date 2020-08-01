@@ -708,7 +708,10 @@ body {
   font-style: normal; }
 
 .logo {
-  height: 48px; }
+  height: max-content;
+  margin-left: 30px;
+  margin-bottom: 68px;
+  padding-top: 30px; }
 
 .button {
   width: 100%;
@@ -1481,7 +1484,7 @@ body {
     .button_hollow > .button__basis > .button__arrow {
       color: #bc9cff; }
 
-.find-room-form {
+.room-finder-form {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1491,7 +1494,7 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
-  .find-room-form__title {
+  .room-finder-form__title {
     display: flex;
     width: 100%;
     margin-bottom: 20px;
@@ -1501,13 +1504,13 @@ body {
     font-size: 24px;
     line-height: 30px;
     color: #1f2041; }
-  .find-room-form__calendar {
+  .room-finder-form__calendar {
     margin-bottom: 20px;
     width: 100%; }
-  .find-room-form__dropdown {
+  .room-finder-form__dropdown {
     margin-bottom: 31px;
     width: 100%; }
-  .find-room-form__submit-button {
+  .room-finder-form__submit-button {
     width: 100%;
     height: 44px; }
 
@@ -3115,26 +3118,24 @@ body {
     text-align: right;
     color: rgba(31, 32, 65, 0.5); }
 
+body {
+  background: #e5e5e5; }
+
 .cards {
   min-width: 100%;
   background: #e5e5e5;
   padding-bottom: 140px;
-  padding-top: 30px; }
-  .cards__global-logo-container {
-    margin-left: 30px;
-    margin-bottom: 72px; }
-  .cards__content {
-    padding: 0px 9.72222%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    @media screen and (max-width: 950px) {
-      .cards__content {
-        width: 100%;
-        padding: 0px 0px;
-        flex-direction: column;
-        align-items: center; } }
+  padding: 0px 9.6222%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 950px) {
+    .cards {
+      width: 100%;
+      padding: 0px 0px;
+      flex-direction: column;
+      align-items: center; } }
   .cards__column-1, .cards__column-2, .cards__column-3 {
     display: flex;
     flex-direction: column; }
@@ -3144,11 +3145,13 @@ body {
     @media screen and (max-width: 380px) {
       .cards__column-1, .cards__column-2, .cards__column-3 {
         width: 100%; } }
-  .cards__form-container-1, .cards__form-container-2, .cards__form-container-3, .cards__form-container-4, .cards__date-picker-container, .cards__room-info-container-1, .cards__room-info-container-2, .cards__room-info-container-3 {
-    margin-bottom: 40px; }
-  .cards__form-container-1, .cards__form-container-2, .cards__form-container-3, .cards__form-container-4 {
+  .cards__room-finder-form, .cards__sign-up-form, .cards__price-calculation-form, .cards__sign-in-form {
+    margin-bottom: 40px;
     width: 380px; }
     @media screen and (max-width: 380px) {
-      .cards__form-container-1, .cards__form-container-2, .cards__form-container-3, .cards__form-container-4 {
+      .cards__room-finder-form, .cards__sign-up-form, .cards__price-calculation-form, .cards__sign-in-form {
         width: 100%; } }
+  .cards__datepicker, .cards__room-info {
+    margin-bottom: 40px;
+    width: max-content; }
 

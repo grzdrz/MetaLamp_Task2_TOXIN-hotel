@@ -1,28 +1,39 @@
 class Pagination {
-    constructor(options, containerElement) {
+    constructor(options, outerContainerElement) {
         this.options = {};
         Object.assign(this.options, options);
 
-        this.containerElement = containerElement;
+        this.outerContainerElement = outerContainerElement;
 
         this.paginationPugCode = require("./pagination-for-render.pug");
 
         this.handlerSelectPage = this.handlerSelectPage.bind(this);
         this.setClickEventsToPagesLinks = this.setClickEventsToPagesLinks.bind(this);
+        this.writeBottomText = this.writeBottomText.bind(this);
 
         this.initialize();
     }
 
     initialize() {
-        this.containerElement.innerHTML = this.paginationPugCode(this.options);
+        this.outerContainerElement.innerHTML = this.paginationPugCode(this.options);
+        this.writeBottomText();
         this.setClickEventsToPagesLinks();
     }
 
     setClickEventsToPagesLinks() {
-        const links = this.containerElement.querySelectorAll(".js-pagination__page-link");
+        const links = this.outerContainerElement.querySelectorAll(".js-pagination__page-link");
         links.forEach(a => {
             a.onclick = this.handlerSelectPage;
         });
+    }
+
+    writeBottomText() {
+        const bottomTextElement = this.outerContainerElement.querySelector(".pagination__bottom-text");
+        const firstItemCountNumber = Math.round(this.options.itemsCount / this.options.pagesCount) * (this.options.curPageNumber - 1) + 1;
+        let lastItemCountNumber = Math.round(this.options.itemsCount / this.options.pagesCount) * this.options.curPageNumber;
+        if (lastItemCountNumber > this.options.itemsCount) lastItemCountNumber = this.options.itemsCount;
+        bottomTextElement.textContent =
+            `${firstItemCountNumber} - ${lastItemCountNumber} из ${this.options.itemsCount} вариантов аренды`;
     }
 
     handlerSelectPage(event) {
@@ -30,18 +41,17 @@ class Pagination {
 
         const selectedPageNumber = event.currentTarget.dataset.pageNumber;
         if (selectedPageNumber === "leftArrow") {
-            const prevPage = this.options.curPageNumber - 1;
-            this.options.curPageNumber = prevPage;
-            this.containerElement.innerHTML = this.paginationPugCode(this.options);
+            this.options.curPageNumber = this.options.curPageNumber - 1;
+            this.outerContainerElement.innerHTML = this.paginationPugCode(this.options);
         } else if (selectedPageNumber === "rightArrow") {
-            const nextPage = this.options.curPageNumber + 1;
-            this.options.curPageNumber = nextPage;
-            this.containerElement.innerHTML = this.paginationPugCode(this.options);
+            this.options.curPageNumber = this.options.curPageNumber + 1;
+            this.outerContainerElement.innerHTML = this.paginationPugCode(this.options);
         } else {
             this.options.curPageNumber = Number.parseInt(selectedPageNumber);
-            this.containerElement.innerHTML = this.paginationPugCode(this.options);
+            this.outerContainerElement.innerHTML = this.paginationPugCode(this.options);
         }
 
+        this.writeBottomText();
         this.setClickEventsToPagesLinks();
     }
 }

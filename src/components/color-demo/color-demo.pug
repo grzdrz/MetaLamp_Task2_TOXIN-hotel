@@ -1,0 +1,11 @@
+mixin color-demo(options)
+    - const { backgroundColor, colorName, colorCode } = options;
+    - const squareClasses = [];
+
+    - if(backgroundColor) squareClasses.push(`color-demo__color_${backgroundColor}`);
+
+    div(class=["color-demo"])
+        div(class=["color-demo__colored-square"].concat(squareClasses))
+        div(class=["color-demo__text-container"])
+            p(class=["color-demo__color-name"])= colorName
+            p(class=["color-demo__color-code"])= colorCode

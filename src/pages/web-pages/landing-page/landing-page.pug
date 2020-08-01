@@ -1,14 +1,14 @@
 extends ../../page-base
 
 include ../../../components/header/header.pug
-include ../../../components/find-room-form/find-room-form.pug
+include ../../../components/room-finder-form/room-finder-form.pug
 include ../../../components/long-footer/long-footer.pug
 
 block content
     div(class=["landing-page"])
         div(class=["landing-page__main-content"])
             div(class=["landing-page__form-container"])
-                +find-room-form({
+                +room-finder-form({
                     titleText: "Найдём номера под ваши пожелания",
                 })
             div(class=["landing-page__background-image-container"])

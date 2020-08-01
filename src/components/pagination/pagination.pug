@@ -1,7 +1,7 @@
 mixin pagination(options)
-    - const {title, curPageNumber, pagesCount} = options;
+    - const {title, curPageNumber, pagesCount, itemsCount} = options;`1 –  из 100+ вариантов аренды`
 
-    div(class=["pagination"])
+    div(class=["pagination"] data-pages-count=pagesCount data-items-count=itemsCount data-cur-page=curPageNumber)
         - if(title)
             p(class=["pagination__title"])= title
 
@@ -43,5 +43,4 @@ mixin pagination(options)
                 a(href="#" class=["pagination__right-arrow", "js-pagination__page-link"] data-page-number="rightArrow")
                     span(class=["pagination__right-arrow-text"]) arrow_forward
 
-        - if(bottomText)
-            p(class=["pagination__bottom-text"])= bottomText
+        p(class=["pagination__bottom-text"])

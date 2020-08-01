@@ -1,24 +1,23 @@
 require.context("../../../", true, /\.(png|svg|jpg)$/);
 import "material-design-icons/iconfont/material-icons.css";
-import FindRoomForm from "../../../components/find-room-form/find-room-form";
+import RoomFinderForm from "../../../components/room-finder-form/room-finder-form";
 import SignUpForm from "../../../components/sign-up-form/sign-up-form";
 import RoomInfo from "../../../components/room-info/room-info";
 import PriceCalculationForm from "../../../components/price-calculation-form/price-calculation-form";
 
-const findRoomFormContainer = document.querySelector(".cards__form-container-1");
-const findRoomForm = new FindRoomForm(findRoomFormContainer);
+const roomFinderFormContainer = document.querySelector(".cards__room-finder-form");
+const roomFinderForm = new RoomFinderForm(roomFinderFormContainer);
 
-const signUpFormContainer = document.querySelector(".cards__form-container-2");
+const signUpFormContainer = document.querySelector(".cards__sign-up-form");
 const signUpForm = new SignUpForm(signUpFormContainer);
 
-const roomInfoElements = Array.from(document.querySelectorAll(".cards__room-info-container"));
-const roomsInfo = roomInfoElements.map((element) => new RoomInfo(element));
-
-const priceCalculationFormContainer = document.querySelector(".cards__form-container-3");
+const priceCalculationFormContainer = document.querySelector(".cards__price-calculation-form");
 const priceCalculationForm = new PriceCalculationForm(priceCalculationFormContainer);
 
+const roomInfoElements = Array.from(document.querySelectorAll(".cards__room-info"));
+const roomsInfo = roomInfoElements.map((element) => new RoomInfo(element));
 
-const staticDatepicker = $(".cards__date-picker-container").datepicker({
+const staticDatepicker = $(".cards__datepicker").datepicker({
     range: true,
     position: 'bottom left',
     navTitles: {

@@ -13,15 +13,15 @@ const dropdowns = Array.from(document.querySelectorAll(".js-search-room__dropdow
 const expandableCheckboxes = Array.from(document.querySelectorAll(".js-search-room__checkbox-container_expandable"))
     .map(element => new ExpandableCheckbox(element));
 
-const paginationContainer1 = document.querySelector(".search-room__pagination-container");
-let pagesCount = 20;
-let curPage = 7;
-const pagination1 = new Pagination({
-    pagesCount: pagesCount,
-    curPageNumber: curPage,
-    title: "pagination",
-    bottomText: `1 – ${pagesCount} из 100+ вариантов аренды`,
-}, paginationContainer1);
+const paginations = Array.from(document.querySelectorAll(".search-room__pagination-container"))
+    .map((element) => {
+        new Pagination({
+            pagesCount: 20,
+            curPageNumber: 7,
+            title: "pagination",
+            itemsCount: 100,
+        }, element)
+    });
 
 const rangeSliderContainers = Array.from(document.querySelectorAll(".js-search-room__range-slider-container"));
 const rangeSliders = rangeSliderContainers.map((element) => new RangeSlider(element));

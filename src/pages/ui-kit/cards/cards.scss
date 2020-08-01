@@ -4,36 +4,32 @@
 
 @import "../../../components/logo/logo.scss";
 @import "../../../components/sign-in-form/sign-in-form.scss";
-@import "../../../components/find-room-form/find-room-form.scss";
+@import "../../../components/room-finder-form/room-finder-form.scss";
 @import "../../../components/price-calculation-form/price-calculation-form.scss";
 @import "../../../components/sign-up-form/sign-up-form.scss";
 @import "../../../components/room-info/room-info.scss";
 
+body {
+    background: #e5e5e5;
+}
+
 .cards {
     min-width: 100%;
     background: #e5e5e5;
-
     padding-bottom: 140px;
-    padding-top: 30px;
-    &__global-logo-container {
-        margin-left: 30px;
-        margin-bottom: 72px;
+    padding: 0px 9.6222%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 950px) {
+        width: 100%;
+        padding: 0px 0px;
+        flex-direction: column;
+        align-items: center;
     }
 
-    &__content {
-        padding: 0px scalePixelsAsPercentage(140, 1440);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-        @media screen and (max-width: 950px) {
-            width: 100%;
-            padding: 0px 0px;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
     &__column-1,
     &__column-2,
     &__column-3 {
@@ -48,25 +44,20 @@
         }
     }
 
-    &__form-container-1,
-    &__form-container-2,
-    &__form-container-3,
-    &__form-container-4,
-    &__date-picker-container,
-    &__room-info-container-1,
-    &__room-info-container-2,
-    &__room-info-container-3 {
+    &__room-finder-form,
+    &__sign-up-form,
+    &__price-calculation-form,
+    &__sign-in-form {
         margin-bottom: 40px;
-    }
-
-    &__form-container-1,
-    &__form-container-2,
-    &__form-container-3,
-    &__form-container-4 {
         width: 380px;
-
         @media screen and (max-width: 380px) {
             width: 100%;
         }
+    }
+
+    &__datepicker,
+    &__room-info {
+        margin-bottom: 40px;
+        width: max-content;
     }
 }

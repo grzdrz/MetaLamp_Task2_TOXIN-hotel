@@ -385,18 +385,6 @@ eval("__webpack_require__.r(__webpack_exports__);\nclass ListItem {\r\n    const
 
 /***/ }),
 
-/***/ "./src/components/find-room-form/find-room-form.js":
-/*!*********************************************************!*\
-  !*** ./src/components/find-room-form/find-room-form.js ***!
-  \*********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dropdown_dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../dropdown/dropdown */ \"./src/components/dropdown/dropdown.js\");\n/* harmony import */ var _calendar_calendar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../calendar/calendar */ \"./src/components/calendar/calendar.js\");\n\r\n\r\n\r\nclass FindRoomForm {\r\n    constructor(outerContainerElement) {\r\n        this.containerElement = outerContainerElement.querySelector(\".find-room-form\");\r\n\r\n        const dropdownContainer = this.containerElement.querySelector(\".find-room-form__dropdown\");\r\n        this.dropdown = new _dropdown_dropdown__WEBPACK_IMPORTED_MODULE_0__[\"default\"](dropdownContainer);\r\n\r\n        const calendarContainer = this.containerElement.querySelector(\".find-room-form__calendar\");\r\n        this.calendar = new _calendar_calendar__WEBPACK_IMPORTED_MODULE_1__[\"default\"](calendarContainer);\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (FindRoomForm);\r\n\n\n//# sourceURL=webpack:///./src/components/find-room-form/find-room-form.js?");
-
-/***/ }),
-
 /***/ "./src/components/logo/img/logo.svg":
 /*!******************************************!*\
   !*** ./src/components/logo/img/logo.svg ***!
@@ -406,6 +394,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dro
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/logo/img/logo.svg\");\n\n//# sourceURL=webpack:///./src/components/logo/img/logo.svg?");
+
+/***/ }),
+
+/***/ "./src/components/room-finder-form/room-finder-form.js":
+/*!*************************************************************!*\
+  !*** ./src/components/room-finder-form/room-finder-form.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dropdown_dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../dropdown/dropdown */ \"./src/components/dropdown/dropdown.js\");\n/* harmony import */ var _calendar_calendar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../calendar/calendar */ \"./src/components/calendar/calendar.js\");\n\r\n\r\n\r\nclass RoomFinderForm {\r\n    constructor(outerContainerElement) {\r\n        this.containerElement = outerContainerElement.querySelector(\".room-finder-form\");\r\n\r\n        const dropdownContainer = this.containerElement.querySelector(\".room-finder-form__dropdown\");\r\n        this.dropdown = new _dropdown_dropdown__WEBPACK_IMPORTED_MODULE_0__[\"default\"](dropdownContainer);\r\n\r\n        const calendarContainer = this.containerElement.querySelector(\".room-finder-form__calendar\");\r\n        this.calendar = new _calendar_calendar__WEBPACK_IMPORTED_MODULE_1__[\"default\"](calendarContainer);\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (RoomFinderForm);\r\n\n\n//# sourceURL=webpack:///./src/components/room-finder-form/room-finder-form.js?");
 
 /***/ }),
 
@@ -813,7 +813,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_find_room_form_find_room_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/find-room-form/find-room-form */ \"./src/components/find-room-form/find-room-form.js\");\n/* harmony import */ var _landing_page_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./landing-page.scss */ \"./src/pages/web-pages/landing-page/landing-page.scss\");\n/* harmony import */ var _landing_page_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_landing_page_scss__WEBPACK_IMPORTED_MODULE_2__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\n\r\nconst findRoomFormContainer = document.querySelector(\".landing-page__form-container\");\r\nconst findRoomForm = new _components_find_room_form_find_room_form__WEBPACK_IMPORTED_MODULE_1__[\"default\"](findRoomFormContainer);\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/pages/web-pages/landing-page/landing-page.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! material-design-icons/iconfont/material-icons.css */ \"./node_modules/material-design-icons/iconfont/material-icons.css\");\n/* harmony import */ var material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(material_design_icons_iconfont_material_icons_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_room_finder_form_room_finder_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/room-finder-form/room-finder-form */ \"./src/components/room-finder-form/room-finder-form.js\");\n/* harmony import */ var _landing_page_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./landing-page.scss */ \"./src/pages/web-pages/landing-page/landing-page.scss\");\n/* harmony import */ var _landing_page_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_landing_page_scss__WEBPACK_IMPORTED_MODULE_2__);\n__webpack_require__(\"./src sync recursive \\\\.(png|svg|jpg)$\");\r\n\r\n\r\n\r\nconst roomFindedFormContainer = document.querySelector(\".landing-page__form-container\");\r\nconst roomFindedForm = new _components_room_finder_form_room_finder_form__WEBPACK_IMPORTED_MODULE_1__[\"default\"](roomFindedFormContainer);\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/pages/web-pages/landing-page/landing-page.js?");
 
 /***/ }),
 

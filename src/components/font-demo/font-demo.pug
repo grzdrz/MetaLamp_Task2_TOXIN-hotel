@@ -1,0 +1,24 @@
+mixin font-demo(options)
+    -
+        const {
+            tagOptions,
+            descriptionOptions,    
+        } = options;
+    - const tagClasses = [];
+    - const descriptionClasses = [];
+
+    - if(tagOptions.family) tagClasses.push(`font-demo_font-family_${tagOptions.family}`);
+    - if(tagOptions.weight) tagClasses.push(`font-demo_font-weight_${tagOptions.weight}`);
+    - if(tagOptions.size) tagClasses.push(`font-demo_font-size_${tagOptions.size}`);
+    - if(tagOptions.color) tagClasses.push(`font-demo_font-color_${tagOptions.color}`);
+
+    - if(descriptionOptions.family) descriptionClasses.push(`font-demo_font-family_${descriptionOptions.family}`);
+    - if(descriptionOptions.weight) descriptionClasses.push(`font-demo_font-weight_${descriptionOptions.weight}`);
+    - if(descriptionOptions.size) descriptionClasses.push(`font-demo_font-size_${descriptionOptions.size}`);
+    - if(descriptionOptions.color) descriptionClasses.push(`font-demo_font-color_${descriptionOptions.color}`);
+    - if(descriptionOptions.lineHeight) descriptionClasses.push(`font-demo_font-line-height_${descriptionOptions.lineHeight}`);
+    - if(descriptionOptions.inUppercase) descriptionClasses.push("font-demo_font_uppercase");
+
+    div(class=["font-demo"])
+        p(class=["font-demo__tag"].concat(tagClasses))= tagOptions.tagName
+        p(class=["font-demo__description"].concat(descriptionClasses))= descriptionOptions.text

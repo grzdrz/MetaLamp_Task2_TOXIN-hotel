@@ -2,20 +2,20 @@ include ../calendar/calendar.pug
 include ../dropdown/dropdown.pug
 include ../button/button.pug
 
-mixin find-room-form(options)
+mixin room-finder-form(options)
 
-    form(class=["find-room-form"])
+    form(class=["room-finder-form"])
         - if(options.titleText)
-            p(class=["find-room-form__title"])= options.titleText
+            p(class=["room-finder-form__title"])= options.titleText
 
-        div(class=["find-room-form__calendar"])
+        div(class=["room-finder-form__calendar"])
             +calendar({
                 isDouble: true,
-                firstTitle: "выезд",
-                secondTitle: "прибытие",
+                firstTitle: "прибытие",
+                secondTitle: "выезд",
             })
 
-        div(class=["find-room-form__dropdown"])
+        div(class=["room-finder-form__dropdown"])
             +dropdown({
                 titleText: "гости",
                 isTitleTextTestVisible: false,
@@ -32,7 +32,7 @@ mixin find-room-form(options)
                 withTotalValue: true,
             })
 
-        div(class=["find-room-form__submit-button"])
+        div(class=["room-finder-form__submit-button"])
             +button({
                 text: 'подобрать номер',
                 isHollow: false,

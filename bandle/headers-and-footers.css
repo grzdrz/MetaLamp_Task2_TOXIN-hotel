@@ -85,7 +85,10 @@ body {
   font-style: normal; }
 
 .logo {
-  height: 48px; }
+  height: max-content;
+  margin-left: 30px;
+  margin-bottom: 68px;
+  padding-top: 30px; }
 
 .colored-logo {
   display: flex;

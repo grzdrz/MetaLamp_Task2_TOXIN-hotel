@@ -1,0 +1,65 @@
+.font-demo {
+    display: flex;
+    flex-direction: row;
+
+    &__tag {
+        margin-right: 30px;
+        min-width: 37px;
+        text-align: end;
+    }
+
+    &__description {
+        max-width: 336px;
+    }
+
+    &_font {
+        &-family {
+            &_montserrat {
+                font-family: Montserrat;
+            }
+            &_quicksand {
+                font-family: Quicksand, OpenSans;
+            }
+        }
+
+        &-weight {
+            &_regular {
+                font-weight: normal;
+            }
+            &_bold {
+                font-weight: bold;
+            }
+        }
+
+        &-size {
+            &_24px {
+                font-size: 24px;
+            }
+            &_19px {
+                font-size: 19px;
+            }
+            &_14px {
+                font-size: 14px;
+            }
+            &_12px {
+                font-size: 12px;
+            }
+        }
+
+        &-line-height {
+            &_30px {
+                line-height: 30px;
+            }
+            &_24px {
+                line-height: 24px;
+            }
+            &_15px {
+                line-height: 15px;
+            }
+        }
+
+        &_uppercase {
+            text-transform: uppercase;
+        }
+    }
+}
