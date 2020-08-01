@@ -12,7 +12,7 @@ const webpack = require('webpack');
 const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 
 
-let entries = [
+let pages = [
     { pageName: "headers-and-footers", pageType: "ui-kit" },
     { pageName: "form-elements", pageType: "ui-kit" },
     { pageName: "colors-and-type", pageType: "ui-kit" },
@@ -25,7 +25,7 @@ let entries = [
 ];
 
 const pluginsOptions = [];
-entries.forEach(e => {
+pages.forEach(e => {
     pluginsOptions.push(
         new HtmlWebpackPlugin({
             filename: `./${e.pageName}.html`,
@@ -35,6 +35,12 @@ entries.forEach(e => {
         })
     )
 });
+let entries = pages.reduce((obj, curEntry) => {
+    obj[curEntry.pageName] = `./src/pages/${curEntry.pageType}/${curEntry.pageName}/${curEntry.pageName}.js`;
+    return obj;
+}, {});
+entries.favicon = './src/favicons/favicons.js';
+
 pluginsOptions.push(new MiniCssExtractPlugin({
     filename: '[name].css',
 }));
@@ -44,10 +50,7 @@ pluginsOptions.push(new webpack.ProvidePlugin({
 }));
 
 module.exports = {
-    entry: entries.reduce((obj, curEntry) => {
-        obj[curEntry.pageName] = `./src/pages/${curEntry.pageType}/${curEntry.pageName}/${curEntry.pageName}.js`;
-        return obj;
-    }, {}),
+    entry: entries,
 
     output: {
         path: path.resolve(__dirname, 'bandle'),
