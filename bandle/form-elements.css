@@ -1335,7 +1335,9 @@ Build date: 2019-12-19 16:51:02
     border: none; }
 
 @charset "UTF-8";
-* {
+*,
+*:after,
+*:before {
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -1384,10 +1386,13 @@ body {
   font-style: normal; }
 
 .logo {
+  display: flex;
   height: max-content;
   margin-left: 30px;
-  margin-bottom: 68px;
   padding-top: 30px; }
+  .logo__image {
+    width: 48px;
+    height: 48px; }
 
 .form-input {
   width: 100%; }
@@ -2094,7 +2099,7 @@ body {
   .pagination__bottom-text {
     display: inline-flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 7px;
     width: 100%;
     font-family: Montserrat;
     font-style: normal;

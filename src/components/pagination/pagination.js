@@ -34,7 +34,8 @@ class Pagination {
         const firstItemCountNumber = Math.round(this.options.itemsCount / this.options.pagesCount) * (this.options.curPageNumber - 1) + 1;
         let lastItemCountNumber = Math.round(this.options.itemsCount / this.options.pagesCount) * this.options.curPageNumber;
         if (lastItemCountNumber > this.options.itemsCount) lastItemCountNumber = this.options.itemsCount;
-        bottomTextElement.textContent = `${firstItemCountNumber} - ${lastItemCountNumber} из ${this.options.itemsCount} вариантов аренды`;
+        const itemsCountText = this.options.itemsCount > 100 ? "100+" : `${this.options.itemsCount}`;
+        bottomTextElement.textContent = `${firstItemCountNumber} - ${lastItemCountNumber} из ${itemsCountText} вариантов аренды`;
     }
 
     handlerSelectPage(event) {

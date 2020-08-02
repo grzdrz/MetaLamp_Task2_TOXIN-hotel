@@ -1,24 +1,11 @@
 extends ../../page-base
 
-include ../../../components/header/header.pug
 include ../../../components/sign-up-form/sign-up-form.pug
-include ../../../components/long-footer/long-footer.pug
 
 block content
-        div(class=["registration"])
-
-            div(class=["registration__header-container"])
-                +header({
-                    isAuthorized: false,
-                })
-
-            div(class=["registration__main-content"])
-                div(class=["registration__form-container"])
-                    +sign-up-form({
-                        titleText: "Регистрация аккаунта",
-                    })
-                div(class=["registration__background-image-container"])
-                    img(class=["registration__background-image"] src="./src/pages/WebPages/Registration/img/backgroundImage.png")
-
-            div(class=["registration__footer-container"])
-                +long-footer()
+    div(class=["registration"])
+        div(class=["registration__form"])
+            +sign-up-form({
+                titleText: "Регистрация аккаунта",
+            })
+        div(class=["registration__background"])

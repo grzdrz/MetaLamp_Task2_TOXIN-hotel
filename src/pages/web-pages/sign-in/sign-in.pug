@@ -1,23 +1,11 @@
 extends ../../page-base
 
-include ../../../components/header/header.pug
 include ../../../components/sign-in-form/sign-in-form.pug
-include ../../../components/long-footer/long-footer.pug
 
 block content
     div(class=["sign-in"])
-        div(class=["sign-in__header-container"])
-            +header({
-                isAuthorized: false,
+        div(class=["sign-in__form"])  
+            +sign-in-form({
+                titleText: "Войти",
             })
-
-        div(class=["sign-in__main-content"])
-            div(class=["sign-in__form-container"])  
-                +sign-in-form({
-                    titleText: "Войти",
-                })
-            div(class=["sign-in__background-image-container"])
-                img(class=["sign-in__background-image"] src="./src/pages/WebPages/SignIn/img/backgroundImage.png")
-
-        div(class=["sign-in__footer-container"])
-            +long-footer()
+        div(class=["sign-in__background"])

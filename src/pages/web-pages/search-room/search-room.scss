@@ -13,23 +13,15 @@
 
 .search-room {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
+    padding: 30px scalePixelsAsPercentage(140, 1440) 70px scalePixelsAsPercentage(140, 1440);
+    border-bottom: 2px solid rgba(31, 32, 65, 0.25);
 
-    &__header-container {
-        //width: 100%;
-    }
-
-    &__content {
-        display: flex;
-        flex-direction: row;
-        padding: 30px scalePixelsAsPercentage(140, 1440) 70px scalePixelsAsPercentage(140, 1440);
-
-        @media screen and (max-width: 690px) {
-            flex-direction: column;
-            align-items: center;
-            padding: 30px 0px 70px 0px;
-        }
+    @media screen and (max-width: 690px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0px 70px 0px;
     }
 
     &__filters {
@@ -39,34 +31,38 @@
         width: max-content;
     }
 
-    &__date-input-container {
+    &__calendar {
         margin-bottom: 20px;
         display: flex;
         width: 266px;
     }
-    &__dropdown-1-container,
-    &__range-slider-container {
+
+    &__dropdown-1,
+    &__range-slider {
         margin-bottom: 30px;
         display: flex;
         width: 266px;
     }
-    &__checkbox-list-1-container {
+
+    &__checkbox-list-1 {
         margin-bottom: 31px;
         display: flex;
         width: max-content;
     }
-    &__checkbox-list-2-container {
+
+    &__checkbox-list-2 {
         margin-bottom: 30px;
         display: flex;
         width: max-content;
     }
-    &__dropdown-2-container {
+
+    &__dropdown-2 {
         margin-bottom: 15px;
         display: flex;
         width: 266px;
     }
 
-    &__rooms {
+    &__room-list {
         display: flex;
         flex-direction: column;
 
@@ -76,24 +72,23 @@
             align-items: center;
         }
     }
-    &__rooms-title {
+
+    &__list-title {
         margin-bottom: 21px;
+
+        font-family: Quicksand, OpenSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: #1f2041;
 
         @media screen and (max-width: 690px) {
             padding: 0px 20px;
         }
-
-        &-text {
-            font-family: Quicksand, OpenSans;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 30px;
-            color: #1f2041;
-        }
     }
 
-    &__rooms-container {
+    &__list {
         display: grid;
         grid-template-rows: auto auto auto auto;
         grid-template-columns: auto auto auto;
@@ -110,15 +105,11 @@
         }
     }
 
-    &__pagination-container {
+    &__pagination {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 41px;
-        padding: 0px 20px;
-    }
-
-    &__footer-container {
-        //width: 100%;
+        margin-top: 40px;
+        padding: 0px 16px 0px 0px;
     }
 }

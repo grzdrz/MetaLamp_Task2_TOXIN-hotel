@@ -7,14 +7,18 @@
 @import "../../../components/long-footer/long-footer.scss";
 @import "../../../components/short-footer/short-footer.scss";
 
+body {
+    background: #f4f4f6;
+}
+
 .headersAndFooters {
     min-width: 100%;
     display: flex;
     flex-direction: column;
-    background: #f4f4f6;
+    /* background: #f4f4f6; */
 
     padding-bottom: 130px;
-    padding-top: 30px;
+    padding-top: 62px;
     &__global-logo-container {
         margin-left: 30px;
         margin-bottom: 62px;

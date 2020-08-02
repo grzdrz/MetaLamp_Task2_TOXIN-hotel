@@ -1335,7 +1335,9 @@ Build date: 2019-12-19 16:51:02
     border: none; }
 
 @charset "UTF-8";
-* {
+*,
+*:after,
+*:before {
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -1982,7 +1984,7 @@ body {
   .pagination__bottom-text {
     display: inline-flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 7px;
     width: 100%;
     font-family: Montserrat;
     font-style: normal;
@@ -2759,14 +2761,14 @@ body {
   display: flex;
   align-content: center; }
   .social-media__ref {
-    width: 24px;
-    height: 24px;
+    width: 23px;
+    height: 23px;
     margin-right: 20px; }
     .social-media__ref:last-of-type {
       margin-right: 0px; }
   .social-media__image {
-    width: 24px;
-    height: 24px; }
+    width: 23px;
+    height: 23px; }
 
 .menu-bar {
   list-style: none;
@@ -2782,7 +2784,7 @@ body {
     line-height: 17px; }
     .menu-bar__item:first-of-type {
       margin-top: 4px;
-      margin-bottom: 22px; }
+      margin-bottom: 20px; }
       .menu-bar__item:first-of-type > .menu-bar__item-ref {
         font-family: Montserrat;
         font-style: normal;
@@ -2903,80 +2905,77 @@ body {
 
 .search-room {
   display: flex;
-  flex-direction: column;
-  width: 100%; }
-  .search-room__content {
-    display: flex;
-    flex-direction: row;
-    padding: 30px 9.72222% 70px 9.72222%; }
-    @media screen and (max-width: 690px) {
-      .search-room__content {
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 0px 70px 0px; } }
+  flex-direction: row;
+  width: 100%;
+  padding: 30px 9.72222% 70px 9.72222%;
+  border-bottom: 2px solid rgba(31, 32, 65, 0.25); }
+  @media screen and (max-width: 690px) {
+    .search-room {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0px 70px 0px; } }
   .search-room__filters {
     margin-right: 5.20833%;
     display: flex;
     flex-direction: column;
     width: max-content; }
-  .search-room__date-input-container {
+  .search-room__calendar {
     margin-bottom: 20px;
     display: flex;
     width: 266px; }
-  .search-room__dropdown-1-container, .search-room__range-slider-container {
+  .search-room__dropdown-1, .search-room__range-slider {
     margin-bottom: 30px;
     display: flex;
     width: 266px; }
-  .search-room__checkbox-list-1-container {
+  .search-room__checkbox-list-1 {
     margin-bottom: 31px;
     display: flex;
     width: max-content; }
-  .search-room__checkbox-list-2-container {
+  .search-room__checkbox-list-2 {
     margin-bottom: 30px;
     display: flex;
     width: max-content; }
-  .search-room__dropdown-2-container {
+  .search-room__dropdown-2 {
     margin-bottom: 15px;
     display: flex;
     width: 266px; }
-  .search-room__rooms {
+  .search-room__room-list {
     display: flex;
     flex-direction: column; }
     @media screen and (max-width: 690px) {
-      .search-room__rooms {
+      .search-room__room-list {
         margin-right: 0px;
         margin-top: 40px;
         align-items: center; } }
-  .search-room__rooms-title {
-    margin-bottom: 21px; }
+  .search-room__list-title {
+    margin-bottom: 21px;
+    font-family: Quicksand, OpenSans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1f2041; }
     @media screen and (max-width: 690px) {
-      .search-room__rooms-title {
+      .search-room__list-title {
         padding: 0px 20px; } }
-    .search-room__rooms-title-text {
-      font-family: Quicksand, OpenSans;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 30px;
-      color: #1f2041; }
-  .search-room__rooms-container {
+  .search-room__list {
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto auto auto;
     grid-column-gap: 12px;
     grid-row-gap: 20px; }
     @media screen and (max-width: 1320px) {
-      .search-room__rooms-container {
+      .search-room__list {
         grid-template-rows: auto auto auto auto auto;
         grid-template-columns: auto auto; } }
     @media screen and (max-width: 1000px) {
-      .search-room__rooms-container {
+      .search-room__list {
         grid-template-rows: auto auto auto auto auto auto;
         grid-template-columns: auto; } }
-  .search-room__pagination-container {
+  .search-room__pagination {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 41px;
-    padding: 0px 20px; }
+    margin-top: 40px;
+    padding: 0px 16px 0px 0px; }
 

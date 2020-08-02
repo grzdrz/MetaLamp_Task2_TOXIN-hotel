@@ -15,25 +15,21 @@ require.context("../../../", true, /\.(png|svg|jpg)$/);
 const dropdowns = Array.from(document.querySelectorAll(".js-search-room__dropdown"))
     .map((element) => new Dropdown(element));
 
-const expandableCheckboxes = Array.from(document.querySelectorAll(".js-search-room__checkbox-container_expandable"))
+const expandableCheckboxes = Array.from(document.querySelectorAll(".js-search-room__checkbox_expandable"))
     .map((element) => new ExpandableCheckbox(element));
 
-const paginations = Array.from(document.querySelectorAll(".search-room__pagination-container"))
+const paginations = Array.from(document.querySelectorAll(".search-room__pagination"))
     .map((element) => new Pagination({
-        pagesCount: 20,
-        curPageNumber: 7,
-        title: "pagination",
-        itemsCount: 100,
+        pagesCount: 15,
+        curPageNumber: 1,
+        itemsCount: 180,
     }, element));
 
-const rangeSliderContainers = Array.from(document.querySelectorAll(".js-search-room__range-slider-container"));
-const rangeSliders = rangeSliderContainers.map((element) => new RangeSlider(element));
+const rangeSliders = Array.from(document.querySelectorAll(".js-search-room__range-slider"))
+    .map((element) => new RangeSlider(element));
 
-const calendars = [];
-const calendarsContainers = Array.from(document.querySelectorAll(".search-room__date-input-container"));
-calendarsContainers.forEach((element) => {
-    calendars.push(new Calendar(element));
-});
+const calendars = Array.from(document.querySelectorAll(".search-room__calendar"))
+    .map((element) => new Calendar(element));
 
-const roomInfoElements = Array.from(document.querySelectorAll(".search-room__room-container"));
-const roomsInfo = roomInfoElements.map((element) => new RoomInfo(element));
+const roomsInfo = Array.from(document.querySelectorAll(".search-room__room"))
+    .map((element) => new RoomInfo(element));

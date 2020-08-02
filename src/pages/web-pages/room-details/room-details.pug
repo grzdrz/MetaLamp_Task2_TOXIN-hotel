@@ -1,20 +1,13 @@
 extends ../../page-base
 
-include ../../../components/header/header.pug
 include ../../../components/room-advantages/room-advantages.pug
 include ../../../components/pie-chart/pie-chart.pug
 include ../../../components/bullet-list/bullet-list.pug
 include ../../../components/room-reviews/room-reviews.pug
 include ../../../components/price-calculation-form/price-calculation-form.pug
-include ../../../components/long-footer/long-footer.pug
 
 block content
     div(class=["room-details"])
-        div(class=["room-details__header-container"])
-            +header({
-                isAuthorized: false,
-            })
-
         div(class=["room-details__room-photos"])
             div(class=["room-details__room-big-photo-container"])
                 img(class=["room-details__room-big-photo"] src="./src/pages/WebPages/RoomDetails/img/background1.jpg")
@@ -92,7 +85,3 @@ block content
 
             div(class=["room-details__price-calculation-form-container"])
                 +price-calculation-form({})
-
-
-        div(class=["room-details__footer-container"])
-            +long-footer()

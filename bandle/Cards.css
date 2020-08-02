@@ -659,7 +659,9 @@
 }
 
 @charset "UTF-8";
-* {
+*,
+*:after,
+*:before {
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -708,10 +710,13 @@ body {
   font-style: normal; }
 
 .logo {
+  display: flex;
   height: max-content;
   margin-left: 30px;
-  margin-bottom: 68px;
   padding-top: 30px; }
+  .logo__image {
+    width: 48px;
+    height: 48px; }
 
 .button {
   width: 100%;
@@ -2808,14 +2813,17 @@ body {
   .sign-up-form__first-name-field, .sign-up-form__second-name-field {
     margin-bottom: 10px;
     width: 100%; }
-  .sign-up-form__radio-buttons, .sign-up-form__calendar {
+  .sign-up-form__radio-buttons {
+    margin-bottom: 23px;
+    width: 100%; }
+  .sign-up-form__calendar {
     margin-bottom: 20px;
     width: 100%; }
   .sign-up-form__email-field, .sign-up-form__password-field {
     margin-bottom: 10px;
     width: 100%; }
   .sign-up-form__toggle {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     width: 100%; }
   .sign-up-form__submit-button {
     margin-bottom: 30px;

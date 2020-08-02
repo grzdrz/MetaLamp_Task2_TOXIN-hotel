@@ -659,7 +659,9 @@
     border: none; }
 
 @charset "UTF-8";
-* {
+*,
+*:after,
+*:before {
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -1533,14 +1535,17 @@ body {
   .sign-up-form__first-name-field, .sign-up-form__second-name-field {
     margin-bottom: 10px;
     width: 100%; }
-  .sign-up-form__radio-buttons, .sign-up-form__calendar {
+  .sign-up-form__radio-buttons {
+    margin-bottom: 23px;
+    width: 100%; }
+  .sign-up-form__calendar {
     margin-bottom: 20px;
     width: 100%; }
   .sign-up-form__email-field, .sign-up-form__password-field {
     margin-bottom: 10px;
     width: 100%; }
   .sign-up-form__toggle {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     width: 100%; }
   .sign-up-form__submit-button {
     margin-bottom: 30px;
@@ -1666,14 +1671,14 @@ body {
   display: flex;
   align-content: center; }
   .social-media__ref {
-    width: 24px;
-    height: 24px;
+    width: 23px;
+    height: 23px;
     margin-right: 20px; }
     .social-media__ref:last-of-type {
       margin-right: 0px; }
   .social-media__image {
-    width: 24px;
-    height: 24px; }
+    width: 23px;
+    height: 23px; }
 
 .menu-bar {
   list-style: none;
@@ -1689,7 +1694,7 @@ body {
     line-height: 17px; }
     .menu-bar__item:first-of-type {
       margin-top: 4px;
-      margin-bottom: 22px; }
+      margin-bottom: 20px; }
       .menu-bar__item:first-of-type > .menu-bar__item-ref {
         font-family: Montserrat;
         font-style: normal;
@@ -1811,37 +1816,38 @@ body {
 .registration {
   display: flex;
   flex-direction: column;
-  width: 100%; }
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative; }
   @media screen and (max-width: 400px) {
     .registration {
       width: auto; } }
-  .registration__main-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .registration__background-image-container {
-    width: 100%;
-    z-index: 1;
-    position: relative; }
-    @media screen and (max-width: 900px) {
-      .registration__background-image-container {
-        order: 1; } }
-  .registration__background-image {
-    width: 100%;
-    height: 100%; }
-  .registration__form-container {
+  .registration__form {
     width: 380px;
     position: absolute;
-    z-index: 2; }
+    z-index: 2;
+    margin-left: 4px; }
     @media screen and (max-width: 900px) {
-      .registration__form-container {
+      .registration__form {
         position: relative;
         order: 2;
         margin-top: 0px;
         margin-left: 0px; } }
     @media screen and (max-width: 380px) {
-      .registration__form-container {
+      .registration__form {
         width: 100%; } }
+  .registration__background {
+    display: flex;
+    width: 100%;
+    height: 684px;
+    z-index: 1;
+    position: relative;
+    background-image: url(src/pages/web-pages/registration/img/background.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media screen and (max-width: 900px) {
+      .registration__background {
+        order: 1; } }
 
