@@ -31,12 +31,10 @@ class RoomInfo {
         if (checkedButton.dataset.serialNumber === "2") {
             checkedButton.checked = false;
             checkedButton.previousElementSibling.previousElementSibling.checked = true;
-        }
-        else if (checkedButton.dataset.serialNumber === "4") {
+        } else if (checkedButton.dataset.serialNumber === "4") {
             checkedButton.checked = false;
             checkedButton.previousElementSibling.previousElementSibling.checked = true;
-        }
-        else {
+        } else {
             checkedButton.checked = false;
             checkedButton.previousElementSibling.previousElementSibling.checked = true;
         }
@@ -48,17 +46,15 @@ class RoomInfo {
         const checkedButton = this.radioButtons.find((button) => button.checked);
 
         if (!checkedButton.nextElementSibling.nextElementSibling.matches(".room-info__radio-button")) return;
-        else if (checkedButton.nextElementSibling.nextElementSibling.disabled) return;
+        if (checkedButton.nextElementSibling.nextElementSibling.disabled) return;
 
         if (checkedButton.dataset.serialNumber === "3") {
             checkedButton.checked = false;
             checkedButton.nextElementSibling.nextElementSibling.checked = true;
-        }
-        else if (checkedButton.dataset.serialNumber === "1") {
+        } else if (checkedButton.dataset.serialNumber === "1") {
             checkedButton.checked = false;
             checkedButton.nextElementSibling.nextElementSibling.checked = true;
-        }
-        else {
+        } else {
             checkedButton.checked = false;
             checkedButton.nextElementSibling.nextElementSibling.checked = true;
         }

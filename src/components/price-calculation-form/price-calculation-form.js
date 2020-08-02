@@ -18,9 +18,9 @@ class PriceCalculationForm {
         const calendarContainer = this.containerElement.querySelector(".price-calculation-form__calendar");
         this.calendar = new Calendar(calendarContainer);
 
-        this.roomRentalPrice = Number.parseInt(this.mainSum.dataset.value);
+        this.roomRentalPrice = Number.parseInt(this.mainSum.dataset.value, 10);
         this.currencyType = this.mainSum.dataset.currencyType;
-        this.discountValue = Number.parseInt(this.services.dataset.value);
+        this.discountValue = Number.parseInt(this.services.dataset.value, 10);
         this.totalSum = 0;
         this.servicesSum = 0;
         this.roomRentalSum = 0;
@@ -34,11 +34,10 @@ class PriceCalculationForm {
     }
 
     initialize() {
-        this.dropdown.dropdownList.forEach(item => {
+        this.dropdown.dropdownList.forEach((item) => {
             item.minus.addEventListener("click", this.handlerDropdownInputChange);
             item.plus.addEventListener("click", this.handlerDropdownInputChange);
         });
-
 
         const datepicker = this.calendar.datepickerInstance;
         const oldHandlerSelect = datepicker.selectDate;
@@ -101,19 +100,22 @@ class PriceCalculationForm {
     }
 
     formateNumber(number) {
-        return number.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+        return number.toString().replace(/(\d)(?=(\d{3})+$)/g, "$1 ");
     }
 
     doDeclensionOfWord(number) {
         const words = ["сутки", "суток", "суток"];
 
-        if (number.toString()[number.toString().length - 1] === "1" && number !== 11)
-            return words[0];
-        else if ((number.toString()[number.toString().length - 1] > 1 && number.toString()[number.toString().length - 1] <= 4)
-            && (number < 12 || number > 14))
-            return words[1];
-        else
-            return words[2];
+        const isEndOnOne = number.toString()[number.toString().length - 1] === "1";
+        const isNotEqualEleven = number !== 11;
+        if (isEndOnOne && isNotEqualEleven) return words[0];
+
+        const isEndNumberMoreThenOne = number.toString()[number.toString().length - 1] > 1;
+        const isEndNumberLessThenFour = number.toString()[number.toString().length - 1] <= 4;
+        const isEndNumberBetweenTwelveAndFourteen = number < 12 || number > 14;
+        if (isEndNumberMoreThenOne && isEndNumberLessThenFour && isEndNumberBetweenTwelveAndFourteen) return words[1];
+
+        return words[2];
     }
 }
 

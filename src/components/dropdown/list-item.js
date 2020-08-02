@@ -8,25 +8,23 @@ class ListItem {
         this.plus = this.containerElement.querySelector(".dropdown__item-plus");
         this.minus = this.containerElement.querySelector(".dropdown__item-minus");
 
-        this._handlerDropdownItemPlus = this._handlerDropdownItemPlus.bind(this);
-        this._handlerDropdownItemMinus = this._handlerDropdownItemMinus.bind(this);
+        this.handlerDropdownItemPlus = this.handlerDropdownItemPlus.bind(this);
+        this.handlerDropdownItemMinus = this.handlerDropdownItemMinus.bind(this);
 
         this.initialize();
     }
 
     initialize() {
-        //e.addEventListener("click", handlerDropdownItemPlus);
-        this.plus.onclick = this._handlerDropdownItemPlus;
-        this.minus.onclick = this._handlerDropdownItemMinus;
+        this.plus.onclick = this.handlerDropdownItemPlus;
+        this.minus.onclick = this.handlerDropdownItemMinus;
     }
 
-    _handlerDropdownItemPlus(event) {
+    handlerDropdownItemPlus(event) {
         event.preventDefault();
 
-        let curValue = Number.parseInt(this.value.textContent);
+        let curValue = Number.parseInt(this.value.textContent, 10);
         curValue += 1;
-        if (curValue !== 0)
-            this.minus.style.opacity = 1;
+        if (curValue !== 0) this.minus.style.opacity = 1;
         this.value.textContent = curValue.toString();
 
         if (this.dropdown.clearButton) {
@@ -36,10 +34,10 @@ class ListItem {
         this.dropdown.changeDropdownInputValue();
     }
 
-    _handlerDropdownItemMinus(event) {
+    handlerDropdownItemMinus(event) {
         event.preventDefault();
 
-        let curValue = Number.parseInt(this.value.textContent);
+        let curValue = Number.parseInt(this.value.textContent, 10);
         curValue -= 1;
         if (curValue < 0) curValue = 0;
 
@@ -48,11 +46,9 @@ class ListItem {
         if (curValue === 0) {
             event.currentTarget.style.opacity = 0.38;
 
-            //проверка на наличие нулей в значениях всех элементов выпадающего списка
-            const values = this.dropdown.dropdownList.map(item => item.value);
-            const absoluteSum = values.reduce((sum, value) => {
-                return sum + Math.abs(Number.parseInt(value.textContent));
-            }, 0);
+            // проверка на наличие нулей в значениях всех элементов выпадающего списка
+            const values = this.dropdown.dropdownList.map((item) => item.value);
+            const absoluteSum = values.reduce((sum, value) => sum + Math.abs(Number.parseInt(value.textContent, 10)), 0);
 
             if (absoluteSum === 0) {
                 if (this.dropdown.clearButton) {

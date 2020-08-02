@@ -1,10 +1,12 @@
 class Pagination {
     constructor(options, outerContainerElement) {
         this.options = {};
+
         Object.assign(this.options, options);
 
         this.outerContainerElement = outerContainerElement;
 
+        // eslint-disable-next-line global-require
         this.paginationPugCode = require("./pagination-for-render.pug");
 
         this.handlerSelectPage = this.handlerSelectPage.bind(this);
@@ -22,7 +24,7 @@ class Pagination {
 
     setClickEventsToPagesLinks() {
         const links = this.outerContainerElement.querySelectorAll(".js-pagination__page-link");
-        links.forEach(a => {
+        links.forEach((a) => {
             a.onclick = this.handlerSelectPage;
         });
     }
@@ -32,8 +34,7 @@ class Pagination {
         const firstItemCountNumber = Math.round(this.options.itemsCount / this.options.pagesCount) * (this.options.curPageNumber - 1) + 1;
         let lastItemCountNumber = Math.round(this.options.itemsCount / this.options.pagesCount) * this.options.curPageNumber;
         if (lastItemCountNumber > this.options.itemsCount) lastItemCountNumber = this.options.itemsCount;
-        bottomTextElement.textContent =
-            `${firstItemCountNumber} - ${lastItemCountNumber} из ${this.options.itemsCount} вариантов аренды`;
+        bottomTextElement.textContent = `${firstItemCountNumber} - ${lastItemCountNumber} из ${this.options.itemsCount} вариантов аренды`;
     }
 
     handlerSelectPage(event) {
@@ -41,13 +42,13 @@ class Pagination {
 
         const selectedPageNumber = event.currentTarget.dataset.pageNumber;
         if (selectedPageNumber === "leftArrow") {
-            this.options.curPageNumber = this.options.curPageNumber - 1;
+            this.options.curPageNumber -= 1;
             this.outerContainerElement.innerHTML = this.paginationPugCode(this.options);
         } else if (selectedPageNumber === "rightArrow") {
-            this.options.curPageNumber = this.options.curPageNumber + 1;
+            this.options.curPageNumber += 1;
             this.outerContainerElement.innerHTML = this.paginationPugCode(this.options);
         } else {
-            this.options.curPageNumber = Number.parseInt(selectedPageNumber);
+            this.options.curPageNumber = Number.parseInt(selectedPageNumber, 10);
             this.outerContainerElement.innerHTML = this.paginationPugCode(this.options);
         }
 

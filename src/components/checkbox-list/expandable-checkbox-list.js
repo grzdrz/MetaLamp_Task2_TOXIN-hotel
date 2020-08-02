@@ -6,13 +6,13 @@ class ExpandableCheckbox {
         this.list = this.containerElement.querySelector(".checkbox-list__list");
         this.dropdownArrow = this.containerElement.querySelector(".checkbox-list__dropdown-arrow");
 
-        this._handlerExpand = this._handlerExpand.bind(this);
+        this.handlerExpand = this.handlerExpand.bind(this);
 
         this.initialize();
     }
 
     initialize() {
-        this.dropdownButton.onclick = this._handlerExpand;
+        this.dropdownButton.onclick = this.handlerExpand;
 
         if (this.list.dataset.isOpened === "true") {
             this.list.style.display = "grid";
@@ -21,10 +21,9 @@ class ExpandableCheckbox {
             this.list.style.display = "none";
             this.dropdownArrow.style.transform = "rotate(180deg)";
         }
-
     }
 
-    _handlerExpand() {
+    handlerExpand() {
         if (this.list.dataset.isOpened === "true") {
             this.list.style.display = "none";
             this.list.dataset.isOpened = "false";
