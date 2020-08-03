@@ -3,11 +3,6 @@ class ListItem {
         this.dropdown = dropdown;
         this.containerElement = containerElement;
 
-        this.name = this.containerElement.querySelector(".dropdown__item-name");
-        this.value = this.containerElement.querySelector(".dropdown__item-value");
-        this.plus = this.containerElement.querySelector(".dropdown__item-plus");
-        this.minus = this.containerElement.querySelector(".dropdown__item-minus");
-
         this.handlerDropdownItemPlus = this.handlerDropdownItemPlus.bind(this);
         this.handlerDropdownItemMinus = this.handlerDropdownItemMinus.bind(this);
 
@@ -15,6 +10,11 @@ class ListItem {
     }
 
     initialize() {
+        this.name = this.containerElement.querySelector(".dropdown__item-name");
+        this.value = this.containerElement.querySelector(".dropdown__item-value");
+        this.plus = this.containerElement.querySelector(".dropdown__item-plus");
+        this.minus = this.containerElement.querySelector(".dropdown__item-minus");
+
         this.plus.onclick = this.handlerDropdownItemPlus;
         this.minus.onclick = this.handlerDropdownItemMinus;
     }

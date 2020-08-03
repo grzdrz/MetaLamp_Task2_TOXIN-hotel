@@ -3,7 +3,18 @@ import Calendar from "../calendar/calendar";
 
 class PriceCalculationForm {
     constructor(outerContainerElement) {
-        this.containerElement = outerContainerElement.querySelector(".price-calculation-form");
+        this.outerContainerElement = outerContainerElement;
+
+        this.handlerDropdownInputChange = this.handlerDropdownInputChange.bind(this);
+        this.getHandlerSelectWrapper = this.getHandlerSelectWrapper.bind(this);
+        this.getHandlerClearClickWrapper = this.getHandlerClearClickWrapper.bind(this);
+        this.setTotalPrice = this.setTotalPrice.bind(this);
+
+        this.initialize();
+    }
+
+    initialize() {
+        this.containerElement = this.outerContainerElement.querySelector(".price-calculation-form");
 
         this.mainSum = this.containerElement.querySelector(".price-calculation-form__main-sum");
         this.mainSumFormula = this.containerElement.querySelector(".price-calculation-form__main-sum-formula");
@@ -25,15 +36,6 @@ class PriceCalculationForm {
         this.servicesSum = 0;
         this.roomRentalSum = 0;
 
-        this.handlerDropdownInputChange = this.handlerDropdownInputChange.bind(this);
-        this.getHandlerSelectWrapper = this.getHandlerSelectWrapper.bind(this);
-        this.getHandlerClearClickWrapper = this.getHandlerClearClickWrapper.bind(this);
-        this.setTotalPrice = this.setTotalPrice.bind(this);
-
-        this.initialize();
-    }
-
-    initialize() {
         this.dropdown.dropdownList.forEach((item) => {
             item.minus.addEventListener("click", this.handlerDropdownInputChange);
             item.plus.addEventListener("click", this.handlerDropdownInputChange);
@@ -56,7 +58,7 @@ class PriceCalculationForm {
     }
 
     getHandlerSelectWrapper(oldHandler) {
-        return function (date) {
+        return function newHandler(date) {
             oldHandler(date);
 
             const firstDateInput = this.calendar.jqDateInputs.eq(0);
@@ -84,7 +86,7 @@ class PriceCalculationForm {
     }
 
     getHandlerClearClickWrapper(oldHandler) {
-        return function (event) {
+        return function newHandler(event) {
             oldHandler(event);
 
             this.roomRentalSum = 0;
@@ -113,7 +115,8 @@ class PriceCalculationForm {
         const isEndNumberMoreThenOne = number.toString()[number.toString().length - 1] > 1;
         const isEndNumberLessThenFour = number.toString()[number.toString().length - 1] <= 4;
         const isEndNumberBetweenTwelveAndFourteen = number < 12 || number > 14;
-        if (isEndNumberMoreThenOne && isEndNumberLessThenFour && isEndNumberBetweenTwelveAndFourteen) return words[1];
+        const isSecondWord = isEndNumberMoreThenOne && isEndNumberLessThenFour && isEndNumberBetweenTwelveAndFourteen;
+        if (isSecondWord) return words[1];
 
         return words[2];
     }

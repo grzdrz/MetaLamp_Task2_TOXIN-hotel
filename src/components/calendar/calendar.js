@@ -14,6 +14,11 @@ const dateFormatOptions2 = {
 class Calendar {
     constructor(outerContainerElement) {
         this.outerContainerElement = outerContainerElement;
+
+        this.initialize();
+    }
+
+    initialize() {
         const jqOuterContainerElement = $("html").find(this.outerContainerElement);
         this.jqContainerElement = jqOuterContainerElement.find(".calendar");
         this.jqDateInputs = this.jqContainerElement.find(".calendar__input");
@@ -23,10 +28,6 @@ class Calendar {
 
         this.datepickerInstance = {};
 
-        this.initialize();
-    }
-
-    initialize() {
         if (this.isDouble) this.setDoubleDatepicker();
         else if (this.withRangePicking) this.setSingleDatepickerWithRange();
         else this.singleDatepickerWithoutRange();

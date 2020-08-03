@@ -7,5 +7,4 @@ import "./registration.scss";
 
 require.context("../../../", true, /\.(png|svg|jpg)$/);
 
-const signUpFormContainer = document.querySelector(".registration__form");
-const signUpForm = new SignUpForm(signUpFormContainer);
+const signUpForm = new SignUpForm(document.querySelector(".registration__form"));

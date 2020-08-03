@@ -4,12 +4,16 @@
         "es2020": true
     },
     "extends": [
-        "airbnb-base"
+        "airbnb-base",
+        "plugin:fsd/all"
     ],
     "parserOptions": {
         "ecmaVersion": 11,
         "sourceType": "module"
     },
+    "plugins": [
+        "fsd"
+    ],
     "rules": {
         "indent": [
             "error",

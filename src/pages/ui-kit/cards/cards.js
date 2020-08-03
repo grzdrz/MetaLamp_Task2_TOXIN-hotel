@@ -30,7 +30,7 @@ const priceCalculationForm = new PriceCalculationForm(priceCalculationFormContai
 const roomInfoElements = Array.from(document.querySelectorAll(".cards__room-info"));
 const roomsInfo = roomInfoElements.map((element) => new RoomInfo(element));
 
-const staticDatepicker = $(".cards__datepicker").datepicker({
+const staticDatepicker = $(".js-cards__datepicker").datepicker({
     range: true,
     position: "bottom left",
     navTitles: {

@@ -2,7 +2,20 @@ import ListItem from "./list-item";
 
 class Dropdown {
     constructor(outerContainerElement) {
-        this.containerElement = outerContainerElement.querySelector(".dropdown");
+        this.outerContainerElement = outerContainerElement;
+
+        this.handlerDropdownClick = this.handlerDropdownClick.bind(this);
+        this.handlerDropdownEnter = this.handlerDropdownEnter.bind(this);
+        this.handlerDropdownLeave = this.handlerDropdownLeave.bind(this);
+
+        this.handlerClear = this.handlerClear.bind(this);
+        this.handlerApply = this.handlerApply.bind(this);
+
+        this.initialize();
+    }
+
+    initialize() {
+        this.containerElement = this.outerContainerElement.querySelector(".dropdown");
 
         this.withTotalValue = (!!this.containerElement.matches(".dropdown__with-total-value"));
         this.totalValue = 0;
@@ -20,17 +33,6 @@ class Dropdown {
         this.clearButton = this.containerElement.querySelector(".dropdown__clear-button");
         this.applyButton = this.containerElement.querySelector(".dropdown__apply-button");
 
-        this.handlerDropdownClick = this.handlerDropdownClick.bind(this);
-        this.handlerDropdownEnter = this.handlerDropdownEnter.bind(this);
-        this.handlerDropdownLeave = this.handlerDropdownLeave.bind(this);
-
-        this.handlerClear = this.handlerClear.bind(this);
-        this.handlerApply = this.handlerApply.bind(this);
-
-        this.initialize();
-    }
-
-    initialize() {
         this.input.onclick = this.handlerDropdownClick;
         this.dropdownArrow.onclick = this.handlerDropdownClick;
         // если обработчик выше повесить на контейнер, то дропдаун будет закрываться при клике по нему, т.к. находится в контейнере
@@ -93,7 +95,9 @@ class Dropdown {
         const isEndNumberMoreThenOne = number.toString()[number.toString().length - 1] > 1;
         const isEndNumberLessThenFour = number.toString()[number.toString().length - 1] <= 4;
         const isEndNumberBetweenTwelveAndFourteen = number < 12 || number > 14;
-        if (isEndNumberMoreThenOne && isEndNumberLessThenFour && isEndNumberBetweenTwelveAndFourteen) return words[1];
+        const isSecondWord = isEndNumberMoreThenOne && isEndNumberLessThenFour && isEndNumberBetweenTwelveAndFourteen;
+        if (isSecondWord) return words[1];
+
         return words[2];
     }
 

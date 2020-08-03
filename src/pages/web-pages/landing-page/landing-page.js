@@ -7,5 +7,4 @@ import "./landing-page.scss";
 
 require.context("../../../", true, /\.(png|svg|jpg)$/);
 
-const roomFindedFormContainer = document.querySelector(".landing-page__form");
-const roomFindedForm = new RoomFindedForm(roomFindedFormContainer);
+const roomFindedForm = new RoomFindedForm(document.querySelector(".landing-page__form"));

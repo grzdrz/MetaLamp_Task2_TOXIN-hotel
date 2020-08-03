@@ -3,7 +3,13 @@ import Calendar from "../calendar/calendar";
 
 class RoomFinderForm {
     constructor(outerContainerElement) {
-        this.containerElement = outerContainerElement.querySelector(".room-finder-form");
+        this.outerContainerElement = outerContainerElement;
+
+        this.initialize();
+    }
+
+    initialize() {
+        this.containerElement = this.outerContainerElement.querySelector(".room-finder-form");
 
         const dropdownContainer = this.containerElement.querySelector(".room-finder-form__dropdown");
         this.dropdown = new Dropdown(dropdownContainer);

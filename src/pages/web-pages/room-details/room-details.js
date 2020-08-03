@@ -11,5 +11,4 @@ require.context("../../../", true, /\.(png|svg|jpg)$/);
 const pieChart = Array.from(document.querySelectorAll(".js-form-elements__pie-chart"))
     .map((element) => new PieChart(element));
 
-const priceCalculationForm = Array.from(document.querySelectorAll(".room-details__price-calculation-form"))
-    .map((element) => new PriceCalculationForm(element));
+const priceCalculationForm = new PriceCalculationForm(document.querySelector(".room-details__price-calculation-form"));

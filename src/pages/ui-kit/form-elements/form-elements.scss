@@ -22,13 +22,13 @@
 .form-elements {
     min-width: 100%;
 
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
     padding: 0px 9.6222%;
 
     &__column {
+        justify-self: center;
         &-1 {
             display: flex;
             flex-direction: column;
@@ -52,8 +52,18 @@
         }
     }
 
+    &__row {
+        &-1 {
+        }
+        &-2 {
+        }
+        &-3 {
+        }
+    }
+
     &__form-input-1,
     &__form-input-2,
+    &__form-input-3,
     &__form-input-4 {
         width: 320px;
     }
@@ -101,7 +111,7 @@
 
     &__range-slider-1,
     &__range-slider-2 {
-        width: 400px;
+        width: 266px;
     }
 
     &__button-1,
@@ -123,7 +133,8 @@
     }
 
     &__guest-room-reviews-1 {
-        width: 520px;
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
 
     &__pie-chart {

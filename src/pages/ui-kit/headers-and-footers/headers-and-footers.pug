@@ -2,7 +2,7 @@ extends ../../ui-kit-base
 
 include ../../../components/logo/logo.pug
 include ../../../components/header/header.pug
-include ../../../components/long-footer/long-footer.pug
+include ../../../components/footer/footer.pug
 include ../../../components/short-footer/short-footer.pug
 
 block content
@@ -19,7 +19,7 @@ block content
             })
 
         div(class=["headersAndFooters__footer-widgets-and-copyright-bar-container"])
-            +long-footer()
+            +footer()
 
         div(class=["headersAndFooters__footer-creative-container"])
             +short-footer()

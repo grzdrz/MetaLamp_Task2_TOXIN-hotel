@@ -1997,8 +1997,7 @@ body {
   display: flex;
   flex-direction: column;
   background: white;
-  width: 400px;
-  /* height: max-content; */ }
+  width: 100%; }
   .range-slider__title {
     display: flex;
     justify-content: space-between; }
@@ -2786,13 +2785,13 @@ body {
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap; }
 
-.long-footer {
+.footer {
   width: 100%;
   display: flex;
   flex-direction: column;
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
-  .long-footer__info-bar {
+  .footer__info-bar {
     width: 100%;
     display: grid;
     grid-template-rows: auto;
@@ -2802,31 +2801,37 @@ body {
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
     margin-bottom: 1px; }
     @media screen and (max-width: 1300px) {
-      .long-footer__info-bar {
+      .footer__info-bar {
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: 31% 22% 22.5% 24.5%; } }
     @media screen and (max-width: 1100px) {
-      .long-footer__info-bar {
+      .footer__info-bar {
         display: grid;
         grid-template-rows: auto auto auto;
         grid-template-columns: 39% 30% 30.5%;
         grid-row-gap: 30px; } }
     @media screen and (max-width: 850px) {
-      .long-footer__info-bar {
+      .footer__info-bar {
         display: grid;
         grid-template-rows: auto auto auto auto;
         grid-template-columns: 55% 45%; } }
-    @media screen and (max-width: 600px) {
-      .long-footer__info-bar {
-        display: grid;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-columns: auto; } }
-  .long-footer__general-info {
+    @media screen and (max-width: 767px) {
+      .footer__info-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        box-shadow: 0px 0px 0px transparent; } }
+  .footer__general-info {
     width: 260px;
     display: flex;
     flex-direction: column; }
-  .long-footer__general-info-text {
+    @media screen and (max-width: 767px) {
+      .footer__general-info {
+        align-items: center; } }
+  .footer__general-info-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -2834,12 +2839,21 @@ body {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     margin-top: 18px; }
-  .long-footer__subscription {
+    @media screen and (max-width: 767px) {
+      .footer__general-info-text {
+        display: none; } }
+  @media screen and (max-width: 767px) {
+    .footer__menu-bar {
+      display: none; } }
+  .footer__subscription {
     display: flex;
     flex-direction: column;
     justify-self: end;
     margin-top: 4px; }
-  .long-footer__subscription-title {
+    @media screen and (max-width: 767px) {
+      .footer__subscription {
+        display: none; } }
+  .footer__subscription-title {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -2848,7 +2862,7 @@ body {
     text-transform: uppercase;
     color: #1f2041;
     margin-bottom: 19px; }
-  .long-footer__subscription-description {
+  .footer__subscription-description {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -2856,12 +2870,12 @@ body {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     margin-bottom: 22px; }
-  .long-footer__subscription-form {
+  .footer__subscription-form {
     display: flex;
     flex-wrap: nowrap;
     width: 260px;
     background: transparent; }
-  .long-footer__copyright-bar {
+  .footer__copyright-bar {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -2870,9 +2884,12 @@ body {
     justify-content: space-between;
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1); }
     @media screen and (max-width: 850px) {
-      .long-footer__copyright-bar {
+      .footer__copyright-bar {
         flex-direction: column; } }
-  .long-footer__copyright {
+    @media screen and (max-width: 767px) {
+      .footer__copyright-bar {
+        padding-bottom: 120px; } }
+  .footer__copyright {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -2881,7 +2898,7 @@ body {
     color: rgba(31, 32, 65, 0.75);
     text-align: center; }
     @media screen and (max-width: 850px) {
-      .long-footer__copyright {
+      .footer__copyright {
         margin-bottom: 20px; } }
 
 .search-room {

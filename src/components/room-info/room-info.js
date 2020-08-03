@@ -1,12 +1,6 @@
 class RoomInfo {
     constructor(outerContainerElement) {
-        this.containerElement = outerContainerElement.querySelector(".room-info");
-        this.arrows = this.containerElement.querySelector(".room-info__arrows");
-        if (this.arrows) {
-            this.leftArrow = this.arrows.querySelector(".room-info__arrow-back");
-            this.rightArrow = this.arrows.querySelector(".room-info__arrow-forward");
-        }
-        this.radioButtons = Array.from(this.containerElement.querySelectorAll(".room-info__radio-button"));
+        this.outerContainerElement = outerContainerElement;
 
         this.handlerLeftArrowClick = this.handlerLeftArrowClick.bind(this);
         this.handlerRightArrowClick = this.handlerRightArrowClick.bind(this);
@@ -15,6 +9,14 @@ class RoomInfo {
     }
 
     initialize() {
+        this.containerElement = this.outerContainerElement.querySelector(".room-info");
+        this.arrows = this.containerElement.querySelector(".room-info__arrows");
+        if (this.arrows) {
+            this.leftArrow = this.arrows.querySelector(".room-info__arrow-back");
+            this.rightArrow = this.arrows.querySelector(".room-info__arrow-forward");
+        }
+        this.radioButtons = Array.from(this.containerElement.querySelectorAll(".room-info__radio-button"));
+
         if (this.leftArrow && this.rightArrow) {
             this.leftArrow.onclick = this.handlerLeftArrowClick;
             this.rightArrow.onclick = this.handlerRightArrowClick;

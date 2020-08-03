@@ -8,9 +8,7 @@ global.$ = $;
 
 class RangeSlider {
     constructor(outerContainerElement) {
-        this.containerElement = outerContainerElement.querySelector(".range-slider");
-        this.content = this.containerElement.querySelector(".range-slider__content");
-        this.currentValues = this.containerElement.querySelector(".range-slider__current-values");
+        this.outerContainerElement = outerContainerElement;
 
         this.renderTitle = this.renderTitle.bind(this);
 
@@ -27,6 +25,14 @@ class RangeSlider {
             onUpdate: this.renderTitle,
             onChange: this.renderTitle,
         };
+
+        this.initialize();
+    }
+
+    initialize() {
+        this.containerElement = this.outerContainerElement.querySelector(".range-slider");
+        this.content = this.containerElement.querySelector(".range-slider__content");
+        this.currentValues = this.containerElement.querySelector(".range-slider__current-values");
 
         this.jqSlider = $(this.content).ionRangeSlider(this.data);
     }

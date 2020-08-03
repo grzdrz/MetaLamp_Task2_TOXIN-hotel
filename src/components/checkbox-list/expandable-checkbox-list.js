@@ -1,10 +1,6 @@
 class ExpandableCheckbox {
     constructor(outerContainerElement) {
-        this.containerElement = outerContainerElement.querySelector(".checkbox-list");
-
-        this.dropdownButton = this.containerElement.querySelector(".checkbox-list__title");
-        this.list = this.containerElement.querySelector(".checkbox-list__list");
-        this.dropdownArrow = this.containerElement.querySelector(".checkbox-list__dropdown-arrow");
+        this.outerContainerElement = outerContainerElement;
 
         this.handlerExpand = this.handlerExpand.bind(this);
 
@@ -12,6 +8,11 @@ class ExpandableCheckbox {
     }
 
     initialize() {
+        this.containerElement = this.outerContainerElement.querySelector(".checkbox-list");
+        this.dropdownButton = this.containerElement.querySelector(".checkbox-list__title");
+        this.list = this.containerElement.querySelector(".checkbox-list__list");
+        this.dropdownArrow = this.containerElement.querySelector(".checkbox-list__dropdown-arrow");
+
         this.dropdownButton.onclick = this.handlerExpand;
 
         if (this.list.dataset.isOpened === "true") {
