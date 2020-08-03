@@ -2187,7 +2187,8 @@ body {
   display: flex;
   flex-direction: column; }
   .bullet-list__title {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    margin-left: 20px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -2226,7 +2227,9 @@ body {
     font-weight: bold;
     font-size: 19px;
     line-height: 24px;
-    color: #1f2041; }
+    color: #1f2041;
+    margin-bottom: 18px;
+    text-transform: none; }
 
 .calendar {
   display: flex;
@@ -2769,17 +2772,34 @@ body {
     text-align: center; }
 
 .room-reviews__title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+
+.room-reviews__title-description {
   font-family: Quicksand, OpenSans;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-  color: #1f2041;
-  margin-bottom: 20px; }
+  color: #1f2041; }
+
+.room-reviews__review-count {
+  align-self: center;
+  margin-top: 5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.5);
+  white-space: nowrap; }
 
 .room-reviews__review-container {
   display: grid;
-  grid-template-columns: max-content 84%;
+  grid-template-columns: max-content auto;
   grid-template-rows: auto auto;
   margin-bottom: 22px; }
   .room-reviews__review-container:last-child {
@@ -2787,8 +2807,8 @@ body {
 
 .room-reviews__user-avatar {
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
+  width: 47px;
+  height: 47px;
   margin-bottom: 12px;
   border: 2px solid #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1); }
@@ -2803,6 +2823,10 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75); }
+
+.room-reviews__like-button {
+  justify-self: center;
+  padding-top: 1px; }
 
 .room-reviews__number-of-days-since-comment {
   font-family: Montserrat;
@@ -2830,7 +2854,7 @@ body {
     .pie-chart {
       align-items: center; } }
   .pie-chart__title {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;

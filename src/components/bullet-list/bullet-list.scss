@@ -3,7 +3,8 @@
     flex-direction: column;
 
     &__title {
-        margin-bottom: 15px;
+        margin-bottom: 18px;
+        margin-left: 20px;
 
         font-family: Montserrat;
         font-style: normal;
@@ -57,5 +58,7 @@
         font-size: 19px;
         line-height: 24px;
         color: #1f2041;
+        margin-bottom: 18px;
+        text-transform: none;
     }
 }

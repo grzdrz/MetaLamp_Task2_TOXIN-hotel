@@ -1,15 +1,33 @@
 include ../like-button/like-button.pug
 
 mixin room-reviews(options)
-    - const {reviewsArray} = options;
+    - const {reviews} = options;
+
+    -
+        function doDeclensionOfWord(number) {
+            const words = ["отзыв", "отзыва", "отзывов"];
+
+            const isEndOnOne = number.toString()[number.toString().length - 1] === "1";
+            const isNotEqualEleven = number !== 11;
+            if (isEndOnOne && isNotEqualEleven) return words[0];
+
+            const isEndNumberMoreThenOne = number.toString()[number.toString().length - 1] > 1;
+            const isEndNumberLessThenFour = number.toString()[number.toString().length - 1] <= 4;
+            const isEndNumberBetweenTwelveAndFourteen = number < 12 || number > 14;
+            if (isEndNumberMoreThenOne && isEndNumberLessThenFour && isEndNumberBetweenTwelveAndFourteen) return words[1];
+            return words[2];
+        }
 
     div(class=["room-reviews"])
-        p(class=["room-reviews__title"]) Отзывы посетителей номера
-        - for(let review of reviewsArray)
+        p(class=["room-reviews__title"]) 
+            span(class=["room-reviews__title-description"]) Отзывы посетителей номера
+            span(class=["room-reviews__review-count"])= `${reviews.length} ${doDeclensionOfWord(reviews.length)}`
+        - for(let review of reviews)
             div(class=["room-reviews__review-container"])
                 img(src=`./src/components/room-reviews/img/${review.imageName}.png` class=["room-reviews__user-avatar"])
                 div(class=["room-reviews__user-info"])
                     p(class=["room-reviews__user-full-name"])= review.fullName
                     p(class=["room-reviews__number-of-days-since-comment"])= review.numberOfDaysSinceComment
-                +like-button(review.likeButtonOptions)
+                div(class=["room-reviews__like-button"])
+                    +like-button(review.likeButtonOptions)
                 p(class=["room-reviews__comment"])= review.comment

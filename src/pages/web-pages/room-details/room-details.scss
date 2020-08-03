@@ -19,29 +19,46 @@
     &__room-photos {
         display: flex;
         width: 100%;
+        height: 485px;
     }
-    &__room-big-photo-container {
+
+    &__big-photo {
+        display: flex;
         width: scalePixelsAsPercentage(981, 1440);
         height: 100%;
+        background-image: url(img/background1.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-    &__room-small-photos-container {
+
+    &__small-photos {
+        display: flex;
+        flex-direction: column;
         width: scalePixelsAsPercentage((1440 - 981), 1440);
         height: 100%;
     }
-    &__room-small-photo-container {
+
+    &__small-photo {
+        display: flex;
         height: 50%;
         width: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-    &__room-big-photo,
-    &__room-small-photo {
-        width: 100%;
-        height: 100%;
+    &__small-photo-1 {
+        background-image: url(img/background2.jpg);
+    }
+    &__small-photo-2 {
+        background-image: url(img/background3.jpg);
     }
 
-    &__room-full-info {
+    &__info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        border-bottom: 2px solid rgba(31, 32, 65, 0.25);
 
         padding: scalePixelsAsPercentage(70, 1440) scalePixelsAsPercentage(140, 1440);
 
@@ -56,17 +73,18 @@
         }
     }
 
-    &__room-info {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
+    &__room-descriptions {
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-template-rows: auto auto auto;
 
-        @media screen and (max-width: 1340px) {
-            align-items: center;
+        @media screen and (max-width: 800px) {
+            grid-template-columns: min-content;
+            grid-template-rows: auto auto auto auto auto;
         }
     }
 
-    &__price-calculation-form-container {
+    &__price-calculation-form {
         width: 380px;
         @media screen and (max-width: 1340px) {
             display: flex;
@@ -79,52 +97,45 @@
         }
     }
 
-    &__room-details-and-rating-pie-chart {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 33px;
-
-        @media screen and (max-width: 800px) {
-            flex-direction: column;
-            //align-items: center;
-            margin-bottom: 30px;
-        }
-    }
-    &__room-details-container {
-    }
-    &__rating-pie-chart-container {
+    &__pie-chart {
+        margin-left: 15px;
         @media screen and (max-width: 800px) {
             margin-top: 30px;
         }
     }
 
-    &__room-details-container {
-        margin-right: 66px;
+    &__room-advantages {
         @media screen and (max-width: 800px) {
             margin-right: 0px;
         }
     }
 
-    &__guest-room-reviews-container {
-        margin-bottom: 30px;
+    &__room-advantages-title {
+        margin-bottom: 20px;
+
+        font-family: Quicksand, OpenSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        color: #1f2041;
+    }
+
+    &__room-reviews {
+        margin-top: 33px;
+        margin-bottom: 32px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
         @media screen and (max-width: 800px) {
             padding-left: 20px;
             padding-right: 20px;
+            grid-column-start: 1;
+            grid-column-end: 1;
         }
     }
 
-    &__rules {
-        display: flex;
-        flex-direction: row;
-
-        @media screen and (max-width: 800px) {
-            flex-direction: column;
-            width: 100%;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-    }
-    &__bullet-list-container {
+    &__bullet-list {
         margin-right: 70px;
 
         @media screen and (max-width: 800px) {
@@ -137,10 +148,12 @@
     }
 
     &__cancel-rule {
+        margin-left: 30px;
         @media screen and (max-width: 800px) and (min-width: 500px) {
             align-self: flex-end;
         }
     }
+
     &__cancel-rule-title {
         font-family: Quicksand, OpenSans;
         font-style: normal;
@@ -149,7 +162,7 @@
         line-height: 24px;
         color: #1f2041;
 
-        margin-bottom: 20px;
+        margin-bottom: 18px;
     }
 
     &__cancel-rule-main-text {

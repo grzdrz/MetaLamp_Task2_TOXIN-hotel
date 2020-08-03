@@ -8,8 +8,8 @@ import "./room-details.scss";
 
 require.context("../../../", true, /\.(png|svg|jpg)$/);
 
-const pieChartContainer = document.querySelector(".js-form-elements__pie-chart-container");
-const pieChart = new PieChart(pieChartContainer);
+const pieChart = Array.from(document.querySelectorAll(".js-form-elements__pie-chart"))
+    .map((element) => new PieChart(element));
 
-const priceCalculationFormContainer = document.querySelector(".room-details__price-calculation-form-container");
-const priceCalculationForm = new PriceCalculationForm(priceCalculationFormContainer);
+const priceCalculationForm = Array.from(document.querySelectorAll(".room-details__price-calculation-form"))
+    .map((element) => new PriceCalculationForm(element));

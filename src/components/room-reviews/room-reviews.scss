@@ -2,19 +2,38 @@
 
 .room-reviews {
     &__title {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__title-description {
         font-family: Quicksand, OpenSans;
         font-style: normal;
         font-weight: bold;
         font-size: 19px;
         line-height: 24px;
         color: #1f2041;
+    }
 
-        margin-bottom: 20px;
+    &__review-count {
+        align-self: center;
+        margin-top: 5px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: right;
+        color: rgba(31, 32, 65, 0.5);
+        white-space: nowrap;
     }
 
     &__review-container {
         display: grid;
-        grid-template-columns: max-content 84%;
+        grid-template-columns: max-content auto;
         grid-template-rows: auto auto;
 
         margin-bottom: 22px;
@@ -25,8 +44,8 @@
 
     &__user-avatar {
         border-radius: 50%;
-        width: 44px;
-        height: 44px;
+        width: 47px;
+        height: 47px;
 
         margin-bottom: 12px;
 
@@ -37,6 +56,7 @@
     &__user-info {
         margin-left: 10px;
     }
+
     &__user-full-name {
         font-family: Montserrat;
         font-style: normal;
@@ -44,6 +64,11 @@
         font-size: 14px;
         line-height: 24px;
         color: rgba(31, 32, 65, 0.75);
+    }
+
+    &__like-button {
+        justify-self: center;
+        padding-top: 1px;
     }
 
     &__number-of-days-since-comment {
