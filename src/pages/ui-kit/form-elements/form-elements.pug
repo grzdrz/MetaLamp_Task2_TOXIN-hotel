@@ -14,6 +14,7 @@ include ../../../components/like-button/like-button.pug
 include ../../../components/room-advantages/room-advantages.pug
 include ../../../components/room-reviews/room-reviews.pug
 include ../../../components/pie-chart/pie-chart.pug
+include ../../../components/range-slider/range-slider.pug
 
 block content
     div(class=["form-elements"])
@@ -267,7 +268,9 @@ block content
 
         div(class=["form-elements__column-3"]) 
             div(class=["form-elements__range-slider-1 js-form-elements__range-slider"])
+                +range-slider()
             div(class=["form-elements__range-slider-2 js-form-elements__range-slider"])
+                +range-slider()
 
             div(class=["form-elements__button-1"])
                 +button({

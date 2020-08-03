@@ -4,6 +4,7 @@ include ../../../components/room-info/room-info.pug
 include ../../../components/calendar/calendar.pug
 include ../../../components/dropdown/dropdown.pug
 include ../../../components/checkbox-list/checkbox-list.pug
+include ../../../components/range-slider/range-slider.pug
 
 block content
     div(class=["search-room"])
@@ -35,6 +36,7 @@ block content
                 })
 
             div(class=["search-room__range-slider js-search-room__range-slider"])
+                +range-slider()
 
             div(class=["search-room__checkbox-list-1"])
                 +checkbox-list({
