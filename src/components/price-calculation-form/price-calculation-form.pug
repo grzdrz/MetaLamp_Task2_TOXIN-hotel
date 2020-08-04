@@ -34,9 +34,8 @@ mixin price-calculation-form(options)
 
         div(class=["price-calculation-form__dropdown"])
             +dropdown({
-                titleText: "гости",
-                isTitleTextTestVisible: false,
-                titleTextTestValue: "",
+                title: "гости",
+                additionalTitle: "",
                 placeholder: "Сколько гостей",
                 name: "guestsCount",
                 type: "text",

@@ -1,45 +1,45 @@
 mixin dropdown(options)
     - 
         const {
+            title,
+            additionalTitle,
             placeholder,
             name,
             type,
             value,
-            titleText,
             withTotalValue,
-            isTitleTextTestVisible,
-            titleTextTestValue,
             hasApplyButton,
             hasClearButton,
+            dropdownList,
         } = options;
 
-    - const containerClasses = [`dropdown__${options.withTotalValue ? "with" : "without"}-total-value`];
+    - const containerClasses = [`dropdown__${withTotalValue ? "with" : "without"}-total-value`];
 
     div(class=["dropdown"].concat(containerClasses))
         div(class=["dropdown__title"])
-            p(class=["dropdown__title-text"])= options.titleText
-            - if(options.isTitleTextTestVisible)
-                p(class=["dropdown__title-text-test"])= options.titleTextTestValue
-        div(class=["dropdown__input-container"] data-default-value=options.value)
+            p(class=["dropdown__title-text"])= title
+            - if(additionalTitle)
+                p(class=["dropdown__title-text-test"])= additionalTitle
+        div(class=["dropdown__input-container"] data-default-value=value)
             input(class=["dropdown__input"], 
-                placeholder= options.placeholder,
-                name=options.name,
-                type=options.type,
-                value=options.value,
+                placeholder= placeholder,
+                name=name,
+                type=type,
+                value=value,
                 readonly=true)
             p(class=['dropdown__dropdown-arrow']) expand_more
             div(class=["dropdown__droped-list"]
                 style={display: "none"})
-                - for(let item of options.dropdownList)
+                - for(let item of dropdownList)
                     div(class=["dropdown__list-item"])
                         p(class=["dropdown__item-name"])= item.name
                         div(class=["dropdown__item-handler"])
                             button(class=["dropdown__item-minus"])= "-"
                             p(class=["dropdown__item-value"])= item.value
                             button(class=["dropdown__item-plus"])= "+"
-                - if(options.hasApplyButton || options.hasClearButton)
+                - if(hasApplyButton || hasClearButton)
                     div(class=["dropdown__control-buttons-container"])
-                        - if(options.hasClearButton)
+                        - if(hasClearButton)
                             p(class=["dropdown__clear-button"]) очистить
-                        - if(options.hasApplyButton)
+                        - if(hasApplyButton)
                             p(class=["dropdown__apply-button"]) применить

@@ -17,9 +17,8 @@ mixin room-finder-form(options)
 
         div(class=["room-finder-form__dropdown"])
             +dropdown({
-                titleText: "гости",
-                isTitleTextTestVisible: false,
-                titleTextTestValue: "",
+                title: "гости",
+                additionalTitle: "",
                 placeholder: "Сколько гостей",
                 name: "guestsCount",
                 type: "text",

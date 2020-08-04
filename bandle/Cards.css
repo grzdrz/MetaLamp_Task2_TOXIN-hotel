@@ -832,6 +832,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
+    letter-spacing: -0.2px;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     /* Отменяем перенос текста */
@@ -2265,6 +2266,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
+    letter-spacing: -0.2px;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     /* Отменяем перенос текста */

@@ -11,7 +11,7 @@ mixin form-input(options)
         } = options;
 
     div(class=["form-input"])
-        - if(titleText)
+        - if(titleText || additionalTitleText)
             p(class=["form-input__title"])
                 span(class=["form-input__title-text"])= titleText
                 - if(additionalTitleText)
