@@ -1,7 +1,7 @@
 include ../like-button/like-button.pug
 
 mixin room-reviews(options)
-    - const {reviews} = options;
+    - const { hasTitle, reviews } = options;
 
     -
         function doDeclensionOfWord(number) {
@@ -19,9 +19,10 @@ mixin room-reviews(options)
         }
 
     div(class=["room-reviews"])
-        p(class=["room-reviews__title"]) 
-            span(class=["room-reviews__title-description"]) Отзывы посетителей номера
-            span(class=["room-reviews__review-count"])= `${reviews.length} ${doDeclensionOfWord(reviews.length)}`
+        - if(hasTitle)
+            p(class=["room-reviews__title"]) 
+                span(class=["room-reviews__title-description"]) Отзывы посетителей номера
+                span(class=["room-reviews__review-count"])= `${reviews.length} ${doDeclensionOfWord(reviews.length)}`
         - for(let review of reviews)
             div(class=["room-reviews__review-container"])
                 img(src=`./src/components/room-reviews/img/${review.imageName}.png` class=["room-reviews__user-avatar"])

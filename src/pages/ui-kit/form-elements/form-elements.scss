@@ -63,28 +63,56 @@
         }
     }
 
-    &__grid {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-        grid-row-gap: 40px;
-
+    &__row-1 {
+        display: flex;
         grid-column-start: 1;
         grid-column-end: 4;
 
-        margin-top: 100px;
+        margin-top: 79px;
+        margin-bottom: 157px;
+    }
+
+    &__dropdown-2-3 {
+        margin-right: 181px;
+    }
+
+    &__row-2 {
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-bottom: 40px;
+    }
+
+    &__checkbox-2-3 {
+        margin-right: 181px;
+    }
+
+    &__row-3 {
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 
     &__star-rating-title,
     &__like-button-title,
-    &__toggle-title,
+    &__toggle-title {
+        @include title();
+        margin-bottom: 16px;
+    }
+
     &__radio-title {
+        @include title();
+        margin-bottom: 14px;
+    }
+
+    &__buttons-title {
         @include title();
         margin-bottom: 16px;
     }
 
     &__star-rating-title,
-    &__like-button-title {
+    &__like-button-title,
+    &__buttons-title {
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -129,10 +157,25 @@
         width: 320px;
     }
 
-    &__checkbox-1,
+    &__dropdown-4 {
+        margin-right: 72px;
+    }
+
+    /* &__checkbox-1,
     &__checkbox-4,
     &__room-advantages {
-        width: max-content;
+    } */
+    &__checkbox-4 {
+        margin-right: 133px;
+        margin-top: 15px;
+    }
+
+    &__room-advantages {
+        margin-right: 167px;
+    }
+
+    &__checkbox-1 {
+        margin-bottom: 40px;
     }
 
     &__checkbox-2,
@@ -144,20 +187,30 @@
         margin-bottom: 20px;
     }
 
+    &__radio {
+        margin-bottom: 41px;
+    }
+
     &__toggles {
         display: flex;
         flex-direction: column;
+        margin-bottom: 45px;
     }
 
-    &__like-buttons,
+    &__like-buttons {
+        display: grid;
+        grid-template-columns: min-content min-content;
+        grid-column-gap: 10px;
+        margin-bottom: 40px;
+    }
+
     &__star-ratings {
         display: grid;
         grid-template-columns: min-content min-content;
         grid-column-gap: 20px;
     }
 
-    &__radio-1,
-    &__radio-2,
+    &__radio,
     &__toggle-1,
     &__toggle-2,
     &__like-button-1,
@@ -173,12 +226,12 @@
 
     &__range-slider {
         width: 266px;
+        margin-bottom: 33px;
     }
 
     &__buttons {
         display: grid;
         grid-template-columns: min-content min-content;
-        grid-row-gap: 30px;
         grid-column-gap: 19px;
     }
     &__text-buttons {
@@ -190,6 +243,10 @@
     &__button-4 {
         width: 99px;
         height: 44px;
+    }
+
+    &__button-1 {
+        margin-bottom: 29px;
     }
 
     &__button-5,
@@ -212,11 +269,13 @@
     }
 
     &__bullet-list {
-        width: max-content;
+        margin-top: 15px;
     }
 
     &__guest-room-reviews {
         grid-column-start: 2;
         grid-column-end: 4;
+
+        margin-top: 10px;
     }
 }

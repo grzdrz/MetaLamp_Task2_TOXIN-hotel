@@ -1762,7 +1762,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
     color: rgba(31, 32, 65, 0.5);
     width: max-content;
     display: flex;
@@ -2156,10 +2156,11 @@ body {
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%); }
   .range-slider .irs-handle {
     cursor: pointer;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
+    top: 20px;
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-    border: 0.125rem solid #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 50%; }
   .range-slider .irs--flat .irs-handle > i:first-child {
     display: none; }
@@ -2168,8 +2169,7 @@ body {
   display: flex;
   flex-direction: column; }
   .bullet-list__title {
-    margin-bottom: 18px;
-    margin-left: 20px;
+    margin-bottom: 14px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -2209,8 +2209,9 @@ body {
     font-size: 19px;
     line-height: 24px;
     color: #1f2041;
+    text-transform: none;
     margin-bottom: 18px;
-    text-transform: none; }
+    margin-left: 20px; }
 
 .calendar {
   display: flex;
@@ -2833,7 +2834,11 @@ body {
   display: grid;
   grid-template-columns: min-content min-content min-content;
   grid-column-gap: 127px;
-  padding: 0px 140px 150px; }
+  padding: 0px 140px 150px;
+  /* &__checkbox-1,
+    &__checkbox-4,
+    &__room-advantages {
+    } */ }
   .form-elements__column {
     justify-self: center; }
     .form-elements__column-1 {
@@ -2852,15 +2857,26 @@ body {
       margin-left: 6px; }
       .form-elements__column-3 > * {
         margin-bottom: 20px; }
-  .form-elements__grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    grid-row-gap: 40px;
+  .form-elements__row-1 {
+    display: flex;
     grid-column-start: 1;
     grid-column-end: 4;
-    margin-top: 100px; }
-  .form-elements__star-rating-title, .form-elements__like-button-title, .form-elements__toggle-title, .form-elements__radio-title {
+    margin-top: 79px;
+    margin-bottom: 157px; }
+  .form-elements__dropdown-2-3 {
+    margin-right: 181px; }
+  .form-elements__row-2 {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 40px; }
+  .form-elements__checkbox-2-3 {
+    margin-right: 181px; }
+  .form-elements__row-3 {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4; }
+  .form-elements__star-rating-title, .form-elements__like-button-title, .form-elements__toggle-title {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -2869,7 +2885,25 @@ body {
     text-transform: uppercase;
     color: #1f2041;
     margin-bottom: 16px; }
-  .form-elements__star-rating-title, .form-elements__like-button-title {
+  .form-elements__radio-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 14px; }
+  .form-elements__buttons-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 16px; }
+  .form-elements__star-rating-title, .form-elements__like-button-title, .form-elements__buttons-title {
     grid-column-start: 1;
     grid-column-end: 3; }
   .form-elements__form-input-1, .form-elements__form-input-2, .form-elements__calendar-1, .form-elements__calendar-2 {
@@ -2888,35 +2922,52 @@ body {
     margin-bottom: 20px; }
   .form-elements__dropdown-1, .form-elements__dropdown-4, .form-elements__dropdown-5 {
     width: 320px; }
-  .form-elements__checkbox-1, .form-elements__checkbox-4, .form-elements__room-advantages {
-    width: max-content; }
+  .form-elements__dropdown-4 {
+    margin-right: 72px; }
+  .form-elements__checkbox-4 {
+    margin-right: 133px;
+    margin-top: 15px; }
+  .form-elements__room-advantages {
+    margin-right: 167px; }
+  .form-elements__checkbox-1 {
+    margin-bottom: 40px; }
   .form-elements__checkbox-2, .form-elements__checkbox-3 {
     width: 266px; }
   .form-elements__checkbox-2 {
     margin-bottom: 20px; }
+  .form-elements__radio {
+    margin-bottom: 41px; }
   .form-elements__toggles {
     display: flex;
-    flex-direction: column; }
-  .form-elements__like-buttons, .form-elements__star-ratings {
+    flex-direction: column;
+    margin-bottom: 45px; }
+  .form-elements__like-buttons {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-column-gap: 10px;
+    margin-bottom: 40px; }
+  .form-elements__star-ratings {
     display: grid;
     grid-template-columns: min-content min-content;
     grid-column-gap: 20px; }
-  .form-elements__radio-1, .form-elements__radio-2, .form-elements__toggle-1, .form-elements__toggle-2, .form-elements__like-button-1, .form-elements__like-button-2, .form-elements__star-rating-1, .form-elements__star-rating-2 {
+  .form-elements__radio, .form-elements__toggle-1, .form-elements__toggle-2, .form-elements__like-button-1, .form-elements__like-button-2, .form-elements__star-rating-1, .form-elements__star-rating-2 {
     width: max-content; }
   .form-elements__toggle-1 {
     margin-bottom: 14px; }
   .form-elements__range-slider {
-    width: 266px; }
+    width: 266px;
+    margin-bottom: 33px; }
   .form-elements__buttons {
     display: grid;
     grid-template-columns: min-content min-content;
-    grid-row-gap: 30px;
     grid-column-gap: 19px; }
   .form-elements__text-buttons {
     display: flex; }
   .form-elements__button-1, .form-elements__button-2, .form-elements__button-3, .form-elements__button-4 {
     width: 99px;
     height: 44px; }
+  .form-elements__button-1 {
+    margin-bottom: 29px; }
   .form-elements__button-5, .form-elements__button-6 {
     width: 99px;
     height: 44px; }
@@ -2928,8 +2979,9 @@ body {
   .form-elements__pagination {
     width: max-content; }
   .form-elements__bullet-list {
-    width: max-content; }
+    margin-top: 15px; }
   .form-elements__guest-room-reviews {
     grid-column-start: 2;
-    grid-column-end: 4; }
+    grid-column-end: 4;
+    margin-top: 10px; }
 

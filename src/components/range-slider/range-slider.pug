@@ -1,9 +1,9 @@
 mixin range-slider(options = {})
-    - const { description } = options;
+    - const { title, description } = options;
 
     div(class=["range-slider"])
         p(class=["range-slider__title"])
-            span(class=["range-slider__slider-name"]) диапазон цены
+            span(class=["range-slider__slider-name"])= title
             span(class=["range-slider__current-values"])
         div(class=["range-slider__content"])
         if(description)

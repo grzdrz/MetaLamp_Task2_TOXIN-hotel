@@ -97,7 +97,7 @@ block content
                     ],
                 })
 
-            div(class=["form-elements__radio-1"])
+            div(class=["form-elements__radio"])
                 p(class=["form-elements__radio-title"]) radio buttons 
                 +radio({
                     blockNumber: 1,
@@ -151,9 +151,12 @@ block content
 
         div(class=["form-elements__column-3"]) 
             div(class=["form-elements__range-slider js-form-elements__range-slider"])
-                +range-slider()
+                +range-slider({
+                    title: "range slider"
+                })
 
             div(class=["form-elements__buttons"])
+                p(class=["form-elements__buttons-title"]) buttons
                 div(class=["form-elements__button-1"])
                     +button({
                         text: "click me",
@@ -164,14 +167,14 @@ block content
                 div(class=["form-elements__button-2"])
                     +button({
                         text: "click me",
-                        isHollow:  true,
+                        isHollow:  false,
                         buttonType: "button",
                         hasArrow: false,              
                     })   
                 div(class=["form-elements__button-3"])
                     +button({
                         text: "click me",
-                        isHollow:  false,
+                        isHollow:  true,
                         buttonType: "a",
                         hasArrow: false,               
                     })
@@ -207,7 +210,7 @@ block content
 
             div(class=["form-elements__pagination js-form-elements__pagination"])
 
-        div(class=["form-elements__grid"])
+        div(class=["form-elements__row-1"])
             div(class=["form-elements__dropdown-2-3"])
                 div(class=["form-elements__dropdown-2 js-form-elements__dropdown"]) 
                     +dropdown({
@@ -278,6 +281,7 @@ block content
                     withTotalValue: true,
                 })
 
+        div(class=["form-elements__row-2"])
             div(class=["form-elements__checkbox-2-3"])
                 div(class=["form-elements__checkbox-2 js-form-elements__checkbox_expandable"]) 
                     +checkbox-list({
@@ -315,7 +319,7 @@ block content
                     })
             div(class=["form-elements__checkbox-4"]) 
                 +checkbox-list({
-                    titleText: "rich checkbox list",
+                    titleText: "rich Checkbox Buttons",
                     isExpandable: false,
                     hasAdditionalText: true,
                     checkboxList: [
@@ -333,6 +337,7 @@ block content
                     ],
                 })
 
+        div(class=["form-elements__row-3"])
             div(class=["form-elements__room-advantages"])
                 +room-advantages({
                     details: [
@@ -343,6 +348,7 @@ block content
                 })
             div(class=["form-elements__guest-room-reviews"])
                 +room-reviews({
+                    hasTitle: false,
                     reviews: [
                         {
                             imageName: "image1",

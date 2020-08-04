@@ -14,7 +14,7 @@ class RangeSlider {
 
         this.data = {
             type: "double",
-            min: 0,
+            min: 1000,
             max: 15000,
             from: 5000,
             to: 10000,
