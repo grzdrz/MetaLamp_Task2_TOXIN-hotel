@@ -14,14 +14,11 @@ block content
                     isDoubleInput: false,
                     isDateRange: true, 
                     firstTitle: "даты пребывания в отеле",
-                    width: "266px",
                 })
 
             div(class=["search-room__dropdown-1 js-search-room__dropdown"])
                 +dropdown({
-                    titleText: "гости",
-                    isTitleTextTestVisible: false,
-                    titleTextTestValue: "",
+                    title: "гости",
                     placeholder: "Сколько гостей",
                     name: "guests",
                     type: "text",
@@ -32,7 +29,6 @@ block content
                         {name: "младенцы", value: 0}
                     ],
                     withTotalValue: true,
-                    width: "266px",
                 })
 
             div(class=["search-room__range-slider js-search-room__range-slider"])
@@ -43,7 +39,7 @@ block content
 
             div(class=["search-room__checkbox-list-1"])
                 +checkbox-list({
-                    titleText: "Checkbox Buttons",
+                    title: "Checkbox Buttons",
                     isExpandable: false, 
                     hasAdditionalText: false,               
                     checkboxList: [
@@ -55,7 +51,7 @@ block content
 
             div(class=["search-room__checkbox-list-2"])
                 +checkbox-list({
-                    titleText: "доступность",
+                    title: "доступность",
                     isExpandable: false,
                     hasAdditionalText: true,
                     checkboxList: [
@@ -66,9 +62,7 @@ block content
 
             div(class=["search-room__dropdown-2 js-search-room__dropdown"])
                 +dropdown({
-                    titleText: "удобства номера",
-                    isTitleTextTestVisible: false,
-                    titleTextTestValue: "",
+                    title: "удобства номера",
                     placeholder: "Сколько комнат",
                     name: "rooms",
                     type: "text",
@@ -81,16 +75,14 @@ block content
                         {name: "ванные комнаты", value: 0}
                     ],
                     withTotalValue: false,
-                    width: "266px",
                 })
 
             div(class=["search-room__checkbox-list-3 js-search-room__checkbox_expandable"])
                 +checkbox-list({
-                    titleText: "дополнительные удобства",
+                    title: "дополнительные удобства",
                     isExpandable: true,
                     isOpened: "true",
                     hasAdditionalText: false,
-                    width: "266px",
                     checkboxList : [
                         {isChecked: false, text: "Завтрак"},
                         {isChecked: true, text: "Письменный стол"}, 

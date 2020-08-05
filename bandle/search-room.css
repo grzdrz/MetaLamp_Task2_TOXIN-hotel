@@ -2024,7 +2024,8 @@ body {
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    margin-top: 5px; }
   .range-slider .irs {
     -webkit-touch-callout: none; }
   .range-slider .irs-line {
@@ -2923,8 +2924,9 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 30px 9.72222% 70px 9.72222%;
-  border-bottom: 2px solid rgba(31, 32, 65, 0.25); }
+  padding: 30px 9.72222% 73px 9.72222%;
+  margin-bottom: 1px;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1); }
   @media screen and (max-width: 690px) {
     .search-room {
       flex-direction: column;
@@ -2936,23 +2938,27 @@ body {
     flex-direction: column;
     width: max-content; }
   .search-room__calendar {
-    margin-bottom: 20px;
+    display: flex;
+    width: 266px;
+    margin-bottom: 20px; }
+  .search-room__range-slider {
+    margin-bottom: 30px;
     display: flex;
     width: 266px; }
-  .search-room__dropdown-1, .search-room__range-slider {
-    margin-bottom: 30px;
+  .search-room__dropdown-1 {
+    margin-bottom: 29px;
     display: flex;
     width: 266px; }
   .search-room__checkbox-list-1 {
-    margin-bottom: 31px;
+    margin-bottom: 28px;
     display: flex;
     width: max-content; }
   .search-room__checkbox-list-2 {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     display: flex;
     width: max-content; }
   .search-room__dropdown-2 {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     display: flex;
     width: 266px; }
   .search-room__room-list {
@@ -2979,7 +2985,7 @@ body {
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto auto auto;
     grid-column-gap: 12px;
-    grid-row-gap: 20px; }
+    grid-row-gap: 21px; }
     @media screen and (max-width: 1320px) {
       .search-room__list {
         grid-template-rows: auto auto auto auto auto;

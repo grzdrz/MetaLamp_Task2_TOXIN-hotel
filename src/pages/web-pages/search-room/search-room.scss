@@ -15,8 +15,9 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 30px scalePixelsAsPercentage(140, 1440) 70px scalePixelsAsPercentage(140, 1440);
-    border-bottom: 2px solid rgba(31, 32, 65, 0.25);
+    padding: 30px 9.72222% 73px 9.72222%;
+    margin-bottom: 1px;
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
 
     @media screen and (max-width: 690px) {
         flex-direction: column;
@@ -32,32 +33,38 @@
     }
 
     &__calendar {
-        margin-bottom: 20px;
         display: flex;
         width: 266px;
+
+        margin-bottom: 20px;
     }
 
-    &__dropdown-1,
     &__range-slider {
         margin-bottom: 30px;
         display: flex;
         width: 266px;
     }
 
+    &__dropdown-1 {
+        margin-bottom: 29px;
+        display: flex;
+        width: 266px;
+    }
+
     &__checkbox-list-1 {
-        margin-bottom: 31px;
+        margin-bottom: 28px;
         display: flex;
         width: max-content;
     }
 
     &__checkbox-list-2 {
-        margin-bottom: 30px;
+        margin-bottom: 28px;
         display: flex;
         width: max-content;
     }
 
     &__dropdown-2 {
-        margin-bottom: 15px;
+        margin-bottom: 16px;
         display: flex;
         width: 266px;
     }
@@ -93,7 +100,7 @@
         grid-template-rows: auto auto auto auto;
         grid-template-columns: auto auto auto;
         grid-column-gap: 12px;
-        grid-row-gap: 20px;
+        grid-row-gap: 21px;
 
         @media screen and (max-width: 1320px) {
             grid-template-rows: auto auto auto auto auto;
