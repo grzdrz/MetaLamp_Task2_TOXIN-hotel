@@ -811,7 +811,8 @@ body {
     line-height: 15px;
     text-align: right;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.3px; }
   .form-input__input-container {
     display: grid;
     grid-template-rows: 42px;
@@ -879,7 +880,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 40px 30px 30px 30px;
+  padding: 38px 27px 30px 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -934,14 +935,28 @@ body {
     .calendar__input-container_first {
       margin-right: 20px; }
   .calendar__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px; }
+  .calendar__title-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #1f2041;
-    margin-bottom: 6px; }
+    color: #1f2041; }
+  .calendar__additional-title-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.3px; }
   .calendar__label {
     cursor: pointer;
     display: grid;
@@ -1255,7 +1270,7 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: #1f2041; }
-  .dropdown__title-text-test {
+  .dropdown__additional-title-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -1494,7 +1509,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 40px 30px 30px 30px;
+  padding: 40px 27px 30px 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -1598,14 +1613,28 @@ body {
     .calendar__input-container_first {
       margin-right: 20px; }
   .calendar__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px; }
+  .calendar__title-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #1f2041;
-    margin-bottom: 6px; }
+    color: #1f2041; }
+  .calendar__additional-title-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.3px; }
   .calendar__label {
     cursor: pointer;
     display: grid;
@@ -1919,7 +1948,7 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: #1f2041; }
-  .dropdown__title-text-test {
+  .dropdown__additional-title-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -2091,7 +2120,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 40px 29px 30px 29px;
+  padding: 40px 28px 30px 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -2153,7 +2182,7 @@ body {
     margin-bottom: 20px;
     width: 100%; }
   .price-calculation-form__dropdown {
-    margin-bottom: 19px;
+    margin-bottom: 21px;
     width: 100%; }
   .price-calculation-form__calculated-data {
     margin-bottom: 20px;
@@ -2166,7 +2195,7 @@ body {
   .price-calculation-form__main-sum {
     display: grid;
     grid-template-columns: max-content auto;
-    margin-bottom: 17px; }
+    margin-bottom: 15px; }
   .price-calculation-form__main-sum-result {
     justify-self: end; }
   .price-calculation-form__services {
@@ -2245,7 +2274,8 @@ body {
     line-height: 15px;
     text-align: right;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.3px; }
   .form-input__input-container {
     display: grid;
     grid-template-rows: 42px;
@@ -2422,14 +2452,28 @@ body {
     .calendar__input-container_first {
       margin-right: 20px; }
   .calendar__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px; }
+  .calendar__title-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #1f2041;
-    margin-bottom: 6px; }
+    color: #1f2041; }
+  .calendar__additional-title-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.3px; }
   .calendar__label {
     cursor: pointer;
     display: grid;
@@ -2796,7 +2840,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 40px 30px 30px 30px;
+  padding: 38px 27px 30px 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -2819,7 +2863,7 @@ body {
     margin-bottom: 23px;
     width: 100%; }
   .sign-up-form__calendar {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     width: 100%; }
   .sign-up-form__email-field, .sign-up-form__password-field {
     margin-bottom: 10px;
@@ -3052,10 +3096,10 @@ body {
     display: grid;
     grid-template-columns: max-content max-content max-content auto min-content;
     margin-top: 3px;
-    margin-bottom: 23px; }
+    margin-bottom: 12px; }
   .room-info__number-symbol {
     align-self: end;
-    margin-right: 3px;
+    margin-right: 4px;
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
@@ -3068,8 +3112,8 @@ body {
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 19px;
+    line-height: 24px;
     color: #1f2041; }
   .room-info__room-status {
     align-self: end;
@@ -3104,7 +3148,8 @@ body {
   .room-info__room-rate {
     display: flex;
     justify-content: space-between;
-    margin-top: 8px; }
+    border-top: 1px solid rgba(31, 32, 65, 0.1);
+    padding-top: 8px; }
   .room-info__reviews-count {
     display: flex;
     align-items: flex-end;
@@ -3135,7 +3180,7 @@ body {
   min-width: 100%;
   background: #e5e5e5;
   padding-bottom: 140px;
-  padding: 0px 9.6222%;
+  padding: 72px 9.6222% 140px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

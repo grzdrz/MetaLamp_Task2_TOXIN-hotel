@@ -159,12 +159,12 @@
         display: grid;
         grid-template-columns: max-content max-content max-content auto min-content;
         margin-top: 3px;
-        margin-bottom: 23px;
+        margin-bottom: 12px;
     }
 
     &__number-symbol {
         align-self: end;
-        margin-right: 3px;
+        margin-right: 4px;
 
         font-family: Quicksand, OpenSans;
         font-style: normal;
@@ -181,8 +181,8 @@
         font-family: Quicksand, OpenSans;
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 19px;
+        line-height: 24px;
         color: #1f2041;
     }
 
@@ -229,7 +229,8 @@
         display: flex;
         justify-content: space-between;
 
-        margin-top: 8px;
+        border-top: 1px solid rgba(31, 32, 65, 0.1);
+        padding-top: 8px;
     }
 
     &__reviews-count {

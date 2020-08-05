@@ -48,7 +48,7 @@
         align-items: center;
         justify-content: center;
 
-        padding-left: 5px;
+        padding-left: 10px;
         margin: $borderThickness;
         border-radius: $borderRadius;
 
@@ -68,7 +68,7 @@
         &:checked + label {
             background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
 
-            & > p {
+            & > * {
                 color: #bc9cff;
             }
 
@@ -90,7 +90,7 @@
         &:not(:checked) + label {
             background: rgba(31, 32, 65, 0.25);
 
-            & > p {
+            & > * {
                 color: rgba(31, 32, 65, 0.25);
             }
 

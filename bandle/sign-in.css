@@ -410,7 +410,8 @@ body {
     line-height: 15px;
     text-align: right;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.3px; }
   .form-input__input-container {
     display: grid;
     grid-template-rows: 42px;
@@ -478,7 +479,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 40px 30px 30px 30px;
+  padding: 38px 27px 30px 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -548,7 +549,8 @@ body {
     line-height: 15px;
     text-align: right;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.3px; }
   .form-input__input-container {
     display: grid;
     grid-template-rows: 42px;

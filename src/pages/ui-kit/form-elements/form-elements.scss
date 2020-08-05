@@ -10,6 +10,7 @@
 @import "../../../components/toggle/toggle.scss";
 @import "../../../components/star-rating/star-rating.scss";
 @import "../../../components/button/button.scss";
+@import "../../../components/text-button/text-button.scss";
 @import "../../../components/pagination/pagination.scss";
 @import "../../../components/range-slider/range-slider.scss";
 @import "../../../components/bullet-list/bullet-list.scss";
@@ -233,6 +234,7 @@
         display: grid;
         grid-template-columns: min-content min-content;
         grid-column-gap: 19px;
+        margin-bottom: 30px;
     }
     &__text-buttons {
         display: flex;
@@ -249,10 +251,12 @@
         margin-bottom: 29px;
     }
 
+    &__text-buttons {
+        margin-bottom: 30px;
+    }
+
     &__button-5,
     &__button-6 {
-        width: 99px;
-        height: 44px;
     }
 
     &__button-5 {
@@ -262,6 +266,7 @@
     &__button-7 {
         width: 320px;
         height: 44px;
+        margin-bottom: 40px;
     }
 
     &__pagination {

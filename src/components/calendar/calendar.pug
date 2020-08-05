@@ -3,6 +3,7 @@ mixin calendar(options)
         const {
             firstTitle,
             secondTitle,
+            additionalTitle,
             isDouble,
             withRange,
         } = options;
@@ -16,7 +17,10 @@ mixin calendar(options)
 
     div(class=["calendar"].concat(containerClasses))
         div(class=["calendar__input-container"].concat(inputContainerClasses))
-            p(class=["calendar__title"])= firstTitle
+            p(class=["calendar__title"])
+                span(class=["calendar__title-text"])= firstTitle
+                - if(additionalTitle)
+                    span(class=["calendar__additional-title-text"])= additionalTitle
             label(class=["calendar__label", "calendar__label_first"])
                 input(class=["calendar__input", "calendar__input_first"] 
                     type="text" 
@@ -26,7 +30,8 @@ mixin calendar(options)
                 p(class=["calendar__dropdown-arrow"]) expand_more
         - if(isDouble)                
             div(class=["calendar__input-container", "calendar__input-container_second"])
-                p(class=["calendar__title"])= secondTitle
+                p(class=["calendar__title"])
+                    span(class=["calendar__title-text"])= secondTitle
                 label(class=["calendar__label", "calendar__label_second"])
                     input(class=["calendar__input", "calendar__input_second"]  
                         type="text" 

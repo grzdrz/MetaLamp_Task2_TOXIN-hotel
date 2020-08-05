@@ -352,7 +352,8 @@ body {
     line-height: 15px;
     text-align: right;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.3px; }
   .form-input__input-container {
     display: grid;
     grid-template-rows: 42px;

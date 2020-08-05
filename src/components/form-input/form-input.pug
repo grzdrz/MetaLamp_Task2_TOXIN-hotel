@@ -1,8 +1,8 @@
 mixin form-input(options)
     - 
         const {
-            titleText,
-            additionalTitleText,
+            title,
+            additionalTitle,
             placeholder, 
             name, 
             type,
@@ -11,11 +11,11 @@ mixin form-input(options)
         } = options;
 
     div(class=["form-input"])
-        - if(titleText || additionalTitleText)
+        - if(title || additionalTitle)
             p(class=["form-input__title"])
-                span(class=["form-input__title-text"])= titleText
-                - if(additionalTitleText)
-                    span(class=["form-input__additional-title-text"])= additionalTitleText
+                span(class=["form-input__title-text"])= title
+                - if(additionalTitle)
+                    span(class=["form-input__additional-title-text"])= additionalTitle
 
         div(class=["form-input__input-container"])
             input(class=["form-input__input"],

@@ -16,10 +16,10 @@ mixin dropdown(options)
     - const containerClasses = [`dropdown__${withTotalValue ? "with" : "without"}-total-value`];
 
     div(class=["dropdown"].concat(containerClasses))
-        div(class=["dropdown__title"])
-            p(class=["dropdown__title-text"])= title
+        p(class=["dropdown__title"])
+            span(class=["dropdown__title-text"])= title
             - if(additionalTitle)
-                p(class=["dropdown__title-text-test"])= additionalTitle
+                span(class=["dropdown__additional-title-text"])= additionalTitle
         div(class=["dropdown__input-container"] data-default-value=value)
             input(class=["dropdown__input"], 
                 placeholder= placeholder,

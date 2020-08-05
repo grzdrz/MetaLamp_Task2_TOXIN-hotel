@@ -951,14 +951,28 @@ body {
     .calendar__input-container_first {
       margin-right: 20px; }
   .calendar__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px; }
+  .calendar__title-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #1f2041;
-    margin-bottom: 6px; }
+    color: #1f2041; }
+  .calendar__additional-title-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.3px; }
   .calendar__label {
     cursor: pointer;
     display: grid;
@@ -1272,7 +1286,7 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: #1f2041; }
-  .dropdown__title-text-test {
+  .dropdown__additional-title-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -1511,7 +1525,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 40px 30px 30px 30px;
+  padding: 40px 27px 30px 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -1563,7 +1577,8 @@ body {
     line-height: 15px;
     text-align: right;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.3px; }
   .form-input__input-container {
     display: grid;
     grid-template-rows: 42px;

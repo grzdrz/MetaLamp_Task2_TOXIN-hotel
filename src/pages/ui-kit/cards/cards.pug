@@ -39,7 +39,7 @@ block content
                     blockNumber: 1,
                     photos: ["test11", "test22", "test33", "test44"],
                     reviewsCount: 145,
-                    numberOfCheckedStar: 1,
+                    numberOfCheckedStar: 5,
                     url: "#",
                     roomNumber: 888,
                     roomStatus: "люкс",
@@ -49,25 +49,12 @@ block content
             div(class=["cards__room-info"])
                 +room-info({
                     blockNumber: 2,
-                    photos: ["test11", "test22"],
+                    photos: ["test22"],
                     reviewsCount: 65,
-                    numberOfCheckedStar: 5,
+                    numberOfCheckedStar: 4,
                     url: "#",
-                    roomNumber: 888,
-                    roomStatus: "люкс",
-                    roomPrice: 9990,
+                    roomNumber: 840,
+                    roomPrice: 9900,
                     currencyType: "₽",
-                }) 
-            div(class=["cards__room-info"])
-                +room-info({
-                    blockNumber: 3,
-                    photos: ["test11"],
-                    reviewsCount: 1488,
-                    numberOfCheckedStar: 3,
-                    url: "#",
-                    roomNumber: 888,
-                    roomStatus: "люкс",
-                    roomPrice: 9990,
-                    currencyType: "₽",
-                })                          
+                })
 
