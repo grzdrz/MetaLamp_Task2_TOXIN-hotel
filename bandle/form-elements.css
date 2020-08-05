@@ -1574,7 +1574,7 @@ body {
     margin: -1px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    z-index: 1; }
+    z-index: 9999; }
     .dropdown__droped-list:hover, .dropdown__droped-list:focus {
       /* border: 1px solid rgba(31, 32, 65, 0.5); */
       border-top: 0px; }

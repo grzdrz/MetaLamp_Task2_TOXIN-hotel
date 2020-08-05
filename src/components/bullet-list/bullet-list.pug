@@ -1,9 +1,5 @@
-//-
-    list - массив строк элементов списка
-    titleText - текст заголовка
-
 mixin bullet-list(options)
-    - const {inRoomDetailsPage, titleText, list} = options;
+    - const {inRoomDetailsPage, title, list} = options;
     - const titleClasses = [];
 
     - if(inRoomDetailsPage){
@@ -11,8 +7,8 @@ mixin bullet-list(options)
     - }
 
     div(class=["bullet-list"])
-        - if(titleText)
-            p(class=["bullet-list__title"].concat(titleClasses || []))= titleText
+        - if(title)
+            p(class=["bullet-list__title"].concat(titleClasses))= title
         ul(class=["bullet-list__list"])    
             - for(let listItem of list)
                 li(class=["bullet-list__item"])
