@@ -950,7 +950,6 @@ body {
     justify-content: space-between;
     margin-bottom: 5px; }
   .form-input__title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -958,7 +957,6 @@ body {
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -979,10 +977,9 @@ body {
       border: 1px solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
     padding: 0px 15px;
-    height: 44px;
+    height: 42px;
     outline: none;
     background: transparent;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1014,7 +1011,7 @@ body {
       -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
-  .form-input__submit-input {
+  .form-input__submitter {
     cursor: pointer;
     min-width: 42px;
     height: 42px;
@@ -1024,7 +1021,7 @@ body {
     font-size: 24px;
     line-height: 24px;
     border: 0px solid transparent;
-    background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -1148,7 +1145,6 @@ body {
     justify-content: space-between;
     margin-bottom: 5px; }
   .calendar__title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -1156,7 +1152,6 @@ body {
     text-transform: uppercase;
     color: #1f2041; }
   .calendar__additional-title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1168,7 +1163,7 @@ body {
   .calendar__label {
     cursor: pointer;
     display: grid;
-    grid-template-columns: auto 44px;
+    grid-template-columns: auto 42px;
     grid-template-rows: 42px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
@@ -1184,12 +1179,10 @@ body {
     height: 40px;
     outline: none;
     background: transparent;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     /* Отменяем перенос текста */
     overflow: hidden;
@@ -1197,7 +1190,7 @@ body {
     text-overflow: ellipsis;
     /* Многоточие */ }
     .calendar__input::-webkit-input-placeholder {
-      background: rgba(31, 32, 65, 0.25);
+      background: rgba(31, 32, 65, 0.75);
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
@@ -1224,11 +1217,11 @@ body {
     line-height: 24px;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px; }
+    outline: none; }
   .calendar__buttons {
     display: flex;
     flex-direction: row;
@@ -1236,7 +1229,6 @@ body {
   .calendar__apply-button {
     cursor: pointer;
     margin-left: auto;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -1245,7 +1237,6 @@ body {
     color: #bc9cff; }
   .calendar__clear-button {
     cursor: pointer;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -1592,7 +1583,6 @@ body {
     justify-content: space-between;
     margin-bottom: 5px; }
   .form-input__title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -1600,7 +1590,6 @@ body {
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1621,10 +1610,9 @@ body {
       border: 1px solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
     padding: 0px 15px;
-    height: 44px;
+    height: 42px;
     outline: none;
     background: transparent;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1656,7 +1644,7 @@ body {
       -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
-  .form-input__submit-input {
+  .form-input__submitter {
     cursor: pointer;
     min-width: 42px;
     height: 42px;
@@ -1666,7 +1654,7 @@ body {
     font-size: 24px;
     line-height: 24px;
     border: 0px solid transparent;
-    background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;

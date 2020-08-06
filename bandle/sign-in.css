@@ -390,7 +390,6 @@ body {
     justify-content: space-between;
     margin-bottom: 5px; }
   .form-input__title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -398,7 +397,6 @@ body {
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -419,10 +417,9 @@ body {
       border: 1px solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
     padding: 0px 15px;
-    height: 44px;
+    height: 42px;
     outline: none;
     background: transparent;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -454,7 +451,7 @@ body {
       -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
-  .form-input__submit-input {
+  .form-input__submitter {
     cursor: pointer;
     min-width: 42px;
     height: 42px;
@@ -464,7 +461,7 @@ body {
     font-size: 24px;
     line-height: 24px;
     border: 0px solid transparent;
-    background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -529,7 +526,6 @@ body {
     justify-content: space-between;
     margin-bottom: 5px; }
   .form-input__title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -537,7 +533,6 @@ body {
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -558,10 +553,9 @@ body {
       border: 1px solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
     padding: 0px 15px;
-    height: 44px;
+    height: 42px;
     outline: none;
     background: transparent;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -593,7 +587,7 @@ body {
       -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
-  .form-input__submit-input {
+  .form-input__submitter {
     cursor: pointer;
     min-width: 42px;
     height: 42px;
@@ -603,7 +597,7 @@ body {
     font-size: 24px;
     line-height: 24px;
     border: 0px solid transparent;
-    background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;

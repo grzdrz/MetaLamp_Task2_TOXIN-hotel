@@ -1,3 +1,5 @@
+@import "../../assets/constants.scss";
+
 .form-input {
     width: 100%;
 
@@ -15,24 +17,22 @@
     }
 
     &__title-text {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
-        color: #1f2041;
+        color: $color-dark-shade-100;
     }
 
     &__additional-title-text {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
         line-height: 15px;
         text-align: right;
         text-transform: uppercase;
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
 
         letter-spacing: -0.3px;
     }
@@ -42,13 +42,13 @@
         grid-template-rows: 42px;
         grid-template-columns: auto min-content;
 
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        border: 1px solid $color-dark-shade-25;
         box-sizing: border-box;
         border-radius: 4px;
 
         &:hover,
         &:focus {
-            border: 1px solid rgba(31, 32, 65, 0.5);
+            border: 1px solid $color-dark-shade-50;
         }
 
         position: relative;
@@ -56,20 +56,20 @@
 
     &__input {
         padding: 0px 15px;
-        height: 44px;
+        height: 42px;
         outline: none;
 
         background: transparent;
-        font-family: Montserrat;
+
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 18px;
         letter-spacing: -0.2px;
-        color: rgba(31, 32, 65, 0.75);
+        color: $color-dark-shade-75;
 
         &::-webkit-input-placeholder {
-            background: rgba(31, 32, 65, 0.25);
+            background: $color-dark-shade-25;
             -webkit-background-clip: text;
             -moz-background-clip: text;
             background-clip: text;
@@ -87,10 +87,10 @@
         select:-webkit-autofill:hover,
         select:-webkit-autofill:focus {
             border: 0px solid rgba(255, 255, 255, 0);
-            -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
+            -webkit-text-fill-color: $color-dark-shade-75;
             -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
             transition: background-color 5000s ease-in-out 0s;
-            color: rgba(31, 32, 65, 0.75);
+            color: $color-dark-shade-75;
         }
 
         white-space: nowrap; /* Отменяем перенос текста */
@@ -98,7 +98,7 @@
         text-overflow: ellipsis; /* Многоточие */
     }
 
-    &__submit-input {
+    &__submitter {
         cursor: pointer;
 
         min-width: 42px;
@@ -114,7 +114,7 @@
 
         // background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
         // background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: $gradient-purple-to-blue;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;

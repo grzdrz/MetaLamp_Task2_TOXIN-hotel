@@ -1,3 +1,5 @@
+@import "../../assets/constants.scss";
+
 .calendar {
   display: flex;
   flex-direction: row;
@@ -22,24 +24,22 @@
   }
 
   &__title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #1f2041;
+    color: $color-dark-shade-100;
   }
 
   &__additional-title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
     text-align: right;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
+    color: $color-dark-shade-50;
 
     letter-spacing: -0.3px;
   }
@@ -48,10 +48,10 @@
     cursor: pointer;
 
     display: grid;
-    grid-template-columns: auto 44px;
+    grid-template-columns: auto 42px;
     grid-template-rows: 42px;
 
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $color-dark-shade-25;
     box-sizing: border-box;
     border-radius: 4px;
     width: 150px;
@@ -74,15 +74,13 @@
     outline: none;
 
     background: transparent;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    color: rgba(31, 32, 65, 0.75);
 
     &::-webkit-input-placeholder {
-      background: rgba(31, 32, 65, 0.25);
+      background: $color-dark-shade-75;
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
@@ -100,10 +98,10 @@
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus {
       border: 0px solid rgba(255, 255, 255, 0);
-      -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
+      -webkit-text-fill-color: $color-dark-shade-75;
       -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
-      color: rgba(31, 32, 65, 0.75);
+      color: $color-dark-shade-75;
     }
 
     white-space: nowrap; /* Отменяем перенос текста */
@@ -120,13 +118,14 @@
     font-size: 24px;
     line-height: 24px;
     text-align: center;
-    color: rgba(31, 32, 65, 0.5);
+    color: $color-dark-shade-50;
+    background: transparent;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+
+    outline: none;
   }
 
   &__buttons {
@@ -140,25 +139,23 @@
 
     margin-left: auto;
 
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #bc9cff;
+    color: $color-purple;
   }
 
   &__clear-button {
     cursor: pointer;
 
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
+    color: $color-dark-shade-50;
   }
 }
 

@@ -69,7 +69,7 @@
         grid-column-start: 1;
         grid-column-end: 4;
 
-        margin-top: 79px;
+        margin-top: 80px;
         margin-bottom: 157px;
     }
 
@@ -129,7 +129,10 @@
         margin-bottom: 22px;
     }
 
-    &__calendar-1,
+    &__calendar-1 {
+        margin-bottom: 42px;
+    }
+
     &__calendar-2 {
         margin-bottom: 40px;
     }
@@ -236,9 +239,7 @@
         grid-column-gap: 19px;
         margin-bottom: 30px;
     }
-    &__text-buttons {
-        display: flex;
-    }
+
     &__button-1,
     &__button-2,
     &__button-3,
@@ -252,11 +253,8 @@
     }
 
     &__text-buttons {
-        margin-bottom: 30px;
-    }
-
-    &__button-5,
-    &__button-6 {
+        display: flex;
+        margin-bottom: 27px;
     }
 
     &__button-5 {
@@ -266,7 +264,7 @@
     &__button-7 {
         width: 320px;
         height: 44px;
-        margin-bottom: 40px;
+        margin-bottom: 42px;
     }
 
     &__pagination {
