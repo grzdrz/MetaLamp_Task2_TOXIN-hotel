@@ -43,6 +43,9 @@
   border: 0px;
   box-sizing: border-box; }
 
+* {
+  font-family: Montserrat, monospace; }
+
 html,
 body {
   min-width: 100%;

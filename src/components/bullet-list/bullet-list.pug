@@ -12,5 +12,5 @@ mixin bullet-list(options)
         ul(class=["bullet-list__list"])    
             - for(let listItem of list)
                 li(class=["bullet-list__item"])
-                    div(class=["bullet-list__item-marker"])
+                    span(class=["bullet-list__item-marker"])
                     p(class=["bullet-list__item-text"])= listItem

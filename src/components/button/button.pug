@@ -1,27 +1,28 @@
-//- 
-    isHollow - полая ли кнопка(с градиентной обводкой)
-    hasArrow - есть ли символ стрелки внутри кнопки у правой границы
-    buttonType - тег используемый в основе кнопки(a/button/input)
-    text - текст внутри кнопки
-
 mixin button(options)
-    - const { isHollow, hasArrow, buttonType, text, url } = options;
+    - 
+        const { 
+            isHollow,
+            hasArrow,
+            buttonType,
+            text,
+            url
+        } = options;
     - const containerClasses = (isHollow ? ["button_hollow"] : []);
 
     div(class=["button"].concat(containerClasses))
         - if(buttonType === "a")
-            a(href=(url ? url : 'https://www.google.com/') class=["button__basis"])
-                p(class=["button__text"])= text
+            a(href=(url ? url : "https://www.errorpage.com/") class=["button__basis"])
+                span(class=["button__text"])= text
                 - if(hasArrow)
-                    p(class=["button__arrow"]) arrow_forward 
+                    span(class=["button__arrow"]) arrow_forward 
         - else if(buttonType === "button")
             button(class=["button__basis"])
-                p(class=["button__text"])= text
+                span(class=["button__text"])= text
                 - if(hasArrow)
-                    p(class=["button__arrow"]) arrow_forward
+                    span(class=["button__arrow"]) arrow_forward
         - else if(buttonType === "submit")
             label(class=["button__basis"])
                 input(class=["button__submit"] type="submit")
-                p(class=["button__text"])= text
+                span(class=["button__text"])= text
                 - if(hasArrow)
-                    p(class=["button__arrow"]) arrow_forward
+                    span(class=["button__arrow"]) arrow_forward

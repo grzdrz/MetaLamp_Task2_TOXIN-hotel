@@ -1343,6 +1343,9 @@ Build date: 2019-12-19 16:51:02
   border: 0px;
   box-sizing: border-box; }
 
+* {
+  font-family: Montserrat, monospace; }
+
 html,
 body {
   min-width: 100%;
@@ -1967,9 +1970,9 @@ body {
       margin-left: 96px; }
 
 .button {
+  cursor: pointer;
   width: 100%;
   height: 100%;
-  cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
@@ -1977,17 +1980,17 @@ body {
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
+    text-decoration: none;
     position: absolute;
     left: 0px;
     right: 0px;
     top: 0px;
     bottom: 0px;
     margin: 2px;
-    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: white;
     background: transparent;
     border-radius: 22px;
     outline: none; }
@@ -1997,8 +2000,7 @@ body {
     cursor: pointer;
     background: transparent;
     text-align: center;
-    color: #ffffff;
-    font-family: Montserrat, Arial, sans-serif;
+    color: white;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2011,9 +2013,6 @@ body {
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     position: absolute;
     right: 0px;
@@ -2028,7 +2027,7 @@ body {
   .button:hover {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
   .button_hollow > .button__basis {
-    background: #ffffff; }
+    background: white; }
     .button_hollow > .button__basis > .button__text,
     .button_hollow > .button__basis > .button__arrow {
       color: #bc9cff; }
@@ -2187,7 +2186,6 @@ body {
   flex-direction: column; }
   .bullet-list__title {
     margin-bottom: 14px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2212,7 +2210,6 @@ body {
     border-radius: 50%;
     margin-right: 10px; }
   .bullet-list__item-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
