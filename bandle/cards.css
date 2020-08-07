@@ -1035,7 +1035,7 @@ body {
     color: rgba(31, 32, 65, 0.5); }
 
 .datepicker {
-  background: #ffffff;
+  background: white;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -1060,7 +1060,6 @@ body {
   .datepicker--cells {
     width: 280px; }
   .datepicker--cell {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1072,15 +1071,14 @@ body {
     width: 40px;
     height: 40px; }
     .datepicker--cell-day.-selected- {
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%;
       position: relative; }
       .datepicker--cell-day.-selected-.-focus- {
-        background: linear-gradient(to bottom, #bb9cff, #8ba4f9); }
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
     .datepicker--cell-day.-current- {
       background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
       border-radius: 50%;
-      font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
       font-size: 12px;
@@ -1088,12 +1086,11 @@ body {
       display: flex;
       align-items: center;
       text-align: center;
-      color: #ffffff; }
+      color: white; }
     .datepicker--cell-day.-current-.-in-range- {
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
       color: rgba(31, 32, 65, 0.5);
       border-radius: 0px;
-      font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
@@ -1105,10 +1102,9 @@ body {
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
       color: rgba(31, 32, 65, 0.25); }
     .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-current-, .datepicker--cell-day.-range-to-.-current-, .datepicker--cell-day.-range-from-.-other-month-, .datepicker--cell-day.-range-to-.-other-month- {
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%;
       border: 0px;
-      font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
       font-size: 12px;
@@ -1116,10 +1112,10 @@ body {
       display: flex;
       align-items: center;
       text-align: center;
-      color: #ffffff;
+      color: white;
       position: relative; }
     .datepicker--cell-day.-range-from-::after {
-      content: "";
+      content: '';
       width: inherit;
       height: inherit;
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
@@ -1128,7 +1124,7 @@ body {
       position: absolute;
       z-index: -1; }
     .datepicker--cell-day.-range-to-::after {
-      content: "";
+      content: '';
       width: inherit;
       height: inherit;
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
@@ -1149,7 +1145,7 @@ body {
         color: white;
         border-radius: 50%; }
       .datepicker--cell-month.-selected-, .datepicker--cell-month.-selected-.-current-, .datepicker--cell-year.-selected-, .datepicker--cell-year.-selected-.-current- {
-        background: linear-gradient(to bottom, #bb9cff, #8ba4f9);
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         color: white;
         border-radius: 50%; }
   .datepicker--content {
@@ -1171,7 +1167,7 @@ body {
       .datepicker--nav-action > svg {
         opacity: 0; }
       .datepicker--nav-action:first-child::after {
-        content: "arrow_back";
+        content: 'arrow_back';
         position: absolute;
         width: 24px;
         height: 24px;
@@ -1186,13 +1182,13 @@ body {
         border: 0px solid transparent;
         background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
         background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent; }
       .datepicker--nav-action:last-child::after {
-        content: "arrow_forward";
+        content: 'arrow_forward';
         position: absolute;
         width: 24px;
         height: 24px;
@@ -1207,7 +1203,7 @@ body {
         border: 0px solid transparent;
         background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
         background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
@@ -1218,7 +1214,6 @@ body {
   .datepicker--day-name {
     min-width: 40px;
     height: 40px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -1691,7 +1686,7 @@ body {
     color: rgba(31, 32, 65, 0.5); }
 
 .datepicker {
-  background: #ffffff;
+  background: white;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -1716,7 +1711,6 @@ body {
   .datepicker--cells {
     width: 280px; }
   .datepicker--cell {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1728,15 +1722,14 @@ body {
     width: 40px;
     height: 40px; }
     .datepicker--cell-day.-selected- {
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%;
       position: relative; }
       .datepicker--cell-day.-selected-.-focus- {
-        background: linear-gradient(to bottom, #bb9cff, #8ba4f9); }
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
     .datepicker--cell-day.-current- {
       background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
       border-radius: 50%;
-      font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
       font-size: 12px;
@@ -1744,12 +1737,11 @@ body {
       display: flex;
       align-items: center;
       text-align: center;
-      color: #ffffff; }
+      color: white; }
     .datepicker--cell-day.-current-.-in-range- {
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
       color: rgba(31, 32, 65, 0.5);
       border-radius: 0px;
-      font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
@@ -1761,10 +1753,9 @@ body {
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
       color: rgba(31, 32, 65, 0.25); }
     .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-current-, .datepicker--cell-day.-range-to-.-current-, .datepicker--cell-day.-range-from-.-other-month-, .datepicker--cell-day.-range-to-.-other-month- {
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%;
       border: 0px;
-      font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
       font-size: 12px;
@@ -1772,10 +1763,10 @@ body {
       display: flex;
       align-items: center;
       text-align: center;
-      color: #ffffff;
+      color: white;
       position: relative; }
     .datepicker--cell-day.-range-from-::after {
-      content: "";
+      content: '';
       width: inherit;
       height: inherit;
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
@@ -1784,7 +1775,7 @@ body {
       position: absolute;
       z-index: -1; }
     .datepicker--cell-day.-range-to-::after {
-      content: "";
+      content: '';
       width: inherit;
       height: inherit;
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
@@ -1805,7 +1796,7 @@ body {
         color: white;
         border-radius: 50%; }
       .datepicker--cell-month.-selected-, .datepicker--cell-month.-selected-.-current-, .datepicker--cell-year.-selected-, .datepicker--cell-year.-selected-.-current- {
-        background: linear-gradient(to bottom, #bb9cff, #8ba4f9);
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         color: white;
         border-radius: 50%; }
   .datepicker--content {
@@ -1827,7 +1818,7 @@ body {
       .datepicker--nav-action > svg {
         opacity: 0; }
       .datepicker--nav-action:first-child::after {
-        content: "arrow_back";
+        content: 'arrow_back';
         position: absolute;
         width: 24px;
         height: 24px;
@@ -1842,13 +1833,13 @@ body {
         border: 0px solid transparent;
         background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
         background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent; }
       .datepicker--nav-action:last-child::after {
-        content: "arrow_forward";
+        content: 'arrow_forward';
         position: absolute;
         width: 24px;
         height: 24px;
@@ -1863,7 +1854,7 @@ body {
         border: 0px solid transparent;
         background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
         background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
@@ -1874,7 +1865,6 @@ body {
   .datepicker--day-name {
     min-width: 40px;
     height: 40px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2506,7 +2496,7 @@ body {
     color: rgba(31, 32, 65, 0.5); }
 
 .datepicker {
-  background: #ffffff;
+  background: white;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -2531,7 +2521,6 @@ body {
   .datepicker--cells {
     width: 280px; }
   .datepicker--cell {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -2543,15 +2532,14 @@ body {
     width: 40px;
     height: 40px; }
     .datepicker--cell-day.-selected- {
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%;
       position: relative; }
       .datepicker--cell-day.-selected-.-focus- {
-        background: linear-gradient(to bottom, #bb9cff, #8ba4f9); }
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
     .datepicker--cell-day.-current- {
       background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
       border-radius: 50%;
-      font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
       font-size: 12px;
@@ -2559,12 +2547,11 @@ body {
       display: flex;
       align-items: center;
       text-align: center;
-      color: #ffffff; }
+      color: white; }
     .datepicker--cell-day.-current-.-in-range- {
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
       color: rgba(31, 32, 65, 0.5);
       border-radius: 0px;
-      font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
@@ -2576,10 +2563,9 @@ body {
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
       color: rgba(31, 32, 65, 0.25); }
     .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-current-, .datepicker--cell-day.-range-to-.-current-, .datepicker--cell-day.-range-from-.-other-month-, .datepicker--cell-day.-range-to-.-other-month- {
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%;
       border: 0px;
-      font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
       font-size: 12px;
@@ -2587,10 +2573,10 @@ body {
       display: flex;
       align-items: center;
       text-align: center;
-      color: #ffffff;
+      color: white;
       position: relative; }
     .datepicker--cell-day.-range-from-::after {
-      content: "";
+      content: '';
       width: inherit;
       height: inherit;
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
@@ -2599,7 +2585,7 @@ body {
       position: absolute;
       z-index: -1; }
     .datepicker--cell-day.-range-to-::after {
-      content: "";
+      content: '';
       width: inherit;
       height: inherit;
       background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
@@ -2620,7 +2606,7 @@ body {
         color: white;
         border-radius: 50%; }
       .datepicker--cell-month.-selected-, .datepicker--cell-month.-selected-.-current-, .datepicker--cell-year.-selected-, .datepicker--cell-year.-selected-.-current- {
-        background: linear-gradient(to bottom, #bb9cff, #8ba4f9);
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         color: white;
         border-radius: 50%; }
   .datepicker--content {
@@ -2642,7 +2628,7 @@ body {
       .datepicker--nav-action > svg {
         opacity: 0; }
       .datepicker--nav-action:first-child::after {
-        content: "arrow_back";
+        content: 'arrow_back';
         position: absolute;
         width: 24px;
         height: 24px;
@@ -2657,13 +2643,13 @@ body {
         border: 0px solid transparent;
         background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
         background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent; }
       .datepicker--nav-action:last-child::after {
-        content: "arrow_forward";
+        content: 'arrow_forward';
         position: absolute;
         width: 24px;
         height: 24px;
@@ -2678,7 +2664,7 @@ body {
         border: 0px solid transparent;
         background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
         background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-        background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
@@ -2689,7 +2675,6 @@ body {
   .datepicker--day-name {
     min-width: 40px;
     height: 40px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;

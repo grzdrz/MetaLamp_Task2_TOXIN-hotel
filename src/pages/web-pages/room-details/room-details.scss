@@ -1,14 +1,16 @@
-@import "../../base.scss";
-@import "../../../assets/fonts.scss";
-@include setFonts("../../../");
+@import '../../../assets/constants.scss';
 
-@import "../../../components/header/header.scss";
-@import "../../../components/room-advantages/room-advantages.scss";
-@import "../../../components/bullet-list/bullet-list.scss";
-@import "../../../components/room-reviews/room-reviews.scss";
-@import "../../../components/price-calculation-form/price-calculation-form.scss";
-@import "../../../components/footer/footer.scss";
-@import "../../../components/pie-chart/pie-chart.scss";
+@import '../../base.scss';
+@import '../../../assets/fonts.scss';
+@include setFonts('../../../');
+
+@import '../../../components/header/header.scss';
+@import '../../../components/room-advantages/room-advantages.scss';
+@import '../../../components/bullet-list/bullet-list.scss';
+@import '../../../components/room-reviews/room-reviews.scss';
+@import '../../../components/price-calculation-form/price-calculation-form.scss';
+@import '../../../components/footer/footer.scss';
+@import '../../../components/pie-chart/pie-chart.scss';
 
 .room-details {
     display: flex;
@@ -59,7 +61,7 @@
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 1px;
-        box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+        box-shadow: 0px 1px 0px $color-dark-shade-10;
 
         padding: scalePixelsAsPercentage(70, 1440) scalePixelsAsPercentage(140, 1440);
 
@@ -167,12 +169,11 @@
     }
 
     &__cancel-rule-main-text {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
+        color: $color-dark-shade-75;
 
         max-width: 341px;
     }

@@ -1,10 +1,12 @@
-@import "../../base.scss";
-@import "../../../assets/fonts.scss";
-@include setFonts("../../../");
+@import '../../../assets/constants.scss';
 
-@import "../../../components/header/header.scss";
-@import "../../../components/room-finder-form/room-finder-form.scss";
-@import "../../../components/footer/footer.scss";
+@import '../../base.scss';
+@import '../../../assets/fonts.scss';
+@include setFonts('../../../');
+
+@import '../../../components/header/header.scss';
+@import '../../../components/room-finder-form/room-finder-form.scss';
+@import '../../../components/footer/footer.scss';
 
 .landing-page {
     display: flex;
@@ -65,12 +67,11 @@
     }
 
     &__subtitle-text {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 24px;
         text-align: right;
-        color: rgba(31, 32, 65, 0.75);
+        color: $color-dark-shade-75;
     }
 }

@@ -1,8 +1,10 @@
+@import '../../assets/constants.scss';
+
 .datepicker {
-    background: #ffffff;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    background: white;
+    border: 1px solid $color-dark-shade-25;
     box-sizing: border-box;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    box-shadow: 0px 10px 20px $color-dark-shade-5;
     border-radius: 4px;
 
     padding-bottom: 20px;
@@ -36,7 +38,6 @@
         width: 280px;
     }
     &--cell {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
@@ -44,27 +45,26 @@
         display: flex;
         align-items: center;
         text-align: center;
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
         width: 40px;
         height: 40px;
 
         &-day {
             &.-selected- {
-                background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+                background: $gradient-purple-to-blue;
                 border-radius: 50%;
 
                 position: relative;
 
                 &.-focus- {
-                    background: linear-gradient(to bottom, rgba(187, 156, 255, 1), rgba(139, 164, 249, 1));
+                    background: $gradient-purple-to-blue;
                 }
             }
 
             &.-current- {
-                background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+                background: $gradient-green-to-turquoise;
                 border-radius: 50%;
 
-                font-family: Montserrat;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 12px;
@@ -72,13 +72,12 @@
                 display: flex;
                 align-items: center;
                 text-align: center;
-                color: #ffffff;
+                color: white;
             }
             &.-current-.-in-range- {
                 background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
-                color: rgba(31, 32, 65, 0.5);
+                color: $color-dark-shade-50;
                 border-radius: 0px;
-                font-family: Montserrat;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 12px;
@@ -89,7 +88,7 @@
             }
             &.-in-range-.-other-month- {
                 background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
-                color: rgba(31, 32, 65, 0.25);
+                color: $color-dark-shade-25;
             }
             &.-range-from-,
             &.-range-to-,
@@ -97,11 +96,10 @@
             &.-range-to-.-current-,
             &.-range-from-.-other-month-,
             &.-range-to-.-other-month- {
-                background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+                background: $gradient-purple-to-blue;
                 border-radius: 50%;
                 border: 0px;
 
-                font-family: Montserrat;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 12px;
@@ -110,12 +108,12 @@
                 align-items: center;
                 text-align: center;
 
-                color: #ffffff;
+                color: white;
 
                 position: relative;
             }
             &.-range-from-::after {
-                content: "";
+                content: '';
                 width: inherit;
                 height: inherit;
                 background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
@@ -127,7 +125,7 @@
                 z-index: -1;
             }
             &.-range-to-::after {
-                content: "";
+                content: '';
                 width: inherit;
                 height: inherit;
                 background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
@@ -141,11 +139,11 @@
 
             &.-in-range- {
                 background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
-                color: rgba(31, 32, 65, 0.5);
+                color: $color-dark-shade-50;
             }
 
             &.-disabled- {
-                color: rgba(31, 32, 65, 0.25);
+                color: $color-dark-shade-25;
             }
         }
         &-month,
@@ -154,13 +152,13 @@
             height: 70px;
 
             &.-current- {
-                background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+                background: $gradient-green-to-turquoise;
                 color: white;
                 border-radius: 50%;
             }
             &.-selected-,
             &.-selected-.-current- {
-                background: linear-gradient(to bottom, rgba(187, 156, 255, 1), rgba(139, 164, 249, 1));
+                background: $gradient-purple-to-blue;
                 color: white;
                 border-radius: 50%;
             }
@@ -183,7 +181,7 @@
             font-size: 19px;
             line-height: 24px;
             text-align: center;
-            color: #1f2041;
+            color: $color-dark-shade-100;
         }
 
         &-action {
@@ -193,7 +191,7 @@
                 opacity: 0;
             }
             &:first-child::after {
-                content: "arrow_back";
+                content: 'arrow_back';
                 position: absolute;
                 width: 24px;
                 height: 24px;
@@ -209,16 +207,16 @@
                 line-height: 24px;
                 border: 0px solid transparent;
 
-                background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-                background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-                background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+                background: -moz-linear-gradient(bottom, $color-purple 0%, $color-turquoise 100%);
+                background: -webkit-linear-gradient(bottom, $color-purple 0%, $color-turquoise 100%);
+                background: $gradient-green-to-turquoise;
                 -webkit-background-clip: text;
                 -moz-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
             &:last-child::after {
-                content: "arrow_forward";
+                content: 'arrow_forward';
                 position: absolute;
                 width: 24px;
                 height: 24px;
@@ -234,9 +232,9 @@
                 line-height: 24px;
                 border: 0px solid transparent;
 
-                background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-                background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-                background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+                background: -moz-linear-gradient(bottom, $color-purple 0%, $color-turquoise 100%);
+                background: -webkit-linear-gradient(bottom, $color-purple 0%, $color-turquoise 100%);
+                background: $gradient-purple-to-blue;
                 -webkit-background-clip: text;
                 -moz-background-clip: text;
                 background-clip: text;
@@ -253,7 +251,6 @@
         min-width: 40px;
         height: 40px;
 
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -261,7 +258,7 @@
         display: flex;
         align-items: center;
         text-align: center;
-        color: #bc9cff;
+        color: $color-purple;
         text-transform: none;
     }
 

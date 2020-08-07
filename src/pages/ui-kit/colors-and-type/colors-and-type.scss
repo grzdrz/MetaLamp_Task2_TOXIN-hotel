@@ -1,10 +1,10 @@
-@import "../../base.scss";
-@import "../../../assets/fonts.scss";
-@include setFonts("../../../");
+@import '../../base.scss';
+@import '../../../assets/fonts.scss';
+@include setFonts('../../../');
 
-@import "../../../components/logo/logo.scss";
-@import "../../../components/font-demo/font-demo.scss";
-@import "../../../components/color-demo/color-demo.scss";
+@import '../../../components/logo/logo.scss';
+@import '../../../components/font-demo/font-demo.scss';
+@import '../../../components/color-demo/color-demo.scss';
 
 body {
     padding-bottom: 40px;

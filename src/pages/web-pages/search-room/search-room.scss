@@ -1,15 +1,17 @@
-@import "../../base.scss";
-@import "../../../assets/fonts.scss";
-@include setFonts("../../../");
+@import '../../../assets/constants.scss';
 
-@import "../../../components/header/header.scss";
-@import "../../../components/dropdown/dropdown.scss";
-@import "../../../components/checkbox-list/checkbox-list.scss";
-@import "../../../components/pagination/pagination.scss";
-@import "../../../components/range-slider/range-slider.scss";
-@import "../../../components/calendar/calendar.scss";
-@import "../../../components/room-info/room-info.scss";
-@import "../../../components/footer/footer.scss";
+@import '../../base.scss';
+@import '../../../assets/fonts.scss';
+@include setFonts('../../../');
+
+@import '../../../components/header/header.scss';
+@import '../../../components/dropdown/dropdown.scss';
+@import '../../../components/checkbox-list/checkbox-list.scss';
+@import '../../../components/pagination/pagination.scss';
+@import '../../../components/range-slider/range-slider.scss';
+@import '../../../components/calendar/calendar.scss';
+@import '../../../components/room-info/room-info.scss';
+@import '../../../components/footer/footer.scss';
 
 .search-room {
     display: flex;
@@ -17,7 +19,7 @@
     width: 100%;
     padding: 30px 9.72222% 73px 9.72222%;
     margin-bottom: 1px;
-    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+    box-shadow: 0px 1px 0px $color-dark-shade-10;
 
     @media screen and (max-width: 690px) {
         flex-direction: column;
@@ -88,7 +90,7 @@
         font-weight: bold;
         font-size: 24px;
         line-height: 30px;
-        color: #1f2041;
+        color: $color-dark-shade-100;
 
         @media screen and (max-width: 690px) {
             padding: 0px 20px;

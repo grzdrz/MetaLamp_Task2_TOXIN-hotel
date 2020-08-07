@@ -1,32 +1,33 @@
-@import "../../base.scss";
-@import "../../../assets/fonts.scss";
-@include setFonts("../../../");
+@import '../../../assets/constants.scss';
 
-@import "../../../components/logo/logo.scss";
-@import "../../../components/form-input/form-input.scss";
-@import "../../../components/dropdown/dropdown.scss";
-@import "../../../components/checkbox-list/checkbox-list.scss";
-@import "../../../components/radio/radio.scss";
-@import "../../../components/toggle/toggle.scss";
-@import "../../../components/star-rating/star-rating.scss";
-@import "../../../components/button/button.scss";
-@import "../../../components/text-button/text-button.scss";
-@import "../../../components/pagination/pagination.scss";
-@import "../../../components/range-slider/range-slider.scss";
-@import "../../../components/bullet-list/bullet-list.scss";
-@import "../../../components/calendar/calendar.scss";
-@import "../../../components/like-button/like-button.scss";
-@import "../../../components/room-advantages/room-advantages.scss";
-@import "../../../components/room-reviews/room-reviews.scss";
+@import '../../base.scss';
+@import '../../../assets/fonts.scss';
+@include setFonts('../../../');
+
+@import '../../../components/logo/logo.scss';
+@import '../../../components/form-input/form-input.scss';
+@import '../../../components/dropdown/dropdown.scss';
+@import '../../../components/checkbox-list/checkbox-list.scss';
+@import '../../../components/radio/radio.scss';
+@import '../../../components/toggle/toggle.scss';
+@import '../../../components/star-rating/star-rating.scss';
+@import '../../../components/button/button.scss';
+@import '../../../components/text-button/text-button.scss';
+@import '../../../components/pagination/pagination.scss';
+@import '../../../components/range-slider/range-slider.scss';
+@import '../../../components/bullet-list/bullet-list.scss';
+@import '../../../components/calendar/calendar.scss';
+@import '../../../components/like-button/like-button.scss';
+@import '../../../components/room-advantages/room-advantages.scss';
+@import '../../../components/room-reviews/room-reviews.scss';
 
 @mixin title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #1f2041;
+    color: $color-dark-shade-100;
 }
 
 .form-elements {

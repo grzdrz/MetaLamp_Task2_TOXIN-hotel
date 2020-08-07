@@ -1,10 +1,10 @@
-@import "../../base.scss";
-@import "../../../assets/fonts.scss";
-@include setFonts("../../../");
+@import '../../base.scss';
+@import '../../../assets/fonts.scss';
+@include setFonts('../../../');
 
-@import "../../../components/header/header.scss";
-@import "../../../components/sign-in-form/sign-in-form.scss";
-@import "../../../components/footer/footer.scss";
+@import '../../../components/header/header.scss';
+@import '../../../components/sign-in-form/sign-in-form.scss';
+@import '../../../components/footer/footer.scss';
 
 .sign-in {
     display: flex;
