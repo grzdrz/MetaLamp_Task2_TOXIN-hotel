@@ -1,9 +1,10 @@
+@import "../../assets/constants.scss";
+
 .text-button {
     cursor: pointer;
     background: transparent;
 
     &__text {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -11,11 +12,11 @@
         text-transform: uppercase;
 
         &_color_purple {
-            color: #bc9cff;
+            color: $color-purple;
         }
 
         &_color_gray {
-            color: rgba(31, 32, 65, 0.5);
+            color: $color-dark-shade-50;
         }
     }
 }

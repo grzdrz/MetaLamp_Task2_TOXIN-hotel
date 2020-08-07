@@ -1,5 +1,7 @@
-@import "../colored-logo/colored-logo.scss";
-@import "../button/button.scss";
+@import '../../assets/constants.scss';
+
+@import '../colored-logo/colored-logo.scss';
+@import '../button/button.scss';
 
 .header {
     width: 100%;
@@ -12,8 +14,8 @@
 
     padding: 15px scalePixelsAsPercentage(140, 1440);
 
-    background: #ffffff;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    background: white;
+    box-shadow: 0px 10px 20px $color-dark-shade-5;
 
     @media screen and (max-width: 1150px) and (min-width: 768px) {
         display: grid;
@@ -86,7 +88,7 @@
         &:first-child {
             margin: 0px 10px 0px 0px;
             .header__item-ref {
-                color: rgba(31, 32, 65, 0.75);
+                color: $color-dark-shade-75;
                 font-weight: bold;
             }
             @media screen and (max-width: 768px) {
@@ -104,9 +106,8 @@
 
     &__item-ref {
         text-decoration: none;
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
 
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -128,27 +129,26 @@
         align-items: center;
         text-align: center;
 
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
     }
 
     &__user-full-name {
         display: flex;
         align-items: center;
 
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
         white-space: nowrap;
 
         &:before {
-            content: "";
+            content: '';
             height: 30px;
             width: 1px;
             background: transparent;
-            border-left: 1px solid rgba(31, 32, 65, 0.1);
+            border-left: 1px solid $color-dark-shade-10;
             padding-right: 20px;
         }
 
@@ -195,6 +195,7 @@
             margin-bottom: 10px;
         }
     }
+    
     &__sign-up-button {
         width: 196px;
         height: 34px;

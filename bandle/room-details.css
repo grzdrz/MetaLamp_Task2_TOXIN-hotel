@@ -791,7 +791,7 @@ body {
   align-items: center;
   justify-items: start;
   padding: 15px 9.72222%;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
   @media screen and (max-width: 1150px) and (min-width: 768px) {
     .header {
@@ -865,7 +865,6 @@ body {
   .header__item-ref {
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -886,7 +885,6 @@ body {
   .header__user-full-name {
     display: flex;
     align-items: center;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -894,7 +892,7 @@ body {
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap; }
     .header__user-full-name:before {
-      content: "";
+      content: '';
       height: 30px;
       width: 1px;
       background: transparent;
@@ -940,6 +938,7 @@ body {
     height: 34px; }
 
 .room-advantages {
+  list-style: none;
   display: flex;
   flex-direction: column;
   width: max-content; }
@@ -963,7 +962,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* -moz-background-clip: text;
@@ -973,14 +972,12 @@ body {
     display: inline-flex;
     flex-direction: column; }
   .room-advantages__title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75); }
   .room-advantages__main-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1038,7 +1035,7 @@ body {
   .like-button__label {
     z-index: 1;
     padding: 0px 2px;
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -1060,7 +1057,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
-    background: #ffffff;
+    background: white;
     text-align: center;
     display: flex;
     align-items: center;
@@ -1122,80 +1119,69 @@ body {
     align-items: center;
     text-align: center; }
 
-.room-reviews__title {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 20px; }
-
-.room-reviews__title-description {
-  font-family: Quicksand, OpenSans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  color: #1f2041; }
-
-.room-reviews__review-count {
-  align-self: center;
-  margin-top: 5px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.5);
-  white-space: nowrap; }
-
-.room-reviews__review-container {
-  display: grid;
-  grid-template-columns: max-content auto;
-  grid-template-rows: auto auto;
-  margin-bottom: 22px; }
-  .room-reviews__review-container:last-child {
-    margin-bottom: 0px; }
-
-.room-reviews__user-avatar {
-  border-radius: 50%;
-  width: 47px;
-  height: 47px;
-  margin-bottom: 12px;
-  border: 2px solid #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1); }
-
-.room-reviews__user-info {
-  margin-left: 10px; }
-
-.room-reviews__user-full-name {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75); }
-
-.room-reviews__like-button {
-  justify-self: center;
-  padding-top: 1px; }
-
-.room-reviews__number-of-days-since-comment {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75); }
-
-.room-reviews__comment {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-left: 10px;
-  max-width: 653px; }
+.room-reviews {
+  list-style: none; }
+  .room-reviews__title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+  .room-reviews__title-description {
+    font-family: Quicksand, OpenSans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #1f2041; }
+  .room-reviews__review-count {
+    align-self: center;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.5);
+    white-space: nowrap; }
+  .room-reviews__review-container {
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-rows: auto auto;
+    margin-bottom: 22px; }
+    .room-reviews__review-container:last-child {
+      margin-bottom: 0px; }
+  .room-reviews__user-avatar {
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    margin-bottom: 12px;
+    border: 2px solid white;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1); }
+  .room-reviews__user-info {
+    margin-left: 10px; }
+  .room-reviews__user-full-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
+  .room-reviews__like-button {
+    justify-self: center;
+    padding-top: 1px; }
+  .room-reviews__number-of-days-since-comment {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
+  .room-reviews__comment {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    margin-left: 10px;
+    max-width: 653px; }
 
 .button {
   cursor: pointer;
@@ -1765,7 +1751,7 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 40px 28px 30px 30px;
-  background: #ffffff;
+  background: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
@@ -1794,7 +1780,6 @@ body {
     color: #1f2041; }
   .price-calculation-form__room-status {
     align-self: end;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -1805,7 +1790,6 @@ body {
     justify-self: end;
     align-self: end;
     margin-right: 4px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -1816,7 +1800,6 @@ body {
     align-self: end;
     white-space: nowrap;
     margin-right: 1px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1830,7 +1813,6 @@ body {
     width: 100%; }
   .price-calculation-form__calculated-data {
     margin-bottom: 20px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1861,7 +1843,6 @@ body {
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     background: transparent;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2008,7 +1989,6 @@ body {
   flex-direction: column; }
   .menu-bar__item {
     margin-bottom: 21px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2017,7 +1997,6 @@ body {
       margin-top: 4px;
       margin-bottom: 20px; }
       .menu-bar__item:first-of-type > .menu-bar__item-ref {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -2028,7 +2007,6 @@ body {
       margin-bottom: 0px; }
   .menu-bar__item-ref {
     text-decoration: none;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2040,7 +2018,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
   .footer__info-bar {
     width: 100%;
@@ -2083,7 +2061,6 @@ body {
       .footer__general-info {
         align-items: center; } }
   .footer__general-info-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2105,7 +2082,6 @@ body {
       .footer__subscription {
         display: none; } }
   .footer__subscription-title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2114,7 +2090,6 @@ body {
     color: #1f2041;
     margin-bottom: 19px; }
   .footer__subscription-description {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2141,7 +2116,6 @@ body {
       .footer__copyright-bar {
         padding-bottom: 120px; } }
   .footer__copyright {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2201,7 +2175,6 @@ body {
     text-align: center;
     color: #bc9cff; }
   .pie-chart__inner-text-word {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2238,7 +2211,6 @@ body {
     .pie-chart__legend-item-marker_4 {
       background: linear-gradient(180deg, #919191 0%, #3d4975 100%); }
   .pie-chart__legend-item-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

@@ -1,8 +1,3 @@
-//-
-    isAuthorized - авторизован ли пользователь
-    userFullName - полное имя пользователя
-    navList - список адресов и подписей для элементов меню навигации
-
 include ../button/button.pug
 include ../colored-logo/colored-logo.pug
 
@@ -17,11 +12,11 @@ mixin header(options)
     - ]
 
 
-    div(class=["header"])
+    header(class=["header"])
         div(class=["header__colored-logo"])
             +colored-logo()
 
-        div(class=["header__navigation-menu"])
+        nav(class=["header__navigation-menu"])
             ul(class=["header__list"])
                 - for(let i = 0; i < navList.length; i++){
                     li(class=["header__item"])
@@ -31,7 +26,7 @@ mixin header(options)
                 - }  
 
         - if(isAuthorized)
-            div(class=["header__user-full-name"])
+            p(class=["header__user-full-name"])
                 span(class=["header__name-text"])= userFullName
         - else
             div(class=["header__buttons"])

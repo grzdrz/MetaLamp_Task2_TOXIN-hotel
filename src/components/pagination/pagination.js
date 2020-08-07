@@ -23,7 +23,7 @@ class Pagination {
     }
 
     setClickEventsToPagesLinks() {
-        const links = this.outerContainerElement.querySelectorAll(".js-pagination__page-link");
+        const links = this.outerContainerElement.querySelectorAll(".js-pagination__link");
         links.forEach((a) => {
             a.onclick = this.handlerSelectPage;
         });

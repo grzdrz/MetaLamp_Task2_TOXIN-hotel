@@ -5,42 +5,42 @@ mixin pagination(options)
         - if(title)
             p(class=["pagination__title"])= title
 
-        div(class=["pagination__page-list"])
+        div(class=["pagination__list"])
             - if(curPageNumber !== 1)
-                a(href="#" class=["pagination__left-arrow", "js-pagination__page-link"] data-page-number="leftArrow")
+                a(href="#" class=["pagination__left-arrow", "js-pagination__link"] data-page-number="leftArrow")
                     span(class=["pagination__left-arrow-text"]) arrow_forward
-                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number="1")
-                    span(class=["pagination__page-link-text"])= 1                    
+                a(href="#" class=["pagination__link", "js-pagination__link"] data-page-number="1")
+                    span(class=["pagination__link-text"])= 1                    
 
             - if(curPageNumber - 3 > 1)
-                a(class=["pagination__page-link"] data-page-number="...")
-                    span(class=["pagination__page-link-text"])= "..." 
+                a(class=["pagination__link"] data-page-number="...")
+                    span(class=["pagination__link-text"])= "..." 
 
             - if(curPageNumber - 2 > 1)
-                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${curPageNumber - 2}`)
-                    span(class=["pagination__page-link-text"])= curPageNumber - 2
+                a(href="#" class=["pagination__link", "js-pagination__link"] data-page-number=`${curPageNumber - 2}`)
+                    span(class=["pagination__link-text"])= curPageNumber - 2
             - if(curPageNumber - 1 > 1)
-                a(href="#" class=["pagination__page-link", "js-pagination__page-link"]  data-page-number=`${curPageNumber - 1}`)
-                    span(class=["pagination__page-link-text"])= curPageNumber - 1
+                a(href="#" class=["pagination__link", "js-pagination__link"]  data-page-number=`${curPageNumber - 1}`)
+                    span(class=["pagination__link-text"])= curPageNumber - 1
 
-            a(href="#" class=["pagination__page-link", "pagination__page-link_target", "js-pagination__page-link"]  data-page-number=`${curPageNumber}`)
-                span(class=["pagination__page-link-text"])= curPageNumber
+            a(href="#" class=["pagination__link", "pagination__link_target", "js-pagination__link"]  data-page-number=`${curPageNumber}`)
+                span(class=["pagination__link-text"])= curPageNumber
 
             - if(curPageNumber + 1 < pagesCount)
-                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${curPageNumber + 1}`)
-                    span(class=["pagination__page-link-text"])= curPageNumber + 1
+                a(href="#" class=["pagination__link", "js-pagination__link"] data-page-number=`${curPageNumber + 1}`)
+                    span(class=["pagination__link-text"])= curPageNumber + 1
             - if(curPageNumber + 2 < pagesCount)
-                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${curPageNumber + 2}`)
-                    span(class=["pagination__page-link-text"])= curPageNumber + 2
+                a(href="#" class=["pagination__link", "js-pagination__link"] data-page-number=`${curPageNumber + 2}`)
+                    span(class=["pagination__link-text"])= curPageNumber + 2
 
             - if(curPageNumber + 3 < pagesCount)
-                a(class=["pagination__page-link"] data-page-number="...")
-                    span(class=["pagination__page-link-text"])= "..." 
+                a(class=["pagination__link"] data-page-number="...")
+                    span(class=["pagination__link-text"])= "..." 
 
             - if(curPageNumber !== pagesCount)
-                a(href="#" class=["pagination__page-link", "js-pagination__page-link"] data-page-number=`${pagesCount}`)
-                    span(class=["pagination__page-link-text"])= pagesCount    
-                a(href="#" class=["pagination__right-arrow", "js-pagination__page-link"] data-page-number="rightArrow")
+                a(href="#" class=["pagination__link", "js-pagination__link"] data-page-number=`${pagesCount}`)
+                    span(class=["pagination__link-text"])= pagesCount    
+                a(href="#" class=["pagination__right-arrow", "js-pagination__link"] data-page-number="rightArrow")
                     span(class=["pagination__right-arrow-text"]) arrow_forward
 
         p(class=["pagination__bottom-text"])

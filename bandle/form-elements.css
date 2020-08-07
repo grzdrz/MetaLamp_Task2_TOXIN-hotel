@@ -1812,12 +1812,11 @@ body {
       content: "";
       width: 12px;
       height: 12px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
     .radio__input:not(:checked) + div {
       border: 1px solid rgba(31, 32, 65, 0.25); }
   .radio__text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1861,7 +1860,7 @@ body {
       content: "";
       width: 12px;
       height: 12px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
     .toggle__input:not(:checked) + div::after {
       content: "";
@@ -1870,7 +1869,6 @@ body {
       background: rgba(31, 32, 65, 0.25);
       border-radius: 50%; }
   .toggle__text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1915,8 +1913,8 @@ body {
       font-weight: normal;
       font-size: 24px;
       line-height: 20px;
-      color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      color: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
@@ -1934,8 +1932,8 @@ body {
       font-weight: normal;
       font-size: 24px;
       line-height: 20px;
-      color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      color: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
@@ -2026,7 +2024,6 @@ body {
   cursor: pointer;
   background: transparent; }
   .text-button__text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2041,7 +2038,6 @@ body {
   display: flex;
   flex-direction: column; }
   .pagination__title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2049,20 +2045,20 @@ body {
     text-transform: uppercase;
     color: #1f2041;
     margin-bottom: 16px; }
-  .pagination__page-list {
+  .pagination__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     background: transparent; }
-  .pagination__left-arrow, .pagination__right-arrow, .pagination__page-link {
+  .pagination__left-arrow, .pagination__right-arrow, .pagination__link {
     width: 40px;
     height: 40px;
     text-decoration: none; }
-  .pagination__page-link_target {
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  .pagination__link_target {
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     border-radius: 50%; }
-    .pagination__page-link_target > .pagination__page-link-text {
+    .pagination__link_target > .pagination__link-text {
       color: white; }
   .pagination__left-arrow, .pagination__right-arrow {
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
@@ -2080,10 +2076,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #ffffff; }
+    color: white; }
   .pagination__left-arrow-text {
     transform: rotate(180deg); }
-  .pagination__page-link-text {
+  .pagination__link-text {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -2091,23 +2087,21 @@ body {
     width: inherit;
     height: inherit;
     border-radius: 50%;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     color: rgba(31, 32, 65, 0.5); }
-    .pagination__page-link-text:hover {
+    .pagination__link-text:hover {
       width: inherit;
       height: inherit;
       border-radius: 50%;
-      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
   .pagination__bottom-text {
     display: inline-flex;
     justify-content: center;
     margin-top: 7px;
     width: 100%;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2123,7 +2117,6 @@ body {
     display: flex;
     justify-content: space-between; }
   .range-slider__slider-name {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2131,7 +2124,6 @@ body {
     text-transform: uppercase;
     color: #1f2041; }
   .range-slider__current-values {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -2140,7 +2132,6 @@ body {
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
   .range-slider__description {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -2153,7 +2144,7 @@ body {
     overflow: hidden;
     outline: none;
     height: 6px;
-    background: #ffffff;
+    background: white;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 3px; }
@@ -2166,7 +2157,7 @@ body {
     height: 16px;
     top: 20px;
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-    border: 2px solid #ffffff;
+    border: 2px solid white;
     border-radius: 50%; }
   .range-slider .irs--flat .irs-handle > i:first-child {
     display: none; }
@@ -2544,7 +2535,7 @@ body {
   .like-button__label {
     z-index: 1;
     padding: 0px 2px;
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -2566,7 +2557,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
-    background: #ffffff;
+    background: white;
     text-align: center;
     display: flex;
     align-items: center;
@@ -2629,6 +2620,7 @@ body {
     text-align: center; }
 
 .room-advantages {
+  list-style: none;
   display: flex;
   flex-direction: column;
   width: max-content; }
@@ -2652,7 +2644,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to bottom, #bc9cff 0%, #8ba4f9 100%);
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* -moz-background-clip: text;
@@ -2662,14 +2654,12 @@ body {
     display: inline-flex;
     flex-direction: column; }
   .room-advantages__title-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75); }
   .room-advantages__main-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2681,7 +2671,7 @@ body {
   .like-button__label {
     z-index: 1;
     padding: 0px 2px;
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -2703,7 +2693,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
-    background: #ffffff;
+    background: white;
     text-align: center;
     display: flex;
     align-items: center;
@@ -2765,80 +2755,69 @@ body {
     align-items: center;
     text-align: center; }
 
-.room-reviews__title {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 20px; }
-
-.room-reviews__title-description {
-  font-family: Quicksand, OpenSans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  color: #1f2041; }
-
-.room-reviews__review-count {
-  align-self: center;
-  margin-top: 5px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.5);
-  white-space: nowrap; }
-
-.room-reviews__review-container {
-  display: grid;
-  grid-template-columns: max-content auto;
-  grid-template-rows: auto auto;
-  margin-bottom: 22px; }
-  .room-reviews__review-container:last-child {
-    margin-bottom: 0px; }
-
-.room-reviews__user-avatar {
-  border-radius: 50%;
-  width: 47px;
-  height: 47px;
-  margin-bottom: 12px;
-  border: 2px solid #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1); }
-
-.room-reviews__user-info {
-  margin-left: 10px; }
-
-.room-reviews__user-full-name {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75); }
-
-.room-reviews__like-button {
-  justify-self: center;
-  padding-top: 1px; }
-
-.room-reviews__number-of-days-since-comment {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75); }
-
-.room-reviews__comment {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-left: 10px;
-  max-width: 653px; }
+.room-reviews {
+  list-style: none; }
+  .room-reviews__title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+  .room-reviews__title-description {
+    font-family: Quicksand, OpenSans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #1f2041; }
+  .room-reviews__review-count {
+    align-self: center;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.5);
+    white-space: nowrap; }
+  .room-reviews__review-container {
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-rows: auto auto;
+    margin-bottom: 22px; }
+    .room-reviews__review-container:last-child {
+      margin-bottom: 0px; }
+  .room-reviews__user-avatar {
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    margin-bottom: 12px;
+    border: 2px solid white;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1); }
+  .room-reviews__user-info {
+    margin-left: 10px; }
+  .room-reviews__user-full-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
+  .room-reviews__like-button {
+    justify-self: center;
+    padding-top: 1px; }
+  .room-reviews__number-of-days-since-comment {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
+  .room-reviews__comment {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    margin-left: 10px;
+    max-width: 653px; }
 
 .form-elements {
   min-width: 100%;

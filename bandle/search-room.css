@@ -1467,7 +1467,7 @@ body {
   align-items: center;
   justify-items: start;
   padding: 15px 9.72222%;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
   @media screen and (max-width: 1150px) and (min-width: 768px) {
     .header {
@@ -1541,7 +1541,6 @@ body {
   .header__item-ref {
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1562,7 +1561,6 @@ body {
   .header__user-full-name {
     display: flex;
     align-items: center;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1570,7 +1568,7 @@ body {
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap; }
     .header__user-full-name:before {
-      content: "";
+      content: '';
       height: 30px;
       width: 1px;
       background: transparent;
@@ -1912,7 +1910,6 @@ body {
   display: flex;
   flex-direction: column; }
   .pagination__title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -1920,20 +1917,20 @@ body {
     text-transform: uppercase;
     color: #1f2041;
     margin-bottom: 16px; }
-  .pagination__page-list {
+  .pagination__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     background: transparent; }
-  .pagination__left-arrow, .pagination__right-arrow, .pagination__page-link {
+  .pagination__left-arrow, .pagination__right-arrow, .pagination__link {
     width: 40px;
     height: 40px;
     text-decoration: none; }
-  .pagination__page-link_target {
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  .pagination__link_target {
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     border-radius: 50%; }
-    .pagination__page-link_target > .pagination__page-link-text {
+    .pagination__link_target > .pagination__link-text {
       color: white; }
   .pagination__left-arrow, .pagination__right-arrow {
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
@@ -1951,10 +1948,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #ffffff; }
+    color: white; }
   .pagination__left-arrow-text {
     transform: rotate(180deg); }
-  .pagination__page-link-text {
+  .pagination__link-text {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1962,23 +1959,21 @@ body {
     width: inherit;
     height: inherit;
     border-radius: 50%;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     color: rgba(31, 32, 65, 0.5); }
-    .pagination__page-link-text:hover {
+    .pagination__link-text:hover {
       width: inherit;
       height: inherit;
       border-radius: 50%;
-      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
   .pagination__bottom-text {
     display: inline-flex;
     justify-content: center;
     margin-top: 7px;
     width: 100%;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1994,7 +1989,6 @@ body {
     display: flex;
     justify-content: space-between; }
   .range-slider__slider-name {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2002,7 +1996,6 @@ body {
     text-transform: uppercase;
     color: #1f2041; }
   .range-slider__current-values {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -2011,7 +2004,6 @@ body {
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
   .range-slider__description {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -2024,7 +2016,7 @@ body {
     overflow: hidden;
     outline: none;
     height: 6px;
-    background: #ffffff;
+    background: white;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 3px; }
@@ -2037,7 +2029,7 @@ body {
     height: 16px;
     top: 20px;
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-    border: 2px solid #ffffff;
+    border: 2px solid white;
     border-radius: 50%; }
   .range-slider .irs--flat .irs-handle > i:first-child {
     display: none; }
@@ -2399,8 +2391,8 @@ body {
       font-weight: normal;
       font-size: 24px;
       line-height: 20px;
-      color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      color: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
@@ -2418,8 +2410,8 @@ body {
       font-weight: normal;
       font-size: 24px;
       line-height: 20px;
-      color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      color: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
@@ -2447,7 +2439,7 @@ body {
   width: 270px;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   position: relative; }
@@ -2496,7 +2488,7 @@ body {
     font-size: 24px;
     line-height: 24px;
     text-align: center;
-    color: #ffffff; }
+    color: white; }
   .room-info__arrow-forward {
     cursor: pointer;
     display: flex;
@@ -2516,7 +2508,7 @@ body {
     font-size: 24px;
     line-height: 24px;
     text-align: center;
-    color: #ffffff; }
+    color: white; }
   .room-info__radio-button {
     z-index: 3;
     width: 8px;
@@ -2525,7 +2517,7 @@ body {
     opacity: 0;
     bottom: 15px; }
     .room-info__radio-button:checked + div {
-      background: #ffffff; }
+      background: white; }
     .room-info__radio-button_1 {
       right: 48px; }
       .room-info__radio-button_1 + div {
@@ -2555,7 +2547,7 @@ body {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    border: 1px solid #ffffff;
+    border: 1px solid white;
     box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
     position: absolute;
     bottom: 15px; }
@@ -2587,7 +2579,6 @@ body {
     color: #1f2041; }
   .room-info__room-status {
     align-self: end;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2598,7 +2589,6 @@ body {
     justify-self: end;
     align-self: end;
     margin-right: 4px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -2609,7 +2599,6 @@ body {
     align-self: end;
     white-space: nowrap;
     margin-right: 1px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -2626,7 +2615,6 @@ body {
     padding-bottom: 3px;
     padding-right: 4px; }
   .room-info__reviews-count-value {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -2635,7 +2623,6 @@ body {
     color: rgba(31, 32, 65, 0.5);
     margin-right: 3px; }
   .room-info__reviews-count-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2759,7 +2746,6 @@ body {
   flex-direction: column; }
   .menu-bar__item {
     margin-bottom: 21px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2768,7 +2754,6 @@ body {
       margin-top: 4px;
       margin-bottom: 20px; }
       .menu-bar__item:first-of-type > .menu-bar__item-ref {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -2779,7 +2764,6 @@ body {
       margin-bottom: 0px; }
   .menu-bar__item-ref {
     text-decoration: none;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2791,7 +2775,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
   .footer__info-bar {
     width: 100%;
@@ -2834,7 +2818,6 @@ body {
       .footer__general-info {
         align-items: center; } }
   .footer__general-info-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2856,7 +2839,6 @@ body {
       .footer__subscription {
         display: none; } }
   .footer__subscription-title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2865,7 +2847,6 @@ body {
     color: #1f2041;
     margin-bottom: 19px; }
   .footer__subscription-description {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2892,7 +2873,6 @@ body {
       .footer__copyright-bar {
         padding-bottom: 120px; } }
   .footer__copyright {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

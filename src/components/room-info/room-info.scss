@@ -1,12 +1,14 @@
-@import "../star-rating/star-rating.scss";
+@import '../../assets/constants.scss';
+
+@import '../star-rating/star-rating.scss';
 
 .room-info {
     width: 270px;
     display: flex;
     flex-direction: column;
 
-    background: #ffffff;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    background: white;
+    box-shadow: 0px 10px 20px $color-dark-shade-5;
     border-radius: 4px;
 
     position: relative;
@@ -74,7 +76,7 @@
         line-height: 24px;
 
         text-align: center;
-        color: #ffffff;
+        color: white;
     }
 
     &__arrow-forward {
@@ -102,7 +104,7 @@
         line-height: 24px;
 
         text-align: center;
-        color: #ffffff;
+        color: white;
     }
 
     $radioButtonSize: 8px;
@@ -118,7 +120,7 @@
         bottom: 15px;
 
         &:checked + div {
-            background: #ffffff;
+            background: white;
         }
 
         $test: 6px;
@@ -142,8 +144,8 @@
         height: 8px;
 
         border-radius: 50%;
-        border: 1px solid #ffffff;
-        box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+        border: 1px solid white;
+        box-shadow: 0px 5px 5px $color-dark-shade-30;
 
         position: absolute;
         bottom: 15px;
@@ -171,7 +173,7 @@
         font-weight: bold;
         font-size: 14px;
         line-height: 17px;
-        color: #1f2041;
+        color: $color-dark-shade-100;
     }
 
     &__room-number {
@@ -183,19 +185,18 @@
         font-weight: bold;
         font-size: 19px;
         line-height: 24px;
-        color: #1f2041;
+        color: $color-dark-shade-100;
     }
 
     &__room-status {
         align-self: end;
 
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
-        color: #bc9cff;
+        color: $color-purple;
     }
 
     &__room-price {
@@ -203,12 +204,11 @@
         align-self: end;
         margin-right: 4px;
 
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 15px;
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
     }
 
     &__period-of-time {
@@ -217,19 +217,18 @@
         white-space: nowrap;
         margin-right: 1px;
 
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
         line-height: 15px;
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
     }
 
     &__room-rate {
         display: flex;
         justify-content: space-between;
 
-        border-top: 1px solid rgba(31, 32, 65, 0.1);
+        border-top: 1px solid $color-dark-shade-10;
         padding-top: 8px;
     }
 
@@ -241,24 +240,22 @@
     }
 
     &__reviews-count-value {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 18px;
         text-align: right;
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
 
         margin-right: 3px;
     }
 
     &__reviews-count-text {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 18px;
         text-align: right;
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
     }
 }

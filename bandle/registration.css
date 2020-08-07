@@ -791,7 +791,7 @@ body {
   align-items: center;
   justify-items: start;
   padding: 15px 9.72222%;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
   @media screen and (max-width: 1150px) and (min-width: 768px) {
     .header {
@@ -865,7 +865,6 @@ body {
   .header__item-ref {
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -886,7 +885,6 @@ body {
   .header__user-full-name {
     display: flex;
     align-items: center;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -894,7 +892,7 @@ body {
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap; }
     .header__user-full-name:before {
-      content: "";
+      content: '';
       height: 30px;
       width: 1px;
       background: transparent;
@@ -1061,12 +1059,11 @@ body {
       content: "";
       width: 12px;
       height: 12px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
     .radio__input:not(:checked) + div {
       border: 1px solid rgba(31, 32, 65, 0.25); }
   .radio__text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1110,7 +1107,7 @@ body {
       content: "";
       width: 12px;
       height: 12px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
     .toggle__input:not(:checked) + div::after {
       content: "";
@@ -1119,7 +1116,6 @@ body {
       background: rgba(31, 32, 65, 0.25);
       border-radius: 50%; }
   .toggle__text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1519,7 +1515,7 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 38px 27px 30px 30px;
-  background: #ffffff;
+  background: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -1559,7 +1555,6 @@ body {
     align-items: center;
     width: 100%; }
   .sign-up-form__confirmation-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1567,7 +1562,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #000000; }
+    color: black; }
   .sign-up-form__sign-in-button {
     width: 30.9375%;
     height: 44px; }
@@ -1688,7 +1683,6 @@ body {
   flex-direction: column; }
   .menu-bar__item {
     margin-bottom: 21px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1697,7 +1691,6 @@ body {
       margin-top: 4px;
       margin-bottom: 20px; }
       .menu-bar__item:first-of-type > .menu-bar__item-ref {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -1708,7 +1701,6 @@ body {
       margin-bottom: 0px; }
   .menu-bar__item-ref {
     text-decoration: none;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1720,7 +1712,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
   .footer__info-bar {
     width: 100%;
@@ -1763,7 +1755,6 @@ body {
       .footer__general-info {
         align-items: center; } }
   .footer__general-info-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1785,7 +1776,6 @@ body {
       .footer__subscription {
         display: none; } }
   .footer__subscription-title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -1794,7 +1784,6 @@ body {
     color: #1f2041;
     margin-bottom: 19px; }
   .footer__subscription-description {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1821,7 +1810,6 @@ body {
       .footer__copyright-bar {
         padding-bottom: 120px; } }
   .footer__copyright {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

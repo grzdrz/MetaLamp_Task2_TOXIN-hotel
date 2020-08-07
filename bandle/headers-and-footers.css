@@ -177,7 +177,7 @@ body {
   align-items: center;
   justify-items: start;
   padding: 15px 9.72222%;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
   @media screen and (max-width: 1150px) and (min-width: 768px) {
     .header {
@@ -251,7 +251,6 @@ body {
   .header__item-ref {
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -272,7 +271,6 @@ body {
   .header__user-full-name {
     display: flex;
     align-items: center;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -280,7 +278,7 @@ body {
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap; }
     .header__user-full-name:before {
-      content: "";
+      content: '';
       height: 30px;
       width: 1px;
       background: transparent;
@@ -441,7 +439,6 @@ body {
   flex-direction: column; }
   .menu-bar__item {
     margin-bottom: 21px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -450,7 +447,6 @@ body {
       margin-top: 4px;
       margin-bottom: 20px; }
       .menu-bar__item:first-of-type > .menu-bar__item-ref {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -461,7 +457,6 @@ body {
       margin-bottom: 0px; }
   .menu-bar__item-ref {
     text-decoration: none;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -473,7 +468,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
   .footer__info-bar {
     width: 100%;
@@ -516,7 +511,6 @@ body {
       .footer__general-info {
         align-items: center; } }
   .footer__general-info-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -538,7 +532,6 @@ body {
       .footer__subscription {
         display: none; } }
   .footer__subscription-title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -547,7 +540,6 @@ body {
     color: #1f2041;
     margin-bottom: 19px; }
   .footer__subscription-description {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -574,7 +566,6 @@ body {
       .footer__copyright-bar {
         padding-bottom: 120px; } }
   .footer__copyright {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -610,24 +601,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  padding: 120px 200px; }
+  padding: 120px 200px;
+  margin: 0px auto; }
   @media screen and (max-width: 767px) {
     .short-footer {
-      padding: 120px 0px;
+      padding: 120px 50px;
       width: 100%; } }
-  .short-footer__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    @media screen and (max-width: 767px) {
-      .short-footer__content {
-        margin: 0px 50px; } }
   .short-footer__text {
     margin-top: 18px;
     margin-bottom: 20px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

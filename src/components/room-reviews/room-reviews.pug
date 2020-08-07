@@ -18,13 +18,13 @@ mixin room-reviews(options)
             return words[2];
         }
 
-    div(class=["room-reviews"])
+    ul(class=["room-reviews"])
         - if(hasTitle)
             p(class=["room-reviews__title"]) 
                 span(class=["room-reviews__title-description"]) Отзывы посетителей номера
                 span(class=["room-reviews__review-count"])= `${reviews.length} ${doDeclensionOfWord(reviews.length)}`
         - for(let review of reviews)
-            div(class=["room-reviews__review-container"])
+            li(class=["room-reviews__review-container"])
                 img(src=`./src/components/room-reviews/img/${review.imageName}.png` class=["room-reviews__user-avatar"])
                 div(class=["room-reviews__user-info"])
                     p(class=["room-reviews__user-full-name"])= review.fullName

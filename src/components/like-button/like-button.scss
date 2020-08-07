@@ -1,3 +1,5 @@
+@import "../../assets/constants.scss";
+
 .like-button {
     width: max-content;
 
@@ -12,13 +14,13 @@
 
         padding: 0px 2px;
 
-        color: #ffffff;
+        color: white;
         text-decoration: none;
         display: flex;
         justify-content: center;
         align-items: center;
         align-items: center;
-        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+        background: $gradient-purple-to-blue;
         height: $buttonHeight;
         border-radius: $borderRadius;
 
@@ -42,7 +44,7 @@
         font-weight: normal;
         font-size: 10px;
 
-        background: #ffffff;
+        background: white;
         text-align: center;
         display: flex;
         align-items: center;
@@ -66,10 +68,10 @@
         opacity: 0;
 
         &:checked + label {
-            background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+            background: $gradient-purple-to-blue;
 
             & > * {
-                color: #bc9cff;
+                color: $color-purple;
             }
 
             & > .like-button__like-symbol::after {
@@ -88,10 +90,10 @@
         }
 
         &:not(:checked) + label {
-            background: rgba(31, 32, 65, 0.25);
+            background: $color-dark-shade-25;
 
             & > * {
-                color: rgba(31, 32, 65, 0.25);
+                color: $color-dark-shade-25;
             }
 
             & > .like-button__like-symbol::after {

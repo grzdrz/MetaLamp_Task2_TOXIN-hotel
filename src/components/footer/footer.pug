@@ -4,7 +4,7 @@ include ../colored-logo/colored-logo.pug
 include ../social-media/social-media.pug
 
 mixin footer(options)
-    div(class=["footer"])
+    footer(class=["footer"])
         div(class=["footer__info-bar"])
 
             div(class=["footer__general-info"])
@@ -12,7 +12,7 @@ mixin footer(options)
                 p(class=["footer__general-info-text"]) 
                     | Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
 
-            div(class=["footer__menu-bar"])
+            nav(class=["footer__menu-bar"])
                 +menu-bar({
                     listOfLinks: [
                         {url: "#", text: "навигация"}, 
@@ -22,7 +22,7 @@ mixin footer(options)
                         {url: "#", text: "Услуги"},
                     ]
                 })
-            div(class=["footer__menu-bar"])
+            nav(class=["footer__menu-bar"])
                 +menu-bar({
                     listOfLinks: [
                         {url: "#", text: "о нас"}, 
@@ -32,7 +32,7 @@ mixin footer(options)
                         {url: "#", text: "Инвесторы"},
                     ]
                 })
-            div(class=["footer__menu-bar"])
+            nav(class=["footer__menu-bar"])
                 +menu-bar({
                     listOfLinks: [
                         {url: "#", text: "Служба поддержки"}, 

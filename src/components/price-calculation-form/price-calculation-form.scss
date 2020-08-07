@@ -1,6 +1,8 @@
-@import "../button/button.scss";
-@import "../calendar/calendar.scss";
-@import "../dropdown/dropdown.scss";
+@import '../../assets/constants.scss';
+
+@import '../button/button.scss';
+@import '../calendar/calendar.scss';
+@import '../dropdown/dropdown.scss';
 
 .price-calculation-form {
     display: flex;
@@ -10,7 +12,7 @@
 
     padding: 40px 28px 30px 30px;
 
-    background: #ffffff;
+    background: white;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -31,7 +33,7 @@
         font-weight: bold;
         font-size: 14px;
         line-height: 17px;
-        color: #1f2041;
+        color: $color-dark-shade-100;
     }
 
     &__room-number {
@@ -43,19 +45,18 @@
         font-weight: bold;
         font-size: 24px;
         line-height: 23px;
-        color: #1f2041;
+        color: $color-dark-shade-100;
     }
 
     &__room-status {
         align-self: end;
 
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
-        color: #bc9cff;
+        color: $color-purple;
     }
 
     &__room-price {
@@ -63,12 +64,11 @@
         align-self: end;
         margin-right: 4px;
 
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 15px;
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
     }
 
     &__period-of-time {
@@ -77,12 +77,11 @@
         white-space: nowrap;
         margin-right: 1px;
 
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
         line-height: 15px;
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
     }
 
     &__calendar {
@@ -98,12 +97,11 @@
     &__calculated-data {
         margin-bottom: 20px;
 
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 19px;
-        color: rgba(31, 32, 65, 0.75);
+        color: $color-dark-shade-75;
     }
 
     &__main-sum {
@@ -137,17 +135,16 @@
         border-radius: 50%;
         min-width: 20px;
         height: 20px;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        border: 1px solid $color-dark-shade-25;
         box-sizing: border-box;
         background: transparent;
 
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 14px;
         text-align: right;
-        color: rgba(31, 32, 65, 0.25);
+        color: $color-dark-shade-25;
     }
 
     &__discount-value {
@@ -167,12 +164,12 @@
         font-weight: bold;
         font-size: 19px;
         line-height: 24px;
-        color: #1f2041;
+        color: $color-dark-shade-100;
     }
 
     &__total-result-bottom-line {
         margin-bottom: 5px;
-        border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+        border-bottom: 1px dashed $color-dark-shade-25;
         box-sizing: border-box;
     }
 

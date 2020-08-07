@@ -1,3 +1,5 @@
+@import '../../assets/constants.scss';
+
 .range-slider {
     display: flex;
     flex-direction: column;
@@ -10,33 +12,30 @@
     }
 
     &__slider-name {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
-        color: #1f2041;
+        color: $color-dark-shade-100;
     }
 
     &__current-values {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
         line-height: 15px;
         text-align: right;
         text-transform: uppercase;
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
     }
 
     &__description {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
         line-height: 14px;
-        color: rgba(31, 32, 65, 0.5);
+        color: $color-dark-shade-50;
         
         margin-top: 5px;
     }
@@ -48,15 +47,15 @@
         overflow: hidden;
         outline: none;
         height: 6px;
-        background: #ffffff;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        background: white;
+        border: 1px solid $color-dark-shade-25;
         box-sizing: border-box;
         border-radius: 3px;
     }
 
     & .irs-bar {
         height: 6px;
-        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        background: $gradient-green-to-turquoise;
     }
 
     & .irs-handle {
@@ -64,8 +63,8 @@
         width: 16px;
         height: 16px;
         top: 20px;
-        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-        border: 2px solid #ffffff;
+        background: $gradient-green-to-turquoise;
+        border: 2px solid white;
         border-radius: 50%;
     }
 

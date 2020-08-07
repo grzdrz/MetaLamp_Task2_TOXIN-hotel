@@ -1,8 +1,10 @@
-@import "../form-input/form-input.scss";
-@import "../radio/radio.scss";
-@import "../toggle/toggle.scss";
-@import "../calendar/calendar.scss";
-@import "../button/button.scss";
+@import '../../assets/constants.scss';
+
+@import '../form-input/form-input.scss';
+@import '../radio/radio.scss';
+@import '../toggle/toggle.scss';
+@import '../calendar/calendar.scss';
+@import '../button/button.scss';
 
 .sign-up-form {
     display: flex;
@@ -12,7 +14,7 @@
 
     padding: 38px 27px 30px 30px;
 
-    background: #ffffff;
+    background: white;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -28,7 +30,7 @@
         font-weight: bold;
         font-size: 24px;
         line-height: 30px;
-        color: #1f2041;
+        color: $color-dark-shade-100;
     }
 
     &__first-name-field,
@@ -71,7 +73,6 @@
     }
 
     &__confirmation-text {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -81,7 +82,7 @@
         align-items: center;
         text-align: center;
 
-        color: #000000;
+        color: black;
     }
 
     &__sign-in-button {

@@ -877,7 +877,7 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 38px 27px 30px 30px;
-  background: #ffffff;
+  background: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -907,7 +907,6 @@ body {
     align-items: center;
     width: 100%; }
   .sign-in-form__question-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -915,7 +914,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #000000; }
+    color: black; }
   .sign-in-form__create-button {
     width: 30.9375%;
     height: 44px; }
@@ -1488,7 +1487,7 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 40px 27px 30px 30px;
-  background: #ffffff;
+  background: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -2081,7 +2080,7 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 40px 28px 30px 30px;
-  background: #ffffff;
+  background: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
@@ -2110,7 +2109,6 @@ body {
     color: #1f2041; }
   .price-calculation-form__room-status {
     align-self: end;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2121,7 +2119,6 @@ body {
     justify-self: end;
     align-self: end;
     margin-right: 4px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -2132,7 +2129,6 @@ body {
     align-self: end;
     white-space: nowrap;
     margin-right: 1px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -2146,7 +2142,6 @@ body {
     width: 100%; }
   .price-calculation-form__calculated-data {
     margin-bottom: 20px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2177,7 +2172,6 @@ body {
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     background: transparent;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2330,12 +2324,11 @@ body {
       content: "";
       width: 12px;
       height: 12px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
     .radio__input:not(:checked) + div {
       border: 1px solid rgba(31, 32, 65, 0.25); }
   .radio__text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2379,7 +2372,7 @@ body {
       content: "";
       width: 12px;
       height: 12px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
     .toggle__input:not(:checked) + div::after {
       content: "";
@@ -2388,7 +2381,6 @@ body {
       background: rgba(31, 32, 65, 0.25);
       border-radius: 50%; }
   .toggle__text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2788,7 +2780,7 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 38px 27px 30px 30px;
-  background: #ffffff;
+  background: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -2828,7 +2820,6 @@ body {
     align-items: center;
     width: 100%; }
   .sign-up-form__confirmation-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2836,7 +2827,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #000000; }
+    color: black; }
   .sign-up-form__sign-in-button {
     width: 30.9375%;
     height: 44px; }
@@ -2876,8 +2867,8 @@ body {
       font-weight: normal;
       font-size: 24px;
       line-height: 20px;
-      color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      color: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
@@ -2895,8 +2886,8 @@ body {
       font-weight: normal;
       font-size: 24px;
       line-height: 20px;
-      color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      color: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
@@ -2924,7 +2915,7 @@ body {
   width: 270px;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   position: relative; }
@@ -2973,7 +2964,7 @@ body {
     font-size: 24px;
     line-height: 24px;
     text-align: center;
-    color: #ffffff; }
+    color: white; }
   .room-info__arrow-forward {
     cursor: pointer;
     display: flex;
@@ -2993,7 +2984,7 @@ body {
     font-size: 24px;
     line-height: 24px;
     text-align: center;
-    color: #ffffff; }
+    color: white; }
   .room-info__radio-button {
     z-index: 3;
     width: 8px;
@@ -3002,7 +2993,7 @@ body {
     opacity: 0;
     bottom: 15px; }
     .room-info__radio-button:checked + div {
-      background: #ffffff; }
+      background: white; }
     .room-info__radio-button_1 {
       right: 48px; }
       .room-info__radio-button_1 + div {
@@ -3032,7 +3023,7 @@ body {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    border: 1px solid #ffffff;
+    border: 1px solid white;
     box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
     position: absolute;
     bottom: 15px; }
@@ -3064,7 +3055,6 @@ body {
     color: #1f2041; }
   .room-info__room-status {
     align-self: end;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -3075,7 +3065,6 @@ body {
     justify-self: end;
     align-self: end;
     margin-right: 4px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -3086,7 +3075,6 @@ body {
     align-self: end;
     white-space: nowrap;
     margin-right: 1px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -3103,7 +3091,6 @@ body {
     padding-bottom: 3px;
     padding-right: 4px; }
   .room-info__reviews-count-value {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -3112,7 +3099,6 @@ body {
     color: rgba(31, 32, 65, 0.5);
     margin-right: 3px; }
   .room-info__reviews-count-text {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

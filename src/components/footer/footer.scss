@@ -1,14 +1,16 @@
-@import "../form-input/form-input.scss";
-@import "../colored-logo/colored-logo.scss";
-@import "../social-media/social-media.scss";
-@import "../menu-bar/menu-bar.scss";
+@import '../../assets/constants.scss';
+
+@import '../form-input/form-input.scss';
+@import '../colored-logo/colored-logo.scss';
+@import '../social-media/social-media.scss';
+@import '../menu-bar/menu-bar.scss';
 
 .footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: #ffffff;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    background: white;
+    box-shadow: 0px 10px 20px $color-dark-shade-5;
 
     &__info-bar {
         width: 100%;
@@ -17,7 +19,7 @@
         grid-template-columns: 26% 17% 17.5% 19.5% 20%;
         padding: 100px scalePixelsAsPercentage(140, 1440);
         justify-items: start;
-        box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+        box-shadow: 0px 1px 0px $color-dark-shade-10;
         margin-bottom: 1px;
 
         @media screen and (max-width: 1300px) {
@@ -57,12 +59,11 @@
     }
 
     &__general-info-text {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
+        color: $color-dark-shade-75;
 
         margin-top: 18px;
 
@@ -90,24 +91,22 @@
     }
 
     &__subscription-title {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
-        color: #1f2041;
+        color: $color-dark-shade-100;
 
         margin-bottom: 19px;
     }
 
     &__subscription-description {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
+        color: $color-dark-shade-75;
 
         margin-bottom: 22px;
     }
@@ -127,7 +126,7 @@
         padding: 23px scalePixelsAsPercentage(140, 1440);
         align-items: center;
         justify-content: space-between;
-        box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+        box-shadow: 0px 1px 0px $color-dark-shade-10;
 
         @media screen and (max-width: 850px) {
             flex-direction: column;
@@ -138,12 +137,11 @@
     }
 
     &__copyright {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
-        color: rgba(31, 32, 65, 0.75);
+        color: $color-dark-shade-75;
         text-align: center;
 
         @media screen and (max-width: 850px) {
