@@ -86,6 +86,28 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/fonts.scss":
+/*!******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/fonts.scss ***!
+  \******************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/assets/fonts.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/base/base.scss":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/base/base.scss ***!
+  \*********************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/pages/base/base.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/index/index.scss":
 /*!***********************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/index/index.scss ***!
@@ -109,6 +131,855 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./src sync recursive \\.(ttf|eot|woff|woff2|svg|png|jpg)$":
+/*!******************************************************!*\
+  !*** ./src sync \.(ttf|eot|woff|woff2|svg|png|jpg)$ ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.eot\": \"./src/assets/fonts/Montserrat/montserrat-bold.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.ttf\": \"./src/assets/fonts/Montserrat/montserrat-bold.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff2\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.eot\": \"./src/assets/fonts/Montserrat/montserrat-regular.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.ttf\": \"./src/assets/fonts/Montserrat/montserrat-regular.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff2\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.eot\": \"./src/assets/fonts/OpenSans/open-sans-bold.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.ttf\": \"./src/assets/fonts/OpenSans/open-sans-bold.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff2\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.eot\": \"./src/assets/fonts/OpenSans/open-sans-regular.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.ttf\": \"./src/assets/fonts/OpenSans/open-sans-regular.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff2\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.eot\": \"./src/assets/fonts/Quicksand/quicksand-bold.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.ttf\": \"./src/assets/fonts/Quicksand/quicksand-bold.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff2\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.eot\": \"./src/assets/fonts/Quicksand/quicksand-regular.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.ttf\": \"./src/assets/fonts/Quicksand/quicksand-regular.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff2\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff2\",\n\t\"./components/checkbox-list/img/check-mark.svg\": \"./src/components/checkbox-list/img/check-mark.svg\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./components/logo/img/logo.svg\": \"./src/components/logo/img/logo.svg\",\n\t\"./components/room-info/img/test11.png\": \"./src/components/room-info/img/test11.png\",\n\t\"./components/room-info/img/test110.png\": \"./src/components/room-info/img/test110.png\",\n\t\"./components/room-info/img/test120.png\": \"./src/components/room-info/img/test120.png\",\n\t\"./components/room-info/img/test130.png\": \"./src/components/room-info/img/test130.png\",\n\t\"./components/room-info/img/test22.png\": \"./src/components/room-info/img/test22.png\",\n\t\"./components/room-info/img/test33.png\": \"./src/components/room-info/img/test33.png\",\n\t\"./components/room-info/img/test44.png\": \"./src/components/room-info/img/test44.png\",\n\t\"./components/room-info/img/test55.png\": \"./src/components/room-info/img/test55.png\",\n\t\"./components/room-info/img/test66.png\": \"./src/components/room-info/img/test66.png\",\n\t\"./components/room-info/img/test77.png\": \"./src/components/room-info/img/test77.png\",\n\t\"./components/room-info/img/test88.png\": \"./src/components/room-info/img/test88.png\",\n\t\"./components/room-info/img/test99.png\": \"./src/components/room-info/img/test99.png\",\n\t\"./components/room-reviews/img/image1.png\": \"./src/components/room-reviews/img/image1.png\",\n\t\"./components/room-reviews/img/image2.png\": \"./src/components/room-reviews/img/image2.png\",\n\t\"./components/social-media/img/facebook-icon.svg\": \"./src/components/social-media/img/facebook-icon.svg\",\n\t\"./components/social-media/img/instagram-icon.svg\": \"./src/components/social-media/img/instagram-icon.svg\",\n\t\"./components/social-media/img/twitter-icon.svg\": \"./src/components/social-media/img/twitter-icon.svg\",\n\t\"./favicons/android-chrome-192x192.png\": \"./src/favicons/android-chrome-192x192.png\",\n\t\"./favicons/android-chrome-512x512.png\": \"./src/favicons/android-chrome-512x512.png\",\n\t\"./favicons/apple-touch-icon.png\": \"./src/favicons/apple-touch-icon.png\",\n\t\"./favicons/favicon-16x16.png\": \"./src/favicons/favicon-16x16.png\",\n\t\"./favicons/favicon-32x32.png\": \"./src/favicons/favicon-32x32.png\",\n\t\"./favicons/mstile-144x144.png\": \"./src/favicons/mstile-144x144.png\",\n\t\"./favicons/mstile-150x150.png\": \"./src/favicons/mstile-150x150.png\",\n\t\"./favicons/mstile-310x150.png\": \"./src/favicons/mstile-310x150.png\",\n\t\"./favicons/mstile-310x310.png\": \"./src/favicons/mstile-310x310.png\",\n\t\"./favicons/mstile-70x70.png\": \"./src/favicons/mstile-70x70.png\",\n\t\"./favicons/safari-pinned-tab.svg\": \"./src/favicons/safari-pinned-tab.svg\",\n\t\"./pages/web-pages/landing-page/img/background.jpg\": \"./src/pages/web-pages/landing-page/img/background.jpg\",\n\t\"./pages/web-pages/registration/img/background.jpg\": \"./src/pages/web-pages/registration/img/background.jpg\",\n\t\"./pages/web-pages/room-details/img/background1.jpg\": \"./src/pages/web-pages/room-details/img/background1.jpg\",\n\t\"./pages/web-pages/room-details/img/background2.jpg\": \"./src/pages/web-pages/room-details/img/background2.jpg\",\n\t\"./pages/web-pages/room-details/img/background3.jpg\": \"./src/pages/web-pages/room-details/img/background3.jpg\",\n\t\"./pages/web-pages/sign-in/img/background.jpg\": \"./src/pages/web-pages/sign-in/img/background.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(ttf%7Ceot%7Cwoff%7Cwoff2%7Csvg%7Cpng%7Cjpg)$?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts.scss":
+/*!*******************************!*\
+  !*** ./src/assets/fonts.scss ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./fonts.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/fonts.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/assets/fonts.scss?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot":
+/*!******************************************************************!*\
+  !*** ./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\");\n\n//# sourceURL=webpack:///./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg":
+/*!******************************************************************!*\
+  !*** ./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf":
+/*!******************************************************************!*\
+  !*** ./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\");\n\n//# sourceURL=webpack:///./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff":
+/*!*******************************************************************!*\
+  !*** ./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\");\n\n//# sourceURL=webpack:///./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2":
+/*!********************************************************************!*\
+  !*** ./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2 ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\");\n\n//# sourceURL=webpack:///./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat/montserrat-bold.eot":
+/*!*********************************************************!*\
+  !*** ./src/assets/fonts/Montserrat/montserrat-bold.eot ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Montserrat/montserrat-bold.eot\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Montserrat/montserrat-bold.eot?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat/montserrat-bold.svg":
+/*!*********************************************************!*\
+  !*** ./src/assets/fonts/Montserrat/montserrat-bold.svg ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Montserrat/montserrat-bold.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Montserrat/montserrat-bold.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat/montserrat-bold.ttf":
+/*!*********************************************************!*\
+  !*** ./src/assets/fonts/Montserrat/montserrat-bold.ttf ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Montserrat/montserrat-bold.ttf\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Montserrat/montserrat-bold.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat/montserrat-bold.woff":
+/*!**********************************************************!*\
+  !*** ./src/assets/fonts/Montserrat/montserrat-bold.woff ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Montserrat/montserrat-bold.woff\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Montserrat/montserrat-bold.woff?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat/montserrat-bold.woff2":
+/*!***********************************************************!*\
+  !*** ./src/assets/fonts/Montserrat/montserrat-bold.woff2 ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Montserrat/montserrat-bold.woff2\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Montserrat/montserrat-bold.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat/montserrat-regular.eot":
+/*!************************************************************!*\
+  !*** ./src/assets/fonts/Montserrat/montserrat-regular.eot ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Montserrat/montserrat-regular.eot\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Montserrat/montserrat-regular.eot?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat/montserrat-regular.svg":
+/*!************************************************************!*\
+  !*** ./src/assets/fonts/Montserrat/montserrat-regular.svg ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Montserrat/montserrat-regular.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Montserrat/montserrat-regular.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat/montserrat-regular.ttf":
+/*!************************************************************!*\
+  !*** ./src/assets/fonts/Montserrat/montserrat-regular.ttf ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Montserrat/montserrat-regular.ttf\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Montserrat/montserrat-regular.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat/montserrat-regular.woff":
+/*!*************************************************************!*\
+  !*** ./src/assets/fonts/Montserrat/montserrat-regular.woff ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Montserrat/montserrat-regular.woff\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Montserrat/montserrat-regular.woff?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Montserrat/montserrat-regular.woff2":
+/*!**************************************************************!*\
+  !*** ./src/assets/fonts/Montserrat/montserrat-regular.woff2 ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Montserrat/montserrat-regular.woff2\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Montserrat/montserrat-regular.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/OpenSans/open-sans-bold.eot":
+/*!******************************************************!*\
+  !*** ./src/assets/fonts/OpenSans/open-sans-bold.eot ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/OpenSans/open-sans-bold.eot\");\n\n//# sourceURL=webpack:///./src/assets/fonts/OpenSans/open-sans-bold.eot?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/OpenSans/open-sans-bold.svg":
+/*!******************************************************!*\
+  !*** ./src/assets/fonts/OpenSans/open-sans-bold.svg ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/OpenSans/open-sans-bold.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/OpenSans/open-sans-bold.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/OpenSans/open-sans-bold.ttf":
+/*!******************************************************!*\
+  !*** ./src/assets/fonts/OpenSans/open-sans-bold.ttf ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/OpenSans/open-sans-bold.ttf\");\n\n//# sourceURL=webpack:///./src/assets/fonts/OpenSans/open-sans-bold.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/OpenSans/open-sans-bold.woff":
+/*!*******************************************************!*\
+  !*** ./src/assets/fonts/OpenSans/open-sans-bold.woff ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/OpenSans/open-sans-bold.woff\");\n\n//# sourceURL=webpack:///./src/assets/fonts/OpenSans/open-sans-bold.woff?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/OpenSans/open-sans-bold.woff2":
+/*!********************************************************!*\
+  !*** ./src/assets/fonts/OpenSans/open-sans-bold.woff2 ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/OpenSans/open-sans-bold.woff2\");\n\n//# sourceURL=webpack:///./src/assets/fonts/OpenSans/open-sans-bold.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/OpenSans/open-sans-regular.eot":
+/*!*********************************************************!*\
+  !*** ./src/assets/fonts/OpenSans/open-sans-regular.eot ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/OpenSans/open-sans-regular.eot\");\n\n//# sourceURL=webpack:///./src/assets/fonts/OpenSans/open-sans-regular.eot?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/OpenSans/open-sans-regular.svg":
+/*!*********************************************************!*\
+  !*** ./src/assets/fonts/OpenSans/open-sans-regular.svg ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/OpenSans/open-sans-regular.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/OpenSans/open-sans-regular.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/OpenSans/open-sans-regular.ttf":
+/*!*********************************************************!*\
+  !*** ./src/assets/fonts/OpenSans/open-sans-regular.ttf ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/OpenSans/open-sans-regular.ttf\");\n\n//# sourceURL=webpack:///./src/assets/fonts/OpenSans/open-sans-regular.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/OpenSans/open-sans-regular.woff":
+/*!**********************************************************!*\
+  !*** ./src/assets/fonts/OpenSans/open-sans-regular.woff ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/OpenSans/open-sans-regular.woff\");\n\n//# sourceURL=webpack:///./src/assets/fonts/OpenSans/open-sans-regular.woff?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/OpenSans/open-sans-regular.woff2":
+/*!***********************************************************!*\
+  !*** ./src/assets/fonts/OpenSans/open-sans-regular.woff2 ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/OpenSans/open-sans-regular.woff2\");\n\n//# sourceURL=webpack:///./src/assets/fonts/OpenSans/open-sans-regular.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Quicksand/quicksand-bold.eot":
+/*!*******************************************************!*\
+  !*** ./src/assets/fonts/Quicksand/quicksand-bold.eot ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-bold.eot\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-bold.eot?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Quicksand/quicksand-bold.svg":
+/*!*******************************************************!*\
+  !*** ./src/assets/fonts/Quicksand/quicksand-bold.svg ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-bold.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-bold.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Quicksand/quicksand-bold.ttf":
+/*!*******************************************************!*\
+  !*** ./src/assets/fonts/Quicksand/quicksand-bold.ttf ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-bold.ttf\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-bold.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Quicksand/quicksand-bold.woff":
+/*!********************************************************!*\
+  !*** ./src/assets/fonts/Quicksand/quicksand-bold.woff ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-bold.woff\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-bold.woff?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Quicksand/quicksand-bold.woff2":
+/*!*********************************************************!*\
+  !*** ./src/assets/fonts/Quicksand/quicksand-bold.woff2 ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-bold.woff2\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-bold.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Quicksand/quicksand-regular.eot":
+/*!**********************************************************!*\
+  !*** ./src/assets/fonts/Quicksand/quicksand-regular.eot ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-regular.eot\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-regular.eot?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Quicksand/quicksand-regular.svg":
+/*!**********************************************************!*\
+  !*** ./src/assets/fonts/Quicksand/quicksand-regular.svg ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-regular.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-regular.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Quicksand/quicksand-regular.ttf":
+/*!**********************************************************!*\
+  !*** ./src/assets/fonts/Quicksand/quicksand-regular.ttf ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-regular.ttf\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-regular.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Quicksand/quicksand-regular.woff":
+/*!***********************************************************!*\
+  !*** ./src/assets/fonts/Quicksand/quicksand-regular.woff ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-regular.woff\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-regular.woff?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Quicksand/quicksand-regular.woff2":
+/*!************************************************************!*\
+  !*** ./src/assets/fonts/Quicksand/quicksand-regular.woff2 ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/fonts/Quicksand/quicksand-regular.woff2\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand/quicksand-regular.woff2?");
+
+/***/ }),
+
+/***/ "./src/components/checkbox-list/img/check-mark.svg":
+/*!*********************************************************!*\
+  !*** ./src/components/checkbox-list/img/check-mark.svg ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/checkbox-list/img/check-mark.svg\");\n\n//# sourceURL=webpack:///./src/components/checkbox-list/img/check-mark.svg?");
+
+/***/ }),
+
+/***/ "./src/components/colored-logo/img/TOXIN.svg":
+/*!***************************************************!*\
+  !*** ./src/components/colored-logo/img/TOXIN.svg ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/colored-logo/img/TOXIN.svg\");\n\n//# sourceURL=webpack:///./src/components/colored-logo/img/TOXIN.svg?");
+
+/***/ }),
+
+/***/ "./src/components/colored-logo/img/colored-logo.svg":
+/*!**********************************************************!*\
+  !*** ./src/components/colored-logo/img/colored-logo.svg ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/colored-logo/img/colored-logo.svg\");\n\n//# sourceURL=webpack:///./src/components/colored-logo/img/colored-logo.svg?");
+
+/***/ }),
+
+/***/ "./src/components/logo/img/logo.svg":
+/*!******************************************!*\
+  !*** ./src/components/logo/img/logo.svg ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/logo/img/logo.svg\");\n\n//# sourceURL=webpack:///./src/components/logo/img/logo.svg?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test11.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test11.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test11.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test11.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test110.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test110.png ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test110.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test110.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test120.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test120.png ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test120.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test120.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test130.png":
+/*!**************************************************!*\
+  !*** ./src/components/room-info/img/test130.png ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test130.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test130.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test22.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test22.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test22.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test22.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test33.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test33.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test33.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test33.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test44.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test44.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test44.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test44.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test55.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test55.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test55.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test55.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test66.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test66.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test66.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test66.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test77.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test77.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test77.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test77.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test88.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test88.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test88.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test88.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/test99.png":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/img/test99.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test99.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test99.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-reviews/img/image1.png":
+/*!****************************************************!*\
+  !*** ./src/components/room-reviews/img/image1.png ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-reviews/img/image1.png\");\n\n//# sourceURL=webpack:///./src/components/room-reviews/img/image1.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-reviews/img/image2.png":
+/*!****************************************************!*\
+  !*** ./src/components/room-reviews/img/image2.png ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-reviews/img/image2.png\");\n\n//# sourceURL=webpack:///./src/components/room-reviews/img/image2.png?");
+
+/***/ }),
+
+/***/ "./src/components/social-media/img/facebook-icon.svg":
+/*!***********************************************************!*\
+  !*** ./src/components/social-media/img/facebook-icon.svg ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/social-media/img/facebook-icon.svg\");\n\n//# sourceURL=webpack:///./src/components/social-media/img/facebook-icon.svg?");
+
+/***/ }),
+
+/***/ "./src/components/social-media/img/instagram-icon.svg":
+/*!************************************************************!*\
+  !*** ./src/components/social-media/img/instagram-icon.svg ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/social-media/img/instagram-icon.svg\");\n\n//# sourceURL=webpack:///./src/components/social-media/img/instagram-icon.svg?");
+
+/***/ }),
+
+/***/ "./src/components/social-media/img/twitter-icon.svg":
+/*!**********************************************************!*\
+  !*** ./src/components/social-media/img/twitter-icon.svg ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/social-media/img/twitter-icon.svg\");\n\n//# sourceURL=webpack:///./src/components/social-media/img/twitter-icon.svg?");
+
+/***/ }),
+
+/***/ "./src/favicons/android-chrome-192x192.png":
+/*!*************************************************!*\
+  !*** ./src/favicons/android-chrome-192x192.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/favicons/android-chrome-192x192.png\");\n\n//# sourceURL=webpack:///./src/favicons/android-chrome-192x192.png?");
+
+/***/ }),
+
+/***/ "./src/favicons/android-chrome-512x512.png":
+/*!*************************************************!*\
+  !*** ./src/favicons/android-chrome-512x512.png ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/favicons/android-chrome-512x512.png\");\n\n//# sourceURL=webpack:///./src/favicons/android-chrome-512x512.png?");
+
+/***/ }),
+
+/***/ "./src/favicons/apple-touch-icon.png":
+/*!*******************************************!*\
+  !*** ./src/favicons/apple-touch-icon.png ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/favicons/apple-touch-icon.png\");\n\n//# sourceURL=webpack:///./src/favicons/apple-touch-icon.png?");
+
+/***/ }),
+
+/***/ "./src/favicons/favicon-16x16.png":
+/*!****************************************!*\
+  !*** ./src/favicons/favicon-16x16.png ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/favicons/favicon-16x16.png\");\n\n//# sourceURL=webpack:///./src/favicons/favicon-16x16.png?");
+
+/***/ }),
+
+/***/ "./src/favicons/favicon-32x32.png":
+/*!****************************************!*\
+  !*** ./src/favicons/favicon-32x32.png ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/favicons/favicon-32x32.png\");\n\n//# sourceURL=webpack:///./src/favicons/favicon-32x32.png?");
+
+/***/ }),
+
+/***/ "./src/favicons/mstile-144x144.png":
+/*!*****************************************!*\
+  !*** ./src/favicons/mstile-144x144.png ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/favicons/mstile-144x144.png\");\n\n//# sourceURL=webpack:///./src/favicons/mstile-144x144.png?");
+
+/***/ }),
+
+/***/ "./src/favicons/mstile-150x150.png":
+/*!*****************************************!*\
+  !*** ./src/favicons/mstile-150x150.png ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/favicons/mstile-150x150.png\");\n\n//# sourceURL=webpack:///./src/favicons/mstile-150x150.png?");
+
+/***/ }),
+
+/***/ "./src/favicons/mstile-310x150.png":
+/*!*****************************************!*\
+  !*** ./src/favicons/mstile-310x150.png ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/favicons/mstile-310x150.png\");\n\n//# sourceURL=webpack:///./src/favicons/mstile-310x150.png?");
+
+/***/ }),
+
+/***/ "./src/favicons/mstile-310x310.png":
+/*!*****************************************!*\
+  !*** ./src/favicons/mstile-310x310.png ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/favicons/mstile-310x310.png\");\n\n//# sourceURL=webpack:///./src/favicons/mstile-310x310.png?");
+
+/***/ }),
+
+/***/ "./src/favicons/mstile-70x70.png":
+/*!***************************************!*\
+  !*** ./src/favicons/mstile-70x70.png ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/favicons/mstile-70x70.png\");\n\n//# sourceURL=webpack:///./src/favicons/mstile-70x70.png?");
+
+/***/ }),
+
+/***/ "./src/favicons/safari-pinned-tab.svg":
+/*!********************************************!*\
+  !*** ./src/favicons/safari-pinned-tab.svg ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/favicons/safari-pinned-tab.svg\");\n\n//# sourceURL=webpack:///./src/favicons/safari-pinned-tab.svg?");
+
+/***/ }),
+
+/***/ "./src/pages/base/base.js":
+/*!********************************!*\
+  !*** ./src/pages/base/base.js ***!
+  \********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_fonts_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/fonts.scss */ \"./src/assets/fonts.scss\");\n/* harmony import */ var _assets_fonts_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_fonts_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _base_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./base.scss */ \"./src/pages/base/base.scss\");\n/* harmony import */ var _base_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_base_scss__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\n__webpack_require__(\"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg)$\");\r\n\n\n//# sourceURL=webpack:///./src/pages/base/base.js?");
+
+/***/ }),
+
+/***/ "./src/pages/base/base.scss":
+/*!**********************************!*\
+  !*** ./src/pages/base/base.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./base.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/base/base.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/base/base.scss?");
+
+/***/ }),
+
 /***/ "./src/pages/index/index.js":
 /*!**********************************!*\
   !*** ./src/pages/index/index.js ***!
@@ -117,7 +988,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/pages/index/index.scss\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\n\n//# sourceURL=webpack:///./src/pages/index/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _base_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../base/base */ \"./src/pages/base/base.js\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ \"./src/pages/index/index.scss\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/pages/index/index.js?");
 
 /***/ }),
 
@@ -129,6 +1000,78 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./index.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/index/index.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/pages/index/index.scss?");
+
+/***/ }),
+
+/***/ "./src/pages/web-pages/landing-page/img/background.jpg":
+/*!*************************************************************!*\
+  !*** ./src/pages/web-pages/landing-page/img/background.jpg ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/landing-page/img/background.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/landing-page/img/background.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/web-pages/registration/img/background.jpg":
+/*!*************************************************************!*\
+  !*** ./src/pages/web-pages/registration/img/background.jpg ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/registration/img/background.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/registration/img/background.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/web-pages/room-details/img/background1.jpg":
+/*!**************************************************************!*\
+  !*** ./src/pages/web-pages/room-details/img/background1.jpg ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/background1.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/background1.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/web-pages/room-details/img/background2.jpg":
+/*!**************************************************************!*\
+  !*** ./src/pages/web-pages/room-details/img/background2.jpg ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/background2.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/background2.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/web-pages/room-details/img/background3.jpg":
+/*!**************************************************************!*\
+  !*** ./src/pages/web-pages/room-details/img/background3.jpg ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/background3.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/background3.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/web-pages/sign-in/img/background.jpg":
+/*!********************************************************!*\
+  !*** ./src/pages/web-pages/sign-in/img/background.jpg ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/sign-in/img/background.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/sign-in/img/background.jpg?");
 
 /***/ })
 
