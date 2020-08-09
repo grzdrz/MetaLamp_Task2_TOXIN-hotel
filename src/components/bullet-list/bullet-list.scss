@@ -1,4 +1,4 @@
-@import "../../assets/constants.scss";
+@import '../../assets/constants.scss';
 
 .bullet-list {
     display: flex;
@@ -51,7 +51,7 @@
     }
 
     &__title_with-font-family_quicksand {
-        font-family: Quicksand, OpenSans;
+        font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
         font-size: 19px;
