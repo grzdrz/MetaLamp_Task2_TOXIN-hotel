@@ -8,38 +8,38 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 40px 28px 30px 30px;
+    padding: 40rem 28rem 30rem 30rem;
     background: white;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border: 1rem solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0rem 0rem 25rem rgba(0, 0, 0, 0.2);
+    border-radius: 4rem;
 
     &__title {
         display: grid;
         grid-template-columns: max-content max-content max-content auto min-content;
-        margin-top: 3px;
-        margin-bottom: 23px;
+        margin-top: 3rem;
+        margin-bottom: 23rem;
     }
 
     &__number-symbol {
         align-self: end;
-        margin-right: 3px;
+        margin-right: 3rem;
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 14rem;
+        line-height: 17rem;
         color: $color-dark-shade-100;
     }
 
     &__room-number {
         align-self: end;
-        margin-right: 5px;
+        margin-right: 5rem;
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
-        font-size: 24px;
-        line-height: 23px;
+        font-size: 24rem;
+        line-height: 23rem;
         color: $color-dark-shade-100;
     }
 
@@ -47,8 +47,8 @@
         align-self: end;
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 12rem;
+        line-height: 15rem;
         text-transform: uppercase;
         color: $color-purple;
     }
@@ -56,11 +56,11 @@
     &__room-price {
         justify-self: end;
         align-self: end;
-        margin-right: 4px;
+        margin-right: 4rem;
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
-        line-height: 15px;
+        font-size: 14rem;
+        line-height: 15rem;
         color: $color-dark-shade-50;
     }
 
@@ -68,37 +68,55 @@
         justify-self: end;
         align-self: end;
         white-space: nowrap;
-        margin-right: 1px;
+        margin-right: 1rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 12rem;
+        line-height: 15rem;
         color: $color-dark-shade-50;
     }
 
     &__calendar {
-        margin-bottom: 20px;
+        margin-bottom: 20rem;
         width: 100%;
     }
 
     &__dropdown {
-        margin-bottom: 21px;
+        margin-bottom: 21rem;
         width: 100%;
     }
 
     &__calculated-data {
-        margin-bottom: 20px;
+        margin-bottom: 20rem;
+    }
+
+    &__main-sum-formula,
+    &__main-sum-result,
+    &__discount-description,
+    &__discount-value,
+    &__additional-services-description,
+    &__additional-services-value {
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 14rem;
+        line-height: 19rem;
         color: $color-dark-shade-75;
+    }
+
+    &__total-result-text,
+    &__total-result-value {
+        font-family: Quicksand, OpenSans, Arial, monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19rem;
+        line-height: 24rem;
+        color: $color-dark-shade-100;
     }
 
     &__main-sum {
         display: grid;
         grid-template-columns: max-content auto;
-        margin-bottom: 15px;
+        margin-bottom: 15rem;
     }
 
     &__main-sum-result {
@@ -107,9 +125,9 @@
 
     &__services {
         display: grid;
-        grid-template-columns: 220px auto auto;
-        grid-row-gap: 14px;
-        margin-bottom: 28px;
+        grid-template-columns: 220rem auto auto;
+        grid-row-gap: 14rem;
+        margin-bottom: 28rem;
     }
 
     &__discount {
@@ -118,20 +136,20 @@
     }
 
     &__services-tooltip {
-        min-width: 20px;
-        height: 20px;
+        min-width: 20rem;
+        height: 20rem;
         display: inline-flex;
         justify-content: center;
         align-items: center;
         justify-self: baseline;
-        border: 1px solid $color-dark-shade-25;
+        border: 1rem solid $color-dark-shade-25;
         border-radius: 50%;
         box-sizing: border-box;
         background: transparent;
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 12rem;
+        line-height: 14rem;
         text-align: right;
         color: $color-dark-shade-25;
     }
@@ -147,17 +165,11 @@
     &__total-result {
         display: grid;
         grid-template-columns: max-content auto min-content;
-        font-family: Quicksand, OpenSans, Arial, monospace;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 19px;
-        line-height: 24px;
-        color: $color-dark-shade-100;
     }
 
     &__total-result-bottom-line {
-        margin-bottom: 5px;
-        border-bottom: 1px dashed $color-dark-shade-25;
+        margin-bottom: 5rem;
+        border-bottom: 1rem dashed $color-dark-shade-25;
         box-sizing: border-box;
     }
 
@@ -168,6 +180,6 @@
 
     &__submit-button {
         width: 100%;
-        height: 44px;
+        height: 44rem;
     }
 }

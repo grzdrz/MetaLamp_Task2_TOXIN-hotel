@@ -5,24 +5,24 @@ body {
 .ui-kit {
     display: flex;
     flex-direction: column;
-    padding: 0px 5%;
+    padding: 0rem 5%;
 
     &__title {
-        margin-top: 20px;
+        margin-top: 20rem;
         font-weight: bold;
-        font-size: 28px;
+        font-size: 28rem;
         color: rgb(24, 24, 24);
     }
 
     &__refs-list {
         display: flex;
         flex-direction: column;
-        padding-left: 50px;
+        padding-left: 50rem;
         list-style: none;
     }
 
     &__item {
-        margin-top: 10px;
+        margin-top: 10rem;
         display: flex;
         align-items: center;
         position: relative;
@@ -30,20 +30,20 @@ body {
 
     &__item::after {
         content: '';
-        width: 10px;
-        height: 10px;
+        width: 10rem;
+        height: 10rem;
         position: absolute;
         border-radius: 50%;
         background: rgb(63, 63, 63);
     }
 
     &__ref {
-        margin-left: 20px;
+        margin-left: 20rem;
     }
 
     &__ref-text {
         font-weight: bold;
-        font-size: 24px;
+        font-size: 24rem;
         color: rgb(63, 63, 63);
     }
 

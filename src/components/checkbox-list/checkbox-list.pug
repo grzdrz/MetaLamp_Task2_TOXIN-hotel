@@ -13,7 +13,7 @@ mixin checkbox-list(options)
         const itemTextClasses = [];
 
         containerClasses.push(`${isExpandable ? "checkbox-list_expandable" : ""}`);
-        titleClasses.push(`checkbox-list__title_${isExpandable ? "expandable" : "width-margin-bottom_16px"}`);
+        titleClasses.push(`checkbox-list__title_${isExpandable ? "expandable" : "with-margin-bottom_16rem"}`);
         itemTextClasses.push(`checkbox-list__item-text_${hasAdditionalText ? "main" : "single"}`);
 
     div(class=["checkbox-list"].concat(containerClasses))

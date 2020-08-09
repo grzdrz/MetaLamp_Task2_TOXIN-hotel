@@ -1,15 +1,15 @@
 .social-media {
     display: flex;
     align-content: center;
-    $iconSize: 23px;
+    $iconSize: 23rem;
 
     &__ref {
         width: $iconSize;
         height: $iconSize;
-        margin-right: 20px;
+        margin-right: 20rem;
 
         &:last-of-type {
-            margin-right: 0px;
+            margin-right: 0rem;
         }
     }
 

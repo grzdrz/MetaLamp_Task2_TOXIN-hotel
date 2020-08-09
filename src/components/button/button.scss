@@ -1,6 +1,6 @@
 @import '../../assets/constants.scss';
 
-$borderRadius: 22px;
+$borderRadius: 22rem;
 .button {
     cursor: pointer;
     width: 100%;
@@ -17,11 +17,11 @@ $borderRadius: 22px;
         align-items: center;
         justify-content: center;
         position: absolute;
-        left: 0px;
-        right: 0px;
-        top: 0px;
-        bottom: 0px;
-        margin: 2px;
+        left: 0rem;
+        right: 0rem;
+        top: 0rem;
+        bottom: 0rem;
+        margin: 2rem;
         color: white;
         background: transparent;
         text-decoration: none;
@@ -40,21 +40,21 @@ $borderRadius: 22px;
         color: white;
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 12rem;
+        line-height: 15rem;
         text-transform: uppercase;
     }
 
     &__arrow {
         cursor: pointer;
-        width: 44px;
+        width: 44rem;
         position: absolute;
-        right: 0px;
+        right: 0rem;
         font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 24rem;
+        line-height: 24rem;
         text-align: center;
     }
 

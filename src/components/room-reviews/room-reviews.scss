@@ -9,25 +9,25 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 20rem;
     }
 
     &__title-description {
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
-        font-size: 19px;
-        line-height: 24px;
+        font-size: 19rem;
+        line-height: 24rem;
         color: $color-dark-shade-100;
     }
 
     &__review-count {
         align-self: center;
-        margin-top: 5px;
+        margin-top: 5rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 14rem;
+        line-height: 14rem;
         text-align: right;
         color: $color-dark-shade-50;
         white-space: nowrap;
@@ -37,54 +37,54 @@
         display: grid;
         grid-template-columns: max-content auto;
         grid-template-rows: auto auto;
-        margin-bottom: 22px;
+        margin-bottom: 22rem;
 
         &:last-child {
-            margin-bottom: 0px;
+            margin-bottom: 0rem;
         }
     }
 
     &__user-avatar {
-        width: 47px;
-        height: 47px;
-        margin-bottom: 12px;
-        border: 2px solid white;
+        width: 47rem;
+        height: 47rem;
+        margin-bottom: 12rem;
+        border: 2rem solid white;
         border-radius: 50%;
-        box-shadow: 0px 10px 20px $color-dark-shade-10;
+        box-shadow: 0rem 10rem 20rem $color-dark-shade-10;
     }
 
     &__user-info {
-        margin-left: 10px;
+        margin-left: 10rem;
     }
 
     &__user-full-name {
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 14rem;
+        line-height: 24rem;
         color: $color-dark-shade-75;
     }
 
     &__like-button {
         justify-self: center;
-        padding-top: 1px;
+        padding-top: 1rem;
     }
 
     &__number-of-days-since-comment {
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 14rem;
+        line-height: 24rem;
         color: $color-dark-shade-75;
     }
 
     &__comment {
-        margin-left: 10px;
-        max-width: 653px;
+        margin-left: 10rem;
+        max-width: 653rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 14rem;
+        line-height: 24rem;
         color: $color-dark-shade-75;
     }
 }

@@ -14,8 +14,8 @@
     &__slider-name {
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 12rem;
+        line-height: 15rem;
         text-transform: uppercase;
         color: $color-dark-shade-100;
     }
@@ -23,19 +23,19 @@
     &__current-values {
         font-style: normal;
         font-weight: normal;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 12rem;
+        line-height: 15rem;
         text-align: right;
         text-transform: uppercase;
         color: $color-dark-shade-50;
     }
 
     &__description {
-        margin-top: 5px;
+        margin-top: 5rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 12rem;
+        line-height: 14rem;
         color: $color-dark-shade-50;
     }
 
@@ -43,27 +43,27 @@
         -webkit-touch-callout: none;
     }
     & .irs-line {
-        height: 6px;
+        height: 6rem;
         overflow: hidden;
         outline: none;
         background: white;
-        border: 1px solid $color-dark-shade-25;
+        border: 1rem solid $color-dark-shade-25;
         box-sizing: border-box;
-        border-radius: 3px;
+        border-radius: 3rem;
     }
 
     & .irs-bar {
-        height: 6px;
+        height: 6rem;
         background: $gradient-green-to-turquoise;
     }
 
     & .irs-handle {
         cursor: pointer;
-        width: 16px;
-        height: 16px;
-        top: 20px;
+        width: 16rem;
+        height: 16rem;
+        top: 20rem;
         background: $gradient-green-to-turquoise;
-        border: 2px solid white;
+        border: 2rem solid white;
         border-radius: 50%;
     }
 

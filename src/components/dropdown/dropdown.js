@@ -103,8 +103,8 @@ class Dropdown {
 
     handlerDropdownClick() {
         if (this.dropdownListElement.style.display === "none") {
-            this.inputContainer.style.borderBottomLeftRadius = "0px";
-            this.inputContainer.style.borderBottomRightRadius = "0px";
+            this.inputContainer.style.borderBottomLeftRadius = "0rem";
+            this.inputContainer.style.borderBottomRightRadius = "0rem";
             this.dropdownListElement.style.display = "flex";
         } else {
             this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;
@@ -115,8 +115,8 @@ class Dropdown {
 
     handlerDropdownEnter() {
         if (this.dropdownListElement.style.display === "none") {
-            this.inputContainer.style.borderBottomLeftRadius = "0px";
-            this.inputContainer.style.borderBottomRightRadius = "0px";
+            this.inputContainer.style.borderBottomLeftRadius = "0rem";
+            this.inputContainer.style.borderBottomRightRadius = "0rem";
             this.dropdownListElement.style.display = "flex";
         }
     }

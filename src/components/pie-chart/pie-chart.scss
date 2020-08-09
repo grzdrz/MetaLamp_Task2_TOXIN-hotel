@@ -5,18 +5,18 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and(max-width: 400px) {
+    @media screen and(max-width: 400rem) {
         align-items: center;
     }
 
     &__title {
-        margin-bottom: 18px;
-        margin-left: 15px;
+        margin-bottom: 18rem;
+        margin-left: 15rem;
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
-        font-size: 19px;
-        line-height: 24px;
+        font-size: 19rem;
+        line-height: 24rem;
         color: $color-dark-shade-100;
     }
 
@@ -25,7 +25,7 @@
         display: flex;
         position: relative;
 
-        @media screen and(max-width: 400px) {
+        @media screen and(max-width: 400rem) {
             flex-direction: column;
             align-items: center;
         }
@@ -41,12 +41,12 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        margin-left: 46px;
-        margin-top: 37px;
+        margin-left: 46rem;
+        margin-top: 37rem;
 
-        @media screen and(max-width: 400px) {
-            margin-left: 5px;
-            margin-top: 37px;
+        @media screen and(max-width: 400rem) {
+            margin-left: 5rem;
+            margin-top: 37rem;
         }
     }
 
@@ -57,16 +57,16 @@
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 24rem;
+        line-height: 30rem;
         color: $color-purple;
     }
 
     &__inner-text-word {
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 12rem;
+        line-height: 15rem;
         text-align: center;
         text-transform: uppercase;
         color: $color-purple;
@@ -77,12 +77,12 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin-left: 17px;
-        margin-bottom: 4px;
+        margin-left: 17rem;
+        margin-bottom: 4rem;
 
-        @media screen and(max-width: 400px) {
-            margin-left: 40px;
-            margin-top: 10px;
+        @media screen and(max-width: 400rem) {
+            margin-left: 40rem;
+            margin-top: 10rem;
         }
     }
 
@@ -92,8 +92,8 @@
     }
 
     &__legend-item-marker {
-        min-width: 10px;
-        height: 10px;
+        min-width: 10rem;
+        height: 10rem;
         position: absolute;
         border-radius: 50%;
         background: black;
@@ -113,11 +113,11 @@
     }
 
     &__legend-item-text {
-        margin-left: 15px;
+        margin-left: 15rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 14rem;
+        line-height: 24rem;
         color: $color-dark-shade-75;
     }
 }

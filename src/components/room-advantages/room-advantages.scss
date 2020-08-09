@@ -7,14 +7,14 @@
     flex-direction: column;
 
     &__bottom-border {
-        width: 280px;
-        height: 1px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        width: 280rem;
+        height: 1rem;
+        margin-top: 20rem;
+        margin-bottom: 20rem;
         background: $color-dark-shade-10;
 
         &:last-child {
-            margin-bottom: 0px;
+            margin-bottom: 0rem;
         }
     }
 
@@ -27,15 +27,15 @@
         display: flex;
         align-items: center;
         text-align: center;
-        margin-right: 10px;
+        margin-right: 10rem;
         background: $gradient-purple-to-blue;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
-        font-size: 48px;
-        line-height: 41px;
+        font-size: 48rem;
+        line-height: 41rem;
     }
 
     &__text {
@@ -46,16 +46,16 @@
     &__title-text {
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 14rem;
+        line-height: 24rem;
         color: $color-dark-shade-75;
     }
 
     &__main-text {
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 14rem;
+        line-height: 24rem;
         color: $color-dark-shade-75;
     }
 }

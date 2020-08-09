@@ -11,9 +11,9 @@
     grid-template-columns: min-content auto min-content;
     align-items: center;
     justify-items: start;
-    padding: 15px scalePixelsAsPercentage(140, 1440);
+    padding: 15rem scalePixelsAsPercentage(140, 1440);
     background: white;
-    box-shadow: 0px 10px 20px $color-dark-shade-5;
+    box-shadow: 0rem 10rem 20rem $color-dark-shade-5;
 
     @media screen and (max-width: 1150px) and (min-width: 768px) {
         display: grid;
@@ -40,20 +40,20 @@
 
     &__navigation-menu {
         justify-self: end;
-        margin-right: 20px;
+        margin-right: 20rem;
 
         @media screen and (max-width: 1150px) and (min-width: 768px) {
             order: 2;
-            margin-right: 0px;
-            margin-top: 20px;
+            margin-right: 0rem;
+            margin-top: 20rem;
             grid-column-start: 2;
             grid-column-end: 3;
         }
         @media screen and (max-width: 768px) {
             order: 2;
-            margin-right: 0px;
-            margin-top: 20px;
-            margin-left: 5px;
+            margin-right: 0rem;
+            margin-top: 20rem;
+            margin-left: 5rem;
             display: flex;
             flex-direction: column;
         }
@@ -76,26 +76,26 @@
     &__item {
         display: flex;
         align-items: center;
-        margin: 0px 10px;
+        margin: 0rem 10rem;
         @media screen and (max-width: 768px) {
-            margin: 10px 0px;
+            margin: 10rem 0rem;
         }
 
         &:first-child {
-            margin: 0px 10px 0px 0px;
+            margin: 0rem 10rem 0rem 0rem;
             .header__item-ref {
                 color: $color-dark-shade-75;
                 font-weight: bold;
             }
             @media screen and (max-width: 768px) {
-                margin: 0px 0px 10px 0px;
+                margin: 0rem 0rem 10rem 0rem;
             }
         }
 
         &:last-child {
-            margin: 0px 0px 0px 10px;
+            margin: 0rem 0rem 0rem 10rem;
             @media screen and (max-width: 768px) {
-                margin: 10px 0px 0px 0px;
+                margin: 10rem 0rem 0rem 0rem;
             }
         }
     }
@@ -105,8 +105,8 @@
         color: $color-dark-shade-50;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 14rem;
+        line-height: 17rem;
         white-space: nowrap;
         letter-spacing: 0.005em;
     }
@@ -119,8 +119,8 @@
         font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
-        font-size: 24px;
-        line-height: 20px;
+        font-size: 24rem;
+        line-height: 20rem;
         color: $color-dark-shade-50;
     }
 
@@ -129,18 +129,18 @@
         align-items: center;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 14rem;
+        line-height: 17rem;
         color: $color-dark-shade-50;
         white-space: nowrap;
 
         &:before {
             content: '';
-            height: 30px;
-            width: 1px;
+            height: 30rem;
+            width: 1rem;
             background: transparent;
-            border-left: 1px solid $color-dark-shade-10;
-            padding-right: 20px;
+            border-left: 1rem solid $color-dark-shade-10;
+            padding-right: 20rem;
         }
 
         @media screen and (max-width: 1150px) and (min-width: 768px) {
@@ -152,7 +152,7 @@
             justify-self: end;
         }
         @media screen and (max-width: 550px) {
-            margin-top: 20px;
+            margin-top: 20rem;
         }
     }
 
@@ -171,23 +171,23 @@
             display: grid;
             grid-template-rows: auto auto;
             grid-template-columns: min-content;
-            margin-top: 20px;
+            margin-top: 20rem;
         }
     }
 
     &__sign-in-button {
-        width: 87px;
-        height: 34px;
-        margin-right: 20px;
+        width: 87rem;
+        height: 34rem;
+        margin-right: 20rem;
 
         @media screen and (max-width: 550px) {
-            margin-right: 0px;
-            margin-bottom: 10px;
+            margin-right: 0rem;
+            margin-bottom: 10rem;
         }
     }
 
     &__sign-up-button {
-        width: 196px;
-        height: 34px;
+        width: 196rem;
+        height: 34rem;
     }
 }

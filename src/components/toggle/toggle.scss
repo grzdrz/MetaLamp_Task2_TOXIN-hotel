@@ -8,45 +8,45 @@
 
     &__button-image {
         z-index: 1;
-        width: 40px;
-        height: 20px;
+        width: 40rem;
+        height: 20rem;
         display: flex;
         flex-direction: row;
         align-items: center;
         position: relative;
-        margin-right: 10px;
-        padding: 0px 3px;
-        border-radius: 10px;
+        margin-right: 10rem;
+        padding: 0rem 3rem;
+        border-radius: 10rem;
         transition: padding-left 0.3s;
     }
 
     &__input {
         cursor: pointer;
         z-index: 2;
-        width: 40px;
-        height: 20px;
+        width: 40rem;
+        height: 20rem;
         position: absolute;
         opacity: 0;
 
         &:checked + div {
-            border: 1px solid $color-purple;
-            padding-left: 23px;
+            border: 1rem solid $color-purple;
+            padding-left: 23rem;
         }
         &:not(:checked) + div {
-            border: 1px solid $color-dark-shade-25;
-            padding-left: 3px;
+            border: 1rem solid $color-dark-shade-25;
+            padding-left: 3rem;
         }
         &:checked + div::after {
             content: '';
-            width: 12px;
-            height: 12px;
+            width: 12rem;
+            height: 12rem;
             background: $gradient-purple-to-blue;
             border-radius: 50%;
         }
         &:not(:checked) + div::after {
             content: '';
-            width: 12px;
-            height: 12px;
+            width: 12rem;
+            height: 12rem;
             background: $color-dark-shade-25;
             border-radius: 50%;
         }
@@ -58,8 +58,8 @@
         align-items: center;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 14rem;
+        line-height: 18rem;
         color: $color-dark-shade-50;
     }
 }

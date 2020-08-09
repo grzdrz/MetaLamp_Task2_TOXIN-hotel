@@ -3,7 +3,7 @@
 @import '../../../components/color-demo/color-demo.scss';
 
 body {
-    padding-bottom: 40px;
+    padding-bottom: 40rem;
 }
 
 .colors-and-type {
@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 67px 10.4% 145px;
+    padding: 67rem 10.4% 145rem;
 
     @media screen and (max-width: 1024px) {
         flex-direction: column;
@@ -20,30 +20,30 @@ body {
 
     &__color-demos {
         @media screen and (max-width: 1024px) {
-            margin-bottom: 50px;
+            margin-bottom: 50rem;
         }
     }
 
     &__color-demo {
-        margin-bottom: 20px;
+        margin-bottom: 20rem;
 
         &:last-child {
-            margin-bottom: 0px;
+            margin-bottom: 0rem;
         }
     }
 
     &__font-demos {
-        margin-right: 42px;
+        margin-right: 42rem;
     }
 
     &__font-demo {
-        margin-bottom: 50px;
+        margin-bottom: 50rem;
 
         &:last-child {
-            margin-bottom: 0px;
-            max-width: 380px;
+            margin-bottom: 0rem;
+            max-width: 380rem;
             & .font-demo__description {
-                line-height: 22px;
+                line-height: 22rem;
             }
         }
     }

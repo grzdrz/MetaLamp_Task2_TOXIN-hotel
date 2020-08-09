@@ -11,17 +11,17 @@
     display: flex;
     flex-direction: column;
     background: white;
-    box-shadow: 0px 10px 20px $color-dark-shade-5;
+    box-shadow: 0rem 10rem 20rem $color-dark-shade-5;
 
     &__info-bar {
         width: 100%;
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 26% 17% 17.5% 19.5% 20%;
-        padding: 100px scalePixelsAsPercentage(140, 1440);
+        padding: 100rem scalePixelsAsPercentage(140, 1440);
         justify-items: start;
-        box-shadow: 0px 1px 0px $color-dark-shade-10;
-        margin-bottom: 1px;
+        box-shadow: 0rem 1rem 0rem $color-dark-shade-10;
+        margin-bottom: 1rem;
 
         @media screen and (max-width: 1300px) {
             display: grid;
@@ -32,7 +32,7 @@
             display: grid;
             grid-template-rows: auto auto auto;
             grid-template-columns: 39% 30% 30.5%;
-            grid-row-gap: 30px;
+            grid-row-gap: 30rem;
         }
         @media screen and (max-width: 850px) {
             display: grid;
@@ -43,14 +43,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
-            box-shadow: 0px 0px 0px transparent;
+            padding-bottom: 0rem;
+            margin-bottom: 0rem;
+            box-shadow: 0rem 0rem 0rem transparent;
         }
     }
 
     &__general-info {
-        width: 260px;
+        width: 260rem;
         display: flex;
         flex-direction: column;
 
@@ -60,11 +60,11 @@
     }
 
     &__general-info-text {
-        margin-top: 18px;
+        margin-top: 18rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 14rem;
+        line-height: 24rem;
         color: $color-dark-shade-75;
 
         @media screen and (max-width: 767px) {
@@ -82,7 +82,7 @@
         display: flex;
         flex-direction: column;
         justify-self: end;
-        margin-top: 4px;
+        margin-top: 4rem;
 
         @media screen and (max-width: 767px) {
             display: none;
@@ -90,26 +90,26 @@
     }
 
     &__subscription-title {
-        margin-bottom: 19px;
+        margin-bottom: 19rem;
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 12rem;
+        line-height: 15rem;
         text-transform: uppercase;
         color: $color-dark-shade-100;
     }
 
     &__subscription-description {
-        margin-bottom: 22px;
+        margin-bottom: 22rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 14rem;
+        line-height: 24rem;
         color: $color-dark-shade-75;
     }
 
     &__subscription-form {
-        width: 260px;
+        width: 260rem;
         display: flex;
         flex-wrap: nowrap;
         background: transparent;
@@ -119,29 +119,29 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        padding: 23px scalePixelsAsPercentage(140, 1440);
+        padding: 23rem scalePixelsAsPercentage(140, 1440);
         align-items: center;
         justify-content: space-between;
-        box-shadow: 0px 1px 0px $color-dark-shade-10;
+        box-shadow: 0rem 1rem 0rem $color-dark-shade-10;
 
         @media screen and (max-width: 850px) {
             flex-direction: column;
         }
         @media screen and (max-width: 767px) {
-            padding-bottom: 120px;
+            padding-bottom: 120rem;
         }
     }
 
     &__copyright {
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 14rem;
+        line-height: 17rem;
         color: $color-dark-shade-75;
         text-align: center;
 
         @media screen and (max-width: 850px) {
-            margin-bottom: 20px;
+            margin-bottom: 20rem;
         }
     }
 }
