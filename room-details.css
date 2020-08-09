@@ -49,7 +49,8 @@
   padding: 0px;
   border: 0px;
   box-sizing: border-box;
-  font-family: Montserrat, Arial, monospace; }
+  font-family: Montserrat, Arial, monospace;
+  font-size: 1px; }
 
 html,
 body {
@@ -682,12 +683,12 @@ body {
 
 @charset "UTF-8";
 .colored-logo {
-  height: 40px;
+  height: 40rem;
   display: flex;
   align-items: center;
   justify-self: end; }
   .colored-logo__logo-symbol {
-    margin-right: 12.5px; }
+    margin-right: 12.5rem; }
 
 .button {
   cursor: pointer;
@@ -696,7 +697,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  border-radius: 22px;
+  border-radius: 22rem;
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
@@ -704,15 +705,15 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    margin: 2px;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    margin: 2rem;
     color: white;
     background: transparent;
     text-decoration: none;
-    border-radius: 22px;
+    border-radius: 22rem;
     outline: none; }
   .button > button {
     width: -webkit-fill-available; }
@@ -723,19 +724,19 @@ body {
     color: white;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase; }
   .button__arrow {
     cursor: pointer;
-    width: 44px;
+    width: 44rem;
     position: absolute;
-    right: 0px;
+    right: 0rem;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center; }
   .button__submit {
     cursor: pointer;
@@ -759,9 +760,9 @@ body {
   grid-template-columns: min-content auto min-content;
   align-items: center;
   justify-items: start;
-  padding: 15px 9.72222%;
+  padding: 15rem 9.72222%;
   background: white;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  box-shadow: 0rem 10rem 20rem rgba(31, 32, 65, 0.05); }
   @media screen and (max-width: 1150px) and (min-width: 768px) {
     .header {
       display: grid;
@@ -783,20 +784,20 @@ body {
       justify-self: flex-start; } }
   .header__navigation-menu {
     justify-self: end;
-    margin-right: 20px; }
+    margin-right: 20rem; }
     @media screen and (max-width: 1150px) and (min-width: 768px) {
       .header__navigation-menu {
         order: 2;
-        margin-right: 0px;
-        margin-top: 20px;
+        margin-right: 0rem;
+        margin-top: 20rem;
         grid-column-start: 2;
         grid-column-end: 3; } }
     @media screen and (max-width: 768px) {
       .header__navigation-menu {
         order: 2;
-        margin-right: 0px;
-        margin-top: 20px;
-        margin-left: 5px;
+        margin-right: 0rem;
+        margin-top: 20rem;
+        margin-left: 5rem;
         display: flex;
         flex-direction: column; } }
     @media screen and (max-width: 550px) {
@@ -814,30 +815,30 @@ body {
   .header__item {
     display: flex;
     align-items: center;
-    margin: 0px 10px; }
+    margin: 0rem 10rem; }
     @media screen and (max-width: 768px) {
       .header__item {
-        margin: 10px 0px; } }
+        margin: 10rem 0rem; } }
     .header__item:first-child {
-      margin: 0px 10px 0px 0px; }
+      margin: 0rem 10rem 0rem 0rem; }
       .header__item:first-child .header__item-ref {
         color: rgba(31, 32, 65, 0.75);
         font-weight: bold; }
       @media screen and (max-width: 768px) {
         .header__item:first-child {
-          margin: 0px 0px 10px 0px; } }
+          margin: 0rem 0rem 10rem 0rem; } }
     .header__item:last-child {
-      margin: 0px 0px 0px 10px; }
+      margin: 0rem 0rem 0rem 10rem; }
       @media screen and (max-width: 768px) {
         .header__item:last-child {
-          margin: 10px 0px 0px 0px; } }
+          margin: 10rem 0rem 0rem 0rem; } }
   .header__item-ref {
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 14rem;
+    line-height: 17rem;
     white-space: nowrap;
     letter-spacing: 0.005em; }
   .header__dropdown-arrow {
@@ -848,25 +849,25 @@ body {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 24rem;
+    line-height: 20rem;
     color: rgba(31, 32, 65, 0.5); }
   .header__user-full-name {
     display: flex;
     align-items: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 14rem;
+    line-height: 17rem;
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap; }
     .header__user-full-name:before {
       content: '';
-      height: 30px;
-      width: 1px;
+      height: 30rem;
+      width: 1rem;
       background: transparent;
-      border-left: 1px solid rgba(31, 32, 65, 0.1);
-      padding-right: 20px; }
+      border-left: 1rem solid rgba(31, 32, 65, 0.1);
+      padding-right: 20rem; }
     @media screen and (max-width: 1150px) and (min-width: 768px) {
       .header__user-full-name {
         order: 1;
@@ -877,7 +878,7 @@ body {
         justify-self: end; } }
     @media screen and (max-width: 550px) {
       .header__user-full-name {
-        margin-top: 20px; } }
+        margin-top: 20rem; } }
   .header__buttons {
     display: flex; }
     @media screen and (max-width: 1150px) and (min-width: 768px) {
@@ -893,18 +894,18 @@ body {
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: min-content;
-        margin-top: 20px; } }
+        margin-top: 20rem; } }
   .header__sign-in-button {
-    width: 87px;
-    height: 34px;
-    margin-right: 20px; }
+    width: 87rem;
+    height: 34rem;
+    margin-right: 20rem; }
     @media screen and (max-width: 550px) {
       .header__sign-in-button {
-        margin-right: 0px;
-        margin-bottom: 10px; } }
+        margin-right: 0rem;
+        margin-bottom: 10rem; } }
   .header__sign-up-button {
-    width: 196px;
-    height: 34px; }
+    width: 196rem;
+    height: 34rem; }
 
 .room-advantages {
   width: max-content;
@@ -912,13 +913,13 @@ body {
   display: flex;
   flex-direction: column; }
   .room-advantages__bottom-border {
-    width: 280px;
-    height: 1px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 280rem;
+    height: 1rem;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
     background: rgba(31, 32, 65, 0.1); }
     .room-advantages__bottom-border:last-child {
-      margin-bottom: 0px; }
+      margin-bottom: 0rem; }
   .room-advantages__detail {
     display: flex;
     flex-direction: row; }
@@ -926,40 +927,40 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 10rem;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
-    line-height: 41px; }
+    font-size: 48rem;
+    line-height: 41rem; }
   .room-advantages__text {
     display: inline-flex;
     flex-direction: column; }
   .room-advantages__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
   .room-advantages__main-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
 
 .bullet-list {
   display: flex;
   flex-direction: column; }
   .bullet-list__title {
-    margin-bottom: 14px;
+    margin-bottom: 14rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .bullet-list__list {
@@ -970,49 +971,49 @@ body {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    margin-bottom: 10px; }
+    margin-bottom: 10rem; }
     .bullet-list__item:last-of-type {
-      margin-bottom: 0px; }
+      margin-bottom: 0rem; }
   .bullet-list__item-marker {
-    width: 10px;
-    height: 10px;
-    margin-right: 10px;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 10rem;
     border-radius: 50%;
     background: rgba(31, 32, 65, 0.25); }
   .bullet-list__item-text {
-    width: 240px;
+    width: 240rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
   .bullet-list__title_with-font-family_quicksand {
-    margin-bottom: 18px;
-    margin-left: 20px;
+    margin-bottom: 18rem;
+    margin-left: 20rem;
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 19rem;
+    line-height: 24rem;
     color: #1f2041;
     text-transform: none; }
 
 .like-button {
   width: max-content; }
   .like-button__label {
-    width: 40px;
-    height: 20px;
+    width: 40rem;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: center;
     position: relative;
     z-index: 1;
-    padding: 0px 2px;
+    padding: 0rem 2rem;
     color: white;
     text-decoration: none;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-    border-radius: 22px;
+    border-radius: 22rem;
     outline: none; }
   .like-button__likes-number_on, .like-button__likes-number_off {
     z-index: 1;
@@ -1020,23 +1021,23 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    padding-left: 10px;
-    margin: 2px;
-    border-radius: 22px;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    padding-left: 10rem;
+    margin: 2rem;
+    border-radius: 22rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 10rem;
     background: white;
     text-align: center; }
   .like-button__input {
     cursor: pointer;
     z-index: 2;
-    width: 40px;
-    height: 20px;
+    width: 40rem;
+    height: 20rem;
     position: absolute;
     opacity: 0; }
     .like-button__input:checked + label {
@@ -1063,25 +1064,25 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 0px solid transparent; }
+        border: 0rem solid transparent; }
       .like-button__input:not(:checked) + label > .like-button__likes-number_off {
         opacity: 1; }
       .like-button__input:not(:checked) + label > .like-button__likes-number_on {
         opacity: 0; }
   .like-button__like-symbol {
     z-index: 2;
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 0px; }
+    left: 0rem; }
     .like-button__like-symbol::after {
       font-family: Material Icons;
       font-style: normal;
       font-weight: normal;
-      font-size: 10px; }
+      font-size: 10rem; }
 
 .room-reviews {
   list-style: none; }
@@ -1089,21 +1090,21 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px; }
+    margin-bottom: 20rem; }
   .room-reviews__title-description {
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 19rem;
+    line-height: 24rem;
     color: #1f2041; }
   .room-reviews__review-count {
     align-self: center;
-    margin-top: 5px;
+    margin-top: 5rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 14rem;
+    line-height: 14rem;
     text-align: right;
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap; }
@@ -1111,40 +1112,40 @@ body {
     display: grid;
     grid-template-columns: max-content auto;
     grid-template-rows: auto auto;
-    margin-bottom: 22px; }
+    margin-bottom: 22rem; }
     .room-reviews__review-container:last-child {
-      margin-bottom: 0px; }
+      margin-bottom: 0rem; }
   .room-reviews__user-avatar {
-    width: 47px;
-    height: 47px;
-    margin-bottom: 12px;
-    border: 2px solid white;
+    width: 47rem;
+    height: 47rem;
+    margin-bottom: 12rem;
+    border: 2rem solid white;
     border-radius: 50%;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1); }
+    box-shadow: 0rem 10rem 20rem rgba(31, 32, 65, 0.1); }
   .room-reviews__user-info {
-    margin-left: 10px; }
+    margin-left: 10rem; }
   .room-reviews__user-full-name {
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
   .room-reviews__like-button {
     justify-self: center;
-    padding-top: 1px; }
+    padding-top: 1rem; }
   .room-reviews__number-of-days-since-comment {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
   .room-reviews__comment {
-    margin-left: 10px;
-    max-width: 653px;
+    margin-left: 10rem;
+    max-width: 653rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
 
 .button {
@@ -1154,7 +1155,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  border-radius: 22px;
+  border-radius: 22rem;
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
@@ -1162,15 +1163,15 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    margin: 2px;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    margin: 2rem;
     color: white;
     background: transparent;
     text-decoration: none;
-    border-radius: 22px;
+    border-radius: 22rem;
     outline: none; }
   .button > button {
     width: -webkit-fill-available; }
@@ -1181,19 +1182,19 @@ body {
     color: white;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase; }
   .button__arrow {
     cursor: pointer;
-    width: 44px;
+    width: 44rem;
     position: absolute;
-    right: 0px;
+    right: 0rem;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center; }
   .button__submit {
     cursor: pointer;
@@ -1219,51 +1220,51 @@ body {
     display: flex;
     flex-direction: column; }
     .calendar__input-container_first {
-      margin-right: 20px; }
+      margin-right: 20rem; }
   .calendar__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .calendar__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .calendar__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
-    letter-spacing: -0.3px; }
+    letter-spacing: -0.3rem; }
   .calendar__label {
     cursor: pointer;
-    width: 150px;
+    width: 150rem;
     display: grid;
-    grid-template-columns: auto 42px;
-    grid-template-rows: 42px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    grid-template-columns: auto 42rem;
+    grid-template-rows: 42rem;
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
   .calendar__input-container_first, .calendar__input-container_second {
     width: 46.875%; }
   .calendar__label_first, .calendar__label_second {
     width: 100%; }
   .calendar__input {
     cursor: pointer;
-    height: 40px;
-    padding: 0px 0px 0px 15px;
+    height: 40rem;
+    padding: 0rem 0rem 0rem 15rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     white-space: nowrap;
     /* Отменяем перенос текста */
     overflow: hidden;
@@ -1276,7 +1277,7 @@ body {
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .calendar__input:-webkit-autofill, .calendar__input:-webkit-autofill:hover, .calendar__input:-webkit-autofill:focus,
     .calendar__input textarea:-webkit-autofill,
     .calendar__input textarea:-webkit-autofill:hover,
@@ -1284,9 +1285,9 @@ body {
     .calendar__input select:-webkit-autofill,
     .calendar__input select:-webkit-autofill:hover,
     .calendar__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .calendar__dropdown-arrow {
@@ -1297,8 +1298,8 @@ body {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
@@ -1306,22 +1307,22 @@ body {
   .calendar__buttons {
     display: flex;
     flex-direction: row;
-    margin: 18px 20px 0px 20px; }
+    margin: 18rem 20rem 0rem 20rem; }
   .calendar__apply-button {
     cursor: pointer;
     margin-left: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .calendar__clear-button {
     cursor: pointer;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
 
@@ -1536,42 +1537,42 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .dropdown__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
   .dropdown__input-container {
     display: grid;
-    grid-template-rows: 42px;
+    grid-template-rows: 42rem;
     grid-template-columns: auto min-content;
     position: relative;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
     .dropdown__input-container:hover, .dropdown__input-container:focus {
-      border: 1px solid rgba(31, 32, 65, 0.5); }
+      border: 1rem solid rgba(31, 32, 65, 0.5); }
   .dropdown__input {
     cursor: pointer;
-    height: 40px;
-    padding: 0px 15px 0px 15px;
+    height: 40rem;
+    padding: 0rem 15rem 0rem 15rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     /* Отменяем перенос текста */
@@ -1585,7 +1586,7 @@ body {
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .dropdown__input:-webkit-autofill, .dropdown__input:-webkit-autofill:hover, .dropdown__input:-webkit-autofill:focus,
     .dropdown__input textarea:-webkit-autofill,
     .dropdown__input textarea:-webkit-autofill:hover,
@@ -1593,9 +1594,9 @@ body {
     .dropdown__input select:-webkit-autofill,
     .dropdown__input select:-webkit-autofill:hover,
     .dropdown__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .dropdown__droped-list {
@@ -1605,27 +1606,27 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
     position: absolute;
-    top: 44px;
-    margin: -1px;
+    top: 44rem;
+    margin: -1rem;
     background: white;
-    border: 1px solid rgba(31, 32, 65, 0.5);
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    border-top: 0px;
+    border: 1rem solid rgba(31, 32, 65, 0.5);
+    box-shadow: 0rem 10rem 20rem rgba(31, 32, 65, 0.05);
+    border-top: 0rem;
     box-sizing: content-box;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
     z-index: 9999; }
     .dropdown__droped-list:hover, .dropdown__droped-list:focus {
-      border-top: 0px; }
+      border-top: 0rem; }
   .dropdown__dropdown-arrow {
     cursor: pointer;
-    width: 42px;
-    height: 42px;
+    width: 42rem;
+    height: 42rem;
     display: flex;
     align-items: center;
     justify-content: center;
     outline: none;
-    border: 0px solid transparent;
+    border: 0rem solid transparent;
     background: rgba(31, 32, 65, 0.75);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -1634,23 +1635,23 @@ body {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px; }
+    font-size: 24rem;
+    line-height: 24rem; }
   .dropdown__list-item {
     display: grid;
-    grid-template-columns: auto 93px;
+    grid-template-columns: auto 93rem;
     align-items: center;
-    padding: 0px 5px 0px 15px;
-    margin-bottom: 7px; }
+    padding: 0rem 5rem 0rem 15rem;
+    margin-bottom: 7rem; }
     .dropdown__list-item:first-of-type {
-      margin-top: 5px; }
+      margin-top: 5rem; }
   .dropdown__item-name {
     overflow: auto;
     word-wrap: break-word;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__item-handler {
@@ -1660,48 +1661,48 @@ body {
     justify-content: space-between; }
   .dropdown__item-minus, .dropdown__item-plus {
     cursor: pointer;
-    width: 30px;
-    height: 30px;
-    border-radius: 31px;
-    border: 1px solid rgba(31, 32, 65, 0.5);
+    width: 30rem;
+    height: 30rem;
+    border-radius: 31rem;
+    border: 1rem solid rgba(31, 32, 65, 0.5);
     background: transparent;
     outline: none;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__item-minus {
     opacity: 0.38; }
   .dropdown__item-value {
-    margin: 0px 5px;
+    margin: 0rem 5rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__control-buttons {
     display: flex;
-    margin: 14px 6px 13px 13px; }
+    margin: 14rem 6rem 13rem 13rem; }
   .dropdown__apply-button {
     cursor: pointer;
     margin-left: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .dropdown__clear-button {
     cursor: pointer;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
 
@@ -1709,103 +1710,111 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 40px 28px 30px 30px;
+  padding: 40rem 28rem 30rem 30rem;
   background: white;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; }
+  border: 1rem solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0rem 0rem 25rem rgba(0, 0, 0, 0.2);
+  border-radius: 4rem; }
   .price-calculation-form__title {
     display: grid;
     grid-template-columns: max-content max-content max-content auto min-content;
-    margin-top: 3px;
-    margin-bottom: 23px; }
+    margin-top: 3rem;
+    margin-bottom: 23rem; }
   .price-calculation-form__number-symbol {
     align-self: end;
-    margin-right: 3px;
+    margin-right: 3rem;
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 14rem;
+    line-height: 17rem;
     color: #1f2041; }
   .price-calculation-form__room-number {
     align-self: end;
-    margin-right: 5px;
+    margin-right: 5rem;
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 23px;
+    font-size: 24rem;
+    line-height: 23rem;
     color: #1f2041; }
   .price-calculation-form__room-status {
     align-self: end;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .price-calculation-form__room-price {
     justify-self: end;
     align-self: end;
-    margin-right: 4px;
+    margin-right: 4rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 15px;
+    font-size: 14rem;
+    line-height: 15rem;
     color: rgba(31, 32, 65, 0.5); }
   .price-calculation-form__period-of-time {
     justify-self: end;
     align-self: end;
     white-space: nowrap;
-    margin-right: 1px;
+    margin-right: 1rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     color: rgba(31, 32, 65, 0.5); }
   .price-calculation-form__calendar {
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
     width: 100%; }
   .price-calculation-form__dropdown {
-    margin-bottom: 21px;
+    margin-bottom: 21rem;
     width: 100%; }
   .price-calculation-form__calculated-data {
-    margin-bottom: 20px;
+    margin-bottom: 20rem; }
+  .price-calculation-form__main-sum-formula, .price-calculation-form__main-sum-result, .price-calculation-form__discount-description, .price-calculation-form__discount-value, .price-calculation-form__additional-services-description, .price-calculation-form__additional-services-value {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 14rem;
+    line-height: 19rem;
     color: rgba(31, 32, 65, 0.75); }
+  .price-calculation-form__total-result-text, .price-calculation-form__total-result-value {
+    font-family: Quicksand, OpenSans, Arial, monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19rem;
+    line-height: 24rem;
+    color: #1f2041; }
   .price-calculation-form__main-sum {
     display: grid;
     grid-template-columns: max-content auto;
-    margin-bottom: 15px; }
+    margin-bottom: 15rem; }
   .price-calculation-form__main-sum-result {
     justify-self: end; }
   .price-calculation-form__services {
     display: grid;
-    grid-template-columns: 220px auto auto;
-    grid-row-gap: 14px;
-    margin-bottom: 28px; }
+    grid-template-columns: 220rem auto auto;
+    grid-row-gap: 14rem;
+    margin-bottom: 28rem; }
   .price-calculation-form__discount {
     display: grid;
     grid-template-columns: max-content auto auto; }
   .price-calculation-form__services-tooltip {
-    min-width: 20px;
-    height: 20px;
+    min-width: 20rem;
+    height: 20rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     justify-self: baseline;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     border-radius: 50%;
     box-sizing: border-box;
     background: transparent;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 12rem;
+    line-height: 14rem;
     text-align: right;
     color: rgba(31, 32, 65, 0.25); }
   .price-calculation-form__discount-value {
@@ -1814,23 +1823,17 @@ body {
     justify-self: end; }
   .price-calculation-form__total-result {
     display: grid;
-    grid-template-columns: max-content auto min-content;
-    font-family: Quicksand, OpenSans, Arial, monospace;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
-    color: #1f2041; }
+    grid-template-columns: max-content auto min-content; }
   .price-calculation-form__total-result-bottom-line {
-    margin-bottom: 5px;
-    border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+    margin-bottom: 5rem;
+    border-bottom: 1rem dashed rgba(31, 32, 65, 0.25);
     box-sizing: border-box; }
   .price-calculation-form__total-result-value {
     justify-self: end;
     white-space: nowrap; }
   .price-calculation-form__submit-button {
     width: 100%;
-    height: 44px; }
+    height: 44rem; }
 
 .form-input {
   width: 100%; }
@@ -1841,43 +1844,43 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .form-input__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
-    letter-spacing: -0.3px; }
+    letter-spacing: -0.3rem; }
   .form-input__input-container {
     display: grid;
-    grid-template-rows: 42px;
+    grid-template-rows: 42rem;
     grid-template-columns: auto min-content;
     position: relative;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
     .form-input__input-container:hover, .form-input__input-container:focus {
-      border: 1px solid rgba(31, 32, 65, 0.5); }
+      border: 1rem solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
-    padding: 0px 15px;
-    height: 42px;
+    padding: 0rem 15rem;
+    height: 42rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.2px;
+    font-size: 14rem;
+    line-height: 18rem;
+    letter-spacing: -0.2rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     /* Отменяем перенос текста */
@@ -1891,7 +1894,7 @@ body {
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .form-input__input:-webkit-autofill, .form-input__input:-webkit-autofill:hover, .form-input__input:-webkit-autofill:focus,
     .form-input__input textarea:-webkit-autofill,
     .form-input__input textarea:-webkit-autofill:hover,
@@ -1899,16 +1902,16 @@ body {
     .form-input__input select:-webkit-autofill,
     .form-input__input select:-webkit-autofill:hover,
     .form-input__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .form-input__submitter {
     cursor: pointer;
-    min-width: 42px;
-    height: 42px;
-    border: 0px solid transparent;
+    min-width: 42rem;
+    height: 42rem;
+    border: 0rem solid transparent;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -1917,29 +1920,29 @@ body {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px; }
+    font-size: 24rem;
+    line-height: 24rem; }
 
 .colored-logo {
-  height: 40px;
+  height: 40rem;
   display: flex;
   align-items: center;
   justify-self: end; }
   .colored-logo__logo-symbol {
-    margin-right: 12.5px; }
+    margin-right: 12.5rem; }
 
 .social-media {
   display: flex;
   align-content: center; }
   .social-media__ref {
-    width: 23px;
-    height: 23px;
-    margin-right: 20px; }
+    width: 23rem;
+    height: 23rem;
+    margin-right: 20rem; }
     .social-media__ref:last-of-type {
-      margin-right: 0px; }
+      margin-right: 0rem; }
   .social-media__image {
-    width: 23px;
-    height: 23px; }
+    width: 23rem;
+    height: 23rem; }
 
 .menu-bar {
   list-style: none;
@@ -1947,29 +1950,29 @@ body {
   display: flex;
   flex-direction: column; }
   .menu-bar__item {
-    margin-bottom: 21px;
+    margin-bottom: 21rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px; }
+    font-size: 14rem;
+    line-height: 17rem; }
     .menu-bar__item:first-of-type {
-      margin-top: 4px;
-      margin-bottom: 20px; }
+      margin-top: 4rem;
+      margin-bottom: 20rem; }
       .menu-bar__item:first-of-type > .menu-bar__item-ref {
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 12rem;
+        line-height: 15rem;
         text-transform: uppercase;
         color: #1f2041; }
     .menu-bar__item:last-of-type {
-      margin-bottom: 0px; }
+      margin-bottom: 0rem; }
   .menu-bar__item-ref {
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 14rem;
+    line-height: 17rem;
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap; }
 
@@ -1978,16 +1981,16 @@ body {
   display: flex;
   flex-direction: column;
   background: white;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  box-shadow: 0rem 10rem 20rem rgba(31, 32, 65, 0.05); }
   .footer__info-bar {
     width: 100%;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 26% 17% 17.5% 19.5% 20%;
-    padding: 100px 9.72222%;
+    padding: 100rem 9.72222%;
     justify-items: start;
-    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
-    margin-bottom: 1px; }
+    box-shadow: 0rem 1rem 0rem rgba(31, 32, 65, 0.1);
+    margin-bottom: 1rem; }
     @media screen and (max-width: 1300px) {
       .footer__info-bar {
         display: grid;
@@ -1998,7 +2001,7 @@ body {
         display: grid;
         grid-template-rows: auto auto auto;
         grid-template-columns: 39% 30% 30.5%;
-        grid-row-gap: 30px; } }
+        grid-row-gap: 30rem; } }
     @media screen and (max-width: 850px) {
       .footer__info-bar {
         display: grid;
@@ -2009,22 +2012,22 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-        box-shadow: 0px 0px 0px transparent; } }
+        padding-bottom: 0rem;
+        margin-bottom: 0rem;
+        box-shadow: 0rem 0rem 0rem transparent; } }
   .footer__general-info {
-    width: 260px;
+    width: 260rem;
     display: flex;
     flex-direction: column; }
     @media screen and (max-width: 767px) {
       .footer__general-info {
         align-items: center; } }
   .footer__general-info-text {
-    margin-top: 18px;
+    margin-top: 18rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
     @media screen and (max-width: 767px) {
       .footer__general-info-text {
@@ -2036,27 +2039,27 @@ body {
     display: flex;
     flex-direction: column;
     justify-self: end;
-    margin-top: 4px; }
+    margin-top: 4rem; }
     @media screen and (max-width: 767px) {
       .footer__subscription {
         display: none; } }
   .footer__subscription-title {
-    margin-bottom: 19px;
+    margin-bottom: 19rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .footer__subscription-description {
-    margin-bottom: 22px;
+    margin-bottom: 22rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
   .footer__subscription-form {
-    width: 260px;
+    width: 260rem;
     display: flex;
     flex-wrap: nowrap;
     background: transparent; }
@@ -2064,48 +2067,48 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 23px 9.72222%;
+    padding: 23rem 9.72222%;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1); }
+    box-shadow: 0rem 1rem 0rem rgba(31, 32, 65, 0.1); }
     @media screen and (max-width: 850px) {
       .footer__copyright-bar {
         flex-direction: column; } }
     @media screen and (max-width: 767px) {
       .footer__copyright-bar {
-        padding-bottom: 120px; } }
+        padding-bottom: 120rem; } }
   .footer__copyright {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 14rem;
+    line-height: 17rem;
     color: rgba(31, 32, 65, 0.75);
     text-align: center; }
     @media screen and (max-width: 850px) {
       .footer__copyright {
-        margin-bottom: 20px; } }
+        margin-bottom: 20rem; } }
 
 .pie-chart {
   width: max-content;
   display: flex;
   flex-direction: column; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 400rem) {
     .pie-chart {
       align-items: center; } }
   .pie-chart__title {
-    margin-bottom: 18px;
-    margin-left: 15px;
+    margin-bottom: 18rem;
+    margin-left: 15rem;
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 19rem;
+    line-height: 24rem;
     color: #1f2041; }
   .pie-chart__content {
     width: max-content;
     display: flex;
     position: relative; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 400rem) {
       .pie-chart__content {
         flex-direction: column;
         align-items: center; } }
@@ -2117,12 +2120,12 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-left: 46px;
-    margin-top: 37px; }
-    @media screen and (max-width: 400px) {
+    margin-left: 46rem;
+    margin-top: 37rem; }
+    @media screen and (max-width: 400rem) {
       .pie-chart__inner-text {
-        margin-left: 5px;
-        margin-top: 37px; } }
+        margin-left: 5rem;
+        margin-top: 37rem; } }
   .pie-chart__inner-text-number {
     display: flex;
     align-items: center;
@@ -2130,14 +2133,14 @@ body {
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 24rem;
+    line-height: 30rem;
     color: #bc9cff; }
   .pie-chart__inner-text-word {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: center;
     text-transform: uppercase;
     color: #bc9cff; }
@@ -2146,18 +2149,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 17px;
-    margin-bottom: 4px; }
-    @media screen and (max-width: 400px) {
+    margin-left: 17rem;
+    margin-bottom: 4rem; }
+    @media screen and (max-width: 400rem) {
       .pie-chart__legend {
-        margin-left: 40px;
-        margin-top: 10px; } }
+        margin-left: 40rem;
+        margin-top: 10rem; } }
   .pie-chart__legend-item {
     display: flex;
     align-items: center; }
   .pie-chart__legend-item-marker {
-    min-width: 10px;
-    height: 10px;
+    min-width: 10rem;
+    height: 10rem;
     position: absolute;
     border-radius: 50%;
     background: black; }
@@ -2170,11 +2173,11 @@ body {
     .pie-chart__legend-item-marker_4 {
       background: linear-gradient(180deg, #919191 0%, #3d4975 100%); }
   .pie-chart__legend-item-text {
-    margin-left: 15px;
+    margin-left: 15rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
 
 .room-details {
@@ -2184,7 +2187,7 @@ body {
   .room-details__room-photos {
     display: flex;
     width: 100%;
-    height: 485px; }
+    height: 485rem; }
   .room-details__big-photo {
     width: 68.125%;
     height: 100%;
@@ -2213,16 +2216,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 1px;
+    margin-bottom: 1rem;
     padding: 4.86111% 9.72222%;
-    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1); }
+    box-shadow: 0rem 1rem 0rem rgba(31, 32, 65, 0.1); }
     @media screen and (max-width: 1340px) {
       .room-details__info {
         flex-direction: column; } }
     @media screen and (max-width: 950px) {
       .room-details__info {
         width: 100%;
-        padding: 4.86111% 0px;
+        padding: 4.86111% 0rem;
         flex-direction: column;
         align-items: center; } }
   .room-details__room-descriptions {
@@ -2234,69 +2237,69 @@ body {
         grid-template-columns: min-content;
         grid-template-rows: auto auto auto auto auto; } }
   .room-details__price-calculation-form {
-    width: 380px; }
+    width: 380rem; }
     @media screen and (max-width: 1340px) {
       .room-details__price-calculation-form {
         display: flex;
         justify-content: center;
-        margin-top: 20px; } }
+        margin-top: 20rem; } }
     @media screen and (max-width: 380px) {
       .room-details__price-calculation-form {
         width: 100%; } }
   .room-details__pie-chart {
-    margin-left: 15px; }
+    margin-left: 15rem; }
     @media screen and (max-width: 800px) {
       .room-details__pie-chart {
-        margin-top: 30px; } }
+        margin-top: 30rem; } }
   @media screen and (max-width: 800px) {
     .room-details__room-advantages {
-      margin-right: 0px; } }
+      margin-right: 0rem; } }
   .room-details__room-advantages-title {
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 19rem;
+    line-height: 24rem;
     color: #1f2041; }
   .room-details__room-reviews {
     grid-column-start: 1;
     grid-column-end: 3;
-    margin-top: 33px;
-    margin-bottom: 32px; }
+    margin-top: 33rem;
+    margin-bottom: 32rem; }
     @media screen and (max-width: 800px) {
       .room-details__room-reviews {
         grid-column-start: 1;
         grid-column-end: 1;
-        padding-left: 20px;
-        padding-right: 20px; } }
+        padding-left: 20rem;
+        padding-right: 20rem; } }
   .room-details__bullet-list {
-    margin-right: 70px; }
+    margin-right: 70rem; }
     @media screen and (max-width: 800px) {
       .room-details__bullet-list {
-        margin-bottom: 20px;
-        margin-right: 0px; } }
+        margin-bottom: 20rem;
+        margin-right: 0rem; } }
     @media screen and (max-width: 800px) and (min-width: 500px) {
       .room-details__bullet-list {
         align-self: flex-start; } }
   .room-details__cancel-rule {
-    margin-left: 30px; }
+    margin-left: 30rem; }
     @media screen and (max-width: 800px) and (min-width: 500px) {
       .room-details__cancel-rule {
         align-self: flex-end; } }
   .room-details__cancel-rule-title {
-    margin-bottom: 18px;
+    margin-bottom: 18rem;
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 19rem;
+    line-height: 24rem;
     color: #1f2041; }
   .room-details__cancel-rule-main-text {
-    max-width: 341px;
+    max-width: 341rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
 

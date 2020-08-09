@@ -49,7 +49,8 @@
   padding: 0px;
   border: 0px;
   box-sizing: border-box;
-  font-family: Montserrat, Arial, monospace; }
+  font-family: Montserrat, Arial, monospace;
+  font-size: 1px; }
 
 html,
 body {
@@ -1360,11 +1361,11 @@ Build date: 2019-12-19 16:51:02
 .logo {
   display: flex;
   height: max-content;
-  margin-left: 30px;
-  padding-top: 30px; }
+  margin-left: 30rem;
+  padding-top: 30rem; }
   .logo__image {
-    width: 48px;
-    height: 48px; }
+    width: 48rem;
+    height: 48rem; }
 
 .form-input {
   width: 100%; }
@@ -1375,43 +1376,43 @@ Build date: 2019-12-19 16:51:02
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .form-input__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
-    letter-spacing: -0.3px; }
+    letter-spacing: -0.3rem; }
   .form-input__input-container {
     display: grid;
-    grid-template-rows: 42px;
+    grid-template-rows: 42rem;
     grid-template-columns: auto min-content;
     position: relative;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
     .form-input__input-container:hover, .form-input__input-container:focus {
-      border: 1px solid rgba(31, 32, 65, 0.5); }
+      border: 1rem solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
-    padding: 0px 15px;
-    height: 42px;
+    padding: 0rem 15rem;
+    height: 42rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.2px;
+    font-size: 14rem;
+    line-height: 18rem;
+    letter-spacing: -0.2rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     /* Отменяем перенос текста */
@@ -1425,7 +1426,7 @@ Build date: 2019-12-19 16:51:02
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .form-input__input:-webkit-autofill, .form-input__input:-webkit-autofill:hover, .form-input__input:-webkit-autofill:focus,
     .form-input__input textarea:-webkit-autofill,
     .form-input__input textarea:-webkit-autofill:hover,
@@ -1433,16 +1434,16 @@ Build date: 2019-12-19 16:51:02
     .form-input__input select:-webkit-autofill,
     .form-input__input select:-webkit-autofill:hover,
     .form-input__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .form-input__submitter {
     cursor: pointer;
-    min-width: 42px;
-    height: 42px;
-    border: 0px solid transparent;
+    min-width: 42rem;
+    height: 42rem;
+    border: 0rem solid transparent;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -1451,8 +1452,8 @@ Build date: 2019-12-19 16:51:02
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px; }
+    font-size: 24rem;
+    line-height: 24rem; }
 
 .dropdown {
   width: 100%; }
@@ -1463,42 +1464,42 @@ Build date: 2019-12-19 16:51:02
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .dropdown__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
   .dropdown__input-container {
     display: grid;
-    grid-template-rows: 42px;
+    grid-template-rows: 42rem;
     grid-template-columns: auto min-content;
     position: relative;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
     .dropdown__input-container:hover, .dropdown__input-container:focus {
-      border: 1px solid rgba(31, 32, 65, 0.5); }
+      border: 1rem solid rgba(31, 32, 65, 0.5); }
   .dropdown__input {
     cursor: pointer;
-    height: 40px;
-    padding: 0px 15px 0px 15px;
+    height: 40rem;
+    padding: 0rem 15rem 0rem 15rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     /* Отменяем перенос текста */
@@ -1512,7 +1513,7 @@ Build date: 2019-12-19 16:51:02
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .dropdown__input:-webkit-autofill, .dropdown__input:-webkit-autofill:hover, .dropdown__input:-webkit-autofill:focus,
     .dropdown__input textarea:-webkit-autofill,
     .dropdown__input textarea:-webkit-autofill:hover,
@@ -1520,9 +1521,9 @@ Build date: 2019-12-19 16:51:02
     .dropdown__input select:-webkit-autofill,
     .dropdown__input select:-webkit-autofill:hover,
     .dropdown__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .dropdown__droped-list {
@@ -1532,27 +1533,27 @@ Build date: 2019-12-19 16:51:02
     grid-column-start: 1;
     grid-column-end: 3;
     position: absolute;
-    top: 44px;
-    margin: -1px;
+    top: 44rem;
+    margin: -1rem;
     background: white;
-    border: 1px solid rgba(31, 32, 65, 0.5);
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    border-top: 0px;
+    border: 1rem solid rgba(31, 32, 65, 0.5);
+    box-shadow: 0rem 10rem 20rem rgba(31, 32, 65, 0.05);
+    border-top: 0rem;
     box-sizing: content-box;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
     z-index: 9999; }
     .dropdown__droped-list:hover, .dropdown__droped-list:focus {
-      border-top: 0px; }
+      border-top: 0rem; }
   .dropdown__dropdown-arrow {
     cursor: pointer;
-    width: 42px;
-    height: 42px;
+    width: 42rem;
+    height: 42rem;
     display: flex;
     align-items: center;
     justify-content: center;
     outline: none;
-    border: 0px solid transparent;
+    border: 0rem solid transparent;
     background: rgba(31, 32, 65, 0.75);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -1561,23 +1562,23 @@ Build date: 2019-12-19 16:51:02
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px; }
+    font-size: 24rem;
+    line-height: 24rem; }
   .dropdown__list-item {
     display: grid;
-    grid-template-columns: auto 93px;
+    grid-template-columns: auto 93rem;
     align-items: center;
-    padding: 0px 5px 0px 15px;
-    margin-bottom: 7px; }
+    padding: 0rem 5rem 0rem 15rem;
+    margin-bottom: 7rem; }
     .dropdown__list-item:first-of-type {
-      margin-top: 5px; }
+      margin-top: 5rem; }
   .dropdown__item-name {
     overflow: auto;
     word-wrap: break-word;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__item-handler {
@@ -1587,48 +1588,48 @@ Build date: 2019-12-19 16:51:02
     justify-content: space-between; }
   .dropdown__item-minus, .dropdown__item-plus {
     cursor: pointer;
-    width: 30px;
-    height: 30px;
-    border-radius: 31px;
-    border: 1px solid rgba(31, 32, 65, 0.5);
+    width: 30rem;
+    height: 30rem;
+    border-radius: 31rem;
+    border: 1rem solid rgba(31, 32, 65, 0.5);
     background: transparent;
     outline: none;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__item-minus {
     opacity: 0.38; }
   .dropdown__item-value {
-    margin: 0px 5px;
+    margin: 0rem 5rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__control-buttons {
     display: flex;
-    margin: 14px 6px 13px 13px; }
+    margin: 14rem 6rem 13rem 13rem; }
   .dropdown__apply-button {
     cursor: pointer;
     margin-left: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .dropdown__clear-button {
     cursor: pointer;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
 
@@ -1642,21 +1643,21 @@ Build date: 2019-12-19 16:51:02
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4px; }
+    margin-bottom: 4rem; }
     .checkbox-list__title_expandable {
       cursor: pointer; }
-    .checkbox-list__title_width-margin-bottom_16px {
-      margin-bottom: 16px; }
+    .checkbox-list__title_with-margin-bottom_16rem {
+      margin-bottom: 16rem; }
   .checkbox-list__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .checkbox-list__dropdown-arrow {
-    width: 42px;
-    height: 42px;
+    width: 42rem;
+    height: 42rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1669,8 +1670,8 @@ Build date: 2019-12-19 16:51:02
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px; }
+    font-size: 24rem;
+    line-height: 24rem; }
   .checkbox-list__list {
     list-style: none;
     display: flex;
@@ -1678,44 +1679,44 @@ Build date: 2019-12-19 16:51:02
   .checkbox-list__item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px; }
+    margin-bottom: 10rem; }
     .checkbox-list__item:last-child {
-      margin-bottom: 0px; }
+      margin-bottom: 0rem; }
   .checkbox-list__label {
     display: flex;
     align-items: end; }
   .checkbox-list__input {
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
     position: relative;
-    margin-right: 10px;
+    margin-right: 10rem;
     opacity: 0; }
     .checkbox-list__input:not(:checked) + .checkbox-list__checkmark {
       opacity: 0; }
     .checkbox-list__input:not(:checked) ~ .checkbox-list__frame {
-      border: 1px solid #adb5bd; }
+      border: 1rem solid #adb5bd; }
     .checkbox-list__input:checked + .checkbox-list__checkmark {
       opacity: 1; }
     .checkbox-list__input:checked ~ .checkbox-list__frame {
-      border: 1px solid #bc9cff; }
+      border: 1rem solid #bc9cff; }
   .checkbox-list__checkmark {
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    padding-bottom: 2px; }
+    padding-bottom: 2rem; }
   .checkbox-list__checkmark-image {
-    width: 10px;
-    height: 10px;
+    width: 10rem;
+    height: 10rem;
     display: flex; }
   .checkbox-list__frame {
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
     display: flex;
-    border-radius: 4px;
+    border-radius: 4rem;
     position: absolute; }
   .checkbox-list__item-text {
     cursor: context-menu;
@@ -1725,23 +1726,23 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 14rem;
+    line-height: 20rem;
     color: rgba(31, 32, 65, 0.5); }
     .checkbox-list__item-text_main {
       font-weight: bold;
       color: rgba(31, 32, 65, 0.75); }
     .checkbox-list__item-text_single {
-      width: 200px; }
+      width: 200rem; }
   .checkbox-list__item-additional-text {
     cursor: context-menu;
-    width: 230px;
-    margin-left: 30px;
-    margin-top: 5px;
+    width: 230rem;
+    margin-left: 30rem;
+    margin-top: 5rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 12rem;
+    line-height: 14rem;
     color: rgba(31, 32, 65, 0.5); }
 
 .radio {
@@ -1751,45 +1752,45 @@ Build date: 2019-12-19 16:51:02
     cursor: pointer;
     display: flex;
     position: relative;
-    margin-right: 20px; }
+    margin-right: 20rem; }
     .radio__label:last-child {
-      margin-right: 0px; }
+      margin-right: 0rem; }
   .radio__button-image {
     z-index: 1;
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-right: 10px;
+    margin-right: 10rem;
     border-radius: 50%; }
   .radio__input {
     cursor: pointer;
     z-index: 2;
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
     position: absolute;
     opacity: 0; }
     .radio__input:checked + div {
-      border: 1px solid #bc9cff; }
+      border: 1rem solid #bc9cff; }
     .radio__input:checked + div::after {
       content: '';
-      width: 12px;
-      height: 12px;
+      width: 12rem;
+      height: 12rem;
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
     .radio__input:not(:checked) + div {
-      border: 1px solid rgba(31, 32, 65, 0.25); }
+      border: 1rem solid rgba(31, 32, 65, 0.25); }
   .radio__text {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     color: rgba(31, 32, 65, 0.5); }
 
 .toggle {
@@ -1799,39 +1800,39 @@ Build date: 2019-12-19 16:51:02
   width: max-content; }
   .toggle__button-image {
     z-index: 1;
-    width: 40px;
-    height: 20px;
+    width: 40rem;
+    height: 20rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
-    margin-right: 10px;
-    padding: 0px 3px;
-    border-radius: 10px;
+    margin-right: 10rem;
+    padding: 0rem 3rem;
+    border-radius: 10rem;
     transition: padding-left 0.3s; }
   .toggle__input {
     cursor: pointer;
     z-index: 2;
-    width: 40px;
-    height: 20px;
+    width: 40rem;
+    height: 20rem;
     position: absolute;
     opacity: 0; }
     .toggle__input:checked + div {
-      border: 1px solid #bc9cff;
-      padding-left: 23px; }
+      border: 1rem solid #bc9cff;
+      padding-left: 23rem; }
     .toggle__input:not(:checked) + div {
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      padding-left: 3px; }
+      border: 1rem solid rgba(31, 32, 65, 0.25);
+      padding-left: 3rem; }
     .toggle__input:checked + div::after {
       content: '';
-      width: 12px;
-      height: 12px;
+      width: 12rem;
+      height: 12rem;
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
     .toggle__input:not(:checked) + div::after {
       content: '';
-      width: 12px;
-      height: 12px;
+      width: 12rem;
+      height: 12rem;
       background: rgba(31, 32, 65, 0.25);
       border-radius: 50%; }
   .toggle__text {
@@ -1840,36 +1841,36 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     color: rgba(31, 32, 65, 0.5); }
 
 .star-rating {
-  width: 120px;
-  height: 24px;
+  width: 120rem;
+  height: 24rem;
   display: flex;
   position: relative; }
   .star-rating__input {
     cursor: pointer;
     z-index: 2;
-    width: 24px;
-    height: 24px;
+    width: 24rem;
+    height: 24rem;
     position: absolute;
     opacity: 0; }
     .star-rating__input_1 {
-      margin-left: 0px; }
+      margin-left: 0rem; }
     .star-rating__input_2 {
-      margin-left: 24px; }
+      margin-left: 24rem; }
     .star-rating__input_3 {
-      margin-left: 48px; }
+      margin-left: 48rem; }
     .star-rating__input_4 {
-      margin-left: 72px; }
+      margin-left: 72rem; }
     .star-rating__input_5 {
-      margin-left: 96px; }
+      margin-left: 96rem; }
     .star-rating__input + .star-rating__image::before {
       content: 'star_border';
-      width: 24px;
-      height: 24px;
+      width: 24rem;
+      height: 24rem;
       display: flex;
       align-items: center;
       text-align: center;
@@ -1882,13 +1883,13 @@ Build date: 2019-12-19 16:51:02
       font-family: Material Icons;
       font-style: normal;
       font-weight: normal;
-      font-size: 24px;
-      line-height: 20px;
+      font-size: 24rem;
+      line-height: 20rem;
       color: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
     .star-rating__input:checked ~ .star-rating__image::after {
       content: 'star';
-      width: 24px;
-      height: 24px;
+      width: 24rem;
+      height: 24rem;
       display: flex;
       align-items: center;
       text-align: center;
@@ -1901,27 +1902,27 @@ Build date: 2019-12-19 16:51:02
       font-family: Material Icons;
       font-style: normal;
       font-weight: normal;
-      font-size: 24px;
-      line-height: 20px;
+      font-size: 24rem;
+      line-height: 20rem;
       color: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .star-rating__image {
     z-index: 1;
-    width: 24px;
-    height: 24px;
+    width: 24rem;
+    height: 24rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute; }
     .star-rating__image_1 {
-      margin-left: 0px; }
+      margin-left: 0rem; }
     .star-rating__image_2 {
-      margin-left: 24px; }
+      margin-left: 24rem; }
     .star-rating__image_3 {
-      margin-left: 48px; }
+      margin-left: 48rem; }
     .star-rating__image_4 {
-      margin-left: 72px; }
+      margin-left: 72rem; }
     .star-rating__image_5 {
-      margin-left: 96px; }
+      margin-left: 96rem; }
 
 .button {
   cursor: pointer;
@@ -1930,7 +1931,7 @@ Build date: 2019-12-19 16:51:02
   display: flex;
   align-items: center;
   position: relative;
-  border-radius: 22px;
+  border-radius: 22rem;
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
@@ -1938,15 +1939,15 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    margin: 2px;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    margin: 2rem;
     color: white;
     background: transparent;
     text-decoration: none;
-    border-radius: 22px;
+    border-radius: 22rem;
     outline: none; }
   .button > button {
     width: -webkit-fill-available; }
@@ -1957,19 +1958,19 @@ Build date: 2019-12-19 16:51:02
     color: white;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase; }
   .button__arrow {
     cursor: pointer;
-    width: 44px;
+    width: 44rem;
     position: absolute;
-    right: 0px;
+    right: 0rem;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center; }
   .button__submit {
     cursor: pointer;
@@ -1992,8 +1993,8 @@ Build date: 2019-12-19 16:51:02
   .text-button__text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 12rem;
+    line-height: 12rem;
     text-transform: uppercase; }
     .text-button__text_color_purple {
       color: #bc9cff; }
@@ -2004,11 +2005,11 @@ Build date: 2019-12-19 16:51:02
   display: flex;
   flex-direction: column; }
   .pagination__title {
-    margin-bottom: 16px;
+    margin-bottom: 16rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .pagination__list {
@@ -2018,8 +2019,8 @@ Build date: 2019-12-19 16:51:02
     justify-content: center;
     background: transparent; }
   .pagination__left-arrow, .pagination__right-arrow, .pagination__link {
-    width: 40px;
-    height: 40px;
+    width: 40rem;
+    height: 40rem;
     text-decoration: none; }
   .pagination__link_target {
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
@@ -2039,8 +2040,8 @@ Build date: 2019-12-19 16:51:02
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 24rem;
+    line-height: 20rem;
     color: white; }
   .pagination__left-arrow-text {
     transform: rotate(180deg); }
@@ -2054,8 +2055,8 @@ Build date: 2019-12-19 16:51:02
     border-radius: 50%;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     color: rgba(31, 32, 65, 0.5); }
     .pagination__link-text:hover {
       width: inherit;
@@ -2066,11 +2067,11 @@ Build date: 2019-12-19 16:51:02
     width: 100%;
     display: inline-flex;
     justify-content: center;
-    margin-top: 7px;
+    margin-top: 7rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
 
 .range-slider {
@@ -2084,45 +2085,45 @@ Build date: 2019-12-19 16:51:02
   .range-slider__slider-name {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .range-slider__current-values {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
   .range-slider__description {
-    margin-top: 5px;
+    margin-top: 5rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 12rem;
+    line-height: 14rem;
     color: rgba(31, 32, 65, 0.5); }
   .range-slider .irs {
     -webkit-touch-callout: none; }
   .range-slider .irs-line {
-    height: 6px;
+    height: 6rem;
     overflow: hidden;
     outline: none;
     background: white;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 3px; }
+    border-radius: 3rem; }
   .range-slider .irs-bar {
-    height: 6px;
+    height: 6rem;
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%); }
   .range-slider .irs-handle {
     cursor: pointer;
-    width: 16px;
-    height: 16px;
-    top: 20px;
+    width: 16rem;
+    height: 16rem;
+    top: 20rem;
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-    border: 2px solid white;
+    border: 2rem solid white;
     border-radius: 50%; }
   .range-slider .irs--flat .irs-handle > i:first-child {
     display: none; }
@@ -2131,11 +2132,11 @@ Build date: 2019-12-19 16:51:02
   display: flex;
   flex-direction: column; }
   .bullet-list__title {
-    margin-bottom: 14px;
+    margin-bottom: 14rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .bullet-list__list {
@@ -2146,30 +2147,30 @@ Build date: 2019-12-19 16:51:02
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    margin-bottom: 10px; }
+    margin-bottom: 10rem; }
     .bullet-list__item:last-of-type {
-      margin-bottom: 0px; }
+      margin-bottom: 0rem; }
   .bullet-list__item-marker {
-    width: 10px;
-    height: 10px;
-    margin-right: 10px;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 10rem;
     border-radius: 50%;
     background: rgba(31, 32, 65, 0.25); }
   .bullet-list__item-text {
-    width: 240px;
+    width: 240rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
   .bullet-list__title_with-font-family_quicksand {
-    margin-bottom: 18px;
-    margin-left: 20px;
+    margin-bottom: 18rem;
+    margin-left: 20rem;
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 19rem;
+    line-height: 24rem;
     color: #1f2041;
     text-transform: none; }
 
@@ -2182,51 +2183,51 @@ Build date: 2019-12-19 16:51:02
     display: flex;
     flex-direction: column; }
     .calendar__input-container_first {
-      margin-right: 20px; }
+      margin-right: 20rem; }
   .calendar__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .calendar__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .calendar__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
-    letter-spacing: -0.3px; }
+    letter-spacing: -0.3rem; }
   .calendar__label {
     cursor: pointer;
-    width: 150px;
+    width: 150rem;
     display: grid;
-    grid-template-columns: auto 42px;
-    grid-template-rows: 42px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    grid-template-columns: auto 42rem;
+    grid-template-rows: 42rem;
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
   .calendar__input-container_first, .calendar__input-container_second {
     width: 46.875%; }
   .calendar__label_first, .calendar__label_second {
     width: 100%; }
   .calendar__input {
     cursor: pointer;
-    height: 40px;
-    padding: 0px 0px 0px 15px;
+    height: 40rem;
+    padding: 0rem 0rem 0rem 15rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     white-space: nowrap;
     /* Отменяем перенос текста */
     overflow: hidden;
@@ -2239,7 +2240,7 @@ Build date: 2019-12-19 16:51:02
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .calendar__input:-webkit-autofill, .calendar__input:-webkit-autofill:hover, .calendar__input:-webkit-autofill:focus,
     .calendar__input textarea:-webkit-autofill,
     .calendar__input textarea:-webkit-autofill:hover,
@@ -2247,9 +2248,9 @@ Build date: 2019-12-19 16:51:02
     .calendar__input select:-webkit-autofill,
     .calendar__input select:-webkit-autofill:hover,
     .calendar__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .calendar__dropdown-arrow {
@@ -2260,8 +2261,8 @@ Build date: 2019-12-19 16:51:02
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
@@ -2269,22 +2270,22 @@ Build date: 2019-12-19 16:51:02
   .calendar__buttons {
     display: flex;
     flex-direction: row;
-    margin: 18px 20px 0px 20px; }
+    margin: 18rem 20rem 0rem 20rem; }
   .calendar__apply-button {
     cursor: pointer;
     margin-left: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .calendar__clear-button {
     cursor: pointer;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
 
@@ -2493,19 +2494,19 @@ Build date: 2019-12-19 16:51:02
 .like-button {
   width: max-content; }
   .like-button__label {
-    width: 40px;
-    height: 20px;
+    width: 40rem;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: center;
     position: relative;
     z-index: 1;
-    padding: 0px 2px;
+    padding: 0rem 2rem;
     color: white;
     text-decoration: none;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-    border-radius: 22px;
+    border-radius: 22rem;
     outline: none; }
   .like-button__likes-number_on, .like-button__likes-number_off {
     z-index: 1;
@@ -2513,23 +2514,23 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    padding-left: 10px;
-    margin: 2px;
-    border-radius: 22px;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    padding-left: 10rem;
+    margin: 2rem;
+    border-radius: 22rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 10rem;
     background: white;
     text-align: center; }
   .like-button__input {
     cursor: pointer;
     z-index: 2;
-    width: 40px;
-    height: 20px;
+    width: 40rem;
+    height: 20rem;
     position: absolute;
     opacity: 0; }
     .like-button__input:checked + label {
@@ -2556,25 +2557,25 @@ Build date: 2019-12-19 16:51:02
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 0px solid transparent; }
+        border: 0rem solid transparent; }
       .like-button__input:not(:checked) + label > .like-button__likes-number_off {
         opacity: 1; }
       .like-button__input:not(:checked) + label > .like-button__likes-number_on {
         opacity: 0; }
   .like-button__like-symbol {
     z-index: 2;
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 0px; }
+    left: 0rem; }
     .like-button__like-symbol::after {
       font-family: Material Icons;
       font-style: normal;
       font-weight: normal;
-      font-size: 10px; }
+      font-size: 10rem; }
 
 .room-advantages {
   width: max-content;
@@ -2582,13 +2583,13 @@ Build date: 2019-12-19 16:51:02
   display: flex;
   flex-direction: column; }
   .room-advantages__bottom-border {
-    width: 280px;
-    height: 1px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 280rem;
+    height: 1rem;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
     background: rgba(31, 32, 65, 0.1); }
     .room-advantages__bottom-border:last-child {
-      margin-bottom: 0px; }
+      margin-bottom: 0rem; }
   .room-advantages__detail {
     display: flex;
     flex-direction: row; }
@@ -2596,47 +2597,47 @@ Build date: 2019-12-19 16:51:02
     display: flex;
     align-items: center;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 10rem;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
-    line-height: 41px; }
+    font-size: 48rem;
+    line-height: 41rem; }
   .room-advantages__text {
     display: inline-flex;
     flex-direction: column; }
   .room-advantages__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
   .room-advantages__main-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
 
 .like-button {
   width: max-content; }
   .like-button__label {
-    width: 40px;
-    height: 20px;
+    width: 40rem;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: center;
     position: relative;
     z-index: 1;
-    padding: 0px 2px;
+    padding: 0rem 2rem;
     color: white;
     text-decoration: none;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-    border-radius: 22px;
+    border-radius: 22rem;
     outline: none; }
   .like-button__likes-number_on, .like-button__likes-number_off {
     z-index: 1;
@@ -2644,23 +2645,23 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    padding-left: 10px;
-    margin: 2px;
-    border-radius: 22px;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    padding-left: 10rem;
+    margin: 2rem;
+    border-radius: 22rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 10rem;
     background: white;
     text-align: center; }
   .like-button__input {
     cursor: pointer;
     z-index: 2;
-    width: 40px;
-    height: 20px;
+    width: 40rem;
+    height: 20rem;
     position: absolute;
     opacity: 0; }
     .like-button__input:checked + label {
@@ -2687,25 +2688,25 @@ Build date: 2019-12-19 16:51:02
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 0px solid transparent; }
+        border: 0rem solid transparent; }
       .like-button__input:not(:checked) + label > .like-button__likes-number_off {
         opacity: 1; }
       .like-button__input:not(:checked) + label > .like-button__likes-number_on {
         opacity: 0; }
   .like-button__like-symbol {
     z-index: 2;
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 0px; }
+    left: 0rem; }
     .like-button__like-symbol::after {
       font-family: Material Icons;
       font-style: normal;
       font-weight: normal;
-      font-size: 10px; }
+      font-size: 10rem; }
 
 .room-reviews {
   list-style: none; }
@@ -2713,21 +2714,21 @@ Build date: 2019-12-19 16:51:02
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px; }
+    margin-bottom: 20rem; }
   .room-reviews__title-description {
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 19rem;
+    line-height: 24rem;
     color: #1f2041; }
   .room-reviews__review-count {
     align-self: center;
-    margin-top: 5px;
+    margin-top: 5rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 14rem;
+    line-height: 14rem;
     text-align: right;
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap; }
@@ -2735,191 +2736,191 @@ Build date: 2019-12-19 16:51:02
     display: grid;
     grid-template-columns: max-content auto;
     grid-template-rows: auto auto;
-    margin-bottom: 22px; }
+    margin-bottom: 22rem; }
     .room-reviews__review-container:last-child {
-      margin-bottom: 0px; }
+      margin-bottom: 0rem; }
   .room-reviews__user-avatar {
-    width: 47px;
-    height: 47px;
-    margin-bottom: 12px;
-    border: 2px solid white;
+    width: 47rem;
+    height: 47rem;
+    margin-bottom: 12rem;
+    border: 2rem solid white;
     border-radius: 50%;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1); }
+    box-shadow: 0rem 10rem 20rem rgba(31, 32, 65, 0.1); }
   .room-reviews__user-info {
-    margin-left: 10px; }
+    margin-left: 10rem; }
   .room-reviews__user-full-name {
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
   .room-reviews__like-button {
     justify-self: center;
-    padding-top: 1px; }
+    padding-top: 1rem; }
   .room-reviews__number-of-days-since-comment {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
   .room-reviews__comment {
-    margin-left: 10px;
-    max-width: 653px;
+    margin-left: 10rem;
+    max-width: 653rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: rgba(31, 32, 65, 0.75); }
 
 .form-elements {
   min-width: 100%;
   display: grid;
   grid-template-columns: min-content min-content min-content;
-  grid-column-gap: 127px;
-  margin-top: 65px;
-  padding: 0px 140px 150px; }
+  grid-column-gap: 127rem;
+  margin-top: 65rem;
+  padding: 0rem 140rem 150rem; }
   .form-elements__column {
     justify-self: center; }
     .form-elements__column-1 {
       display: flex;
       flex-direction: column; }
       .form-elements__column-1 > * {
-        margin-bottom: 20px; }
+        margin-bottom: 20rem; }
     .form-elements__column-2 {
       display: flex;
       flex-direction: column; }
       .form-elements__column-2 > * {
-        margin-bottom: 20px; }
+        margin-bottom: 20rem; }
     .form-elements__column-3 {
       display: flex;
       flex-direction: column;
-      margin-left: 6px; }
+      margin-left: 6rem; }
       .form-elements__column-3 > * {
-        margin-bottom: 20px; }
+        margin-bottom: 20rem; }
   .form-elements__row-1 {
     display: flex;
     grid-column-start: 1;
     grid-column-end: 4;
-    margin-top: 80px;
-    margin-bottom: 157px; }
+    margin-top: 80rem;
+    margin-bottom: 157rem; }
   .form-elements__dropdown-2-3 {
-    margin-right: 181px; }
+    margin-right: 181rem; }
   .form-elements__row-2 {
     display: flex;
     grid-column-start: 1;
     grid-column-end: 4;
-    margin-bottom: 40px; }
+    margin-bottom: 40rem; }
   .form-elements__checkbox-2-3 {
-    margin-right: 181px; }
+    margin-right: 181rem; }
   .form-elements__row-3 {
     display: flex;
     grid-column-start: 1;
     grid-column-end: 4; }
   .form-elements__star-rating-title, .form-elements__like-button-title, .form-elements__toggle-title {
-    margin-bottom: 16px;
+    margin-bottom: 16rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .form-elements__radio-title {
-    margin-bottom: 14px;
+    margin-bottom: 14rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .form-elements__buttons-title {
-    margin-bottom: 16px;
+    margin-bottom: 16rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .form-elements__star-rating-title, .form-elements__like-button-title, .form-elements__buttons-title {
     grid-column-start: 1;
     grid-column-end: 3; }
   .form-elements__form-input-1, .form-elements__form-input-2, .form-elements__calendar-1, .form-elements__calendar-2 {
-    width: 320px; }
+    width: 320rem; }
   .form-elements__dropdown-1 {
-    margin-bottom: 22px; }
+    margin-bottom: 22rem; }
   .form-elements__calendar-1 {
-    margin-bottom: 42px; }
+    margin-bottom: 42rem; }
   .form-elements__calendar-2 {
-    margin-bottom: 40px; }
+    margin-bottom: 40rem; }
   .form-elements__calendar-3 {
-    margin-bottom: 41px; }
+    margin-bottom: 41rem; }
   .form-elements__calendar-3, .form-elements__form-input-3 {
-    width: 266px; }
+    width: 266rem; }
   .form-elements__dropdown-2, .form-elements__dropdown-3 {
-    width: 266px; }
+    width: 266rem; }
   .form-elements__dropdown-2 {
-    margin-bottom: 20px; }
+    margin-bottom: 20rem; }
   .form-elements__dropdown-1, .form-elements__dropdown-4, .form-elements__dropdown-5 {
-    width: 320px; }
+    width: 320rem; }
   .form-elements__dropdown-4 {
-    margin-right: 72px; }
+    margin-right: 72rem; }
   .form-elements__checkbox-4 {
-    margin-right: 133px;
-    margin-top: 15px; }
+    margin-right: 133rem;
+    margin-top: 15rem; }
   .form-elements__room-advantages {
-    margin-right: 167px; }
+    margin-right: 167rem; }
   .form-elements__checkbox-1 {
-    margin-bottom: 40px; }
+    margin-bottom: 40rem; }
   .form-elements__checkbox-2, .form-elements__checkbox-3 {
-    width: 266px; }
+    width: 266rem; }
   .form-elements__checkbox-2 {
-    margin-bottom: 20px; }
+    margin-bottom: 20rem; }
   .form-elements__radio {
-    margin-bottom: 41px; }
+    margin-bottom: 41rem; }
   .form-elements__toggles {
     display: flex;
     flex-direction: column;
-    margin-bottom: 45px; }
+    margin-bottom: 45rem; }
   .form-elements__like-buttons {
     display: grid;
     grid-template-columns: min-content min-content;
-    grid-column-gap: 10px;
-    margin-bottom: 40px; }
+    grid-column-gap: 10rem;
+    margin-bottom: 40rem; }
   .form-elements__star-ratings {
     display: grid;
     grid-template-columns: min-content min-content;
-    grid-column-gap: 20px; }
+    grid-column-gap: 20rem; }
   .form-elements__radio, .form-elements__toggle-1, .form-elements__toggle-2, .form-elements__like-button-1, .form-elements__like-button-2, .form-elements__star-rating-1, .form-elements__star-rating-2 {
     width: max-content; }
   .form-elements__toggle-1 {
-    margin-bottom: 14px; }
+    margin-bottom: 14rem; }
   .form-elements__range-slider {
-    width: 266px;
-    margin-bottom: 33px; }
+    width: 266rem;
+    margin-bottom: 33rem; }
   .form-elements__buttons {
     display: grid;
     grid-template-columns: min-content min-content;
-    grid-column-gap: 19px;
-    margin-bottom: 30px; }
+    grid-column-gap: 19rem;
+    margin-bottom: 30rem; }
   .form-elements__button-1, .form-elements__button-2, .form-elements__button-3, .form-elements__button-4 {
-    width: 99px;
-    height: 44px; }
+    width: 99rem;
+    height: 44rem; }
   .form-elements__button-1 {
-    margin-bottom: 29px; }
+    margin-bottom: 29rem; }
   .form-elements__text-buttons {
     display: flex;
-    margin-bottom: 27px; }
+    margin-bottom: 27rem; }
   .form-elements__button-5 {
-    margin-right: 20px; }
+    margin-right: 20rem; }
   .form-elements__button-7 {
-    width: 320px;
-    height: 44px;
-    margin-bottom: 42px; }
+    width: 320rem;
+    height: 44rem;
+    margin-bottom: 42rem; }
   .form-elements__pagination {
     width: max-content; }
   .form-elements__bullet-list {
-    margin-top: 15px; }
+    margin-top: 15rem; }
   .form-elements__guest-room-reviews {
     grid-column-start: 2;
     grid-column-end: 4;
-    margin-top: 10px; }
+    margin-top: 10rem; }
 

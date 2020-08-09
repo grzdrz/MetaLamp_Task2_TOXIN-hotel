@@ -49,7 +49,8 @@
   padding: 0px;
   border: 0px;
   box-sizing: border-box;
-  font-family: Montserrat, Arial, monospace; }
+  font-family: Montserrat, Arial, monospace;
+  font-size: 1px; }
 
 html,
 body {
@@ -684,11 +685,11 @@ body {
 .logo {
   display: flex;
   height: max-content;
-  margin-left: 30px;
-  padding-top: 30px; }
+  margin-left: 30rem;
+  padding-top: 30rem; }
   .logo__image {
-    width: 48px;
-    height: 48px; }
+    width: 48rem;
+    height: 48rem; }
 
 .button {
   cursor: pointer;
@@ -697,7 +698,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  border-radius: 22px;
+  border-radius: 22rem;
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
@@ -705,15 +706,15 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    margin: 2px;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    margin: 2rem;
     color: white;
     background: transparent;
     text-decoration: none;
-    border-radius: 22px;
+    border-radius: 22rem;
     outline: none; }
   .button > button {
     width: -webkit-fill-available; }
@@ -724,19 +725,19 @@ body {
     color: white;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase; }
   .button__arrow {
     cursor: pointer;
-    width: 44px;
+    width: 44rem;
     position: absolute;
-    right: 0px;
+    right: 0rem;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center; }
   .button__submit {
     cursor: pointer;
@@ -762,43 +763,43 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .form-input__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
-    letter-spacing: -0.3px; }
+    letter-spacing: -0.3rem; }
   .form-input__input-container {
     display: grid;
-    grid-template-rows: 42px;
+    grid-template-rows: 42rem;
     grid-template-columns: auto min-content;
     position: relative;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
     .form-input__input-container:hover, .form-input__input-container:focus {
-      border: 1px solid rgba(31, 32, 65, 0.5); }
+      border: 1rem solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
-    padding: 0px 15px;
-    height: 42px;
+    padding: 0rem 15rem;
+    height: 42rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.2px;
+    font-size: 14rem;
+    line-height: 18rem;
+    letter-spacing: -0.2rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     /* Отменяем перенос текста */
@@ -812,7 +813,7 @@ body {
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .form-input__input:-webkit-autofill, .form-input__input:-webkit-autofill:hover, .form-input__input:-webkit-autofill:focus,
     .form-input__input textarea:-webkit-autofill,
     .form-input__input textarea:-webkit-autofill:hover,
@@ -820,16 +821,16 @@ body {
     .form-input__input select:-webkit-autofill,
     .form-input__input select:-webkit-autofill:hover,
     .form-input__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .form-input__submitter {
     cursor: pointer;
-    min-width: 42px;
-    height: 42px;
-    border: 0px solid transparent;
+    min-width: 42rem;
+    height: 42rem;
+    border: 0rem solid transparent;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -838,38 +839,38 @@ body {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px; }
+    font-size: 24rem;
+    line-height: 24rem; }
 
 .sign-in-form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 38px 27px 30px 30px;
+  padding: 38rem 27rem 30rem 30rem;
   background: white;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1rem solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; }
+  box-shadow: 0rem 0rem 25rem rgba(0, 0, 0, 0.2);
+  border-radius: 4rem; }
   .sign-in-form__title {
     width: 100%;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 24rem;
+    line-height: 30rem;
     color: #1f2041; }
   .sign-in-form__fields {
     width: 100%;
-    margin-bottom: 20px; }
+    margin-bottom: 20rem; }
     .sign-in-form__fields > div:first-child {
-      margin-bottom: 10px; }
+      margin-bottom: 10rem; }
   .sign-in-form__submit-button {
     width: 100%;
-    height: 44px;
-    margin-bottom: 30px; }
+    height: 44rem;
+    margin-bottom: 30rem; }
   .sign-in-form__account-create-field {
     width: 100%;
     display: flex;
@@ -881,12 +882,12 @@ body {
     text-align: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     color: black; }
   .sign-in-form__create-button {
     width: 30.9375%;
-    height: 44px; }
+    height: 44rem; }
 
 .calendar {
   width: 100%;
@@ -897,51 +898,51 @@ body {
     display: flex;
     flex-direction: column; }
     .calendar__input-container_first {
-      margin-right: 20px; }
+      margin-right: 20rem; }
   .calendar__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .calendar__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .calendar__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
-    letter-spacing: -0.3px; }
+    letter-spacing: -0.3rem; }
   .calendar__label {
     cursor: pointer;
-    width: 150px;
+    width: 150rem;
     display: grid;
-    grid-template-columns: auto 42px;
-    grid-template-rows: 42px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    grid-template-columns: auto 42rem;
+    grid-template-rows: 42rem;
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
   .calendar__input-container_first, .calendar__input-container_second {
     width: 46.875%; }
   .calendar__label_first, .calendar__label_second {
     width: 100%; }
   .calendar__input {
     cursor: pointer;
-    height: 40px;
-    padding: 0px 0px 0px 15px;
+    height: 40rem;
+    padding: 0rem 0rem 0rem 15rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     white-space: nowrap;
     /* Отменяем перенос текста */
     overflow: hidden;
@@ -954,7 +955,7 @@ body {
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .calendar__input:-webkit-autofill, .calendar__input:-webkit-autofill:hover, .calendar__input:-webkit-autofill:focus,
     .calendar__input textarea:-webkit-autofill,
     .calendar__input textarea:-webkit-autofill:hover,
@@ -962,9 +963,9 @@ body {
     .calendar__input select:-webkit-autofill,
     .calendar__input select:-webkit-autofill:hover,
     .calendar__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .calendar__dropdown-arrow {
@@ -975,8 +976,8 @@ body {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
@@ -984,22 +985,22 @@ body {
   .calendar__buttons {
     display: flex;
     flex-direction: row;
-    margin: 18px 20px 0px 20px; }
+    margin: 18rem 20rem 0rem 20rem; }
   .calendar__apply-button {
     cursor: pointer;
     margin-left: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .calendar__clear-button {
     cursor: pointer;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
 
@@ -1214,42 +1215,42 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .dropdown__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
   .dropdown__input-container {
     display: grid;
-    grid-template-rows: 42px;
+    grid-template-rows: 42rem;
     grid-template-columns: auto min-content;
     position: relative;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
     .dropdown__input-container:hover, .dropdown__input-container:focus {
-      border: 1px solid rgba(31, 32, 65, 0.5); }
+      border: 1rem solid rgba(31, 32, 65, 0.5); }
   .dropdown__input {
     cursor: pointer;
-    height: 40px;
-    padding: 0px 15px 0px 15px;
+    height: 40rem;
+    padding: 0rem 15rem 0rem 15rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     /* Отменяем перенос текста */
@@ -1263,7 +1264,7 @@ body {
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .dropdown__input:-webkit-autofill, .dropdown__input:-webkit-autofill:hover, .dropdown__input:-webkit-autofill:focus,
     .dropdown__input textarea:-webkit-autofill,
     .dropdown__input textarea:-webkit-autofill:hover,
@@ -1271,9 +1272,9 @@ body {
     .dropdown__input select:-webkit-autofill,
     .dropdown__input select:-webkit-autofill:hover,
     .dropdown__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .dropdown__droped-list {
@@ -1283,27 +1284,27 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
     position: absolute;
-    top: 44px;
-    margin: -1px;
+    top: 44rem;
+    margin: -1rem;
     background: white;
-    border: 1px solid rgba(31, 32, 65, 0.5);
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    border-top: 0px;
+    border: 1rem solid rgba(31, 32, 65, 0.5);
+    box-shadow: 0rem 10rem 20rem rgba(31, 32, 65, 0.05);
+    border-top: 0rem;
     box-sizing: content-box;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
     z-index: 9999; }
     .dropdown__droped-list:hover, .dropdown__droped-list:focus {
-      border-top: 0px; }
+      border-top: 0rem; }
   .dropdown__dropdown-arrow {
     cursor: pointer;
-    width: 42px;
-    height: 42px;
+    width: 42rem;
+    height: 42rem;
     display: flex;
     align-items: center;
     justify-content: center;
     outline: none;
-    border: 0px solid transparent;
+    border: 0rem solid transparent;
     background: rgba(31, 32, 65, 0.75);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -1312,23 +1313,23 @@ body {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px; }
+    font-size: 24rem;
+    line-height: 24rem; }
   .dropdown__list-item {
     display: grid;
-    grid-template-columns: auto 93px;
+    grid-template-columns: auto 93rem;
     align-items: center;
-    padding: 0px 5px 0px 15px;
-    margin-bottom: 7px; }
+    padding: 0rem 5rem 0rem 15rem;
+    margin-bottom: 7rem; }
     .dropdown__list-item:first-of-type {
-      margin-top: 5px; }
+      margin-top: 5rem; }
   .dropdown__item-name {
     overflow: auto;
     word-wrap: break-word;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__item-handler {
@@ -1338,48 +1339,48 @@ body {
     justify-content: space-between; }
   .dropdown__item-minus, .dropdown__item-plus {
     cursor: pointer;
-    width: 30px;
-    height: 30px;
-    border-radius: 31px;
-    border: 1px solid rgba(31, 32, 65, 0.5);
+    width: 30rem;
+    height: 30rem;
+    border-radius: 31rem;
+    border: 1rem solid rgba(31, 32, 65, 0.5);
     background: transparent;
     outline: none;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__item-minus {
     opacity: 0.38; }
   .dropdown__item-value {
-    margin: 0px 5px;
+    margin: 0rem 5rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__control-buttons {
     display: flex;
-    margin: 14px 6px 13px 13px; }
+    margin: 14rem 6rem 13rem 13rem; }
   .dropdown__apply-button {
     cursor: pointer;
     margin-left: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .dropdown__clear-button {
     cursor: pointer;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
 
@@ -1390,7 +1391,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  border-radius: 22px;
+  border-radius: 22rem;
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
@@ -1398,15 +1399,15 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    margin: 2px;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    margin: 2rem;
     color: white;
     background: transparent;
     text-decoration: none;
-    border-radius: 22px;
+    border-radius: 22rem;
     outline: none; }
   .button > button {
     width: -webkit-fill-available; }
@@ -1417,19 +1418,19 @@ body {
     color: white;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase; }
   .button__arrow {
     cursor: pointer;
-    width: 44px;
+    width: 44rem;
     position: absolute;
-    right: 0px;
+    right: 0rem;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center; }
   .button__submit {
     cursor: pointer;
@@ -1450,31 +1451,31 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 40px 27px 30px 30px;
+  padding: 40rem 27rem 30rem 30rem;
   background: white;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1rem solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; }
+  box-shadow: 0rem 0rem 25rem rgba(0, 0, 0, 0.2);
+  border-radius: 4rem; }
   .room-finder-form__title {
     width: 100%;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 24rem;
+    line-height: 30rem;
     color: #1f2041; }
   .room-finder-form__calendar {
     width: 100%;
-    margin-bottom: 20px; }
+    margin-bottom: 20rem; }
   .room-finder-form__dropdown {
     width: 100%;
-    margin-bottom: 31px; }
+    margin-bottom: 31rem; }
   .room-finder-form__submit-button {
     width: 100%;
-    height: 44px; }
+    height: 44rem; }
 
 .button {
   cursor: pointer;
@@ -1483,7 +1484,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  border-radius: 22px;
+  border-radius: 22rem;
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
@@ -1491,15 +1492,15 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    margin: 2px;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    margin: 2rem;
     color: white;
     background: transparent;
     text-decoration: none;
-    border-radius: 22px;
+    border-radius: 22rem;
     outline: none; }
   .button > button {
     width: -webkit-fill-available; }
@@ -1510,19 +1511,19 @@ body {
     color: white;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase; }
   .button__arrow {
     cursor: pointer;
-    width: 44px;
+    width: 44rem;
     position: absolute;
-    right: 0px;
+    right: 0rem;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center; }
   .button__submit {
     cursor: pointer;
@@ -1548,51 +1549,51 @@ body {
     display: flex;
     flex-direction: column; }
     .calendar__input-container_first {
-      margin-right: 20px; }
+      margin-right: 20rem; }
   .calendar__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .calendar__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .calendar__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
-    letter-spacing: -0.3px; }
+    letter-spacing: -0.3rem; }
   .calendar__label {
     cursor: pointer;
-    width: 150px;
+    width: 150rem;
     display: grid;
-    grid-template-columns: auto 42px;
-    grid-template-rows: 42px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    grid-template-columns: auto 42rem;
+    grid-template-rows: 42rem;
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
   .calendar__input-container_first, .calendar__input-container_second {
     width: 46.875%; }
   .calendar__label_first, .calendar__label_second {
     width: 100%; }
   .calendar__input {
     cursor: pointer;
-    height: 40px;
-    padding: 0px 0px 0px 15px;
+    height: 40rem;
+    padding: 0rem 0rem 0rem 15rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     white-space: nowrap;
     /* Отменяем перенос текста */
     overflow: hidden;
@@ -1605,7 +1606,7 @@ body {
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .calendar__input:-webkit-autofill, .calendar__input:-webkit-autofill:hover, .calendar__input:-webkit-autofill:focus,
     .calendar__input textarea:-webkit-autofill,
     .calendar__input textarea:-webkit-autofill:hover,
@@ -1613,9 +1614,9 @@ body {
     .calendar__input select:-webkit-autofill,
     .calendar__input select:-webkit-autofill:hover,
     .calendar__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .calendar__dropdown-arrow {
@@ -1626,8 +1627,8 @@ body {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
@@ -1635,22 +1636,22 @@ body {
   .calendar__buttons {
     display: flex;
     flex-direction: row;
-    margin: 18px 20px 0px 20px; }
+    margin: 18rem 20rem 0rem 20rem; }
   .calendar__apply-button {
     cursor: pointer;
     margin-left: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .calendar__clear-button {
     cursor: pointer;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
 
@@ -1865,42 +1866,42 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .dropdown__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
   .dropdown__input-container {
     display: grid;
-    grid-template-rows: 42px;
+    grid-template-rows: 42rem;
     grid-template-columns: auto min-content;
     position: relative;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
     .dropdown__input-container:hover, .dropdown__input-container:focus {
-      border: 1px solid rgba(31, 32, 65, 0.5); }
+      border: 1rem solid rgba(31, 32, 65, 0.5); }
   .dropdown__input {
     cursor: pointer;
-    height: 40px;
-    padding: 0px 15px 0px 15px;
+    height: 40rem;
+    padding: 0rem 15rem 0rem 15rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     /* Отменяем перенос текста */
@@ -1914,7 +1915,7 @@ body {
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .dropdown__input:-webkit-autofill, .dropdown__input:-webkit-autofill:hover, .dropdown__input:-webkit-autofill:focus,
     .dropdown__input textarea:-webkit-autofill,
     .dropdown__input textarea:-webkit-autofill:hover,
@@ -1922,9 +1923,9 @@ body {
     .dropdown__input select:-webkit-autofill,
     .dropdown__input select:-webkit-autofill:hover,
     .dropdown__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .dropdown__droped-list {
@@ -1934,27 +1935,27 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
     position: absolute;
-    top: 44px;
-    margin: -1px;
+    top: 44rem;
+    margin: -1rem;
     background: white;
-    border: 1px solid rgba(31, 32, 65, 0.5);
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    border-top: 0px;
+    border: 1rem solid rgba(31, 32, 65, 0.5);
+    box-shadow: 0rem 10rem 20rem rgba(31, 32, 65, 0.05);
+    border-top: 0rem;
     box-sizing: content-box;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
     z-index: 9999; }
     .dropdown__droped-list:hover, .dropdown__droped-list:focus {
-      border-top: 0px; }
+      border-top: 0rem; }
   .dropdown__dropdown-arrow {
     cursor: pointer;
-    width: 42px;
-    height: 42px;
+    width: 42rem;
+    height: 42rem;
     display: flex;
     align-items: center;
     justify-content: center;
     outline: none;
-    border: 0px solid transparent;
+    border: 0rem solid transparent;
     background: rgba(31, 32, 65, 0.75);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -1963,23 +1964,23 @@ body {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px; }
+    font-size: 24rem;
+    line-height: 24rem; }
   .dropdown__list-item {
     display: grid;
-    grid-template-columns: auto 93px;
+    grid-template-columns: auto 93rem;
     align-items: center;
-    padding: 0px 5px 0px 15px;
-    margin-bottom: 7px; }
+    padding: 0rem 5rem 0rem 15rem;
+    margin-bottom: 7rem; }
     .dropdown__list-item:first-of-type {
-      margin-top: 5px; }
+      margin-top: 5rem; }
   .dropdown__item-name {
     overflow: auto;
     word-wrap: break-word;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__item-handler {
@@ -1989,48 +1990,48 @@ body {
     justify-content: space-between; }
   .dropdown__item-minus, .dropdown__item-plus {
     cursor: pointer;
-    width: 30px;
-    height: 30px;
-    border-radius: 31px;
-    border: 1px solid rgba(31, 32, 65, 0.5);
+    width: 30rem;
+    height: 30rem;
+    border-radius: 31rem;
+    border: 1rem solid rgba(31, 32, 65, 0.5);
     background: transparent;
     outline: none;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__item-minus {
     opacity: 0.38; }
   .dropdown__item-value {
-    margin: 0px 5px;
+    margin: 0rem 5rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__control-buttons {
     display: flex;
-    margin: 14px 6px 13px 13px; }
+    margin: 14rem 6rem 13rem 13rem; }
   .dropdown__apply-button {
     cursor: pointer;
     margin-left: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .dropdown__clear-button {
     cursor: pointer;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
 
@@ -2038,103 +2039,111 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 40px 28px 30px 30px;
+  padding: 40rem 28rem 30rem 30rem;
   background: white;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; }
+  border: 1rem solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0rem 0rem 25rem rgba(0, 0, 0, 0.2);
+  border-radius: 4rem; }
   .price-calculation-form__title {
     display: grid;
     grid-template-columns: max-content max-content max-content auto min-content;
-    margin-top: 3px;
-    margin-bottom: 23px; }
+    margin-top: 3rem;
+    margin-bottom: 23rem; }
   .price-calculation-form__number-symbol {
     align-self: end;
-    margin-right: 3px;
+    margin-right: 3rem;
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 14rem;
+    line-height: 17rem;
     color: #1f2041; }
   .price-calculation-form__room-number {
     align-self: end;
-    margin-right: 5px;
+    margin-right: 5rem;
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 23px;
+    font-size: 24rem;
+    line-height: 23rem;
     color: #1f2041; }
   .price-calculation-form__room-status {
     align-self: end;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .price-calculation-form__room-price {
     justify-self: end;
     align-self: end;
-    margin-right: 4px;
+    margin-right: 4rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 15px;
+    font-size: 14rem;
+    line-height: 15rem;
     color: rgba(31, 32, 65, 0.5); }
   .price-calculation-form__period-of-time {
     justify-self: end;
     align-self: end;
     white-space: nowrap;
-    margin-right: 1px;
+    margin-right: 1rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     color: rgba(31, 32, 65, 0.5); }
   .price-calculation-form__calendar {
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
     width: 100%; }
   .price-calculation-form__dropdown {
-    margin-bottom: 21px;
+    margin-bottom: 21rem;
     width: 100%; }
   .price-calculation-form__calculated-data {
-    margin-bottom: 20px;
+    margin-bottom: 20rem; }
+  .price-calculation-form__main-sum-formula, .price-calculation-form__main-sum-result, .price-calculation-form__discount-description, .price-calculation-form__discount-value, .price-calculation-form__additional-services-description, .price-calculation-form__additional-services-value {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 14rem;
+    line-height: 19rem;
     color: rgba(31, 32, 65, 0.75); }
+  .price-calculation-form__total-result-text, .price-calculation-form__total-result-value {
+    font-family: Quicksand, OpenSans, Arial, monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19rem;
+    line-height: 24rem;
+    color: #1f2041; }
   .price-calculation-form__main-sum {
     display: grid;
     grid-template-columns: max-content auto;
-    margin-bottom: 15px; }
+    margin-bottom: 15rem; }
   .price-calculation-form__main-sum-result {
     justify-self: end; }
   .price-calculation-form__services {
     display: grid;
-    grid-template-columns: 220px auto auto;
-    grid-row-gap: 14px;
-    margin-bottom: 28px; }
+    grid-template-columns: 220rem auto auto;
+    grid-row-gap: 14rem;
+    margin-bottom: 28rem; }
   .price-calculation-form__discount {
     display: grid;
     grid-template-columns: max-content auto auto; }
   .price-calculation-form__services-tooltip {
-    min-width: 20px;
-    height: 20px;
+    min-width: 20rem;
+    height: 20rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     justify-self: baseline;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     border-radius: 50%;
     box-sizing: border-box;
     background: transparent;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 12rem;
+    line-height: 14rem;
     text-align: right;
     color: rgba(31, 32, 65, 0.25); }
   .price-calculation-form__discount-value {
@@ -2143,23 +2152,17 @@ body {
     justify-self: end; }
   .price-calculation-form__total-result {
     display: grid;
-    grid-template-columns: max-content auto min-content;
-    font-family: Quicksand, OpenSans, Arial, monospace;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
-    color: #1f2041; }
+    grid-template-columns: max-content auto min-content; }
   .price-calculation-form__total-result-bottom-line {
-    margin-bottom: 5px;
-    border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+    margin-bottom: 5rem;
+    border-bottom: 1rem dashed rgba(31, 32, 65, 0.25);
     box-sizing: border-box; }
   .price-calculation-form__total-result-value {
     justify-self: end;
     white-space: nowrap; }
   .price-calculation-form__submit-button {
     width: 100%;
-    height: 44px; }
+    height: 44rem; }
 
 .form-input {
   width: 100%; }
@@ -2170,43 +2173,43 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .form-input__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
-    letter-spacing: -0.3px; }
+    letter-spacing: -0.3rem; }
   .form-input__input-container {
     display: grid;
-    grid-template-rows: 42px;
+    grid-template-rows: 42rem;
     grid-template-columns: auto min-content;
     position: relative;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
     .form-input__input-container:hover, .form-input__input-container:focus {
-      border: 1px solid rgba(31, 32, 65, 0.5); }
+      border: 1rem solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
-    padding: 0px 15px;
-    height: 42px;
+    padding: 0rem 15rem;
+    height: 42rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.2px;
+    font-size: 14rem;
+    line-height: 18rem;
+    letter-spacing: -0.2rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     /* Отменяем перенос текста */
@@ -2220,7 +2223,7 @@ body {
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .form-input__input:-webkit-autofill, .form-input__input:-webkit-autofill:hover, .form-input__input:-webkit-autofill:focus,
     .form-input__input textarea:-webkit-autofill,
     .form-input__input textarea:-webkit-autofill:hover,
@@ -2228,16 +2231,16 @@ body {
     .form-input__input select:-webkit-autofill,
     .form-input__input select:-webkit-autofill:hover,
     .form-input__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .form-input__submitter {
     cursor: pointer;
-    min-width: 42px;
-    height: 42px;
-    border: 0px solid transparent;
+    min-width: 42rem;
+    height: 42rem;
+    border: 0rem solid transparent;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -2246,8 +2249,8 @@ body {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px; }
+    font-size: 24rem;
+    line-height: 24rem; }
 
 .radio {
   display: flex;
@@ -2256,45 +2259,45 @@ body {
     cursor: pointer;
     display: flex;
     position: relative;
-    margin-right: 20px; }
+    margin-right: 20rem; }
     .radio__label:last-child {
-      margin-right: 0px; }
+      margin-right: 0rem; }
   .radio__button-image {
     z-index: 1;
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-right: 10px;
+    margin-right: 10rem;
     border-radius: 50%; }
   .radio__input {
     cursor: pointer;
     z-index: 2;
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
     position: absolute;
     opacity: 0; }
     .radio__input:checked + div {
-      border: 1px solid #bc9cff; }
+      border: 1rem solid #bc9cff; }
     .radio__input:checked + div::after {
       content: '';
-      width: 12px;
-      height: 12px;
+      width: 12rem;
+      height: 12rem;
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
     .radio__input:not(:checked) + div {
-      border: 1px solid rgba(31, 32, 65, 0.25); }
+      border: 1rem solid rgba(31, 32, 65, 0.25); }
   .radio__text {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     color: rgba(31, 32, 65, 0.5); }
 
 .toggle {
@@ -2304,39 +2307,39 @@ body {
   width: max-content; }
   .toggle__button-image {
     z-index: 1;
-    width: 40px;
-    height: 20px;
+    width: 40rem;
+    height: 20rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
-    margin-right: 10px;
-    padding: 0px 3px;
-    border-radius: 10px;
+    margin-right: 10rem;
+    padding: 0rem 3rem;
+    border-radius: 10rem;
     transition: padding-left 0.3s; }
   .toggle__input {
     cursor: pointer;
     z-index: 2;
-    width: 40px;
-    height: 20px;
+    width: 40rem;
+    height: 20rem;
     position: absolute;
     opacity: 0; }
     .toggle__input:checked + div {
-      border: 1px solid #bc9cff;
-      padding-left: 23px; }
+      border: 1rem solid #bc9cff;
+      padding-left: 23rem; }
     .toggle__input:not(:checked) + div {
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      padding-left: 3px; }
+      border: 1rem solid rgba(31, 32, 65, 0.25);
+      padding-left: 3rem; }
     .toggle__input:checked + div::after {
       content: '';
-      width: 12px;
-      height: 12px;
+      width: 12rem;
+      height: 12rem;
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
     .toggle__input:not(:checked) + div::after {
       content: '';
-      width: 12px;
-      height: 12px;
+      width: 12rem;
+      height: 12rem;
       background: rgba(31, 32, 65, 0.25);
       border-radius: 50%; }
   .toggle__text {
@@ -2345,8 +2348,8 @@ body {
     align-items: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     color: rgba(31, 32, 65, 0.5); }
 
 .calendar {
@@ -2358,51 +2361,51 @@ body {
     display: flex;
     flex-direction: column; }
     .calendar__input-container_first {
-      margin-right: 20px; }
+      margin-right: 20rem; }
   .calendar__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px; }
+    margin-bottom: 5rem; }
   .calendar__title-text {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #1f2041; }
   .calendar__additional-title-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
-    letter-spacing: -0.3px; }
+    letter-spacing: -0.3rem; }
   .calendar__label {
     cursor: pointer;
-    width: 150px;
+    width: 150rem;
     display: grid;
-    grid-template-columns: auto 42px;
-    grid-template-rows: 42px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    grid-template-columns: auto 42rem;
+    grid-template-rows: 42rem;
+    border: 1rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4rem; }
   .calendar__input-container_first, .calendar__input-container_second {
     width: 46.875%; }
   .calendar__label_first, .calendar__label_second {
     width: 100%; }
   .calendar__input {
     cursor: pointer;
-    height: 40px;
-    padding: 0px 0px 0px 15px;
+    height: 40rem;
+    padding: 0rem 0rem 0rem 15rem;
     outline: none;
     background: transparent;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     white-space: nowrap;
     /* Отменяем перенос текста */
     overflow: hidden;
@@ -2415,7 +2418,7 @@ body {
       -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      border: 0px solid transparent; }
+      border: 0rem solid transparent; }
     .calendar__input:-webkit-autofill, .calendar__input:-webkit-autofill:hover, .calendar__input:-webkit-autofill:focus,
     .calendar__input textarea:-webkit-autofill,
     .calendar__input textarea:-webkit-autofill:hover,
@@ -2423,9 +2426,9 @@ body {
     .calendar__input select:-webkit-autofill,
     .calendar__input select:-webkit-autofill:hover,
     .calendar__input select:-webkit-autofill:focus {
-      border: 0px solid rgba(255, 255, 255, 0);
+      border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+      -webkit-box-shadow: 0 0 0rem 1000rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .calendar__dropdown-arrow {
@@ -2436,8 +2439,8 @@ body {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
@@ -2445,22 +2448,22 @@ body {
   .calendar__buttons {
     display: flex;
     flex-direction: row;
-    margin: 18px 20px 0px 20px; }
+    margin: 18rem 20rem 0rem 20rem; }
   .calendar__apply-button {
     cursor: pointer;
     margin-left: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .calendar__clear-button {
     cursor: pointer;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
 
@@ -2673,7 +2676,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  border-radius: 22px;
+  border-radius: 22rem;
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
@@ -2681,15 +2684,15 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    margin: 2px;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    margin: 2rem;
     color: white;
     background: transparent;
     text-decoration: none;
-    border-radius: 22px;
+    border-radius: 22rem;
     outline: none; }
   .button > button {
     width: -webkit-fill-available; }
@@ -2700,19 +2703,19 @@ body {
     color: white;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase; }
   .button__arrow {
     cursor: pointer;
-    width: 44px;
+    width: 44rem;
     position: absolute;
-    right: 0px;
+    right: 0rem;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center; }
   .button__submit {
     cursor: pointer;
@@ -2733,41 +2736,41 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 38px 27px 30px 30px;
+  padding: 38rem 27rem 30rem 30rem;
   background: white;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1rem solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; }
+  box-shadow: 0rem 0rem 25rem rgba(0, 0, 0, 0.2);
+  border-radius: 4rem; }
   .sign-up-form__title {
     width: 100%;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 24rem;
+    line-height: 30rem;
     color: #1f2041; }
   .sign-up-form__first-name-field, .sign-up-form__second-name-field {
     width: 100%;
-    margin-bottom: 10px; }
+    margin-bottom: 10rem; }
   .sign-up-form__radio-buttons {
     width: 100%;
-    margin-bottom: 23px; }
+    margin-bottom: 23rem; }
   .sign-up-form__calendar {
     width: 100%;
-    margin-bottom: 21px; }
+    margin-bottom: 21rem; }
   .sign-up-form__email-field, .sign-up-form__password-field {
     width: 100%;
-    margin-bottom: 10px; }
+    margin-bottom: 10rem; }
   .sign-up-form__toggle {
     width: 100%;
-    margin-bottom: 23px; }
+    margin-bottom: 23rem; }
   .sign-up-form__submit-button {
     width: 100%;
-    height: 44px;
-    margin-bottom: 30px; }
+    height: 44rem;
+    margin-bottom: 30rem; }
   .sign-up-form__sign-in-field {
     width: 100%;
     display: flex;
@@ -2779,39 +2782,39 @@ body {
     text-align: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     color: black; }
   .sign-up-form__sign-in-button {
     width: 30.9375%;
-    height: 44px; }
+    height: 44rem; }
 
 .star-rating {
-  width: 120px;
-  height: 24px;
+  width: 120rem;
+  height: 24rem;
   display: flex;
   position: relative; }
   .star-rating__input {
     cursor: pointer;
     z-index: 2;
-    width: 24px;
-    height: 24px;
+    width: 24rem;
+    height: 24rem;
     position: absolute;
     opacity: 0; }
     .star-rating__input_1 {
-      margin-left: 0px; }
+      margin-left: 0rem; }
     .star-rating__input_2 {
-      margin-left: 24px; }
+      margin-left: 24rem; }
     .star-rating__input_3 {
-      margin-left: 48px; }
+      margin-left: 48rem; }
     .star-rating__input_4 {
-      margin-left: 72px; }
+      margin-left: 72rem; }
     .star-rating__input_5 {
-      margin-left: 96px; }
+      margin-left: 96rem; }
     .star-rating__input + .star-rating__image::before {
       content: 'star_border';
-      width: 24px;
-      height: 24px;
+      width: 24rem;
+      height: 24rem;
       display: flex;
       align-items: center;
       text-align: center;
@@ -2824,13 +2827,13 @@ body {
       font-family: Material Icons;
       font-style: normal;
       font-weight: normal;
-      font-size: 24px;
-      line-height: 20px;
+      font-size: 24rem;
+      line-height: 20rem;
       color: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
     .star-rating__input:checked ~ .star-rating__image::after {
       content: 'star';
-      width: 24px;
-      height: 24px;
+      width: 24rem;
+      height: 24rem;
       display: flex;
       align-items: center;
       text-align: center;
@@ -2843,47 +2846,47 @@ body {
       font-family: Material Icons;
       font-style: normal;
       font-weight: normal;
-      font-size: 24px;
-      line-height: 20px;
+      font-size: 24rem;
+      line-height: 20rem;
       color: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .star-rating__image {
     z-index: 1;
-    width: 24px;
-    height: 24px;
+    width: 24rem;
+    height: 24rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute; }
     .star-rating__image_1 {
-      margin-left: 0px; }
+      margin-left: 0rem; }
     .star-rating__image_2 {
-      margin-left: 24px; }
+      margin-left: 24rem; }
     .star-rating__image_3 {
-      margin-left: 48px; }
+      margin-left: 48rem; }
     .star-rating__image_4 {
-      margin-left: 72px; }
+      margin-left: 72rem; }
     .star-rating__image_5 {
-      margin-left: 96px; }
+      margin-left: 96rem; }
 
 .room-info {
-  width: 270px;
+  width: 270rem;
   display: flex;
   flex-direction: column;
   position: relative;
   background: white;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 4px; }
+  box-shadow: 0rem 10rem 20rem rgba(31, 32, 65, 0.05);
+  border-radius: 4rem; }
   .room-info__ref {
     z-index: 3;
-    width: 270px;
-    height: 107px;
+    width: 270rem;
+    height: 107rem;
     position: absolute;
-    bottom: 0px;
+    bottom: 0rem;
     opacity: 0; }
   .room-info__photos {
     z-index: 2;
-    width: 270px;
-    height: 151px;
+    width: 270rem;
+    height: 151rem;
     display: flex;
     align-items: center;
     position: relative; }
@@ -2892,171 +2895,171 @@ body {
     width: 100%;
     position: absolute;
     opacity: 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px; }
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem; }
   .room-info__arrows {
     z-index: 3;
-    width: 270px;
-    height: 151px;
+    width: 270rem;
+    height: 151rem;
     display: flex;
     justify-content: space-between; }
   .room-info__arrow-back {
     cursor: pointer;
-    min-width: 44px;
-    height: 151px;
+    min-width: 44rem;
+    height: 151rem;
     display: flex;
     justify-content: center;
     align-items: center;
     outline: transparent;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
-    border-top-left-radius: 4px; }
+    border-top-left-radius: 4rem; }
   .room-info__arrow-back-icon {
     transform: rotate(90deg);
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center;
     color: white; }
   .room-info__arrow-forward {
     cursor: pointer;
-    min-width: 44px;
-    height: 151px;
+    min-width: 44rem;
+    height: 151rem;
     display: flex;
     justify-content: center;
     align-items: center;
     outline: transparent;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
-    border-top-left-radius: 4px;
+    border-top-left-radius: 4rem;
     transform: matrix(-1, 0, 0, 1, 0, 0); }
   .room-info__arrow-forward-icon {
     transform: rotate(90deg);
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     text-align: center;
     color: white; }
   .room-info__radio-button {
     z-index: 3;
-    width: 8px;
-    height: 8px;
+    width: 8rem;
+    height: 8rem;
     position: absolute;
-    bottom: 15px;
+    bottom: 15rem;
     opacity: 0; }
     .room-info__radio-button:checked + div {
       background: white; }
     .room-info__radio-button_1 {
-      right: 48px; }
+      right: 48rem; }
       .room-info__radio-button_1 + div {
-        right: 48px; }
+        right: 48rem; }
       .room-info__radio-button_1:checked ~ .room-info__photo_1 {
         opacity: 1; }
     .room-info__radio-button_2 {
-      right: 37px; }
+      right: 37rem; }
       .room-info__radio-button_2 + div {
-        right: 37px; }
+        right: 37rem; }
       .room-info__radio-button_2:checked ~ .room-info__photo_2 {
         opacity: 1; }
     .room-info__radio-button_3 {
-      right: 26px; }
+      right: 26rem; }
       .room-info__radio-button_3 + div {
-        right: 26px; }
+        right: 26rem; }
       .room-info__radio-button_3:checked ~ .room-info__photo_3 {
         opacity: 1; }
     .room-info__radio-button_4 {
-      right: 15px; }
+      right: 15rem; }
       .room-info__radio-button_4 + div {
-        right: 15px; }
+        right: 15rem; }
       .room-info__radio-button_4:checked ~ .room-info__photo_4 {
         opacity: 1; }
   .room-info__radio-button-image {
     z-index: 2;
-    width: 8px;
-    height: 8px;
+    width: 8rem;
+    height: 8rem;
     position: absolute;
-    bottom: 15px;
+    bottom: 15rem;
     border-radius: 50%;
-    border: 1px solid white;
-    box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3); }
+    border: 1rem solid white;
+    box-shadow: 0rem 5rem 5rem rgba(31, 32, 65, 0.3); }
   .room-info__text-info {
     z-index: 1;
-    padding: 15px 16px 19px 20px; }
+    padding: 15rem 16rem 19rem 20rem; }
   .room-info__title {
     display: grid;
     grid-template-columns: max-content max-content max-content auto min-content;
-    margin-top: 3px;
-    margin-bottom: 12px; }
+    margin-top: 3rem;
+    margin-bottom: 12rem; }
   .room-info__number-symbol {
     align-self: end;
-    margin-right: 4px;
+    margin-right: 4rem;
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 14rem;
+    line-height: 17rem;
     color: #1f2041; }
   .room-info__room-number {
     align-self: end;
-    margin-right: 5px;
+    margin-right: 5rem;
     font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 19rem;
+    line-height: 24rem;
     color: #1f2041; }
   .room-info__room-status {
     align-self: end;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .room-info__room-price {
     justify-self: end;
     align-self: end;
-    margin-right: 4px;
+    margin-right: 4rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 15px;
+    font-size: 14rem;
+    line-height: 15rem;
     color: rgba(31, 32, 65, 0.5); }
   .room-info__period-of-time {
     justify-self: end;
     align-self: end;
-    margin-right: 1px;
+    margin-right: 1rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12rem;
+    line-height: 15rem;
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap; }
   .room-info__room-rate {
     display: flex;
     justify-content: space-between;
-    padding-top: 8px;
-    border-top: 1px solid rgba(31, 32, 65, 0.1); }
+    padding-top: 8rem;
+    border-top: 1rem solid rgba(31, 32, 65, 0.1); }
   .room-info__reviews-count {
     display: flex;
     align-items: flex-end;
-    padding-bottom: 3px;
-    padding-right: 4px; }
+    padding-bottom: 3rem;
+    padding-right: 4rem; }
   .room-info__reviews-count-value {
-    margin-right: 3px;
+    margin-right: 3rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     text-align: right;
     color: rgba(31, 32, 65, 0.5); }
   .room-info__reviews-count-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 14rem;
+    line-height: 18rem;
     text-align: right;
     color: rgba(31, 32, 65, 0.5); }
 
@@ -3069,15 +3072,15 @@ body {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 140px;
-  padding: 72px 9.6222% 140px;
+  padding-bottom: 140rem;
+  padding: 72rem 9.6222% 140rem;
   background: #e5e5e5; }
   @media screen and (max-width: 950px) {
     .cards {
       width: 100%;
       flex-direction: column;
       align-items: center;
-      padding: 0px 0px; } }
+      padding: 0rem 0rem; } }
   .cards__column-1, .cards__column-2, .cards__column-3 {
     display: flex;
     flex-direction: column; }
@@ -3088,12 +3091,12 @@ body {
       .cards__column-1, .cards__column-2, .cards__column-3 {
         width: 100%; } }
   .cards__room-finder-form, .cards__sign-up-form, .cards__price-calculation-form, .cards__sign-in-form {
-    width: 380px;
-    margin-bottom: 40px; }
+    width: 380rem;
+    margin-bottom: 40rem; }
     @media screen and (max-width: 380px) {
       .cards__room-finder-form, .cards__sign-up-form, .cards__price-calculation-form, .cards__sign-in-form {
         width: 100%; } }
   .cards__datepicker, .cards__room-info {
     width: max-content;
-    margin-bottom: 40px; }
+    margin-bottom: 40rem; }
 
