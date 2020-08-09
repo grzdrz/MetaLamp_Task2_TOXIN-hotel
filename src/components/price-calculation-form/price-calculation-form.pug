@@ -12,9 +12,9 @@ mixin price-calculation-form(options)
             discount,
         } = options;
 
-    - const formateNumber = function(number) {
-    -     return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
-    - };
+        function formateNumber(number) {
+            return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+        }
 
     form(class=["price-calculation-form"])
 

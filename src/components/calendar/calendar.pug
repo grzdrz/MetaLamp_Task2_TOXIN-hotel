@@ -7,12 +7,12 @@ mixin calendar(options)
             isDouble,
             withRange,
         } = options;
-    - const containerClasses = [];
-    - const inputContainerClasses = [];
+        const containerClasses = [];
+        const inputContainerClasses = [];
 
-    - containerClasses.push(`calendar_${(withRange || isDouble) ? "with" : "without"}-range-picking`);
-    - containerClasses.push(`calendar_${(isDouble) ? "double" : "single"}`);
-    - inputContainerClasses.push(`${isDouble ? "calendar__input-container_first" : ""}`);
+        containerClasses.push(`calendar_${(withRange || isDouble) ? "with" : "without"}-range-picking`);
+        containerClasses.push(`calendar_${(isDouble) ? "double" : "single"}`);
+        inputContainerClasses.push(`${isDouble ? "calendar__input-container_first" : ""}`);
 
 
     div(class=["calendar"].concat(containerClasses))

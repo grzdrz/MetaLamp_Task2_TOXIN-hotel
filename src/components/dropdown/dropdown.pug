@@ -13,7 +13,7 @@ mixin dropdown(options)
             dropdownList,
         } = options;
 
-    - const containerClasses = [`dropdown__${withTotalValue ? "with" : "without"}-total-value`];
+        const containerClasses = [`dropdown__${withTotalValue ? "with" : "without"}-total-value`];
 
     div(class=["dropdown"].concat(containerClasses))
         p(class=["dropdown__title"])

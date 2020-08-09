@@ -2,7 +2,7 @@ mixin menu-bar(options)
     - const { listOfLinks } = options;
 
     ul(class=["menu-bar"])
-        - for(let i = 0; i < listOfLinks.length; i++) {
+        - for(let i = 0; i < listOfLinks.length; i += 1)
             li(class=["menu-bar__item"])
-                a(class=["menu-bar__item-ref"] href=listOfLinks[i].url)= listOfLinks[i].text  
-        - }
+                a(class=["menu-bar__item-ref"] 
+                    href=listOfLinks[i].url target="_blank" rel="noopener noreferrer")= listOfLinks[i].text  

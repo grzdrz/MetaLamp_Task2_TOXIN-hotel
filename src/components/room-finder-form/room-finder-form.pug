@@ -3,18 +3,17 @@ include ../dropdown/dropdown.pug
 include ../button/button.pug
 
 mixin room-finder-form(options)
+    - const { titleText } = options;
 
     form(class=["room-finder-form"])
-        - if(options.titleText)
-            p(class=["room-finder-form__title"])= options.titleText
-
+        - if(titleText)
+            p(class=["room-finder-form__title"])= titleText
         div(class=["room-finder-form__calendar"])
             +calendar({
                 isDouble: true,
                 firstTitle: "прибытие",
                 secondTitle: "выезд",
             })
-
         div(class=["room-finder-form__dropdown"])
             +dropdown({
                 title: "гости",
@@ -30,7 +29,6 @@ mixin room-finder-form(options)
                 ],
                 withTotalValue: true,
             })
-
         div(class=["room-finder-form__submit-button"])
             +button({
                 text: 'подобрать номер',

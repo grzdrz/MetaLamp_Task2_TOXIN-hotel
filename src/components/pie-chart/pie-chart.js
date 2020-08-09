@@ -2,13 +2,15 @@ import ApexCharts from "apexcharts";
 
 class PieChart {
     constructor(outerContainerElement) {
-        this.containerElement = outerContainerElement.querySelector(".pie-chart .pie-chart__pie");
+        this.outerContainerElement = outerContainerElement;
         this.chart = {};
 
         this.initialize();
     }
 
     initialize() {
+        this.containerElement = this.outerContainerElement.querySelector(".pie-chart .pie-chart__pie");
+
         const options = {
             chart: {
                 offsetX: 0,

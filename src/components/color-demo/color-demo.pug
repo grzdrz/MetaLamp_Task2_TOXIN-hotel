@@ -1,8 +1,9 @@
 mixin color-demo(options)
-    - const { backgroundColor, colorName, colorCode } = options;
-    - const squareClasses = [];
+    - 
+        const { backgroundColor, colorName, colorCode } = options;
+        const squareClasses = [];
 
-    - if(backgroundColor) squareClasses.push(`color-demo__color_${backgroundColor}`);
+        if(backgroundColor) squareClasses.push(`color-demo__color_${backgroundColor}`);
 
     div(class=["color-demo"])
         div(class=["color-demo__colored-square"].concat(squareClasses))

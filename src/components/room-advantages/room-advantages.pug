@@ -2,12 +2,15 @@ mixin room-advantages(options)
     - const {details, hasLastBorderBottom} = options;
 
     ul(class=["room-advantages"])
-        - for(let i = 0; i < details.length; i++)
+        - for(let i = 0; i < details.length; i += 1)
             li(class=["room-advantages__detail"])
                 p(class=["room-advantages__icon"])= details[i].icon
                 p(class=["room-advantages__text"])
                     span(class=["room-advantages__title-text"])= details[i].titleText
                     span(class=["room-advantages__main-text"])= details[i].mainText
-            - if((i === details.length - 1 && hasLastBorderBottom) || i < details.length - 1)
-                div(class=["room-advantages__bottom-border"])
+            - const isLastItem = i === details.length - 1;
+            - const isNotLastItem = i < details.length - 1;
+            - const hasBottomBorder = (isLastItem && hasLastBorderBottom) || isNotLastItem
+            - if(hasBottomBorder)
+                div(class=["room-advantages__bottom-border"]) 
 

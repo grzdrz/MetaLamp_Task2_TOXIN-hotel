@@ -7,7 +7,6 @@ mixin sign-in-form(options)
     form(class=["sign-in-form"])
         - if(titleText)
             p(class=["sign-in-form__title"])= titleText
-
         div(class=["sign-in-form__fields"])
             +form-input({              
                 placeholder: "Email",
@@ -23,7 +22,6 @@ mixin sign-in-form(options)
                 value: "",
                 hasSubmitButton: false
             })
-
         div(class=["sign-in-form__submit-button"])
             +button({
                 text: 'войти',
@@ -31,7 +29,6 @@ mixin sign-in-form(options)
                 buttonType: "submit",
                 hasArrow: true,
             })
-
         div(class=["sign-in-form__account-create-field"])
             p(class=["sign-in-form__question-text"]) Нет аккаунта на Toxin?
             div(class=["sign-in-form__create-button"])

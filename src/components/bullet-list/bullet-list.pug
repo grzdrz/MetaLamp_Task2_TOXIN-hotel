@@ -1,10 +1,11 @@
 mixin bullet-list(options)
-    - const {inRoomDetailsPage, title, list} = options;
-    - const titleClasses = [];
+    - 
+        const { inRoomDetailsPage, title, list } = options;
+        const titleClasses = [];
 
-    - if(inRoomDetailsPage){
-        - titleClasses.push("bullet-list__title_with-font-family_quicksand");
-    - }
+        if(inRoomDetailsPage){
+            titleClasses.push("bullet-list__title_with-font-family_quicksand");
+        }
 
     div(class=["bullet-list"])
         - if(title)

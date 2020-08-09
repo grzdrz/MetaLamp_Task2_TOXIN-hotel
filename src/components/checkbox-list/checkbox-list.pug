@@ -8,13 +8,13 @@ mixin checkbox-list(options)
             hasAdditionalText
         } = options;
 
-    - const containerClasses = [];
-    - const titleClasses = [];
-    - const itemTextClasses = [];
+        const containerClasses = [];
+        const titleClasses = [];
+        const itemTextClasses = [];
 
-    - containerClasses.push(`${isExpandable ? "checkbox-list_expandable" : ""}`);
-    - titleClasses.push(`checkbox-list__title_${isExpandable ? "expandable" : "width-margin-bottom_16px"}`);
-    - itemTextClasses.push(`checkbox-list__item-text_${hasAdditionalText ? "main" : "single"}`);
+        containerClasses.push(`${isExpandable ? "checkbox-list_expandable" : ""}`);
+        titleClasses.push(`checkbox-list__title_${isExpandable ? "expandable" : "width-margin-bottom_16px"}`);
+        itemTextClasses.push(`checkbox-list__item-text_${hasAdditionalText ? "main" : "single"}`);
 
     div(class=["checkbox-list"].concat(containerClasses))
         p(class=["checkbox-list__title"].concat(titleClasses))
@@ -27,7 +27,8 @@ mixin checkbox-list(options)
                     label(class=["checkbox-list__label"])
                         input(class=["checkbox-list__input"] type= "checkbox" checked= item.isChecked)
                         div(class=["checkbox-list__checkmark"])
-                            img(class=["checkbox-list__checkmark-image"] src="./src/components/checkbox-list/img/check-mark.svg")
+                            img(class=["checkbox-list__checkmark-image"] 
+                                src="./src/components/checkbox-list/img/check-mark.svg" alt="checkmark")
                         div(class=["checkbox-list__frame"])
                         p(class=["checkbox-list__item-text"].concat(itemTextClasses))= item.text
                     - if(hasAdditionalText)

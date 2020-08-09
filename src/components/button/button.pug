@@ -7,11 +7,12 @@ mixin button(options)
             text,
             url
         } = options;
-    - const containerClasses = (isHollow ? ["button_hollow"] : []);
+        const containerClasses = (isHollow ? ["button_hollow"] : []);
 
     div(class=["button"].concat(containerClasses))
         - if(buttonType === "a")
-            a(href=(url ? url : "https://www.errorpage.com/") class=["button__basis"])
+            a(class=["button__basis"] 
+                href=(url ? url : "https://errorpage.com") target=(url ? "_blank" : "") rel=(url ? "noopener noreferrer" : ""))
                 span(class=["button__text"])= text
                 - if(hasArrow)
                     span(class=["button__arrow"]) arrow_forward 
