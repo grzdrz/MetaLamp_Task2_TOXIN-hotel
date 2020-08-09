@@ -17,7 +17,3 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-@function scalePixelsAsPercentage($valueInPx, $viewportSizeInPx) {
-  @return (($valueInPx * 100) / $viewportSizeInPx) * 1%;
-}

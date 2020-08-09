@@ -1,9 +1,5 @@
 @import '../../../assets/constants.scss';
 
-@import '../../base.scss';
-@import '../../../assets/fonts.scss';
-@include setFonts('../../../');
-
 @import '../../../components/logo/logo.scss';
 @import '../../../components/form-input/form-input.scss';
 @import '../../../components/dropdown/dropdown.scss';

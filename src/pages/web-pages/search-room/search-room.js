@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import "material-design-icons/iconfont/material-icons.css";
+import "../../base/base";
 
 import Dropdown from "../../../components/dropdown/dropdown";
 import ExpandableCheckbox from "../../../components/checkbox-list/expandable-checkbox-list";
@@ -9,8 +9,6 @@ import Calendar from "../../../components/calendar/calendar";
 import RoomInfo from "../../../components/room-info/room-info";
 
 import "./search-room.scss";
-
-require.context("../../../", true, /\.(png|svg|jpg)$/);
 
 const dropdowns = Array.from(document.querySelectorAll(".js-search-room__dropdown"))
     .map((element) => new Dropdown(element));

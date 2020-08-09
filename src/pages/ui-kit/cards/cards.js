@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
+import "../../base/base";
+
 import "air-datepicker";
 import "air-datepicker/dist/css/datepicker.css";
 import jQuery from "jquery";
@@ -8,15 +10,11 @@ import SignUpForm from "../../../components/sign-up-form/sign-up-form";
 import RoomInfo from "../../../components/room-info/room-info";
 import PriceCalculationForm from "../../../components/price-calculation-form/price-calculation-form";
 
-import "material-design-icons/iconfont/material-icons.css";
-
 import "./cards.scss";
 
 const $ = jQuery;
 global.jQuery = $;
 global.$ = $;
-
-require.context("../../../", true, /\.(png|svg|jpg)$/);
 
 const roomFinderFormContainer = document.querySelector(".cards__room-finder-form");
 const roomFinderForm = new RoomFinderForm(roomFinderFormContainer);

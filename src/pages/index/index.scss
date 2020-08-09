@@ -1,0 +1,51 @@
+body {
+    background: rgb(226, 226, 226);
+}
+
+.ui-kit {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5%;
+
+    &__title {
+        margin-bottom: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        color: rgb(24, 24, 24);
+    }
+
+    &__refs-list {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        list-style: none;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgb(63, 63, 63);
+        margin-left: -30px;
+    }
+
+    &__ref-text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        color: rgb(63, 63, 63);
+    }
+
+    &__ref-text:hover {
+        color: rgb(230, 80, 80);
+    }
+}

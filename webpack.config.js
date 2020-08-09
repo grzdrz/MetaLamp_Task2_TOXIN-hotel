@@ -39,6 +39,14 @@ const entries = pages.reduce((obj, curEntry) => {
 }, {});
 entries.favicon = "./src/favicons/favicons.js";
 
+pluginsOptions.push(new HtmlWebpackPlugin({
+    filename: "./index.html",
+    template: "./src/pages/index/index.pug",
+    inject: true,
+    chunks: ["index"],
+}));
+entries.index = "./src/pages/index/index.js";
+
 pluginsOptions.push(new MiniCssExtractPlugin({
     filename: "[name].css",
 }));
