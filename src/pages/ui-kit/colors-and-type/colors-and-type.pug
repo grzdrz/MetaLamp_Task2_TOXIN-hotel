@@ -4,40 +4,34 @@ include ../../../components/logo/logo.pug
 include ../../../components/font-demo/font-demo.pug
 include ../../../components/color-demo/color-demo.pug
 
-
 block content
     div(class=["colors-and-type"])
         div(class=["colors-and-type__color-demos"])
-            - for(let i = 100; i >= 25; i-=25)
+            - for(let i = 100; i >= 25; i -= 25)
                 div(class=["colors-and-type__color-demo"])
                     +color-demo({
                         colorName: `Dark Shade ${i}%`,
                         colorCode: "#1F2041",
                         backgroundColor: `dark-shade-${i}`,
                     })
-
             div(class=["colors-and-type__color-demo"])
                 +color-demo({
                     colorName: "Dark Shade 5%",
                     colorCode: "#1F2041",
                     backgroundColor: "dark-shade-5",
                 })
-
             div(class=["colors-and-type__color-demo"])
                 +color-demo({
                     colorName: "Purple",
                     colorCode: "#BC9CFF",
                     backgroundColor: "purple",
                 })
-
             div(class=["colors-and-type__color-demo"])
                 +color-demo({
                     colorName: "Green",
                     colorCode: "#6FCF97",
                     backgroundColor: "green",
                 })
-
-
         div(class=["colors-and-type__font-demos"])
             div(class=["colors-and-type__font-demo"])
                 +font-demo({
@@ -57,7 +51,6 @@ block content
                         lineHeight: "30px",
                     }
                 })  
-
             div(class=["colors-and-type__font-demo"])
                 +font-demo({
                     tagOptions: {
@@ -76,7 +69,6 @@ block content
                         lineHeight: "24px",
                     }
                 })
-
             div(class=["colors-and-type__font-demo"])
                 +font-demo({
                     tagOptions: {
@@ -96,7 +88,6 @@ block content
                         inUppercase: true,
                     }
                 })
-
             div(class=["colors-and-type__font-demo"])
                 +font-demo({
                     tagOptions: {

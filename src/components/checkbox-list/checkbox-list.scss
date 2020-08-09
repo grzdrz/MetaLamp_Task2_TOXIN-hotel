@@ -4,7 +4,6 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
-
     $checkboxMarginRight: 10px;
     $checkboxSize: 20px;
 
@@ -35,41 +34,35 @@
     }
 
     &__dropdown-arrow {
+        width: 42px;
+        height: 42px;
         display: flex;
         justify-content: center;
         align-items: center;
-
-        width: 42px;
-        height: 42px;
         outline: none;
-
-        font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 24px;
-
         background: $color-dark-shade-75;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
     }
 
     &__list {
         list-style: none;
         display: flex;
         flex-direction: column;
-        /* & p {
-            cursor: context-menu;
-        } */
     }
 
     &__item {
         display: flex;
         flex-direction: column;
-
         margin-bottom: 10px;
+
         &:last-child {
             margin-bottom: 0px;
         }
@@ -90,6 +83,7 @@
         &:not(:checked) + .checkbox-list__checkmark {
             opacity: 0;
         }
+
         &:not(:checked) ~ .checkbox-list__frame {
             border: 1px solid $color-gray-blue;
         }
@@ -97,52 +91,48 @@
         &:checked + .checkbox-list__checkmark {
             opacity: 1;
         }
+
         &:checked ~ .checkbox-list__frame {
             border: 1px solid $color-purple;
         }
     }
 
     &__checkmark {
+        width: $checkboxSize;
+        height: $checkboxSize;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-
         padding-bottom: 2px;
-
-        width: $checkboxSize;
-        height: $checkboxSize;
     }
 
     &__checkmark-image {
-        display: flex;
         width: 10px;
         height: 10px;
+        display: flex;
     }
 
     &__frame {
         cursor: pointer;
-
-        display: flex;
         width: $checkboxSize;
         height: $checkboxSize;
+        display: flex;
         border-radius: 4px;
         position: absolute;
     }
 
     &__item-text {
         cursor: context-menu;
-
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 20px;
         color: $color-dark-shade-50;
-        width: max-content;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
 
         &_main {
             font-weight: bold;
@@ -156,11 +146,9 @@
 
     &__item-additional-text {
         cursor: context-menu;
-
+        width: 230px;
         margin-left: $checkboxSize + $checkboxMarginRight;
         margin-top: 5px;
-        width: 230px;
-
         font-style: normal;
         font-weight: normal;
         font-size: 12px;

@@ -1,38 +1,32 @@
-@import "../../assets/constants.scss";
+@import '../../assets/constants.scss';
 
 .toggle {
+    cursor: pointer;
     display: flex;
     position: relative;
     width: max-content;
 
-    cursor: pointer;
-
     &__button-image {
-        display: flex;
-        flex-direction: row;
-
-        align-items: center;
-        position: relative;
         z-index: 1;
         width: 40px;
         height: 20px;
-        border-radius: 10px;
-
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
         margin-right: 10px;
-
         padding: 0px 3px;
-
+        border-radius: 10px;
         transition: padding-left 0.3s;
     }
 
     &__input {
         cursor: pointer;
-
-        position: absolute;
+        z-index: 2;
         width: 40px;
         height: 20px;
+        position: absolute;
         opacity: 0;
-        z-index: 2;
 
         &:checked + div {
             border: 1px solid $color-purple;
@@ -43,14 +37,14 @@
             padding-left: 3px;
         }
         &:checked + div::after {
-            content: "";
+            content: '';
             width: 12px;
             height: 12px;
             background: $gradient-purple-to-blue;
             border-radius: 50%;
         }
         &:not(:checked) + div::after {
-            content: "";
+            content: '';
             width: 12px;
             height: 12px;
             background: $color-dark-shade-25;
@@ -59,13 +53,13 @@
     }
 
     &__text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 18px;
         color: $color-dark-shade-50;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
     }
 }

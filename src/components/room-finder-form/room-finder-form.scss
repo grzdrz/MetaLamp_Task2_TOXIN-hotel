@@ -5,13 +5,10 @@
 @import '../button/button.scss';
 
 .room-finder-form {
+    width: 100%;
     display: flex;
     flex-direction: column;
-
-    width: 100%;
-
     padding: 40px 27px 30px 30px;
-
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
@@ -19,10 +16,9 @@
     border-radius: 4px;
 
     &__title {
-        display: flex;
         width: 100%;
+        display: flex;
         margin-bottom: 20px;
-
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
@@ -32,13 +28,13 @@
     }
 
     &__calendar {
-        margin-bottom: 20px;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     &__dropdown {
-        margin-bottom: 31px;
         width: 100%;
+        margin-bottom: 31px;
     }
 
     &__submit-button {

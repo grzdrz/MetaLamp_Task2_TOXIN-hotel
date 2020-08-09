@@ -6,15 +6,12 @@
 
 .header {
     width: 100%;
-
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: min-content auto min-content;
     align-items: center;
     justify-items: start;
-
     padding: 15px scalePixelsAsPercentage(140, 1440);
-
     background: white;
     box-shadow: 0px 10px 20px $color-dark-shade-5;
 
@@ -67,7 +64,6 @@
 
     &__list {
         list-style: none;
-
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -80,7 +76,6 @@
     &__item {
         display: flex;
         align-items: center;
-
         margin: 0px 10px;
         @media screen and (max-width: 768px) {
             margin: 10px 0px;
@@ -108,7 +103,6 @@
     &__item-ref {
         text-decoration: none;
         color: $color-dark-shade-50;
-
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -119,24 +113,20 @@
 
     &__dropdown-arrow {
         cursor: pointer;
-
+        display: flex;
+        align-items: center;
+        text-align: center;
         font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
         font-size: 24px;
         line-height: 20px;
-
-        display: flex;
-        align-items: center;
-        text-align: center;
-
         color: $color-dark-shade-50;
     }
 
     &__user-full-name {
         display: flex;
         align-items: center;
-
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -188,7 +178,6 @@
     &__sign-in-button {
         width: 87px;
         height: 34px;
-
         margin-right: 20px;
 
         @media screen and (max-width: 550px) {

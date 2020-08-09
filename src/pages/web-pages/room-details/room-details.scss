@@ -9,10 +9,9 @@
 @import '../../../components/pie-chart/pie-chart.scss';
 
 .room-details {
+    width: 100%;
     display: flex;
     flex-direction: column;
-
-    width: 100%;
 
     &__room-photos {
         display: flex;
@@ -21,9 +20,9 @@
     }
 
     &__big-photo {
-        display: flex;
         width: scalePixelsAsPercentage(981, 1440);
         height: 100%;
+        display: flex;
         background-image: url(img/background1.jpg);
         background-position: bottom;
         background-repeat: no-repeat;
@@ -31,23 +30,25 @@
     }
 
     &__small-photos {
-        display: flex;
-        flex-direction: column;
         width: scalePixelsAsPercentage((1440 - 981), 1440);
         height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     &__small-photo {
-        display: flex;
         height: 50%;
         width: 100%;
+        display: flex;
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     &__small-photo-1 {
         background-image: url(img/background2.jpg);
     }
+
     &__small-photo-2 {
         background-image: url(img/background3.jpg);
     }
@@ -57,9 +58,8 @@
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 1px;
-        box-shadow: 0px 1px 0px $color-dark-shade-10;
-
         padding: scalePixelsAsPercentage(70, 1440) scalePixelsAsPercentage(140, 1440);
+        box-shadow: 0px 1px 0px $color-dark-shade-10;
 
         @media screen and (max-width: 1340px) {
             flex-direction: column;
@@ -85,10 +85,10 @@
 
     &__price-calculation-form {
         width: 380px;
+
         @media screen and (max-width: 1340px) {
             display: flex;
             justify-content: center;
-
             margin-top: 20px;
         }
         @media screen and (max-width: 380px) {
@@ -98,6 +98,7 @@
 
     &__pie-chart {
         margin-left: 15px;
+
         @media screen and (max-width: 800px) {
             margin-top: 30px;
         }
@@ -111,7 +112,6 @@
 
     &__room-advantages-title {
         margin-bottom: 20px;
-
         font-family: Quicksand, OpenSans;
         font-style: normal;
         font-weight: bold;
@@ -121,16 +121,16 @@
     }
 
     &__room-reviews {
-        margin-top: 33px;
-        margin-bottom: 32px;
         grid-column-start: 1;
         grid-column-end: 3;
+        margin-top: 33px;
+        margin-bottom: 32px;
 
         @media screen and (max-width: 800px) {
-            padding-left: 20px;
-            padding-right: 20px;
             grid-column-start: 1;
             grid-column-end: 1;
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
 
@@ -148,29 +148,28 @@
 
     &__cancel-rule {
         margin-left: 30px;
+
         @media screen and (max-width: 800px) and (min-width: 500px) {
             align-self: flex-end;
         }
     }
 
     &__cancel-rule-title {
+        margin-bottom: 18px;
         font-family: Quicksand, OpenSans;
         font-style: normal;
         font-weight: bold;
         font-size: 19px;
         line-height: 24px;
-        color: #1f2041;
-
-        margin-bottom: 18px;
+        color: $color-dark-shade-100;
     }
 
     &__cancel-rule-main-text {
+        max-width: 341px;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 24px;
         color: $color-dark-shade-75;
-
-        max-width: 341px;
     }
 }

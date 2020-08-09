@@ -1,4 +1,4 @@
-@import "../../assets/constants.scss";
+@import '../../assets/constants.scss';
 
 .menu-bar {
     list-style: none;
@@ -8,7 +8,6 @@
 
     &__item {
         margin-bottom: 21px;
-
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -40,7 +39,6 @@
         font-size: 14px;
         line-height: 17px;
         color: $color-dark-shade-50;
-
         white-space: nowrap;
     }
 }

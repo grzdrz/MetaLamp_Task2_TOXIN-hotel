@@ -15,7 +15,6 @@ block content
                     isDateRange: true, 
                     firstTitle: "даты пребывания в отеле",
                 })
-
             div(class=["search-room__dropdown-1 js-search-room__dropdown"])
                 +dropdown({
                     title: "гости",
@@ -30,13 +29,11 @@ block content
                     ],
                     withTotalValue: true,
                 })
-
             div(class=["search-room__range-slider js-search-room__range-slider"])
                 +range-slider({
                     title: "диапазон цены",
                     description: "Стоимость за сутки пребывания в номере",
                 })
-
             div(class=["search-room__checkbox-list-1"])
                 +checkbox-list({
                     title: "Checkbox Buttons",
@@ -48,7 +45,6 @@ block content
                         {isChecked: true, text: "Можно пригласить гостей (до 10 человек)"},
                     ],
                 }) 
-
             div(class=["search-room__checkbox-list-2"])
                 +checkbox-list({
                     title: "доступность",
@@ -59,7 +55,6 @@ block content
                         {isChecked: true, text: "Помощник для инвалидов", additionalText: "На 1 этаже вас встретит специалист и проводит до номера."},
                     ],
                 })
-
             div(class=["search-room__dropdown-2 js-search-room__dropdown"])
                 +dropdown({
                     title: "удобства номера",
@@ -76,7 +71,6 @@ block content
                     ],
                     withTotalValue: false,
                 })
-
             div(class=["search-room__checkbox-list-3 js-search-room__checkbox_expandable"])
                 +checkbox-list({
                     title: "дополнительные удобства",
@@ -94,13 +88,11 @@ block content
                         {isChecked: false, text: "Шампунь"}
                     ],
                 })
-
         div(class=["search-room__room-list"])
             p(class=["search-room__list-title"]) Номера, которые мы для вас подобрали
             div(class=["search-room__list"])
                 - let roomsInfo = require("./data.json").roomsInfo;
-                - for(let i = 0; i < 12; i++){
+                - for(let i = 0; i < 12; i += 1)
                     div(class=["search-room__room-info", `search-room__room-info_${i}`])
                         +room-info(roomsInfo[i])
-                - }
             div(class=["search-room__pagination"])

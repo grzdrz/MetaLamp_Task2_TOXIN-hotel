@@ -1,4 +1,4 @@
-@import "../../assets/constants.scss";
+@import '../../assets/constants.scss';
 
 .dropdown {
     width: 100%;
@@ -12,7 +12,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
         margin-bottom: 5px;
     }
 
@@ -39,7 +38,7 @@
         display: grid;
         grid-template-rows: 42px;
         grid-template-columns: auto min-content;
-
+        position: relative;
         border: 1px solid $color-dark-shade-25;
         box-sizing: border-box;
         border-radius: 4px;
@@ -48,19 +47,14 @@
         &:focus {
             border: 1px solid $color-dark-shade-50;
         }
-
-        position: relative;
     }
 
     &__input {
         cursor: pointer;
-
-        padding: 0px 15px 0px 15px;
         height: 40px;
+        padding: 0px 15px 0px 15px;
         outline: none;
-
         background: transparent;
-
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -98,21 +92,19 @@
     }
 
     &__droped-list {
+        width: 100%;
         list-style: none;
-
         flex-direction: column;
         grid-column-start: 1;
         grid-column-end: 3;
-
         position: absolute;
-        width: 100%;
         top: 44px;
+        margin: -1px;
         background: white;
         border: 1px solid $color-dark-shade-50;
         box-shadow: 0px 10px 20px $color-dark-shade-5;
         border-top: 0px;
         box-sizing: content-box;
-        margin: -1px;
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
         z-index: 9999;
@@ -125,27 +117,23 @@
 
     &__dropdown-arrow {
         cursor: pointer;
-
         width: 42px;
         height: 42px;
-        outline: none;
-
         display: flex;
         align-items: center;
         justify-content: center;
-
-        font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 24px;
+        outline: none;
         border: 0px solid transparent;
-
         background: $color-dark-shade-75;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
     }
 
     &__list-item {
@@ -153,7 +141,6 @@
         grid-template-columns: auto 93px;
         align-items: center;
         padding: 0px 5px 0px 15px;
-
         margin-bottom: 7px;
         &:first-of-type {
             margin-top: 5px;
@@ -163,7 +150,6 @@
     &__item-name {
         overflow: auto;
         word-wrap: break-word;
-
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -182,14 +168,12 @@
     &__item-minus,
     &__item-plus {
         cursor: pointer;
-
-        outline: none;
         width: 30px;
         height: 30px;
         border-radius: 31px;
         border: 1px solid $color-dark-shade-50;
         background: transparent;
-
+        outline: none;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -205,7 +189,6 @@
 
     &__item-value {
         margin: 0px 5px;
-
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -222,20 +205,17 @@
 
     &__apply-button {
         cursor: pointer;
-
+        margin-left: auto;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
         color: $color-purple;
-
-        margin-left: auto;
     }
 
     &__clear-button {
         cursor: pointer;
-
         font-style: normal;
         font-weight: bold;
         font-size: 12px;

@@ -1,4 +1,4 @@
-@import "../../assets/constants.scss";
+@import '../../assets/constants.scss';
 
 .form-input {
     width: 100%;
@@ -12,7 +12,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
         margin-bottom: 5px;
     }
 
@@ -33,7 +32,6 @@
         text-align: right;
         text-transform: uppercase;
         color: $color-dark-shade-50;
-
         letter-spacing: -0.3px;
     }
 
@@ -41,7 +39,7 @@
         display: grid;
         grid-template-rows: 42px;
         grid-template-columns: auto min-content;
-
+        position: relative;
         border: 1px solid $color-dark-shade-25;
         box-sizing: border-box;
         border-radius: 4px;
@@ -50,17 +48,13 @@
         &:focus {
             border: 1px solid $color-dark-shade-50;
         }
-
-        position: relative;
     }
 
     &__input {
         padding: 0px 15px;
         height: 42px;
         outline: none;
-
         background: transparent;
-
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -100,24 +94,18 @@
 
     &__submitter {
         cursor: pointer;
-
         min-width: 42px;
         height: 42px;
-        // outline: none;
-
-        font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 24px;
         border: 0px solid transparent;
-
-        // background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-        // background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
         background: $gradient-purple-to-blue;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
     }
 }

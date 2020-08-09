@@ -6,89 +6,78 @@
     width: 270px;
     display: flex;
     flex-direction: column;
-
+    position: relative;
     background: white;
     box-shadow: 0px 10px 20px $color-dark-shade-5;
     border-radius: 4px;
-
-    position: relative;
+    $radioButtonSize: 8px;
 
     &__ref {
+        z-index: 3;
         width: 270px;
         height: 107px;
-        opacity: 0;
         position: absolute;
         bottom: 0px;
-        z-index: 3;
+        opacity: 0;
     }
 
     &__photos {
-        position: relative;
-        display: flex;
-        align-items: center;
+        z-index: 2;
         width: 270px;
         height: 151px;
-
-        z-index: 2;
+        display: flex;
+        align-items: center;
+        position: relative;
     }
 
     &__photo {
+        z-index: 1;
         width: 100%;
         position: absolute;
-        z-index: 1;
         opacity: 0;
-
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
     }
 
     &__arrows {
         z-index: 3;
-
-        display: flex;
-        justify-content: space-between;
-
         width: 270px;
         height: 151px;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__arrow-back {
         cursor: pointer;
+        min-width: 44px;
+        height: 151px;
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 44px;
-        height: 151px;
-
         outline: transparent;
-
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
         border-top-left-radius: 4px;
     }
 
     &__arrow-back-icon {
         transform: rotate(90deg);
-
         font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
         font-size: 24px;
         line-height: 24px;
-
         text-align: center;
         color: white;
     }
 
     &__arrow-forward {
         cursor: pointer;
+        min-width: 44px;
+        height: 151px;
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 44px;
-        height: 151px;
-
         outline: transparent;
-
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
         border-top-left-radius: 4px;
         transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -96,29 +85,23 @@
 
     &__arrow-forward-icon {
         transform: rotate(90deg);
-
         font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
         font-size: 24px;
         line-height: 24px;
-
         text-align: center;
         color: white;
     }
 
-    $radioButtonSize: 8px;
     &__radio-button {
         z-index: 3;
-
         width: $radioButtonSize;
         height: $radioButtonSize;
-
         position: absolute;
-        opacity: 0;
-
         bottom: 15px;
-
+        opacity: 0;
+        
         &:checked + div {
             background: white;
         }
@@ -139,22 +122,18 @@
 
     &__radio-button-image {
         z-index: 2;
-
         width: 8px;
         height: 8px;
-
+        position: absolute;
+        bottom: 15px;
         border-radius: 50%;
         border: 1px solid white;
         box-shadow: 0px 5px 5px $color-dark-shade-30;
-
-        position: absolute;
-        bottom: 15px;
     }
 
     &__text-info {
-        padding: 15px 16px 19px 20px;
-
         z-index: 1;
+        padding: 15px 16px 19px 20px;
     }
 
     &__title {
@@ -167,7 +146,6 @@
     &__number-symbol {
         align-self: end;
         margin-right: 4px;
-
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
@@ -179,7 +157,6 @@
     &__room-number {
         align-self: end;
         margin-right: 5px;
-
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
@@ -190,7 +167,6 @@
 
     &__room-status {
         align-self: end;
-
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -203,7 +179,6 @@
         justify-self: end;
         align-self: end;
         margin-right: 4px;
-
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -214,22 +189,20 @@
     &__period-of-time {
         justify-self: end;
         align-self: end;
-        white-space: nowrap;
         margin-right: 1px;
-
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
         line-height: 15px;
         color: $color-dark-shade-50;
+        white-space: nowrap;
     }
 
     &__room-rate {
         display: flex;
         justify-content: space-between;
-
-        border-top: 1px solid $color-dark-shade-10;
         padding-top: 8px;
+        border-top: 1px solid $color-dark-shade-10;
     }
 
     &__reviews-count {
@@ -240,14 +213,13 @@
     }
 
     &__reviews-count-value {
+        margin-right: 3px;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 18px;
         text-align: right;
         color: $color-dark-shade-50;
-
-        margin-right: 3px;
     }
 
     &__reviews-count-text {

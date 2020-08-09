@@ -2,7 +2,6 @@
 
 .like-button {
     width: max-content;
-
     $buttonHeight: 20px;
     $buttonWidth: 40px;
     $buttonTexSidetPaddings: 16px;
@@ -10,60 +9,49 @@
     $borderThickness: 2px;
 
     &__label {
-        z-index: 1;
-
-        padding: 0px 2px;
-
-        color: white;
-        text-decoration: none;
+        width: $buttonWidth;
+        height: $buttonHeight;
         display: flex;
         justify-content: center;
         align-items: center;
         align-items: center;
-        background: $gradient-purple-to-blue;
-        height: $buttonHeight;
-        border-radius: $borderRadius;
-
-        outline: none;
-
         position: relative;
-
-        width: $buttonWidth;
+        z-index: 1;
+        padding: 0px 2px;
+        color: white;
+        text-decoration: none;
+        background: $gradient-purple-to-blue;
+        border-radius: $borderRadius;
+        outline: none;
     }
 
     &__likes-number_on,
     &__likes-number_off {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         left: 0px;
         right: 0px;
         top: 0px;
         bottom: 0px;
-
-        font-style: normal;
-        font-weight: normal;
-        font-size: 10px;
-
-        background: white;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
         padding-left: 10px;
         margin: $borderThickness;
         border-radius: $borderRadius;
-
-        z-index: 1;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        background: white;
+        text-align: center;
     }
 
     &__input {
         cursor: pointer;
         z-index: 2;
-
-        position: absolute;
-
         width: $buttonWidth;
         height: $buttonHeight;
+        position: absolute;
         opacity: 0;
 
         &:checked + label {
@@ -80,9 +68,11 @@
                 justify-content: center;
                 align-items: center;
             }
+
             & > .like-button__likes-number_off {
                 opacity: 0;
             }
+
             & > .like-button__likes-number_on {
                 opacity: 1;
             }
@@ -103,9 +93,11 @@
                 align-items: center;
                 border: 0px solid transparent;
             }
+
             & > .like-button__likes-number_off {
                 opacity: 1;
             }
+
             & > .like-button__likes-number_on {
                 opacity: 0;
             }
@@ -113,21 +105,14 @@
     }
 
     &__like-symbol {
-        left: 0px;
         z-index: 2;
-
-        position: absolute;
-
+        width: $buttonHeight;
+        height: $buttonHeight;
         display: flex;
         justify-content: center;
         align-items: center;
-
-        width: $buttonHeight;
-        height: $buttonHeight;
-
-        display: flex;
-        align-items: center;
-        text-align: center;
+        position: absolute;
+        left: 0px;
 
         &::after {
             font-family: Material Icons;

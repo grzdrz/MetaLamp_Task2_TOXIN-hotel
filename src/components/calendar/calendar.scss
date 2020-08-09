@@ -2,14 +2,14 @@
 @import '../../assets/mixins.scss';
 
 .calendar {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  width: 100%;
 
   &__input-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
 
     &_first {
       margin-right: 20px;
@@ -20,7 +20,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     margin-bottom: 5px;
   }
 
@@ -41,21 +40,18 @@
     text-align: right;
     text-transform: uppercase;
     color: $color-dark-shade-50;
-
     letter-spacing: -0.3px;
   }
 
   &__label {
     cursor: pointer;
-
+    width: 150px;
     display: grid;
     grid-template-columns: auto 42px;
     grid-template-rows: 42px;
-
     border: 1px solid $color-dark-shade-25;
     box-sizing: border-box;
     border-radius: 4px;
-    width: 150px;
   }
 
   &__input-container_first,
@@ -69,11 +65,9 @@
 
   &__input {
     cursor: pointer;
-
-    padding: 0px 0px 0px 15px;
     height: 40px;
+    padding: 0px 0px 0px 15px;
     outline: none;
-
     background: transparent;
     font-style: normal;
     font-weight: normal;
@@ -112,7 +106,9 @@
 
   &__dropdown-arrow {
     cursor: pointer;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
@@ -121,11 +117,6 @@
     text-align: center;
     color: $color-dark-shade-50;
     background: transparent;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     outline: none;
   }
 
@@ -137,9 +128,7 @@
 
   &__apply-button {
     cursor: pointer;
-
     margin-left: auto;
-
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -150,7 +139,6 @@
 
   &__clear-button {
     cursor: pointer;
-
     font-style: normal;
     font-weight: bold;
     font-size: 12px;

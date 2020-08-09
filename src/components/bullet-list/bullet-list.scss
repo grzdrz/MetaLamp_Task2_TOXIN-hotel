@@ -6,7 +6,6 @@
 
     &__title {
         margin-bottom: 14px;
-
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -25,7 +24,6 @@
         display: flex;
         flex-direction: row;
         align-items: baseline;
-
         margin-bottom: 10px;
         &:last-of-type {
             margin-bottom: 0px;
@@ -35,22 +33,23 @@
     &__item-marker {
         width: 10px;
         height: 10px;
-        background: $color-dark-shade-25;
-        border-radius: 50%;
         margin-right: 10px;
+        border-radius: 50%;
+        background: $color-dark-shade-25;
     }
 
     &__item-text {
+        width: 240px;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 24px;
         color: $color-dark-shade-75;
-
-        width: 240px;
     }
 
     &__title_with-font-family_quicksand {
+        margin-bottom: 18px;
+        margin-left: 20px;
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
@@ -58,8 +57,5 @@
         line-height: 24px;
         color: $color-dark-shade-100;
         text-transform: none;
-
-        margin-bottom: 18px;
-        margin-left: 20px;
     }
 }

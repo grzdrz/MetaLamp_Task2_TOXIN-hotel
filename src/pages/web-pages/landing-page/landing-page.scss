@@ -5,9 +5,9 @@
 @import '../../../components/footer/footer.scss';
 
 .landing-page {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
     position: relative;
 
     @media screen and (max-width: 768px) {
@@ -17,12 +17,11 @@
     }
 
     &__form {
+        z-index: 2;
         width: 380px;
         position: absolute;
         margin-top: 4.86111%;
         margin-left: 9.62222%;
-
-        z-index: 2;
 
         @media screen and (max-width: 768px) {
             position: relative;
@@ -37,12 +36,11 @@
     }
 
     &__background {
-        display: flex;
+        z-index: 1;
         width: 100%;
         height: 830px;
-        z-index: 1;
+        display: flex;
         position: relative;
-
         background-image: url(img/background.jpg);
         background-position: bottom;
         background-repeat: no-repeat;
@@ -54,12 +52,11 @@
     }
 
     &__subtitle {
+        z-index: 2;
         width: 297px;
         position: absolute;
         bottom: scalePixelsAsPercentage(34, 1440);
         right: scalePixelsAsPercentage(134, 1440);
-
-        z-index: 2;
     }
 
     &__subtitle-text {

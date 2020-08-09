@@ -1,9 +1,9 @@
 @import '../../assets/constants.scss';
 
 .pie-chart {
+    width: max-content;
     display: flex;
     flex-direction: column;
-    width: max-content;
 
     @media screen and(max-width: 400px) {
         align-items: center;
@@ -11,20 +11,18 @@
 
     &__title {
         margin-bottom: 18px;
-
+        margin-left: 15px;
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
         font-size: 19px;
         line-height: 24px;
         color: $color-dark-shade-100;
-
-        margin-left: 15px;
     }
 
     &__content {
-        display: flex;
         width: max-content;
+        display: flex;
         position: relative;
 
         @media screen and(max-width: 400px) {
@@ -38,11 +36,11 @@
     }
 
     &__inner-text {
-        position: absolute;
         display: inline-flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: absolute;
         margin-left: 46px;
         margin-top: 37px;
 
@@ -53,14 +51,14 @@
     }
 
     &__inner-text-number {
+        display: flex;
+        align-items: center;
+        text-align: center;
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
         line-height: 30px;
-        display: flex;
-        align-items: center;
-        text-align: center;
         color: $color-purple;
     }
 
@@ -96,9 +94,9 @@
     &__legend-item-marker {
         min-width: 10px;
         height: 10px;
+        position: absolute;
         border-radius: 50%;
         background: black;
-        position: absolute;
 
         &_1 {
             background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
@@ -115,11 +113,11 @@
     }
 
     &__legend-item-text {
+        margin-left: 15px;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 24px;
         color: $color-dark-shade-75;
-        margin-left: 15px;
     }
 }

@@ -28,15 +28,15 @@
 
 .form-elements {
     min-width: 100%;
-
-    margin-top: 65px;
     display: grid;
     grid-template-columns: min-content min-content min-content;
     grid-column-gap: 127px;
+    margin-top: 65px;
     padding: 0px 140px 150px;
 
     &__column {
         justify-self: center;
+
         &-1 {
             display: flex;
             flex-direction: column;
@@ -65,7 +65,6 @@
         display: flex;
         grid-column-start: 1;
         grid-column-end: 4;
-
         margin-top: 80px;
         margin-bottom: 157px;
     }
@@ -94,18 +93,18 @@
     &__star-rating-title,
     &__like-button-title,
     &__toggle-title {
-        @include title();
         margin-bottom: 16px;
+        @include title();
     }
 
     &__radio-title {
-        @include title();
         margin-bottom: 14px;
+        @include title();
     }
 
     &__buttons-title {
-        @include title();
         margin-bottom: 16px;
+        @include title();
     }
 
     &__star-rating-title,
@@ -162,10 +161,6 @@
         margin-right: 72px;
     }
 
-    /* &__checkbox-1,
-    &__checkbox-4,
-    &__room-advantages {
-    } */
     &__checkbox-4 {
         margin-right: 133px;
         margin-top: 15px;
@@ -275,7 +270,6 @@
     &__guest-room-reviews {
         grid-column-start: 2;
         grid-column-end: 4;
-
         margin-top: 10px;
     }
 }

@@ -3,15 +3,16 @@
 .pagination {
     display: flex;
     flex-direction: column;
+    $buttonSize: 40px;
 
     &__title {
+        margin-bottom: 16px;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
         color: $color-dark-shade-100;
-        margin-bottom: 16px;
     }
 
     &__list {
@@ -22,7 +23,6 @@
         background: transparent;
     }
 
-    $buttonSize: 40px;
     &__left-arrow,
     &__right-arrow,
     &__link {
@@ -51,17 +51,15 @@
     &__right-arrow-text {
         width: inherit;
         height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: transparent;
-
         font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
         font-size: 24px;
         line-height: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         color: white;
     }
 
@@ -70,15 +68,13 @@
     }
 
     &__link-text {
+        width: inherit;
+        height: inherit;
         display: inline-flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-
-        width: inherit;
-        height: inherit;
         border-radius: 50%;
-
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -94,12 +90,10 @@
     }
 
     &__bottom-text {
+        width: 100%;
         display: inline-flex;
         justify-content: center;
-
         margin-top: 7px;
-        width: 100%;
-
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
