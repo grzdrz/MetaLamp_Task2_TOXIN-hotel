@@ -48,10 +48,8 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
-  box-sizing: border-box; }
-
-* {
-  font-family: Montserrat, monospace; }
+  box-sizing: border-box;
+  font-family: Montserrat, Arial, monospace; }
 
 html,
 body {
@@ -684,9 +682,9 @@ body {
 
 @charset "UTF-8";
 .colored-logo {
+  height: 40px;
   display: flex;
   align-items: center;
-  height: 40px;
   justify-self: end; }
   .colored-logo__logo-symbol {
     margin-right: 12.5px; }
@@ -702,18 +700,18 @@ body {
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     left: 0px;
     right: 0px;
     top: 0px;
     bottom: 0px;
     margin: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
     background: transparent;
+    text-decoration: none;
     border-radius: 22px;
     outline: none; }
   .button > button {
@@ -730,20 +728,20 @@ body {
     text-transform: uppercase; }
   .button__arrow {
     cursor: pointer;
+    width: 44px;
+    position: absolute;
+    right: 0px;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-    text-align: center;
-    position: absolute;
-    right: 0px;
-    width: 44px; }
+    text-align: center; }
   .button__submit {
     cursor: pointer;
-    position: absolute;
     width: inherit;
     height: inherit;
+    position: absolute;
     opacity: 0;
     z-index: 2; }
   .button:hover {
@@ -844,14 +842,14 @@ body {
     letter-spacing: 0.005em; }
   .header__dropdown-arrow {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: rgba(31, 32, 65, 0.5); }
   .header__user-full-name {
     display: flex;
@@ -909,36 +907,34 @@ body {
     height: 34px; }
 
 .room-advantages {
+  width: max-content;
   list-style: none;
   display: flex;
-  flex-direction: column;
-  width: max-content; }
+  flex-direction: column; }
   .room-advantages__bottom-border {
     width: 280px;
     height: 1px;
-    background: rgba(31, 32, 65, 0.1);
     margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    background: rgba(31, 32, 65, 0.1); }
     .room-advantages__bottom-border:last-child {
       margin-bottom: 0px; }
   .room-advantages__detail {
     display: flex;
     flex-direction: row; }
   .room-advantages__icon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
-    line-height: 41px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* -moz-background-clip: text;
-        background-clip: text; */
-    margin-right: 10px; }
+    line-height: 41px; }
   .room-advantages__text {
     display: inline-flex;
     flex-direction: column; }
@@ -980,76 +976,75 @@ body {
   .bullet-list__item-marker {
     width: 10px;
     height: 10px;
-    background: rgba(31, 32, 65, 0.25);
+    margin-right: 10px;
     border-radius: 50%;
-    margin-right: 10px; }
+    background: rgba(31, 32, 65, 0.25); }
   .bullet-list__item-text {
+    width: 240px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
-    width: 240px; }
+    color: rgba(31, 32, 65, 0.75); }
   .bullet-list__title_with-font-family_quicksand {
-    font-family: Quicksand, OpenSans;
+    margin-bottom: 18px;
+    margin-left: 20px;
+    font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
     line-height: 24px;
     color: #1f2041;
-    text-transform: none;
-    margin-bottom: 18px;
-    margin-left: 20px; }
+    text-transform: none; }
 
 .like-button {
   width: max-content; }
   .like-button__label {
-    z-index: 1;
-    padding: 0px 2px;
-    color: white;
-    text-decoration: none;
+    width: 40px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: center;
-    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-    height: 20px;
-    border-radius: 22px;
-    outline: none;
     position: relative;
-    width: 40px; }
+    z-index: 1;
+    padding: 0px 2px;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+    border-radius: 22px;
+    outline: none; }
   .like-button__likes-number_on, .like-button__likes-number_off {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     left: 0px;
     right: 0px;
     top: 0px;
     bottom: 0px;
-    font-family: Montserrat;
+    padding-left: 10px;
+    margin: 2px;
+    border-radius: 22px;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
     background: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10px;
-    margin: 2px;
-    border-radius: 22px;
-    z-index: 1; }
+    text-align: center; }
   .like-button__input {
     cursor: pointer;
     z-index: 2;
-    position: absolute;
     width: 40px;
     height: 20px;
+    position: absolute;
     opacity: 0; }
     .like-button__input:checked + label {
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
       .like-button__input:checked + label > * {
         color: #bc9cff; }
       .like-button__input:checked + label > .like-button__like-symbol::after {
-        content: "favorite";
+        content: 'favorite';
         position: absolute;
         display: flex;
         justify-content: center;
@@ -1063,7 +1058,7 @@ body {
       .like-button__input:not(:checked) + label > * {
         color: rgba(31, 32, 65, 0.25); }
       .like-button__input:not(:checked) + label > .like-button__like-symbol::after {
-        content: "favorite_border";
+        content: 'favorite_border';
         position: absolute;
         display: flex;
         justify-content: center;
@@ -1074,31 +1069,29 @@ body {
       .like-button__input:not(:checked) + label > .like-button__likes-number_on {
         opacity: 0; }
   .like-button__like-symbol {
-    left: 0px;
     z-index: 2;
-    position: absolute;
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 20px;
-    font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    text-align: center; }
+    position: absolute;
+    left: 0px; }
+    .like-button__like-symbol::after {
+      font-family: Material Icons;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px; }
 
 .room-reviews {
   list-style: none; }
   .room-reviews__title {
-    display: flex;
     width: 100%;
+    display: flex;
     justify-content: space-between;
     margin-bottom: 20px; }
   .room-reviews__title-description {
-    font-family: Quicksand, OpenSans;
+    font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
@@ -1122,11 +1115,11 @@ body {
     .room-reviews__review-container:last-child {
       margin-bottom: 0px; }
   .room-reviews__user-avatar {
-    border-radius: 50%;
     width: 47px;
     height: 47px;
     margin-bottom: 12px;
     border: 2px solid white;
+    border-radius: 50%;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1); }
   .room-reviews__user-info {
     margin-left: 10px; }
@@ -1146,13 +1139,13 @@ body {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75); }
   .room-reviews__comment {
+    margin-left: 10px;
+    max-width: 653px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
-    margin-left: 10px;
-    max-width: 653px; }
+    color: rgba(31, 32, 65, 0.75); }
 
 .button {
   cursor: pointer;
@@ -1165,18 +1158,18 @@ body {
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     left: 0px;
     right: 0px;
     top: 0px;
     bottom: 0px;
     margin: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
     background: transparent;
+    text-decoration: none;
     border-radius: 22px;
     outline: none; }
   .button > button {
@@ -1193,20 +1186,20 @@ body {
     text-transform: uppercase; }
   .button__arrow {
     cursor: pointer;
+    width: 44px;
+    position: absolute;
+    right: 0px;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-    text-align: center;
-    position: absolute;
-    right: 0px;
-    width: 44px; }
+    text-align: center; }
   .button__submit {
     cursor: pointer;
-    position: absolute;
     width: inherit;
     height: inherit;
+    position: absolute;
     opacity: 0;
     z-index: 2; }
   .button:hover {
@@ -1218,13 +1211,13 @@ body {
       color: #bc9cff; }
 
 .calendar {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  width: 100%; }
+  flex-direction: row; }
   .calendar__input-container {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    width: 100%; }
+    flex-direction: column; }
     .calendar__input-container_first {
       margin-right: 20px; }
   .calendar__title {
@@ -1250,21 +1243,21 @@ body {
     letter-spacing: -0.3px; }
   .calendar__label {
     cursor: pointer;
+    width: 150px;
     display: grid;
     grid-template-columns: auto 42px;
     grid-template-rows: 42px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px;
-    width: 150px; }
+    border-radius: 4px; }
   .calendar__input-container_first, .calendar__input-container_second {
     width: 46.875%; }
   .calendar__label_first, .calendar__label_second {
     width: 100%; }
   .calendar__input {
     cursor: pointer;
-    padding: 0px 0px 0px 15px;
     height: 40px;
+    padding: 0px 0px 0px 15px;
     outline: none;
     background: transparent;
     font-style: normal;
@@ -1298,6 +1291,9 @@ body {
       color: rgba(31, 32, 65, 0.75); }
   .calendar__dropdown-arrow {
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
@@ -1306,9 +1302,6 @@ body {
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     outline: none; }
   .calendar__buttons {
     display: flex;
@@ -1453,7 +1446,7 @@ body {
     padding: 15px 20px 15px 20px;
     border: 0px solid transparent; }
     .datepicker--nav-title {
-      font-family: Quicksand, OpenSans;
+      font-family: Quicksand, OpenSans, Arial, monospace;
       font-style: normal;
       font-weight: bold;
       font-size: 19px;
@@ -1563,16 +1556,16 @@ body {
     display: grid;
     grid-template-rows: 42px;
     grid-template-columns: auto min-content;
+    position: relative;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px;
-    position: relative; }
+    border-radius: 4px; }
     .dropdown__input-container:hover, .dropdown__input-container:focus {
       border: 1px solid rgba(31, 32, 65, 0.5); }
   .dropdown__input {
     cursor: pointer;
-    padding: 0px 15px 0px 15px;
     height: 40px;
+    padding: 0px 15px 0px 15px;
     outline: none;
     background: transparent;
     font-style: normal;
@@ -1606,19 +1599,19 @@ body {
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .dropdown__droped-list {
+    width: 100%;
     list-style: none;
     flex-direction: column;
     grid-column-start: 1;
     grid-column-end: 3;
     position: absolute;
-    width: 100%;
     top: 44px;
+    margin: -1px;
     background: white;
     border: 1px solid rgba(31, 32, 65, 0.5);
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     border-top: 0px;
     box-sizing: content-box;
-    margin: -1px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     z-index: 9999; }
@@ -1628,21 +1621,21 @@ body {
     cursor: pointer;
     width: 42px;
     height: 42px;
-    outline: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    outline: none;
     border: 0px solid transparent;
     background: rgba(31, 32, 65, 0.75);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px; }
   .dropdown__list-item {
     display: grid;
     grid-template-columns: auto 93px;
@@ -1667,12 +1660,12 @@ body {
     justify-content: space-between; }
   .dropdown__item-minus, .dropdown__item-plus {
     cursor: pointer;
-    outline: none;
     width: 30px;
     height: 30px;
     border-radius: 31px;
     border: 1px solid rgba(31, 32, 65, 0.5);
     background: transparent;
+    outline: none;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -1696,13 +1689,13 @@ body {
     margin: 14px 6px 13px 13px; }
   .dropdown__apply-button {
     cursor: pointer;
+    margin-left: auto;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #bc9cff;
-    margin-left: auto; }
+    color: #bc9cff; }
   .dropdown__clear-button {
     cursor: pointer;
     font-style: normal;
@@ -1713,9 +1706,9 @@ body {
     color: rgba(31, 32, 65, 0.5); }
 
 .price-calculation-form {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 40px 28px 30px 30px;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -1729,7 +1722,7 @@ body {
   .price-calculation-form__number-symbol {
     align-self: end;
     margin-right: 3px;
-    font-family: Quicksand, OpenSans;
+    font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -1738,7 +1731,7 @@ body {
   .price-calculation-form__room-number {
     align-self: end;
     margin-right: 5px;
-    font-family: Quicksand, OpenSans;
+    font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -1799,14 +1792,14 @@ body {
     display: grid;
     grid-template-columns: max-content auto auto; }
   .price-calculation-form__services-tooltip {
+    min-width: 20px;
+    height: 20px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     justify-self: baseline;
-    border-radius: 50%;
-    min-width: 20px;
-    height: 20px;
     border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
     box-sizing: border-box;
     background: transparent;
     font-style: normal;
@@ -1822,7 +1815,7 @@ body {
   .price-calculation-form__total-result {
     display: grid;
     grid-template-columns: max-content auto min-content;
-    font-family: Quicksand, OpenSans;
+    font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
@@ -1869,10 +1862,10 @@ body {
     display: grid;
     grid-template-rows: 42px;
     grid-template-columns: auto min-content;
+    position: relative;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px;
-    position: relative; }
+    border-radius: 4px; }
     .form-input__input-container:hover, .form-input__input-container:focus {
       border: 1px solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
@@ -1915,22 +1908,22 @@ body {
     cursor: pointer;
     min-width: 42px;
     height: 42px;
-    font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
     border: 0px solid transparent;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px; }
 
 .colored-logo {
+  height: 40px;
   display: flex;
   align-items: center;
-  height: 40px;
   justify-self: end; }
   .colored-logo__logo-symbol {
     margin-right: 12.5px; }
@@ -2027,12 +2020,12 @@ body {
       .footer__general-info {
         align-items: center; } }
   .footer__general-info-text {
+    margin-top: 18px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
-    margin-top: 18px; }
+    color: rgba(31, 32, 65, 0.75); }
     @media screen and (max-width: 767px) {
       .footer__general-info-text {
         display: none; } }
@@ -2048,24 +2041,24 @@ body {
       .footer__subscription {
         display: none; } }
   .footer__subscription-title {
+    margin-bottom: 19px;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #1f2041;
-    margin-bottom: 19px; }
+    color: #1f2041; }
   .footer__subscription-description {
+    margin-bottom: 22px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
-    margin-bottom: 22px; }
+    color: rgba(31, 32, 65, 0.75); }
   .footer__subscription-form {
+    width: 260px;
     display: flex;
     flex-wrap: nowrap;
-    width: 260px;
     background: transparent; }
   .footer__copyright-bar {
     width: 100%;
@@ -2093,24 +2086,24 @@ body {
         margin-bottom: 20px; } }
 
 .pie-chart {
+  width: max-content;
   display: flex;
-  flex-direction: column;
-  width: max-content; }
+  flex-direction: column; }
   @media screen and (max-width: 400px) {
     .pie-chart {
       align-items: center; } }
   .pie-chart__title {
     margin-bottom: 18px;
-    font-family: Quicksand, OpenSans;
+    margin-left: 15px;
+    font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
     line-height: 24px;
-    color: #1f2041;
-    margin-left: 15px; }
+    color: #1f2041; }
   .pie-chart__content {
-    display: flex;
     width: max-content;
+    display: flex;
     position: relative; }
     @media screen and (max-width: 400px) {
       .pie-chart__content {
@@ -2119,11 +2112,11 @@ body {
   .pie-chart__pie {
     display: flex; }
   .pie-chart__inner-text {
-    position: absolute;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
     margin-left: 46px;
     margin-top: 37px; }
     @media screen and (max-width: 400px) {
@@ -2131,14 +2124,14 @@ body {
         margin-left: 5px;
         margin-top: 37px; } }
   .pie-chart__inner-text-number {
-    font-family: Quicksand, OpenSans;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: #bc9cff; }
   .pie-chart__inner-text-word {
     font-style: normal;
@@ -2165,9 +2158,9 @@ body {
   .pie-chart__legend-item-marker {
     min-width: 10px;
     height: 10px;
+    position: absolute;
     border-radius: 50%;
-    background: black;
-    position: absolute; }
+    background: black; }
     .pie-chart__legend-item-marker_1 {
       background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%); }
     .pie-chart__legend-item-marker_2 {
@@ -2177,38 +2170,38 @@ body {
     .pie-chart__legend-item-marker_4 {
       background: linear-gradient(180deg, #919191 0%, #3d4975 100%); }
   .pie-chart__legend-item-text {
+    margin-left: 15px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
-    margin-left: 15px; }
+    color: rgba(31, 32, 65, 0.75); }
 
 .room-details {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  width: 100%; }
+  flex-direction: column; }
   .room-details__room-photos {
     display: flex;
     width: 100%;
     height: 485px; }
   .room-details__big-photo {
-    display: flex;
     width: 68.125%;
     height: 100%;
+    display: flex;
     background-image: url(src/pages/web-pages/room-details/img/background1.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover; }
   .room-details__small-photos {
-    display: flex;
-    flex-direction: column;
     width: 31.875%;
-    height: 100%; }
-  .room-details__small-photo {
+    height: 100%;
     display: flex;
+    flex-direction: column; }
+  .room-details__small-photo {
     height: 50%;
     width: 100%;
+    display: flex;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -2221,8 +2214,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 1px;
-    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
-    padding: 4.86111% 9.72222%; }
+    padding: 4.86111% 9.72222%;
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1); }
     @media screen and (max-width: 1340px) {
       .room-details__info {
         flex-direction: column; } }
@@ -2267,16 +2260,16 @@ body {
     line-height: 24px;
     color: #1f2041; }
   .room-details__room-reviews {
-    margin-top: 33px;
-    margin-bottom: 32px;
     grid-column-start: 1;
-    grid-column-end: 3; }
+    grid-column-end: 3;
+    margin-top: 33px;
+    margin-bottom: 32px; }
     @media screen and (max-width: 800px) {
       .room-details__room-reviews {
-        padding-left: 20px;
-        padding-right: 20px;
         grid-column-start: 1;
-        grid-column-end: 1; } }
+        grid-column-end: 1;
+        padding-left: 20px;
+        padding-right: 20px; } }
   .room-details__bullet-list {
     margin-right: 70px; }
     @media screen and (max-width: 800px) {
@@ -2292,18 +2285,18 @@ body {
       .room-details__cancel-rule {
         align-self: flex-end; } }
   .room-details__cancel-rule-title {
+    margin-bottom: 18px;
     font-family: Quicksand, OpenSans;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
     line-height: 24px;
-    color: #1f2041;
-    margin-bottom: 18px; }
+    color: #1f2041; }
   .room-details__cancel-rule-main-text {
+    max-width: 341px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
-    max-width: 341px; }
+    color: rgba(31, 32, 65, 0.75); }
 

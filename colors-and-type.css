@@ -48,10 +48,8 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
-  box-sizing: border-box; }
-
-* {
-  font-family: Montserrat, monospace; }
+  box-sizing: border-box;
+  font-family: Montserrat, Arial, monospace; }
 
 html,
 body {
@@ -78,9 +76,9 @@ body {
   .font-demo__description {
     max-width: 336px; }
   .font-demo_font-family_montserrat {
-    font-family: Montserrat; }
+    font-family: Montserrat, Arial, monospace; }
   .font-demo_font-family_quicksand {
-    font-family: Quicksand, OpenSans; }
+    font-family: Quicksand, OpenSans, Arial, monospace; }
   .font-demo_font-weight_regular {
     font-weight: normal; }
   .font-demo_font-weight_bold {
@@ -117,7 +115,7 @@ body {
   .color-demo__color-name {
     display: flex;
     align-items: center;
-    font-family: Quicksand, OpenSans;
+    font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
@@ -126,7 +124,7 @@ body {
   .color-demo__color-code {
     display: flex;
     align-items: center;
-    font-family: Quicksand, OpenSans;
+    font-family: Quicksand, OpenSans, Arial, monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 19px;
