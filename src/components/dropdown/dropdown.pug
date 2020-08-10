@@ -27,7 +27,7 @@ mixin dropdown(options)
                 type=type,
                 value=value,
                 readonly=true)
-            p(class=['dropdown__dropdown-arrow']) expand_more
+            p(class=["dropdown__dropdown-arrow"]) expand_more
             ul(class=["dropdown__droped-list"]
                 style={display: "none"})
                 - for(let item of dropdownList)

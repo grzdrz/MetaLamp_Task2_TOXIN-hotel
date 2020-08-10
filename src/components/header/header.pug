@@ -5,11 +5,11 @@ mixin header(options)
     - 
         const { isAuthorized, userFullName } = options;
         const navList = [
-            {url: 'https://www.google.com/', text: 'О нас', hasDropdown: false},
-            {url: 'https://www.google.com/', text: 'Услуги', hasDropdown: true},
-            {url: 'https://www.google.com/', text: 'Вакансии', hasDropdown: false},
-            {url: 'https://www.google.com/', text: 'Новости', hasDropdown: false},
-            {url: 'https://www.google.com/', text: 'Соглашения', hasDropdown: true},
+            {url: "https://www.google.com/", text: "О нас", hasDropdown: false},
+            {url: "https://www.google.com/", text: "Услуги", hasDropdown: true},
+            {url: "https://www.google.com/", text: "Вакансии", hasDropdown: false},
+            {url: "https://www.google.com/", text: "Новости", hasDropdown: false},
+            {url: "https://www.google.com/", text: "Соглашения", hasDropdown: true},
         ]
 
     header(class=["header"])
@@ -31,14 +31,14 @@ mixin header(options)
             div(class=["header__buttons"])
                 div(class=["header__sign-in-button"])
                     +button({
-                        text: 'войти',
+                        text: "войти",
                         isHollow:  true,
                         buttonType: "a",
                         hasArrow: false,
                     })
                 div(class=["header__sign-up-button"])
                     +button({
-                        text: 'зарегистрироваться',
+                        text: "зарегистрироваться",
                         isHollow:  false,
                         buttonType: "a",
                         hasArrow: false,
