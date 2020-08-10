@@ -14,8 +14,8 @@
     &__slider-name {
         font-style: normal;
         font-weight: bold;
-        font-size: 12rem;
-        line-height: 15rem;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
         text-transform: uppercase;
         color: $color-dark-shade-100;
     }
@@ -23,19 +23,19 @@
     &__current-values {
         font-style: normal;
         font-weight: normal;
-        font-size: 12rem;
-        line-height: 15rem;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
         text-align: right;
         text-transform: uppercase;
         color: $color-dark-shade-50;
     }
 
     &__description {
-        margin-top: 5rem;
+        margin-top: 0.3125rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 12rem;
-        line-height: 14rem;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
         color: $color-dark-shade-50;
     }
 
@@ -43,27 +43,27 @@
         -webkit-touch-callout: none;
     }
     & .irs-line {
-        height: 6rem;
+        height: 0.375rem;
         overflow: hidden;
         outline: none;
         background: white;
-        border: 1rem solid $color-dark-shade-25;
+        border: 0.0625rem solid $color-dark-shade-25;
         box-sizing: border-box;
-        border-radius: 3rem;
+        border-radius: 0.1875rem;
     }
 
     & .irs-bar {
-        height: 6rem;
+        height: 0.375rem;
         background: $gradient-green-to-turquoise;
     }
 
     & .irs-handle {
         cursor: pointer;
-        width: 16rem;
-        height: 16rem;
-        top: 20rem;
+        width: 1rem;
+        height: 1rem;
+        top: 1.25rem;
         background: $gradient-green-to-turquoise;
-        border: 2rem solid white;
+        border: 0.125rem solid white;
         border-radius: 50%;
     }
 

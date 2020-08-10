@@ -3,13 +3,13 @@
     flex-direction: row;
 
     &__tag {
-        margin-right: 30rem;
-        min-width: 37rem;
+        margin-right: 1.875rem;
+        min-width: 2.3125rem;
         text-align: end;
     }
 
     &__description {
-        max-width: 336rem;
+        max-width: 21rem;
     }
 
     &_font {
@@ -32,29 +32,29 @@
         }
 
         &-size {
-            &_24rem {
-                font-size: 24rem;
+            &_24px {
+                font-size: 1.5rem;
             }
-            &_19rem {
-                font-size: 19rem;
+            &_19px {
+                font-size: 1.1875rem;
             }
-            &_14rem {
-                font-size: 14rem;
+            &_14px {
+                font-size: 0.875rem;
             }
-            &_12rem {
-                font-size: 12rem;
+            &_12px {
+                font-size: 0.75rem;
             }
         }
 
         &-line-height {
-            &_30rem {
-                line-height: 30rem;
+            &_30px {
+                line-height: 1.875rem;
             }
-            &_24rem {
-                line-height: 24rem;
+            &_24px {
+                line-height: 1.5rem;
             }
-            &_15rem {
-                line-height: 15rem;
+            &_15px {
+                line-height: 0.9375rem;
             }
         }
 

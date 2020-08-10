@@ -11,12 +11,12 @@ body {
     min-width: 100%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 130rem;
-    padding-top: 62rem;
+    padding-bottom: 8.125rem;
+    padding-top: 3.875rem;
 
     &__global-logo-container {
-        margin-left: 30rem;
-        margin-bottom: 62rem;
+        margin-left: 1.875rem;
+        margin-bottom: 3.875rem;
     }
 
     &__standard-nav-bar-container_first,
@@ -24,7 +24,7 @@ body {
     &__footer-widgets-and-copyright-bar-container,
     &__footer-creative-container {
         min-width: 100%;
-        margin-bottom: 40rem;
+        margin-bottom: 2.5rem;
     }
 
     &__footer-creative-container {

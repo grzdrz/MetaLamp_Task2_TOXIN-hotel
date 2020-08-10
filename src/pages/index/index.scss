@@ -8,21 +8,21 @@ body {
     padding: 0rem 5%;
 
     &__title {
-        margin-top: 20rem;
+        margin-top: 1.25rem;
         font-weight: bold;
-        font-size: 28rem;
+        font-size: 1.75rem;
         color: rgb(24, 24, 24);
     }
 
     &__refs-list {
         display: flex;
         flex-direction: column;
-        padding-left: 50rem;
+        padding-left: 3.125rem;
         list-style: none;
     }
 
     &__item {
-        margin-top: 10rem;
+        margin-top: 0.625rem;
         display: flex;
         align-items: center;
         position: relative;
@@ -30,20 +30,20 @@ body {
 
     &__item::after {
         content: '';
-        width: 10rem;
-        height: 10rem;
+        width: 0.625rem;
+        height: 0.625rem;
         position: absolute;
         border-radius: 50%;
         background: rgb(63, 63, 63);
     }
 
     &__ref {
-        margin-left: 20rem;
+        margin-left: 1.25rem;
     }
 
     &__ref-text {
         font-weight: bold;
-        font-size: 24rem;
+        font-size: 1.5rem;
         color: rgb(63, 63, 63);
     }
 

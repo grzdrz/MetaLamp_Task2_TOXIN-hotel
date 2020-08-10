@@ -1,6 +1,6 @@
 @import '../../assets/constants.scss';
 
-$borderRadius: 22rem;
+$borderRadius: 1.375rem;
 .button {
     cursor: pointer;
     width: 100%;
@@ -21,13 +21,14 @@ $borderRadius: 22rem;
         right: 0rem;
         top: 0rem;
         bottom: 0rem;
-        margin: 2rem;
+        margin: 0.125rem;
         color: white;
         background: transparent;
         text-decoration: none;
         border-radius: $borderRadius;
         outline: none;
     }
+    
     & > button {
         //button не хочет растягиваться без этого
         width: -webkit-fill-available;
@@ -40,21 +41,21 @@ $borderRadius: 22rem;
         color: white;
         font-style: normal;
         font-weight: bold;
-        font-size: 12rem;
-        line-height: 15rem;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
         text-transform: uppercase;
     }
 
     &__arrow {
         cursor: pointer;
-        width: 44rem;
+        width: 2.75rem;
         position: absolute;
         right: 0rem;
         font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
-        font-size: 24rem;
-        line-height: 24rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
         text-align: center;
     }
 

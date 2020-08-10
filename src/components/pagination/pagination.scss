@@ -3,14 +3,14 @@
 .pagination {
     display: flex;
     flex-direction: column;
-    $buttonSize: 40rem;
+    $buttonSize: 2.5rem;
 
     &__title {
-        margin-bottom: 16rem;
+        margin-bottom: 1rem;
         font-style: normal;
         font-weight: bold;
-        font-size: 12rem;
-        line-height: 15rem;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
         text-transform: uppercase;
         color: $color-dark-shade-100;
     }
@@ -58,8 +58,8 @@
         font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
-        font-size: 24rem;
-        line-height: 20rem;
+        font-size: 1.5rem;
+        line-height: 1.25rem;
         color: white;
     }
 
@@ -77,8 +77,8 @@
         border-radius: 50%;
         font-style: normal;
         font-weight: bold;
-        font-size: 12rem;
-        line-height: 15rem;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
         color: $color-dark-shade-50;
 
         &:hover {
@@ -93,11 +93,11 @@
         width: 100%;
         display: inline-flex;
         justify-content: center;
-        margin-top: 7rem;
+        margin-top: 0.4375rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 14rem;
-        line-height: 24rem;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
         color: $color-dark-shade-75;
     }
 }

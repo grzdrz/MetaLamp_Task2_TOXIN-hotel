@@ -4,8 +4,8 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
-    $checkboxMarginRight: 10rem;
-    $checkboxSize: 20rem;
+    $checkboxMarginRight: 0.625rem;
+    $checkboxSize: 1.25rem;
 
     &__title {
         cursor: context-menu;
@@ -13,29 +13,29 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 4rem;
+        margin-bottom: 0.25rem;
 
         &_expandable {
             cursor: pointer;
         }
 
-        &_with-margin-bottom_16rem {
-            margin-bottom: 16rem;
+        &_with-margin-bottom_16px {
+            margin-bottom: 1rem;
         }
     }
 
     &__title-text {
         font-style: normal;
         font-weight: bold;
-        font-size: 12rem;
-        line-height: 15rem;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
         text-transform: uppercase;
         color: $color-dark-shade-100;
     }
 
     &__dropdown-arrow {
-        width: 42rem;
-        height: 42rem;
+        width: 2.625rem;
+        height: 2.625rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -48,8 +48,8 @@
         font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
-        font-size: 24rem;
-        line-height: 24rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
     }
 
     &__list {
@@ -61,7 +61,7 @@
     &__item {
         display: flex;
         flex-direction: column;
-        margin-bottom: 10rem;
+        margin-bottom: 0.625rem;
 
         &:last-child {
             margin-bottom: 0rem;
@@ -85,7 +85,7 @@
         }
 
         &:not(:checked) ~ .checkbox-list__frame {
-            border: 1rem solid $color-gray-blue;
+            border: 0.0625rem solid $color-gray-blue;
         }
 
         &:checked + .checkbox-list__checkmark {
@@ -93,7 +93,7 @@
         }
 
         &:checked ~ .checkbox-list__frame {
-            border: 1rem solid $color-purple;
+            border: 0.0625rem solid $color-purple;
         }
     }
 
@@ -104,12 +104,12 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        padding-bottom: 2rem;
+        padding-bottom: 0.125rem;
     }
 
     &__checkmark-image {
-        width: 10rem;
-        height: 10rem;
+        width: 0.625rem;
+        height: 0.625rem;
         display: flex;
     }
 
@@ -118,7 +118,7 @@
         width: $checkboxSize;
         height: $checkboxSize;
         display: flex;
-        border-radius: 4rem;
+        border-radius: 0.25rem;
         position: absolute;
     }
 
@@ -130,8 +130,8 @@
         align-items: center;
         font-style: normal;
         font-weight: normal;
-        font-size: 14rem;
-        line-height: 20rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
         color: $color-dark-shade-50;
 
         &_main {
@@ -140,19 +140,19 @@
         }
 
         &_single {
-            width: 200rem;
+            width: 12.5rem;
         }
     }
 
     &__item-additional-text {
         cursor: context-menu;
-        width: 230rem;
+        width: 14.375rem;
         margin-left: $checkboxSize + $checkboxMarginRight;
-        margin-top: 5rem;
+        margin-top: 0.3125rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 12rem;
-        line-height: 14rem;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
         color: $color-dark-shade-50;
     }
 }

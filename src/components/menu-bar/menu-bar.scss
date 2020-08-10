@@ -7,21 +7,21 @@
     flex-direction: column;
 
     &__item {
-        margin-bottom: 21rem;
+        margin-bottom: 1.3125rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 14rem;
-        line-height: 17rem;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
 
         &:first-of-type {
-            margin-top: 4rem;
-            margin-bottom: 20rem;
+            margin-top: 0.25rem;
+            margin-bottom: 1.25rem;
 
             & > .menu-bar__item-ref {
                 font-style: normal;
                 font-weight: bold;
-                font-size: 12rem;
-                line-height: 15rem;
+                font-size: 0.75rem;
+                line-height: 0.9375rem;
                 text-transform: uppercase;
                 color: $color-dark-shade-100;
             }
@@ -36,8 +36,8 @@
         text-decoration: none;
         font-style: normal;
         font-weight: normal;
-        font-size: 14rem;
-        line-height: 17rem;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
         color: $color-dark-shade-50;
         white-space: nowrap;
     }

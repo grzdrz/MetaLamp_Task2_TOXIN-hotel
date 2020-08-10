@@ -8,38 +8,38 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 40rem 28rem 30rem 30rem;
+    padding: 2.5rem 1.75rem 1.875rem 1.875rem;
     background: white;
-    border: 1rem solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0rem 0rem 25rem rgba(0, 0, 0, 0.2);
-    border-radius: 4rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0rem 0rem 1.5625rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
 
     &__title {
         display: grid;
         grid-template-columns: max-content max-content max-content auto min-content;
-        margin-top: 3rem;
-        margin-bottom: 23rem;
+        margin-top: 0.1875rem;
+        margin-bottom: 1.4375rem;
     }
 
     &__number-symbol {
         align-self: end;
-        margin-right: 3rem;
+        margin-right: 0.1875rem;
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
-        font-size: 14rem;
-        line-height: 17rem;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
         color: $color-dark-shade-100;
     }
 
     &__room-number {
         align-self: end;
-        margin-right: 5rem;
+        margin-right: 0.3125rem;
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
-        font-size: 24rem;
-        line-height: 23rem;
+        font-size: 1.5rem;
+        line-height: 1.4375rem;
         color: $color-dark-shade-100;
     }
 
@@ -47,8 +47,8 @@
         align-self: end;
         font-style: normal;
         font-weight: bold;
-        font-size: 12rem;
-        line-height: 15rem;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
         text-transform: uppercase;
         color: $color-purple;
     }
@@ -56,11 +56,11 @@
     &__room-price {
         justify-self: end;
         align-self: end;
-        margin-right: 4rem;
+        margin-right: 0.25rem;
         font-style: normal;
         font-weight: bold;
-        font-size: 14rem;
-        line-height: 15rem;
+        font-size: 0.875rem;
+        line-height: 0.9375rem;
         color: $color-dark-shade-50;
     }
 
@@ -68,26 +68,26 @@
         justify-self: end;
         align-self: end;
         white-space: nowrap;
-        margin-right: 1rem;
+        margin-right: 0.0625rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 12rem;
-        line-height: 15rem;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
         color: $color-dark-shade-50;
     }
 
     &__calendar {
-        margin-bottom: 20rem;
+        margin-bottom: 1.25rem;
         width: 100%;
     }
 
     &__dropdown {
-        margin-bottom: 21rem;
+        margin-bottom: 1.3125rem;
         width: 100%;
     }
 
     &__calculated-data {
-        margin-bottom: 20rem;
+        margin-bottom: 1.25rem;
     }
 
     &__main-sum-formula,
@@ -98,8 +98,8 @@
     &__additional-services-value {
         font-style: normal;
         font-weight: normal;
-        font-size: 14rem;
-        line-height: 19rem;
+        font-size: 0.875rem;
+        line-height: 1.1875rem;
         color: $color-dark-shade-75;
     }
 
@@ -108,15 +108,15 @@
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
-        font-size: 19rem;
-        line-height: 24rem;
+        font-size: 1.1875rem;
+        line-height: 1.5rem;
         color: $color-dark-shade-100;
     }
 
     &__main-sum {
         display: grid;
         grid-template-columns: max-content auto;
-        margin-bottom: 15rem;
+        margin-bottom: 0.9375rem;
     }
 
     &__main-sum-result {
@@ -125,9 +125,9 @@
 
     &__services {
         display: grid;
-        grid-template-columns: 220rem auto auto;
-        grid-row-gap: 14rem;
-        margin-bottom: 28rem;
+        grid-template-columns: 13.75rem auto auto;
+        grid-row-gap: 0.875rem;
+        margin-bottom: 1.75rem;
     }
 
     &__discount {
@@ -136,20 +136,20 @@
     }
 
     &__services-tooltip {
-        min-width: 20rem;
-        height: 20rem;
+        min-width: 1.25rem;
+        height: 1.25rem;
         display: inline-flex;
         justify-content: center;
         align-items: center;
         justify-self: baseline;
-        border: 1rem solid $color-dark-shade-25;
+        border: 0.0625rem solid $color-dark-shade-25;
         border-radius: 50%;
         box-sizing: border-box;
         background: transparent;
         font-style: normal;
         font-weight: bold;
-        font-size: 12rem;
-        line-height: 14rem;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
         text-align: right;
         color: $color-dark-shade-25;
     }
@@ -168,8 +168,8 @@
     }
 
     &__total-result-bottom-line {
-        margin-bottom: 5rem;
-        border-bottom: 1rem dashed $color-dark-shade-25;
+        margin-bottom: 0.3125rem;
+        border-bottom: 0.0625rem dashed $color-dark-shade-25;
         box-sizing: border-box;
     }
 
@@ -180,6 +180,6 @@
 
     &__submit-button {
         width: 100%;
-        height: 44rem;
+        height: 2.75rem;
     }
 }

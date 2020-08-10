@@ -20,8 +20,8 @@
 @mixin title {
     font-style: normal;
     font-weight: bold;
-    font-size: 12rem;
-    line-height: 15rem;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
     text-transform: uppercase;
     color: $color-dark-shade-100;
 }
@@ -30,9 +30,9 @@
     min-width: 100%;
     display: grid;
     grid-template-columns: min-content min-content min-content;
-    grid-column-gap: 127rem;
-    margin-top: 65rem;
-    padding: 0rem 140rem 150rem;
+    grid-column-gap: 7.9375rem;
+    margin-top: 4.0625rem;
+    padding: 0rem 8.75rem 9.375rem;
 
     &__column {
         justify-self: center;
@@ -41,22 +41,22 @@
             display: flex;
             flex-direction: column;
             & > * {
-                margin-bottom: 20rem;
+                margin-bottom: 1.25rem;
             }
         }
         &-2 {
             display: flex;
             flex-direction: column;
             & > * {
-                margin-bottom: 20rem;
+                margin-bottom: 1.25rem;
             }
         }
         &-3 {
             display: flex;
             flex-direction: column;
-            margin-left: 6rem;
+            margin-left: 0.375rem;
             & > * {
-                margin-bottom: 20rem;
+                margin-bottom: 1.25rem;
             }
         }
     }
@@ -65,23 +65,23 @@
         display: flex;
         grid-column-start: 1;
         grid-column-end: 4;
-        margin-top: 80rem;
-        margin-bottom: 157rem;
+        margin-top: 5rem;
+        margin-bottom: 9.8125rem;
     }
 
     &__dropdown-2-3 {
-        margin-right: 181rem;
+        margin-right: 11.3125rem;
     }
 
     &__row-2 {
         display: flex;
         grid-column-start: 1;
         grid-column-end: 4;
-        margin-bottom: 40rem;
+        margin-bottom: 2.5rem;
     }
 
     &__checkbox-2-3 {
-        margin-right: 181rem;
+        margin-right: 11.3125rem;
     }
 
     &__row-3 {
@@ -93,17 +93,17 @@
     &__star-rating-title,
     &__like-button-title,
     &__toggle-title {
-        margin-bottom: 16rem;
+        margin-bottom: 1rem;
         @include title();
     }
 
     &__radio-title {
-        margin-bottom: 14rem;
+        margin-bottom: 0.875rem;
         @include title();
     }
 
     &__buttons-title {
-        margin-bottom: 16rem;
+        margin-bottom: 1rem;
         @include title();
     }
 
@@ -118,92 +118,92 @@
     &__form-input-2,
     &__calendar-1,
     &__calendar-2 {
-        width: 320rem;
+        width: 20rem;
     }
 
     &__dropdown-1 {
-        margin-bottom: 22rem;
+        margin-bottom: 1.375rem;
     }
 
     &__calendar-1 {
-        margin-bottom: 42rem;
+        margin-bottom: 2.625rem;
     }
 
     &__calendar-2 {
-        margin-bottom: 40rem;
+        margin-bottom: 2.5rem;
     }
 
     &__calendar-3 {
-        margin-bottom: 41rem;
+        margin-bottom: 2.5625rem;
     }
 
     &__calendar-3,
     &__form-input-3 {
-        width: 266rem;
+        width: 16.625rem;
     }
 
     &__dropdown-2,
     &__dropdown-3 {
-        width: 266rem;
+        width: 16.625rem;
     }
 
     &__dropdown-2 {
-        margin-bottom: 20rem;
+        margin-bottom: 1.25rem;
     }
 
     &__dropdown-1,
     &__dropdown-4,
     &__dropdown-5 {
-        width: 320rem;
+        width: 20rem;
     }
 
     &__dropdown-4 {
-        margin-right: 72rem;
+        margin-right: 4.5rem;
     }
 
     &__checkbox-4 {
-        margin-right: 133rem;
-        margin-top: 15rem;
+        margin-right: 8.3125rem;
+        margin-top: 0.9375rem;
     }
 
     &__room-advantages {
-        margin-right: 167rem;
+        margin-right: 10.4375rem;
     }
 
     &__checkbox-1 {
-        margin-bottom: 40rem;
+        margin-bottom: 2.5rem;
     }
 
     &__checkbox-2,
     &__checkbox-3 {
-        width: 266rem;
+        width: 16.625rem;
     }
 
     &__checkbox-2 {
-        margin-bottom: 20rem;
+        margin-bottom: 1.25rem;
     }
 
     &__radio {
-        margin-bottom: 41rem;
+        margin-bottom: 2.5625rem;
     }
 
     &__toggles {
         display: flex;
         flex-direction: column;
-        margin-bottom: 45rem;
+        margin-bottom: 2.8125rem;
     }
 
     &__like-buttons {
         display: grid;
         grid-template-columns: min-content min-content;
-        grid-column-gap: 10rem;
-        margin-bottom: 40rem;
+        grid-column-gap: 0.625rem;
+        margin-bottom: 2.5rem;
     }
 
     &__star-ratings {
         display: grid;
         grid-template-columns: min-content min-content;
-        grid-column-gap: 20rem;
+        grid-column-gap: 1.25rem;
     }
 
     &__radio,
@@ -217,46 +217,46 @@
     }
 
     &__toggle-1 {
-        margin-bottom: 14rem;
+        margin-bottom: 0.875rem;
     }
 
     &__range-slider {
-        width: 266rem;
-        margin-bottom: 33rem;
+        width: 16.625rem;
+        margin-bottom: 2.0625rem;
     }
 
     &__buttons {
         display: grid;
         grid-template-columns: min-content min-content;
-        grid-column-gap: 19rem;
-        margin-bottom: 30rem;
+        grid-column-gap: 1.1875rem;
+        margin-bottom: 1.875rem;
     }
 
     &__button-1,
     &__button-2,
     &__button-3,
     &__button-4 {
-        width: 99rem;
-        height: 44rem;
+        width: 6.1875rem;
+        height: 2.75rem;
     }
 
     &__button-1 {
-        margin-bottom: 29rem;
+        margin-bottom: 1.8125rem;
     }
 
     &__text-buttons {
         display: flex;
-        margin-bottom: 27rem;
+        margin-bottom: 1.6875rem;
     }
 
     &__button-5 {
-        margin-right: 20rem;
+        margin-right: 1.25rem;
     }
 
     &__button-7 {
-        width: 320rem;
-        height: 44rem;
-        margin-bottom: 42rem;
+        width: 20rem;
+        height: 2.75rem;
+        margin-bottom: 2.625rem;
     }
 
     &__pagination {
@@ -264,12 +264,12 @@
     }
 
     &__bullet-list {
-        margin-top: 15rem;
+        margin-top: 0.9375rem;
     }
 
     &__guest-room-reviews {
         grid-column-start: 2;
         grid-column-end: 4;
-        margin-top: 10rem;
+        margin-top: 0.625rem;
     }
 }

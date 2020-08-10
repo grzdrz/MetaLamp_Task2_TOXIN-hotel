@@ -3,16 +3,16 @@
     flex-direction: row;
 
     &__colored-square {
-        min-width: 70rem;
-        height: 70rem;
-        border-radius: 6rem;
+        min-width: 4.375rem;
+        height: 4.375rem;
+        border-radius: 0.375rem;
     }
 
     &__text-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 40rem;
+        margin-left: 2.5rem;
     }
 
     &__color-name {
@@ -21,8 +21,8 @@
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: bold;
-        font-size: 19rem;
-        line-height: 29rem;
+        font-size: 1.1875rem;
+        line-height: 1.8125rem;
         color: #1f2041;
     }
 
@@ -32,8 +32,8 @@
         font-family: Quicksand, OpenSans, Arial, monospace;
         font-style: normal;
         font-weight: normal;
-        font-size: 19rem;
-        line-height: 29rem;
+        font-size: 1.1875rem;
+        line-height: 1.8125rem;
         color: #1f2041;
     }
 
