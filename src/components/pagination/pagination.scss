@@ -35,6 +35,7 @@
         &_target {
             background: $gradient-purple-to-blue;
             border-radius: 50%;
+
             & > .pagination__link-text {
                 color: white;
             }

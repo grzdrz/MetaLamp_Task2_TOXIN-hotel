@@ -1,15 +1,12 @@
 /* eslint-disable no-unused-vars */
 import "../../base/base";
-
 import "air-datepicker";
 import "air-datepicker/dist/css/datepicker.css";
 import jQuery from "jquery";
-
 import RoomFinderForm from "../../../components/room-finder-form/room-finder-form";
 import SignUpForm from "../../../components/sign-up-form/sign-up-form";
 import RoomInfo from "../../../components/room-info/room-info";
 import PriceCalculationForm from "../../../components/price-calculation-form/price-calculation-form";
-
 import "./cards.scss";
 
 const $ = jQuery;

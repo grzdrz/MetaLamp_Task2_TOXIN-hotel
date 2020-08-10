@@ -1,15 +1,13 @@
 @import '../../assets/constants.scss';
 
 .datepicker {
+    width: max-content;
+    padding-bottom: 1.25rem;
     background: white;
     border: 0.0625rem solid $color-dark-shade-25;
     box-sizing: border-box;
     box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
     border-radius: 0.25rem;
-
-    padding-bottom: 1.25rem;
-
-    width: max-content;
 
     &.active {
         @media screen and (max-width: 20rem) {
@@ -20,41 +18,46 @@
     &.-bottom-right-,
     &.-bottom-right-.active {
         margin-left: -1.75rem;
+
         @media screen and (max-width: 20rem) {
             margin-left: -3.625rem;
         }
     }
+
     &.-bottom-left-,
     &.-bottom-left-.active {
         margin-left: -0.125rem;
+
         @media screen and (max-width: 20rem) {
             margin-left: -2rem;
         }
     }
+
     &.active {
         width: max-content;
     }
+
     &--cells {
         width: 17.5rem;
     }
+
     &--cell {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
         font-style: normal;
         font-weight: normal;
         font-size: 0.75rem;
         line-height: 0.9375rem;
-        display: flex;
-        align-items: center;
-        text-align: center;
         color: $color-dark-shade-50;
-        width: 2.5rem;
-        height: 2.5rem;
 
         &-day {
             &.-selected- {
+                position: relative;
                 background: $gradient-purple-to-blue;
                 border-radius: 50%;
-
-                position: relative;
 
                 &.-focus- {
                     background: $gradient-purple-to-blue;
@@ -62,19 +65,21 @@
             }
 
             &.-current- {
+                display: flex;
+                align-items: center;
                 background: $gradient-green-to-turquoise;
                 border-radius: 50%;
-
                 font-style: normal;
                 font-weight: bold;
                 font-size: 0.75rem;
                 line-height: 0.9375rem;
-                display: flex;
-                align-items: center;
                 text-align: center;
                 color: white;
             }
+
             &.-current-.-in-range- {
+                display: flex;
+                align-items: center;
                 background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
                 color: $color-dark-shade-50;
                 border-radius: 0rem;
@@ -82,59 +87,52 @@
                 font-weight: normal;
                 font-size: 0.75rem;
                 line-height: 0.9375rem;
-                display: flex;
-                align-items: center;
                 text-align: center;
             }
+
             &.-in-range-.-other-month- {
                 background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
                 color: $color-dark-shade-25;
             }
+
             &.-range-from-,
             &.-range-to-,
             &.-range-from-.-current-,
             &.-range-to-.-current-,
             &.-range-from-.-other-month-,
             &.-range-to-.-other-month- {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                position: relative;
                 background: $gradient-purple-to-blue;
                 border-radius: 50%;
                 border: 0rem;
-
                 font-style: normal;
                 font-weight: bold;
                 font-size: 0.75rem;
                 line-height: 0.9375rem;
-                display: flex;
-                align-items: center;
-                text-align: center;
-
                 color: white;
-
-                position: relative;
             }
+
             &.-range-from-::after {
                 content: '';
-                width: inherit;
-                height: inherit;
-                background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
-
-                width: 50%;
-                margin-left: 50%;
-
-                position: absolute;
                 z-index: -1;
+                width: 50%;
+                height: inherit;
+                position: absolute;
+                margin-left: 50%;
+                background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
             }
+
             &.-range-to-::after {
                 content: '';
-                width: inherit;
-                height: inherit;
-                background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
-
-                width: 50%;
-                margin-right: 50%;
-
-                position: absolute;
                 z-index: -1;
+                width: 50%;
+                height: inherit;
+                position: absolute;
+                margin-right: 50%;
+                background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
             }
 
             &.-in-range- {
@@ -146,6 +144,7 @@
                 color: $color-dark-shade-25;
             }
         }
+
         &-month,
         &-year {
             width: 4.375rem;
@@ -156,6 +155,7 @@
                 color: white;
                 border-radius: 50%;
             }
+
             &.-selected-,
             &.-selected-.-current- {
                 background: $gradient-purple-to-blue;
@@ -190,23 +190,21 @@
             & > svg {
                 opacity: 0;
             }
+
             &:first-child::after {
                 content: 'arrow_back';
-                position: absolute;
                 width: 1.5rem;
                 height: 1.5rem;
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+                position: absolute;
                 font-family: Material Icons;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 1.5rem;
                 line-height: 1.5rem;
                 border: 0rem solid transparent;
-
                 background: -moz-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
                 background: -webkit-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
                 background: $gradient-purple-to-blue;
@@ -215,23 +213,21 @@
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
+
             &:last-child::after {
                 content: 'arrow_forward';
-                position: absolute;
                 width: 1.5rem;
                 height: 1.5rem;
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+                position: absolute;
                 font-family: Material Icons;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 1.5rem;
                 line-height: 1.5rem;
                 border: 0rem solid transparent;
-
                 background: -moz-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
                 background: -webkit-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
                 background: $gradient-purple-to-blue;
@@ -247,35 +243,38 @@
         width: 17.5rem;
         margin: 0.3125rem 0 0rem;
     }
+
     &--day-name {
         min-width: 2.5rem;
         height: 2.5rem;
-
+        display: flex;
+        align-items: center;
+        text-align: center;
         font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
-        display: flex;
-        align-items: center;
-        text-align: center;
         color: $color-purple;
         text-transform: none;
     }
 
     &--months {
         height: max-content;
+
         & > .datepicker--cells-months {
+            height: max-content;
             display: flex;
             justify-content: space-between;
-            height: max-content;
         }
     }
+
     &--years {
         height: max-content;
+
         & > .datepicker--cells-years {
+            height: max-content;
             display: flex;
             justify-content: space-between;
-            height: max-content;
         }
     }
 }

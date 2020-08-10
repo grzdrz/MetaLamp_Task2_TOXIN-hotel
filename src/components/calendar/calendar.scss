@@ -58,6 +58,7 @@
   &__input-container_second {
     width: scalePixelsAsPercentage(150, 320);
   }
+  
   &__label_first,
   &__label_second {
     width: 100%;
@@ -99,9 +100,9 @@
       color: $color-dark-shade-75;
     }
 
-    white-space: nowrap; /* Отменяем перенос текста */
-    overflow: hidden; /* Обрезаем содержимое */
-    text-overflow: ellipsis; /* Многоточие */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__dropdown-arrow {

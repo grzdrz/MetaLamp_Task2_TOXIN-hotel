@@ -1,13 +1,11 @@
 /* eslint-disable no-unused-vars */
 import "../../base/base";
-
 import Dropdown from "../../../components/dropdown/dropdown";
 import ExpandableCheckbox from "../../../components/checkbox-list/expandable-checkbox-list";
 import Pagination from "../../../components/pagination/pagination";
 import RangeSlider from "../../../components/range-slider/range-slider";
 import Calendar from "../../../components/calendar/calendar";
 import RoomInfo from "../../../components/room-info/room-info";
-
 import "./search-room.scss";
 
 const dropdowns = Array.from(document.querySelectorAll(".js-search-room__dropdown"))

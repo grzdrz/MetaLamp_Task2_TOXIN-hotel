@@ -32,10 +32,12 @@
             border: 0.0625rem solid $color-purple;
             padding-left: 1.4375rem;
         }
+
         &:not(:checked) + div {
             border: 0.0625rem solid $color-dark-shade-25;
             padding-left: 0.1875rem;
         }
+
         &:checked + div::after {
             content: '';
             width: 0.75rem;
@@ -43,6 +45,7 @@
             background: $gradient-purple-to-blue;
             border-radius: 50%;
         }
+        
         &:not(:checked) + div::after {
             content: '';
             width: 0.75rem;

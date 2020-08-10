@@ -1,6 +1,5 @@
 @import '../../assets/constants.scss';
 @import '../../assets/mixins.scss';
-
 @import '../colored-logo/colored-logo.scss';
 @import '../button/button.scss';
 
@@ -67,6 +66,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
         @media screen and (max-width: 768px) {
             display: flex;
             flex-direction: column;
@@ -77,16 +77,19 @@
         display: flex;
         align-items: center;
         margin: 0rem 0.625rem;
+
         @media screen and (max-width: 768px) {
             margin: 0.625rem 0rem;
         }
 
         &:first-child {
             margin: 0rem 0.625rem 0rem 0rem;
+
             .header__item-ref {
                 color: $color-dark-shade-75;
                 font-weight: bold;
             }
+
             @media screen and (max-width: 768px) {
                 margin: 0rem 0rem 0.625rem 0rem;
             }
@@ -94,6 +97,7 @@
 
         &:last-child {
             margin: 0rem 0rem 0rem 0.625rem;
+
             @media screen and (max-width: 768px) {
                 margin: 0.625rem 0rem 0rem 0rem;
             }

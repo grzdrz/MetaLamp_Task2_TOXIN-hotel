@@ -1,6 +1,5 @@
 @import '../../assets/constants.scss';
 @import '../../assets/mixins.scss';
-
 @import '../form-input/form-input.scss';
 @import '../colored-logo/colored-logo.scss';
 @import '../social-media/social-media.scss';
@@ -18,10 +17,10 @@
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 26% 17% 17.5% 19.5% 20%;
-        padding: 6.25rem scalePixelsAsPercentage(140, 1440);
         justify-items: start;
-        box-shadow: 0rem 0.0625rem 0rem $color-dark-shade-10;
         margin-bottom: 0.0625rem;
+        padding: 6.25rem scalePixelsAsPercentage(140, 1440);
+        box-shadow: 0rem 0.0625rem 0rem $color-dark-shade-10;
 
         @media screen and (max-width: 1300px) {
             display: grid;

@@ -1,5 +1,4 @@
 @import '../../assets/constants.scss';
-
 @import '../star-rating/star-rating.scss';
 
 .room-info {
@@ -101,18 +100,19 @@
         position: absolute;
         bottom: 0.9375rem;
         opacity: 0;
-        
+
         &:checked + div {
             background: white;
         }
 
-        $test: 0.375rem;
         @for $i from 1 through 4 {
             &_#{$i} {
                 right: 0.9375rem + ($radioButtonSize + 0.1875rem) * (4 - $i);
+
                 & + div {
                     right: 0.9375rem + ($radioButtonSize + 0.1875rem) * (4 - $i);
                 }
+
                 &:checked ~ .room-info__photo_#{$i} {
                     opacity: 1;
                 }
