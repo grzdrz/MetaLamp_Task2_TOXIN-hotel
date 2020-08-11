@@ -16,7 +16,7 @@
         width: 100%;
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: 26% 17% 17.5% 19.5% 20%;
+        grid-template-columns: 25.9% 17.2% 17.3% 19.6% 20%;
         justify-items: start;
         margin-bottom: 0.0625rem;
         padding: 6.25rem scalePixelsAsPercentage(140, 1440);
@@ -118,7 +118,7 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        padding: 1.4375rem scalePixelsAsPercentage(140, 1440);
+        padding: 1.4375rem 9.72222% 1.3rem;
         align-items: center;
         justify-content: space-between;
         box-shadow: 0rem 0.0625rem 0rem $color-dark-shade-10;
@@ -135,7 +135,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 0.875rem;
-        line-height: 1.0625rem;
+        line-height: 1.6rem;
         color: $color-dark-shade-75;
         text-align: center;
 

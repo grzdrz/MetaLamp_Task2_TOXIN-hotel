@@ -1,7 +1,10 @@
+$iconSize: 1.4375rem;
+
 .social-media {
+    width: 7rem;
     display: flex;
     align-content: center;
-    $iconSize: 1.4375rem;
+    justify-content: space-between;
 
     &__ref {
         width: $iconSize;
