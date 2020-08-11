@@ -7,21 +7,38 @@
     $checkboxMarginRight: 0.625rem;
     $checkboxSize: 1.25rem;
 
+    &_expandable {
+        & .checkbox-list__title {
+            cursor: pointer;
+            margin-bottom: 0.23rem;
+        }
+
+        & .checkbox-list__item {
+            margin-bottom: 0.56rem;
+        }
+
+        & .checkbox-list__item-text {
+            line-height: 1.34rem;
+        }
+    }
+
+    &_rich {
+        & .checkbox-list__title {
+            margin-bottom: 0.9rem;
+        }
+
+        & .checkbox-list__item {
+            margin-bottom: 0.665rem;
+        }
+    }
+
     &__title {
         cursor: context-menu;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 0.25rem;
-
-        &_expandable {
-            cursor: pointer;
-        }
-
-        &_with-margin-bottom_16px {
-            margin-bottom: 1rem;
-        }
+        margin-bottom: 1.04rem;
     }
 
     &__title-text {
@@ -61,7 +78,7 @@
     &__item {
         display: flex;
         flex-direction: column;
-        margin-bottom: 0.625rem;
+        margin-bottom: 0.68rem;
 
         &:last-child {
             margin-bottom: 0rem;
@@ -131,7 +148,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 0.875rem;
-        line-height: 1.25rem;
+        line-height: 1.24rem;
         color: $color-dark-shade-50;
 
         &_main {

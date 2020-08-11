@@ -38,11 +38,11 @@
     &__range-slider {
         width: 16.625rem;
         display: flex;
-        margin-bottom: 1.875rem;
+        margin-bottom: 1.74rem;
     }
 
     &__dropdown-1 {
-        margin-bottom: 1.8125rem;
+        margin-bottom: 1.89rem;
         display: flex;
         width: 16.625rem;
     }
@@ -50,7 +50,7 @@
     &__checkbox-list-1 {
         width: max-content;
         display: flex;
-        margin-bottom: 1.75rem;
+        margin-bottom: 1.86rem;
     }
 
     &__checkbox-list-2 {
@@ -95,7 +95,7 @@
         grid-template-rows: auto auto auto auto;
         grid-template-columns: auto auto auto;
         grid-column-gap: 0.75rem;
-        grid-row-gap: 1.3125rem;
+        grid-row-gap: 1.32rem;
 
         @media screen and (max-width: 1320px) {
             grid-template-rows: auto auto auto auto auto;

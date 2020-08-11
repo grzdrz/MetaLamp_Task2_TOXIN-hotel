@@ -12,8 +12,8 @@ mixin checkbox-list(options)
         const titleClasses = [];
         const itemTextClasses = [];
 
-        containerClasses.push(`${isExpandable ? "checkbox-list_expandable" : ""}`);
-        titleClasses.push(`checkbox-list__title_${isExpandable ? "expandable" : "with-margin-bottom_16px"}`);
+        if(isExpandable)containerClasses.push("checkbox-list_expandable");
+        else if(hasAdditionalText)containerClasses.push("checkbox-list_rich");
         itemTextClasses.push(`checkbox-list__item-text_${hasAdditionalText ? "main" : "single"}`);
 
     div(class=["checkbox-list"].concat(containerClasses))

@@ -17,10 +17,10 @@ class ExpandableCheckbox {
 
         if (this.list.dataset.isOpened === "true") {
             this.list.style.display = "grid";
-            this.dropdownArrow.style.transform = "none";
+            this.dropdownArrow.style.transform = "rotate(180deg)";
         } else {
             this.list.style.display = "none";
-            this.dropdownArrow.style.transform = "rotate(180deg)";
+            this.dropdownArrow.style.transform = "none";
         }
     }
 
@@ -28,11 +28,11 @@ class ExpandableCheckbox {
         if (this.list.dataset.isOpened === "true") {
             this.list.style.display = "none";
             this.list.dataset.isOpened = "false";
-            this.dropdownArrow.style.transform = "rotate(180deg)";
+            this.dropdownArrow.style.transform = "none";
         } else {
             this.list.style.display = "grid";
             this.list.dataset.isOpened = "true";
-            this.dropdownArrow.style.transform = "none";
+            this.dropdownArrow.style.transform = "rotate(180deg)";
         }
     }
 }
