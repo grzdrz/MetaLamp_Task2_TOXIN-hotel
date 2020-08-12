@@ -15,7 +15,7 @@ mixin room-info(options)
         } = options;
 
         function formateNumber(number) {
-            return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+            return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, "$1 ");
         }
 
     div(class=["room-info"])
@@ -24,7 +24,7 @@ mixin room-info(options)
             - for(let i = 1; i <= 4; i += 1) {
                 input(class=["room-info__radio-button", `room-info__radio-button_${i}`] 
                     type="radio"
-                    name="photo_" + blockNumber
+                    name=`photo_${blockNumber}`
                     checked=(i === 1)
                     disabled=(i > photos.length)
                     data-serial-number=i)
