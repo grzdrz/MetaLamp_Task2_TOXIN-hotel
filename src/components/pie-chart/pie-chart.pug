@@ -32,5 +32,5 @@ mixin pie-chart(options)
             ul(class=["pie-chart__legend"])
                 - for(let i = 0; i < 4; i += 1)
                     li(class=["pie-chart__legend-item"])
-                        div(class=["pie-chart__legend-item-marker", "pie-chart__legend-item-marker_" + (i + 1)])
+                        div(class=["pie-chart__legend-item-marker", `pie-chart__legend-item-marker_${(i + 1)}`])
                         p(class=["pie-chart__legend-item-text"])= legends[i]
