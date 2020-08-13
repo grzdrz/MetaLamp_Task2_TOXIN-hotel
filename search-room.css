@@ -1904,17 +1904,26 @@ Build date: 2019-12-19 16:51:02
     justify-content: center;
     background: transparent; }
   .pagination__left-arrow, .pagination__right-arrow, .pagination__link {
-    width: 2.5rem;
+    min-width: 2.5rem;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 2.5rem;
     text-decoration: none; }
   .pagination__link_target {
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-    border-radius: 50%; }
+    border-radius: 22px; }
     .pagination__link_target > .pagination__link-text {
       color: white; }
+  .pagination__link:hover {
+    width: inherit;
+    height: inherit;
+    border-radius: 22px;
+    background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
   .pagination__left-arrow, .pagination__right-arrow {
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-    border-radius: 50%; }
+    border-radius: 22px; }
   .pagination__left-arrow-text, .pagination__right-arrow-text {
     width: inherit;
     height: inherit;
@@ -1936,18 +1945,13 @@ Build date: 2019-12-19 16:51:02
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    border-radius: 50%;
+    padding: 0px 10px;
+    border-radius: 22px;
     font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.937rem;
     color: rgba(31, 32, 65, 0.5); }
-    .pagination__link-text:hover {
-      width: inherit;
-      height: inherit;
-      border-radius: 50%;
-      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
   .pagination__bottom-text {
     width: 100%;
     display: inline-flex;
