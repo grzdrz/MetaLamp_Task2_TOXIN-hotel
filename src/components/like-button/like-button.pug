@@ -8,6 +8,7 @@ mixin like-button(options)
     div(class=["like-button"])
         input(class=["like-button__input"] type="checkbox" checked=isChecked)
         label(class=["like-button__label"])
+            div(class=["like-button__background"])
             span(class=["like-button__like-symbol"])
             span(class=["like-button__likes-number", "like-button__likes-number_off"])= number
             span(class=["like-button__likes-number", "like-button__likes-number_on"])= number + 1

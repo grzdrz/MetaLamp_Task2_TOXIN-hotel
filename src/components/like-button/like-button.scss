@@ -1,15 +1,15 @@
 @import '../../assets/constants.scss';
 
+$buttonHeight: 1.25rem;
+$borderRadius: 1.375rem;
+$borderThickness: 0.0625rem;
+
 .like-button {
     width: max-content;
-    $buttonHeight: 1.25rem;
-    $buttonWidth: 2.5rem;
-    $buttonTexSidetPaddings: 1rem;
-    $borderRadius: 1.375rem;
-    $borderThickness: 0.125rem;
+    position: relative;
 
     &__label {
-        width: $buttonWidth;
+        width: max-content;
         height: $buttonHeight;
         display: flex;
         justify-content: center;
@@ -25,31 +25,40 @@
         outline: none;
     }
 
-    &__likes-number_on,
-    &__likes-number_off {
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    &__background {
         position: absolute;
         left: 0rem;
         right: 0rem;
         top: 0rem;
         bottom: 0rem;
-        padding-left: 0.625rem;
         margin: $borderThickness;
         border-radius: $borderRadius;
+        background: white;
+    }
+
+    &__likes-number_on,
+    &__likes-number_off {
+        z-index: 1;
+        width: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0rem;
+        bottom: 0rem;
+        margin-left: 0.21rem;
+        margin-right: 0.65rem;
         font-style: normal;
         font-weight: normal;
-        font-size: 0.625rem;
-        background: white;
+        font-size: 0.5625rem;
         text-align: center;
+        white-space: nowrap;
     }
 
     &__input {
         cursor: pointer;
         z-index: 2;
-        width: $buttonWidth;
+        width: 100%;
         height: $buttonHeight;
         position: absolute;
         opacity: 0;
@@ -70,11 +79,11 @@
             }
 
             & > .like-button__likes-number_off {
-                opacity: 0;
+                display: none;
             }
 
             & > .like-button__likes-number_on {
-                opacity: 1;
+                display: flex;
             }
         }
 
@@ -95,23 +104,23 @@
             }
 
             & > .like-button__likes-number_off {
-                opacity: 1;
+                display: flex;
             }
 
             & > .like-button__likes-number_on {
-                opacity: 0;
+                display: none;
             }
         }
     }
 
     &__like-symbol {
         z-index: 2;
-        width: $buttonHeight;
-        height: $buttonHeight;
+        width: 1rem;
+        height: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
+        position: relative;
         left: 0rem;
 
         &::after {
