@@ -48,6 +48,8 @@
         line-height: 0.9375rem;
         text-transform: uppercase;
         color: $color-dark-shade-100;
+        white-space: normal;
+        word-break: break-word;
     }
 
     &__dropdown-arrow {
@@ -150,6 +152,8 @@
         font-size: 0.875rem;
         line-height: 1.24rem;
         color: $color-dark-shade-50;
+        white-space: normal;
+        word-break: break-word;
 
         &_main {
             font-weight: bold;
@@ -171,5 +175,7 @@
         font-size: 0.75rem;
         line-height: 0.875rem;
         color: $color-dark-shade-50;
+        white-space: normal;
+        word-break: break-word;
     }
 }

@@ -39,6 +39,7 @@
     }
 
     &__text {
+        width: 14.5625rem;
         display: inline-flex;
         flex-direction: column;
     }
@@ -49,6 +50,8 @@
         font-size: 0.875rem;
         line-height: 1.5rem;
         color: $color-dark-shade-75;
+        white-space: normal;
+        word-break: break-word;
     }
 
     &__main-text {
@@ -57,5 +60,7 @@
         font-size: 0.875rem;
         line-height: 1.5rem;
         color: $color-dark-shade-75;
+        white-space: normal;
+        word-break: break-word;
     }
 }

@@ -39,6 +39,7 @@
         font-size: 0.875rem;
         line-height: 1.0625rem;
         color: $color-dark-shade-50;
-        white-space: nowrap;
+        white-space: normal;
+        word-break: break-word;
     }
 }
