@@ -51,6 +51,11 @@
     border: 0.0625rem solid $color-dark-shade-25;
     box-sizing: border-box;
     border-radius: 0.25rem;
+
+    &:hover,
+    &:focus {
+      border: 0.0625rem solid $color-dark-shade-50;
+    }
   }
 
   &__input-container_first,
@@ -134,17 +139,28 @@
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: $color-purple;
+    color: $color-dark-shade-50;
+
+    &:hover,
+    &:focus {
+      color: #bc9cff;
+    }
   }
 
   &__clear-button {
     cursor: pointer;
+    display: none;
     font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: $color-dark-shade-50;
+
+    &:hover,
+    &:focus {
+      color: #bc9cff;
+    }
   }
 }
 

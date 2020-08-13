@@ -54,6 +54,11 @@
         color: $color-dark-shade-50;
 
         &-day {
+            &.-focus- {
+                border-radius: 50%;
+                background: $gradient-purple-to-blue-25;
+            }
+
             &.-selected- {
                 position: relative;
                 background: $gradient-purple-to-blue;
@@ -61,6 +66,13 @@
 
                 &.-focus- {
                     background: $gradient-purple-to-blue;
+                }
+            }
+
+            &.-in-range- {
+                &.-focus- {
+                    border-radius: 0%;
+                    background: $gradient-purple-to-blue-25;
                 }
             }
 
@@ -75,23 +87,45 @@
                 line-height: 0.9375rem;
                 text-align: center;
                 color: white;
-            }
 
-            &.-current-.-in-range- {
-                display: flex;
-                align-items: center;
-                background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
-                color: $color-dark-shade-50;
-                border-radius: 0rem;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 0.75rem;
-                line-height: 0.9375rem;
-                text-align: center;
+                &.-focus- {
+                    color: white;
+                }
+
+                &.-in-range- {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    position: relative;
+                    background: $gradient-purple-to-blue;
+                    border-radius: 50%;
+                    border: 0rem;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 0.75rem;
+                    line-height: 0.9375rem;
+                    color: white;
+
+                    &::after {
+                        content: '';
+                        z-index: -1;
+                        width: 50%;
+                        height: inherit;
+                        position: absolute;
+                        margin-left: 50%;
+                        background: $gradient-purple-to-blue-25;
+                    }
+                }
+
+                &.-range-to- {
+                    &::after {
+                        background: transparent;
+                    }
+                }
             }
 
             &.-in-range-.-other-month- {
-                background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+                background: $gradient-purple-to-blue-25;
                 color: $color-dark-shade-25;
             }
 
@@ -122,7 +156,7 @@
                 height: inherit;
                 position: absolute;
                 margin-left: 50%;
-                background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+                background: $gradient-purple-to-blue-25;
             }
 
             &.-range-to-::after {
@@ -132,16 +166,45 @@
                 height: inherit;
                 position: absolute;
                 margin-right: 50%;
-                background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+                background: $gradient-purple-to-blue-25;
+            }
+
+            &.-range-from-.-disabled-::after,
+            &.-range-to-.-disabled-::after {
+                background: transparent;
             }
 
             &.-in-range- {
-                background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+                background: $gradient-purple-to-blue-25;
                 color: $color-dark-shade-50;
             }
 
-            &.-disabled- {
+            &.-disabled-,
+            &.-disabled-.-focus- {
+                font-style: normal;
+                font-weight: normal;
                 color: $color-dark-shade-25;
+                background: transparent;
+            }
+
+            &.-range-from-,
+            &.-in-range- {
+                &.-other-month-,
+                &.-other-month-.-focus-,
+                &.-focus- {
+                    &.-disabled- {
+                        font-style: normal;
+                        font-weight: normal;
+                        color: $color-dark-shade-25;
+                        background: transparent;
+                    }
+                }
+                &.-disabled- {
+                    font-style: normal;
+                    font-weight: normal;
+                    color: $color-dark-shade-25;
+                    background: transparent;
+                }
             }
         }
 
@@ -150,10 +213,19 @@
             width: 4.375rem;
             height: 4.375rem;
 
+            &.-focus- {
+                border-radius: 50%;
+                background: $gradient-purple-to-blue-25;
+            }
+
             &.-current- {
                 background: $gradient-green-to-turquoise;
                 color: white;
                 border-radius: 50%;
+
+                &.-focus- {
+                    color: white;
+                }
             }
 
             &.-selected-,

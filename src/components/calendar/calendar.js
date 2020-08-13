@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 import "air-datepicker";
 import "air-datepicker/dist/css/datepicker.css";
 import jQuery from "jquery";
@@ -43,6 +44,7 @@ class Calendar {
             navTitles: {
                 days: "MM yyyy",
             },
+            minDate: new Date(),
             onShow(dp, animationCompleted) {
                 if (!animationCompleted) {
                     if (!dp.$datepicker.find(".calendar__buttons").html()) {
@@ -54,6 +56,7 @@ class Calendar {
                         );
                         dp.$datepicker[0].querySelector(".calendar__clear-button").onclick = () => {
                             dp.clear();
+                            dp.$datepicker[0].querySelector(".calendar__clear-button").style.display = "none";
                         };
                         dp.$datepicker[0].querySelector(".calendar__apply-button").onclick = () => {
                             dp.hide();
@@ -65,19 +68,23 @@ class Calendar {
                     }
                 }
             },
-            onSelect: function () {
-                if (this.datepickerInstance.selectedDates[0]) {
-                    const firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1).format(this.datepickerInstance.selectedDates[0]);
+            onSelect(formattedDate, date, inst) {
+                if (inst.selectedDates[0]) {
+                    const firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1)
+                        .format(inst.selectedDates[0]);
                     firstDateInput.prop("value", firstFormattedDate);
                 }
-                if (this.datepickerInstance.selectedDates[1]) {
-                    const secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1).format(this.datepickerInstance.selectedDates[1]);
+                if (inst.selectedDates[1]) {
+                    const secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1)
+                        .format(inst.selectedDates[1]);
                     secondDateInput.prop("value", secondFormattedDate);
+                    inst.$datepicker[0].querySelector(".calendar__clear-button").style.display = "block";
                 } else {
                     firstDateInput.prop("value", "");
                     secondDateInput.prop("value", "");
+                    inst.$datepicker[0].querySelector(".calendar__clear-button").style.display = "none";
                 }
-            }.bind(this),
+            },
         }).data("datepicker");
         this.datepickerInstance.show();
         this.datepickerInstance.hide();
@@ -92,6 +99,7 @@ class Calendar {
             navTitles: {
                 days: "MM yyyy",
             },
+            minDate: new Date(),
             onShow(dp, animationCompleted) {
                 if (!animationCompleted) {
                     if (!dp.$datepicker.find(".calendar__buttons").html()) {
@@ -103,6 +111,7 @@ class Calendar {
                         );
                         dp.$datepicker.find(".calendar__clear-button").click(() => {
                             dp.clear();
+                            dp.$datepicker[0].querySelector(".calendar__clear-button").style.display = "none";
                         });
                         dp.$datepicker.find(".calendar__apply-button").click(() => {
                             dp.hide();
@@ -112,21 +121,23 @@ class Calendar {
                     }
                 }
             },
-            onSelect: function () {
-                if (this.datepickerInstance.selectedDates[0] && this.datepickerInstance.selectedDates[1]) {
+            onSelect(formattedDate, date, inst) {
+                if (inst.selectedDates[0] && inst.selectedDates[1]) {
                     let formattedDate1 = (new Intl.DateTimeFormat("ru-RU", dateFormatOptions2)
-                        .format(this.datepickerInstance.selectedDates[0]))
+                        .format(inst.selectedDates[0]))
                         .toString();
                     formattedDate1 = formattedDate1.slice(0, formattedDate1.length - 1);
                     let formattedDate2 = (new Intl.DateTimeFormat("ru-RU", dateFormatOptions2)
-                        .format(this.datepickerInstance.selectedDates[1]))
+                        .format(inst.selectedDates[1]))
                         .toString();
                     formattedDate2 = formattedDate2.slice(0, formattedDate2.length - 1);
                     dateInput.prop("value", `${formattedDate1} - ${formattedDate2}`);
+                    inst.$datepicker[0].querySelector(".calendar__clear-button").style.display = "block";
                 } else {
                     dateInput.prop("value", "");
+                    inst.$datepicker[0].querySelector(".calendar__clear-button").style.display = "none";
                 }
-            }.bind(this),
+            },
         }).data("datepicker");
     }
 
@@ -149,6 +160,7 @@ class Calendar {
                         );
                         dp.$datepicker.find(".calendar__clear-button").click(() => {
                             dp.clear();
+                            dp.$datepicker[0].querySelector(".calendar__clear-button").style.display = "none";
                         });
                         dp.$datepicker.find(".calendar__apply-button").click(() => {
                             dp.hide();
@@ -156,6 +168,13 @@ class Calendar {
 
                         dp.$datepicker.find(".datepicker--pointer").css("display", "none");
                     }
+                }
+            },
+            onSelect(formattedDate, date, inst) {
+                if (inst.selectedDates[0]) {
+                    inst.$datepicker[0].querySelector(".calendar__clear-button").style.display = "block";
+                } else {
+                    inst.$datepicker[0].querySelector(".calendar__clear-button").style.display = "none";
                 }
             },
         }).data("datepicker");

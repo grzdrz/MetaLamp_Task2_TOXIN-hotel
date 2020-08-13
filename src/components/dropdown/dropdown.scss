@@ -212,7 +212,12 @@
         font-size: 0.75rem;
         line-height: 0.9375rem;
         text-transform: uppercase;
-        color: $color-purple;
+        color: $color-dark-shade-50;
+
+        &:hover,
+        &:focus {
+            color: #bc9cff;
+        }
     }
 
     &__clear-button {
@@ -223,5 +228,10 @@
         line-height: 0.9375rem;
         text-transform: uppercase;
         color: $color-dark-shade-50;
+
+        &:hover,
+        &:focus {
+            color: #bc9cff;
+        }
     }
 }
