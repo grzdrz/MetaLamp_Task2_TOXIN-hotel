@@ -144,13 +144,12 @@ class Dropdown {
     }
 
     handlerDropdownLeave(event) {
-        if (event.target === document) this.handlerCloseDropdown();
-        else {
+        if (event.target.className.match) {
             const dropdowns = event.target.className.match(/(^dropdown$)|(^dropdown__)/);
             if (!dropdowns) {
                 this.handlerCloseDropdown();
             }
-        }
+        } else this.handlerCloseDropdown();
     }
 }
 

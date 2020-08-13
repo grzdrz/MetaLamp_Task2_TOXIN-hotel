@@ -48,10 +48,11 @@ mixin room-info(options)
                 span(class=["room-info__room-price"])= `${formateNumber(roomPrice)}${currencyType}`
                 span(class=["room-info__period-of-time"])= `в сутки`
             div(class=["room-info__room-rate"])
-                +star-rating({
-                    blockNumber: blockNumber,
-                    numberOfCheckedStar: numberOfCheckedStar,
-                })
+                div(class=["room-info__star-rating"])
+                    +star-rating({
+                        blockNumber: blockNumber,
+                        numberOfCheckedStar: numberOfCheckedStar,
+                    })
                 p(class=["room-info__reviews-count"])
                     span(class=["room-info__reviews-count-value"])= reviewsCount
                     span(class=["room-info__reviews-count-text"]) Отзывов

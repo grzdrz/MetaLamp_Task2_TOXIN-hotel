@@ -8,22 +8,21 @@ mixin button(options)
             url
         } = options;
         const containerClasses = (isHollow ? ["button_hollow"] : []);
+        const textClasses = (hasArrow ? ["button__text_with-arrow"] : []);
 
     div(class=["button"].concat(containerClasses))
         - if(buttonType === "a")
             a(class=["button__basis"] 
                 href=(url ? url : "https://errorpage.com") target=(url ? "_blank" : "") rel=(url ? "noopener noreferrer" : ""))
-                span(class=["button__text"])= text
                 - if(hasArrow)
                     span(class=["button__arrow"]) arrow_forward 
         - else if(buttonType === "button")
             button(class=["button__basis"])
-                span(class=["button__text"])= text
                 - if(hasArrow)
                     span(class=["button__arrow"]) arrow_forward
         - else if(buttonType === "submit")
             label(class=["button__basis"])
                 input(class=["button__submit"] type="submit")
-                span(class=["button__text"])= text
                 - if(hasArrow)
                     span(class=["button__arrow"]) arrow_forward
+        p(class=["button__text"].concat(textClasses))= text

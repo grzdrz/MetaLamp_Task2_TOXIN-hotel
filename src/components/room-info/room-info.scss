@@ -205,6 +205,10 @@
         border-top: 0.0625rem solid $color-dark-shade-10;
     }
 
+    &__star-rating {
+        width: max-content;
+    }
+
     &__reviews-count {
         display: flex;
         align-items: flex-end;
