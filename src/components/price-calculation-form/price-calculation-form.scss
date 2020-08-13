@@ -40,6 +40,9 @@
         font-size: 1.5rem;
         line-height: 1.4375rem;
         color: $color-dark-shade-100;
+        max-width: 3.125rem;
+        white-space: normal;
+        word-break: break-word;
     }
 
     &__room-status {
@@ -61,6 +64,9 @@
         font-size: 0.875rem;
         line-height: 0.9375rem;
         color: $color-dark-shade-50;
+        max-width: 6.125rem;
+        white-space: normal;
+        word-break: break-word;
     }
 
     &__period-of-time {
@@ -118,8 +124,18 @@
         margin-bottom: 0.9375rem;
     }
 
+    &__main-sum-formula,
+    &__discount-description,
+    &__additional-services-description {
+        max-width: 13.75rem;
+        white-space: normal;
+        word-break: break-word;
+    }
+
     &__main-sum-result {
         justify-self: end;
+        white-space: normal;
+        word-break: break-word;
     }
 
     &__services {
@@ -155,21 +171,31 @@
 
     &__discount-value {
         justify-self: end;
+        white-space: normal;
+        word-break: break-word;
     }
 
     &__additional-services-value {
         justify-self: end;
+        white-space: normal;
+        word-break: break-word;
     }
 
     &__total-result {
         display: grid;
         grid-template-columns: max-content auto min-content;
+        overflow: hidden;
+    }
+
+    &__total-result-text {
+        align-self: flex-end;
     }
 
     &__total-result-bottom-line {
         margin-bottom: 0.3125rem;
         border-bottom: 0.0625rem dashed $color-dark-shade-25;
         box-sizing: border-box;
+        min-width: 1.25rem;
     }
 
     &__total-result-value {

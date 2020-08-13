@@ -163,6 +163,9 @@
         font-size: 1.1875rem;
         line-height: 1.5rem;
         color: $color-dark-shade-100;
+        max-width: 3.125rem;
+        white-space: normal;
+        word-break: break-word;
     }
 
     &__room-status {
@@ -184,6 +187,9 @@
         font-size: 0.875rem;
         line-height: 0.9375rem;
         color: $color-dark-shade-50;
+        max-width: 6.125rem;
+        white-space: normal;
+        word-break: break-word;
     }
 
     &__period-of-time {
@@ -212,6 +218,7 @@
     &__reviews-count {
         display: flex;
         align-items: flex-end;
+        flex-wrap: wrap;
         padding-bottom: 0.1875rem;
         padding-right: 0.25rem;
     }
@@ -224,6 +231,8 @@
         line-height: 1.125rem;
         text-align: right;
         color: $color-dark-shade-50;
+        text-align: start;
+        word-break: break-word;
     }
 
     &__reviews-count-text {

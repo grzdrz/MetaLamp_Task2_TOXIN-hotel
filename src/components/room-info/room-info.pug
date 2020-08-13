@@ -54,5 +54,5 @@ mixin room-info(options)
                         numberOfCheckedStar: numberOfCheckedStar,
                     })
                 p(class=["room-info__reviews-count"])
-                    span(class=["room-info__reviews-count-value"])= reviewsCount
+                    span(class=["room-info__reviews-count-value"])= `${formateNumber(reviewsCount)}`
                     span(class=["room-info__reviews-count-text"]) Отзывов
