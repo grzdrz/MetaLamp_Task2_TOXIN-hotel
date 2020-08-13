@@ -1,0 +1,1861 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2) format("woff2"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff) format("woff"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(src/assets/fonts/Montserrat/montserrat-regular.woff), url(src/assets/fonts/Montserrat/montserrat-regular.woff2), url(src/assets/fonts/Montserrat/montserrat-regular.eot), url(src/assets/fonts/Montserrat/montserrat-regular.ttf), url(src/assets/fonts/Montserrat/montserrat-regular.svg);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(src/assets/fonts/Montserrat/montserrat-bold.woff), url(src/assets/fonts/Montserrat/montserrat-bold.woff2), url(src/assets/fonts/Montserrat/montserrat-bold.eot), url(src/assets/fonts/Montserrat/montserrat-bold.ttf), url(src/assets/fonts/Montserrat/montserrat-bold.svg);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url(src/assets/fonts/Quicksand/quicksand-regular.woff), url(src/assets/fonts/Quicksand/quicksand-regular.woff2), url(src/assets/fonts/Quicksand/quicksand-regular.eot), url(src/assets/fonts/Quicksand/quicksand-regular.ttf), url(src/assets/fonts/Quicksand/quicksand-regular.svg);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url(src/assets/fonts/Quicksand/quicksand-bold.woff), url(src/assets/fonts/Quicksand/quicksand-bold.woff2), url(src/assets/fonts/Quicksand/quicksand-bold.eot), url(src/assets/fonts/Quicksand/quicksand-bold.ttf), url(src/assets/fonts/Quicksand/quicksand-bold.svg);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(src/assets/fonts/OpenSans/open-sans-regular.woff), url(src/assets/fonts/OpenSans/open-sans-regular.woff2), url(src/assets/fonts/OpenSans/open-sans-regular.eot), url(src/assets/fonts/OpenSans/open-sans-regular.ttf), url(src/assets/fonts/OpenSans/open-sans-regular.svg);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(src/assets/fonts/OpenSans/open-sans-bold.woff), url(src/assets/fonts/OpenSans/open-sans-bold.woff2), url(src/assets/fonts/OpenSans/open-sans-bold.eot), url(src/assets/fonts/OpenSans/open-sans-bold.ttf), url(src/assets/fonts/OpenSans/open-sans-bold.svg);
+  font-weight: bold;
+  font-style: normal; }
+
+*,
+*:after,
+*:before {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: Montserrat, Arial, sans-serif; }
+
+html {
+  font-size: 16px; }
+
+html,
+body {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede; }
+  .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+    color: #c5c5c5; }
+  .-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+    color: #dedede; }
+  .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+    color: #fff;
+    background: #a2ddf6; }
+    .-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+      background: #8ad5f4; }
+  .-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: rgba(92, 196, 239, 0.1);
+    color: #cccccc; }
+    .-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+      background-color: rgba(92, 196, 239, 0.2); }
+  .datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+    background: none;
+    border: none; }
+
+/* -------------------------------------------------
+    Datepicker cells
+   ------------------------------------------------- */
+.datepicker--cells {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.datepicker--cell {
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 32px;
+  z-index: 1; }
+  .datepicker--cell.-focus- {
+    background: #f0f0f0; }
+  .datepicker--cell.-current- {
+    color: #4EB5E6; }
+    .datepicker--cell.-current-.-focus- {
+      color: #4a4a4a; }
+    .datepicker--cell.-current-.-in-range- {
+      color: #4EB5E6; }
+  .datepicker--cell.-in-range- {
+    background: rgba(92, 196, 239, 0.1);
+    color: #4a4a4a;
+    border-radius: 0; }
+    .datepicker--cell.-in-range-.-focus- {
+      background-color: rgba(92, 196, 239, 0.2); }
+  .datepicker--cell.-disabled- {
+    cursor: default;
+    color: #aeaeae; }
+    .datepicker--cell.-disabled-.-focus- {
+      color: #aeaeae; }
+    .datepicker--cell.-disabled-.-in-range- {
+      color: #a1a1a1; }
+    .datepicker--cell.-disabled-.-current-.-focus- {
+      color: #aeaeae; }
+  .datepicker--cell.-range-from- {
+    border: 1px solid rgba(92, 196, 239, 0.5);
+    background-color: rgba(92, 196, 239, 0.1);
+    border-radius: 4px 0 0 4px; }
+  .datepicker--cell.-range-to- {
+    border: 1px solid rgba(92, 196, 239, 0.5);
+    background-color: rgba(92, 196, 239, 0.1);
+    border-radius: 0 4px 4px 0; }
+  .datepicker--cell.-range-from-.-range-to- {
+    border-radius: 4px; }
+  .datepicker--cell.-selected- {
+    color: #fff;
+    border: none;
+    background: #5cc4ef; }
+    .datepicker--cell.-selected-.-current- {
+      color: #fff;
+      background: #5cc4ef; }
+    .datepicker--cell.-selected-.-focus- {
+      background: #45bced; }
+  .datepicker--cell:empty {
+    cursor: default; }
+
+.datepicker--days-names {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 8px 0 3px; }
+
+.datepicker--day-name {
+  color: #FF9A19;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .8em; }
+
+.datepicker--cell-day {
+  width: 14.28571%; }
+
+.datepicker--cells-months {
+  height: 170px; }
+
+.datepicker--cell-month {
+  width: 33.33%;
+  height: 25%; }
+
+.datepicker--years {
+  height: 170px; }
+
+.datepicker--cells-years {
+  height: 170px; }
+
+.datepicker--cell-year {
+  width: 25%;
+  height: 33.33%; }
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede; }
+  .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+    color: #c5c5c5; }
+  .-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+    color: #dedede; }
+  .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+    color: #fff;
+    background: #a2ddf6; }
+    .-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+      background: #8ad5f4; }
+  .-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: rgba(92, 196, 239, 0.1);
+    color: #cccccc; }
+    .-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+      background-color: rgba(92, 196, 239, 0.2); }
+  .datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+    background: none;
+    border: none; }
+
+/* -------------------------------------------------
+    Datepicker
+   ------------------------------------------------- */
+.datepickers-container {
+  position: absolute;
+  left: 0;
+  top: 0; }
+  @media print {
+    .datepickers-container {
+      display: none; } }
+
+.datepicker {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-sizing: content-box;
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  color: #4a4a4a;
+  width: 250px;
+  position: absolute;
+  left: -100000px;
+  opacity: 0;
+  transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
+  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
+  z-index: 100; }
+  .datepicker.-from-top- {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px); }
+  .datepicker.-from-right- {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px); }
+  .datepicker.-from-bottom- {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px); }
+  .datepicker.-from-left- {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px); }
+  .datepicker.active {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    transition: opacity 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s;
+    transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease; }
+
+.datepicker-inline .datepicker {
+  border-color: #d7d7d7;
+  box-shadow: none;
+  position: static;
+  left: auto;
+  right: auto;
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none; }
+
+.datepicker-inline .datepicker--pointer {
+  display: none; }
+
+.datepicker--content {
+  box-sizing: content-box;
+  padding: 4px; }
+  .-only-timepicker- .datepicker--content {
+    display: none; }
+
+.datepicker--pointer {
+  position: absolute;
+  background: #fff;
+  border-top: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  width: 10px;
+  height: 10px;
+  z-index: -1; }
+  .-top-left- .datepicker--pointer, .-top-center- .datepicker--pointer, .-top-right- .datepicker--pointer {
+    top: calc(100% - 4px);
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
+  .-right-top- .datepicker--pointer, .-right-center- .datepicker--pointer, .-right-bottom- .datepicker--pointer {
+    right: calc(100% - 4px);
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg); }
+  .-bottom-left- .datepicker--pointer, .-bottom-center- .datepicker--pointer, .-bottom-right- .datepicker--pointer {
+    bottom: calc(100% - 4px);
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg); }
+  .-left-top- .datepicker--pointer, .-left-center- .datepicker--pointer, .-left-bottom- .datepicker--pointer {
+    left: calc(100% - 4px);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .-top-left- .datepicker--pointer, .-bottom-left- .datepicker--pointer {
+    left: 10px; }
+  .-top-right- .datepicker--pointer, .-bottom-right- .datepicker--pointer {
+    right: 10px; }
+  .-top-center- .datepicker--pointer, .-bottom-center- .datepicker--pointer {
+    left: calc(50% - 10px / 2); }
+  .-left-top- .datepicker--pointer, .-right-top- .datepicker--pointer {
+    top: 10px; }
+  .-left-bottom- .datepicker--pointer, .-right-bottom- .datepicker--pointer {
+    bottom: 10px; }
+  .-left-center- .datepicker--pointer, .-right-center- .datepicker--pointer {
+    top: calc(50% - 10px / 2); }
+
+.datepicker--body {
+  display: none; }
+  .datepicker--body.active {
+    display: block; }
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede; }
+  .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+    color: #c5c5c5; }
+  .-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+    color: #dedede; }
+  .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+    color: #fff;
+    background: #a2ddf6; }
+    .-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+      background: #8ad5f4; }
+  .-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: rgba(92, 196, 239, 0.1);
+    color: #cccccc; }
+    .-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+      background-color: rgba(92, 196, 239, 0.2); }
+  .datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+    background: none;
+    border: none; }
+
+/* -------------------------------------------------
+    Navigation
+   ------------------------------------------------- */
+.datepicker--nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #efefef;
+  min-height: 32px;
+  padding: 4px; }
+  .-only-timepicker- .datepicker--nav {
+    display: none; }
+
+.datepicker--nav-title,
+.datepicker--nav-action {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.datepicker--nav-action {
+  width: 32px;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .datepicker--nav-action:hover {
+    background: #f0f0f0; }
+  .datepicker--nav-action.-disabled- {
+    visibility: hidden; }
+  .datepicker--nav-action svg {
+    width: 32px;
+    height: 32px; }
+  .datepicker--nav-action path {
+    fill: none;
+    stroke: #9c9c9c;
+    stroke-width: 2px; }
+
+.datepicker--nav-title {
+  border-radius: 4px;
+  padding: 0 8px; }
+  .datepicker--nav-title i {
+    font-style: normal;
+    color: #9c9c9c;
+    margin-left: 5px; }
+  .datepicker--nav-title:hover {
+    background: #f0f0f0; }
+  .datepicker--nav-title.-disabled- {
+    cursor: default;
+    background: none; }
+
+.datepicker--buttons {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px;
+  border-top: 1px solid #efefef; }
+
+.datepicker--button {
+  color: #4EB5E6;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px; }
+  .datepicker--button:hover {
+    color: #4a4a4a;
+    background: #f0f0f0; }
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede; }
+  .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+    color: #c5c5c5; }
+  .-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+    color: #dedede; }
+  .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+    color: #fff;
+    background: #a2ddf6; }
+    .-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+      background: #8ad5f4; }
+  .-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: rgba(92, 196, 239, 0.1);
+    color: #cccccc; }
+    .-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+      background-color: rgba(92, 196, 239, 0.2); }
+  .datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+    background: none;
+    border: none; }
+
+/* -------------------------------------------------
+    Timepicker
+   ------------------------------------------------- */
+.datepicker--time {
+  border-top: 1px solid #efefef;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px;
+  position: relative; }
+  .datepicker--time.-am-pm- .datepicker--time-sliders {
+    -webkit-flex: 0 1 138px;
+        -ms-flex: 0 1 138px;
+            flex: 0 1 138px;
+    max-width: 138px; }
+  .-only-timepicker- .datepicker--time {
+    border-top: none; }
+
+.datepicker--time-sliders {
+  -webkit-flex: 0 1 153px;
+      -ms-flex: 0 1 153px;
+          flex: 0 1 153px;
+  margin-right: 10px;
+  max-width: 153px; }
+
+.datepicker--time-label {
+  display: none;
+  font-size: 12px; }
+
+.datepicker--time-current {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 0 0 10px; }
+
+.datepicker--time-current-colon {
+  margin: 0 2px 3px;
+  line-height: 1; }
+
+.datepicker--time-current-hours,
+.datepicker--time-current-minutes {
+  line-height: 1;
+  font-size: 19px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  position: relative;
+  z-index: 1; }
+  .datepicker--time-current-hours:after,
+  .datepicker--time-current-minutes:after {
+    content: '';
+    background: #f0f0f0;
+    border-radius: 4px;
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    opacity: 0; }
+  .datepicker--time-current-hours.-focus-:after,
+  .datepicker--time-current-minutes.-focus-:after {
+    opacity: 1; }
+
+.datepicker--time-current-ampm {
+  text-transform: uppercase;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  color: #9c9c9c;
+  margin-left: 6px;
+  font-size: 11px;
+  margin-bottom: 1px; }
+
+.datepicker--time-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 11px;
+  height: 17px;
+  background: linear-gradient(to right, #dedede, #dedede) left 50%/100% 1px no-repeat; }
+  .datepicker--time-row:first-child {
+    margin-bottom: 4px; }
+  .datepicker--time-row input[type='range'] {
+    background: none;
+    cursor: pointer;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none; }
+    .datepicker--time-row input[type='range']::-webkit-slider-thumb {
+      -webkit-appearance: none; }
+    .datepicker--time-row input[type='range']::-ms-tooltip {
+      display: none; }
+    .datepicker--time-row input[type='range']:hover::-webkit-slider-thumb {
+      border-color: #b8b8b8; }
+    .datepicker--time-row input[type='range']:hover::-moz-range-thumb {
+      border-color: #b8b8b8; }
+    .datepicker--time-row input[type='range']:hover::-ms-thumb {
+      border-color: #b8b8b8; }
+    .datepicker--time-row input[type='range']:focus {
+      outline: none; }
+      .datepicker--time-row input[type='range']:focus::-webkit-slider-thumb {
+        background: #5cc4ef;
+        border-color: #5cc4ef; }
+      .datepicker--time-row input[type='range']:focus::-moz-range-thumb {
+        background: #5cc4ef;
+        border-color: #5cc4ef; }
+      .datepicker--time-row input[type='range']:focus::-ms-thumb {
+        background: #5cc4ef;
+        border-color: #5cc4ef; }
+    .datepicker--time-row input[type='range']::-webkit-slider-thumb {
+      box-sizing: border-box;
+      height: 12px;
+      width: 12px;
+      border-radius: 3px;
+      border: 1px solid #dedede;
+      background: #fff;
+      cursor: pointer;
+      transition: background .2s; }
+    .datepicker--time-row input[type='range']::-moz-range-thumb {
+      box-sizing: border-box;
+      height: 12px;
+      width: 12px;
+      border-radius: 3px;
+      border: 1px solid #dedede;
+      background: #fff;
+      cursor: pointer;
+      transition: background .2s; }
+    .datepicker--time-row input[type='range']::-ms-thumb {
+      box-sizing: border-box;
+      height: 12px;
+      width: 12px;
+      border-radius: 3px;
+      border: 1px solid #dedede;
+      background: #fff;
+      cursor: pointer;
+      transition: background .2s; }
+    .datepicker--time-row input[type='range']::-webkit-slider-thumb {
+      margin-top: -6px; }
+    .datepicker--time-row input[type='range']::-webkit-slider-runnable-track {
+      border: none;
+      height: 1px;
+      cursor: pointer;
+      color: transparent;
+      background: transparent; }
+    .datepicker--time-row input[type='range']::-moz-range-track {
+      border: none;
+      height: 1px;
+      cursor: pointer;
+      color: transparent;
+      background: transparent; }
+    .datepicker--time-row input[type='range']::-ms-track {
+      border: none;
+      height: 1px;
+      cursor: pointer;
+      color: transparent;
+      background: transparent; }
+    .datepicker--time-row input[type='range']::-ms-fill-lower {
+      background: transparent; }
+    .datepicker--time-row input[type='range']::-ms-fill-upper {
+      background: transparent; }
+  .datepicker--time-row span {
+    padding: 0 12px; }
+
+.datepicker--time-icon {
+  color: #9c9c9c;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 16px;
+  position: relative;
+  margin: 0 5px -1px 0;
+  width: 1em;
+  height: 1em; }
+  .datepicker--time-icon:after, .datepicker--time-icon:before {
+    content: '';
+    background: currentColor;
+    position: absolute; }
+  .datepicker--time-icon:after {
+    height: .4em;
+    width: 1px;
+    left: calc(50% - 1px);
+    top: calc(50% + 1px);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  .datepicker--time-icon:before {
+    width: .4em;
+    height: 1px;
+    top: calc(50% + 1px);
+    left: calc(50% - 1px); }
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+  color: #dedede; }
+  .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
+    color: #c5c5c5; }
+  .-disabled-.-focus-.datepicker--cell-day.-other-month-, .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
+    color: #dedede; }
+  .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+    color: #fff;
+    background: #a2ddf6; }
+    .-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.-focus-.datepicker--cell-year.-other-decade- {
+      background: #8ad5f4; }
+  .-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: rgba(92, 196, 239, 0.1);
+    color: #cccccc; }
+    .-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
+      background-color: rgba(92, 196, 239, 0.2); }
+  .datepicker--cell-day.-other-month-:empty, .datepicker--cell-year.-other-decade-:empty {
+    background: none;
+    border: none; }
+
+.colored-logo {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-self: end; }
+  .colored-logo__logo-symbol {
+    margin-right: 0.7813rem; }
+
+.button {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 1.375rem;
+  background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+  .button__basis {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    margin: 0.125rem;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    border-radius: 1.375rem;
+    outline: none; }
+  .button > button {
+    width: -webkit-fill-available; }
+  .button__text {
+    cursor: pointer;
+    background: transparent;
+    text-align: center;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-transform: uppercase; }
+  .button__arrow {
+    cursor: pointer;
+    width: 2.75rem;
+    position: absolute;
+    right: 0rem;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center; }
+  .button__submit {
+    cursor: pointer;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    z-index: 2; }
+  .button:hover {
+    background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
+  .button_hollow > .button__basis {
+    background: white; }
+    .button_hollow > .button__basis > .button__text,
+    .button_hollow > .button__basis > .button__arrow {
+      color: #bc9cff; }
+
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: min-content auto min-content;
+  align-items: center;
+  justify-items: start;
+  padding: 0.9375rem 9.72222%;
+  background: white;
+  box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.05); }
+  @media screen and (max-width: 1150px) and (min-width: 768px) {
+    .header {
+      display: grid;
+      grid-template-columns: min-content auto;
+      grid-template-rows: auto auto; } }
+  @media screen and (max-width: 768px) {
+    .header {
+      display: grid;
+      grid-template-columns: min-content auto;
+      grid-template-rows: min-content auto; } }
+  @media screen and (max-width: 550px) {
+    .header {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: min-content min-content min-content;
+      justify-content: flex-start; } }
+  @media screen and (max-width: 768px) {
+    .header__colored-logo {
+      justify-self: flex-start; } }
+  .header__navigation-menu {
+    justify-self: end;
+    margin-right: 1.25rem; }
+    @media screen and (max-width: 1150px) and (min-width: 768px) {
+      .header__navigation-menu {
+        order: 2;
+        margin-right: 0rem;
+        margin-top: 1.25rem;
+        grid-column-start: 2;
+        grid-column-end: 3; } }
+    @media screen and (max-width: 768px) {
+      .header__navigation-menu {
+        order: 2;
+        margin-right: 0rem;
+        margin-top: 1.25rem;
+        margin-left: 0.3125rem;
+        display: flex;
+        flex-direction: column; } }
+    @media screen and (max-width: 550px) {
+      .header__navigation-menu {
+        justify-self: flex-start; } }
+  .header__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .header__list {
+        display: flex;
+        flex-direction: column; } }
+  .header__item {
+    display: flex;
+    align-items: center;
+    margin: 0rem 0.625rem; }
+    @media screen and (max-width: 768px) {
+      .header__item {
+        margin: 0.625rem 0rem; } }
+    .header__item:first-child {
+      margin: 0rem 0.625rem 0rem 0rem; }
+      .header__item:first-child .header__item-ref {
+        color: rgba(31, 32, 65, 0.75);
+        font-weight: bold; }
+      @media screen and (max-width: 768px) {
+        .header__item:first-child {
+          margin: 0rem 0rem 0.625rem 0rem; } }
+    .header__item:last-child {
+      margin: 0rem 0rem 0rem 0.625rem; }
+      @media screen and (max-width: 768px) {
+        .header__item:last-child {
+          margin: 0.625rem 0rem 0rem 0rem; } }
+  .header__item-ref {
+    text-decoration: none;
+    color: rgba(31, 32, 65, 0.5);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    white-space: nowrap;
+    letter-spacing: 0.005em; }
+  .header__dropdown-arrow {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    color: rgba(31, 32, 65, 0.5); }
+  .header__user-full-name {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    color: rgba(31, 32, 65, 0.5);
+    white-space: nowrap; }
+    .header__user-full-name:before {
+      content: '';
+      height: 1.875rem;
+      width: 0.0625rem;
+      background: transparent;
+      border-left: 0.0625rem solid rgba(31, 32, 65, 0.1);
+      padding-right: 1.25rem; }
+    @media screen and (max-width: 1150px) and (min-width: 768px) {
+      .header__user-full-name {
+        order: 1;
+        justify-self: end; } }
+    @media screen and (max-width: 768px) {
+      .header__user-full-name {
+        order: 1;
+        justify-self: end; } }
+    @media screen and (max-width: 550px) {
+      .header__user-full-name {
+        margin-top: 1.25rem; } }
+  .header__buttons {
+    display: flex; }
+    @media screen and (max-width: 1150px) and (min-width: 768px) {
+      .header__buttons {
+        order: 1;
+        justify-self: end; } }
+    @media screen and (max-width: 768px) {
+      .header__buttons {
+        order: 1;
+        justify-self: end; } }
+    @media screen and (max-width: 550px) {
+      .header__buttons {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: min-content;
+        margin-top: 1.25rem; } }
+  .header__sign-in-button {
+    width: 5.4375rem;
+    height: 2.125rem;
+    margin-right: 1.25rem; }
+    @media screen and (max-width: 550px) {
+      .header__sign-in-button {
+        margin-right: 0rem;
+        margin-bottom: 0.625rem; } }
+  .header__sign-up-button {
+    width: 12.25rem;
+    height: 2.125rem; }
+
+.form-input {
+  width: 100%; }
+  .form-input_text-field-default {
+    display: flex;
+    flex-direction: column; }
+  .form-input__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.3125rem; }
+  .form-input__title-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .form-input__additional-title-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 0.65rem;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.0187rem; }
+  .form-input__input-container {
+    display: grid;
+    grid-template-rows: 2.625rem;
+    grid-template-columns: auto min-content;
+    position: relative;
+    border: 0.0625rem solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 0.25rem; }
+    .form-input__input-container:hover, .form-input__input-container:focus {
+      border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
+  .form-input__input {
+    padding: 0rem 0.9375rem;
+    height: 2.625rem;
+    outline: none;
+    background: transparent;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.0125rem;
+    color: rgba(31, 32, 65, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .form-input__input::-webkit-input-placeholder {
+      background: rgba(31, 32, 65, 0.25);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 0rem solid transparent; }
+    .form-input__input:-webkit-autofill, .form-input__input:-webkit-autofill:hover, .form-input__input:-webkit-autofill:focus,
+    .form-input__input textarea:-webkit-autofill,
+    .form-input__input textarea:-webkit-autofill:hover,
+    .form-input__input textarea:-webkit-autofill:focus,
+    .form-input__input select:-webkit-autofill,
+    .form-input__input select:-webkit-autofill:hover,
+    .form-input__input select:-webkit-autofill:focus {
+      border: 0rem solid rgba(255, 255, 255, 0);
+      -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
+      -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      transition: background-color 5000s ease-in-out 0s;
+      color: rgba(31, 32, 65, 0.75); }
+  .form-input__submitter {
+    cursor: pointer;
+    min-width: 2.625rem;
+    height: 2.625rem;
+    border: 0rem solid transparent;
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.5rem; }
+
+.radio {
+  display: flex;
+  width: max-content; }
+  .radio__label {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    margin-right: 1.25rem; }
+    .radio__label:last-child {
+      margin-right: 0rem; }
+  .radio__button-image {
+    z-index: 1;
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 0.625rem;
+    border-radius: 50%; }
+  .radio__input {
+    cursor: pointer;
+    z-index: 2;
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    opacity: 0; }
+    .radio__input:checked + div {
+      border: 0.0625rem solid #bc9cff; }
+    .radio__input:checked + div::after {
+      content: '';
+      width: 0.75rem;
+      height: 0.75rem;
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+      border-radius: 50%; }
+    .radio__input:not(:checked) + div {
+      border: 0.0625rem solid rgba(31, 32, 65, 0.25); }
+  .radio__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: rgba(31, 32, 65, 0.5); }
+
+.toggle {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  width: max-content; }
+  .toggle__button-image {
+    z-index: 1;
+    width: 2.5rem;
+    height: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-right: 0.625rem;
+    padding: 0rem 0.1875rem;
+    border-radius: 0.625rem;
+    transition: padding-left 0.3s; }
+  .toggle__input {
+    cursor: pointer;
+    z-index: 2;
+    width: 2.5rem;
+    height: 1.25rem;
+    position: absolute;
+    opacity: 0; }
+    .toggle__input:checked + div {
+      border: 0.0625rem solid #bc9cff;
+      padding-left: 1.4375rem; }
+    .toggle__input:not(:checked) + div {
+      border: 0.0625rem solid rgba(31, 32, 65, 0.25);
+      padding-left: 0.1875rem; }
+    .toggle__input:checked + div::after {
+      content: '';
+      width: 0.75rem;
+      height: 0.75rem;
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+      border-radius: 50%; }
+    .toggle__input:not(:checked) + div::after {
+      content: '';
+      width: 0.75rem;
+      height: 0.75rem;
+      background: rgba(31, 32, 65, 0.25);
+      border-radius: 50%; }
+  .toggle__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: rgba(31, 32, 65, 0.5); }
+
+.calendar {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .calendar__input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .calendar__input-container_first {
+      margin-right: 1.25rem; }
+  .calendar__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.3125rem; }
+  .calendar__title-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .calendar__additional-title-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 0.55rem;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.0187rem; }
+  .calendar__label {
+    cursor: pointer;
+    width: 9.375rem;
+    display: grid;
+    grid-template-columns: auto 2.625rem;
+    grid-template-rows: 2.625rem;
+    border: 0.0625rem solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 0.25rem; }
+    .calendar__label:hover, .calendar__label:focus {
+      border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
+  .calendar__input-container_first, .calendar__input-container_second {
+    width: 46.875%; }
+  .calendar__label_first, .calendar__label_second {
+    width: 100%; }
+  .calendar__input {
+    cursor: pointer;
+    height: 2.5rem;
+    padding: 0rem 0rem 0rem 0.9375rem;
+    outline: none;
+    background: transparent;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .calendar__input::-webkit-input-placeholder {
+      background: rgba(31, 32, 65, 0.75);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 0rem solid transparent; }
+    .calendar__input:-webkit-autofill, .calendar__input:-webkit-autofill:hover, .calendar__input:-webkit-autofill:focus,
+    .calendar__input textarea:-webkit-autofill,
+    .calendar__input textarea:-webkit-autofill:hover,
+    .calendar__input textarea:-webkit-autofill:focus,
+    .calendar__input select:-webkit-autofill,
+    .calendar__input select:-webkit-autofill:hover,
+    .calendar__input select:-webkit-autofill:focus {
+      border: 0rem solid rgba(255, 255, 255, 0);
+      -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
+      -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      transition: background-color 5000s ease-in-out 0s;
+      color: rgba(31, 32, 65, 0.75); }
+  .calendar__dropdown-arrow {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    background: transparent;
+    outline: none; }
+  .calendar__buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 1.125rem 1.25rem 0rem 1.25rem; }
+  .calendar__apply-button {
+    cursor: pointer;
+    margin-left: auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5); }
+    .calendar__apply-button:hover, .calendar__apply-button:focus {
+      color: #bc9cff; }
+  .calendar__clear-button {
+    cursor: pointer;
+    display: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5); }
+    .calendar__clear-button:hover, .calendar__clear-button:focus {
+      color: #bc9cff; }
+
+.datepicker {
+  width: max-content;
+  padding-bottom: 1.25rem;
+  background: white;
+  border: 0.0625rem solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.05);
+  border-radius: 0.25rem; }
+  @media screen and (max-width: 20rem) {
+    .datepicker.active {
+      border: 0rem; } }
+  .datepicker.-bottom-right-, .datepicker.-bottom-right-.active {
+    margin-left: -1.75rem; }
+    @media screen and (max-width: 20rem) {
+      .datepicker.-bottom-right-, .datepicker.-bottom-right-.active {
+        margin-left: -3.625rem; } }
+  .datepicker.-bottom-left-, .datepicker.-bottom-left-.active {
+    margin-left: -0.125rem; }
+    @media screen and (max-width: 20rem) {
+      .datepicker.-bottom-left-, .datepicker.-bottom-left-.active {
+        margin-left: -2rem; } }
+  .datepicker.active {
+    width: max-content; }
+  .datepicker--cells {
+    width: 17.5rem; }
+  .datepicker--cell {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    color: rgba(31, 32, 65, 0.5); }
+    .datepicker--cell-day.-focus- {
+      border-radius: 50%;
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
+    .datepicker--cell-day.-selected- {
+      position: relative;
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+      border-radius: 50%; }
+      .datepicker--cell-day.-selected-.-focus- {
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+    .datepicker--cell-day.-in-range-.-focus- {
+      border-radius: 0%;
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
+    .datepicker--cell-day.-current- {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+      border-radius: 50%;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 0.9375rem;
+      text-align: center;
+      color: white; }
+      .datepicker--cell-day.-current-.-focus- {
+        color: white; }
+      .datepicker--cell-day.-current-.-in-range- {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+        border-radius: 50%;
+        border: 0rem;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: white; }
+        .datepicker--cell-day.-current-.-in-range-::after {
+          content: '';
+          z-index: -1;
+          width: 50%;
+          height: inherit;
+          position: absolute;
+          margin-left: 50%;
+          background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
+      .datepicker--cell-day.-current-.-range-to-::after {
+        background: transparent; }
+    .datepicker--cell-day.-in-range-.-other-month- {
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      color: rgba(31, 32, 65, 0.25); }
+    .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-current-, .datepicker--cell-day.-range-to-.-current-, .datepicker--cell-day.-range-from-.-other-month-, .datepicker--cell-day.-range-to-.-other-month- {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+      border-radius: 50%;
+      border: 0rem;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 0.9375rem;
+      color: white; }
+    .datepicker--cell-day.-range-from-::after {
+      content: '';
+      z-index: -1;
+      width: 50%;
+      height: inherit;
+      position: absolute;
+      margin-left: 50%;
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
+    .datepicker--cell-day.-range-to-::after {
+      content: '';
+      z-index: -1;
+      width: 50%;
+      height: inherit;
+      position: absolute;
+      margin-right: 50%;
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
+    .datepicker--cell-day.-range-from-.-disabled-::after, .datepicker--cell-day.-range-to-.-disabled-::after {
+      background: transparent; }
+    .datepicker--cell-day.-in-range- {
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      color: rgba(31, 32, 65, 0.5); }
+    .datepicker--cell-day.-disabled-, .datepicker--cell-day.-disabled-.-focus- {
+      font-style: normal;
+      font-weight: normal;
+      color: rgba(31, 32, 65, 0.25);
+      background: transparent; }
+    .datepicker--cell-day.-range-from-.-other-month-.-disabled-, .datepicker--cell-day.-range-from-.-other-month-.-focus-.-disabled-, .datepicker--cell-day.-range-from-.-focus-.-disabled-, .datepicker--cell-day.-in-range-.-other-month-.-disabled-, .datepicker--cell-day.-in-range-.-other-month-.-focus-.-disabled-, .datepicker--cell-day.-in-range-.-focus-.-disabled- {
+      font-style: normal;
+      font-weight: normal;
+      color: rgba(31, 32, 65, 0.25);
+      background: transparent; }
+    .datepicker--cell-day.-range-from-.-disabled-, .datepicker--cell-day.-in-range-.-disabled- {
+      font-style: normal;
+      font-weight: normal;
+      color: rgba(31, 32, 65, 0.25);
+      background: transparent; }
+    .datepicker--cell-month, .datepicker--cell-year {
+      width: 4.375rem;
+      height: 4.375rem; }
+      .datepicker--cell-month.-focus-, .datepicker--cell-year.-focus- {
+        border-radius: 50%;
+        background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
+      .datepicker--cell-month.-current-, .datepicker--cell-year.-current- {
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        color: white;
+        border-radius: 50%; }
+        .datepicker--cell-month.-current-.-focus-, .datepicker--cell-year.-current-.-focus- {
+          color: white; }
+      .datepicker--cell-month.-selected-, .datepicker--cell-month.-selected-.-current-, .datepicker--cell-year.-selected-, .datepicker--cell-year.-selected-.-current- {
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+        color: white;
+        border-radius: 50%; }
+  .datepicker--content {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; }
+  .datepicker--nav {
+    padding: 0.9375rem 1.25rem 0.9375rem 1.25rem;
+    border: 0rem solid transparent; }
+    .datepicker--nav-title {
+      font-family: Quicksand, OpenSans, Arial, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.1875rem;
+      line-height: 1.5rem;
+      text-align: center;
+      color: #1f2041; }
+    .datepicker--nav-action {
+      position: relative; }
+      .datepicker--nav-action > svg {
+        opacity: 0; }
+      .datepicker--nav-action:first-child::after {
+        content: 'arrow_back';
+        width: 1.5rem;
+        height: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        border: 0rem solid transparent;
+        background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .datepicker--nav-action:last-child::after {
+        content: 'arrow_forward';
+        width: 1.5rem;
+        height: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        border: 0rem solid transparent;
+        background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
+  .datepicker--days-names {
+    width: 17.5rem;
+    margin: 0.3125rem 0 0rem; }
+  .datepicker--day-name {
+    min-width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    color: #bc9cff;
+    text-transform: none; }
+  .datepicker--months {
+    height: max-content; }
+    .datepicker--months > .datepicker--cells-months {
+      height: max-content;
+      display: flex;
+      justify-content: space-between; }
+  .datepicker--years {
+    height: max-content; }
+    .datepicker--years > .datepicker--cells-years {
+      height: max-content;
+      display: flex;
+      justify-content: space-between; }
+
+.button {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 1.375rem;
+  background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+  .button__basis {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    margin: 0.125rem;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    border-radius: 1.375rem;
+    outline: none; }
+  .button > button {
+    width: -webkit-fill-available; }
+  .button__text {
+    cursor: pointer;
+    background: transparent;
+    text-align: center;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-transform: uppercase; }
+  .button__arrow {
+    cursor: pointer;
+    width: 2.75rem;
+    position: absolute;
+    right: 0rem;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center; }
+  .button__submit {
+    cursor: pointer;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    z-index: 2; }
+  .button:hover {
+    background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
+  .button_hollow > .button__basis {
+    background: white; }
+    .button_hollow > .button__basis > .button__text,
+    .button_hollow > .button__basis > .button__arrow {
+      color: #bc9cff; }
+
+.sign-up-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2.375rem 1.6875rem 1.875rem 1.875rem;
+  background: white;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0rem 0rem 1.5625rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem; }
+  .sign-up-form__title {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.25rem;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: #1f2041; }
+  .sign-up-form__first-name-field, .sign-up-form__second-name-field {
+    width: 100%;
+    margin-bottom: 0.625rem; }
+  .sign-up-form__radio-buttons {
+    width: 100%;
+    margin-bottom: 1.4375rem; }
+  .sign-up-form__calendar {
+    width: 100%;
+    margin-bottom: 1.3125rem; }
+  .sign-up-form__email-field, .sign-up-form__password-field {
+    width: 100%;
+    margin-bottom: 0.625rem; }
+  .sign-up-form__toggle {
+    width: 100%;
+    margin-bottom: 1.4375rem; }
+  .sign-up-form__submit-button {
+    width: 100%;
+    height: 2.75rem;
+    margin-bottom: 1.875rem; }
+  .sign-up-form__sign-in-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .sign-up-form__confirmation-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: black; }
+  .sign-up-form__sign-in-button {
+    width: 30.9375%;
+    height: 2.75rem; }
+
+.form-input {
+  width: 100%; }
+  .form-input_text-field-default {
+    display: flex;
+    flex-direction: column; }
+  .form-input__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.3125rem; }
+  .form-input__title-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .form-input__additional-title-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 0.65rem;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    letter-spacing: -0.0187rem; }
+  .form-input__input-container {
+    display: grid;
+    grid-template-rows: 2.625rem;
+    grid-template-columns: auto min-content;
+    position: relative;
+    border: 0.0625rem solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 0.25rem; }
+    .form-input__input-container:hover, .form-input__input-container:focus {
+      border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
+  .form-input__input {
+    padding: 0rem 0.9375rem;
+    height: 2.625rem;
+    outline: none;
+    background: transparent;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.0125rem;
+    color: rgba(31, 32, 65, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .form-input__input::-webkit-input-placeholder {
+      background: rgba(31, 32, 65, 0.25);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 0rem solid transparent; }
+    .form-input__input:-webkit-autofill, .form-input__input:-webkit-autofill:hover, .form-input__input:-webkit-autofill:focus,
+    .form-input__input textarea:-webkit-autofill,
+    .form-input__input textarea:-webkit-autofill:hover,
+    .form-input__input textarea:-webkit-autofill:focus,
+    .form-input__input select:-webkit-autofill,
+    .form-input__input select:-webkit-autofill:hover,
+    .form-input__input select:-webkit-autofill:focus {
+      border: 0rem solid rgba(255, 255, 255, 0);
+      -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
+      -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      transition: background-color 5000s ease-in-out 0s;
+      color: rgba(31, 32, 65, 0.75); }
+  .form-input__submitter {
+    cursor: pointer;
+    min-width: 2.625rem;
+    height: 2.625rem;
+    border: 0rem solid transparent;
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.5rem; }
+
+.colored-logo {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-self: end; }
+  .colored-logo__logo-symbol {
+    margin-right: 0.7813rem; }
+
+.social-media {
+  width: 7rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-between; }
+  .social-media__ref {
+    width: 1.4375rem;
+    height: 1.4375rem;
+    margin-right: 1.25rem; }
+    .social-media__ref:last-of-type {
+      margin-right: 0rem; }
+  .social-media__image {
+    width: 1.4375rem;
+    height: 1.4375rem; }
+
+.menu-bar {
+  list-style: none;
+  justify-self: end;
+  display: flex;
+  flex-direction: column; }
+  .menu-bar__item {
+    margin-bottom: 1.3125rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.0625rem; }
+    .menu-bar__item:first-of-type {
+      margin-top: 0.25rem;
+      margin-bottom: 1.3rem; }
+      .menu-bar__item:first-of-type > .menu-bar__item-ref {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        text-transform: uppercase;
+        color: #1f2041; }
+    .menu-bar__item:last-of-type {
+      margin-bottom: 0rem; }
+  .menu-bar__item-ref {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    color: rgba(31, 32, 65, 0.5);
+    white-space: nowrap; }
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.05); }
+  .footer__info-bar {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 25.9% 17.2% 17.3% 19.6% 20%;
+    justify-items: start;
+    margin-bottom: 0.0625rem;
+    padding: 6.25rem 9.72222%;
+    box-shadow: 0rem 0.0625rem 0rem rgba(31, 32, 65, 0.1); }
+    @media screen and (max-width: 1300px) {
+      .footer__info-bar {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 31% 22% 22.5% 24.5%; } }
+    @media screen and (max-width: 1100px) {
+      .footer__info-bar {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 39% 30% 30.5%;
+        grid-row-gap: 1.875rem; } }
+    @media screen and (max-width: 850px) {
+      .footer__info-bar {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 55% 45%; } }
+    @media screen and (max-width: 767px) {
+      .footer__info-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0rem;
+        margin-bottom: 0rem;
+        box-shadow: 0rem 0rem 0rem transparent; } }
+  .footer__general-info {
+    width: 16.25rem;
+    display: flex;
+    flex-direction: column; }
+    @media screen and (max-width: 767px) {
+      .footer__general-info {
+        align-items: center; } }
+  .footer__general-info-text {
+    margin-top: 1.125rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: rgba(31, 32, 65, 0.75); }
+    @media screen and (max-width: 767px) {
+      .footer__general-info-text {
+        display: none; } }
+  @media screen and (max-width: 767px) {
+    .footer__menu-bar {
+      display: none; } }
+  .footer__subscription {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    margin-top: 0.25rem; }
+    @media screen and (max-width: 767px) {
+      .footer__subscription {
+        display: none; } }
+  .footer__subscription-title {
+    margin-bottom: 1.1875rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-transform: uppercase;
+    color: #1f2041; }
+  .footer__subscription-description {
+    margin-bottom: 1.375rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: rgba(31, 32, 65, 0.75); }
+  .footer__subscription-form {
+    width: 16.25rem;
+    display: flex;
+    flex-wrap: nowrap;
+    background: transparent; }
+  .footer__copyright-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1.4375rem 9.72222% 1.3rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0rem 0.0625rem 0rem rgba(31, 32, 65, 0.1); }
+    @media screen and (max-width: 850px) {
+      .footer__copyright-bar {
+        flex-direction: column; } }
+    @media screen and (max-width: 767px) {
+      .footer__copyright-bar {
+        padding-bottom: 7.5rem; } }
+  .footer__copyright {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.6rem;
+    color: rgba(31, 32, 65, 0.75);
+    text-align: center; }
+    @media screen and (max-width: 850px) {
+      .footer__copyright {
+        margin-bottom: 1.25rem; } }
+
+.registration {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  @media screen and (max-width: 400px) {
+    .registration {
+      width: auto; } }
+  .registration__form {
+    z-index: 2;
+    width: 23.75rem;
+    position: absolute;
+    margin-left: 0.25rem; }
+    @media screen and (max-width: 900px) {
+      .registration__form {
+        position: relative;
+        order: 2;
+        margin-top: 0rem;
+        margin-left: 0rem; } }
+    @media screen and (max-width: 380px) {
+      .registration__form {
+        width: 100%; } }
+  .registration__background {
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 42.75rem;
+    position: relative;
+    background-image: url(src/pages/web-pages/registration/img/background.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media screen and (max-width: 900px) {
+      .registration__background {
+        order: 1; } }
+
