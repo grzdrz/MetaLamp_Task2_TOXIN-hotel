@@ -705,13 +705,14 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     position: absolute;
     left: 0rem;
     right: 0rem;
     top: 0rem;
     bottom: 0rem;
     margin: 0.125rem;
+    padding: 0rem 0.5625rem 0rem 1.1875rem;
     color: white;
     background: transparent;
     text-decoration: none;
@@ -721,6 +722,8 @@ body {
     width: -webkit-fill-available; }
   .button__text {
     cursor: pointer;
+    width: 100%;
+    margin: 0rem 1.1875rem 0rem 1.1875rem;
     background: transparent;
     text-align: center;
     color: white;
@@ -728,11 +731,13 @@ body {
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden; }
+    .button__text_with-arrow {
+      margin: 0rem 2.5rem; }
   .button__arrow {
     cursor: pointer;
-    width: 2.75rem;
-    position: absolute;
     right: 0rem;
     font-family: Material Icons;
     font-style: normal;
@@ -742,18 +747,17 @@ body {
     text-align: center; }
   .button__submit {
     cursor: pointer;
-    width: inherit;
-    height: inherit;
     position: absolute;
-    opacity: 0;
-    z-index: 2; }
+    opacity: 0; }
   .button:hover {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
   .button_hollow > .button__basis {
     background: white; }
-    .button_hollow > .button__basis > .button__text,
     .button_hollow > .button__basis > .button__arrow {
       color: #bc9cff; }
+  .button_hollow > .button__text {
+    color: #bc9cff;
+    z-index: 1; }
 
 .header {
   width: 100%;
@@ -939,6 +943,7 @@ body {
     font-size: 3rem;
     line-height: 2.5625rem; }
   .room-advantages__text {
+    width: 14.5625rem;
     display: inline-flex;
     flex-direction: column; }
   .room-advantages__title-text {
@@ -946,13 +951,17 @@ body {
     font-weight: bold;
     font-size: 0.875rem;
     line-height: 1.5rem;
-    color: rgba(31, 32, 65, 0.75); }
+    color: rgba(31, 32, 65, 0.75);
+    white-space: normal;
+    word-break: break-word; }
   .room-advantages__main-text {
     font-style: normal;
     font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
-    color: rgba(31, 32, 65, 0.75); }
+    color: rgba(31, 32, 65, 0.75);
+    white-space: normal;
+    word-break: break-word; }
 
 .bullet-list {
   display: flex;
@@ -964,7 +973,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #1f2041; }
+    color: #1f2041;
+    white-space: normal;
+    word-break: break-word; }
   .bullet-list__list {
     display: flex;
     flex-direction: column;
@@ -988,7 +999,9 @@ body {
     font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
-    color: rgba(31, 32, 65, 0.75); }
+    color: rgba(31, 32, 65, 0.75);
+    white-space: normal;
+    word-break: break-word; }
   .bullet-list__title_with-font-family_quicksand {
     margin-bottom: 1.125rem;
     margin-left: 1.25rem;
@@ -1156,7 +1169,9 @@ body {
     font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
-    color: rgba(31, 32, 65, 0.75); }
+    color: rgba(31, 32, 65, 0.75);
+    white-space: normal;
+    word-break: break-word; }
 
 .button {
   cursor: pointer;
@@ -1171,13 +1186,14 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     position: absolute;
     left: 0rem;
     right: 0rem;
     top: 0rem;
     bottom: 0rem;
     margin: 0.125rem;
+    padding: 0rem 0.5625rem 0rem 1.1875rem;
     color: white;
     background: transparent;
     text-decoration: none;
@@ -1187,6 +1203,8 @@ body {
     width: -webkit-fill-available; }
   .button__text {
     cursor: pointer;
+    width: 100%;
+    margin: 0rem 1.1875rem 0rem 1.1875rem;
     background: transparent;
     text-align: center;
     color: white;
@@ -1194,11 +1212,13 @@ body {
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden; }
+    .button__text_with-arrow {
+      margin: 0rem 2.5rem; }
   .button__arrow {
     cursor: pointer;
-    width: 2.75rem;
-    position: absolute;
     right: 0rem;
     font-family: Material Icons;
     font-style: normal;
@@ -1208,18 +1228,17 @@ body {
     text-align: center; }
   .button__submit {
     cursor: pointer;
-    width: inherit;
-    height: inherit;
     position: absolute;
-    opacity: 0;
-    z-index: 2; }
+    opacity: 0; }
   .button:hover {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
   .button_hollow > .button__basis {
     background: white; }
-    .button_hollow > .button__basis > .button__text,
     .button_hollow > .button__basis > .button__arrow {
       color: #bc9cff; }
+  .button_hollow > .button__text {
+    color: #bc9cff;
+    z-index: 1; }
 
 .calendar {
   width: 100%;
@@ -1792,7 +1811,10 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.4375rem;
-    color: #1f2041; }
+    color: #1f2041;
+    max-width: 3.125rem;
+    white-space: normal;
+    word-break: break-word; }
   .price-calculation-form__room-status {
     align-self: end;
     font-style: normal;
@@ -1809,7 +1831,10 @@ body {
     font-weight: bold;
     font-size: 0.875rem;
     line-height: 0.9375rem;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    max-width: 6.125rem;
+    white-space: normal;
+    word-break: break-word; }
   .price-calculation-form__period-of-time {
     justify-self: end;
     align-self: end;
@@ -1845,8 +1870,14 @@ body {
     display: grid;
     grid-template-columns: max-content auto;
     margin-bottom: 0.9375rem; }
+  .price-calculation-form__main-sum-formula, .price-calculation-form__discount-description, .price-calculation-form__additional-services-description {
+    max-width: 13.75rem;
+    white-space: normal;
+    word-break: break-word; }
   .price-calculation-form__main-sum-result {
-    justify-self: end; }
+    justify-self: end;
+    white-space: normal;
+    word-break: break-word; }
   .price-calculation-form__services {
     display: grid;
     grid-template-columns: 13.75rem auto auto;
@@ -1873,16 +1904,24 @@ body {
     text-align: right;
     color: rgba(31, 32, 65, 0.25); }
   .price-calculation-form__discount-value {
-    justify-self: end; }
+    justify-self: end;
+    white-space: normal;
+    word-break: break-word; }
   .price-calculation-form__additional-services-value {
-    justify-self: end; }
+    justify-self: end;
+    white-space: normal;
+    word-break: break-word; }
   .price-calculation-form__total-result {
     display: grid;
-    grid-template-columns: max-content auto min-content; }
+    grid-template-columns: max-content auto min-content;
+    overflow: hidden; }
+  .price-calculation-form__total-result-text {
+    align-self: flex-end; }
   .price-calculation-form__total-result-bottom-line {
     margin-bottom: 0.3125rem;
     border-bottom: 0.0625rem dashed rgba(31, 32, 65, 0.25);
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    min-width: 1.25rem; }
   .price-calculation-form__total-result-value {
     justify-self: end;
     white-space: nowrap; }
@@ -2027,7 +2066,8 @@ body {
     font-size: 0.875rem;
     line-height: 1.0625rem;
     color: rgba(31, 32, 65, 0.5);
-    white-space: nowrap; }
+    white-space: normal;
+    word-break: break-word; }
 
 .footer {
   width: 100%;
@@ -2081,7 +2121,9 @@ body {
     font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
-    color: rgba(31, 32, 65, 0.75); }
+    color: rgba(31, 32, 65, 0.75);
+    overflow: hidden;
+    word-break: break-word; }
     @media screen and (max-width: 767px) {
       .footer__general-info-text {
         display: none; } }
@@ -2103,14 +2145,18 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #1f2041; }
+    color: #1f2041;
+    white-space: normal;
+    word-break: break-word; }
   .footer__subscription-description {
     margin-bottom: 1.375rem;
     font-style: normal;
     font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
-    color: rgba(31, 32, 65, 0.75); }
+    color: rgba(31, 32, 65, 0.75);
+    white-space: normal;
+    word-break: break-word; }
   .footer__subscription-form {
     width: 16.25rem;
     display: flex;
