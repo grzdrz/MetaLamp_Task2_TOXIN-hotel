@@ -5,11 +5,12 @@ class Dropdown {
         this.outerContainerElement = outerContainerElement;
 
         this.handlerDropdownClick = this.handlerDropdownClick.bind(this);
-        this.handlerDropdownEnter = this.handlerDropdownEnter.bind(this);
-        this.handlerDropdownLeave = this.handlerDropdownLeave.bind(this);
+        this.handlerCloseDropdown = this.handlerCloseDropdown.bind(this);
 
         this.handlerClear = this.handlerClear.bind(this);
         this.handlerApply = this.handlerApply.bind(this);
+
+        this.handlerDropdownLeave = this.handlerDropdownLeave.bind(this);
 
         this.initialize();
     }
@@ -43,6 +44,8 @@ class Dropdown {
         }
 
         if (this.applyButton) this.applyButton.onclick = this.handlerApply;
+
+        document.addEventListener("click", this.handlerDropdownLeave);
     }
 
     changeDropdownInputValue() {
@@ -113,15 +116,7 @@ class Dropdown {
         }
     }
 
-    handlerDropdownEnter() {
-        if (this.dropdownListElement.style.display === "none") {
-            this.inputContainer.style.borderBottomLeftRadius = "0rem";
-            this.inputContainer.style.borderBottomRightRadius = "0rem";
-            this.dropdownListElement.style.display = "flex";
-        }
-    }
-
-    handlerDropdownLeave() {
+    handlerCloseDropdown() {
         if (this.dropdownListElement.style.display === "flex") {
             this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;
             this.inputContainer.style.borderBottomRightRadius = this.borderRadius;
@@ -132,11 +127,12 @@ class Dropdown {
     handlerClear() {
         this.clearButton.style.display = "none";
 
-        this.input.value = this.inputDefaultValue;
         this.dropdownList.forEach((item) => {
-            item.value.textContent = "0";
             item.minus.style.opacity = 0.38;
+            item.value.textContent = 0;
         });
+
+        this.changeDropdownInputValue();
     }
 
     handlerApply() {
@@ -145,6 +141,16 @@ class Dropdown {
         this.dropdownListElement.style.display = "none";
 
         this.changeDropdownInputValue();
+    }
+
+    handlerDropdownLeave(event) {
+        if (event.target === document) this.handlerCloseDropdown();
+        else {
+            const dropdowns = event.target.className.match(/(^dropdown$)|(^dropdown__)/);
+            if (!dropdowns) {
+                this.handlerCloseDropdown();
+            }
+        }
     }
 }
 

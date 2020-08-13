@@ -1,4 +1,3 @@
-/* eslint-disable func-names */
 import "air-datepicker";
 import "air-datepicker/dist/css/datepicker.css";
 import jQuery from "jquery";

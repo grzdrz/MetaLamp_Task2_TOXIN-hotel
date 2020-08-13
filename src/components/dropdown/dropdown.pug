@@ -8,8 +8,7 @@ mixin dropdown(options)
             type,
             value,
             withTotalValue,
-            hasApplyButton,
-            hasClearButton,
+            hasButtons,
             dropdownList,
         } = options;
 
@@ -37,9 +36,7 @@ mixin dropdown(options)
                             button(class=["dropdown__item-minus"])= "-"
                             span(class=["dropdown__item-value"])= item.value
                             button(class=["dropdown__item-plus"])= "+"
-                - if(hasApplyButton || hasClearButton)
+                - if(hasButtons)
                     div(class=["dropdown__control-buttons"])
-                        - if(hasClearButton)
-                            p(class=["dropdown__clear-button"]) очистить
-                        - if(hasApplyButton)
-                            p(class=["dropdown__apply-button"]) применить
+                        p(class=["dropdown__clear-button"]) очистить
+                        p(class=["dropdown__apply-button"]) применить

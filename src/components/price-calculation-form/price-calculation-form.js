@@ -40,6 +40,7 @@ class PriceCalculationForm {
             item.minus.addEventListener("click", this.handlerDropdownInputChange);
             item.plus.addEventListener("click", this.handlerDropdownInputChange);
         });
+        this.dropdown.clearButton.addEventListener("click", this.handlerDropdownInputChange);
 
         const datepicker = this.calendar.datepickerInstance;
         const oldHandlerSelect = datepicker.selectDate;
