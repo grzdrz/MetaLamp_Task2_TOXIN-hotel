@@ -1621,7 +1621,9 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: rgba(31, 32, 65, 0.5); }
+    .dropdown__apply-button:hover, .dropdown__apply-button:focus {
+      color: #bc9cff; }
   .dropdown__clear-button {
     cursor: pointer;
     font-style: normal;
@@ -1630,6 +1632,8 @@ Build date: 2019-12-19 16:51:02
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
+    .dropdown__clear-button:hover, .dropdown__clear-button:focus {
+      color: #bc9cff; }
 
 .checkbox-list {
   display: grid;
@@ -2218,6 +2222,8 @@ Build date: 2019-12-19 16:51:02
     border: 0.0625rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 0.25rem; }
+    .calendar__label:hover, .calendar__label:focus {
+      border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
   .calendar__input-container_first, .calendar__input-container_second {
     width: 46.875%; }
   .calendar__label_first, .calendar__label_second {
@@ -2280,15 +2286,20 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: rgba(31, 32, 65, 0.5); }
+    .calendar__apply-button:hover, .calendar__apply-button:focus {
+      color: #bc9cff; }
   .calendar__clear-button {
     cursor: pointer;
+    display: none;
     font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
+    .calendar__clear-button:hover, .calendar__clear-button:focus {
+      color: #bc9cff; }
 
 .datepicker {
   width: max-content;
@@ -2326,12 +2337,18 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.75rem;
     line-height: 0.9375rem;
     color: rgba(31, 32, 65, 0.5); }
+    .datepicker--cell-day.-focus- {
+      border-radius: 50%;
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
     .datepicker--cell-day.-selected- {
       position: relative;
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
       .datepicker--cell-day.-selected-.-focus- {
         background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+    .datepicker--cell-day.-in-range-.-focus- {
+      border-radius: 0%;
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
     .datepicker--cell-day.-current- {
       display: flex;
       align-items: center;
@@ -2343,19 +2360,33 @@ Build date: 2019-12-19 16:51:02
       line-height: 0.9375rem;
       text-align: center;
       color: white; }
-    .datepicker--cell-day.-current-.-in-range- {
-      display: flex;
-      align-items: center;
-      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
-      color: rgba(31, 32, 65, 0.5);
-      border-radius: 0rem;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 0.75rem;
-      line-height: 0.9375rem;
-      text-align: center; }
+      .datepicker--cell-day.-current-.-focus- {
+        color: white; }
+      .datepicker--cell-day.-current-.-in-range- {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+        border-radius: 50%;
+        border: 0rem;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: white; }
+        .datepicker--cell-day.-current-.-in-range-::after {
+          content: '';
+          z-index: -1;
+          width: 50%;
+          height: inherit;
+          position: absolute;
+          margin-left: 50%;
+          background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
+      .datepicker--cell-day.-current-.-range-to-::after {
+        background: transparent; }
     .datepicker--cell-day.-in-range-.-other-month- {
-      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
       color: rgba(31, 32, 65, 0.25); }
     .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-current-, .datepicker--cell-day.-range-to-.-current-, .datepicker--cell-day.-range-from-.-other-month-, .datepicker--cell-day.-range-to-.-other-month- {
       display: flex;
@@ -2377,7 +2408,7 @@ Build date: 2019-12-19 16:51:02
       height: inherit;
       position: absolute;
       margin-left: 50%;
-      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
     .datepicker--cell-day.-range-to-::after {
       content: '';
       z-index: -1;
@@ -2385,19 +2416,39 @@ Build date: 2019-12-19 16:51:02
       height: inherit;
       position: absolute;
       margin-right: 50%;
-      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
+    .datepicker--cell-day.-range-from-.-disabled-::after, .datepicker--cell-day.-range-to-.-disabled-::after {
+      background: transparent; }
     .datepicker--cell-day.-in-range- {
-      background: linear-gradient(to bottom, rgba(187, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+      background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
       color: rgba(31, 32, 65, 0.5); }
-    .datepicker--cell-day.-disabled- {
-      color: rgba(31, 32, 65, 0.25); }
+    .datepicker--cell-day.-disabled-, .datepicker--cell-day.-disabled-.-focus- {
+      font-style: normal;
+      font-weight: normal;
+      color: rgba(31, 32, 65, 0.25);
+      background: transparent; }
+    .datepicker--cell-day.-range-from-.-other-month-.-disabled-, .datepicker--cell-day.-range-from-.-other-month-.-focus-.-disabled-, .datepicker--cell-day.-range-from-.-focus-.-disabled-, .datepicker--cell-day.-in-range-.-other-month-.-disabled-, .datepicker--cell-day.-in-range-.-other-month-.-focus-.-disabled-, .datepicker--cell-day.-in-range-.-focus-.-disabled- {
+      font-style: normal;
+      font-weight: normal;
+      color: rgba(31, 32, 65, 0.25);
+      background: transparent; }
+    .datepicker--cell-day.-range-from-.-disabled-, .datepicker--cell-day.-in-range-.-disabled- {
+      font-style: normal;
+      font-weight: normal;
+      color: rgba(31, 32, 65, 0.25);
+      background: transparent; }
     .datepicker--cell-month, .datepicker--cell-year {
       width: 4.375rem;
       height: 4.375rem; }
+      .datepicker--cell-month.-focus-, .datepicker--cell-year.-focus- {
+        border-radius: 50%;
+        background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
       .datepicker--cell-month.-current-, .datepicker--cell-year.-current- {
         background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
         color: white;
         border-radius: 50%; }
+        .datepicker--cell-month.-current-.-focus-, .datepicker--cell-year.-current-.-focus- {
+          color: white; }
       .datepicker--cell-month.-selected-, .datepicker--cell-month.-selected-.-current-, .datepicker--cell-year.-selected-, .datepicker--cell-year.-selected-.-current- {
         background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         color: white;
@@ -2491,9 +2542,10 @@ Build date: 2019-12-19 16:51:02
       justify-content: space-between; }
 
 .like-button {
-  width: max-content; }
+  width: max-content;
+  position: relative; }
   .like-button__label {
-    width: 2.5rem;
+    width: max-content;
     height: 1.25rem;
     display: flex;
     justify-content: center;
@@ -2507,28 +2559,35 @@ Build date: 2019-12-19 16:51:02
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     border-radius: 1.375rem;
     outline: none; }
-  .like-button__likes-number_on, .like-button__likes-number_off {
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .like-button__background {
     position: absolute;
     left: 0rem;
     right: 0rem;
     top: 0rem;
     bottom: 0rem;
-    padding-left: 0.625rem;
-    margin: 0.125rem;
+    margin: 0.0625rem;
     border-radius: 1.375rem;
+    background: white; }
+  .like-button__likes-number_on, .like-button__likes-number_off {
+    z-index: 1;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0rem;
+    bottom: 0rem;
+    margin-left: 0.21rem;
+    margin-right: 0.65rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.625rem;
-    background: white;
-    text-align: center; }
+    font-size: 0.5625rem;
+    text-align: center;
+    white-space: nowrap; }
   .like-button__input {
     cursor: pointer;
     z-index: 2;
-    width: 2.5rem;
+    width: 100%;
     height: 1.25rem;
     position: absolute;
     opacity: 0; }
@@ -2543,9 +2602,9 @@ Build date: 2019-12-19 16:51:02
         justify-content: center;
         align-items: center; }
       .like-button__input:checked + label > .like-button__likes-number_off {
-        opacity: 0; }
+        display: none; }
       .like-button__input:checked + label > .like-button__likes-number_on {
-        opacity: 1; }
+        display: flex; }
     .like-button__input:not(:checked) + label {
       background: rgba(31, 32, 65, 0.25); }
       .like-button__input:not(:checked) + label > * {
@@ -2558,17 +2617,17 @@ Build date: 2019-12-19 16:51:02
         align-items: center;
         border: 0rem solid transparent; }
       .like-button__input:not(:checked) + label > .like-button__likes-number_off {
-        opacity: 1; }
+        display: flex; }
       .like-button__input:not(:checked) + label > .like-button__likes-number_on {
-        opacity: 0; }
+        display: none; }
   .like-button__like-symbol {
     z-index: 2;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1rem;
+    height: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     left: 0rem; }
     .like-button__like-symbol::after {
       font-family: Material Icons;
@@ -2622,9 +2681,10 @@ Build date: 2019-12-19 16:51:02
     color: rgba(31, 32, 65, 0.75); }
 
 .like-button {
-  width: max-content; }
+  width: max-content;
+  position: relative; }
   .like-button__label {
-    width: 2.5rem;
+    width: max-content;
     height: 1.25rem;
     display: flex;
     justify-content: center;
@@ -2638,28 +2698,35 @@ Build date: 2019-12-19 16:51:02
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     border-radius: 1.375rem;
     outline: none; }
-  .like-button__likes-number_on, .like-button__likes-number_off {
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .like-button__background {
     position: absolute;
     left: 0rem;
     right: 0rem;
     top: 0rem;
     bottom: 0rem;
-    padding-left: 0.625rem;
-    margin: 0.125rem;
+    margin: 0.0625rem;
     border-radius: 1.375rem;
+    background: white; }
+  .like-button__likes-number_on, .like-button__likes-number_off {
+    z-index: 1;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0rem;
+    bottom: 0rem;
+    margin-left: 0.21rem;
+    margin-right: 0.65rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.625rem;
-    background: white;
-    text-align: center; }
+    font-size: 0.5625rem;
+    text-align: center;
+    white-space: nowrap; }
   .like-button__input {
     cursor: pointer;
     z-index: 2;
-    width: 2.5rem;
+    width: 100%;
     height: 1.25rem;
     position: absolute;
     opacity: 0; }
@@ -2674,9 +2741,9 @@ Build date: 2019-12-19 16:51:02
         justify-content: center;
         align-items: center; }
       .like-button__input:checked + label > .like-button__likes-number_off {
-        opacity: 0; }
+        display: none; }
       .like-button__input:checked + label > .like-button__likes-number_on {
-        opacity: 1; }
+        display: flex; }
     .like-button__input:not(:checked) + label {
       background: rgba(31, 32, 65, 0.25); }
       .like-button__input:not(:checked) + label > * {
@@ -2689,17 +2756,17 @@ Build date: 2019-12-19 16:51:02
         align-items: center;
         border: 0rem solid transparent; }
       .like-button__input:not(:checked) + label > .like-button__likes-number_off {
-        opacity: 1; }
+        display: flex; }
       .like-button__input:not(:checked) + label > .like-button__likes-number_on {
-        opacity: 0; }
+        display: none; }
   .like-button__like-symbol {
     z-index: 2;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1rem;
+    height: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     left: 0rem; }
     .like-button__like-symbol::after {
       font-family: Material Icons;
