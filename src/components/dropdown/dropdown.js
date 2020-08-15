@@ -4,6 +4,8 @@ class Dropdown {
     constructor(outerContainerElement) {
         this.outerContainerElement = outerContainerElement;
 
+        this.isOpened = false;
+
         this.handlerDropdownClick = this.handlerDropdownClick.bind(this);
         this.handlerCloseDropdown = this.handlerCloseDropdown.bind(this);
 
@@ -104,24 +106,29 @@ class Dropdown {
         return words[2];
     }
 
-    handlerDropdownClick() {
-        if (this.dropdownListElement.style.display === "none") {
-            this.inputContainer.style.borderBottomLeftRadius = "0rem";
-            this.inputContainer.style.borderBottomRightRadius = "0rem";
-            this.dropdownListElement.style.display = "flex";
+    changeState() {
+        if (this.isOpened) {
+            this.inputContainer.classList.toggle("dropdown__input-container_is-opened", true);
+            this.dropdownListElement.classList.toggle("dropdown__droped-list_is-opened", true);
         } else {
-            this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;
-            this.inputContainer.style.borderBottomRightRadius = this.borderRadius;
-            this.dropdownListElement.style.display = "none";
+            this.inputContainer.classList.toggle("dropdown__input-container_is-opened", false);
+            this.dropdownListElement.classList.toggle("dropdown__droped-list_is-opened", false);
+        }
+    }
+
+    handlerDropdownClick() {
+        if (this.isOpened) {
+            this.isOpened = false;
+            this.changeState();
+        } else {
+            this.isOpened = true;
+            this.changeState();
         }
     }
 
     handlerCloseDropdown() {
-        if (this.dropdownListElement.style.display === "flex") {
-            this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;
-            this.inputContainer.style.borderBottomRightRadius = this.borderRadius;
-            this.dropdownListElement.style.display = "none";
-        }
+        this.isOpened = false;
+        this.changeState();
     }
 
     handlerClear() {
@@ -136,9 +143,8 @@ class Dropdown {
     }
 
     handlerApply() {
-        this.inputContainer.style.borderBottomLeftRadius = this.borderRadius;
-        this.inputContainer.style.borderBottomRightRadius = this.borderRadius;
-        this.dropdownListElement.style.display = "none";
+        this.isOpened = false;
+        this.changeState();
 
         this.changeDropdownInputValue();
     }

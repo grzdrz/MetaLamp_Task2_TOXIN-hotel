@@ -38,7 +38,6 @@
         display: grid;
         grid-template-rows: 2.625rem;
         grid-template-columns: auto min-content;
-        position: relative;
         border: 0.0625rem solid $color-dark-shade-25;
         box-sizing: border-box;
         border-radius: 0.25rem;
@@ -46,6 +45,12 @@
         &:hover,
         &:focus {
             border: 0.0625rem solid $color-dark-shade-50;
+        }
+
+        &_is-opened {
+            border: 0.0625rem solid $color-dark-shade-50;
+            border-bottom-left-radius: 0rem;
+            border-bottom-right-radius: 0rem;
         }
     }
 
@@ -92,19 +97,17 @@
     }
 
     &__droped-list {
+        display: none;
         width: 100%;
         list-style: none;
         flex-direction: column;
         grid-column-start: 1;
         grid-column-end: 3;
-        position: absolute;
         top: 2.75rem;
-        margin: -0.0625rem;
         background: white;
         border: 0.0625rem solid $color-dark-shade-50;
         box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
         border-top: 0rem;
-        box-sizing: content-box;
         border-bottom-left-radius: 0.25rem;
         border-bottom-right-radius: 0.25rem;
         z-index: 9999;
@@ -112,6 +115,10 @@
         &:hover,
         &:focus {
             border-top: 0rem;
+        }
+
+        &_is-opened {
+            display: flex;
         }
     }
 
