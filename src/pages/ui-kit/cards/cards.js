@@ -13,17 +13,17 @@ const $ = jQuery;
 global.jQuery = $;
 global.$ = $;
 
-const roomFinderFormContainer = document.querySelector(".cards__room-finder-form");
-const roomFinderForm = new RoomFinderForm(roomFinderFormContainer);
+const roomFinderForms = document.querySelector(".cards__room-finder-form")
+    .map((element) => new RoomFinderForm(element));
 
-const signUpFormContainer = document.querySelector(".cards__sign-up-form");
-const signUpForm = new SignUpForm(signUpFormContainer);
+const signUpForms = document.querySelector(".cards__sign-up-form")
+    .map((element) => new SignUpForm(element));
 
-const priceCalculationFormContainer = document.querySelector(".cards__price-calculation-form");
-const priceCalculationForm = new PriceCalculationForm(priceCalculationFormContainer);
+const priceCalculationForms = document.querySelectorAll(".cards__price-calculation-form")
+    .map((element) => new PriceCalculationForm(element));
 
-const roomInfoElements = Array.from(document.querySelectorAll(".cards__room-info"));
-const roomsInfo = roomInfoElements.map((element) => new RoomInfo(element));
+const roomInfos = Array.from(document.querySelectorAll(".cards__room-info"))
+    .map((element) => new RoomInfo(element));
 
 const staticDatepicker = $(".js-cards__datepicker").datepicker({
     range: true,

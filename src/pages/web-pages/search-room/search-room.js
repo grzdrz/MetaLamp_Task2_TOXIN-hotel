@@ -27,5 +27,5 @@ const rangeSliders = Array.from(document.querySelectorAll(".js-search-room__rang
 const calendars = Array.from(document.querySelectorAll(".search-room__calendar"))
     .map((element) => new Calendar(element));
 
-const roomsInfo = Array.from(document.querySelectorAll(".search-room__room"))
+const roomsInfo = Array.from(document.querySelectorAll(".search-room__room-info"))
     .map((element) => new RoomInfo(element));

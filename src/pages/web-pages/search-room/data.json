@@ -2,12 +2,7 @@
     "roomsInfo": [
         {
             "blockNumber": 0,
-            "photos": [
-                "test11",
-                "test22",
-                "test33",
-                "test44"
-            ],
+            "photosCount": 4,
             "roomNumber": 888,
             "roomStatus": "люкс",
             "roomPrice": 9990,
@@ -18,9 +13,7 @@
         },
         {
             "blockNumber": 1,
-            "photos": [
-                "test22"
-            ],
+            "photosCount": 1,
             "roomNumber": 840,
             "roomPrice": 9990,
             "currencyType": "₽",
@@ -30,9 +23,7 @@
         },
         {
             "blockNumber": 2,
-            "photos": [
-                "test33"
-            ],
+            "photosCount": 1,
             "roomNumber": 980,
             "roomStatus": "люкс",
             "roomPrice": 8500,
@@ -43,9 +34,7 @@
         },
         {
             "blockNumber": 3,
-            "photos": [
-                "test44"
-            ],
+            "photosCount": 1,
             "roomNumber": 856,
             "roomPrice": 7300,
             "currencyType": "₽",
@@ -55,9 +44,7 @@
         },
         {
             "blockNumber": 4,
-            "photos": [
-                "test55"
-            ],
+            "photosCount": 1,
             "roomNumber": 740,
             "roomPrice": 6000,
             "currencyType": "₽",
@@ -67,9 +54,7 @@
         },
         {
             "blockNumber": 5,
-            "photos": [
-                "test66"
-            ],
+            "photosCount": 1,
             "roomNumber": 982,
             "roomPrice": 5800,
             "currencyType": "₽",
@@ -79,9 +64,7 @@
         },
         {
             "blockNumber": 6,
-            "photos": [
-                "test77"
-            ],
+            "photosCount": 1,
             "roomNumber": 678,
             "roomPrice": 5500,
             "currencyType": "₽",
@@ -91,9 +74,7 @@
         },
         {
             "blockNumber": 7,
-            "photos": [
-                "test88"
-            ],
+            "photosCount": 1,
             "roomNumber": 450,
             "roomPrice": 5300,
             "currencyType": "₽",
@@ -103,9 +84,7 @@
         },
         {
             "blockNumber": 8,
-            "photos": [
-                "test99"
-            ],
+            "photosCount": 1,
             "roomNumber": 350,
             "roomPrice": 5000,
             "currencyType": "₽",
@@ -115,9 +94,7 @@
         },
         {
             "blockNumber": 9,
-            "photos": [
-                "test110"
-            ],
+            "photosCount": 1,
             "roomNumber": 666,
             "roomPrice": 5000,
             "currencyType": "₽",
@@ -127,9 +104,7 @@
         },
         {
             "blockNumber": 10,
-            "photos": [
-                "test120"
-            ],
+            "photosCount": 1,
             "roomNumber": 444,
             "roomPrice": 5000,
             "currencyType": "₽",
@@ -139,9 +114,7 @@
         },
         {
             "blockNumber": 11,
-            "photos": [
-                "test130"
-            ],
+            "photosCount": 1,
             "roomNumber": 352,
             "roomPrice": 5000,
             "currencyType": "₽",
