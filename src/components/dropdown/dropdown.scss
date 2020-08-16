@@ -34,6 +34,12 @@
         color: $color-dark-shade-50;
     }
 
+    &__container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
     &__input-container {
         display: grid;
         grid-template-rows: 2.625rem;
@@ -103,6 +109,7 @@
         flex-direction: column;
         grid-column-start: 1;
         grid-column-end: 3;
+        position: absolute;
         top: 2.75rem;
         background: white;
         border: 0.0625rem solid $color-dark-shade-50;
@@ -219,11 +226,11 @@
         font-size: 0.75rem;
         line-height: 0.9375rem;
         text-transform: uppercase;
-        color: $color-dark-shade-50;
+        color: $color-purple;
 
         &:hover,
         &:focus {
-            color: #bc9cff;
+            color: $color-dark-shade-50;
         }
     }
 
@@ -234,11 +241,11 @@
         font-size: 0.75rem;
         line-height: 0.9375rem;
         text-transform: uppercase;
-        color: $color-dark-shade-50;
+        color: $color-purple;
 
         &:hover,
         &:focus {
-            color: #bc9cff;
+            color: $color-dark-shade-50;
         }
     }
 }

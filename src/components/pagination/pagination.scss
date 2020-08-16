@@ -25,7 +25,8 @@
 
     &__left-arrow,
     &__right-arrow,
-    &__link {
+    &__link,
+    &__three-dots {
         min-width: 2.5rem;
         width: max-content;
         display: flex;
@@ -33,6 +34,10 @@
         align-items: center;
         height: 2.5rem;
         text-decoration: none;
+    }
+
+    &__three-dots {
+        cursor: context-menu;
     }
 
     &__link {

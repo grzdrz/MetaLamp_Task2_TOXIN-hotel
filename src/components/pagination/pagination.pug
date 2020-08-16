@@ -22,9 +22,7 @@ mixin pagination(options)
                     span(class=["pagination__link-text"])= 1
             - }
             - if(curPageNumber - 3 > 1)
-                a(class=["pagination__link"]
-                    href="https://errorpage.com" target="_blank" rel="noopener noreferrer"
-                    data-page-number="...")
+                p(class=["pagination__three-dots"] data-page-number="...")
                     span(class=["pagination__link-text"])= "..." 
             - if(curPageNumber - 2 > 1)
                 a(class=["pagination__link", "js-pagination__link"]
@@ -51,8 +49,7 @@ mixin pagination(options)
                     data-page-number=`${curPageNumber + 2}`)
                     span(class=["pagination__link-text"])= curPageNumber + 2
             - if(curPageNumber + 3 < pagesCount)
-                a(class=["pagination__link"] data-page-number="..."
-                    href="https://errorpage.com" target="_blank" rel="noopener noreferrer") 
+                p(class=["pagination__three-dots"] data-page-number="...") 
                     span(class=["pagination__link-text"])= "..." 
             - if(curPageNumber !== pagesCount) {
                 a(class=["pagination__link", "js-pagination__link"]

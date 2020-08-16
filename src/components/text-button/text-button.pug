@@ -1,7 +1,5 @@
 mixin text-button(options = {})
-    - const { text, color } = options;
-
-    - const textClasses = [`text-button__text_color_${color}`];
+    - const { text } = options;
 
     button(class=["text-button"])
-        span(class=["text-button__text"].concat(textClasses))= text
+        span(class=["text-button__text"])= text

@@ -1,4 +1,4 @@
-@import "../../assets/constants.scss";
+@import '../../assets/constants.scss';
 
 .text-button {
     cursor: pointer;
@@ -10,12 +10,10 @@
         font-size: 0.75rem;
         line-height: 0.75rem;
         text-transform: uppercase;
+        color: $color-purple;
 
-        &_color_purple {
-            color: $color-purple;
-        }
-
-        &_color_gray {
+        &:hover,
+        &:focus {
             color: $color-dark-shade-50;
         }
     }

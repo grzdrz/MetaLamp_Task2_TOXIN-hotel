@@ -103,7 +103,6 @@
       transition: background-color 5000s ease-in-out 0s;
       color: $color-dark-shade-75;
     }
-
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -139,11 +138,11 @@
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: $color-dark-shade-50;
+    color: $color-purple;
 
     &:hover,
     &:focus {
-      color: #bc9cff;
+      color: $color-dark-shade-50;
     }
   }
 
@@ -155,11 +154,11 @@
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: $color-dark-shade-50;
+    color: $color-purple;
 
     &:hover,
     &:focus {
-      color: #bc9cff;
+      color: $color-dark-shade-50;
     }
   }
 }
