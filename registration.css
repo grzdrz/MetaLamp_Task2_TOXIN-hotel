@@ -1199,9 +1199,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: #bc9cff; }
     .calendar__apply-button:hover, .calendar__apply-button:focus {
-      color: #bc9cff; }
+      color: rgba(31, 32, 65, 0.5); }
   .calendar__clear-button {
     cursor: pointer;
     display: none;
@@ -1210,9 +1210,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: #bc9cff; }
     .calendar__clear-button:hover, .calendar__clear-button:focus {
-      color: #bc9cff; }
+      color: rgba(31, 32, 65, 0.5); }
 
 .datepicker {
   width: max-content;

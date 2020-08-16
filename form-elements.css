@@ -1478,16 +1478,23 @@ Build date: 2019-12-19 16:51:02
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5); }
+  .dropdown__container {
+    display: flex;
+    flex-direction: column;
+    position: relative; }
   .dropdown__input-container {
     display: grid;
     grid-template-rows: 2.625rem;
     grid-template-columns: auto min-content;
-    position: relative;
     border: 0.0625rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 0.25rem; }
     .dropdown__input-container:hover, .dropdown__input-container:focus {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
+    .dropdown__input-container_is-opened {
+      border: 0.0625rem solid rgba(31, 32, 65, 0.5);
+      border-bottom-left-radius: 0rem;
+      border-bottom-right-radius: 0rem; }
   .dropdown__input {
     cursor: pointer;
     height: 2.5rem;
@@ -1525,6 +1532,7 @@ Build date: 2019-12-19 16:51:02
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .dropdown__droped-list {
+    display: none;
     width: 100%;
     list-style: none;
     flex-direction: column;
@@ -1532,17 +1540,17 @@ Build date: 2019-12-19 16:51:02
     grid-column-end: 3;
     position: absolute;
     top: 2.75rem;
-    margin: -0.0625rem;
     background: white;
     border: 0.0625rem solid rgba(31, 32, 65, 0.5);
     box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.05);
     border-top: 0rem;
-    box-sizing: content-box;
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
     z-index: 9999; }
     .dropdown__droped-list:hover, .dropdown__droped-list:focus {
       border-top: 0rem; }
+    .dropdown__droped-list_is-opened {
+      display: flex; }
   .dropdown__dropdown-arrow {
     cursor: pointer;
     width: 2.625rem;
@@ -1621,9 +1629,9 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: #bc9cff; }
     .dropdown__apply-button:hover, .dropdown__apply-button:focus {
-      color: #bc9cff; }
+      color: rgba(31, 32, 65, 0.5); }
   .dropdown__clear-button {
     cursor: pointer;
     font-style: normal;
@@ -1631,9 +1639,9 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: #bc9cff; }
     .dropdown__clear-button:hover, .dropdown__clear-button:focus {
-      color: #bc9cff; }
+      color: rgba(31, 32, 65, 0.5); }
 
 .checkbox-list {
   display: grid;
@@ -2014,10 +2022,9 @@ Build date: 2019-12-19 16:51:02
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.75rem;
-    text-transform: uppercase; }
-    .text-button__text_color_purple {
-      color: #bc9cff; }
-    .text-button__text_color_gray {
+    text-transform: uppercase;
+    color: #bc9cff; }
+    .text-button__text:hover, .text-button__text:focus {
       color: rgba(31, 32, 65, 0.5); }
 
 .pagination {
@@ -2037,7 +2044,7 @@ Build date: 2019-12-19 16:51:02
     flex-wrap: wrap;
     justify-content: center;
     background: transparent; }
-  .pagination__left-arrow, .pagination__right-arrow, .pagination__link {
+  .pagination__left-arrow, .pagination__right-arrow, .pagination__link, .pagination__three-dots {
     min-width: 2.5rem;
     width: max-content;
     display: flex;
@@ -2045,6 +2052,8 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     height: 2.5rem;
     text-decoration: none; }
+  .pagination__three-dots {
+    cursor: context-menu; }
   .pagination__link_target {
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     border-radius: 1.375rem; }
@@ -2304,9 +2313,9 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: #bc9cff; }
     .calendar__apply-button:hover, .calendar__apply-button:focus {
-      color: #bc9cff; }
+      color: rgba(31, 32, 65, 0.5); }
   .calendar__clear-button {
     cursor: pointer;
     display: none;
@@ -2315,9 +2324,9 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: #bc9cff; }
     .calendar__clear-button:hover, .calendar__clear-button:focus {
-      color: #bc9cff; }
+      color: rgba(31, 32, 65, 0.5); }
 
 .datepicker {
   width: max-content;
