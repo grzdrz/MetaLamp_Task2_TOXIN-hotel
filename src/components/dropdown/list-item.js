@@ -46,7 +46,6 @@ class ListItem {
         if (curValue === 0) {
             event.currentTarget.style.opacity = 0.38;
 
-            // проверка на наличие нулей в значениях всех элементов выпадающего списка
             const values = this.dropdown.dropdownList.map((item) => item.value);
             const absoluteSum = values.reduce((sum, value) => sum + Math.abs(Number.parseInt(value.textContent, 10)), 0);
 

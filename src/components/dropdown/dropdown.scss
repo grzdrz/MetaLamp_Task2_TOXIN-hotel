@@ -96,10 +96,9 @@
             transition: background-color 5000s ease-in-out 0s;
             color: $color-dark-shade-75;
         }
-
-        white-space: nowrap; /* Отменяем перенос текста */
-        overflow: hidden; /* Обрезаем содержимое */
-        text-overflow: ellipsis; /* Многоточие */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__droped-list {

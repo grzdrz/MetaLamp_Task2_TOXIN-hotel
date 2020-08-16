@@ -1,12 +1,11 @@
+/* eslint-disable global-require */
 class Pagination {
     constructor(options, outerContainerElement) {
         this.options = {};
-
         Object.assign(this.options, options);
 
         this.outerContainerElement = outerContainerElement;
 
-        // eslint-disable-next-line global-require
         this.paginationPugCode = require("./pagination-for-render.pug");
 
         this.handlerSelectPage = this.handlerSelectPage.bind(this);

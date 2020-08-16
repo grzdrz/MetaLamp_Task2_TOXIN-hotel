@@ -38,7 +38,6 @@ class Dropdown {
 
         this.input.onclick = this.handlerDropdownClick;
         this.dropdownArrow.onclick = this.handlerDropdownClick;
-        // если обработчик выше повесить на контейнер, то дропдаун будет закрываться при клике по нему, т.к. находится в контейнере
 
         if (this.clearButton) {
             this.clearButton.style.display = "none";
@@ -84,7 +83,6 @@ class Dropdown {
         }
     }
 
-    // склонение слов
     doDeclensionOfWord(number, word) {
         let words;
         if (word === "гость") words = ["гость", "гостя", "гостей"];
