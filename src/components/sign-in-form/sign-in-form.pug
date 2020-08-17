@@ -1,8 +1,8 @@
 include ../button/button.pug
 include ../form-input/form-input.pug
 
-mixin sign-in-form(options)
-    - const { titleText } = options;
+mixin sign-in-form(options = {})
+    - const { titleText = "" } = options;
 
     form(class=["sign-in-form"])
         - if(titleText)

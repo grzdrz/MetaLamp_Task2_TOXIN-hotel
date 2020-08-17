@@ -1,17 +1,17 @@
 include ../star-rating/star-rating.pug
 
-mixin room-info(options)
+mixin room-info(options = {})
     -
         const {
-            url,
-            blockNumber,
-            photosCount,
-            numberOfCheckedStar,
-            reviewsCount,
-            roomNumber,
-            roomStatus,
-            roomPrice,
-            currencyType,
+            blockNumber = 0,
+            photosCount = 4,
+            roomNumber = 888,
+            roomStatus = "люкс",
+            roomPrice = 9990,
+            currencyType = "₽",
+            reviewsCount = "145",
+            numberOfCheckedStar = 5,
+            url = "room-details.html",
         } = options;
 
         function formateNumber(number) {

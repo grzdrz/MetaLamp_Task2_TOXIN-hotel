@@ -1,5 +1,9 @@
 mixin range-slider(options = {})
-    - const { title, description } = options;
+    - 
+        const { 
+            title = "",
+            description = "", 
+        } = options;
 
     div(class=["range-slider"])
         p(class=["range-slider__title"])

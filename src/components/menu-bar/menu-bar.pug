@@ -1,5 +1,14 @@
-mixin menu-bar(options)
-    - const { listOfLinks } = options;
+mixin menu-bar(options = {})
+    - 
+        const { 
+            listOfLinks = [
+                {url: "https://www.google.com/", text: "О нас", hasDropdown: false},
+                {url: "https://www.google.com/", text: "Услуги", hasDropdown: true},
+                {url: "https://www.google.com/", text: "Вакансии", hasDropdown: false},
+                {url: "https://www.google.com/", text: "Новости", hasDropdown: false},
+                {url: "https://www.google.com/", text: "Соглашения", hasDropdown: true},
+            ],
+        } = options;
 
     ul(class=["menu-bar"])
         - for(let i = 0; i < listOfLinks.length; i += 1)

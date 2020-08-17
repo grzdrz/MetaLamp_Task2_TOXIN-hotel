@@ -1,5 +1,13 @@
-mixin radio(options)
-    - const {blockNumber, buttonsList, name} = options; 
+mixin radio(options = {})
+    - 
+        const {
+            blockNumber = 0,
+            buttonsList = [
+                {text: "Мужчина", isChecked: true},
+                {text: "Женщина", isChecked: false},
+            ],
+            name = "gender",
+        } = options; 
 
     div(class=["radio"])
         - for(let item of buttonsList)

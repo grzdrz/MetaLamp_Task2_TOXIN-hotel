@@ -1,5 +1,9 @@
-mixin star-rating(options)
-    - const {blockNumber, numberOfCheckedStar} = options;
+mixin star-rating(options = {})
+    - 
+        const {
+            blockNumber = 0,
+            numberOfCheckedStar = 0,
+        } = options;
 
     div(class=["star-rating"])
         - for(let i = 5; i >= 1; i -= 1) {

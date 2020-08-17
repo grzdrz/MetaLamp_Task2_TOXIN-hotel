@@ -1,16 +1,19 @@
 include ../button/button.pug
 include ../colored-logo/colored-logo.pug
 
-mixin header(options)
+mixin header(options = {})
     - 
-        const { isAuthorized, userFullName } = options;
-        const navList = [
-            {url: "https://www.google.com/", text: "О нас", hasDropdown: false},
-            {url: "https://www.google.com/", text: "Услуги", hasDropdown: true},
-            {url: "https://www.google.com/", text: "Вакансии", hasDropdown: false},
-            {url: "https://www.google.com/", text: "Новости", hasDropdown: false},
-            {url: "https://www.google.com/", text: "Соглашения", hasDropdown: true},
-        ]
+        const { 
+            isAuthorized = false, 
+            userFullName = "",
+            navList = [
+                {url: "https://www.google.com/", text: "О нас", hasDropdown: false},
+                {url: "https://www.google.com/", text: "Услуги", hasDropdown: true},
+                {url: "https://www.google.com/", text: "Вакансии", hasDropdown: false},
+                {url: "https://www.google.com/", text: "Новости", hasDropdown: false},
+                {url: "https://www.google.com/", text: "Соглашения", hasDropdown: true},
+            ],
+        } = options;
 
     header(class=["header"])
         div(class=["header__colored-logo"])

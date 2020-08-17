@@ -1,8 +1,8 @@
-mixin pie-chart(options)
+mixin pie-chart(options = {})
     -
         const {
-            totalValue,
-            legends,
+            totalValue = 0,
+            legends = "",
         } = options;
 
         function doDeclensionOfWord(number){

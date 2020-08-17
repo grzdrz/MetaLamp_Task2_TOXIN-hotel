@@ -13,13 +13,13 @@ const $ = jQuery;
 global.jQuery = $;
 global.$ = $;
 
-const roomFinderForms = document.querySelector(".cards__room-finder-form")
+const roomFinderForms = Array.from(document.querySelectorAll(".cards__room-finder-form"))
     .map((element) => new RoomFinderForm(element));
 
-const signUpForms = document.querySelector(".cards__sign-up-form")
+const signUpForms = Array.from(document.querySelectorAll(".cards__sign-up-form"))
     .map((element) => new SignUpForm(element));
 
-const priceCalculationForms = document.querySelectorAll(".cards__price-calculation-form")
+const priceCalculationForms = Array.from(document.querySelectorAll(".cards__price-calculation-form"))
     .map((element) => new PriceCalculationForm(element));
 
 const roomInfos = Array.from(document.querySelectorAll(".cards__room-info"))

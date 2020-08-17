@@ -1,6 +1,10 @@
-mixin color-demo(options)
+mixin color-demo(options = {})
     - 
-        const { backgroundColor, colorName, colorCode } = options;
+        const { 
+            colorName = "Purple",
+            colorCode = "#BC9CFF",
+            backgroundColor = "purple",
+        } = options;
         const squareClasses = [];
 
         if(backgroundColor) squareClasses.push(`color-demo__color_${backgroundColor}`);

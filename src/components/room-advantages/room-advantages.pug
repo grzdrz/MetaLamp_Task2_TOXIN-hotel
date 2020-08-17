@@ -1,5 +1,12 @@
-mixin room-advantages(options)
-    - const {details, hasLastBorderBottom} = options;
+mixin room-advantages(options = {})
+    - 
+        const {
+            details = [
+                {icon: "insert_emoticon", titleText: "Комфорт", mainText: "Шумопоглощающие стены",},
+                {icon: "location_city", titleText: "Удобство", mainText: "Окно в каждой из спален",},
+            ],
+            hasLastBorderBottom = false,
+        } = options;
 
     ul(class=["room-advantages"])
         - for(let i = 0; i < details.length; i += 1)

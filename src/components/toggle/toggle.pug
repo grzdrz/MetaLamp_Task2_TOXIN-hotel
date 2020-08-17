@@ -1,5 +1,10 @@
-mixin toggle(options)
-    - const {text, isChecked, name} = options; 
+mixin toggle(options = {})
+    - 
+        const {
+            text = "Получать спецпредложения",
+            isChecked = false,
+            name = "special-offer",
+        } = options; 
 
     label(class=["toggle"])
         input(class=["toggle__input"] 

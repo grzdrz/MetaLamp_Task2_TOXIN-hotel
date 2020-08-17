@@ -2,14 +2,14 @@ include ../button/button.pug
 include ../calendar/calendar.pug
 include ../dropdown/dropdown.pug
 
-mixin price-calculation-form(options)
+mixin price-calculation-form(options = {})
     - 
         const {
-            roomNumber,
-            roomStatus,
-            roomPrice,
-            currencyType,
-            discount,
+            roomNumber = 0,
+            roomStatus = "",
+            roomPrice = 0,
+            currencyType = "$",
+            discount = 0,
         } = options;
 
         function formateNumber(number) {

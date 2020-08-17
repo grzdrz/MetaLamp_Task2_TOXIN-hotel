@@ -1,6 +1,14 @@
-mixin bullet-list(options)
+mixin bullet-list(options = {})
     - 
-        const { inRoomDetailsPage, title, list } = options;
+        const { 
+            inRoomDetailsPage = false,
+            title = "",
+            list = [
+                "Нельзя с питомцами",
+                "Без вечеринок и мероприятий",
+                "Время прибытия — после 13:00, а выезд до 12:00",
+            ], 
+        } = options;
         const titleClasses = [];
 
         if(inRoomDetailsPage){

@@ -1,10 +1,10 @@
-mixin pagination(options)
+mixin pagination(options = {})
     - 
         const {
-            title,
-            curPageNumber,
-            pagesCount,
-            itemsCount
+            title = "",
+            curPageNumber = 1,
+            pagesCount = 15,
+            itemsCount = 180,
         } = options;
 
     div(class=["pagination"] data-pages-count=pagesCount data-items-count=itemsCount data-cur-page=curPageNumber)

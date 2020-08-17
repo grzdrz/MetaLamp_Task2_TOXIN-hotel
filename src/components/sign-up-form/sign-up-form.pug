@@ -4,8 +4,8 @@ include ../toggle/toggle.pug
 include ../calendar/calendar.pug
 include ../button/button.pug
 
-mixin sign-up-form(options)
-    - const { titleText } = options;
+mixin sign-up-form(options = {})
+    - const { titleText = "" } = options;
 
     form(class=["sign-up-form"])
         - if(titleText)

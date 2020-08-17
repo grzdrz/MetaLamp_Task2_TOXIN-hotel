@@ -1,8 +1,8 @@
-mixin like-button(options)
+mixin like-button(options = {})
     - 
         const {
-            isChecked,
-            number,
+            isChecked = false,
+            number = 0,
         } = options;
 
     div(class=["like-button"])

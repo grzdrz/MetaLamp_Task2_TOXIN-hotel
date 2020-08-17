@@ -1,13 +1,13 @@
-mixin form-input(options)
+mixin form-input(options = {})
     - 
         const {
-            title,
-            additionalTitle,
-            placeholder, 
-            name, 
-            type,
-            value, 
-            hasSubmitButton,
+            title = "",
+            additionalTitle = "",
+            placeholder = "Email",
+            name = "email",
+            type = "email",
+            value = "",
+            hasSubmitButton = false
         } = options;
 
     div(class=["form-input"])

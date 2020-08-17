@@ -2,8 +2,8 @@ include ../calendar/calendar.pug
 include ../dropdown/dropdown.pug
 include ../button/button.pug
 
-mixin room-finder-form(options)
-    - const { titleText } = options;
+mixin room-finder-form(options = {})
+    - const { titleText = "" } = options;
 
     form(class=["room-finder-form"])
         - if(titleText)

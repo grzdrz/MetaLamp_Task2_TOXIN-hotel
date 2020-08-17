@@ -1,11 +1,11 @@
-mixin calendar(options)
+mixin calendar(options = {})
     -
         const {
-            firstTitle,
-            secondTitle,
-            additionalTitle,
-            isDouble,
-            withRange,
+            firstTitle = "",
+            secondTitle = "",
+            additionalTitle = "",
+            isDouble = false,
+            withRange = false,
         } = options;
         const containerClasses = [];
         const inputContainerClasses = [];

@@ -1,11 +1,15 @@
-mixin checkbox-list(options)
+mixin checkbox-list(options = {})
     -
         const {
-            title,
-            isExpandable,
-            isOpened,
-            checkboxList,
-            hasAdditionalText
+            title = "",
+            isExpandable = false,
+            isOpened = false,
+            hasAdditionalText = false,
+            checkboxList = [
+                {isChecked: false, text: "Можно курить"},
+                {isChecked: true, text: "Можно с питомцами"},
+                {isChecked: true, text: "Можно пригласить гостей (до 10 человек)"},
+            ],
         } = options;
 
         const containerClasses = [];

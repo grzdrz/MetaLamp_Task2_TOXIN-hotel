@@ -1,11 +1,11 @@
-mixin button(options)
+mixin button(options = {})
     - 
         const { 
-            isHollow,
-            hasArrow,
-            buttonType,
-            text,
-            url
+            isHollow = false,
+            hasArrow = false,
+            buttonType = "a",
+            text = "click me",
+            url = ""
         } = options;
         const containerClasses = (isHollow ? ["button_hollow"] : []);
         const textClasses = (hasArrow ? ["button__text_with-arrow"] : []);

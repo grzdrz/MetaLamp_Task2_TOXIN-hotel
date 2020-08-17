@@ -1,15 +1,19 @@
-mixin dropdown(options)
+mixin dropdown(options = {})
     - 
         const {
-            title,
-            additionalTitle,
-            placeholder,
-            name,
-            type,
-            value,
-            withTotalValue,
-            hasButtons,
-            dropdownList,
+            title = "",
+            additionalTitle = "",
+            placeholder = "",
+            name = "dropdown",
+            type = "text",
+            value = "",
+            withTotalValue = false,
+            hasButtons = false,
+            dropdownList = [
+                {name: "взрослые", value: 0},
+                {name: "дети", value: 0},
+                {name: "младенцы", value: 0}
+            ],
         } = options;
 
         const containerClasses = [`dropdown__${withTotalValue ? "with" : "without"}-total-value`];
