@@ -1,8 +1,26 @@
-mixin social-media()
+mixin social-media(options = {})
+    -
+        const {
+            links = [
+                {
+                    ref: "https://twitter.com",
+                    imageName: "twitter-icon",
+                    alt: "Twitter",
+                },
+                {
+                    ref: "https://facebook.com",
+                    imageName: "facebook-icon",
+                    alt: "Facebook",
+                },
+                {
+                    ref: "https://instagram.com",
+                    imageName: "instagram-icon",
+                    alt: "Instagram",
+                }
+            ],
+        } = options;
+
     div(class=["social-media"])
-        a(class=["social-media__ref"] href="https://twitter.com" target="_blank" rel="noopener noreferrer")
-            img(class=["social-media__image"] src="./src/components/social-media/img/twitter-icon.svg" alt="Twitter")
-        a(class=["social-media__ref"] href="https://facebook.com" target="_blank" rel="noopener noreferrer")
-            img(class=["social-media__image"] src="./src/components/social-media/img/facebook-icon.svg" alt="Facebook")
-        a(class=["social-media__ref"] href="https://instagram.com" target="_blank" rel="noopener noreferrer")
-            img(class=["social-media__image"] src="./src/components/social-media/img/instagram-icon.svg" alt="Instagram")
+        - for(let link of links)
+            a(class=["social-media__ref"] href=link.ref target="_blank" rel="noopener noreferrer")
+                img(class=["social-media__image"] src=`./src/components/social-media/img/${link.imageName}.svg` alt=link.alt)

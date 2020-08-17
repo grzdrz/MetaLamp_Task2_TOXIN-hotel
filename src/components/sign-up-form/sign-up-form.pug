@@ -5,11 +5,11 @@ include ../calendar/calendar.pug
 include ../button/button.pug
 
 mixin sign-up-form(options = {})
-    - const { titleText = "" } = options;
+    - const { title = "" } = options;
 
     form(class=["sign-up-form"])
-        - if(titleText)
-            p(class=["sign-up-form__title"])= titleText
+        - if(title)
+            p(class=["sign-up-form__title"])= title
         div(class=["sign-up-form__first-name-field"])
             +form-input({
                 placeholder: "Имя",

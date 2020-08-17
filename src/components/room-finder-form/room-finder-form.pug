@@ -3,11 +3,11 @@ include ../dropdown/dropdown.pug
 include ../button/button.pug
 
 mixin room-finder-form(options = {})
-    - const { titleText = "" } = options;
+    - const { title = "" } = options;
 
     form(class=["room-finder-form"])
-        - if(titleText)
-            p(class=["room-finder-form__title"])= titleText
+        - if(title)
+            p(class=["room-finder-form__title"])= title
         div(class=["room-finder-form__calendar"])
             +calendar({
                 isDouble: true,

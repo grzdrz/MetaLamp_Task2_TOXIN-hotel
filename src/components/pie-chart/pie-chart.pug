@@ -1,6 +1,7 @@
 mixin pie-chart(options = {})
     -
         const {
+            title = "Впечатления от номера",
             totalValue = 0,
             legends = "",
         } = options;
@@ -23,7 +24,8 @@ mixin pie-chart(options = {})
         }
 
     div(class=["pie-chart"])
-        div(class=["pie-chart__title"]) Впечатления от номера
+        - if(title)
+            div(class=["pie-chart__title"])= title
         div(class=["pie-chart__content"])
             div(class=["pie-chart__pie"])
             p(class=["pie-chart__inner-text"])

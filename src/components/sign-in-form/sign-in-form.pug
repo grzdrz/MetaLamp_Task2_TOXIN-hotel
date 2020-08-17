@@ -2,11 +2,11 @@ include ../button/button.pug
 include ../form-input/form-input.pug
 
 mixin sign-in-form(options = {})
-    - const { titleText = "" } = options;
+    - const { title = "" } = options;
 
     form(class=["sign-in-form"])
-        - if(titleText)
-            p(class=["sign-in-form__title"])= titleText
+        - if(title)
+            p(class=["sign-in-form__title"])= title
         div(class=["sign-in-form__fields"])
             +form-input({              
                 placeholder: "Email",

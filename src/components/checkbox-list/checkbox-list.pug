@@ -21,10 +21,11 @@ mixin checkbox-list(options = {})
         itemTextClasses.push(`checkbox-list__item-text_${hasAdditionalText ? "main" : "single"}`);
 
     div(class=["checkbox-list"].concat(containerClasses))
-        p(class=["checkbox-list__title"].concat(titleClasses))
-            span(class=["checkbox-list__title-text"])= title
-            - if(isExpandable)
-                span(class=["checkbox-list__dropdown-arrow"]) expand_more
+        - if(title)
+            p(class=["checkbox-list__title"].concat(titleClasses))
+                span(class=["checkbox-list__title-text"])= title
+                - if(isExpandable)
+                    span(class=["checkbox-list__dropdown-arrow"]) expand_more
         ul(class=["checkbox-list__list"] data-is-opened=isOpened)
             - for(let item of checkboxList)
                 li(class=["checkbox-list__item"])
