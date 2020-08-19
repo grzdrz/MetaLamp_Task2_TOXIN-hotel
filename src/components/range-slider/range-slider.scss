@@ -12,7 +12,6 @@
     }
 
     &__slider-name {
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -21,8 +20,6 @@
     }
 
     &__current-values {
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.75rem;
         line-height: 0.9375rem;
         text-align: right;
@@ -32,8 +29,6 @@
 
     &__description {
         margin-top: 0.3125rem;
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.75rem;
         line-height: 0.875rem;
         color: $color-dark-shade-50;

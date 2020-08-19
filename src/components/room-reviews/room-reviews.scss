@@ -13,7 +13,6 @@
 
     &__title-description {
         font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-style: normal;
         font-weight: bold;
         font-size: 1.1875rem;
         line-height: 1.5rem;
@@ -23,8 +22,6 @@
     &__review-count {
         align-self: center;
         margin-top: 0.3125rem;
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.875rem;
         line-height: 0.875rem;
         text-align: right;
@@ -57,7 +54,6 @@
     }
 
     &__user-full-name {
-        font-style: normal;
         font-weight: bold;
         font-size: 0.875rem;
         line-height: 1.5rem;
@@ -70,8 +66,6 @@
     }
 
     &__number-of-days-since-comment {
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.875rem;
         line-height: 1.5rem;
         color: $color-dark-shade-75;
@@ -80,12 +74,9 @@
     &__comment {
         margin-left: 0.625rem;
         max-width: 40.8125rem;
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.875rem;
         line-height: 1.5rem;
         color: $color-dark-shade-75;
-        white-space: normal;
         word-break: break-word;
     }
 }

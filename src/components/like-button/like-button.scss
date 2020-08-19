@@ -48,8 +48,6 @@ $borderThickness: 0.0625rem;
         bottom: 0rem;
         margin-left: 0.21rem;
         margin-right: 0.65rem;
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.5625rem;
         text-align: center;
         white-space: nowrap;
@@ -125,8 +123,6 @@ $borderThickness: 0.0625rem;
 
         &::after {
             font-family: Material Icons;
-            font-style: normal;
-            font-weight: normal;
             font-size: 0.625rem;
         }
     }

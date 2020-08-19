@@ -112,7 +112,6 @@
     &__room-advantages-title {
         margin-bottom: 1.25rem;
         font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-style: normal;
         font-weight: bold;
         font-size: 1.1875rem;
         line-height: 1.5rem;
@@ -156,7 +155,6 @@
     &__cancel-rule-title {
         margin-bottom: 1.125rem;
         font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-style: normal;
         font-weight: bold;
         font-size: 1.1875rem;
         line-height: 1.5rem;
@@ -165,8 +163,6 @@
 
     &__cancel-rule-main-text {
         max-width: 21.3125rem;
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.875rem;
         line-height: 1.5rem;
         color: $color-dark-shade-75;

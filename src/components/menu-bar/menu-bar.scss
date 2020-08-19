@@ -8,8 +8,6 @@
 
     &__item {
         margin-bottom: 1.3125rem;
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.875rem;
         line-height: 1.0625rem;
 
@@ -18,7 +16,6 @@
             margin-bottom: 1.3rem;
 
             & > .menu-bar__item-ref {
-                font-style: normal;
                 font-weight: bold;
                 font-size: 0.75rem;
                 line-height: 0.9375rem;
@@ -34,12 +31,9 @@
 
     &__item-ref {
         text-decoration: none;
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.875rem;
         line-height: 1.0625rem;
         color: $color-dark-shade-50;
-        white-space: normal;
         word-break: break-word;
     }
 }

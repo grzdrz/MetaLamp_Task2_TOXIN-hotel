@@ -6,7 +6,6 @@
 
     &__title {
         margin-bottom: 14px;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -43,12 +42,9 @@
 
     &__item-text {
         width: 15rem;
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.875rem;
         line-height: 1.5rem;
         color: $color-dark-shade-75;
-        white-space: normal;
         word-break: break-word;
     }
 
@@ -56,7 +52,6 @@
         margin-bottom: 1.125rem;
         margin-left: 1.25rem;
         font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-style: normal;
         font-weight: bold;
         font-size: 1.1875rem;
         line-height: 1.5rem;

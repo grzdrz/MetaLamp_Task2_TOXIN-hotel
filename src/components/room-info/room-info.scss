@@ -61,8 +61,6 @@
     &__arrow-back-icon {
         transform: rotate(90deg);
         font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
         font-size: 1.5rem;
         line-height: 1.5rem;
         text-align: center;
@@ -85,8 +83,6 @@
     &__arrow-forward-icon {
         transform: rotate(90deg);
         font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
         font-size: 1.5rem;
         line-height: 1.5rem;
         text-align: center;
@@ -147,7 +143,6 @@
         align-self: end;
         margin-right: 0.25rem;
         font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.875rem;
         line-height: 1.0625rem;
@@ -158,19 +153,16 @@
         align-self: end;
         margin-right: 0.3125rem;
         font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-style: normal;
         font-weight: bold;
         font-size: 1.1875rem;
         line-height: 1.5rem;
         color: $color-dark-shade-100;
         max-width: 3.125rem;
-        white-space: normal;
         word-break: break-word;
     }
 
     &__room-status {
         align-self: end;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -182,13 +174,11 @@
         justify-self: end;
         align-self: end;
         margin-right: 0.25rem;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.875rem;
         line-height: 0.9375rem;
         color: $color-dark-shade-50;
         max-width: 6.125rem;
-        white-space: normal;
         word-break: break-word;
     }
 
@@ -196,8 +186,6 @@
         justify-self: end;
         align-self: end;
         margin-right: 0.0625rem;
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.75rem;
         line-height: 0.9375rem;
         color: $color-dark-shade-50;
@@ -225,7 +213,6 @@
 
     &__reviews-count-value {
         margin-right: 0.1875rem;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.875rem;
         line-height: 1.125rem;
@@ -236,8 +223,6 @@
     }
 
     &__reviews-count-text {
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.875rem;
         line-height: 1.125rem;
         text-align: right;

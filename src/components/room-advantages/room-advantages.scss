@@ -32,8 +32,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
         font-size: 3rem;
         line-height: 2.5625rem;
     }
@@ -45,22 +43,17 @@
     }
 
     &__title-text {
-        font-style: normal;
         font-weight: bold;
         font-size: 0.875rem;
         line-height: 1.5rem;
         color: $color-dark-shade-75;
-        white-space: normal;
         word-break: break-word;
     }
 
     &__main-text {
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.875rem;
         line-height: 1.5rem;
         color: $color-dark-shade-75;
-        white-space: normal;
         word-break: break-word;
     }
 }

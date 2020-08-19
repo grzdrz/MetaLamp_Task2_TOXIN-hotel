@@ -24,7 +24,6 @@
         align-self: end;
         margin-right: 0.1875rem;
         font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.875rem;
         line-height: 1.0625rem;
@@ -35,19 +34,16 @@
         align-self: end;
         margin-right: 0.3125rem;
         font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-style: normal;
         font-weight: bold;
         font-size: 1.5rem;
         line-height: 1.4375rem;
         color: $color-dark-shade-100;
         max-width: 3.125rem;
-        white-space: normal;
         word-break: break-word;
     }
 
     &__room-status {
         align-self: end;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -59,7 +55,6 @@
         justify-self: end;
         align-self: end;
         margin-right: 0.25rem;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.875rem;
         line-height: 0.9375rem;
@@ -74,8 +69,6 @@
         align-self: end;
         white-space: nowrap;
         margin-right: 0.0625rem;
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.75rem;
         line-height: 0.9375rem;
         color: $color-dark-shade-50;
@@ -101,8 +94,6 @@
     &__discount-value,
     &__additional-services-description,
     &__additional-services-value {
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.875rem;
         line-height: 1.1875rem;
         color: $color-dark-shade-75;
@@ -111,7 +102,6 @@
     &__total-result-text,
     &__total-result-value {
         font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-style: normal;
         font-weight: bold;
         font-size: 1.1875rem;
         line-height: 1.5rem;
@@ -128,13 +118,11 @@
     &__discount-description,
     &__additional-services-description {
         max-width: 13.75rem;
-        white-space: normal;
         word-break: break-word;
     }
 
     &__main-sum-result {
         justify-self: end;
-        white-space: normal;
         word-break: break-word;
     }
 
@@ -161,7 +149,6 @@
         border-radius: 50%;
         box-sizing: border-box;
         background: transparent;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.875rem;
@@ -171,13 +158,11 @@
 
     &__discount-value {
         justify-self: end;
-        white-space: normal;
         word-break: break-word;
     }
 
     &__additional-services-value {
         justify-self: end;
-        white-space: normal;
         word-break: break-word;
     }
 

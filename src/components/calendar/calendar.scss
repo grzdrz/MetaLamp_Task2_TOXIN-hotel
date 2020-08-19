@@ -24,7 +24,6 @@
   }
 
   &__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -32,8 +31,6 @@
   }
 
   &__additional-title-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.55rem;
     text-align: right;
@@ -74,8 +71,6 @@
     padding: 0rem 0rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
 
@@ -114,8 +109,6 @@
     justify-content: center;
     align-items: center;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
@@ -133,7 +126,6 @@
   &__apply-button {
     cursor: pointer;
     margin-left: auto;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -149,7 +141,6 @@
   &__clear-button {
     cursor: pointer;
     display: none;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;

@@ -16,7 +16,6 @@
     }
 
     &__title-text {
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -25,8 +24,6 @@
     }
 
     &__additional-title-text {
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.75rem;
         line-height: 0.9375rem;
         text-align: right;
@@ -66,8 +63,6 @@
         padding: 0rem 0.9375rem 0rem 0.9375rem;
         outline: none;
         background: transparent;
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.875rem;
         line-height: 1.125rem;
         color: $color-dark-shade-75;
@@ -143,8 +138,6 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
         font-size: 1.5rem;
         line-height: 1.5rem;
     }
@@ -164,7 +157,6 @@
     &__item-name {
         overflow: auto;
         word-wrap: break-word;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -188,7 +180,6 @@
         border: 0.0625rem solid $color-dark-shade-50;
         background: transparent;
         outline: none;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -203,7 +194,6 @@
 
     &__item-value {
         margin: 0rem 0.3125rem;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -220,7 +210,6 @@
     &__apply-button {
         cursor: pointer;
         margin-left: auto;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -235,7 +224,6 @@
 
     &__clear-button {
         cursor: pointer;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;

@@ -47,8 +47,6 @@
         display: flex;
         align-items: center;
         text-align: center;
-        font-style: normal;
-        font-weight: normal;
         font-size: 0.75rem;
         line-height: 0.9375rem;
         color: $color-dark-shade-50;
@@ -81,7 +79,6 @@
                 align-items: center;
                 background: $gradient-green-to-turquoise;
                 border-radius: 50%;
-                font-style: normal;
                 font-weight: bold;
                 font-size: 0.75rem;
                 line-height: 0.9375rem;
@@ -100,7 +97,6 @@
                     background: $gradient-purple-to-blue;
                     border-radius: 50%;
                     border: 0rem;
-                    font-style: normal;
                     font-weight: bold;
                     font-size: 0.75rem;
                     line-height: 0.9375rem;
@@ -142,7 +138,6 @@
                 background: $gradient-purple-to-blue;
                 border-radius: 50%;
                 border: 0rem;
-                font-style: normal;
                 font-weight: bold;
                 font-size: 0.75rem;
                 line-height: 0.9375rem;
@@ -193,15 +188,11 @@
                 &.-other-month-.-focus-,
                 &.-focus- {
                     &.-disabled- {
-                        font-style: normal;
-                        font-weight: normal;
                         color: $color-dark-shade-25;
                         background: transparent;
                     }
                 }
                 &.-disabled- {
-                    font-style: normal;
-                    font-weight: normal;
                     color: $color-dark-shade-25;
                     background: transparent;
                 }
@@ -248,7 +239,6 @@
 
         &-title {
             font-family: Quicksand, OpenSans, Arial, sans-serif;
-            font-style: normal;
             font-weight: bold;
             font-size: 1.1875rem;
             line-height: 1.5rem;
@@ -272,8 +262,6 @@
                 align-items: center;
                 position: absolute;
                 font-family: Material Icons;
-                font-style: normal;
-                font-weight: normal;
                 font-size: 1.5rem;
                 line-height: 1.5rem;
                 border: 0rem solid transparent;
@@ -295,8 +283,6 @@
                 align-items: center;
                 position: absolute;
                 font-family: Material Icons;
-                font-style: normal;
-                font-weight: normal;
                 font-size: 1.5rem;
                 line-height: 1.5rem;
                 border: 0rem solid transparent;
@@ -322,7 +308,6 @@
         display: flex;
         align-items: center;
         text-align: center;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
