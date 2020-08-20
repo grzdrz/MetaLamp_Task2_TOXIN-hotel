@@ -9,39 +9,40 @@ mixin dropdown(options = {})
             value = "",
             withTotalValue = false,
             hasButtons = false,
-            dropdownList = [
+            list = [
                 {name: "взрослые", value: 0},
                 {name: "дети", value: 0},
                 {name: "младенцы", value: 0}
             ],
         } = options;
+        const containerClasses = [];
 
-        const containerClasses = [`dropdown__${withTotalValue ? "with" : "without"}-total-value`];
+        if(withTotalValue) containerClasses.push("js-dropdown_with-total-value");
 
-    div(class=["dropdown"].concat(containerClasses))
+    div(class=["dropdown", "js-dropdown"].concat(containerClasses))
         - if(title)
             p(class=["dropdown__title"])
                 span(class=["dropdown__title-text"])= title
                 - if(additionalTitle)
                     span(class=["dropdown__additional-title-text"])= additionalTitle
         div(class=["dropdown__container"])
-            div(class=["dropdown__input-container"] data-default-value=value)
-                input(class=["dropdown__input"], 
+            div(class=["dropdown__input-container", "js-dropdown__input-container"] data-default-value=value)
+                input(class=["dropdown__input", "js-dropdown__input"], 
                     placeholder= placeholder,
                     name=name,
                     type=type,
                     value=value,
                     readonly=true)
-                p(class=["dropdown__dropdown-arrow"]) expand_more
-            ul(class=["dropdown__droped-list"])
-                - for(let item of dropdownList)
-                    li(class=["dropdown__list-item"])
-                        p(class=["dropdown__item-name"])= item.name
+                p(class=["dropdown__dropdown-arrow", "js-dropdown__dropdown-arrow"]) expand_more
+            ul(class=["dropdown__list", "js-dropdown__list"])
+                - for(let item of list)
+                    li(class=["dropdown__list-item", "js-dropdown__list-item"])
+                        p(class=["dropdown__item-name", "js-dropdown__item-name"])= item.name
                         div(class=["dropdown__item-handler"])
-                            button(class=["dropdown__item-minus"])= "-"
-                            span(class=["dropdown__item-value"])= item.value
-                            button(class=["dropdown__item-plus"])= "+"
+                            button(class=["dropdown__item-minus", "js-dropdown__item-minus"])= "-" 
+                            span(class=["dropdown__item-value", "js-dropdown__item-value"])= item.value
+                            button(class=["dropdown__item-plus", "js-dropdown__item-plus"])= "+" 
                 - if(hasButtons)
                     div(class=["dropdown__control-buttons"])
-                        p(class=["dropdown__clear-button"]) очистить
-                        p(class=["dropdown__apply-button"]) применить
+                        p(class=["dropdown__clear-button", "js-dropdown__clear-button"]) очистить
+                        p(class=["dropdown__apply-button", "js-dropdown__apply-button"]) применить

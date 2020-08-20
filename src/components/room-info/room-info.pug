@@ -18,11 +18,11 @@ mixin room-info(options = {})
             return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, "$1 ");
         }
 
-    div(class=["room-info"])
+    div(class=["room-info", "js-room-info"])
         a(class=["room-info__ref"] href=url)
         div(class=["room-info__photos"])
             - for(let i = 1; i <= 4; i += 1) {
-                input(class=["room-info__radio-button", `room-info__radio-button_${i}`] 
+                input(class=["room-info__radio-button", "js-room-info__radio-button", `room-info__radio-button_${i}`] 
                     type="radio"
                     name=`photo_${blockNumber}`
                     checked=(i === 1)
@@ -35,10 +35,10 @@ mixin room-info(options = {})
                     src=`./src/components/room-info/img/room-${roomNumber}${photosCount > 1 ? `-${i + 1}` : ""}.png` 
                     alt="room photo")
             - if(photosCount > 1)
-                div(class=["room-info__arrows"])
-                    button(class=["room-info__arrow-back"])
+                div(class=["room-info__arrows", "js-room-info__arrows"])
+                    button(class=["room-info__arrow-back", "js-room-info__arrow-back"])
                         span(class=["room-info__arrow-back-icon"]) expand_more
-                    button(class=["room-info__arrow-forward"])
+                    button(class=["room-info__arrow-forward", "js-room-info__arrow-forward"])
                         span(class=["room-info__arrow-forward-icon"]) expand_more
         div(class=["room-info__text-info"])
             p(class=["room-info__title"])

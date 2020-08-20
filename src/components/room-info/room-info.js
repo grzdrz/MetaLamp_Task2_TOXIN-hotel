@@ -2,38 +2,38 @@ class RoomInfo {
     constructor(outerContainerElement) {
         this.outerContainerElement = outerContainerElement;
 
-        this.handlerLeftArrowClick = this.handlerLeftArrowClick.bind(this);
-        this.handlerRightArrowClick = this.handlerRightArrowClick.bind(this);
+        this._handleLeftArrowClick = this._handleLeftArrowClick.bind(this);
+        this._handleRightArrowClick = this._handleRightArrowClick.bind(this);
 
-        this.initialize();
+        this._initialize();
     }
 
-    initialize() {
-        this.containerElement = this.outerContainerElement.querySelector(".room-info");
-        this.arrows = this.containerElement.querySelector(".room-info__arrows");
+    _initialize() {
+        this.containerElement = this.outerContainerElement.querySelector('.js-room-info');
+        this.arrows = this.containerElement.querySelector('.js-room-info__arrows');
         if (this.arrows) {
-            this.leftArrow = this.arrows.querySelector(".room-info__arrow-back");
-            this.rightArrow = this.arrows.querySelector(".room-info__arrow-forward");
+            this.leftArrow = this.arrows.querySelector('.js-room-info__arrow-back');
+            this.rightArrow = this.arrows.querySelector('.js-room-info__arrow-forward');
         }
-        this.radioButtons = Array.from(this.containerElement.querySelectorAll(".room-info__radio-button"));
+        this.radioButtons = Array.from(this.containerElement.querySelectorAll('.js-room-info__radio-button'));
 
         if (this.leftArrow && this.rightArrow) {
-            this.leftArrow.onclick = this.handlerLeftArrowClick;
-            this.rightArrow.onclick = this.handlerRightArrowClick;
+            this.leftArrow.onclick = this._handleLeftArrowClick;
+            this.rightArrow.onclick = this._handleRightArrowClick;
         }
     }
 
-    handlerLeftArrowClick(event) {
+    _handleLeftArrowClick(event) {
         if (event.currentTarget.disabled) return;
 
         const checkedButton = this.radioButtons.find((button) => button.checked);
 
         if (!checkedButton.previousElementSibling) return;
 
-        if (checkedButton.dataset.serialNumber === "2") {
+        if (checkedButton.dataset.serialNumber === '2') {
             checkedButton.checked = false;
             checkedButton.previousElementSibling.previousElementSibling.checked = true;
-        } else if (checkedButton.dataset.serialNumber === "4") {
+        } else if (checkedButton.dataset.serialNumber === '4') {
             checkedButton.checked = false;
             checkedButton.previousElementSibling.previousElementSibling.checked = true;
         } else {
@@ -42,18 +42,18 @@ class RoomInfo {
         }
     }
 
-    handlerRightArrowClick(event) {
+    _handleRightArrowClick(event) {
         if (event.currentTarget.disabled) return;
 
         const checkedButton = this.radioButtons.find((button) => button.checked);
 
-        if (!checkedButton.nextElementSibling.nextElementSibling.matches(".room-info__radio-button")) return;
+        if (!checkedButton.nextElementSibling.nextElementSibling.matches('.js-room-info__radio-button')) return;
         if (checkedButton.nextElementSibling.nextElementSibling.disabled) return;
 
-        if (checkedButton.dataset.serialNumber === "3") {
+        if (checkedButton.dataset.serialNumber === '3') {
             checkedButton.checked = false;
             checkedButton.nextElementSibling.nextElementSibling.checked = true;
-        } else if (checkedButton.dataset.serialNumber === "1") {
+        } else if (checkedButton.dataset.serialNumber === '1') {
             checkedButton.checked = false;
             checkedButton.nextElementSibling.nextElementSibling.checked = true;
         } else {

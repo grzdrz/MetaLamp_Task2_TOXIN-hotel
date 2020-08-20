@@ -51,7 +51,7 @@ block content
                     title: "доступность",
                     isExpandable: false,
                     hasAdditionalText: true,
-                    checkboxList: [
+                    list: [
                         {isChecked: false, text: "Широкий коридор", additionalText: "Ширина коридоров в номере не менее 91 см."},
                         {isChecked: true, text: "Помощник для инвалидов", additionalText: "На 1 этаже вас встретит специалист и проводит до номера."},
                     ],
@@ -63,7 +63,7 @@ block content
                     name: "rooms",
                     type: "text",
                     value: "Сколько комнат",
-                    dropdownList: [
+                    list: [
                         {name: "спальни", value: 0},
                         {name: "кровати", value: 0},
                         {name: "ванные комнаты", value: 0}
@@ -74,9 +74,9 @@ block content
                 +checkbox-list({
                     title: "дополнительные удобства",
                     isExpandable: true,
-                    isOpened: "true",
+                    isOpened: true,
                     hasAdditionalText: false,
-                    checkboxList : [
+                    list : [
                         {isChecked: false, text: "Завтрак"},
                         {isChecked: true, text: "Письменный стол"}, 
                         {isChecked: true, text: "Стул для кормления"},

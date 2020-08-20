@@ -5,11 +5,11 @@ mixin range-slider(options = {})
             description = "", 
         } = options;
 
-    div(class=["range-slider"])
+    div(class=["range-slider", "js-range-slider"])
         - if(title)
             p(class=["range-slider__title"])
                 span(class=["range-slider__slider-name"])= title
-                span(class=["range-slider__current-values"])
-        div(class=["range-slider__content"])
+                span(class=["range-slider__current-values", "js-range-slider__current-values"])
+        div(class=["range-slider__content", "js-range-slider__content"])
         if(description)
             p(class=["range-slider__description"])= description

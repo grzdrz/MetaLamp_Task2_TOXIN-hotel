@@ -1,39 +1,38 @@
 class ExpandableCheckbox {
-    constructor(outerContainerElement) {
+    constructor(outerContainerElement, isClosed = true) {
         this.outerContainerElement = outerContainerElement;
+        this.isClosed = isClosed;
 
-        this.handlerExpand = this.handlerExpand.bind(this);
+        this._handleExpand = this._handleExpand.bind(this);
 
-        this.initialize();
+        this._initialize();
     }
 
-    initialize() {
-        this.containerElement = this.outerContainerElement.querySelector(".checkbox-list");
-        this.dropdownButton = this.containerElement.querySelector(".checkbox-list__title");
-        this.list = this.containerElement.querySelector(".checkbox-list__list");
-        this.dropdownArrow = this.containerElement.querySelector(".checkbox-list__dropdown-arrow");
+    _initialize() {
+        this.containerElement = this.outerContainerElement.querySelector('.js-checkbox-list');
+        this.dropdownButton = this.containerElement.querySelector('.js-checkbox-list__title');
+        this.list = this.containerElement.querySelector('.js-checkbox-list__list');
+        this.dropdownArrow = this.containerElement.querySelector('.js-checkbox-list__dropdown-arrow');
 
-        this.dropdownButton.onclick = this.handlerExpand;
+        this.dropdownButton.addEventListener('click', this._handleExpand);
 
-        if (this.list.dataset.isOpened === "true") {
-            this.list.style.display = "grid";
-            this.dropdownArrow.style.transform = "rotate(180deg)";
+        this._changeState();
+    }
+
+    _changeState() {
+        if (this.isClosed) {
+            this.list.classList.toggle('checkbox-list__list_closed', true);
+            this.dropdownArrow.classList.toggle('checkbox-list__dropdown-arrow_closed', true);
         } else {
-            this.list.style.display = "none";
-            this.dropdownArrow.style.transform = "none";
+            this.list.classList.toggle('checkbox-list__list_closed', false);
+            this.dropdownArrow.classList.toggle('checkbox-list__dropdown-arrow_closed', false);
         }
     }
 
-    handlerExpand() {
-        if (this.list.dataset.isOpened === "true") {
-            this.list.style.display = "none";
-            this.list.dataset.isOpened = "false";
-            this.dropdownArrow.style.transform = "none";
-        } else {
-            this.list.style.display = "grid";
-            this.list.dataset.isOpened = "true";
-            this.dropdownArrow.style.transform = "rotate(180deg)";
-        }
+    _handleExpand() {
+        if (this.isClosed) this.isClosed = false;
+        else this.isClosed = true;
+        this._changeState();
     }
 }
 

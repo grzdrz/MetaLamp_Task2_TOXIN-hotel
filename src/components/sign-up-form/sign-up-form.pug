@@ -7,7 +7,7 @@ include ../button/button.pug
 mixin sign-up-form(options = {})
     - const { title = "" } = options;
 
-    form(class=["sign-up-form"])
+    form(class=["sign-up-form", "js-sign-up-form"])
         - if(title)
             p(class=["sign-up-form__title"])= title
         div(class=["sign-up-form__first-name-field"])
@@ -35,7 +35,7 @@ mixin sign-up-form(options = {})
                 ],
                 name: "gender",
             })
-        div(class=["sign-up-form__calendar"])
+        div(class=["sign-up-form__calendar", "js-sign-up-form__calendar"])
             +calendar({
                 isDouble: false,
                 withRange: false, 

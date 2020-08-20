@@ -8,10 +8,16 @@ import Calendar from "../../../components/calendar/calendar";
 import "./form-elements.scss";
 
 const dropdowns = Array.from(document.querySelectorAll(".js-form-elements__dropdown"))
-    .map((element) => new Dropdown(element));
+    .map((element, index) => {
+        if (index < 2) return new Dropdown(element);
+        return new Dropdown(element, true);
+    });
 
 const expandableCheckboxes = Array.from(document.querySelectorAll(".js-form-elements__checkbox_expandable"))
-    .map((element) => new ExpandableCheckbox(element));
+    .map((element, index) => {
+        if (index === 0) return new ExpandableCheckbox(element);
+        return new ExpandableCheckbox(element, false);
+    });
 
 const paginations = Array.from(document.querySelectorAll(".js-form-elements__pagination"))
     .map((element) => new Pagination({

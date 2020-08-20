@@ -50,7 +50,7 @@
             border: 0.0625rem solid $color-dark-shade-50;
         }
 
-        &_is-opened {
+        &_opened {
             border: 0.0625rem solid $color-dark-shade-50;
             border-bottom-left-radius: 0rem;
             border-bottom-right-radius: 0rem;
@@ -96,7 +96,7 @@
         text-overflow: ellipsis;
     }
 
-    &__droped-list {
+    &__list {
         display: none;
         width: 100%;
         list-style: none;
@@ -118,7 +118,7 @@
             border-top: 0rem;
         }
 
-        &_is-opened {
+        &_opened {
             display: flex;
         }
     }

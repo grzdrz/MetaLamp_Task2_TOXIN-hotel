@@ -5,7 +5,7 @@ mixin checkbox-list(options = {})
             isExpandable = false,
             isOpened = false,
             hasAdditionalText = false,
-            checkboxList = [
+            list = [
                 {isChecked: false, text: "Можно курить"},
                 {isChecked: true, text: "Можно с питомцами"},
                 {isChecked: true, text: "Можно пригласить гостей (до 10 человек)"},
@@ -20,20 +20,20 @@ mixin checkbox-list(options = {})
         else if(hasAdditionalText)containerClasses.push("checkbox-list_rich");
         itemTextClasses.push(`checkbox-list__item-text_${hasAdditionalText ? "main" : "single"}`);
 
-    div(class=["checkbox-list"].concat(containerClasses))
+    div(class=["checkbox-list", "js-checkbox-list"].concat(containerClasses))
         - if(title)
-            p(class=["checkbox-list__title"].concat(titleClasses))
+            p(class=["checkbox-list__title", "js-checkbox-list__title"].concat(titleClasses))
                 span(class=["checkbox-list__title-text"])= title
                 - if(isExpandable)
-                    span(class=["checkbox-list__dropdown-arrow"]) expand_more
-        ul(class=["checkbox-list__list"] data-is-opened=isOpened)
-            - for(let item of checkboxList)
+                    span(class=["checkbox-list__dropdown-arrow", "js-checkbox-list__dropdown-arrow"]) expand_more
+        ul(class=["checkbox-list__list", "js-checkbox-list__list"])
+            - for(let item of list)
                 li(class=["checkbox-list__item"])
                     label(class=["checkbox-list__label"])
                         input(class=["checkbox-list__input"] type= "checkbox" checked= item.isChecked)
-                        div(class=["checkbox-list__checkmark"])
-                            img(class=["checkbox-list__checkmark-image"] 
-                                src="./src/components/checkbox-list/img/check-mark.svg" alt="checkmark")
+                        div(class=["checkbox-list__check-mark"])
+                            img(class=["checkbox-list__check-mark-image"] 
+                                src="./src/components/checkbox-list/img/check-mark.svg" alt="check-mark")
                         div(class=["checkbox-list__frame"])
                         p(class=["checkbox-list__item-text"].concat(itemTextClasses))= item.text
                     - if(hasAdditionalText)

@@ -65,12 +65,21 @@
         font-family: Material Icons;
         font-size: 1.5rem;
         line-height: 1.5rem;
+        transform: rotate(180deg);
+
+        &_closed {
+            transform: none;
+        }
     }
 
     &__list {
         list-style: none;
         display: flex;
         flex-direction: column;
+
+        &_closed {
+            display: none;
+        }
     }
 
     &__item {
@@ -95,7 +104,7 @@
         margin-right: $checkboxMarginRight;
         opacity: 0;
 
-        &:not(:checked) + .checkbox-list__checkmark {
+        &:not(:checked) + .checkbox-list__check-mark {
             opacity: 0;
         }
 
@@ -103,7 +112,7 @@
             border: 0.0625rem solid $color-gray-blue;
         }
 
-        &:checked + .checkbox-list__checkmark {
+        &:checked + .checkbox-list__check-mark {
             opacity: 1;
         }
 
@@ -112,7 +121,7 @@
         }
     }
 
-    &__checkmark {
+    &__check-mark {
         width: $checkboxSize;
         height: $checkboxSize;
         display: flex;
@@ -122,7 +131,7 @@
         padding-bottom: 0.125rem;
     }
 
-    &__checkmark-image {
+    &__check-mark-image {
         width: 0.625rem;
         height: 0.625rem;
         display: flex;

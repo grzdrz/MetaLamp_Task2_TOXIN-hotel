@@ -6,54 +6,54 @@ class Pagination {
 
         this.outerContainerElement = outerContainerElement;
 
-        this.paginationPugCode = require("./pagination-for-render.pug");
+        this.pugCode = require('./pagination-for-render.pug');
 
-        this.handlerSelectPage = this.handlerSelectPage.bind(this);
-        this.setClickEventsToPagesLinks = this.setClickEventsToPagesLinks.bind(this);
-        this.writeBottomText = this.writeBottomText.bind(this);
+        this._handleSelectPage = this._handleSelectPage.bind(this);
+        this._setClickEventsToPagesLinks = this._setClickEventsToPagesLinks.bind(this);
+        this._writeBottomText = this._writeBottomText.bind(this);
 
-        this.initialize();
+        this._initialize();
     }
 
-    initialize() {
-        this.outerContainerElement.innerHTML = this.paginationPugCode(this.options);
-        this.writeBottomText();
-        this.setClickEventsToPagesLinks();
+    _initialize() {
+        this.outerContainerElement.innerHTML = this.pugCode(this.options);
+        this._writeBottomText();
+        this._setClickEventsToPagesLinks();
     }
 
-    setClickEventsToPagesLinks() {
-        const links = this.outerContainerElement.querySelectorAll(".js-pagination__link");
+    _setClickEventsToPagesLinks() {
+        const links = this.outerContainerElement.querySelectorAll('.js-pagination__link');
         links.forEach((a) => {
-            a.onclick = this.handlerSelectPage;
+            a.onclick = this._handleSelectPage;
         });
     }
 
-    writeBottomText() {
-        const bottomTextElement = this.outerContainerElement.querySelector(".pagination__bottom-text");
+    _writeBottomText() {
+        const bottomTextElement = this.outerContainerElement.querySelector('.js-pagination__bottom-text');
         const firstItemCountNumber = Math.round(this.options.itemsCount / this.options.pagesCount) * (this.options.curPageNumber - 1) + 1;
         let lastItemCountNumber = Math.round(this.options.itemsCount / this.options.pagesCount) * this.options.curPageNumber;
         if (lastItemCountNumber > this.options.itemsCount) lastItemCountNumber = this.options.itemsCount;
-        const itemsCountText = this.options.itemsCount > 100 ? "100+" : `${this.options.itemsCount}`;
+        const itemsCountText = this.options.itemsCount > 100 ? '100+' : `${this.options.itemsCount}`;
         bottomTextElement.textContent = `${firstItemCountNumber} - ${lastItemCountNumber} из ${itemsCountText} вариантов аренды`;
     }
 
-    handlerSelectPage(event) {
+    _handleSelectPage(event) {
         event.preventDefault();
 
         const selectedPageNumber = event.currentTarget.dataset.pageNumber;
-        if (selectedPageNumber === "leftArrow") {
+        if (selectedPageNumber === 'leftArrow') {
             this.options.curPageNumber -= 1;
-            this.outerContainerElement.innerHTML = this.paginationPugCode(this.options);
-        } else if (selectedPageNumber === "rightArrow") {
+            this.outerContainerElement.innerHTML = this.pugCode(this.options);
+        } else if (selectedPageNumber === 'rightArrow') {
             this.options.curPageNumber += 1;
-            this.outerContainerElement.innerHTML = this.paginationPugCode(this.options);
+            this.outerContainerElement.innerHTML = this.pugCode(this.options);
         } else {
             this.options.curPageNumber = Number.parseInt(selectedPageNumber, 10);
-            this.outerContainerElement.innerHTML = this.paginationPugCode(this.options);
+            this.outerContainerElement.innerHTML = this.pugCode(this.options);
         }
 
-        this.writeBottomText();
-        this.setClickEventsToPagesLinks();
+        this._writeBottomText();
+        this._setClickEventsToPagesLinks();
     }
 }
 

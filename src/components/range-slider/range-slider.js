@@ -1,6 +1,6 @@
-import "ion-rangeslider";
-import "ion-rangeslider/css/ion.rangeSlider.css";
-import jQuery from "jquery";
+import 'ion-rangeslider';
+import 'ion-rangeslider/css/ion.rangeSlider.css';
+import jQuery from 'jquery';
 
 const $ = jQuery;
 global.jQuery = $;
@@ -10,10 +10,9 @@ class RangeSlider {
     constructor(outerContainerElement) {
         this.outerContainerElement = outerContainerElement;
 
-        this.renderTitle = this.renderTitle.bind(this);
-
+        this._renderTitle = this._renderTitle.bind(this);
         this.data = {
-            type: "double",
+            type: 'double',
             min: 1000,
             max: 15000,
             from: 5000,
@@ -21,28 +20,28 @@ class RangeSlider {
             step: 100,
             hide_min_max: true,
             hide_from_to: true,
-            onStart: this.renderTitle,
-            onUpdate: this.renderTitle,
-            onChange: this.renderTitle,
+            onStart: this._renderTitle,
+            onUpdate: this._renderTitle,
+            onChange: this._renderTitle,
         };
 
-        this.initialize();
+        this._initialize();
     }
 
-    initialize() {
-        this.containerElement = this.outerContainerElement.querySelector(".range-slider");
-        this.content = this.containerElement.querySelector(".range-slider__content");
-        this.currentValues = this.containerElement.querySelector(".range-slider__current-values");
+    _initialize() {
+        this.containerElement = this.outerContainerElement.querySelector('.js-range-slider');
+        this.content = this.containerElement.querySelector('.js-range-slider__content');
+        this.currentValues = this.containerElement.querySelector('.js-range-slider__current-values');
 
-        this.jqSlider = $(this.content).ionRangeSlider(this.data);
+        this.$slider = $(this.content).ionRangeSlider(this.data);
     }
 
-    renderTitle(data) {
-        this.currentValues.textContent = `${this.formateNumber(data.from)}₽ - ${this.formateNumber(data.to)}₽`;
+    _renderTitle(data) {
+        this.currentValues.textContent = `${this._formateNumber(data.from)}₽ - ${this._formateNumber(data.to)}₽`;
     }
 
-    formateNumber(number) {
-        return number.toString().replace(/(\d)(?=(\d{3})+$)/g, "$1 ");
+    _formateNumber(number) {
+        return number.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
     }
 }
 

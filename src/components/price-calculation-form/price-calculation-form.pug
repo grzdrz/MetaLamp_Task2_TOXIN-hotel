@@ -16,20 +16,20 @@ mixin price-calculation-form(options = {})
             return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, "$1 ");
         }
 
-    form(class=["price-calculation-form"])
+    form(class=["price-calculation-form", "js-price-calculation-form"])
         p(class=["price-calculation-form__title"])
             span(class=["price-calculation-form__number-symbol"]) №
             span(class=["price-calculation-form__room-number"])= roomNumber
             span(class=["price-calculation-form__room-status"])= (roomStatus ? roomStatus : "")
             span(class=["price-calculation-form__room-price"])= `${formateNumber(roomPrice)}${currencyType}`
             span(class=["price-calculation-form__period-of-time"])= `в сутки`
-        div(class=["price-calculation-form__calendar"])
+        div(class=["price-calculation-form__calendar", "js-price-calculation-form__calendar"])
             +calendar({
                 isDouble: true,
                 firstTitle: "прибытие",
                 secondTitle: "выезд",
             })
-        div(class=["price-calculation-form__dropdown"])
+        div(class=["price-calculation-form__dropdown", "js-price-calculation-form__dropdown"])
             +dropdown({
                 title: "гости",
                 additionalTitle: "",
@@ -38,7 +38,7 @@ mixin price-calculation-form(options = {})
                 type: "text",
                 value: "Сколько гостей",
                 hasButtons: true,
-                dropdownList: [
+                list: [
                     {name: "взрослые", value: 0},
                     {name: "дети", value: 0},
                     {name: "младенцы", value: 0}
@@ -46,20 +46,30 @@ mixin price-calculation-form(options = {})
                 withTotalValue: true,
             })  
         div(class=["price-calculation-form__calculated-data"])
-            p(class=["price-calculation-form__main-sum"] data-value=roomPrice data-currency-type=currencyType)
-                span(class=["price-calculation-form__main-sum-formula"])= `${formateNumber(roomPrice)}${currencyType} x 0 суток`
-                span(class=["price-calculation-form__main-sum-result"])= `${formateNumber(roomPrice)}${currencyType}`
-            p(class=["price-calculation-form__services"] data-value=discount)
-                span(class=["price-calculation-form__discount-description"])= `Сбор за услуги: скидка ${formateNumber(discount)}${currencyType}`
-                span(class=["price-calculation-form__services-tooltip", "price-calculation-form__discount-tooltip"]) i
-                span(class=["price-calculation-form__discount-value"])= `0${currencyType}`
-                span(class=["price-calculation-form__additional-services-description"]) Сбор за дополнительные услуги
-                span(class=["price-calculation-form__services-tooltip", "price-calculation-form__additional-services-tooltip"]) i                
-                span(class=["price-calculation-form__additional-services-value"])= `0${currencyType}`
+            p(class=["price-calculation-form__main-sum", "js-price-calculation-form__main-sum"] 
+                data-value=roomPrice data-currency-type=currencyType)
+                span(class=["price-calculation-form__main-sum-formula", "js-price-calculation-form__main-sum-formula"]
+                    )= `${formateNumber(roomPrice)}${currencyType} x 0 суток`
+                span(class=["price-calculation-form__main-sum-result", "js-price-calculation-form__main-sum-result"])
+                    | 0
+            p(class=["price-calculation-form__services", "js-price-calculation-form__services"] data-value=discount)
+                span(class=["price-calculation-form__discount-description"]
+                    )= `Сбор за услуги: скидка ${formateNumber(discount)}${currencyType}`
+                span(class=["price-calculation-form__services-tooltip", "price-calculation-form__discount-tooltip"])
+                    | i
+                span(class=["price-calculation-form__discount-value"]
+                    )= `0${currencyType}`
+                span(class=["price-calculation-form__additional-services-description"])
+                    | Сбор за дополнительные услуги
+                span(class=["price-calculation-form__services-tooltip", "price-calculation-form__additional-services-tooltip"])
+                    | i                
+                span(class=["price-calculation-form__additional-services-value", "js-price-calculation-form__additional-services-value"]
+                    )= `0${currencyType}`
             p(class=["price-calculation-form__total-result"] data-value=0)
                 span(class=["price-calculation-form__total-result-text"]) Итого
                 span(class=["price-calculation-form__total-result-bottom-line"])
-                span(class=["price-calculation-form__total-result-value"])= `0${currencyType}`
+                span(class=["price-calculation-form__total-result-value", "js-price-calculation-form__total-result-value"]
+                    )= `0${currencyType}`
         div(class=["price-calculation-form__submit-button"])
             +button({
                 text: "забронировать",

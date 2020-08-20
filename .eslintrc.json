@@ -19,10 +19,7 @@
             "error",
             4
         ],
-        "quotes": [
-            "error",
-            "double"
-        ],
+        "no-underscore-dangle": 0,
         "max-len": 0,
         "linebreak-style": "off",
         "no-param-reassign": 0,

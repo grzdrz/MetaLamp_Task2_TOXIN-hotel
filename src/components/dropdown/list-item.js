@@ -3,23 +3,23 @@ class ListItem {
         this.dropdown = dropdown;
         this.containerElement = containerElement;
 
-        this.handlerDropdownItemPlus = this.handlerDropdownItemPlus.bind(this);
-        this.handlerDropdownItemMinus = this.handlerDropdownItemMinus.bind(this);
+        this._handleDropdownItemPlus = this._handleDropdownItemPlus.bind(this);
+        this._handleDropdownItemMinus = this._handleDropdownItemMinus.bind(this);
 
-        this.initialize();
+        this._initialize();
     }
 
-    initialize() {
-        this.name = this.containerElement.querySelector(".dropdown__item-name");
-        this.value = this.containerElement.querySelector(".dropdown__item-value");
-        this.plus = this.containerElement.querySelector(".dropdown__item-plus");
-        this.minus = this.containerElement.querySelector(".dropdown__item-minus");
+    _initialize() {
+        this.name = this.containerElement.querySelector('.js-dropdown__item-name');
+        this.value = this.containerElement.querySelector('.js-dropdown__item-value');
+        this.plus = this.containerElement.querySelector('.js-dropdown__item-plus');
+        this.minus = this.containerElement.querySelector('.js-dropdown__item-minus');
 
-        this.plus.onclick = this.handlerDropdownItemPlus;
-        this.minus.onclick = this.handlerDropdownItemMinus;
+        this.plus.onclick = this._handleDropdownItemPlus;
+        this.minus.onclick = this._handleDropdownItemMinus;
     }
 
-    handlerDropdownItemPlus(event) {
+    _handleDropdownItemPlus(event) {
         event.preventDefault();
 
         let curValue = Number.parseInt(this.value.textContent, 10);
@@ -28,13 +28,13 @@ class ListItem {
         this.value.textContent = curValue;
 
         if (this.dropdown.clearButton) {
-            this.dropdown.clearButton.style.display = "flex";
+            this.dropdown.clearButton.style.display = 'flex';
         }
 
         this.dropdown.changeDropdownInputValue();
     }
 
-    handlerDropdownItemMinus(event) {
+    _handleDropdownItemMinus(event) {
         event.preventDefault();
 
         let curValue = Number.parseInt(this.value.textContent, 10);
@@ -46,12 +46,12 @@ class ListItem {
         if (curValue === 0) {
             event.currentTarget.style.opacity = 0.38;
 
-            const values = this.dropdown.dropdownList.map((item) => item.value);
+            const values = this.dropdown.list.map((item) => item.value);
             const absoluteSum = values.reduce((sum, value) => sum + Math.abs(Number.parseInt(value.textContent, 10)), 0);
 
             if (absoluteSum === 0) {
                 if (this.dropdown.clearButton) {
-                    this.dropdown.clearButton.style.display = "none";
+                    this.dropdown.clearButton.style.display = 'none';
                 }
             }
         }

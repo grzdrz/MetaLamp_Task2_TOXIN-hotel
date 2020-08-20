@@ -49,12 +49,12 @@ block content
                     type: "text",
                     value: "Сколько гостей",
                     hasButtons: true,
-                    dropdownList: [
+                    withTotalValue: true,
+                    list: [
                         {name: "взрослые", value: 0},
                         {name: "дети", value: 0},
                         {name: "младенцы", value: 0}
                     ],
-                    withTotalValue: true,
                 })
             div(class=["form-elements__calendar-1 js-form-elements__calendar"])
                 +calendar({
@@ -90,7 +90,7 @@ block content
                     title: "Checkbox Buttons",
                     isExpandable: false, 
                     hasAdditionalText: false,               
-                    checkboxList: [
+                    list: [
                         {isChecked: false, text: "Можно курить"},
                         {isChecked: true, text: "Можно с питомцами"},
                         {isChecked: true, text: "Можно пригласить гостей (до 10 человек)"},
@@ -206,12 +206,12 @@ block content
                         name: "dropdown",
                         type: "text",
                         value: "Сколько комнат",
-                        dropdownList: [
+                        withTotalValue: false,
+                        list: [
                             {name: "спальни", value: 0},
                             {name: "кровати", value: 0},
                             {name: "ванные комнаты", value: 0}
                         ],
-                        withTotalValue: false,
                     }) 
                 div(class=["form-elements__dropdown-3 js-form-elements__dropdown"]) 
                     +dropdown({
@@ -221,12 +221,12 @@ block content
                         name: "dropdown",
                         type: "text",
                         value: "Сколько комнат",
-                        dropdownList: [
+                        withTotalValue: false,
+                        list: [
                             {name: "спальни", value: 0},
                             {name: "кровати", value: 0},
                             {name: "ванные комнаты", value: 0}
                         ],
-                        withTotalValue: false,
                     })
             div(class=["form-elements__dropdown-4 js-form-elements__dropdown"]) 
                 +dropdown({
@@ -237,12 +237,12 @@ block content
                     type: "text",
                     value: "Сколько гостей",
                     hasButtons: true,
-                    dropdownList: [
+                    withTotalValue: true,
+                    list: [
                         {name: "взрослые", value: 0},
                         {name: "дети", value: 0},
                         {name: "младенцы", value: 0}
                     ],
-                    withTotalValue: true,
                 })
             div(class=["form-elements__dropdown-5 js-form-elements__dropdown"]) 
                 +dropdown({
@@ -253,12 +253,12 @@ block content
                     type: "text",
                     value: "Сколько гостей",
                     hasButtons: true,
-                    dropdownList: [
+                    withTotalValue: true,
+                    list: [
                         {name: "взрослые", value: 0},
                         {name: "дети", value: 0},
                         {name: "младенцы", value: 0}
                     ],
-                    withTotalValue: true,
                 })
         div(class=["form-elements__row-2"])
             div(class=["form-elements__checkbox-2-3"])
@@ -268,7 +268,7 @@ block content
                         isExpandable: true,
                         isOpened: "true",
                         hasAdditionalText: false,
-                        checkboxList : [
+                        list : [
                             {isChecked: false, text: "Завтрак"},
                             {isChecked: true, text: "Письменный стол"}, 
                             {isChecked: true, text: "Стул для кормления"},
@@ -285,7 +285,7 @@ block content
                         isExpandable: true,
                         isOpened: "true",
                         hasAdditionalText: false,
-                        checkboxList : [
+                        list : [
                             {isChecked: false, text: "Завтрак"},
                             {isChecked: true, text: "Письменный стол"}, 
                             {isChecked: true, text: "Стул для кормления"},
@@ -301,7 +301,7 @@ block content
                     title: "rich Checkbox Buttons",
                     isExpandable: false,
                     hasAdditionalText: true,
-                    checkboxList: [
+                    list: [
                         {isChecked: false, text: "Широкий коридор", additionalText: "Ширина коридоров в номере не менее 91 см."},
                         {isChecked: true, text: "Помощник для инвалидов", additionalText: "На 1 этаже вас встретит специалист и проводит до номера."},
                     ],
