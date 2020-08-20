@@ -112,7 +112,6 @@ body {
     background: transparent;
     text-align: center;
     color: white;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -125,8 +124,6 @@ body {
     cursor: pointer;
     right: 0rem;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center; }
@@ -226,8 +223,6 @@ body {
   .header__item-ref {
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     white-space: nowrap;
@@ -238,16 +233,12 @@ body {
     align-items: center;
     text-align: center;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.25rem;
     color: rgba(31, 32, 65, 0.5); }
   .header__user-full-name {
     display: flex;
     align-items: center;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     color: rgba(31, 32, 65, 0.5);
@@ -300,23 +291,17 @@ body {
 
 .form-input {
   width: 100%; }
-  .form-input_text-field-default {
-    display: flex;
-    flex-direction: column; }
   .form-input__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.3125rem; }
   .form-input__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.65rem;
     text-align: right;
@@ -338,8 +323,6 @@ body {
     height: 2.625rem;
     outline: none;
     background: transparent;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     letter-spacing: -0.0125rem;
@@ -377,8 +360,6 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem; }
 
@@ -412,15 +393,12 @@ body {
   flex-direction: column; }
   .menu-bar__item {
     margin-bottom: 1.3125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem; }
     .menu-bar__item:first-of-type {
       margin-top: 0.25rem;
       margin-bottom: 1.3rem; }
       .menu-bar__item:first-of-type > .menu-bar__item-ref {
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -430,12 +408,9 @@ body {
       margin-bottom: 0rem; }
   .menu-bar__item-ref {
     text-decoration: none;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     color: rgba(31, 32, 65, 0.5);
-    white-space: normal;
     word-break: break-word; }
 
 .footer {
@@ -486,8 +461,6 @@ body {
         align-items: center; } }
   .footer__general-info-text {
     margin-top: 1.125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
@@ -509,22 +482,17 @@ body {
         display: none; } }
   .footer__subscription-title {
     margin-bottom: 1.1875rem;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: #1f2041;
-    white-space: normal;
     word-break: break-word; }
   .footer__subscription-description {
     margin-bottom: 1.375rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
-    white-space: normal;
     word-break: break-word; }
   .footer__subscription-form {
     width: 16.25rem;
@@ -546,8 +514,6 @@ body {
       .footer__copyright-bar {
         padding-bottom: 7.5rem; } }
   .footer__copyright {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.6rem;
     color: rgba(31, 32, 65, 0.75);
@@ -594,8 +560,6 @@ body {
   .short-footer__text {
     margin-top: 1.125rem;
     margin-bottom: 1.28rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     text-align: center;

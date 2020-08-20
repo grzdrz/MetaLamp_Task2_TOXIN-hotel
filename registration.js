@@ -237,7 +237,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.eot\": \"./src/assets/fonts/Montserrat/montserrat-bold.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.ttf\": \"./src/assets/fonts/Montserrat/montserrat-bold.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff2\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.eot\": \"./src/assets/fonts/Montserrat/montserrat-regular.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.ttf\": \"./src/assets/fonts/Montserrat/montserrat-regular.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff2\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.eot\": \"./src/assets/fonts/OpenSans/open-sans-bold.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.ttf\": \"./src/assets/fonts/OpenSans/open-sans-bold.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff2\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.eot\": \"./src/assets/fonts/OpenSans/open-sans-regular.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.ttf\": \"./src/assets/fonts/OpenSans/open-sans-regular.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff2\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.eot\": \"./src/assets/fonts/Quicksand/quicksand-bold.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.ttf\": \"./src/assets/fonts/Quicksand/quicksand-bold.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff2\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.eot\": \"./src/assets/fonts/Quicksand/quicksand-regular.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.ttf\": \"./src/assets/fonts/Quicksand/quicksand-regular.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff2\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff2\",\n\t\"./components/checkbox-list/img/check-mark.svg\": \"./src/components/checkbox-list/img/check-mark.svg\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./components/logo/img/logo.svg\": \"./src/components/logo/img/logo.svg\",\n\t\"./components/room-info/img/test11.png\": \"./src/components/room-info/img/test11.png\",\n\t\"./components/room-info/img/test110.png\": \"./src/components/room-info/img/test110.png\",\n\t\"./components/room-info/img/test120.png\": \"./src/components/room-info/img/test120.png\",\n\t\"./components/room-info/img/test130.png\": \"./src/components/room-info/img/test130.png\",\n\t\"./components/room-info/img/test22.png\": \"./src/components/room-info/img/test22.png\",\n\t\"./components/room-info/img/test33.png\": \"./src/components/room-info/img/test33.png\",\n\t\"./components/room-info/img/test44.png\": \"./src/components/room-info/img/test44.png\",\n\t\"./components/room-info/img/test55.png\": \"./src/components/room-info/img/test55.png\",\n\t\"./components/room-info/img/test66.png\": \"./src/components/room-info/img/test66.png\",\n\t\"./components/room-info/img/test77.png\": \"./src/components/room-info/img/test77.png\",\n\t\"./components/room-info/img/test88.png\": \"./src/components/room-info/img/test88.png\",\n\t\"./components/room-info/img/test99.png\": \"./src/components/room-info/img/test99.png\",\n\t\"./components/room-reviews/img/image1.png\": \"./src/components/room-reviews/img/image1.png\",\n\t\"./components/room-reviews/img/image2.png\": \"./src/components/room-reviews/img/image2.png\",\n\t\"./components/social-media/img/facebook-icon.svg\": \"./src/components/social-media/img/facebook-icon.svg\",\n\t\"./components/social-media/img/instagram-icon.svg\": \"./src/components/social-media/img/instagram-icon.svg\",\n\t\"./components/social-media/img/twitter-icon.svg\": \"./src/components/social-media/img/twitter-icon.svg\",\n\t\"./favicons/android-chrome-192x192.png\": \"./src/favicons/android-chrome-192x192.png\",\n\t\"./favicons/android-chrome-512x512.png\": \"./src/favicons/android-chrome-512x512.png\",\n\t\"./favicons/apple-touch-icon.png\": \"./src/favicons/apple-touch-icon.png\",\n\t\"./favicons/favicon-16x16.png\": \"./src/favicons/favicon-16x16.png\",\n\t\"./favicons/favicon-32x32.png\": \"./src/favicons/favicon-32x32.png\",\n\t\"./favicons/mstile-144x144.png\": \"./src/favicons/mstile-144x144.png\",\n\t\"./favicons/mstile-150x150.png\": \"./src/favicons/mstile-150x150.png\",\n\t\"./favicons/mstile-310x150.png\": \"./src/favicons/mstile-310x150.png\",\n\t\"./favicons/mstile-310x310.png\": \"./src/favicons/mstile-310x310.png\",\n\t\"./favicons/mstile-70x70.png\": \"./src/favicons/mstile-70x70.png\",\n\t\"./favicons/safari-pinned-tab.svg\": \"./src/favicons/safari-pinned-tab.svg\",\n\t\"./pages/web-pages/landing-page/img/background.jpg\": \"./src/pages/web-pages/landing-page/img/background.jpg\",\n\t\"./pages/web-pages/registration/img/background.jpg\": \"./src/pages/web-pages/registration/img/background.jpg\",\n\t\"./pages/web-pages/room-details/img/background1.jpg\": \"./src/pages/web-pages/room-details/img/background1.jpg\",\n\t\"./pages/web-pages/room-details/img/background2.jpg\": \"./src/pages/web-pages/room-details/img/background2.jpg\",\n\t\"./pages/web-pages/room-details/img/background3.jpg\": \"./src/pages/web-pages/room-details/img/background3.jpg\",\n\t\"./pages/web-pages/sign-in/img/background.jpg\": \"./src/pages/web-pages/sign-in/img/background.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(ttf%7Ceot%7Cwoff%7Cwoff2%7Csvg%7Cpng%7Cjpg)$?");
+eval("var map = {\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.eot\": \"./src/assets/fonts/Montserrat/montserrat-bold.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.ttf\": \"./src/assets/fonts/Montserrat/montserrat-bold.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff2\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.eot\": \"./src/assets/fonts/Montserrat/montserrat-regular.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.ttf\": \"./src/assets/fonts/Montserrat/montserrat-regular.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff2\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.eot\": \"./src/assets/fonts/OpenSans/open-sans-bold.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.ttf\": \"./src/assets/fonts/OpenSans/open-sans-bold.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff2\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.eot\": \"./src/assets/fonts/OpenSans/open-sans-regular.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.ttf\": \"./src/assets/fonts/OpenSans/open-sans-regular.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff2\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.eot\": \"./src/assets/fonts/Quicksand/quicksand-bold.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.ttf\": \"./src/assets/fonts/Quicksand/quicksand-bold.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff2\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.eot\": \"./src/assets/fonts/Quicksand/quicksand-regular.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.ttf\": \"./src/assets/fonts/Quicksand/quicksand-regular.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff2\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff2\",\n\t\"./components/checkbox-list/img/check-mark.svg\": \"./src/components/checkbox-list/img/check-mark.svg\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./components/logo/img/logo.svg\": \"./src/components/logo/img/logo.svg\",\n\t\"./components/room-info/img/room-350.png\": \"./src/components/room-info/img/room-350.png\",\n\t\"./components/room-info/img/room-352.png\": \"./src/components/room-info/img/room-352.png\",\n\t\"./components/room-info/img/room-444.png\": \"./src/components/room-info/img/room-444.png\",\n\t\"./components/room-info/img/room-450.png\": \"./src/components/room-info/img/room-450.png\",\n\t\"./components/room-info/img/room-666.png\": \"./src/components/room-info/img/room-666.png\",\n\t\"./components/room-info/img/room-678.png\": \"./src/components/room-info/img/room-678.png\",\n\t\"./components/room-info/img/room-740.png\": \"./src/components/room-info/img/room-740.png\",\n\t\"./components/room-info/img/room-840.png\": \"./src/components/room-info/img/room-840.png\",\n\t\"./components/room-info/img/room-856.png\": \"./src/components/room-info/img/room-856.png\",\n\t\"./components/room-info/img/room-888-1.png\": \"./src/components/room-info/img/room-888-1.png\",\n\t\"./components/room-info/img/room-888-2.png\": \"./src/components/room-info/img/room-888-2.png\",\n\t\"./components/room-info/img/room-888-3.png\": \"./src/components/room-info/img/room-888-3.png\",\n\t\"./components/room-info/img/room-888-4.png\": \"./src/components/room-info/img/room-888-4.png\",\n\t\"./components/room-info/img/room-980.png\": \"./src/components/room-info/img/room-980.png\",\n\t\"./components/room-info/img/room-982.png\": \"./src/components/room-info/img/room-982.png\",\n\t\"./components/room-reviews/img/avatar-murat-sarafanof.png\": \"./src/components/room-reviews/img/avatar-murat-sarafanof.png\",\n\t\"./components/room-reviews/img/avatar-patrisiya-steklishkova.png\": \"./src/components/room-reviews/img/avatar-patrisiya-steklishkova.png\",\n\t\"./components/social-media/img/facebook-icon.svg\": \"./src/components/social-media/img/facebook-icon.svg\",\n\t\"./components/social-media/img/instagram-icon.svg\": \"./src/components/social-media/img/instagram-icon.svg\",\n\t\"./components/social-media/img/twitter-icon.svg\": \"./src/components/social-media/img/twitter-icon.svg\",\n\t\"./favicons/android-chrome-192x192.png\": \"./src/favicons/android-chrome-192x192.png\",\n\t\"./favicons/android-chrome-512x512.png\": \"./src/favicons/android-chrome-512x512.png\",\n\t\"./favicons/apple-touch-icon.png\": \"./src/favicons/apple-touch-icon.png\",\n\t\"./favicons/favicon-16x16.png\": \"./src/favicons/favicon-16x16.png\",\n\t\"./favicons/favicon-32x32.png\": \"./src/favicons/favicon-32x32.png\",\n\t\"./favicons/mstile-144x144.png\": \"./src/favicons/mstile-144x144.png\",\n\t\"./favicons/mstile-150x150.png\": \"./src/favicons/mstile-150x150.png\",\n\t\"./favicons/mstile-310x150.png\": \"./src/favicons/mstile-310x150.png\",\n\t\"./favicons/mstile-310x310.png\": \"./src/favicons/mstile-310x310.png\",\n\t\"./favicons/mstile-70x70.png\": \"./src/favicons/mstile-70x70.png\",\n\t\"./favicons/safari-pinned-tab.svg\": \"./src/favicons/safari-pinned-tab.svg\",\n\t\"./pages/web-pages/landing-page/img/background.jpg\": \"./src/pages/web-pages/landing-page/img/background.jpg\",\n\t\"./pages/web-pages/registration/img/background.jpg\": \"./src/pages/web-pages/registration/img/background.jpg\",\n\t\"./pages/web-pages/room-details/img/room-888-1.jpg\": \"./src/pages/web-pages/room-details/img/room-888-1.jpg\",\n\t\"./pages/web-pages/room-details/img/room-888-2.jpg\": \"./src/pages/web-pages/room-details/img/room-888-2.jpg\",\n\t\"./pages/web-pages/room-details/img/room-888-3.jpg\": \"./src/pages/web-pages/room-details/img/room-888-3.jpg\",\n\t\"./pages/web-pages/sign-in/img/background.jpg\": \"./src/pages/web-pages/sign-in/img/background.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(ttf%7Ceot%7Cwoff%7Cwoff2%7Csvg%7Cpng%7Cjpg)$?");
 
 /***/ }),
 
@@ -680,7 +680,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/dist/css/datepicker.css */ \"./node_modules/air-datepicker/dist/css/datepicker.css\");\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\r\nconst $ = jquery__WEBPACK_IMPORTED_MODULE_2___default.a;\r\nglobal.jQuery = $;\r\nglobal.$ = $;\r\n\r\nconst dateFormatOptions1 = { year: \"numeric\", month: \"2-digit\", day: \"2-digit\" };\r\nconst dateFormatOptions2 = {\r\n    month: \"short\", day: \"2-digit\",\r\n};\r\n\r\nclass Calendar {\r\n    constructor(outerContainerElement) {\r\n        this.outerContainerElement = outerContainerElement;\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        const jqOuterContainerElement = $(\"html\").find(this.outerContainerElement);\r\n        this.jqContainerElement = jqOuterContainerElement.find(\".calendar\");\r\n        this.jqDateInputs = this.jqContainerElement.find(\".calendar__input\");\r\n\r\n        this.isDouble = this.jqContainerElement.hasClass(\"calendar_double\");\r\n        this.withRangePicking = this.jqContainerElement.hasClass(\"calendar_with-range-picking\");\r\n\r\n        this.datepickerInstance = {};\r\n\r\n        if (this.isDouble) this.setDoubleDatepicker();\r\n        else if (this.withRangePicking) this.setSingleDatepickerWithRange();\r\n        else this.singleDatepickerWithoutRange();\r\n    }\r\n\r\n    setDoubleDatepicker() {\r\n        const firstDateInput = this.jqDateInputs.eq(0);\r\n        const secondDateInput = this.jqDateInputs.eq(1);\r\n\r\n        this.datepickerInstance = firstDateInput.datepicker({\r\n            range: true,\r\n            position: \"bottom left\",\r\n            navTitles: {\r\n                days: \"MM yyyy\",\r\n            },\r\n            minDate: new Date(),\r\n            onShow(dp, animationCompleted) {\r\n                if (!animationCompleted) {\r\n                    if (!dp.$datepicker.find(\".calendar__buttons\").html()) {\r\n                        dp.$datepicker.append(\r\n                            `<div class=\"calendar__buttons\">\r\n                            <p class=\"calendar__clear-button\">очистить</p>\r\n                            <p class=\"calendar__apply-button\">применить</p>\r\n                            </div>`,\r\n                        );\r\n                        dp.$datepicker[0].querySelector(\".calendar__clear-button\").onclick = () => {\r\n                            dp.clear();\r\n                            dp.$datepicker[0].querySelector(\".calendar__clear-button\").style.display = \"none\";\r\n                        };\r\n                        dp.$datepicker[0].querySelector(\".calendar__apply-button\").onclick = () => {\r\n                            dp.hide();\r\n                        };\r\n\r\n                        dp.$datepicker.find(\".datepicker--pointer\").css(\"display\", \"none\");\r\n\r\n                        secondDateInput.bind(\"click\", dp.show.bind(dp));\r\n                    }\r\n                }\r\n            },\r\n            onSelect(formattedDate, date, inst) {\r\n                if (inst.selectedDates[0]) {\r\n                    const firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1)\r\n                        .format(inst.selectedDates[0]);\r\n                    firstDateInput.prop(\"value\", firstFormattedDate);\r\n                }\r\n                if (inst.selectedDates[1]) {\r\n                    const secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1)\r\n                        .format(inst.selectedDates[1]);\r\n                    secondDateInput.prop(\"value\", secondFormattedDate);\r\n                    inst.$datepicker[0].querySelector(\".calendar__clear-button\").style.display = \"block\";\r\n                } else {\r\n                    firstDateInput.prop(\"value\", \"\");\r\n                    secondDateInput.prop(\"value\", \"\");\r\n                    inst.$datepicker[0].querySelector(\".calendar__clear-button\").style.display = \"none\";\r\n                }\r\n            },\r\n        }).data(\"datepicker\");\r\n        this.datepickerInstance.show();\r\n        this.datepickerInstance.hide();\r\n    }\r\n\r\n    setSingleDatepickerWithRange() {\r\n        const dateInput = this.jqDateInputs.eq(0);\r\n\r\n        this.datepickerInstance = dateInput.datepicker({\r\n            range: true,\r\n            position: \"bottom left\",\r\n            navTitles: {\r\n                days: \"MM yyyy\",\r\n            },\r\n            minDate: new Date(),\r\n            onShow(dp, animationCompleted) {\r\n                if (!animationCompleted) {\r\n                    if (!dp.$datepicker.find(\".calendar__buttons\").html()) {\r\n                        dp.$datepicker.append(\r\n                            `<div class=\"calendar__buttons\">\r\n                            <p class=\"calendar__clear-button\">очистить</p>\r\n                            <p class=\"calendar__apply-button\">применить</p>\r\n                            </div>`,\r\n                        );\r\n                        dp.$datepicker.find(\".calendar__clear-button\").click(() => {\r\n                            dp.clear();\r\n                            dp.$datepicker[0].querySelector(\".calendar__clear-button\").style.display = \"none\";\r\n                        });\r\n                        dp.$datepicker.find(\".calendar__apply-button\").click(() => {\r\n                            dp.hide();\r\n                        });\r\n\r\n                        dp.$datepicker.find(\".datepicker--pointer\").css(\"display\", \"none\");\r\n                    }\r\n                }\r\n            },\r\n            onSelect(formattedDate, date, inst) {\r\n                if (inst.selectedDates[0] && inst.selectedDates[1]) {\r\n                    let formattedDate1 = (new Intl.DateTimeFormat(\"ru-RU\", dateFormatOptions2)\r\n                        .format(inst.selectedDates[0]))\r\n                        .toString();\r\n                    formattedDate1 = formattedDate1.slice(0, formattedDate1.length - 1);\r\n                    let formattedDate2 = (new Intl.DateTimeFormat(\"ru-RU\", dateFormatOptions2)\r\n                        .format(inst.selectedDates[1]))\r\n                        .toString();\r\n                    formattedDate2 = formattedDate2.slice(0, formattedDate2.length - 1);\r\n                    dateInput.prop(\"value\", `${formattedDate1} - ${formattedDate2}`);\r\n                    inst.$datepicker[0].querySelector(\".calendar__clear-button\").style.display = \"block\";\r\n                } else {\r\n                    dateInput.prop(\"value\", \"\");\r\n                    inst.$datepicker[0].querySelector(\".calendar__clear-button\").style.display = \"none\";\r\n                }\r\n            },\r\n        }).data(\"datepicker\");\r\n    }\r\n\r\n    singleDatepickerWithoutRange() {\r\n        const dateInput = this.jqDateInputs.eq(0);\r\n\r\n        this.datepickerInstance = dateInput.datepicker({\r\n            position: \"bottom left\",\r\n            navTitles: {\r\n                days: \"MM yyyy\",\r\n            },\r\n            onShow(dp, animationCompleted) {\r\n                if (!animationCompleted) {\r\n                    if (!dp.$datepicker.find(\".calendar__buttons\").html()) {\r\n                        dp.$datepicker.append(\r\n                            `<div class=\"calendar__buttons\">\r\n                            <p class=\"calendar__clear-button\">очистить</p>\r\n                            <p class=\"calendar__apply-button\">применить</p>\r\n                            </div>`,\r\n                        );\r\n                        dp.$datepicker.find(\".calendar__clear-button\").click(() => {\r\n                            dp.clear();\r\n                            dp.$datepicker[0].querySelector(\".calendar__clear-button\").style.display = \"none\";\r\n                        });\r\n                        dp.$datepicker.find(\".calendar__apply-button\").click(() => {\r\n                            dp.hide();\r\n                        });\r\n\r\n                        dp.$datepicker.find(\".datepicker--pointer\").css(\"display\", \"none\");\r\n                    }\r\n                }\r\n            },\r\n            onSelect(formattedDate, date, inst) {\r\n                if (inst.selectedDates[0]) {\r\n                    inst.$datepicker[0].querySelector(\".calendar__clear-button\").style.display = \"block\";\r\n                } else {\r\n                    inst.$datepicker[0].querySelector(\".calendar__clear-button\").style.display = \"none\";\r\n                }\r\n            },\r\n        }).data(\"datepicker\");\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Calendar);\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=webpack:///./src/components/calendar/calendar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/dist/css/datepicker.css */ \"./node_modules/air-datepicker/dist/css/datepicker.css\");\n/* harmony import */ var air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\r\nconst $ = jquery__WEBPACK_IMPORTED_MODULE_2___default.a;\r\nglobal.jQuery = $;\r\nglobal.$ = $;\r\n\r\nconst dateFormatOptions1 = { year: 'numeric', month: '2-digit', day: '2-digit' };\r\nconst dateFormatOptions2 = {\r\n    month: 'short', day: '2-digit',\r\n};\r\n\r\nclass Calendar {\r\n    constructor(outerContainerElement) {\r\n        this.outerContainerElement = outerContainerElement;\r\n\r\n        this._handleShow = this._handleShow.bind(this);\r\n        this._handleDoubleInputSelectRange = this._handleDoubleInputSelectRange.bind(this);\r\n        this._handleSingleInputSelectRange = this._handleSingleInputSelectRange.bind(this);\r\n        this._handleSelectSingleDate = this._handleSelectSingleDate.bind(this);\r\n\r\n        this._initialize();\r\n    }\r\n\r\n    _initialize() {\r\n        const $outerContainerElement = $('html').find(this.outerContainerElement);\r\n        this.$containerElement = $outerContainerElement.find('.js-calendar');\r\n        this.$dateInputs = this.$containerElement.find('.js-calendar__input');\r\n\r\n        this.isDouble = this.$containerElement.hasClass('js-calendar_double');\r\n        this.withRangePicking = this.$containerElement.hasClass('js-calendar_with-range-picking');\r\n\r\n        this.datepickerInstance = {};\r\n\r\n        if (this.isDouble) this._setDoubleDatepicker();\r\n        else if (this.withRangePicking) this._setSingleDatepickerWithRange();\r\n        else this._singleDatepickerWithoutRange();\r\n    }\r\n\r\n    _setDoubleDatepicker() {\r\n        this.dateInputFrom = this.$dateInputs.eq(0);\r\n        this.dateInputTo = this.$dateInputs.eq(1);\r\n\r\n        this.datepickerInstance = this.dateInputFrom.datepicker({\r\n            range: true,\r\n            position: 'bottom left',\r\n            navTitles: {\r\n                days: 'MM yyyy',\r\n            },\r\n            minDate: new Date(),\r\n            onShow: this._handleShow,\r\n            onSelect: this._handleDoubleInputSelectRange,\r\n        }).data('datepicker');\r\n        this.datepickerInstance.show();\r\n        this.datepickerInstance.hide();\r\n    }\r\n\r\n    _setSingleDatepickerWithRange() {\r\n        this.dateInput = this.$dateInputs.eq(0);\r\n\r\n        this.datepickerInstance = this.dateInput.datepicker({\r\n            range: true,\r\n            position: 'bottom left',\r\n            navTitles: {\r\n                days: 'MM yyyy',\r\n            },\r\n            minDate: new Date(),\r\n            onShow: this._handleShow,\r\n            onSelect: this._handleSingleInputSelectRange,\r\n        }).data('datepicker');\r\n    }\r\n\r\n    _singleDatepickerWithoutRange() {\r\n        this.dateInput = this.$dateInputs.eq(0);\r\n\r\n        this.datepickerInstance = this.dateInput.datepicker({\r\n            position: 'bottom left',\r\n            navTitles: {\r\n                days: 'MM yyyy',\r\n            },\r\n            onShow: this._handleShow,\r\n            onSelect: this._handleSelectSingleDate,\r\n        }).data('datepicker');\r\n    }\r\n\r\n    _handleShow(dp, animationCompleted) {\r\n        if (!animationCompleted) {\r\n            if (!dp.$datepicker.find('.calendar__buttons').html()) {\r\n                dp.$datepicker.append(\r\n                    `<div class=\"calendar__buttons\">\r\n                    <p class=\"calendar__clear-button js-calendar__clear-button\">очистить</p>\r\n                    <p class=\"calendar__apply-button js-calendar__apply-button\">применить</p>\r\n                    </div>`,\r\n                );\r\n\r\n                const clearButton = dp.$datepicker[0].querySelector('.js-calendar__clear-button');\r\n                clearButton.onclick = () => {\r\n                    dp.clear();\r\n                    dp.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'none';\r\n                };\r\n\r\n                const applyButton = dp.$datepicker[0].querySelector('.js-calendar__apply-button');\r\n                applyButton.onclick = () => {\r\n                    dp.hide();\r\n                };\r\n\r\n                dp.$datepicker.find('.datepicker--pointer').css('display', 'none');\r\n\r\n                if (this.dateInputTo) this.dateInputTo.bind('click', dp.show.bind(dp));\r\n            }\r\n        }\r\n    }\r\n\r\n    _handleDoubleInputSelectRange(formattedDate, date, inst) {\r\n        if (inst.selectedDates[0]) {\r\n            const firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1)\r\n                .format(inst.selectedDates[0]);\r\n            this.dateInputFrom.prop('value', firstFormattedDate);\r\n        }\r\n        if (inst.selectedDates[1]) {\r\n            const secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1)\r\n                .format(inst.selectedDates[1]);\r\n            this.dateInputTo.prop('value', secondFormattedDate);\r\n            inst.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'block';\r\n        } else {\r\n            this.dateInputFrom.prop('value', '');\r\n            this.dateInputTo.prop('value', '');\r\n            inst.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'none';\r\n        }\r\n    }\r\n\r\n    _handleSingleInputSelectRange(formattedDate, date, inst) {\r\n        if (inst.selectedDates[0] && inst.selectedDates[1]) {\r\n            let formattedDate1 = (new Intl.DateTimeFormat('ru-RU', dateFormatOptions2)\r\n                .format(inst.selectedDates[0]))\r\n                .toString();\r\n            formattedDate1 = formattedDate1.slice(0, formattedDate1.length - 1);\r\n            let formattedDate2 = (new Intl.DateTimeFormat('ru-RU', dateFormatOptions2)\r\n                .format(inst.selectedDates[1]))\r\n                .toString();\r\n            formattedDate2 = formattedDate2.slice(0, formattedDate2.length - 1);\r\n            this.dateInput.prop('value', `${formattedDate1} - ${formattedDate2}`);\r\n            inst.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'block';\r\n        } else {\r\n            this.dateInput.prop('value', '');\r\n            inst.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'none';\r\n        }\r\n    }\r\n\r\n    _handleSelectSingleDate(formattedDate, date, inst) {\r\n        if (inst.selectedDates[0]) {\r\n            inst.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'block';\r\n        } else {\r\n            inst.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'none';\r\n        }\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Calendar);\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=webpack:///./src/components/calendar/calendar.js?");
 
 /***/ }),
 
@@ -732,171 +732,207 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test11.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test11.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-350.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-350.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test11.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test11.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-350.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-350.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test110.png":
-/*!**************************************************!*\
-  !*** ./src/components/room-info/img/test110.png ***!
-  \**************************************************/
+/***/ "./src/components/room-info/img/room-352.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-352.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test110.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test110.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-352.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-352.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test120.png":
-/*!**************************************************!*\
-  !*** ./src/components/room-info/img/test120.png ***!
-  \**************************************************/
+/***/ "./src/components/room-info/img/room-444.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-444.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test120.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test120.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-444.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-444.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test130.png":
-/*!**************************************************!*\
-  !*** ./src/components/room-info/img/test130.png ***!
-  \**************************************************/
+/***/ "./src/components/room-info/img/room-450.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-450.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test130.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test130.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-450.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-450.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test22.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test22.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-666.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-666.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test22.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test22.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-666.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-666.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test33.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test33.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-678.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-678.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test33.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test33.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-678.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-678.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test44.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test44.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-740.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-740.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test44.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test44.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-740.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-740.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test55.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test55.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-840.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-840.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test55.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test55.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-840.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-840.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test66.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test66.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-856.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-856.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test66.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test66.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-856.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-856.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test77.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test77.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-888-1.png":
+/*!*****************************************************!*\
+  !*** ./src/components/room-info/img/room-888-1.png ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test77.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test77.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-888-1.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-888-1.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test88.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test88.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-888-2.png":
+/*!*****************************************************!*\
+  !*** ./src/components/room-info/img/room-888-2.png ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test88.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test88.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-888-2.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-888-2.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test99.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test99.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-888-3.png":
+/*!*****************************************************!*\
+  !*** ./src/components/room-info/img/room-888-3.png ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test99.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test99.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-888-3.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-888-3.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-reviews/img/image1.png":
-/*!****************************************************!*\
-  !*** ./src/components/room-reviews/img/image1.png ***!
-  \****************************************************/
+/***/ "./src/components/room-info/img/room-888-4.png":
+/*!*****************************************************!*\
+  !*** ./src/components/room-info/img/room-888-4.png ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-reviews/img/image1.png\");\n\n//# sourceURL=webpack:///./src/components/room-reviews/img/image1.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-888-4.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-888-4.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-reviews/img/image2.png":
-/*!****************************************************!*\
-  !*** ./src/components/room-reviews/img/image2.png ***!
-  \****************************************************/
+/***/ "./src/components/room-info/img/room-980.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-980.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-reviews/img/image2.png\");\n\n//# sourceURL=webpack:///./src/components/room-reviews/img/image2.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-980.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-980.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/room-982.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-982.png ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-982.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-982.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-reviews/img/avatar-murat-sarafanof.png":
+/*!********************************************************************!*\
+  !*** ./src/components/room-reviews/img/avatar-murat-sarafanof.png ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-reviews/img/avatar-murat-sarafanof.png\");\n\n//# sourceURL=webpack:///./src/components/room-reviews/img/avatar-murat-sarafanof.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-reviews/img/avatar-patrisiya-steklishkova.png":
+/*!***************************************************************************!*\
+  !*** ./src/components/room-reviews/img/avatar-patrisiya-steklishkova.png ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-reviews/img/avatar-patrisiya-steklishkova.png\");\n\n//# sourceURL=webpack:///./src/components/room-reviews/img/avatar-patrisiya-steklishkova.png?");
 
 /***/ }),
 
@@ -908,7 +944,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _calendar_calendar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../calendar/calendar */ \"./src/components/calendar/calendar.js\");\n\r\n\r\nclass SignUpForm {\r\n    constructor(outerContainerElement) {\r\n        this.outerContainerElement = outerContainerElement;\r\n\r\n        this.initialize();\r\n    }\r\n\r\n    initialize() {\r\n        this.containerElement = this.outerContainerElement.querySelector(\".sign-up-form\");\r\n\r\n        const calendarContainer = this.containerElement.querySelector(\".sign-up-form__calendar\");\r\n        this.calendar = new _calendar_calendar__WEBPACK_IMPORTED_MODULE_0__[\"default\"](calendarContainer);\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (SignUpForm);\r\n\n\n//# sourceURL=webpack:///./src/components/sign-up-form/sign-up-form.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _calendar_calendar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../calendar/calendar */ \"./src/components/calendar/calendar.js\");\n\r\n\r\nclass SignUpForm {\r\n    constructor(outerContainerElement) {\r\n        this.outerContainerElement = outerContainerElement;\r\n\r\n        this._initialize();\r\n    }\r\n\r\n    _initialize() {\r\n        this.containerElement = this.outerContainerElement.querySelector('.js-sign-up-form');\r\n\r\n        const calendarContainer = this.containerElement.querySelector('.js-sign-up-form__calendar');\r\n        this.calendar = new _calendar_calendar__WEBPACK_IMPORTED_MODULE_0__[\"default\"](calendarContainer);\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (SignUpForm);\r\n\n\n//# sourceURL=webpack:///./src/components/sign-up-form/sign-up-form.js?");
 
 /***/ }),
 
@@ -1135,7 +1171,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _base_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../base/base */ \"./src/pages/base/base.js\");\n/* harmony import */ var _components_sign_up_form_sign_up_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/sign-up-form/sign-up-form */ \"./src/components/sign-up-form/sign-up-form.js\");\n/* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./registration.scss */ \"./src/pages/web-pages/registration/registration.scss\");\n/* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_registration_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* eslint-disable no-unused-vars */\r\n\r\n\r\n\r\n\r\nconst signUpForm = new _components_sign_up_form_sign_up_form__WEBPACK_IMPORTED_MODULE_1__[\"default\"](document.querySelector(\".registration__form\"));\r\n\n\n//# sourceURL=webpack:///./src/pages/web-pages/registration/registration.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _base_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../base/base */ \"./src/pages/base/base.js\");\n/* harmony import */ var _components_sign_up_form_sign_up_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/sign-up-form/sign-up-form */ \"./src/components/sign-up-form/sign-up-form.js\");\n/* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./registration.scss */ \"./src/pages/web-pages/registration/registration.scss\");\n/* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_registration_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* eslint-disable no-unused-vars */\r\n\r\n\r\n\r\n\r\nconst signUpForm = new _components_sign_up_form_sign_up_form__WEBPACK_IMPORTED_MODULE_1__[\"default\"](document.querySelector('.js-registration__form'));\r\n\n\n//# sourceURL=webpack:///./src/pages/web-pages/registration/registration.js?");
 
 /***/ }),
 
@@ -1150,39 +1186,39 @@ eval("var api = __webpack_require__(/*! ../../../../node_modules/style-loader/di
 
 /***/ }),
 
-/***/ "./src/pages/web-pages/room-details/img/background1.jpg":
-/*!**************************************************************!*\
-  !*** ./src/pages/web-pages/room-details/img/background1.jpg ***!
-  \**************************************************************/
+/***/ "./src/pages/web-pages/room-details/img/room-888-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/pages/web-pages/room-details/img/room-888-1.jpg ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/background1.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/background1.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/room-888-1.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/room-888-1.jpg?");
 
 /***/ }),
 
-/***/ "./src/pages/web-pages/room-details/img/background2.jpg":
-/*!**************************************************************!*\
-  !*** ./src/pages/web-pages/room-details/img/background2.jpg ***!
-  \**************************************************************/
+/***/ "./src/pages/web-pages/room-details/img/room-888-2.jpg":
+/*!*************************************************************!*\
+  !*** ./src/pages/web-pages/room-details/img/room-888-2.jpg ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/background2.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/background2.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/room-888-2.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/room-888-2.jpg?");
 
 /***/ }),
 
-/***/ "./src/pages/web-pages/room-details/img/background3.jpg":
-/*!**************************************************************!*\
-  !*** ./src/pages/web-pages/room-details/img/background3.jpg ***!
-  \**************************************************************/
+/***/ "./src/pages/web-pages/room-details/img/room-888-3.jpg":
+/*!*************************************************************!*\
+  !*** ./src/pages/web-pages/room-details/img/room-888-3.jpg ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/background3.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/background3.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/room-888-3.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/room-888-3.jpg?");
 
 /***/ }),
 

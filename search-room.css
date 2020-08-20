@@ -1359,7 +1359,6 @@ Build date: 2019-12-19 16:51:02
     background: none;
     border: none; }
 
-@charset "UTF-8";
 .colored-logo {
   height: 2.5rem;
   display: flex;
@@ -1403,7 +1402,6 @@ Build date: 2019-12-19 16:51:02
     background: transparent;
     text-align: center;
     color: white;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1416,8 +1414,6 @@ Build date: 2019-12-19 16:51:02
     cursor: pointer;
     right: 0rem;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center; }
@@ -1517,8 +1513,6 @@ Build date: 2019-12-19 16:51:02
   .header__item-ref {
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     white-space: nowrap;
@@ -1529,16 +1523,12 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     text-align: center;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.25rem;
     color: rgba(31, 32, 65, 0.5); }
   .header__user-full-name {
     display: flex;
     align-items: center;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     color: rgba(31, 32, 65, 0.5);
@@ -1591,24 +1581,18 @@ Build date: 2019-12-19 16:51:02
 
 .dropdown {
   width: 100%; }
-  .dropdown_text-field-default {
-    display: flex;
-    flex-direction: column; }
   .dropdown__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.3125rem; }
   .dropdown__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__additional-title-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-align: right;
@@ -1627,7 +1611,7 @@ Build date: 2019-12-19 16:51:02
     border-radius: 0.25rem; }
     .dropdown__input-container:hover, .dropdown__input-container:focus {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
-    .dropdown__input-container_is-opened {
+    .dropdown__input-container_opened {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5);
       border-bottom-left-radius: 0rem;
       border-bottom-right-radius: 0rem; }
@@ -1637,17 +1621,12 @@ Build date: 2019-12-19 16:51:02
     padding: 0rem 0.9375rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
-    /* Отменяем перенос текста */
     overflow: hidden;
-    /* Обрезаем содержимое */
-    text-overflow: ellipsis;
-    /* Многоточие */ }
+    text-overflow: ellipsis; }
     .dropdown__input::-webkit-input-placeholder {
       background: rgba(31, 32, 65, 0.75);
       -webkit-background-clip: text;
@@ -1667,7 +1646,7 @@ Build date: 2019-12-19 16:51:02
       -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
-  .dropdown__droped-list {
+  .dropdown__list {
     display: none;
     width: 100%;
     list-style: none;
@@ -1683,9 +1662,9 @@ Build date: 2019-12-19 16:51:02
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
     z-index: 9999; }
-    .dropdown__droped-list:hover, .dropdown__droped-list:focus {
+    .dropdown__list:hover, .dropdown__list:focus {
       border-top: 0rem; }
-    .dropdown__droped-list_is-opened {
+    .dropdown__list_opened {
       display: flex; }
   .dropdown__dropdown-arrow {
     cursor: pointer;
@@ -1702,8 +1681,6 @@ Build date: 2019-12-19 16:51:02
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem; }
   .dropdown__list-item {
@@ -1717,7 +1694,6 @@ Build date: 2019-12-19 16:51:02
   .dropdown__item-name {
     overflow: auto;
     word-wrap: break-word;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1736,7 +1712,6 @@ Build date: 2019-12-19 16:51:02
     border: 0.0625rem solid rgba(31, 32, 65, 0.5);
     background: transparent;
     outline: none;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1747,7 +1722,6 @@ Build date: 2019-12-19 16:51:02
     opacity: 0.38; }
   .dropdown__item-value {
     margin: 0rem 0.3125rem;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1760,7 +1734,6 @@ Build date: 2019-12-19 16:51:02
   .dropdown__apply-button {
     cursor: pointer;
     margin-left: auto;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1770,7 +1743,6 @@ Build date: 2019-12-19 16:51:02
       color: rgba(31, 32, 65, 0.5); }
   .dropdown__clear-button {
     cursor: pointer;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1783,16 +1755,16 @@ Build date: 2019-12-19 16:51:02
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto; }
-  .checkbox-list_expandable .checkbox-list__title {
+  .checkbox-list_type_expandable .checkbox-list__title {
     cursor: pointer;
     margin-bottom: 0.23rem; }
-  .checkbox-list_expandable .checkbox-list__item {
+  .checkbox-list_type_expandable .checkbox-list__item {
     margin-bottom: 0.56rem; }
-  .checkbox-list_expandable .checkbox-list__item-text {
+  .checkbox-list_type_expandable .checkbox-list__item-text {
     line-height: 1.34rem; }
-  .checkbox-list_rich .checkbox-list__title {
+  .checkbox-list_type_rich .checkbox-list__title {
     margin-bottom: 0.9rem; }
-  .checkbox-list_rich .checkbox-list__item {
+  .checkbox-list_type_rich .checkbox-list__item {
     margin-bottom: 0.665rem; }
   .checkbox-list__title {
     cursor: context-menu;
@@ -1802,13 +1774,11 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     margin-bottom: 1.04rem; }
   .checkbox-list__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: #1f2041;
-    white-space: normal;
     word-break: break-word; }
   .checkbox-list__dropdown-arrow {
     width: 2.625rem;
@@ -1823,14 +1793,17 @@ Build date: 2019-12-19 16:51:02
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
-    line-height: 1.5rem; }
+    line-height: 1.5rem;
+    transform: rotate(180deg); }
+    .checkbox-list__dropdown-arrow_closed {
+      transform: none; }
   .checkbox-list__list {
     list-style: none;
     display: flex;
     flex-direction: column; }
+    .checkbox-list__list_closed {
+      display: none; }
   .checkbox-list__item {
     display: flex;
     flex-direction: column;
@@ -1846,15 +1819,15 @@ Build date: 2019-12-19 16:51:02
     position: relative;
     margin-right: 0.625rem;
     opacity: 0; }
-    .checkbox-list__input:not(:checked) + .checkbox-list__checkmark {
+    .checkbox-list__input:not(:checked) + .checkbox-list__check-mark {
       opacity: 0; }
     .checkbox-list__input:not(:checked) ~ .checkbox-list__frame {
       border: 0.0625rem solid #adb5bd; }
-    .checkbox-list__input:checked + .checkbox-list__checkmark {
+    .checkbox-list__input:checked + .checkbox-list__check-mark {
       opacity: 1; }
     .checkbox-list__input:checked ~ .checkbox-list__frame {
       border: 0.0625rem solid #bc9cff; }
-  .checkbox-list__checkmark {
+  .checkbox-list__check-mark {
     width: 1.25rem;
     height: 1.25rem;
     display: flex;
@@ -1862,7 +1835,7 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     position: absolute;
     padding-bottom: 0.125rem; }
-  .checkbox-list__checkmark-image {
+  .checkbox-list__check-mark-image {
     width: 0.625rem;
     height: 0.625rem;
     display: flex; }
@@ -1875,33 +1848,26 @@ Build date: 2019-12-19 16:51:02
     position: absolute; }
   .checkbox-list__item-text {
     cursor: context-menu;
-    width: max-content;
+    width: 12.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.24rem;
     color: rgba(31, 32, 65, 0.5);
-    white-space: normal;
     word-break: break-word; }
-    .checkbox-list__item-text_main {
+    .checkbox-list__item-text_complex {
+      width: max-content;
       font-weight: bold;
       color: rgba(31, 32, 65, 0.75); }
-    .checkbox-list__item-text_single {
-      width: 12.5rem; }
   .checkbox-list__item-additional-text {
     cursor: context-menu;
     width: 14.375rem;
     margin-left: 1.875rem;
     margin-top: 0.3125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.875rem;
     color: rgba(31, 32, 65, 0.5);
-    white-space: normal;
     word-break: break-word; }
 
 .pagination {
@@ -1909,7 +1875,6 @@ Build date: 2019-12-19 16:51:02
   flex-direction: column; }
   .pagination__title {
     margin-bottom: 1rem;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1952,8 +1917,6 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     background: transparent;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.25rem;
     color: white; }
@@ -1967,7 +1930,6 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     padding: 0rem 0.625rem;
     border-radius: 1.375rem;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.937rem;
@@ -1977,8 +1939,6 @@ Build date: 2019-12-19 16:51:02
     display: inline-flex;
     justify-content: center;
     margin-top: 0.4375rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75); }
@@ -1992,15 +1952,12 @@ Build date: 2019-12-19 16:51:02
     display: flex;
     justify-content: space-between; }
   .range-slider__slider-name {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: #1f2041; }
   .range-slider__current-values {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-align: right;
@@ -2008,8 +1965,6 @@ Build date: 2019-12-19 16:51:02
     color: rgba(31, 32, 65, 0.5); }
   .range-slider__description {
     margin-top: 0.3125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.875rem;
     color: rgba(31, 32, 65, 0.5); }
@@ -2045,22 +2000,21 @@ Build date: 2019-12-19 16:51:02
     width: 100%;
     display: flex;
     flex-direction: column; }
-    .calendar__input-container_first {
+    .calendar__input-container_date_from {
       margin-right: 1.25rem; }
+    .calendar__input-container_date_from, .calendar__input-container_date_to {
+      width: 46.875%; }
   .calendar__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.3125rem; }
   .calendar__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     text-transform: uppercase;
     color: #1f2041; }
   .calendar__additional-title-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.55rem;
     text-align: right;
@@ -2078,18 +2032,14 @@ Build date: 2019-12-19 16:51:02
     border-radius: 0.25rem; }
     .calendar__label:hover, .calendar__label:focus {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
-  .calendar__input-container_first, .calendar__input-container_second {
-    width: 46.875%; }
-  .calendar__label_first, .calendar__label_second {
-    width: 100%; }
+    .calendar__label_date_from, .calendar__label_date_to {
+      width: 100%; }
   .calendar__input {
     cursor: pointer;
     height: 2.5rem;
     padding: 0rem 0rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     white-space: nowrap;
@@ -2120,8 +2070,6 @@ Build date: 2019-12-19 16:51:02
     justify-content: center;
     align-items: center;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
@@ -2135,7 +2083,6 @@ Build date: 2019-12-19 16:51:02
   .calendar__apply-button {
     cursor: pointer;
     margin-left: auto;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -2146,7 +2093,6 @@ Build date: 2019-12-19 16:51:02
   .calendar__clear-button {
     cursor: pointer;
     display: none;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -2186,8 +2132,6 @@ Build date: 2019-12-19 16:51:02
     display: flex;
     align-items: center;
     text-align: center;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     color: rgba(31, 32, 65, 0.5); }
@@ -2208,7 +2152,6 @@ Build date: 2019-12-19 16:51:02
       align-items: center;
       background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
       border-radius: 50%;
-      font-style: normal;
       font-weight: bold;
       font-size: 0.75rem;
       line-height: 0.9375rem;
@@ -2224,7 +2167,6 @@ Build date: 2019-12-19 16:51:02
         background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         border-radius: 50%;
         border: 0rem;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -2250,7 +2192,6 @@ Build date: 2019-12-19 16:51:02
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%;
       border: 0rem;
-      font-style: normal;
       font-weight: bold;
       font-size: 0.75rem;
       line-height: 0.9375rem;
@@ -2282,13 +2223,9 @@ Build date: 2019-12-19 16:51:02
       color: rgba(31, 32, 65, 0.25);
       background: transparent; }
     .datepicker--cell-day.-range-from-.-other-month-.-disabled-, .datepicker--cell-day.-range-from-.-other-month-.-focus-.-disabled-, .datepicker--cell-day.-range-from-.-focus-.-disabled-, .datepicker--cell-day.-in-range-.-other-month-.-disabled-, .datepicker--cell-day.-in-range-.-other-month-.-focus-.-disabled-, .datepicker--cell-day.-in-range-.-focus-.-disabled- {
-      font-style: normal;
-      font-weight: normal;
       color: rgba(31, 32, 65, 0.25);
       background: transparent; }
     .datepicker--cell-day.-range-from-.-disabled-, .datepicker--cell-day.-in-range-.-disabled- {
-      font-style: normal;
-      font-weight: normal;
       color: rgba(31, 32, 65, 0.25);
       background: transparent; }
     .datepicker--cell-month, .datepicker--cell-year {
@@ -2315,7 +2252,6 @@ Build date: 2019-12-19 16:51:02
     border: 0rem solid transparent; }
     .datepicker--nav-title {
       font-family: Quicksand, OpenSans, Arial, sans-serif;
-      font-style: normal;
       font-weight: bold;
       font-size: 1.1875rem;
       line-height: 1.5rem;
@@ -2334,8 +2270,6 @@ Build date: 2019-12-19 16:51:02
         align-items: center;
         position: absolute;
         font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
         font-size: 1.5rem;
         line-height: 1.5rem;
         border: 0rem solid transparent;
@@ -2355,8 +2289,6 @@ Build date: 2019-12-19 16:51:02
         align-items: center;
         position: absolute;
         font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
         font-size: 1.5rem;
         line-height: 1.5rem;
         border: 0rem solid transparent;
@@ -2376,7 +2308,6 @@ Build date: 2019-12-19 16:51:02
     display: flex;
     align-items: center;
     text-align: center;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -2407,15 +2338,15 @@ Build date: 2019-12-19 16:51:02
     height: 1.5rem;
     position: absolute;
     opacity: 0; }
-    .star-rating__input_1 {
+    .star-rating__input-1 {
       margin-left: 0rem; }
-    .star-rating__input_2 {
+    .star-rating__input-2 {
       margin-left: 1.5rem; }
-    .star-rating__input_3 {
+    .star-rating__input-3 {
       margin-left: 3rem; }
-    .star-rating__input_4 {
+    .star-rating__input-4 {
       margin-left: 4.5rem; }
-    .star-rating__input_5 {
+    .star-rating__input-5 {
       margin-left: 6rem; }
     .star-rating__input + .star-rating__image::before {
       content: 'star_border';
@@ -2431,8 +2362,6 @@ Build date: 2019-12-19 16:51:02
       background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: Material Icons;
-      font-style: normal;
-      font-weight: normal;
       font-size: 1.5rem;
       line-height: 1.25rem;
       color: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
@@ -2450,8 +2379,6 @@ Build date: 2019-12-19 16:51:02
       background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: Material Icons;
-      font-style: normal;
-      font-weight: normal;
       font-size: 1.5rem;
       line-height: 1.25rem;
       color: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
@@ -2463,15 +2390,15 @@ Build date: 2019-12-19 16:51:02
     justify-content: center;
     align-items: center;
     position: absolute; }
-    .star-rating__image_1 {
+    .star-rating__image-1 {
       margin-left: 0rem; }
-    .star-rating__image_2 {
+    .star-rating__image-2 {
       margin-left: 1.5rem; }
-    .star-rating__image_3 {
+    .star-rating__image-3 {
       margin-left: 3rem; }
-    .star-rating__image_4 {
+    .star-rating__image-4 {
       margin-left: 4.5rem; }
-    .star-rating__image_5 {
+    .star-rating__image-5 {
       margin-left: 6rem; }
 
 .room-info {
@@ -2522,8 +2449,6 @@ Build date: 2019-12-19 16:51:02
   .room-info__arrow-back-icon {
     transform: rotate(90deg);
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
@@ -2542,8 +2467,6 @@ Build date: 2019-12-19 16:51:02
   .room-info__arrow-forward-icon {
     transform: rotate(90deg);
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
@@ -2602,7 +2525,6 @@ Build date: 2019-12-19 16:51:02
     align-self: end;
     margin-right: 0.25rem;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.875rem;
     line-height: 1.0625rem;
@@ -2611,17 +2533,14 @@ Build date: 2019-12-19 16:51:02
     align-self: end;
     margin-right: 0.3125rem;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 1.1875rem;
     line-height: 1.5rem;
     color: #1f2041;
     max-width: 3.125rem;
-    white-space: normal;
     word-break: break-word; }
   .room-info__room-status {
     align-self: end;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -2631,20 +2550,16 @@ Build date: 2019-12-19 16:51:02
     justify-self: end;
     align-self: end;
     margin-right: 0.25rem;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.875rem;
     line-height: 0.9375rem;
     color: rgba(31, 32, 65, 0.5);
     max-width: 6.125rem;
-    white-space: normal;
     word-break: break-word; }
   .room-info__period-of-time {
     justify-self: end;
     align-self: end;
     margin-right: 0.0625rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     color: rgba(31, 32, 65, 0.5);
@@ -2664,7 +2579,6 @@ Build date: 2019-12-19 16:51:02
     padding-right: 0.25rem; }
   .room-info__reviews-count-value {
     margin-right: 0.1875rem;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.875rem;
     line-height: 1.125rem;
@@ -2673,8 +2587,6 @@ Build date: 2019-12-19 16:51:02
     text-align: start;
     word-break: break-word; }
   .room-info__reviews-count-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     text-align: right;
@@ -2682,23 +2594,17 @@ Build date: 2019-12-19 16:51:02
 
 .form-input {
   width: 100%; }
-  .form-input_text-field-default {
-    display: flex;
-    flex-direction: column; }
   .form-input__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.3125rem; }
   .form-input__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.65rem;
     text-align: right;
@@ -2720,8 +2626,6 @@ Build date: 2019-12-19 16:51:02
     height: 2.625rem;
     outline: none;
     background: transparent;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     letter-spacing: -0.0125rem;
@@ -2759,8 +2663,6 @@ Build date: 2019-12-19 16:51:02
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem; }
 
@@ -2794,15 +2696,12 @@ Build date: 2019-12-19 16:51:02
   flex-direction: column; }
   .menu-bar__item {
     margin-bottom: 1.3125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem; }
     .menu-bar__item:first-of-type {
       margin-top: 0.25rem;
       margin-bottom: 1.3rem; }
       .menu-bar__item:first-of-type > .menu-bar__item-ref {
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -2812,12 +2711,9 @@ Build date: 2019-12-19 16:51:02
       margin-bottom: 0rem; }
   .menu-bar__item-ref {
     text-decoration: none;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     color: rgba(31, 32, 65, 0.5);
-    white-space: normal;
     word-break: break-word; }
 
 .footer {
@@ -2868,8 +2764,6 @@ Build date: 2019-12-19 16:51:02
         align-items: center; } }
   .footer__general-info-text {
     margin-top: 1.125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
@@ -2891,22 +2785,17 @@ Build date: 2019-12-19 16:51:02
         display: none; } }
   .footer__subscription-title {
     margin-bottom: 1.1875rem;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: #1f2041;
-    white-space: normal;
     word-break: break-word; }
   .footer__subscription-description {
     margin-bottom: 1.375rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
-    white-space: normal;
     word-break: break-word; }
   .footer__subscription-form {
     width: 16.25rem;
@@ -2928,8 +2817,6 @@ Build date: 2019-12-19 16:51:02
       .footer__copyright-bar {
         padding-bottom: 7.5rem; } }
   .footer__copyright {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.6rem;
     color: rgba(31, 32, 65, 0.75);
@@ -2990,7 +2877,6 @@ Build date: 2019-12-19 16:51:02
   .search-room__list-title {
     margin-bottom: 1.3125rem;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.875rem;

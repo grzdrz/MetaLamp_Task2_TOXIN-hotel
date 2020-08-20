@@ -726,7 +726,6 @@ body {
     background: transparent;
     text-align: center;
     color: white;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -739,8 +738,6 @@ body {
     cursor: pointer;
     right: 0rem;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center; }
@@ -840,8 +837,6 @@ body {
   .header__item-ref {
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     white-space: nowrap;
@@ -852,16 +847,12 @@ body {
     align-items: center;
     text-align: center;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.25rem;
     color: rgba(31, 32, 65, 0.5); }
   .header__user-full-name {
     display: flex;
     align-items: center;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     color: rgba(31, 32, 65, 0.5);
@@ -914,23 +905,17 @@ body {
 
 .form-input {
   width: 100%; }
-  .form-input_text-field-default {
-    display: flex;
-    flex-direction: column; }
   .form-input__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.3125rem; }
   .form-input__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.65rem;
     text-align: right;
@@ -952,8 +937,6 @@ body {
     height: 2.625rem;
     outline: none;
     background: transparent;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     letter-spacing: -0.0125rem;
@@ -991,8 +974,6 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem; }
 
@@ -1038,8 +1019,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     color: rgba(31, 32, 65, 0.5); }
@@ -1090,8 +1069,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     color: rgba(31, 32, 65, 0.5); }
@@ -1104,22 +1081,21 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column; }
-    .calendar__input-container_first {
+    .calendar__input-container_date_from {
       margin-right: 1.25rem; }
+    .calendar__input-container_date_from, .calendar__input-container_date_to {
+      width: 46.875%; }
   .calendar__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.3125rem; }
   .calendar__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     text-transform: uppercase;
     color: #1f2041; }
   .calendar__additional-title-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.55rem;
     text-align: right;
@@ -1137,18 +1113,14 @@ body {
     border-radius: 0.25rem; }
     .calendar__label:hover, .calendar__label:focus {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
-  .calendar__input-container_first, .calendar__input-container_second {
-    width: 46.875%; }
-  .calendar__label_first, .calendar__label_second {
-    width: 100%; }
+    .calendar__label_date_from, .calendar__label_date_to {
+      width: 100%; }
   .calendar__input {
     cursor: pointer;
     height: 2.5rem;
     padding: 0rem 0rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     white-space: nowrap;
@@ -1179,8 +1151,6 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
@@ -1194,7 +1164,6 @@ body {
   .calendar__apply-button {
     cursor: pointer;
     margin-left: auto;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1205,7 +1174,6 @@ body {
   .calendar__clear-button {
     cursor: pointer;
     display: none;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1245,8 +1213,6 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     color: rgba(31, 32, 65, 0.5); }
@@ -1267,7 +1233,6 @@ body {
       align-items: center;
       background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
       border-radius: 50%;
-      font-style: normal;
       font-weight: bold;
       font-size: 0.75rem;
       line-height: 0.9375rem;
@@ -1283,7 +1248,6 @@ body {
         background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         border-radius: 50%;
         border: 0rem;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -1309,7 +1273,6 @@ body {
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%;
       border: 0rem;
-      font-style: normal;
       font-weight: bold;
       font-size: 0.75rem;
       line-height: 0.9375rem;
@@ -1341,13 +1304,9 @@ body {
       color: rgba(31, 32, 65, 0.25);
       background: transparent; }
     .datepicker--cell-day.-range-from-.-other-month-.-disabled-, .datepicker--cell-day.-range-from-.-other-month-.-focus-.-disabled-, .datepicker--cell-day.-range-from-.-focus-.-disabled-, .datepicker--cell-day.-in-range-.-other-month-.-disabled-, .datepicker--cell-day.-in-range-.-other-month-.-focus-.-disabled-, .datepicker--cell-day.-in-range-.-focus-.-disabled- {
-      font-style: normal;
-      font-weight: normal;
       color: rgba(31, 32, 65, 0.25);
       background: transparent; }
     .datepicker--cell-day.-range-from-.-disabled-, .datepicker--cell-day.-in-range-.-disabled- {
-      font-style: normal;
-      font-weight: normal;
       color: rgba(31, 32, 65, 0.25);
       background: transparent; }
     .datepicker--cell-month, .datepicker--cell-year {
@@ -1374,7 +1333,6 @@ body {
     border: 0rem solid transparent; }
     .datepicker--nav-title {
       font-family: Quicksand, OpenSans, Arial, sans-serif;
-      font-style: normal;
       font-weight: bold;
       font-size: 1.1875rem;
       line-height: 1.5rem;
@@ -1393,8 +1351,6 @@ body {
         align-items: center;
         position: absolute;
         font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
         font-size: 1.5rem;
         line-height: 1.5rem;
         border: 0rem solid transparent;
@@ -1414,8 +1370,6 @@ body {
         align-items: center;
         position: absolute;
         font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
         font-size: 1.5rem;
         line-height: 1.5rem;
         border: 0rem solid transparent;
@@ -1435,7 +1389,6 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1489,7 +1442,6 @@ body {
     background: transparent;
     text-align: center;
     color: white;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1502,8 +1454,6 @@ body {
     cursor: pointer;
     right: 0rem;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center; }
@@ -1536,7 +1486,6 @@ body {
     display: flex;
     margin-bottom: 1.25rem;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.875rem;
@@ -1569,8 +1518,6 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     color: black; }
@@ -1580,23 +1527,17 @@ body {
 
 .form-input {
   width: 100%; }
-  .form-input_text-field-default {
-    display: flex;
-    flex-direction: column; }
   .form-input__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.3125rem; }
   .form-input__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.65rem;
     text-align: right;
@@ -1618,8 +1559,6 @@ body {
     height: 2.625rem;
     outline: none;
     background: transparent;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     letter-spacing: -0.0125rem;
@@ -1657,8 +1596,6 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem; }
 
@@ -1692,15 +1629,12 @@ body {
   flex-direction: column; }
   .menu-bar__item {
     margin-bottom: 1.3125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem; }
     .menu-bar__item:first-of-type {
       margin-top: 0.25rem;
       margin-bottom: 1.3rem; }
       .menu-bar__item:first-of-type > .menu-bar__item-ref {
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -1710,12 +1644,9 @@ body {
       margin-bottom: 0rem; }
   .menu-bar__item-ref {
     text-decoration: none;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     color: rgba(31, 32, 65, 0.5);
-    white-space: normal;
     word-break: break-word; }
 
 .footer {
@@ -1766,8 +1697,6 @@ body {
         align-items: center; } }
   .footer__general-info-text {
     margin-top: 1.125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
@@ -1789,22 +1718,17 @@ body {
         display: none; } }
   .footer__subscription-title {
     margin-bottom: 1.1875rem;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: #1f2041;
-    white-space: normal;
     word-break: break-word; }
   .footer__subscription-description {
     margin-bottom: 1.375rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
-    white-space: normal;
     word-break: break-word; }
   .footer__subscription-form {
     width: 16.25rem;
@@ -1826,8 +1750,6 @@ body {
       .footer__copyright-bar {
         padding-bottom: 7.5rem; } }
   .footer__copyright {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.6rem;
     color: rgba(31, 32, 65, 0.75);

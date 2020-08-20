@@ -138,7 +138,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.eot\": \"./src/assets/fonts/Montserrat/montserrat-bold.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.ttf\": \"./src/assets/fonts/Montserrat/montserrat-bold.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff2\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.eot\": \"./src/assets/fonts/Montserrat/montserrat-regular.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.ttf\": \"./src/assets/fonts/Montserrat/montserrat-regular.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff2\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.eot\": \"./src/assets/fonts/OpenSans/open-sans-bold.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.ttf\": \"./src/assets/fonts/OpenSans/open-sans-bold.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff2\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.eot\": \"./src/assets/fonts/OpenSans/open-sans-regular.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.ttf\": \"./src/assets/fonts/OpenSans/open-sans-regular.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff2\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.eot\": \"./src/assets/fonts/Quicksand/quicksand-bold.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.ttf\": \"./src/assets/fonts/Quicksand/quicksand-bold.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff2\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.eot\": \"./src/assets/fonts/Quicksand/quicksand-regular.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.ttf\": \"./src/assets/fonts/Quicksand/quicksand-regular.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff2\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff2\",\n\t\"./components/checkbox-list/img/check-mark.svg\": \"./src/components/checkbox-list/img/check-mark.svg\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./components/logo/img/logo.svg\": \"./src/components/logo/img/logo.svg\",\n\t\"./components/room-info/img/test11.png\": \"./src/components/room-info/img/test11.png\",\n\t\"./components/room-info/img/test110.png\": \"./src/components/room-info/img/test110.png\",\n\t\"./components/room-info/img/test120.png\": \"./src/components/room-info/img/test120.png\",\n\t\"./components/room-info/img/test130.png\": \"./src/components/room-info/img/test130.png\",\n\t\"./components/room-info/img/test22.png\": \"./src/components/room-info/img/test22.png\",\n\t\"./components/room-info/img/test33.png\": \"./src/components/room-info/img/test33.png\",\n\t\"./components/room-info/img/test44.png\": \"./src/components/room-info/img/test44.png\",\n\t\"./components/room-info/img/test55.png\": \"./src/components/room-info/img/test55.png\",\n\t\"./components/room-info/img/test66.png\": \"./src/components/room-info/img/test66.png\",\n\t\"./components/room-info/img/test77.png\": \"./src/components/room-info/img/test77.png\",\n\t\"./components/room-info/img/test88.png\": \"./src/components/room-info/img/test88.png\",\n\t\"./components/room-info/img/test99.png\": \"./src/components/room-info/img/test99.png\",\n\t\"./components/room-reviews/img/image1.png\": \"./src/components/room-reviews/img/image1.png\",\n\t\"./components/room-reviews/img/image2.png\": \"./src/components/room-reviews/img/image2.png\",\n\t\"./components/social-media/img/facebook-icon.svg\": \"./src/components/social-media/img/facebook-icon.svg\",\n\t\"./components/social-media/img/instagram-icon.svg\": \"./src/components/social-media/img/instagram-icon.svg\",\n\t\"./components/social-media/img/twitter-icon.svg\": \"./src/components/social-media/img/twitter-icon.svg\",\n\t\"./favicons/android-chrome-192x192.png\": \"./src/favicons/android-chrome-192x192.png\",\n\t\"./favicons/android-chrome-512x512.png\": \"./src/favicons/android-chrome-512x512.png\",\n\t\"./favicons/apple-touch-icon.png\": \"./src/favicons/apple-touch-icon.png\",\n\t\"./favicons/favicon-16x16.png\": \"./src/favicons/favicon-16x16.png\",\n\t\"./favicons/favicon-32x32.png\": \"./src/favicons/favicon-32x32.png\",\n\t\"./favicons/mstile-144x144.png\": \"./src/favicons/mstile-144x144.png\",\n\t\"./favicons/mstile-150x150.png\": \"./src/favicons/mstile-150x150.png\",\n\t\"./favicons/mstile-310x150.png\": \"./src/favicons/mstile-310x150.png\",\n\t\"./favicons/mstile-310x310.png\": \"./src/favicons/mstile-310x310.png\",\n\t\"./favicons/mstile-70x70.png\": \"./src/favicons/mstile-70x70.png\",\n\t\"./favicons/safari-pinned-tab.svg\": \"./src/favicons/safari-pinned-tab.svg\",\n\t\"./pages/web-pages/landing-page/img/background.jpg\": \"./src/pages/web-pages/landing-page/img/background.jpg\",\n\t\"./pages/web-pages/registration/img/background.jpg\": \"./src/pages/web-pages/registration/img/background.jpg\",\n\t\"./pages/web-pages/room-details/img/background1.jpg\": \"./src/pages/web-pages/room-details/img/background1.jpg\",\n\t\"./pages/web-pages/room-details/img/background2.jpg\": \"./src/pages/web-pages/room-details/img/background2.jpg\",\n\t\"./pages/web-pages/room-details/img/background3.jpg\": \"./src/pages/web-pages/room-details/img/background3.jpg\",\n\t\"./pages/web-pages/sign-in/img/background.jpg\": \"./src/pages/web-pages/sign-in/img/background.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(ttf%7Ceot%7Cwoff%7Cwoff2%7Csvg%7Cpng%7Cjpg)$?");
+eval("var map = {\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff\",\n\t\"./assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\": \"./src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.eot\": \"./src/assets/fonts/Montserrat/montserrat-bold.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.svg\": \"./src/assets/fonts/Montserrat/montserrat-bold.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.ttf\": \"./src/assets/fonts/Montserrat/montserrat-bold.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-bold.woff2\": \"./src/assets/fonts/Montserrat/montserrat-bold.woff2\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.eot\": \"./src/assets/fonts/Montserrat/montserrat-regular.eot\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.svg\": \"./src/assets/fonts/Montserrat/montserrat-regular.svg\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.ttf\": \"./src/assets/fonts/Montserrat/montserrat-regular.ttf\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff\",\n\t\"./assets/fonts/Montserrat/montserrat-regular.woff2\": \"./src/assets/fonts/Montserrat/montserrat-regular.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.eot\": \"./src/assets/fonts/OpenSans/open-sans-bold.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.svg\": \"./src/assets/fonts/OpenSans/open-sans-bold.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.ttf\": \"./src/assets/fonts/OpenSans/open-sans-bold.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-bold.woff2\": \"./src/assets/fonts/OpenSans/open-sans-bold.woff2\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.eot\": \"./src/assets/fonts/OpenSans/open-sans-regular.eot\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.svg\": \"./src/assets/fonts/OpenSans/open-sans-regular.svg\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.ttf\": \"./src/assets/fonts/OpenSans/open-sans-regular.ttf\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff\",\n\t\"./assets/fonts/OpenSans/open-sans-regular.woff2\": \"./src/assets/fonts/OpenSans/open-sans-regular.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.eot\": \"./src/assets/fonts/Quicksand/quicksand-bold.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.svg\": \"./src/assets/fonts/Quicksand/quicksand-bold.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.ttf\": \"./src/assets/fonts/Quicksand/quicksand-bold.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-bold.woff2\": \"./src/assets/fonts/Quicksand/quicksand-bold.woff2\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.eot\": \"./src/assets/fonts/Quicksand/quicksand-regular.eot\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.svg\": \"./src/assets/fonts/Quicksand/quicksand-regular.svg\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.ttf\": \"./src/assets/fonts/Quicksand/quicksand-regular.ttf\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff\",\n\t\"./assets/fonts/Quicksand/quicksand-regular.woff2\": \"./src/assets/fonts/Quicksand/quicksand-regular.woff2\",\n\t\"./components/checkbox-list/img/check-mark.svg\": \"./src/components/checkbox-list/img/check-mark.svg\",\n\t\"./components/colored-logo/img/TOXIN.svg\": \"./src/components/colored-logo/img/TOXIN.svg\",\n\t\"./components/colored-logo/img/colored-logo.svg\": \"./src/components/colored-logo/img/colored-logo.svg\",\n\t\"./components/logo/img/logo.svg\": \"./src/components/logo/img/logo.svg\",\n\t\"./components/room-info/img/room-350.png\": \"./src/components/room-info/img/room-350.png\",\n\t\"./components/room-info/img/room-352.png\": \"./src/components/room-info/img/room-352.png\",\n\t\"./components/room-info/img/room-444.png\": \"./src/components/room-info/img/room-444.png\",\n\t\"./components/room-info/img/room-450.png\": \"./src/components/room-info/img/room-450.png\",\n\t\"./components/room-info/img/room-666.png\": \"./src/components/room-info/img/room-666.png\",\n\t\"./components/room-info/img/room-678.png\": \"./src/components/room-info/img/room-678.png\",\n\t\"./components/room-info/img/room-740.png\": \"./src/components/room-info/img/room-740.png\",\n\t\"./components/room-info/img/room-840.png\": \"./src/components/room-info/img/room-840.png\",\n\t\"./components/room-info/img/room-856.png\": \"./src/components/room-info/img/room-856.png\",\n\t\"./components/room-info/img/room-888-1.png\": \"./src/components/room-info/img/room-888-1.png\",\n\t\"./components/room-info/img/room-888-2.png\": \"./src/components/room-info/img/room-888-2.png\",\n\t\"./components/room-info/img/room-888-3.png\": \"./src/components/room-info/img/room-888-3.png\",\n\t\"./components/room-info/img/room-888-4.png\": \"./src/components/room-info/img/room-888-4.png\",\n\t\"./components/room-info/img/room-980.png\": \"./src/components/room-info/img/room-980.png\",\n\t\"./components/room-info/img/room-982.png\": \"./src/components/room-info/img/room-982.png\",\n\t\"./components/room-reviews/img/avatar-murat-sarafanof.png\": \"./src/components/room-reviews/img/avatar-murat-sarafanof.png\",\n\t\"./components/room-reviews/img/avatar-patrisiya-steklishkova.png\": \"./src/components/room-reviews/img/avatar-patrisiya-steklishkova.png\",\n\t\"./components/social-media/img/facebook-icon.svg\": \"./src/components/social-media/img/facebook-icon.svg\",\n\t\"./components/social-media/img/instagram-icon.svg\": \"./src/components/social-media/img/instagram-icon.svg\",\n\t\"./components/social-media/img/twitter-icon.svg\": \"./src/components/social-media/img/twitter-icon.svg\",\n\t\"./favicons/android-chrome-192x192.png\": \"./src/favicons/android-chrome-192x192.png\",\n\t\"./favicons/android-chrome-512x512.png\": \"./src/favicons/android-chrome-512x512.png\",\n\t\"./favicons/apple-touch-icon.png\": \"./src/favicons/apple-touch-icon.png\",\n\t\"./favicons/favicon-16x16.png\": \"./src/favicons/favicon-16x16.png\",\n\t\"./favicons/favicon-32x32.png\": \"./src/favicons/favicon-32x32.png\",\n\t\"./favicons/mstile-144x144.png\": \"./src/favicons/mstile-144x144.png\",\n\t\"./favicons/mstile-150x150.png\": \"./src/favicons/mstile-150x150.png\",\n\t\"./favicons/mstile-310x150.png\": \"./src/favicons/mstile-310x150.png\",\n\t\"./favicons/mstile-310x310.png\": \"./src/favicons/mstile-310x310.png\",\n\t\"./favicons/mstile-70x70.png\": \"./src/favicons/mstile-70x70.png\",\n\t\"./favicons/safari-pinned-tab.svg\": \"./src/favicons/safari-pinned-tab.svg\",\n\t\"./pages/web-pages/landing-page/img/background.jpg\": \"./src/pages/web-pages/landing-page/img/background.jpg\",\n\t\"./pages/web-pages/registration/img/background.jpg\": \"./src/pages/web-pages/registration/img/background.jpg\",\n\t\"./pages/web-pages/room-details/img/room-888-1.jpg\": \"./src/pages/web-pages/room-details/img/room-888-1.jpg\",\n\t\"./pages/web-pages/room-details/img/room-888-2.jpg\": \"./src/pages/web-pages/room-details/img/room-888-2.jpg\",\n\t\"./pages/web-pages/room-details/img/room-888-3.jpg\": \"./src/pages/web-pages/room-details/img/room-888-3.jpg\",\n\t\"./pages/web-pages/sign-in/img/background.jpg\": \"./src/pages/web-pages/sign-in/img/background.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(ttf|eot|woff|woff2|svg|png|jpg)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(ttf%7Ceot%7Cwoff%7Cwoff2%7Csvg%7Cpng%7Cjpg)$?");
 
 /***/ }),
 
@@ -621,171 +621,207 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test11.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test11.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-350.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-350.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test11.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test11.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-350.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-350.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test110.png":
-/*!**************************************************!*\
-  !*** ./src/components/room-info/img/test110.png ***!
-  \**************************************************/
+/***/ "./src/components/room-info/img/room-352.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-352.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test110.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test110.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-352.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-352.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test120.png":
-/*!**************************************************!*\
-  !*** ./src/components/room-info/img/test120.png ***!
-  \**************************************************/
+/***/ "./src/components/room-info/img/room-444.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-444.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test120.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test120.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-444.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-444.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test130.png":
-/*!**************************************************!*\
-  !*** ./src/components/room-info/img/test130.png ***!
-  \**************************************************/
+/***/ "./src/components/room-info/img/room-450.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-450.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test130.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test130.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-450.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-450.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test22.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test22.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-666.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-666.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test22.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test22.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-666.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-666.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test33.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test33.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-678.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-678.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test33.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test33.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-678.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-678.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test44.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test44.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-740.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-740.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test44.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test44.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-740.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-740.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test55.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test55.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-840.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-840.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test55.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test55.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-840.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-840.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test66.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test66.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-856.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-856.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test66.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test66.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-856.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-856.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test77.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test77.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-888-1.png":
+/*!*****************************************************!*\
+  !*** ./src/components/room-info/img/room-888-1.png ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test77.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test77.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-888-1.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-888-1.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test88.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test88.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-888-2.png":
+/*!*****************************************************!*\
+  !*** ./src/components/room-info/img/room-888-2.png ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test88.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test88.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-888-2.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-888-2.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/img/test99.png":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/img/test99.png ***!
-  \*************************************************/
+/***/ "./src/components/room-info/img/room-888-3.png":
+/*!*****************************************************!*\
+  !*** ./src/components/room-info/img/room-888-3.png ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/test99.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/test99.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-888-3.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-888-3.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-reviews/img/image1.png":
-/*!****************************************************!*\
-  !*** ./src/components/room-reviews/img/image1.png ***!
-  \****************************************************/
+/***/ "./src/components/room-info/img/room-888-4.png":
+/*!*****************************************************!*\
+  !*** ./src/components/room-info/img/room-888-4.png ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-reviews/img/image1.png\");\n\n//# sourceURL=webpack:///./src/components/room-reviews/img/image1.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-888-4.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-888-4.png?");
 
 /***/ }),
 
-/***/ "./src/components/room-reviews/img/image2.png":
-/*!****************************************************!*\
-  !*** ./src/components/room-reviews/img/image2.png ***!
-  \****************************************************/
+/***/ "./src/components/room-info/img/room-980.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-980.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-reviews/img/image2.png\");\n\n//# sourceURL=webpack:///./src/components/room-reviews/img/image2.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-980.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-980.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/img/room-982.png":
+/*!***************************************************!*\
+  !*** ./src/components/room-info/img/room-982.png ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-info/img/room-982.png\");\n\n//# sourceURL=webpack:///./src/components/room-info/img/room-982.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-reviews/img/avatar-murat-sarafanof.png":
+/*!********************************************************************!*\
+  !*** ./src/components/room-reviews/img/avatar-murat-sarafanof.png ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-reviews/img/avatar-murat-sarafanof.png\");\n\n//# sourceURL=webpack:///./src/components/room-reviews/img/avatar-murat-sarafanof.png?");
+
+/***/ }),
+
+/***/ "./src/components/room-reviews/img/avatar-patrisiya-steklishkova.png":
+/*!***************************************************************************!*\
+  !*** ./src/components/room-reviews/img/avatar-patrisiya-steklishkova.png ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/components/room-reviews/img/avatar-patrisiya-steklishkova.png\");\n\n//# sourceURL=webpack:///./src/components/room-reviews/img/avatar-patrisiya-steklishkova.png?");
 
 /***/ }),
 
@@ -1004,39 +1040,39 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./src/pages/web-pages/room-details/img/background1.jpg":
-/*!**************************************************************!*\
-  !*** ./src/pages/web-pages/room-details/img/background1.jpg ***!
-  \**************************************************************/
+/***/ "./src/pages/web-pages/room-details/img/room-888-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/pages/web-pages/room-details/img/room-888-1.jpg ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/background1.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/background1.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/room-888-1.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/room-888-1.jpg?");
 
 /***/ }),
 
-/***/ "./src/pages/web-pages/room-details/img/background2.jpg":
-/*!**************************************************************!*\
-  !*** ./src/pages/web-pages/room-details/img/background2.jpg ***!
-  \**************************************************************/
+/***/ "./src/pages/web-pages/room-details/img/room-888-2.jpg":
+/*!*************************************************************!*\
+  !*** ./src/pages/web-pages/room-details/img/room-888-2.jpg ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/background2.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/background2.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/room-888-2.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/room-888-2.jpg?");
 
 /***/ }),
 
-/***/ "./src/pages/web-pages/room-details/img/background3.jpg":
-/*!**************************************************************!*\
-  !*** ./src/pages/web-pages/room-details/img/background3.jpg ***!
-  \**************************************************************/
+/***/ "./src/pages/web-pages/room-details/img/room-888-3.jpg":
+/*!*************************************************************!*\
+  !*** ./src/pages/web-pages/room-details/img/room-888-3.jpg ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/background3.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/background3.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/pages/web-pages/room-details/img/room-888-3.jpg\");\n\n//# sourceURL=webpack:///./src/pages/web-pages/room-details/img/room-888-3.jpg?");
 
 /***/ }),
 

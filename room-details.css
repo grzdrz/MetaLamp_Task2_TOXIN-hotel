@@ -683,7 +683,6 @@ body {
     background: none;
     border: none; }
 
-@charset "UTF-8";
 .colored-logo {
   height: 2.5rem;
   display: flex;
@@ -727,7 +726,6 @@ body {
     background: transparent;
     text-align: center;
     color: white;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -740,8 +738,6 @@ body {
     cursor: pointer;
     right: 0rem;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center; }
@@ -841,8 +837,6 @@ body {
   .header__item-ref {
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     white-space: nowrap;
@@ -853,16 +847,12 @@ body {
     align-items: center;
     text-align: center;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.25rem;
     color: rgba(31, 32, 65, 0.5); }
   .header__user-full-name {
     display: flex;
     align-items: center;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     color: rgba(31, 32, 65, 0.5);
@@ -938,8 +928,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 3rem;
     line-height: 2.5625rem; }
   .room-advantages__text {
@@ -947,35 +935,20 @@ body {
     display: inline-flex;
     flex-direction: column; }
   .room-advantages__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
-    white-space: normal;
     word-break: break-word; }
   .room-advantages__main-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
-    white-space: normal;
     word-break: break-word; }
 
 .bullet-list {
   display: flex;
   flex-direction: column; }
-  .bullet-list__title {
-    margin-bottom: 14px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
-    text-transform: uppercase;
-    color: #1f2041;
-    white-space: normal;
-    word-break: break-word; }
   .bullet-list__list {
     display: flex;
     flex-direction: column;
@@ -995,23 +968,10 @@ body {
     background: rgba(31, 32, 65, 0.25); }
   .bullet-list__item-text {
     width: 15rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
-    white-space: normal;
     word-break: break-word; }
-  .bullet-list__title_with-font-family_quicksand {
-    margin-bottom: 1.125rem;
-    margin-left: 1.25rem;
-    font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.1875rem;
-    line-height: 1.5rem;
-    color: #1f2041;
-    text-transform: none; }
 
 .like-button {
   width: max-content;
@@ -1040,7 +1000,7 @@ body {
     margin: 0.0625rem;
     border-radius: 1.375rem;
     background: white; }
-  .like-button__likes-number_on, .like-button__likes-number_off {
+  .like-button__likes-number {
     z-index: 1;
     width: max-content;
     display: flex;
@@ -1051,8 +1011,6 @@ body {
     bottom: 0rem;
     margin-left: 0.21rem;
     margin-right: 0.65rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.5625rem;
     text-align: center;
     white-space: nowrap; }
@@ -1063,34 +1021,34 @@ body {
     height: 1.25rem;
     position: absolute;
     opacity: 0; }
-    .like-button__input:checked + label {
+    .like-button__input:checked + .like-button__label {
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
-      .like-button__input:checked + label > * {
+      .like-button__input:checked + .like-button__label > * {
         color: #bc9cff; }
-      .like-button__input:checked + label > .like-button__like-symbol::after {
+      .like-button__input:checked + .like-button__label > .like-button__like-symbol::after {
         content: 'favorite';
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center; }
-      .like-button__input:checked + label > .like-button__likes-number_off {
+      .like-button__input:checked + .like-button__label > .like-button__likes-number_unpressed {
         display: none; }
-      .like-button__input:checked + label > .like-button__likes-number_on {
+      .like-button__input:checked + .like-button__label > .like-button__likes-number_pressed {
         display: flex; }
-    .like-button__input:not(:checked) + label {
+    .like-button__input:not(:checked) + .like-button__label {
       background: rgba(31, 32, 65, 0.25); }
-      .like-button__input:not(:checked) + label > * {
+      .like-button__input:not(:checked) + .like-button__label > * {
         color: rgba(31, 32, 65, 0.25); }
-      .like-button__input:not(:checked) + label > .like-button__like-symbol::after {
+      .like-button__input:not(:checked) + .like-button__label > .like-button__like-symbol::after {
         content: 'favorite_border';
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         border: 0rem solid transparent; }
-      .like-button__input:not(:checked) + label > .like-button__likes-number_off {
+      .like-button__input:not(:checked) + .like-button__label > .like-button__likes-number_unpressed {
         display: flex; }
-      .like-button__input:not(:checked) + label > .like-button__likes-number_on {
+      .like-button__input:not(:checked) + .like-button__label > .like-button__likes-number_pressed {
         display: none; }
   .like-button__like-symbol {
     z-index: 2;
@@ -1103,8 +1061,6 @@ body {
     left: 0rem; }
     .like-button__like-symbol::after {
       font-family: Material Icons;
-      font-style: normal;
-      font-weight: normal;
       font-size: 0.625rem; }
 
 .room-reviews {
@@ -1116,7 +1072,6 @@ body {
     margin-bottom: 1.25rem; }
   .room-reviews__title-description {
     font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 1.1875rem;
     line-height: 1.5rem;
@@ -1124,8 +1079,6 @@ body {
   .room-reviews__review-count {
     align-self: center;
     margin-top: 0.3125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 0.875rem;
     text-align: right;
@@ -1148,7 +1101,6 @@ body {
   .room-reviews__user-info {
     margin-left: 0.625rem; }
   .room-reviews__user-full-name {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.875rem;
     line-height: 1.5rem;
@@ -1157,20 +1109,15 @@ body {
     justify-self: center;
     padding-top: 0.0625rem; }
   .room-reviews__number-of-days-since-comment {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75); }
   .room-reviews__comment {
     margin-left: 0.625rem;
     max-width: 40.8125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
-    white-space: normal;
     word-break: break-word; }
 
 .button {
@@ -1208,7 +1155,6 @@ body {
     background: transparent;
     text-align: center;
     color: white;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1221,8 +1167,6 @@ body {
     cursor: pointer;
     right: 0rem;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center; }
@@ -1248,22 +1192,21 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column; }
-    .calendar__input-container_first {
+    .calendar__input-container_date_from {
       margin-right: 1.25rem; }
+    .calendar__input-container_date_from, .calendar__input-container_date_to {
+      width: 46.875%; }
   .calendar__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.3125rem; }
   .calendar__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     text-transform: uppercase;
     color: #1f2041; }
   .calendar__additional-title-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.55rem;
     text-align: right;
@@ -1281,18 +1224,14 @@ body {
     border-radius: 0.25rem; }
     .calendar__label:hover, .calendar__label:focus {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
-  .calendar__input-container_first, .calendar__input-container_second {
-    width: 46.875%; }
-  .calendar__label_first, .calendar__label_second {
-    width: 100%; }
+    .calendar__label_date_from, .calendar__label_date_to {
+      width: 100%; }
   .calendar__input {
     cursor: pointer;
     height: 2.5rem;
     padding: 0rem 0rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     white-space: nowrap;
@@ -1323,8 +1262,6 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
@@ -1338,7 +1275,6 @@ body {
   .calendar__apply-button {
     cursor: pointer;
     margin-left: auto;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1349,7 +1285,6 @@ body {
   .calendar__clear-button {
     cursor: pointer;
     display: none;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1389,8 +1324,6 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     color: rgba(31, 32, 65, 0.5); }
@@ -1411,7 +1344,6 @@ body {
       align-items: center;
       background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
       border-radius: 50%;
-      font-style: normal;
       font-weight: bold;
       font-size: 0.75rem;
       line-height: 0.9375rem;
@@ -1427,7 +1359,6 @@ body {
         background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         border-radius: 50%;
         border: 0rem;
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -1453,7 +1384,6 @@ body {
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%;
       border: 0rem;
-      font-style: normal;
       font-weight: bold;
       font-size: 0.75rem;
       line-height: 0.9375rem;
@@ -1485,13 +1415,9 @@ body {
       color: rgba(31, 32, 65, 0.25);
       background: transparent; }
     .datepicker--cell-day.-range-from-.-other-month-.-disabled-, .datepicker--cell-day.-range-from-.-other-month-.-focus-.-disabled-, .datepicker--cell-day.-range-from-.-focus-.-disabled-, .datepicker--cell-day.-in-range-.-other-month-.-disabled-, .datepicker--cell-day.-in-range-.-other-month-.-focus-.-disabled-, .datepicker--cell-day.-in-range-.-focus-.-disabled- {
-      font-style: normal;
-      font-weight: normal;
       color: rgba(31, 32, 65, 0.25);
       background: transparent; }
     .datepicker--cell-day.-range-from-.-disabled-, .datepicker--cell-day.-in-range-.-disabled- {
-      font-style: normal;
-      font-weight: normal;
       color: rgba(31, 32, 65, 0.25);
       background: transparent; }
     .datepicker--cell-month, .datepicker--cell-year {
@@ -1518,7 +1444,6 @@ body {
     border: 0rem solid transparent; }
     .datepicker--nav-title {
       font-family: Quicksand, OpenSans, Arial, sans-serif;
-      font-style: normal;
       font-weight: bold;
       font-size: 1.1875rem;
       line-height: 1.5rem;
@@ -1537,8 +1462,6 @@ body {
         align-items: center;
         position: absolute;
         font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
         font-size: 1.5rem;
         line-height: 1.5rem;
         border: 0rem solid transparent;
@@ -1558,8 +1481,6 @@ body {
         align-items: center;
         position: absolute;
         font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
         font-size: 1.5rem;
         line-height: 1.5rem;
         border: 0rem solid transparent;
@@ -1579,7 +1500,6 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1600,24 +1520,18 @@ body {
 
 .dropdown {
   width: 100%; }
-  .dropdown_text-field-default {
-    display: flex;
-    flex-direction: column; }
   .dropdown__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.3125rem; }
   .dropdown__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: #1f2041; }
   .dropdown__additional-title-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-align: right;
@@ -1636,7 +1550,7 @@ body {
     border-radius: 0.25rem; }
     .dropdown__input-container:hover, .dropdown__input-container:focus {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
-    .dropdown__input-container_is-opened {
+    .dropdown__input-container_opened {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5);
       border-bottom-left-radius: 0rem;
       border-bottom-right-radius: 0rem; }
@@ -1646,17 +1560,12 @@ body {
     padding: 0rem 0.9375rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
-    /* Отменяем перенос текста */
     overflow: hidden;
-    /* Обрезаем содержимое */
-    text-overflow: ellipsis;
-    /* Многоточие */ }
+    text-overflow: ellipsis; }
     .dropdown__input::-webkit-input-placeholder {
       background: rgba(31, 32, 65, 0.75);
       -webkit-background-clip: text;
@@ -1676,7 +1585,7 @@ body {
       -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
-  .dropdown__droped-list {
+  .dropdown__list {
     display: none;
     width: 100%;
     list-style: none;
@@ -1692,9 +1601,9 @@ body {
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
     z-index: 9999; }
-    .dropdown__droped-list:hover, .dropdown__droped-list:focus {
+    .dropdown__list:hover, .dropdown__list:focus {
       border-top: 0rem; }
-    .dropdown__droped-list_is-opened {
+    .dropdown__list_opened {
       display: flex; }
   .dropdown__dropdown-arrow {
     cursor: pointer;
@@ -1711,8 +1620,6 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem; }
   .dropdown__list-item {
@@ -1726,7 +1633,6 @@ body {
   .dropdown__item-name {
     overflow: auto;
     word-wrap: break-word;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1745,7 +1651,6 @@ body {
     border: 0.0625rem solid rgba(31, 32, 65, 0.5);
     background: transparent;
     outline: none;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1756,7 +1661,6 @@ body {
     opacity: 0.38; }
   .dropdown__item-value {
     margin: 0rem 0.3125rem;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1769,7 +1673,6 @@ body {
   .dropdown__apply-button {
     cursor: pointer;
     margin-left: auto;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1779,7 +1682,6 @@ body {
       color: rgba(31, 32, 65, 0.5); }
   .dropdown__clear-button {
     cursor: pointer;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1806,7 +1708,6 @@ body {
     align-self: end;
     margin-right: 0.1875rem;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.875rem;
     line-height: 1.0625rem;
@@ -1815,17 +1716,14 @@ body {
     align-self: end;
     margin-right: 0.3125rem;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.4375rem;
     color: #1f2041;
     max-width: 3.125rem;
-    white-space: normal;
     word-break: break-word; }
   .price-calculation-form__room-status {
     align-self: end;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1835,7 +1733,6 @@ body {
     justify-self: end;
     align-self: end;
     margin-right: 0.25rem;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.875rem;
     line-height: 0.9375rem;
@@ -1848,8 +1745,6 @@ body {
     align-self: end;
     white-space: nowrap;
     margin-right: 0.0625rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     color: rgba(31, 32, 65, 0.5); }
@@ -1862,14 +1757,11 @@ body {
   .price-calculation-form__calculated-data {
     margin-bottom: 1.25rem; }
   .price-calculation-form__main-sum-formula, .price-calculation-form__main-sum-result, .price-calculation-form__discount-description, .price-calculation-form__discount-value, .price-calculation-form__additional-services-description, .price-calculation-form__additional-services-value {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.1875rem;
     color: rgba(31, 32, 65, 0.75); }
   .price-calculation-form__total-result-text, .price-calculation-form__total-result-value {
     font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 1.1875rem;
     line-height: 1.5rem;
@@ -1880,11 +1772,9 @@ body {
     margin-bottom: 0.9375rem; }
   .price-calculation-form__main-sum-formula, .price-calculation-form__discount-description, .price-calculation-form__additional-services-description {
     max-width: 13.75rem;
-    white-space: normal;
     word-break: break-word; }
   .price-calculation-form__main-sum-result {
     justify-self: end;
-    white-space: normal;
     word-break: break-word; }
   .price-calculation-form__services {
     display: grid;
@@ -1905,7 +1795,6 @@ body {
     border-radius: 50%;
     box-sizing: border-box;
     background: transparent;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.875rem;
@@ -1913,11 +1802,9 @@ body {
     color: rgba(31, 32, 65, 0.25); }
   .price-calculation-form__discount-value {
     justify-self: end;
-    white-space: normal;
     word-break: break-word; }
   .price-calculation-form__additional-services-value {
     justify-self: end;
-    white-space: normal;
     word-break: break-word; }
   .price-calculation-form__total-result {
     display: grid;
@@ -1939,23 +1826,17 @@ body {
 
 .form-input {
   width: 100%; }
-  .form-input_text-field-default {
-    display: flex;
-    flex-direction: column; }
   .form-input__title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.3125rem; }
   .form-input__title-text {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     text-transform: uppercase;
     color: #1f2041; }
   .form-input__additional-title-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.65rem;
     text-align: right;
@@ -1977,8 +1858,6 @@ body {
     height: 2.625rem;
     outline: none;
     background: transparent;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.125rem;
     letter-spacing: -0.0125rem;
@@ -2016,8 +1895,6 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.5rem;
     line-height: 1.5rem; }
 
@@ -2051,15 +1928,12 @@ body {
   flex-direction: column; }
   .menu-bar__item {
     margin-bottom: 1.3125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem; }
     .menu-bar__item:first-of-type {
       margin-top: 0.25rem;
       margin-bottom: 1.3rem; }
       .menu-bar__item:first-of-type > .menu-bar__item-ref {
-        font-style: normal;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -2069,12 +1943,9 @@ body {
       margin-bottom: 0rem; }
   .menu-bar__item-ref {
     text-decoration: none;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     color: rgba(31, 32, 65, 0.5);
-    white-space: normal;
     word-break: break-word; }
 
 .footer {
@@ -2125,8 +1996,6 @@ body {
         align-items: center; } }
   .footer__general-info-text {
     margin-top: 1.125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
@@ -2148,22 +2017,17 @@ body {
         display: none; } }
   .footer__subscription-title {
     margin-bottom: 1.1875rem;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: #1f2041;
-    white-space: normal;
     word-break: break-word; }
   .footer__subscription-description {
     margin-bottom: 1.375rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
-    white-space: normal;
     word-break: break-word; }
   .footer__subscription-form {
     width: 16.25rem;
@@ -2185,8 +2049,6 @@ body {
       .footer__copyright-bar {
         padding-bottom: 7.5rem; } }
   .footer__copyright {
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.6rem;
     color: rgba(31, 32, 65, 0.75);
@@ -2206,7 +2068,6 @@ body {
     margin-bottom: 1.125rem;
     margin-left: 0.9375rem;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 1.1875rem;
     line-height: 1.5rem;
@@ -2238,13 +2099,11 @@ body {
     align-items: center;
     text-align: center;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.875rem;
     color: #bc9cff; }
   .pie-chart__inner-text-word {
-    font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -2281,8 +2140,6 @@ body {
       background: linear-gradient(180deg, #919191 0%, #3d4975 100%); }
   .pie-chart__legend-item-text {
     margin-left: 0.9375rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75); }
@@ -2299,7 +2156,7 @@ body {
     width: 68.125%;
     height: 100%;
     display: flex;
-    background-image: url(src/pages/web-pages/room-details/img/background1.jpg);
+    background-image: url(src/pages/web-pages/room-details/img/room-888-1.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -2316,9 +2173,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover; }
   .room-details__small-photo-1 {
-    background-image: url(src/pages/web-pages/room-details/img/background2.jpg); }
+    background-image: url(src/pages/web-pages/room-details/img/room-888-2.jpg); }
   .room-details__small-photo-2 {
-    background-image: url(src/pages/web-pages/room-details/img/background3.jpg); }
+    background-image: url(src/pages/web-pages/room-details/img/room-888-3.jpg); }
   .room-details__info {
     display: flex;
     flex-direction: row;
@@ -2364,7 +2221,6 @@ body {
   .room-details__room-advantages-title {
     margin-bottom: 1.25rem;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 1.1875rem;
     line-height: 1.5rem;
@@ -2380,6 +2236,15 @@ body {
         grid-column-end: 1;
         padding-left: 1.25rem;
         padding-right: 1.25rem; } }
+  .room-details__bullet-list-title {
+    margin-bottom: 1.125rem;
+    margin-left: 1.25rem;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    color: #1f2041;
+    text-transform: none; }
   .room-details__bullet-list {
     margin-right: 4.375rem; }
     @media screen and (max-width: 800px) {
@@ -2397,15 +2262,12 @@ body {
   .room-details__cancel-rule-title {
     margin-bottom: 1.125rem;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 1.1875rem;
     line-height: 1.5rem;
     color: #1f2041; }
   .room-details__cancel-rule-main-text {
     max-width: 21.3125rem;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75); }
