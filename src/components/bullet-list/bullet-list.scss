@@ -4,17 +4,6 @@
     display: flex;
     flex-direction: column;
 
-    &__title {
-        margin-bottom: 14px;
-        font-weight: bold;
-        font-size: 0.75rem;
-        line-height: 0.9375rem;
-        text-transform: uppercase;
-        color: $color-dark-shade-100;
-        white-space: normal;
-        word-break: break-word;
-    }
-
     &__list {
         display: flex;
         flex-direction: column;
@@ -46,16 +35,5 @@
         line-height: 1.5rem;
         color: $color-dark-shade-75;
         word-break: break-word;
-    }
-
-    &__title_with-font-family_quicksand {
-        margin-bottom: 1.125rem;
-        margin-left: 1.25rem;
-        font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1.1875rem;
-        line-height: 1.5rem;
-        color: $color-dark-shade-100;
-        text-transform: none;
     }
 }

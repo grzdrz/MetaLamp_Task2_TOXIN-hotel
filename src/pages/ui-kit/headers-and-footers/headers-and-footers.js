@@ -1,2 +1,2 @@
-import "../../base/base";
-import "./headers-and-footers.scss";
+import '../../base/base';
+import './headers-and-footers.scss';

@@ -1,17 +1,16 @@
 mixin menu-bar(options = {})
     - 
         const { 
-            listOfLinks = [
-                {url: "https://www.google.com/", text: "О нас", hasDropdown: false},
-                {url: "https://www.google.com/", text: "Услуги", hasDropdown: true},
-                {url: "https://www.google.com/", text: "Вакансии", hasDropdown: false},
-                {url: "https://www.google.com/", text: "Новости", hasDropdown: false},
-                {url: "https://www.google.com/", text: "Соглашения", hasDropdown: true},
+            refs = [
+                {url: "https://www.google.com/", text: "О нас"},
+                {url: "https://www.google.com/", text: "Услуги"},
+                {url: "https://www.google.com/", text: "Вакансии"},
+                {url: "https://www.google.com/", text: "Новости"},
+                {url: "https://www.google.com/", text: "Соглашения"},
             ],
         } = options;
 
     ul(class=["menu-bar"])
-        - for(let i = 0; i < listOfLinks.length; i += 1)
+        - for(let ref of refs)
             li(class=["menu-bar__item"])
-                a(class=["menu-bar__item-ref"] 
-                    href=listOfLinks[i].url target="_blank" rel="noopener noreferrer")= listOfLinks[i].text  
+                a(class=["menu-bar__item-ref"] href=ref.url target="_blank" rel="noopener noreferrer")= ref.text  

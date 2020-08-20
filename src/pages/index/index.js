@@ -1,2 +1,2 @@
-import "../base/base";
-import "./index.scss";
+import '../base/base';
+import './index.scss';

@@ -50,8 +50,8 @@ mixin price-calculation-form(options = {})
                 data-value=roomPrice data-currency-type=currencyType)
                 span(class=["price-calculation-form__main-sum-formula", "js-price-calculation-form__main-sum-formula"]
                     )= `${formateNumber(roomPrice)}${currencyType} x 0 суток`
-                span(class=["price-calculation-form__main-sum-result", "js-price-calculation-form__main-sum-result"])
-                    | 0
+                span(class=["price-calculation-form__main-sum-result", "js-price-calculation-form__main-sum-result"]
+                    )= `0${currencyType}`
             p(class=["price-calculation-form__services", "js-price-calculation-form__services"] data-value=discount)
                 span(class=["price-calculation-form__discount-description"]
                     )= `Сбор за услуги: скидка ${formateNumber(discount)}${currencyType}`

@@ -98,7 +98,7 @@ class PriceCalculationForm {
     }
 
     _render() {
-        this.mainSumFormula.textContent = `${this.roomRentalPrice}${this.currencyType} x ${this.daysCount} ${this._doDeclensionOfWord(this.daysCount)}`;
+        this.mainSumFormula.textContent = `${this._formateNumber(this.roomRentalPrice)}${this.currencyType} x ${this.daysCount} ${this._doDeclensionOfWord(this.daysCount)}`;
         this.mainSumValue.textContent = `${this._formateNumber(this.roomRentalSum)}${this.currencyType}`;
         this.additionalServicesValue.textContent = `${this._formateNumber(this.servicesSum)}${this.currencyType}`;
         this.totalResultValue.textContent = `${this._formateNumber(this.totalSum)}${this.currencyType}`;

@@ -11,18 +11,16 @@ mixin checkbox-list(options = {})
                 {isChecked: true, text: "Можно пригласить гостей (до 10 человек)"},
             ],
         } = options;
-
         const containerClasses = [];
-        const titleClasses = [];
         const itemTextClasses = [];
 
-        if(isExpandable)containerClasses.push("checkbox-list_expandable");
-        else if(hasAdditionalText)containerClasses.push("checkbox-list_rich");
-        itemTextClasses.push(`checkbox-list__item-text_${hasAdditionalText ? "main" : "single"}`);
+        if(isExpandable) containerClasses.push("checkbox-list_type_expandable");
+        else if(hasAdditionalText) containerClasses.push("checkbox-list_type_rich");
+        if(hasAdditionalText) itemTextClasses.push(`checkbox-list__item-text_complex`);
 
     div(class=["checkbox-list", "js-checkbox-list"].concat(containerClasses))
         - if(title)
-            p(class=["checkbox-list__title", "js-checkbox-list__title"].concat(titleClasses))
+            p(class=["checkbox-list__title", "js-checkbox-list__title"])
                 span(class=["checkbox-list__title-text"])= title
                 - if(isExpandable)
                     span(class=["checkbox-list__dropdown-arrow", "js-checkbox-list__dropdown-arrow"]) expand_more

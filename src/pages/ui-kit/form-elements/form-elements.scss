@@ -176,7 +176,7 @@
     }
 
     &__room-advantages {
-        margin-right: 10.4375rem;
+        margin-right: 9.8rem;
     }
 
     &__checkbox-1 {
@@ -270,6 +270,16 @@
 
     &__pagination {
         width: max-content;
+    }
+
+    &__bullet-list-title {
+        margin-bottom: 14px;
+        font-weight: bold;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        text-transform: uppercase;
+        color: $color-dark-shade-100;
+        word-break: break-word;
     }
 
     &__bullet-list {

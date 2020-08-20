@@ -12,7 +12,7 @@ mixin footer(options = {})
                     | Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
             nav(class=["footer__menu-bar"])
                 +menu-bar({
-                    listOfLinks: [
+                    refs: [
                         {url: "https://errorpage.com", text: "навигация"},
                         {url: "https://errorpage.com", text: "О нас"}, 
                         {url: "https://errorpage.com", text: "Новости"}, 
@@ -22,7 +22,7 @@ mixin footer(options = {})
                 })
             nav(class=["footer__menu-bar"])
                 +menu-bar({
-                    listOfLinks: [
+                    refs: [
                         {url: "https://errorpage.com", text: "о нас"}, 
                         {url: "https://errorpage.com", text: "О сервисе"}, 
                         {url: "https://errorpage.com", text: "Наша команда"}, 
@@ -32,7 +32,7 @@ mixin footer(options = {})
                 })
             nav(class=["footer__menu-bar"])
                 +menu-bar({
-                    listOfLinks: [
+                    refs: [
                         {url: "https://errorpage.com", text: "Служба поддержки"}, 
                         {url: "https://errorpage.com", text: "Соглашения"}, 
                         {url: "https://errorpage.com", text: "Сообщества"},

@@ -7,7 +7,7 @@
     $checkboxMarginRight: 0.625rem;
     $checkboxSize: 1.25rem;
 
-    &_expandable {
+    &_type_expandable {
         & .checkbox-list__title {
             cursor: pointer;
             margin-bottom: 0.23rem;
@@ -22,7 +22,7 @@
         }
     }
 
-    &_rich {
+    &_type_rich {
         & .checkbox-list__title {
             margin-bottom: 0.9rem;
         }
@@ -148,7 +148,7 @@
 
     &__item-text {
         cursor: context-menu;
-        width: max-content;
+        width: 12.5rem;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -157,13 +157,10 @@
         color: $color-dark-shade-50;
         word-break: break-word;
 
-        &_main {
+        &_complex {
+            width: max-content;
             font-weight: bold;
             color: $color-dark-shade-75;
-        }
-
-        &_single {
-            width: 12.5rem;
         }
     }
 

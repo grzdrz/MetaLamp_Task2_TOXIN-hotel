@@ -9,13 +9,13 @@ include ../../../components/range-slider/range-slider.pug
 block content
     div(class=["search-room"])
         div(class=["search-room__filters"])
-            div(class=["search-room__calendar"])
+            div(class=["search-room__calendar", "js-search-room__calendar"])
                 +calendar({
                     isDouble: false,
                     withRange: true, 
                     firstTitle: "даты пребывания в отеле",
                 })
-            div(class=["search-room__dropdown-1 js-search-room__dropdown"])
+            div(class=["search-room__dropdown-1", "js-search-room__dropdown"])
                 +dropdown({
                     title: "гости",
                     placeholder: "Сколько гостей",
@@ -30,7 +30,7 @@ block content
                     ],
                     withTotalValue: true,
                 })
-            div(class=["search-room__range-slider js-search-room__range-slider"])
+            div(class=["search-room__range-slider", "js-search-room__range-slider"])
                 +range-slider({
                     title: "диапазон цены",
                     description: "Стоимость за сутки пребывания в номере",
@@ -56,7 +56,7 @@ block content
                         {isChecked: true, text: "Помощник для инвалидов", additionalText: "На 1 этаже вас встретит специалист и проводит до номера."},
                     ],
                 })
-            div(class=["search-room__dropdown-2 js-search-room__dropdown"])
+            div(class=["search-room__dropdown-2", "js-search-room__dropdown"])
                 +dropdown({
                     title: "удобства номера",
                     placeholder: "Сколько комнат",
@@ -70,7 +70,7 @@ block content
                     ],
                     withTotalValue: false,
                 })
-            div(class=["search-room__checkbox-list-3 js-search-room__checkbox_expandable"])
+            div(class=["search-room__checkbox-list-3", "js-search-room__checkbox_expandable"])
                 +checkbox-list({
                     title: "дополнительные удобства",
                     isExpandable: true,
@@ -92,6 +92,6 @@ block content
             div(class=["search-room__list"])
                 - let roomsInfo = require("./data.json").roomsInfo;
                 - for(let i = 0; i < 12; i += 1)
-                    div(class=["search-room__room-info", `search-room__room-info_${i}`])
+                    div(class=["search-room__room-info", "js-search-room__room-info", `search-room__room-info_${i}`])
                         +room-info(roomsInfo[i])
-            div(class=["search-room__pagination"])
+            div(class=["search-room__pagination", "js-search-room__pagination"])

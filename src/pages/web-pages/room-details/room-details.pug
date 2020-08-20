@@ -25,7 +25,7 @@ block content
                         ],
                         hasLastBorderBottom: false,
                     })
-                div(class=["room-details__pie-chart js-form-elements__pie-chart"])
+                div(class=["room-details__pie-chart", "js-form-elements__pie-chart"])
                     +pie-chart({
                         totalValue: 260,
                         legends: ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"]
@@ -60,8 +60,8 @@ block content
                         ]
                     })
                 div(class=["room-details__bullet-list"])
+                    p(class=["room-details__bullet-list-title"]) Правила
                     +bullet-list({
-                        title: "Правила",
                         inRoomDetailsPage: true,
                         list: [
                             "Нельзя с питомцами",
@@ -76,7 +76,7 @@ block content
                         | этого при отмене не позднее чем за 5 дн. до
                         | прибытия вы получите полный возврат за
                         | вычетом сбора за услуги.
-            div(class=["room-details__price-calculation-form"])
+            div(class=["room-details__price-calculation-form", "js-room-details__price-calculation-form"])
                 +price-calculation-form({
                     roomNumber: 888,
                     roomStatus: "люкс",

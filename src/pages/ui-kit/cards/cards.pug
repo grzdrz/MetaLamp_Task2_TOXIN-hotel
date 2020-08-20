@@ -10,16 +10,16 @@ include ../../../components/room-info/room-info.pug
 block content
     div(class=["cards"])
         div(class=["cards__column-1"])
-            div(class=["cards__room-finder-form"])
+            div(class=["cards__room-finder-form", "js-cards__room-finder-form"])
                 +room-finder-form({
                     title: "Найдём номера под ваши пожелания",
                 })
-            div(class=["cards__sign-up-form"])        
+            div(class=["cards__sign-up-form", "js-cards__sign-up-form"])        
                 +sign-up-form({
                     title: "Регистрация аккаунта",
                 })                        
         div(class=["cards__column-2"])
-            div(class=["cards__price-calculation-form"])
+            div(class=["cards__price-calculation-form", "js-cards__price-calculation-form"])
                 +price-calculation-form({
                     roomNumber: 888,
                     roomStatus: "люкс",
@@ -27,13 +27,13 @@ block content
                     currencyType: "₽",
                     discount: 2179,
                 })
-            div(class=["cards__sign-in-form"])
+            div(class=["cards__sign-in-form", "js-cards__sign-in-form"])
                 +sign-in-form({
                     title: "Войти",
                 })
         div(class=["cards__column-3"])
-            div(class=["cards__datepicker js-cards__datepicker"])
-            div(class=["cards__room-info"])
+            div(class=["cards__datepicker", "js-cards__datepicker"])
+            div(class=["cards__room-info", "js-cards__room-info"])
                 +room-info({
                     blockNumber: 1,
                     photosCount: 4,
@@ -45,7 +45,7 @@ block content
                     roomPrice: 9990,
                     currencyType: "₽",
                 })
-            div(class=["cards__room-info"])
+            div(class=["cards__room-info", "js-cards__room-info"])
                 +room-info({
                     blockNumber: 2,
                     photosCount: 1,

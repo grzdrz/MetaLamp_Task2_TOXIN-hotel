@@ -36,8 +36,7 @@ $borderThickness: 0.0625rem;
         background: white;
     }
 
-    &__likes-number_on,
-    &__likes-number_off {
+    &__likes-number {
         z-index: 1;
         width: max-content;
         display: flex;
@@ -61,7 +60,7 @@ $borderThickness: 0.0625rem;
         position: absolute;
         opacity: 0;
 
-        &:checked + label {
+        &:checked + .like-button__label {
             background: $gradient-purple-to-blue;
 
             & > * {
@@ -76,16 +75,16 @@ $borderThickness: 0.0625rem;
                 align-items: center;
             }
 
-            & > .like-button__likes-number_off {
+            & > .like-button__likes-number_unpressed {
                 display: none;
             }
 
-            & > .like-button__likes-number_on {
+            & > .like-button__likes-number_pressed {
                 display: flex;
             }
         }
 
-        &:not(:checked) + label {
+        &:not(:checked) + .like-button__label {
             background: $color-dark-shade-25;
 
             & > * {
@@ -101,11 +100,11 @@ $borderThickness: 0.0625rem;
                 border: 0rem solid transparent;
             }
 
-            & > .like-button__likes-number_off {
+            & > .like-button__likes-number_unpressed {
                 display: flex;
             }
 
-            & > .like-button__likes-number_on {
+            & > .like-button__likes-number_pressed {
                 display: none;
             }
         }
