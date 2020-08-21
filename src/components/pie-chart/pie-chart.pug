@@ -3,7 +3,8 @@ mixin pie-chart(options = {})
         const {
             title = "Впечатления от номера",
             totalValue = 0,
-            legends = "",
+            legends = ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"],
+            gradients = ["yellow-to-peach", "green-to-turquoise", "purple-to-blue", "gray-to-blue"],
         } = options;
 
         function doDeclensionOfWord(number){
@@ -34,5 +35,5 @@ mixin pie-chart(options = {})
             ul(class=["pie-chart__legend"])
                 - for(let i = 0; i < 4; i += 1)
                     li(class=["pie-chart__legend-item"])
-                        div(class=["pie-chart__legend-item-marker", `pie-chart__legend-item-marker_${(i + 1)}`])
+                        div(class=["pie-chart__legend-item-marker", `pie-chart__legend-item-marker_gradient_${gradients[i]}`])
                         p(class=["pie-chart__legend-item-text"])= legends[i]

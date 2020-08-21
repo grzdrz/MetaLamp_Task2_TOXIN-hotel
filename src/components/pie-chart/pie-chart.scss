@@ -95,20 +95,20 @@
         border-radius: 50%;
         background: black;
 
-        &_1 {
-            background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
+        &_gradient_yellow-to-peach {
+            background: $gradient-yellow-to-peach;
         }
 
-        &_2 {
-            background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        &_gradient_green-to-turquoise {
+            background: $gradient-green-to-turquoise;
         }
 
-        &_3 {
-            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        &_gradient_purple-to-blue {
+            background: $gradient-purple-to-blue;
         }
 
-        &_4 {
-            background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
+        &_gradient_gray-to-blue {
+            background: $gradient-gray-to-blue;
         }
     }
 
