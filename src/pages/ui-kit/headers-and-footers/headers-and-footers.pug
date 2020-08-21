@@ -7,16 +7,16 @@ include ../../../components/short-footer/short-footer.pug
 
 block content
     div(class=["headers-and-footers"])
-        div(class=["headers-and-footers__standard-nav-bar-container_first"])
+        div(class=["headers-and-footers__header"])
             +header({
                 isAuthorized: false,
             })
-        div(class=["headers-and-footers__standard-nav-bar-container_second"])
+        div(class=["headers-and-footers__header"])
             +header({
                 isAuthorized: true,
                 userFullName: "Юлий Цезарь",
             })
-        div(class=["headers-and-footers__footer-widgets-and-copyright-bar-container"])
+        div(class=["headers-and-footers__footer"])
             +footer()
-        div(class=["headers-and-footers__footer-creative-container"])
+        div(class=["headers-and-footers__footer"])
             +short-footer()

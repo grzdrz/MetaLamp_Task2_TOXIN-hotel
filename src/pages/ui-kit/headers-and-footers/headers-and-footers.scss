@@ -14,20 +14,13 @@ body {
     padding-bottom: 8.125rem;
     padding-top: 3.875rem;
 
-    &__global-logo-container {
-        margin-left: 1.875rem;
-        margin-bottom: 3.875rem;
-    }
-
-    &__standard-nav-bar-container_first,
-    &__standard-nav-bar-container_second,
-    &__footer-widgets-and-copyright-bar-container,
-    &__footer-creative-container {
+    &__header,
+    &__footer {
         min-width: 100%;
         margin-bottom: 2.5rem;
     }
 
-    &__footer-creative-container {
+    &__footer {
         display: flex;
         justify-content: center;
     }

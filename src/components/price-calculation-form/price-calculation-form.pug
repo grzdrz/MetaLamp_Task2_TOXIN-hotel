@@ -38,12 +38,12 @@ mixin price-calculation-form(options = {})
                 type: "text",
                 value: "Сколько гостей",
                 hasButtons: true,
+                withTotalValue: true,
                 list: [
                     {name: "взрослые", value: 0},
                     {name: "дети", value: 0},
                     {name: "младенцы", value: 0}
                 ],
-                withTotalValue: true,
             })  
         div(class=["price-calculation-form__calculated-data"])
             p(class=["price-calculation-form__main-sum", "js-price-calculation-form__main-sum"] 
@@ -55,14 +55,12 @@ mixin price-calculation-form(options = {})
             p(class=["price-calculation-form__services", "js-price-calculation-form__services"] data-value=discount)
                 span(class=["price-calculation-form__discount-description"]
                     )= `Сбор за услуги: скидка ${formateNumber(discount)}${currencyType}`
-                span(class=["price-calculation-form__services-tooltip", "price-calculation-form__discount-tooltip"])
-                    | i
+                span(class=["price-calculation-form__services-tooltip"]) i
                 span(class=["price-calculation-form__discount-value"]
                     )= `0${currencyType}`
                 span(class=["price-calculation-form__additional-services-description"])
                     | Сбор за дополнительные услуги
-                span(class=["price-calculation-form__services-tooltip", "price-calculation-form__additional-services-tooltip"])
-                    | i                
+                span(class=["price-calculation-form__services-tooltip"]) i                
                 span(class=["price-calculation-form__additional-services-value", "js-price-calculation-form__additional-services-value"]
                     )= `0${currencyType}`
             p(class=["price-calculation-form__total-result"] data-value=0)
