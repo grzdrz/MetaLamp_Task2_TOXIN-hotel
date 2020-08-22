@@ -67,12 +67,11 @@
 
   &__input {
     cursor: pointer;
-    height: 2.5rem;
     padding: 0rem 0rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
 
     &::-webkit-input-placeholder {
       background: $color-dark-shade-75;
@@ -110,7 +109,6 @@
     align-items: center;
     font-family: Material Icons;
     font-size: 1.5rem;
-    line-height: 1.5rem;
     text-align: center;
     color: $color-dark-shade-50;
     background: transparent;

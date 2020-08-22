@@ -8,10 +8,9 @@
 
   &__bottom-border {
     width: 17.5rem;
-    height: 0.0625rem;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-    background: $color-dark-shade-10;
+    border-bottom: 0.0625rem solid rgba(31, 32, 65, 0.1);
 
     &:last-child {
       margin-bottom: 0rem;

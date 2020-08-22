@@ -28,8 +28,7 @@ mixin header(options = {})
             - if(item.hasDropdown)
               span(class=["header__dropdown-arrow"]) expand_more
     - if(isAuthorized)
-      p(class=["header__user-full-name"])
-        span(class=["header__name-text"])= userFullName
+      p(class=["header__user-full-name"])= userFullName
     - else
       div(class=["header__buttons"])
         div(class=["header__sign-in-button"])
@@ -38,6 +37,7 @@ mixin header(options = {})
             isHollow:  true,
             buttonType: "a",
             hasArrow: false,
+            isForHeader: true,
           })
         div(class=["header__sign-up-button"])
           +button({
@@ -45,4 +45,5 @@ mixin header(options = {})
             isHollow:  false,
             buttonType: "a",
             hasArrow: false,
+            isForHeader: true,
           })

@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2.5rem;
+    line-height: 2.5rem;
     text-decoration: none;
   }
 
@@ -50,7 +50,7 @@
 
     &:hover {
       width: inherit;
-      height: inherit;
+      line-height: 2.5rem;
       border-radius: 1.375rem;
       background: $gradient-purple-to-blue-50;
     }
@@ -65,7 +65,7 @@
   &__left-arrow-text,
   &__right-arrow-text {
     width: inherit;
-    height: inherit;
+    line-height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,6 @@
 
   &__link-text {
     width: inherit;
-    height: inherit;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +89,7 @@
     border-radius: 1.375rem;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.937rem;
+    line-height: 2.5rem;
     color: $color-dark-shade-50;
   }
 

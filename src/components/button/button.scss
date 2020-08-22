@@ -5,7 +5,6 @@ $borderRadius: 1.375rem;
 .button {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -44,13 +43,17 @@ $borderRadius: 1.375rem;
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.9375rem;
+    line-height: 2.75rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
 
     &_with-arrow {
       margin: 0rem 2.5rem;
+    }
+
+    &_in-header {
+      line-height: 2.125rem;
     }
   }
 

@@ -52,7 +52,6 @@
 
   &__dropdown-arrow {
     width: 2.625rem;
-    height: 2.625rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +63,7 @@
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 2.625rem;
     transform: rotate(180deg);
 
     &_closed {

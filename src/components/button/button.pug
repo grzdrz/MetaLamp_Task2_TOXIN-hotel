@@ -5,10 +5,12 @@ mixin button(options = {})
       hasArrow = false,
       buttonType = "a",
       text = "click me",
-      url = ""
+      url = "",
+      isForHeader = false,
     } = options;
     const containerClasses = (isHollow ? ["button_hollow"] : []);
     const textClasses = (hasArrow ? ["button__text_with-arrow"] : []);
+    textClasses.push(isForHeader ? "button__text_in-header" : "");
 
   div(class=["button"].concat(containerClasses))
     - if(buttonType === "a")

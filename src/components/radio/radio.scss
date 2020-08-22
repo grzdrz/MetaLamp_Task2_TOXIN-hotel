@@ -36,11 +36,11 @@
     position: absolute;
     opacity: 0;
 
-    &:checked + div {
+    &:checked + .radio__button-image {
       border: 0.0625rem solid $color-purple;
     }
 
-    &:checked + div::after {
+    &:checked + .radio__button-image::after {
       content: '';
       width: 0.75rem;
       height: 0.75rem;
@@ -48,7 +48,7 @@
       border-radius: 50%;
     }
 
-    &:not(:checked) + div {
+    &:not(:checked) + .radio__button-image {
       border: 0.0625rem solid $color-dark-shade-25;
     }
   }

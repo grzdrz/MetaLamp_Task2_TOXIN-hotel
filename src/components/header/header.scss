@@ -128,18 +128,11 @@
     display: flex;
     align-items: center;
     font-size: 0.875rem;
-    line-height: 1.0625rem;
+    line-height: 1.875rem;
     color: $color-dark-shade-50;
     white-space: nowrap;
-
-    &:before {
-      content: '';
-      height: 1.875rem;
-      width: 0.0625rem;
-      background: transparent;
-      border-left: 0.0625rem solid $color-dark-shade-10;
-      padding-right: 1.25rem;
-    }
+    padding-left: 1.25rem;
+    border-left: 0.0625rem solid $color-dark-shade-10;
 
     @media screen and (max-width: 1150px) and (min-width: 768px) {
       order: 1;
@@ -175,7 +168,6 @@
 
   &__sign-in-button {
     width: 5.4375rem;
-    height: 2.125rem;
     margin-right: 1.25rem;
 
     @media screen and (max-width: 550px) {
@@ -186,6 +178,5 @@
 
   &__sign-up-button {
     width: 12.25rem;
-    height: 2.125rem;
   }
 }

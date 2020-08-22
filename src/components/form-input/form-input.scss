@@ -43,11 +43,10 @@
 
   &__input {
     padding: 0rem 0.9375rem;
-    height: 2.625rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     letter-spacing: -0.0125rem;
     color: $color-dark-shade-75;
 
@@ -83,7 +82,6 @@
   &__submitter {
     cursor: pointer;
     min-width: 2.625rem;
-    height: 2.625rem;
     border: 0rem solid transparent;
     background: $gradient-purple-to-blue;
     -webkit-background-clip: text;

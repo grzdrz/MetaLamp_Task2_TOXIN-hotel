@@ -54,12 +54,11 @@
 
   &__input {
     cursor: pointer;
-    height: 2.5rem;
     padding: 0rem 0.9375rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     color: $color-dark-shade-75;
 
     &::-webkit-input-placeholder {
@@ -121,7 +120,6 @@
   &__dropdown-arrow {
     cursor: pointer;
     width: 2.625rem;
-    height: 2.625rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,13 +137,13 @@
 
   &__list-item {
     display: grid;
-    grid-template-columns: auto 5.8125rem;
+    grid-template-columns: auto 5.7525rem;
     align-items: center;
-    padding: 0rem 0.3125rem 0rem 0.9375rem;
+    padding: 0rem 0.3725rem 0rem 0.8375rem;
     margin-bottom: 0.4375rem;
 
     &:first-of-type {
-      margin-top: 0.3rem;
+      margin-top: 0.35rem;
     }
   }
 
@@ -156,7 +154,7 @@
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #1f2041;
+    color: $color-dark-shade-100;
   }
 
   &__item-handler {
@@ -170,14 +168,12 @@
   &__item-plus {
     cursor: pointer;
     width: 1.875rem;
-    height: 1.875rem;
     border-radius: 1.9375rem;
     border: 0.0625rem solid $color-dark-shade-50;
     background: transparent;
     outline: none;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     text-align: center;
     text-transform: uppercase;
     color: $color-dark-shade-100;
