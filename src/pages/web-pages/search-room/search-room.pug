@@ -15,7 +15,7 @@ block content
                     withRange: true, 
                     firstTitle: "даты пребывания в отеле",
                 })
-            div(class=["search-room__dropdown-1", "js-search-room__dropdown"])
+            div(class=["search-room__dropdown_type_guests-counter", "js-search-room__dropdown"])
                 +dropdown({
                     title: "гости",
                     placeholder: "Сколько гостей",
@@ -35,7 +35,7 @@ block content
                     title: "диапазон цены",
                     description: "Стоимость за сутки пребывания в номере",
                 })
-            div(class=["search-room__checkbox-list-1"])
+            div(class=["search-room__checkbox-list_type_simple"])
                 +checkbox-list({
                     title: "Checkbox Buttons",
                     isExpandable: false, 
@@ -46,7 +46,7 @@ block content
                         {isChecked: true, text: "Можно пригласить гостей (до 10 человек)"},
                     ],
                 }) 
-            div(class=["search-room__checkbox-list-2"])
+            div(class=["search-room__checkbox-list_type_rich"])
                 +checkbox-list({
                     title: "доступность",
                     isExpandable: false,
@@ -56,7 +56,7 @@ block content
                         {isChecked: true, text: "Помощник для инвалидов", additionalText: "На 1 этаже вас встретит специалист и проводит до номера."},
                     ],
                 })
-            div(class=["search-room__dropdown-2", "js-search-room__dropdown"])
+            div(class=["search-room__dropdown_type_room-items-counter", "js-search-room__dropdown"])
                 +dropdown({
                     title: "удобства номера",
                     placeholder: "Сколько комнат",
@@ -70,7 +70,7 @@ block content
                     ],
                     withTotalValue: false,
                 })
-            div(class=["search-room__checkbox-list-3", "js-search-room__checkbox_expandable"])
+            div(class=["search-room__checkbox-list_type_expandable", "js-search-room__checkbox_expandable"])
                 +checkbox-list({
                     title: "дополнительные удобства",
                     isExpandable: true,
@@ -91,7 +91,7 @@ block content
             p(class=["search-room__list-title"]) Номера, которые мы для вас подобрали
             div(class=["search-room__list"])
                 - let roomsInfo = require("./data.json").roomsInfo;
-                - for(let i = 0; i < 12; i += 1)
-                    div(class=["search-room__room-info", "js-search-room__room-info", `search-room__room-info_${i}`])
-                        +room-info(roomsInfo[i])
+                - for(let info of roomsInfo)
+                    div(class=["search-room__room-info", "js-search-room__room-info"])
+                        +room-info(info)
             div(class=["search-room__pagination", "js-search-room__pagination"])

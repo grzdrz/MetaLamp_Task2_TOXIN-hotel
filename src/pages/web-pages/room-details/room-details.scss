@@ -44,12 +44,14 @@
         background-size: cover;
     }
 
-    &__small-photo-1 {
-        background-image: url(img/room-888-2.jpg);
-    }
+    &__small-photo {
+        &:first-of-type {
+            background-image: url(img/room-888-2.jpg);
+        }
 
-    &__small-photo-2 {
-        background-image: url(img/room-888-3.jpg);
+        &:last-of-type {
+            background-image: url(img/room-888-3.jpg);
+        }
     }
 
     &__info {
