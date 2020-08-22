@@ -1,6 +1,7 @@
 class RoomInfo {
-    constructor(outerContainerElement) {
+    constructor(outerContainerElement, currentPhotoIndex = 0) {
         this.outerContainerElement = outerContainerElement;
+        this.currentPhotoIndex = currentPhotoIndex;
 
         this._handleLeftArrowClick = this._handleLeftArrowClick.bind(this);
         this._handleRightArrowClick = this._handleRightArrowClick.bind(this);
@@ -15,51 +16,47 @@ class RoomInfo {
             this.leftArrow = this.arrows.querySelector('.js-room-info__arrow-back');
             this.rightArrow = this.arrows.querySelector('.js-room-info__arrow-forward');
         }
+
         this.radioButtons = Array.from(this.containerElement.querySelectorAll('.js-room-info__radio-button'));
+        this.photos = Array.from(this.containerElement.querySelectorAll('.js-room-info__photo'));
 
         if (this.leftArrow && this.rightArrow) {
-            this.leftArrow.onclick = this._handleLeftArrowClick;
-            this.rightArrow.onclick = this._handleRightArrowClick;
+            this.leftArrow.addEventListener('click', this._handleLeftArrowClick);
+            this.rightArrow.addEventListener('click', this._handleRightArrowClick);
+        }
+
+        this._update();
+    }
+
+    _move(isDirectionForward) {
+        if (isDirectionForward) {
+            if (this.currentPhotoIndex === this.radioButtons.length - 1) return;
+            this.currentPhotoIndex += 1;
+        } else {
+            if (this.currentPhotoIndex === 0) return;
+            this.currentPhotoIndex -= 1;
         }
     }
 
-    _handleLeftArrowClick(event) {
-        if (event.currentTarget.disabled) return;
-
-        const checkedButton = this.radioButtons.find((button) => button.checked);
-
-        if (!checkedButton.previousElementSibling) return;
-
-        if (checkedButton.dataset.serialNumber === '2') {
-            checkedButton.checked = false;
-            checkedButton.previousElementSibling.previousElementSibling.checked = true;
-        } else if (checkedButton.dataset.serialNumber === '4') {
-            checkedButton.checked = false;
-            checkedButton.previousElementSibling.previousElementSibling.checked = true;
-        } else {
-            checkedButton.checked = false;
-            checkedButton.previousElementSibling.previousElementSibling.checked = true;
-        }
+    _update() {
+        this.radioButtons.forEach((button, index) => {
+            if (index === this.currentPhotoIndex) button.classList.toggle('room-info__radio-button_checked', true);
+            else button.classList.toggle('room-info__radio-button_checked', false);
+        });
+        this.photos.forEach((photo, index) => {
+            if (index === this.currentPhotoIndex) photo.classList.toggle('room-info__photo_current', true);
+            else photo.classList.toggle('room-info__photo_current', false);
+        });
     }
 
-    _handleRightArrowClick(event) {
-        if (event.currentTarget.disabled) return;
+    _handleLeftArrowClick() {
+        this._move(false);
+        this._update();
+    }
 
-        const checkedButton = this.radioButtons.find((button) => button.checked);
-
-        if (!checkedButton.nextElementSibling.nextElementSibling.matches('.js-room-info__radio-button')) return;
-        if (checkedButton.nextElementSibling.nextElementSibling.disabled) return;
-
-        if (checkedButton.dataset.serialNumber === '3') {
-            checkedButton.checked = false;
-            checkedButton.nextElementSibling.nextElementSibling.checked = true;
-        } else if (checkedButton.dataset.serialNumber === '1') {
-            checkedButton.checked = false;
-            checkedButton.nextElementSibling.nextElementSibling.checked = true;
-        } else {
-            checkedButton.checked = false;
-            checkedButton.nextElementSibling.nextElementSibling.checked = true;
-        }
+    _handleRightArrowClick() {
+        this._move(true);
+        this._update();
     }
 }
 

@@ -13,6 +13,7 @@ mixin room-info(options = {})
             numberOfCheckedStar = 5,
             url = "room-details.html",
         } = options;
+        const iterationCount = (photosCount <= 4 ? 4 : photosCount);
 
         function formateNumber(number) {
             return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, "$1 ");
@@ -21,19 +22,17 @@ mixin room-info(options = {})
     div(class=["room-info", "js-room-info"])
         a(class=["room-info__ref"] href=url)
         div(class=["room-info__photos"])
-            - for(let i = 1; i <= 4; i += 1) {
-                input(class=["room-info__radio-button", "js-room-info__radio-button", `room-info__radio-button_${i}`] 
-                    type="radio"
-                    name=`photo_${blockNumber}`
-                    checked=(i === 1)
-                    disabled=(i > photosCount)
-                    data-serial-number=i)
-                div(class=["room-info__radio-button-image"])
-            - }
-            - for(let i = 0; i < photosCount; i += 1)
-                img(class=["room-info__photo", `room-info__photo_${i + 1}`] 
+            div(class=["room-info__radio-buttons"])
+                - for(let i = 0; i < iterationCount; i += 1) {
+                    p(class=["room-info__radio-button", "js-room-info__radio-button"] data-serial-number=i)
+                        span(class=["room-info__radio-button-image", "js-room-info__radio-button-image"])
+                - }
+            - for(let i = 0; i < iterationCount; i += 1) {
+                img(class=["room-info__photo", "js-room-info__photo"] 
                     src=`./src/components/room-info/img/room-${roomNumber}${photosCount > 1 ? `-${i + 1}` : ""}.png` 
-                    alt="room photo")
+                    alt="room photo"
+                    data-serial-number=i)
+            - }
             - if(photosCount > 1)
                 div(class=["room-info__arrows", "js-room-info__arrows"])
                     button(class=["room-info__arrow-back", "js-room-info__arrow-back"])

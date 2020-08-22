@@ -36,6 +36,10 @@
         opacity: 0;
         border-top-left-radius: 0.25rem;
         border-top-right-radius: 0.25rem;
+
+        &_current {
+            opacity: 1;
+        }
     }
 
     &__arrows {
@@ -89,39 +93,28 @@
         color: white;
     }
 
+    &__radio-buttons {
+        z-index: 2;
+        display: flex;
+        position: absolute;
+        right: 0.9375rem;
+        bottom: 0.9375rem;
+    }
+
     &__radio-button {
-        z-index: 3;
         width: $radioButtonSize;
         height: $radioButtonSize;
-        position: absolute;
-        bottom: 0.9375rem;
-        opacity: 0;
+        margin-left: 0.2rem;
 
-        &:checked + div {
+        &_checked .room-info__radio-button-image {
             background: white;
-        }
-
-        @for $i from 1 through 4 {
-            &_#{$i} {
-                right: 0.9375rem + ($radioButtonSize + 0.1875rem) * (4 - $i);
-
-                & + div {
-                    right: 0.9375rem + ($radioButtonSize + 0.1875rem) * (4 - $i);
-                }
-
-                &:checked ~ .room-info__photo_#{$i} {
-                    opacity: 1;
-                }
-            }
         }
     }
 
     &__radio-button-image {
-        z-index: 2;
-        width: 0.5rem;
-        height: 0.5rem;
+        width: inherit;
+        height: inherit;
         position: absolute;
-        bottom: 0.9375rem;
         border-radius: 50%;
         border: 0.0625rem solid white;
         box-shadow: 0rem 0.3125rem 0.3125rem $color-dark-shade-30;
