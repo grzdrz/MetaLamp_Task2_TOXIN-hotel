@@ -16,8 +16,8 @@
         opacity: 0;
 
         @for $i from 1 through 5 {
-            &-#{$i} {
-                margin-left: 1.5rem * ($i - 1);
+            &:nth-of-type(#{$i}) {
+                margin-left: 1.5rem * (5 - $i);
             }
         }
 
@@ -69,8 +69,8 @@
         position: absolute;
 
         @for $i from 1 through 5 {
-            &-#{$i} {
-                margin-left: 1.5rem * ($i - 1);
+            &:nth-of-type(#{$i}) {
+                margin-left: 1.5rem * (5 - $i);
             }
         }
     }
