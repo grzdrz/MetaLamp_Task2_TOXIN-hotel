@@ -23,6 +23,7 @@ mixin pie-chart(options = {})
 
             return words[2];
         }
+        const listLength = Math.min(legends.length, gradients.length);
 
     div(class=["pie-chart"])
         - if(title)
@@ -33,7 +34,7 @@ mixin pie-chart(options = {})
                 span(class=["pie-chart__inner-text-number"])= totalValue
                 span(class=["pie-chart__inner-text-word"])= doDeclensionOfWord(totalValue)
             ul(class=["pie-chart__legend"])
-                - for(let i = 0; i < 4; i += 1)
+                - for(let i = 0; i < listLength; i += 1)
                     li(class=["pie-chart__legend-item"])
                         div(class=["pie-chart__legend-item-marker", `pie-chart__legend-item-marker_gradient_${gradients[i]}`])
                         p(class=["pie-chart__legend-item-text"])= legends[i]

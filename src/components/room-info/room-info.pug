@@ -10,7 +10,7 @@ mixin room-info(options = {})
             roomPrice = 9990,
             currencyType = "₽",
             reviewsCount = "145",
-            numberOfCheckedStar = 5,
+            checkedStarIndex = 5,
             url = "room-details.html",
         } = options;
         const iterationCount = (photosCount <= 4 ? 4 : photosCount);
@@ -50,7 +50,7 @@ mixin room-info(options = {})
                 div(class=["room-info__star-rating"])
                     +star-rating({
                         blockNumber: blockNumber,
-                        numberOfCheckedStar: numberOfCheckedStar,
+                        checkedStarIndex: checkedStarIndex,
                     })
                 p(class=["room-info__reviews-count"])
                     span(class=["room-info__reviews-count-value"])= `${formateNumber(reviewsCount)}`

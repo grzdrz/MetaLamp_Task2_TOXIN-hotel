@@ -8,7 +8,7 @@
             "roomPrice": 9990,
             "currencyType": "₽",
             "reviewsCount": "145",
-            "numberOfCheckedStar": 5,
+            "checkedStarIndex": 5,
             "url": "room-details.html"
         },
         {
@@ -18,7 +18,7 @@
             "roomPrice": 9990,
             "currencyType": "₽",
             "reviewsCount": "65",
-            "numberOfCheckedStar": 4,
+            "checkedStarIndex": 4,
             "url": "room-details.html"
         },
         {
@@ -29,7 +29,7 @@
             "roomPrice": 8500,
             "currencyType": "₽",
             "reviewsCount": "35",
-            "numberOfCheckedStar": 3,
+            "checkedStarIndex": 3,
             "url": "room-details.html"
         },
         {
@@ -39,7 +39,7 @@
             "roomPrice": 7300,
             "currencyType": "₽",
             "reviewsCount": "19",
-            "numberOfCheckedStar": 5,
+            "checkedStarIndex": 5,
             "url": "room-details.html"
         },
         {
@@ -49,7 +49,7 @@
             "roomPrice": 6000,
             "currencyType": "₽",
             "reviewsCount": "44",
-            "numberOfCheckedStar": 4,
+            "checkedStarIndex": 4,
             "url": "room-details.html"
         },
         {
@@ -59,7 +59,7 @@
             "roomPrice": 5800,
             "currencyType": "₽",
             "reviewsCount": "56",
-            "numberOfCheckedStar": 3,
+            "checkedStarIndex": 3,
             "url": "room-details.html"
         },
         {
@@ -69,7 +69,7 @@
             "roomPrice": 5500,
             "currencyType": "₽",
             "reviewsCount": "45",
-            "numberOfCheckedStar": 5,
+            "checkedStarIndex": 5,
             "url": "room-details.html"
         },
         {
@@ -79,7 +79,7 @@
             "roomPrice": 5300,
             "currencyType": "₽",
             "reviewsCount": "39",
-            "numberOfCheckedStar": 4,
+            "checkedStarIndex": 4,
             "url": "room-details.html"
         },
         {
@@ -89,7 +89,7 @@
             "roomPrice": 5000,
             "currencyType": "₽",
             "reviewsCount": "77",
-            "numberOfCheckedStar": 3,
+            "checkedStarIndex": 3,
             "url": "room-details.html"
         },
         {
@@ -99,7 +99,7 @@
             "roomPrice": 5000,
             "currencyType": "₽",
             "reviewsCount": "25",
-            "numberOfCheckedStar": 5,
+            "checkedStarIndex": 5,
             "url": "room-details.html"
         },
         {
@@ -109,7 +109,7 @@
             "roomPrice": 5000,
             "currencyType": "₽",
             "reviewsCount": "15",
-            "numberOfCheckedStar": 3,
+            "checkedStarIndex": 3,
             "url": "room-details.html"
         },
         {
@@ -119,7 +119,7 @@
             "roomPrice": 5000,
             "currencyType": "₽",
             "reviewsCount": "55",
-            "numberOfCheckedStar": 3,
+            "checkedStarIndex": 3,
             "url": "room-details.html"
         }
     ]

@@ -19,8 +19,8 @@ include ../../../components/range-slider/range-slider.pug
 
 block content
     div(class=["form-elements"])
-        div(class=["form-elements__column-1"])
-            div(class=["form-elements__form-input-1"])
+        div(class=["form-elements__column-left"])
+            div(class=["form-elements__form-input_type_default"])
                 +form-input({
                     title: "text field",
                     additionalTitle: "default",
@@ -30,7 +30,7 @@ block content
                     value: "",
                     hasSubmitButton: false
                 })
-            div(class=["form-elements__form-input-2"])
+            div(class=["form-elements__form-input_type_hover"])
                 +form-input({
                     title: "text field",
                     additionalTitle: "hover / focus",
@@ -40,7 +40,7 @@ block content
                     value: "This is pretty awesome",
                     hasSubmitButton: false
                 })
-            div(class=["form-elements__dropdown-1 js-form-elements__dropdown"]) 
+            div(class=["form-elements__dropdown_type_default js-form-elements__dropdown"]) 
                 +dropdown({
                     title: "dropdown",
                     additionalTitle: "default",
@@ -56,26 +56,26 @@ block content
                         {name: "младенцы", value: 0}
                     ],
                 })
-            div(class=["form-elements__calendar-1 js-form-elements__calendar"])
+            div(class=["form-elements__calendar_type_default js-form-elements__calendar"])
                 +calendar({
                     isDouble: false,
                     withRange: false, 
                     firstTitle: "masked text field",
                     additionalTitle: "default",
                 })
-            div(class=["form-elements__calendar-2 js-form-elements__calendar"])
+            div(class=["form-elements__calendar_type_double js-form-elements__calendar"])
                 +calendar({
                     isDouble: true,
                     firstTitle: "date Dropdown",
                     secondTitle: "date Dropdown",
                 })
-            div(class=["form-elements__calendar-3 js-form-elements__calendar"])
+            div(class=["form-elements__calendar_type_single-with-range js-form-elements__calendar"])
                 +calendar({
                     isDouble: false,
                     withRange: true, 
                     firstTitle: "filter date dropdown",
                 })
-            div(class=["form-elements__form-input-3"])
+            div(class=["form-elements__form-input_type_subscription"])
                 +form-input({
                     title: "subscription text field",
                     placeholder: "Email",
@@ -84,8 +84,8 @@ block content
                     value: "",
                     hasSubmitButton: true
                 })
-        div(class=["form-elements__column-2"])
-            div(class=["form-elements__checkbox-1"]) 
+        div(class=["form-elements__column-central"])
+            div(class=["form-elements__checkbox_type_simple"]) 
                 +checkbox-list({
                     title: "Checkbox Buttons",
                     isExpandable: false, 
@@ -107,72 +107,72 @@ block content
                     name: "gender",
                 })
             div(class=["form-elements__toggles"])
-                p(class=["form-elements__toggle-title"]) toggle 
-                div(class=["form-elements__toggle-1"])
+                p(class=["form-elements__toggles-title"]) toggle 
+                div(class=["form-elements__toggle"])
                     +toggle({
                         text: "Получать спецпредложения",
                         isChecked: true,
                         name: "special-offer",
                     })
-                div(class=["form-elements__toggle-2"]) 
+                div(class=["form-elements__toggle"]) 
                     +toggle({
                         text: "Получать спецпредложения",
                         isChecked: false,
                         name: "special-offer",
                     })
             div(class=["form-elements__like-buttons"])
-                p(class=["form-elements__like-button-title"]) like button
-                div(class=["form-elements__like-button-1"])
+                p(class=["form-elements__like-buttons-title"]) like button
+                div(class=["form-elements__like-button"])
                     +like-button({
                         number: 2,
                         isChecked: false,
                     })
-                div(class=["form-elements__like-button-2"])
+                div(class=["form-elements__like-button"])
                     +like-button({
                         number: 12,
                         isChecked: true,
                     })
             div(class=["form-elements__star-ratings"])
-                p(class=["form-elements__star-rating-title"]) rate button
-                div(class=["form-elements__star-rating-1"])
+                p(class=["form-elements__star-ratings-title"]) rate button
+                div(class=["form-elements__star-rating"])
                     +star-rating({
                         blockNumber: 1,
-                        numberOfCheckedStar: 4,
+                        checkedStarIndex: 4,
                     })
-                div(class=["form-elements__star-rating-2"])
+                div(class=["form-elements__star-rating"])
                     +star-rating({
                         blockNumber: 2,
-                        numberOfCheckedStar: 5,
+                        checkedStarIndex: 5,
                     })
-        div(class=["form-elements__column-3"]) 
+        div(class=["form-elements__column-right"]) 
             div(class=["form-elements__range-slider js-form-elements__range-slider"])
                 +range-slider({
                     title: "range slider"
                 })
             div(class=["form-elements__buttons"])
                 p(class=["form-elements__buttons-title"]) buttons
-                div(class=["form-elements__button-1"])
+                div(class=["form-elements__button_type_simple"])
                     +button({
                         text: "click me",
                         isHollow:  false,
                         buttonType: "button",
                         hasArrow: false,
                     })
-                div(class=["form-elements__button-2"])
+                div(class=["form-elements__button_type_simple-hover"])
                     +button({
                         text: "click me",
                         isHollow:  false,
                         buttonType: "button",
                         hasArrow: false,              
                     })   
-                div(class=["form-elements__button-3"])
+                div(class=["form-elements__button_type_hollow"])
                     +button({
                         text: "click me",
                         isHollow:  true,
                         buttonType: "a",
                         hasArrow: false,               
                     })
-                div(class=["form-elements__button-4"])
+                div(class=["form-elements__button_type_hollow-hover"])
                     +button({
                         text: "click me",
                         isHollow:  true,
@@ -180,15 +180,15 @@ block content
                         hasArrow: false,               
                     }) 
             div(class=["form-elements__text-buttons"])
-                div(class=["form-elements__button-5"])
+                div(class=["form-elements__text-button"])
                     +text-button({
                         text: "click me",            
                     })
-                div(class=["form-elements__button-6"])
+                div(class=["form-elements__text-button"])
                     +text-button({
                         text: "click me",             
                     }) 
-            div(class=["form-elements__button-7"])
+            div(class=["form-elements__button_type_submit"])
                 +button({
                     text: "перейти к оплате",
                     isHollow:  false,
@@ -196,9 +196,9 @@ block content
                     hasArrow: true,               
                 })
             div(class=["form-elements__pagination js-form-elements__pagination"])
-        div(class=["form-elements__row-1"])
-            div(class=["form-elements__dropdown-2-3"])
-                div(class=["form-elements__dropdown-2 js-form-elements__dropdown"]) 
+        div(class=["form-elements__row-top"])
+            div(class=["form-elements__dropdowns"])
+                div(class=["form-elements__dropdown_type_for-filter js-form-elements__dropdown"]) 
                     +dropdown({
                         title: "dropdown",
                         additionalTitle: "default",
@@ -213,7 +213,7 @@ block content
                             {name: "ванные комнаты", value: 0}
                         ],
                     }) 
-                div(class=["form-elements__dropdown-3 js-form-elements__dropdown"]) 
+                div(class=["form-elements__dropdown_type_for-filter js-form-elements__dropdown"]) 
                     +dropdown({
                         title: "dropdown",
                         additionalTitle: "expanded",
@@ -228,7 +228,7 @@ block content
                             {name: "ванные комнаты", value: 0}
                         ],
                     })
-            div(class=["form-elements__dropdown-4 js-form-elements__dropdown"]) 
+            div(class=["form-elements__dropdown_type_guests-counter js-form-elements__dropdown"]) 
                 +dropdown({
                     title: "dropdown",
                     additionalTitle: "",
@@ -244,7 +244,7 @@ block content
                         {name: "младенцы", value: 0}
                     ],
                 })
-            div(class=["form-elements__dropdown-5 js-form-elements__dropdown"]) 
+            div(class=["form-elements__dropdown_type_guests-counter js-form-elements__dropdown"]) 
                 +dropdown({
                     title: "dropdown",
                     additionalTitle: "",
@@ -260,9 +260,9 @@ block content
                         {name: "младенцы", value: 0}
                     ],
                 })
-        div(class=["form-elements__row-2"])
-            div(class=["form-elements__checkbox-2-3"])
-                div(class=["form-elements__checkbox-2 js-form-elements__checkbox_expandable"]) 
+        div(class=["form-elements__row-central"])
+            div(class=["form-elements__checkboxes"])
+                div(class=["form-elements__checkbox_type_expandable js-form-elements__checkbox_expandable"]) 
                     +checkbox-list({
                         title: "expandable checkbox list",
                         isExpandable: true,
@@ -279,7 +279,7 @@ block content
                             {isChecked: false, text: "Шампунь"}
                         ],
                     })
-                div(class=["form-elements__checkbox-3 js-form-elements__checkbox_expandable"]) 
+                div(class=["form-elements__checkbox_type_expandable js-form-elements__checkbox_expandable"]) 
                     +checkbox-list({
                         title: "expandable checkbox list",
                         isExpandable: true,
@@ -296,7 +296,7 @@ block content
                             {isChecked: false, text: "Шампунь"}
                         ],
                     })
-            div(class=["form-elements__checkbox-4"]) 
+            div(class=["form-elements__checkbox_type_rich"]) 
                 +checkbox-list({
                     title: "rich Checkbox Buttons",
                     isExpandable: false,
@@ -315,7 +315,7 @@ block content
                         "Время прибытия — после 13:00, а выезд до 12:00",
                     ],
                 })
-        div(class=["form-elements__row-3"])
+        div(class=["form-elements__row-bottom"])
             div(class=["form-elements__room-advantages"])
                 +room-advantages({
                     details: [
@@ -333,7 +333,7 @@ block content
                             fullName: "Мурад Сарафанов",
                             numberOfDaysSinceComment: "5 дней назад",
                             likeButtonOptions: {
-                                number: 12,
+                                number: 11,
                                 isChecked: true,
                             },
                             comment: `Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. 
