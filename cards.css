@@ -685,17 +685,12 @@ body {
 
 .logo {
   display: flex;
-  height: max-content;
   margin-left: 1.875rem;
   padding-top: 1.875rem; }
-  .logo__image {
-    width: 3rem;
-    height: 3rem; }
 
 .button {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -729,12 +724,14 @@ body {
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.9375rem;
+    line-height: 2.75rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
+    .button__text_in-header {
+      line-height: 2.125rem; }
   .button__arrow {
     cursor: pointer;
     right: 0rem;
@@ -787,11 +784,10 @@ body {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
     padding: 0rem 0.9375rem;
-    height: 2.625rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     letter-spacing: -0.0125rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
@@ -819,7 +815,6 @@ body {
   .form-input__submitter {
     cursor: pointer;
     min-width: 2.625rem;
-    height: 2.625rem;
     border: 0rem solid transparent;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
@@ -856,7 +851,6 @@ body {
       margin-bottom: 0.625rem; }
   .sign-in-form__submit-button {
     width: 100%;
-    height: 2.75rem;
     margin-bottom: 1.875rem; }
   .sign-in-form__account-create-field {
     width: 100%;
@@ -871,8 +865,7 @@ body {
     line-height: 1.125rem;
     color: black; }
   .sign-in-form__create-button {
-    width: 30.9375%;
-    height: 2.75rem; }
+    width: 30.9375%; }
 
 .calendar {
   width: 100%;
@@ -918,12 +911,11 @@ body {
       width: 100%; }
   .calendar__input {
     cursor: pointer;
-    height: 2.5rem;
     padding: 0rem 0rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
@@ -953,7 +945,6 @@ body {
     align-items: center;
     font-family: Material Icons;
     font-size: 1.5rem;
-    line-height: 1.5rem;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
@@ -1246,12 +1237,11 @@ body {
       border-bottom-right-radius: 0rem; }
   .dropdown__input {
     cursor: pointer;
-    height: 2.5rem;
     padding: 0rem 0.9375rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     overflow: hidden;
@@ -1298,7 +1288,6 @@ body {
   .dropdown__dropdown-arrow {
     cursor: pointer;
     width: 2.625rem;
-    height: 2.625rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1314,12 +1303,12 @@ body {
     line-height: 1.5rem; }
   .dropdown__list-item {
     display: grid;
-    grid-template-columns: auto 5.8125rem;
+    grid-template-columns: auto 5.7525rem;
     align-items: center;
-    padding: 0rem 0.3125rem 0rem 0.9375rem;
+    padding: 0rem 0.3725rem 0rem 0.8375rem;
     margin-bottom: 0.4375rem; }
     .dropdown__list-item:first-of-type {
-      margin-top: 0.3rem; }
+      margin-top: 0.35rem; }
   .dropdown__item-name {
     overflow: auto;
     word-wrap: break-word;
@@ -1336,14 +1325,12 @@ body {
   .dropdown__item-minus, .dropdown__item-plus {
     cursor: pointer;
     width: 1.875rem;
-    height: 1.875rem;
     border-radius: 1.9375rem;
     border: 0.0625rem solid rgba(31, 32, 65, 0.5);
     background: transparent;
     outline: none;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
@@ -1383,7 +1370,6 @@ body {
 .button {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -1417,12 +1403,14 @@ body {
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.9375rem;
+    line-height: 2.75rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
+    .button__text_in-header {
+      line-height: 2.125rem; }
   .button__arrow {
     cursor: pointer;
     right: 0rem;
@@ -1470,13 +1458,11 @@ body {
     width: 100%;
     margin-bottom: 1.9375rem; }
   .room-finder-form__submit-button {
-    width: 100%;
-    height: 2.75rem; }
+    width: 100%; }
 
 .button {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -1510,12 +1496,14 @@ body {
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.9375rem;
+    line-height: 2.75rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
+    .button__text_in-header {
+      line-height: 2.125rem; }
   .button__arrow {
     cursor: pointer;
     right: 0rem;
@@ -1581,12 +1569,11 @@ body {
       width: 100%; }
   .calendar__input {
     cursor: pointer;
-    height: 2.5rem;
     padding: 0rem 0rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
@@ -1616,7 +1603,6 @@ body {
     align-items: center;
     font-family: Material Icons;
     font-size: 1.5rem;
-    line-height: 1.5rem;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
@@ -1909,12 +1895,11 @@ body {
       border-bottom-right-radius: 0rem; }
   .dropdown__input {
     cursor: pointer;
-    height: 2.5rem;
     padding: 0rem 0.9375rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     overflow: hidden;
@@ -1961,7 +1946,6 @@ body {
   .dropdown__dropdown-arrow {
     cursor: pointer;
     width: 2.625rem;
-    height: 2.625rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1977,12 +1961,12 @@ body {
     line-height: 1.5rem; }
   .dropdown__list-item {
     display: grid;
-    grid-template-columns: auto 5.8125rem;
+    grid-template-columns: auto 5.7525rem;
     align-items: center;
-    padding: 0rem 0.3125rem 0rem 0.9375rem;
+    padding: 0rem 0.3725rem 0rem 0.8375rem;
     margin-bottom: 0.4375rem; }
     .dropdown__list-item:first-of-type {
-      margin-top: 0.3rem; }
+      margin-top: 0.35rem; }
   .dropdown__item-name {
     overflow: auto;
     word-wrap: break-word;
@@ -1999,14 +1983,12 @@ body {
   .dropdown__item-minus, .dropdown__item-plus {
     cursor: pointer;
     width: 1.875rem;
-    height: 1.875rem;
     border-radius: 1.9375rem;
     border: 0.0625rem solid rgba(31, 32, 65, 0.5);
     background: transparent;
     outline: none;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
@@ -2174,8 +2156,7 @@ body {
     justify-self: end;
     white-space: nowrap; }
   .price-calculation-form__submit-button {
-    width: 100%;
-    height: 2.75rem; }
+    width: 100%; }
 
 .form-input {
   width: 100%; }
@@ -2208,11 +2189,10 @@ body {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
     padding: 0rem 0.9375rem;
-    height: 2.625rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     letter-spacing: -0.0125rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
@@ -2240,7 +2220,6 @@ body {
   .form-input__submitter {
     cursor: pointer;
     min-width: 2.625rem;
-    height: 2.625rem;
     border: 0rem solid transparent;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
@@ -2279,15 +2258,15 @@ body {
     height: 1.25rem;
     position: absolute;
     opacity: 0; }
-    .radio__input:checked + div {
+    .radio__input:checked + .radio__button-image {
       border: 0.0625rem solid #bc9cff; }
-    .radio__input:checked + div::after {
+    .radio__input:checked + .radio__button-image::after {
       content: '';
       width: 0.75rem;
       height: 0.75rem;
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
-    .radio__input:not(:checked) + div {
+    .radio__input:not(:checked) + .radio__button-image {
       border: 0.0625rem solid rgba(31, 32, 65, 0.25); }
   .radio__text {
     display: flex;
@@ -2391,12 +2370,11 @@ body {
       width: 100%; }
   .calendar__input {
     cursor: pointer;
-    height: 2.5rem;
     padding: 0rem 0rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
@@ -2426,7 +2404,6 @@ body {
     align-items: center;
     font-family: Material Icons;
     font-size: 1.5rem;
-    line-height: 1.5rem;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
@@ -2684,7 +2661,6 @@ body {
 .button {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -2718,12 +2694,14 @@ body {
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.9375rem;
+    line-height: 2.75rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
+    .button__text_in-header {
+      line-height: 2.125rem; }
   .button__arrow {
     cursor: pointer;
     right: 0rem;
@@ -2781,7 +2759,6 @@ body {
     margin-bottom: 1.4375rem; }
   .sign-up-form__submit-button {
     width: 100%;
-    height: 2.75rem;
     margin-bottom: 1.875rem; }
   .sign-up-form__sign-in-field {
     width: 100%;
@@ -2796,8 +2773,7 @@ body {
     line-height: 1.125rem;
     color: black; }
   .sign-up-form__sign-in-button {
-    width: 30.9375%;
-    height: 2.75rem; }
+    width: 30.9375%; }
 
 .star-rating {
   width: 7.5rem;

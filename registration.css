@@ -684,7 +684,6 @@ body {
     border: none; }
 
 .colored-logo {
-  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-self: end; }
@@ -694,7 +693,6 @@ body {
 .button {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -728,12 +726,14 @@ body {
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.9375rem;
+    line-height: 2.75rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
+    .button__text_in-header {
+      line-height: 2.125rem; }
   .button__arrow {
     cursor: pointer;
     right: 0rem;
@@ -854,16 +854,11 @@ body {
     display: flex;
     align-items: center;
     font-size: 0.875rem;
-    line-height: 1.0625rem;
+    line-height: 1.875rem;
     color: rgba(31, 32, 65, 0.5);
-    white-space: nowrap; }
-    .header__user-full-name:before {
-      content: '';
-      height: 1.875rem;
-      width: 0.0625rem;
-      background: transparent;
-      border-left: 0.0625rem solid rgba(31, 32, 65, 0.1);
-      padding-right: 1.25rem; }
+    white-space: nowrap;
+    padding-left: 1.25rem;
+    border-left: 0.0625rem solid rgba(31, 32, 65, 0.1); }
     @media screen and (max-width: 1150px) and (min-width: 768px) {
       .header__user-full-name {
         order: 1;
@@ -893,15 +888,13 @@ body {
         margin-top: 1.25rem; } }
   .header__sign-in-button {
     width: 5.4375rem;
-    height: 2.125rem;
     margin-right: 1.25rem; }
     @media screen and (max-width: 550px) {
       .header__sign-in-button {
         margin-right: 0rem;
         margin-bottom: 0.625rem; } }
   .header__sign-up-button {
-    width: 12.25rem;
-    height: 2.125rem; }
+    width: 12.25rem; }
 
 .form-input {
   width: 100%; }
@@ -934,11 +927,10 @@ body {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
     padding: 0rem 0.9375rem;
-    height: 2.625rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     letter-spacing: -0.0125rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
@@ -966,7 +958,6 @@ body {
   .form-input__submitter {
     cursor: pointer;
     min-width: 2.625rem;
-    height: 2.625rem;
     border: 0rem solid transparent;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
@@ -1005,15 +996,15 @@ body {
     height: 1.25rem;
     position: absolute;
     opacity: 0; }
-    .radio__input:checked + div {
+    .radio__input:checked + .radio__button-image {
       border: 0.0625rem solid #bc9cff; }
-    .radio__input:checked + div::after {
+    .radio__input:checked + .radio__button-image::after {
       content: '';
       width: 0.75rem;
       height: 0.75rem;
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
-    .radio__input:not(:checked) + div {
+    .radio__input:not(:checked) + .radio__button-image {
       border: 0.0625rem solid rgba(31, 32, 65, 0.25); }
   .radio__text {
     display: flex;
@@ -1117,12 +1108,11 @@ body {
       width: 100%; }
   .calendar__input {
     cursor: pointer;
-    height: 2.5rem;
     padding: 0rem 0rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
@@ -1152,7 +1142,6 @@ body {
     align-items: center;
     font-family: Material Icons;
     font-size: 1.5rem;
-    line-height: 1.5rem;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
@@ -1410,7 +1399,6 @@ body {
 .button {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -1444,12 +1432,14 @@ body {
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.9375rem;
+    line-height: 2.75rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
+    .button__text_in-header {
+      line-height: 2.125rem; }
   .button__arrow {
     cursor: pointer;
     right: 0rem;
@@ -1507,7 +1497,6 @@ body {
     margin-bottom: 1.4375rem; }
   .sign-up-form__submit-button {
     width: 100%;
-    height: 2.75rem;
     margin-bottom: 1.875rem; }
   .sign-up-form__sign-in-field {
     width: 100%;
@@ -1522,8 +1511,7 @@ body {
     line-height: 1.125rem;
     color: black; }
   .sign-up-form__sign-in-button {
-    width: 30.9375%;
-    height: 2.75rem; }
+    width: 30.9375%; }
 
 .form-input {
   width: 100%; }
@@ -1556,11 +1544,10 @@ body {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
     padding: 0rem 0.9375rem;
-    height: 2.625rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     letter-spacing: -0.0125rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
@@ -1588,7 +1575,6 @@ body {
   .form-input__submitter {
     cursor: pointer;
     min-width: 2.625rem;
-    height: 2.625rem;
     border: 0rem solid transparent;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
@@ -1600,7 +1586,6 @@ body {
     line-height: 1.5rem; }
 
 .colored-logo {
-  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-self: end; }

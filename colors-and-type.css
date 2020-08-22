@@ -62,12 +62,8 @@ body {
 
 .logo {
   display: flex;
-  height: max-content;
   margin-left: 1.875rem;
   padding-top: 1.875rem; }
-  .logo__image {
-    width: 3rem;
-    height: 3rem; }
 
 .font-demo {
   display: flex;

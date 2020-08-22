@@ -684,7 +684,6 @@ body {
     border: none; }
 
 .colored-logo {
-  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-self: end; }
@@ -694,7 +693,6 @@ body {
 .button {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -728,12 +726,14 @@ body {
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.9375rem;
+    line-height: 2.75rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
+    .button__text_in-header {
+      line-height: 2.125rem; }
   .button__arrow {
     cursor: pointer;
     right: 0rem;
@@ -854,16 +854,11 @@ body {
     display: flex;
     align-items: center;
     font-size: 0.875rem;
-    line-height: 1.0625rem;
+    line-height: 1.875rem;
     color: rgba(31, 32, 65, 0.5);
-    white-space: nowrap; }
-    .header__user-full-name:before {
-      content: '';
-      height: 1.875rem;
-      width: 0.0625rem;
-      background: transparent;
-      border-left: 0.0625rem solid rgba(31, 32, 65, 0.1);
-      padding-right: 1.25rem; }
+    white-space: nowrap;
+    padding-left: 1.25rem;
+    border-left: 0.0625rem solid rgba(31, 32, 65, 0.1); }
     @media screen and (max-width: 1150px) and (min-width: 768px) {
       .header__user-full-name {
         order: 1;
@@ -893,15 +888,13 @@ body {
         margin-top: 1.25rem; } }
   .header__sign-in-button {
     width: 5.4375rem;
-    height: 2.125rem;
     margin-right: 1.25rem; }
     @media screen and (max-width: 550px) {
       .header__sign-in-button {
         margin-right: 0rem;
         margin-bottom: 0.625rem; } }
   .header__sign-up-button {
-    width: 12.25rem;
-    height: 2.125rem; }
+    width: 12.25rem; }
 
 .room-advantages {
   width: max-content;
@@ -910,10 +903,9 @@ body {
   flex-direction: column; }
   .room-advantages__bottom-border {
     width: 17.5rem;
-    height: 0.0625rem;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-    background: rgba(31, 32, 65, 0.1); }
+    border-bottom: 0.0625rem solid rgba(31, 32, 65, 0.1); }
     .room-advantages__bottom-border:last-child {
       margin-bottom: 0rem; }
   .room-advantages__detail {
@@ -978,7 +970,6 @@ body {
   position: relative; }
   .like-button__label {
     width: max-content;
-    height: 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -990,7 +981,8 @@ body {
     text-decoration: none;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     border-radius: 1.375rem;
-    outline: none; }
+    outline: none;
+    line-height: 1.25rem; }
   .like-button__background {
     position: absolute;
     left: 0rem;
@@ -1018,7 +1010,7 @@ body {
     cursor: pointer;
     z-index: 2;
     width: 100%;
-    height: 1.25rem;
+    height: 100%;
     position: absolute;
     opacity: 0; }
     .like-button__input:checked + .like-button__label {
@@ -1053,7 +1045,7 @@ body {
   .like-button__like-symbol {
     z-index: 2;
     width: 1rem;
-    height: 1rem;
+    line-height: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1093,7 +1085,6 @@ body {
       margin-bottom: 0rem; }
   .room-reviews__user-avatar {
     width: 2.9375rem;
-    height: 2.9375rem;
     margin-bottom: 0.75rem;
     border: 0.125rem solid white;
     border-radius: 50%;
@@ -1123,7 +1114,6 @@ body {
 .button {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -1157,12 +1147,14 @@ body {
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.9375rem;
+    line-height: 2.75rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
+    .button__text_in-header {
+      line-height: 2.125rem; }
   .button__arrow {
     cursor: pointer;
     right: 0rem;
@@ -1228,12 +1220,11 @@ body {
       width: 100%; }
   .calendar__input {
     cursor: pointer;
-    height: 2.5rem;
     padding: 0rem 0rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
@@ -1263,7 +1254,6 @@ body {
     align-items: center;
     font-family: Material Icons;
     font-size: 1.5rem;
-    line-height: 1.5rem;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
@@ -1556,12 +1546,11 @@ body {
       border-bottom-right-radius: 0rem; }
   .dropdown__input {
     cursor: pointer;
-    height: 2.5rem;
     padding: 0rem 0.9375rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     overflow: hidden;
@@ -1608,7 +1597,6 @@ body {
   .dropdown__dropdown-arrow {
     cursor: pointer;
     width: 2.625rem;
-    height: 2.625rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1624,12 +1612,12 @@ body {
     line-height: 1.5rem; }
   .dropdown__list-item {
     display: grid;
-    grid-template-columns: auto 5.8125rem;
+    grid-template-columns: auto 5.7525rem;
     align-items: center;
-    padding: 0rem 0.3125rem 0rem 0.9375rem;
+    padding: 0rem 0.3725rem 0rem 0.8375rem;
     margin-bottom: 0.4375rem; }
     .dropdown__list-item:first-of-type {
-      margin-top: 0.3rem; }
+      margin-top: 0.35rem; }
   .dropdown__item-name {
     overflow: auto;
     word-wrap: break-word;
@@ -1646,14 +1634,12 @@ body {
   .dropdown__item-minus, .dropdown__item-plus {
     cursor: pointer;
     width: 1.875rem;
-    height: 1.875rem;
     border-radius: 1.9375rem;
     border: 0.0625rem solid rgba(31, 32, 65, 0.5);
     background: transparent;
     outline: none;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
@@ -1821,8 +1807,7 @@ body {
     justify-self: end;
     white-space: nowrap; }
   .price-calculation-form__submit-button {
-    width: 100%;
-    height: 2.75rem; }
+    width: 100%; }
 
 .form-input {
   width: 100%; }
@@ -1855,11 +1840,10 @@ body {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
     padding: 0rem 0.9375rem;
-    height: 2.625rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     letter-spacing: -0.0125rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
@@ -1887,7 +1871,6 @@ body {
   .form-input__submitter {
     cursor: pointer;
     min-width: 2.625rem;
-    height: 2.625rem;
     border: 0rem solid transparent;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
@@ -1899,7 +1882,6 @@ body {
     line-height: 1.5rem; }
 
 .colored-logo {
-  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-self: end; }

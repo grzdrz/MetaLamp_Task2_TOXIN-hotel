@@ -1361,12 +1361,8 @@ Build date: 2019-12-19 16:51:02
 
 .logo {
   display: flex;
-  height: max-content;
   margin-left: 1.875rem;
   padding-top: 1.875rem; }
-  .logo__image {
-    width: 3rem;
-    height: 3rem; }
 
 .form-input {
   width: 100%; }
@@ -1399,11 +1395,10 @@ Build date: 2019-12-19 16:51:02
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
     padding: 0rem 0.9375rem;
-    height: 2.625rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     letter-spacing: -0.0125rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
@@ -1431,7 +1426,6 @@ Build date: 2019-12-19 16:51:02
   .form-input__submitter {
     cursor: pointer;
     min-width: 2.625rem;
-    height: 2.625rem;
     border: 0rem solid transparent;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
@@ -1480,12 +1474,11 @@ Build date: 2019-12-19 16:51:02
       border-bottom-right-radius: 0rem; }
   .dropdown__input {
     cursor: pointer;
-    height: 2.5rem;
     padding: 0rem 0.9375rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     overflow: hidden;
@@ -1532,7 +1525,6 @@ Build date: 2019-12-19 16:51:02
   .dropdown__dropdown-arrow {
     cursor: pointer;
     width: 2.625rem;
-    height: 2.625rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1548,12 +1540,12 @@ Build date: 2019-12-19 16:51:02
     line-height: 1.5rem; }
   .dropdown__list-item {
     display: grid;
-    grid-template-columns: auto 5.8125rem;
+    grid-template-columns: auto 5.7525rem;
     align-items: center;
-    padding: 0rem 0.3125rem 0rem 0.9375rem;
+    padding: 0rem 0.3725rem 0rem 0.8375rem;
     margin-bottom: 0.4375rem; }
     .dropdown__list-item:first-of-type {
-      margin-top: 0.3rem; }
+      margin-top: 0.35rem; }
   .dropdown__item-name {
     overflow: auto;
     word-wrap: break-word;
@@ -1570,14 +1562,12 @@ Build date: 2019-12-19 16:51:02
   .dropdown__item-minus, .dropdown__item-plus {
     cursor: pointer;
     width: 1.875rem;
-    height: 1.875rem;
     border-radius: 1.9375rem;
     border: 0.0625rem solid rgba(31, 32, 65, 0.5);
     background: transparent;
     outline: none;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     text-align: center;
     text-transform: uppercase;
     color: #1f2041; }
@@ -1645,7 +1635,6 @@ Build date: 2019-12-19 16:51:02
     word-break: break-word; }
   .checkbox-list__dropdown-arrow {
     width: 2.625rem;
-    height: 2.625rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1657,7 +1646,7 @@ Build date: 2019-12-19 16:51:02
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 2.625rem;
     transform: rotate(180deg); }
     .checkbox-list__dropdown-arrow_closed {
       transform: none; }
@@ -1761,15 +1750,15 @@ Build date: 2019-12-19 16:51:02
     height: 1.25rem;
     position: absolute;
     opacity: 0; }
-    .radio__input:checked + div {
+    .radio__input:checked + .radio__button-image {
       border: 0.0625rem solid #bc9cff; }
-    .radio__input:checked + div::after {
+    .radio__input:checked + .radio__button-image::after {
       content: '';
       width: 0.75rem;
       height: 0.75rem;
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
-    .radio__input:not(:checked) + div {
+    .radio__input:not(:checked) + .radio__button-image {
       border: 0.0625rem solid rgba(31, 32, 65, 0.25); }
   .radio__text {
     display: flex;
@@ -1907,7 +1896,6 @@ Build date: 2019-12-19 16:51:02
 .button {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -1941,12 +1929,14 @@ Build date: 2019-12-19 16:51:02
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.9375rem;
+    line-height: 2.75rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
+    .button__text_in-header {
+      line-height: 2.125rem; }
   .button__arrow {
     cursor: pointer;
     right: 0rem;
@@ -2002,7 +1992,7 @@ Build date: 2019-12-19 16:51:02
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2.5rem;
+    line-height: 2.5rem;
     text-decoration: none; }
   .pagination__three-dots {
     cursor: context-menu; }
@@ -2013,7 +2003,7 @@ Build date: 2019-12-19 16:51:02
       color: white; }
   .pagination__link:hover {
     width: inherit;
-    height: inherit;
+    line-height: 2.5rem;
     border-radius: 1.375rem;
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
   .pagination__left-arrow, .pagination__right-arrow {
@@ -2021,7 +2011,7 @@ Build date: 2019-12-19 16:51:02
     border-radius: 1.375rem; }
   .pagination__left-arrow-text, .pagination__right-arrow-text {
     width: inherit;
-    height: inherit;
+    line-height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2034,7 +2024,6 @@ Build date: 2019-12-19 16:51:02
     transform: rotate(180deg); }
   .pagination__link-text {
     width: inherit;
-    height: inherit;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -2042,7 +2031,7 @@ Build date: 2019-12-19 16:51:02
     border-radius: 1.375rem;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.937rem;
+    line-height: 2.5rem;
     color: rgba(31, 32, 65, 0.5); }
   .pagination__bottom-text {
     width: 100%;
@@ -2173,12 +2162,11 @@ Build date: 2019-12-19 16:51:02
       width: 100%; }
   .calendar__input {
     cursor: pointer;
-    height: 2.5rem;
     padding: 0rem 0rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
@@ -2208,7 +2196,6 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     font-family: Material Icons;
     font-size: 1.5rem;
-    line-height: 1.5rem;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
@@ -2468,7 +2455,6 @@ Build date: 2019-12-19 16:51:02
   position: relative; }
   .like-button__label {
     width: max-content;
-    height: 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2480,7 +2466,8 @@ Build date: 2019-12-19 16:51:02
     text-decoration: none;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     border-radius: 1.375rem;
-    outline: none; }
+    outline: none;
+    line-height: 1.25rem; }
   .like-button__background {
     position: absolute;
     left: 0rem;
@@ -2508,7 +2495,7 @@ Build date: 2019-12-19 16:51:02
     cursor: pointer;
     z-index: 2;
     width: 100%;
-    height: 1.25rem;
+    height: 100%;
     position: absolute;
     opacity: 0; }
     .like-button__input:checked + .like-button__label {
@@ -2543,7 +2530,7 @@ Build date: 2019-12-19 16:51:02
   .like-button__like-symbol {
     z-index: 2;
     width: 1rem;
-    height: 1rem;
+    line-height: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2560,10 +2547,9 @@ Build date: 2019-12-19 16:51:02
   flex-direction: column; }
   .room-advantages__bottom-border {
     width: 17.5rem;
-    height: 0.0625rem;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-    background: rgba(31, 32, 65, 0.1); }
+    border-bottom: 0.0625rem solid rgba(31, 32, 65, 0.1); }
     .room-advantages__bottom-border:last-child {
       margin-bottom: 0rem; }
   .room-advantages__detail {
@@ -2601,7 +2587,6 @@ Build date: 2019-12-19 16:51:02
   position: relative; }
   .like-button__label {
     width: max-content;
-    height: 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2613,7 +2598,8 @@ Build date: 2019-12-19 16:51:02
     text-decoration: none;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     border-radius: 1.375rem;
-    outline: none; }
+    outline: none;
+    line-height: 1.25rem; }
   .like-button__background {
     position: absolute;
     left: 0rem;
@@ -2641,7 +2627,7 @@ Build date: 2019-12-19 16:51:02
     cursor: pointer;
     z-index: 2;
     width: 100%;
-    height: 1.25rem;
+    height: 100%;
     position: absolute;
     opacity: 0; }
     .like-button__input:checked + .like-button__label {
@@ -2676,7 +2662,7 @@ Build date: 2019-12-19 16:51:02
   .like-button__like-symbol {
     z-index: 2;
     width: 1rem;
-    height: 1rem;
+    line-height: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2716,7 +2702,6 @@ Build date: 2019-12-19 16:51:02
       margin-bottom: 0rem; }
   .room-reviews__user-avatar {
     width: 2.9375rem;
-    height: 2.9375rem;
     margin-bottom: 0.75rem;
     border: 0.125rem solid white;
     border-radius: 50%;
@@ -2851,8 +2836,7 @@ Build date: 2019-12-19 16:51:02
       text-transform: uppercase;
       color: #1f2041; }
   .form-elements__button_type_simple, .form-elements__button_type_simple-hover, .form-elements__button_type_hollow, .form-elements__button_type_hollow-hover {
-    width: 6.1875rem;
-    height: 2.75rem; }
+    width: 6.1875rem; }
   .form-elements__button_type_simple {
     margin-bottom: 1.8125rem; }
   .form-elements__text-buttons {
@@ -2862,7 +2846,6 @@ Build date: 2019-12-19 16:51:02
     margin-right: 1.25rem; }
   .form-elements__button_type_submit {
     width: 20rem;
-    height: 2.75rem;
     margin-bottom: 2.625rem; }
   .form-elements__pagination {
     width: max-content; }

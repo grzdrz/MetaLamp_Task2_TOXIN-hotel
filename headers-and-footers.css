@@ -62,15 +62,10 @@ body {
 
 .logo {
   display: flex;
-  height: max-content;
   margin-left: 1.875rem;
   padding-top: 1.875rem; }
-  .logo__image {
-    width: 3rem;
-    height: 3rem; }
 
 .colored-logo {
-  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-self: end; }
@@ -80,7 +75,6 @@ body {
 .button {
   cursor: pointer;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -114,12 +108,14 @@ body {
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 0.9375rem;
+    line-height: 2.75rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
+    .button__text_in-header {
+      line-height: 2.125rem; }
   .button__arrow {
     cursor: pointer;
     right: 0rem;
@@ -240,16 +236,11 @@ body {
     display: flex;
     align-items: center;
     font-size: 0.875rem;
-    line-height: 1.0625rem;
+    line-height: 1.875rem;
     color: rgba(31, 32, 65, 0.5);
-    white-space: nowrap; }
-    .header__user-full-name:before {
-      content: '';
-      height: 1.875rem;
-      width: 0.0625rem;
-      background: transparent;
-      border-left: 0.0625rem solid rgba(31, 32, 65, 0.1);
-      padding-right: 1.25rem; }
+    white-space: nowrap;
+    padding-left: 1.25rem;
+    border-left: 0.0625rem solid rgba(31, 32, 65, 0.1); }
     @media screen and (max-width: 1150px) and (min-width: 768px) {
       .header__user-full-name {
         order: 1;
@@ -279,15 +270,13 @@ body {
         margin-top: 1.25rem; } }
   .header__sign-in-button {
     width: 5.4375rem;
-    height: 2.125rem;
     margin-right: 1.25rem; }
     @media screen and (max-width: 550px) {
       .header__sign-in-button {
         margin-right: 0rem;
         margin-bottom: 0.625rem; } }
   .header__sign-up-button {
-    width: 12.25rem;
-    height: 2.125rem; }
+    width: 12.25rem; }
 
 .form-input {
   width: 100%; }
@@ -320,11 +309,10 @@ body {
       border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
   .form-input__input {
     padding: 0rem 0.9375rem;
-    height: 2.625rem;
     outline: none;
     background: transparent;
     font-size: 0.875rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     letter-spacing: -0.0125rem;
     color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
@@ -352,7 +340,6 @@ body {
   .form-input__submitter {
     cursor: pointer;
     min-width: 2.625rem;
-    height: 2.625rem;
     border: 0rem solid transparent;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
@@ -364,7 +351,6 @@ body {
     line-height: 1.5rem; }
 
 .colored-logo {
-  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-self: end; }
@@ -523,7 +509,6 @@ body {
         margin-bottom: 1.25rem; } }
 
 .colored-logo {
-  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-self: end; }
