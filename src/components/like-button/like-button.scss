@@ -5,124 +5,124 @@ $borderRadius: 1.375rem;
 $borderThickness: 0.0625rem;
 
 .like-button {
+  width: max-content;
+  position: relative;
+
+  &__label {
     width: max-content;
+    height: $buttonHeight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
     position: relative;
+    z-index: 1;
+    padding: 0rem 0.125rem;
+    color: white;
+    text-decoration: none;
+    background: $gradient-purple-to-blue;
+    border-radius: $borderRadius;
+    outline: none;
+  }
 
-    &__label {
-        width: max-content;
-        height: $buttonHeight;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-        padding: 0rem 0.125rem;
-        color: white;
-        text-decoration: none;
-        background: $gradient-purple-to-blue;
-        border-radius: $borderRadius;
-        outline: none;
-    }
+  &__background {
+    position: absolute;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    margin: $borderThickness;
+    border-radius: $borderRadius;
+    background: white;
+  }
 
-    &__background {
+  &__likes-number {
+    z-index: 1;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0rem;
+    bottom: 0rem;
+    margin-left: 0.21rem;
+    margin-right: 0.65rem;
+    font-size: 0.5625rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  &__input {
+    cursor: pointer;
+    z-index: 2;
+    width: 100%;
+    height: $buttonHeight;
+    position: absolute;
+    opacity: 0;
+
+    &:checked + .like-button__label {
+      background: $gradient-purple-to-blue;
+
+      & > * {
+        color: $color-purple;
+      }
+
+      & > .like-button__like-symbol::after {
+        content: 'favorite';
         position: absolute;
-        left: 0rem;
-        right: 0rem;
-        top: 0rem;
-        bottom: 0rem;
-        margin: $borderThickness;
-        border-radius: $borderRadius;
-        background: white;
-    }
-
-    &__likes-number {
-        z-index: 1;
-        width: max-content;
         display: flex;
-        align-items: center;
         justify-content: center;
-        position: relative;
-        top: 0rem;
-        bottom: 0rem;
-        margin-left: 0.21rem;
-        margin-right: 0.65rem;
-        font-size: 0.5625rem;
-        text-align: center;
-        white-space: nowrap;
+        align-items: center;
+      }
+
+      & > .like-button__likes-number_unpressed {
+        display: none;
+      }
+
+      & > .like-button__likes-number_pressed {
+        display: flex;
+      }
     }
 
-    &__input {
-        cursor: pointer;
-        z-index: 2;
-        width: 100%;
-        height: $buttonHeight;
+    &:not(:checked) + .like-button__label {
+      background: $color-dark-shade-25;
+
+      & > * {
+        color: $color-dark-shade-25;
+      }
+
+      & > .like-button__like-symbol::after {
+        content: 'favorite_border';
         position: absolute;
-        opacity: 0;
-
-        &:checked + .like-button__label {
-            background: $gradient-purple-to-blue;
-
-            & > * {
-                color: $color-purple;
-            }
-
-            & > .like-button__like-symbol::after {
-                content: 'favorite';
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            & > .like-button__likes-number_unpressed {
-                display: none;
-            }
-
-            & > .like-button__likes-number_pressed {
-                display: flex;
-            }
-        }
-
-        &:not(:checked) + .like-button__label {
-            background: $color-dark-shade-25;
-
-            & > * {
-                color: $color-dark-shade-25;
-            }
-
-            & > .like-button__like-symbol::after {
-                content: 'favorite_border';
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 0rem solid transparent;
-            }
-
-            & > .like-button__likes-number_unpressed {
-                display: flex;
-            }
-
-            & > .like-button__likes-number_pressed {
-                display: none;
-            }
-        }
-    }
-
-    &__like-symbol {
-        z-index: 2;
-        width: 1rem;
-        height: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
-        left: 0rem;
+        border: 0rem solid transparent;
+      }
 
-        &::after {
-            font-family: Material Icons;
-            font-size: 0.625rem;
-        }
+      & > .like-button__likes-number_unpressed {
+        display: flex;
+      }
+
+      & > .like-button__likes-number_pressed {
+        display: none;
+      }
     }
+  }
+
+  &__like-symbol {
+    z-index: 2;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0rem;
+
+    &::after {
+      font-family: Material Icons;
+      font-size: 0.625rem;
+    }
+  }
 }

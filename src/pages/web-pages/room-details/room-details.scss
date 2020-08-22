@@ -8,176 +8,176 @@
 @import '../../../components/pie-chart/pie-chart.scss';
 
 .room-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__room-photos {
+    display: flex;
     width: 100%;
+    height: 30.3125rem;
+  }
+
+  &__big-photo {
+    width: scalePixelsAsPercentage(981, 1440);
+    height: 100%;
+    display: flex;
+    background-image: url(img/room-888-1.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__small-photos {
+    width: scalePixelsAsPercentage((1440 - 981), 1440);
+    height: 100%;
     display: flex;
     flex-direction: column;
+  }
 
-    &__room-photos {
-        display: flex;
-        width: 100%;
-        height: 30.3125rem;
+  &__small-photo {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__small-photo {
+    &:first-of-type {
+      background-image: url(img/room-888-2.jpg);
     }
 
-    &__big-photo {
-        width: scalePixelsAsPercentage(981, 1440);
-        height: 100%;
-        display: flex;
-        background-image: url(img/room-888-1.jpg);
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
+    &:last-of-type {
+      background-image: url(img/room-888-3.jpg);
     }
+  }
 
-    &__small-photos {
-        width: scalePixelsAsPercentage((1440 - 981), 1440);
-        height: 100%;
-        display: flex;
-        flex-direction: column;
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.0625rem;
+    padding: scalePixelsAsPercentage(70, 1440) scalePixelsAsPercentage(140, 1440);
+    box-shadow: 0rem 0.0625rem 0rem $color-dark-shade-10;
+
+    @media screen and (max-width: 1340px) {
+      flex-direction: column;
     }
-
-    &__small-photo {
-        height: 50%;
-        width: 100%;
-        display: flex;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
+    @media screen and (max-width: 950px) {
+      width: 100%;
+      padding: scalePixelsAsPercentage(70, 1440) 0rem;
+      flex-direction: column;
+      align-items: center;
     }
+  }
 
-    &__small-photo {
-        &:first-of-type {
-            background-image: url(img/room-888-2.jpg);
-        }
+  &__room-descriptions {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: auto auto auto;
 
-        &:last-of-type {
-            background-image: url(img/room-888-3.jpg);
-        }
+    @media screen and (max-width: 800px) {
+      grid-template-columns: min-content;
+      grid-template-rows: auto auto auto auto auto;
     }
+  }
 
-    &__info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 0.0625rem;
-        padding: scalePixelsAsPercentage(70, 1440) scalePixelsAsPercentage(140, 1440);
-        box-shadow: 0rem 0.0625rem 0rem $color-dark-shade-10;
+  &__price-calculation-form {
+    width: 23.75rem;
 
-        @media screen and (max-width: 1340px) {
-            flex-direction: column;
-        }
-        @media screen and (max-width: 950px) {
-            width: 100%;
-            padding: scalePixelsAsPercentage(70, 1440) 0rem;
-            flex-direction: column;
-            align-items: center;
-        }
+    @media screen and (max-width: 1340px) {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.25rem;
     }
-
-    &__room-descriptions {
-        display: grid;
-        grid-template-columns: min-content auto;
-        grid-template-rows: auto auto auto;
-
-        @media screen and (max-width: 800px) {
-            grid-template-columns: min-content;
-            grid-template-rows: auto auto auto auto auto;
-        }
+    @media screen and (max-width: 380px) {
+      width: 100%;
     }
+  }
 
-    &__price-calculation-form {
-        width: 23.75rem;
+  &__pie-chart {
+    margin-left: 0.9375rem;
 
-        @media screen and (max-width: 1340px) {
-            display: flex;
-            justify-content: center;
-            margin-top: 1.25rem;
-        }
-        @media screen and (max-width: 380px) {
-            width: 100%;
-        }
+    @media screen and (max-width: 800px) {
+      margin-top: 1.875rem;
     }
+  }
 
-    &__pie-chart {
-        margin-left: 0.9375rem;
-
-        @media screen and (max-width: 800px) {
-            margin-top: 1.875rem;
-        }
+  &__room-advantages {
+    @media screen and (max-width: 800px) {
+      margin-right: 0rem;
     }
+  }
 
-    &__room-advantages {
-        @media screen and (max-width: 800px) {
-            margin-right: 0rem;
-        }
+  &__room-advantages-title {
+    margin-bottom: 1.25rem;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    color: #1f2041;
+  }
+
+  &__room-reviews {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 2.0625rem;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 800px) {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
     }
+  }
 
-    &__room-advantages-title {
-        margin-bottom: 1.25rem;
-        font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1.1875rem;
-        line-height: 1.5rem;
-        color: #1f2041;
+  &__bullet-list-title {
+    margin-bottom: 1.125rem;
+    margin-left: 1.25rem;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    color: $color-dark-shade-100;
+    text-transform: none;
+  }
+
+  &__bullet-list {
+    margin-right: 4.375rem;
+
+    @media screen and (max-width: 800px) {
+      margin-bottom: 1.25rem;
+      margin-right: 0rem;
     }
-
-    &__room-reviews {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        margin-top: 2.0625rem;
-        margin-bottom: 2rem;
-
-        @media screen and (max-width: 800px) {
-            grid-column-start: 1;
-            grid-column-end: 1;
-            padding-left: 1.25rem;
-            padding-right: 1.25rem;
-        }
+    @media screen and (max-width: 800px) and (min-width: 500px) {
+      align-self: flex-start;
     }
+  }
 
-    &__bullet-list-title {
-        margin-bottom: 1.125rem;
-        margin-left: 1.25rem;
-        font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1.1875rem;
-        line-height: 1.5rem;
-        color: $color-dark-shade-100;
-        text-transform: none;
+  &__cancel-rule {
+    margin-left: 1.875rem;
+
+    @media screen and (max-width: 800px) and (min-width: 500px) {
+      align-self: flex-end;
     }
+  }
 
-    &__bullet-list {
-        margin-right: 4.375rem;
+  &__cancel-rule-title {
+    margin-bottom: 1.125rem;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    color: $color-dark-shade-100;
+  }
 
-        @media screen and (max-width: 800px) {
-            margin-bottom: 1.25rem;
-            margin-right: 0rem;
-        }
-        @media screen and (max-width: 800px) and (min-width: 500px) {
-            align-self: flex-start;
-        }
-    }
-
-    &__cancel-rule {
-        margin-left: 1.875rem;
-
-        @media screen and (max-width: 800px) and (min-width: 500px) {
-            align-self: flex-end;
-        }
-    }
-
-    &__cancel-rule-title {
-        margin-bottom: 1.125rem;
-        font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1.1875rem;
-        line-height: 1.5rem;
-        color: $color-dark-shade-100;
-    }
-
-    &__cancel-rule-main-text {
-        max-width: 21.3125rem;
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        color: $color-dark-shade-75;
-    }
+  &__cancel-rule-main-text {
+    max-width: 21.3125rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: $color-dark-shade-75;
+  }
 }

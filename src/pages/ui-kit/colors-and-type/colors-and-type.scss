@@ -3,49 +3,49 @@
 @import '../../../components/color-demo/color-demo.scss';
 
 body {
-    padding-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .colors-and-type {
-    min-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 4.1875rem 10.4% 9.0625rem;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4.1875rem 10.4% 9.0625rem;
 
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__color-demos {
     @media screen and (max-width: 1024px) {
-        flex-direction: column;
-        align-items: center;
+      margin-bottom: 3.125rem;
     }
+  }
 
-    &__color-demos {
-        @media screen and (max-width: 1024px) {
-            margin-bottom: 3.125rem;
-        }
+  &__color-demo {
+    margin-bottom: 1.25rem;
+
+    &:last-child {
+      margin-bottom: 0rem;
     }
+  }
 
-    &__color-demo {
-        margin-bottom: 1.25rem;
+  &__font-demos {
+    margin-right: 2.625rem;
+  }
 
-        &:last-child {
-            margin-bottom: 0rem;
-        }
+  &__font-demo {
+    margin-bottom: 3.125rem;
+
+    &:last-child {
+      margin-bottom: 0rem;
+      max-width: 23.75rem;
+
+      & .font-demo__description {
+        line-height: 1.375rem;
+      }
     }
-
-    &__font-demos {
-        margin-right: 2.625rem;
-    }
-
-    &__font-demo {
-        margin-bottom: 3.125rem;
-
-        &:last-child {
-            margin-bottom: 0rem;
-            max-width: 23.75rem;
-
-            & .font-demo__description {
-                line-height: 1.375rem;
-            }
-        }
-    }
+  }
 }

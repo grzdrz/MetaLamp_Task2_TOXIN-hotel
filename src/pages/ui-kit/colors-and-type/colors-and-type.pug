@@ -5,94 +5,94 @@ include ../../../components/font-demo/font-demo.pug
 include ../../../components/color-demo/color-demo.pug
 
 block content
-    div(class=["colors-and-type"])
-        div(class=["colors-and-type__color-demos"])
-            - for(let i = 100; i >= 25; i -= 25)
-                div(class=["colors-and-type__color-demo"])
-                    +color-demo({
-                        colorName: `Dark Shade ${i}%`,
-                        colorCode: "#1F2041",
-                        backgroundColor: `dark-shade-${i}`,
-                    })
-            div(class=["colors-and-type__color-demo"])
-                +color-demo({
-                    colorName: "Dark Shade 5%",
-                    colorCode: "#1F2041",
-                    backgroundColor: "dark-shade-5",
-                })
-            div(class=["colors-and-type__color-demo"])
-                +color-demo({
-                    colorName: "Purple",
-                    colorCode: "#BC9CFF",
-                    backgroundColor: "purple",
-                })
-            div(class=["colors-and-type__color-demo"])
-                +color-demo({
-                    colorName: "Green",
-                    colorCode: "#6FCF97",
-                    backgroundColor: "green",
-                })
-        div(class=["colors-and-type__font-demos"])
-            div(class=["colors-and-type__font-demo"])
-                +font-demo({
-                    tagOptions: {
-                        tagName: "H1",
-                        size: "24px",
-                        color: "dark-shade-25"
-                    },
-                    descriptionOptions: {
-                        text: "This one is the sub-section or widget title",
-                        family: "quicksand",
-                        weight: "bold",                                
-                        size: "24px",
-                        color: "dark-shade-100",
-                        lineHeight: "30px",
-                    }
-                })  
-            div(class=["colors-and-type__font-demo"])
-                +font-demo({
-                    tagOptions: {
-                        tagName: "H2",
-                        size: "19px",
-                        color: "dark-shade-25"
-                    },
-                    descriptionOptions: {
-                        text: "Next one is the item title inside widgets",
-                        family: "quicksand",
-                        weight: "bold",
-                        size: "19px",
-                        color: "dark-shade-100",
-                        lineHeight: "24px",
-                    }
-                })
-            div(class=["colors-and-type__font-demo"])
-                +font-demo({
-                    tagOptions: {
-                        tagName: "H3",
-                        size: "12px",
-                        color: "dark-shade-25"
-                    },
-                    descriptionOptions: {
-                        text: "This is a label or CTA text",
-                        weight: "bold",
-                        size: "12px",
-                        color: "dark-shade-100",
-                        lineHeight: "15px",
-                        inUppercase: true,
-                    }
-                })
-            div(class=["colors-and-type__font-demo"])
-                +font-demo({
-                    tagOptions: {
-                        tagName: "Body",
-                        size: "14px",
-                        color: "dark-shade-25"
-                    },
-                    descriptionOptions: {
-                        text: "This is the body text which is used for most of the design, like paragraphs, lists, etc.",                             
-                        size: "14px",
-                        color: "dark-shade-75",
-                        lineHeight: "24px",
-                    }
-                })
+  div(class=["colors-and-type"])
+    div(class=["colors-and-type__color-demos"])
+      - for(let i = 100; i >= 25; i -= 25)
+        div(class=["colors-and-type__color-demo"])
+          +color-demo({
+            colorName: `Dark Shade ${i}%`,
+            colorCode: "#1F2041",
+            backgroundColor: `dark-shade-${i}`,
+          })
+      div(class=["colors-and-type__color-demo"])
+        +color-demo({
+          colorName: "Dark Shade 5%",
+          colorCode: "#1F2041",
+          backgroundColor: "dark-shade-5",
+        })
+      div(class=["colors-and-type__color-demo"])
+        +color-demo({
+          colorName: "Purple",
+          colorCode: "#BC9CFF",
+          backgroundColor: "purple",
+        })
+      div(class=["colors-and-type__color-demo"])
+        +color-demo({
+          colorName: "Green",
+          colorCode: "#6FCF97",
+          backgroundColor: "green",
+        })
+    div(class=["colors-and-type__font-demos"])
+      div(class=["colors-and-type__font-demo"])
+        +font-demo({
+          tagOptions: {
+            tagName: "H1",
+            size: "24px",
+            color: "dark-shade-25"
+          },
+          descriptionOptions: {
+            text: "This one is the sub-section or widget title",
+            family: "quicksand",
+            weight: "bold",                                
+            size: "24px",
+            color: "dark-shade-100",
+            lineHeight: "30px",
+          }
+        })  
+      div(class=["colors-and-type__font-demo"])
+        +font-demo({
+          tagOptions: {
+            tagName: "H2",
+            size: "19px",
+            color: "dark-shade-25"
+          },
+          descriptionOptions: {
+            text: "Next one is the item title inside widgets",
+            family: "quicksand",
+            weight: "bold",
+            size: "19px",
+            color: "dark-shade-100",
+            lineHeight: "24px",
+          }
+        })
+      div(class=["colors-and-type__font-demo"])
+        +font-demo({
+          tagOptions: {
+            tagName: "H3",
+            size: "12px",
+            color: "dark-shade-25"
+          },
+          descriptionOptions: {
+            text: "This is a label or CTA text",
+            weight: "bold",
+            size: "12px",
+            color: "dark-shade-100",
+            lineHeight: "15px",
+            inUppercase: true,
+          }
+        })
+      div(class=["colors-and-type__font-demo"])
+        +font-demo({
+          tagOptions: {
+            tagName: "Body",
+            size: "14px",
+            color: "dark-shade-25"
+          },
+          descriptionOptions: {
+            text: "This is the body text which is used for most of the design, like paragraphs, lists, etc.",                             
+            size: "14px",
+            color: "dark-shade-75",
+            lineHeight: "24px",
+          }
+        })
 

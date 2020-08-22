@@ -4,188 +4,188 @@
 @import '../button/button.scss';
 
 .header {
-    width: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: min-content auto min-content;
+  align-items: center;
+  justify-items: start;
+  padding: 0.9375rem scalePixelsAsPercentage(140, 1440);
+  background: white;
+  box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
+
+  @media screen and (max-width: 1150px) and (min-width: 768px) {
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: min-content auto min-content;
-    align-items: center;
-    justify-items: start;
-    padding: 0.9375rem scalePixelsAsPercentage(140, 1440);
-    background: white;
-    box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
+    grid-template-columns: min-content auto;
+    grid-template-rows: auto auto;
+  }
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: min-content auto;
+  }
+  @media screen and (max-width: 550px) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content min-content;
+    justify-content: flex-start;
+  }
+
+  &__colored-logo {
+    @media screen and (max-width: 768px) {
+      justify-self: flex-start;
+    }
+  }
+
+  &__navigation-menu {
+    justify-self: end;
+    margin-right: 1.25rem;
 
     @media screen and (max-width: 1150px) and (min-width: 768px) {
-        display: grid;
-        grid-template-columns: min-content auto;
-        grid-template-rows: auto auto;
+      order: 2;
+      margin-right: 0rem;
+      margin-top: 1.25rem;
+      grid-column-start: 2;
+      grid-column-end: 3;
     }
     @media screen and (max-width: 768px) {
-        display: grid;
-        grid-template-columns: min-content auto;
-        grid-template-rows: min-content auto;
+      order: 2;
+      margin-right: 0rem;
+      margin-top: 1.25rem;
+      margin-left: 0.3125rem;
+      display: flex;
+      flex-direction: column;
     }
     @media screen and (max-width: 550px) {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: min-content min-content min-content;
-        justify-content: flex-start;
+      justify-self: flex-start;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 0rem 0.625rem;
+
+    @media screen and (max-width: 768px) {
+      margin: 0.625rem 0rem;
     }
 
-    &__colored-logo {
-        @media screen and (max-width: 768px) {
-            justify-self: flex-start;
-        }
+    &:first-child {
+      margin: 0rem 0.625rem 0rem 0rem;
+
+      .header__item-ref {
+        color: $color-dark-shade-75;
+        font-weight: bold;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin: 0rem 0rem 0.625rem 0rem;
+      }
     }
 
-    &__navigation-menu {
-        justify-self: end;
-        margin-right: 1.25rem;
+    &:last-child {
+      margin: 0rem 0rem 0rem 0.625rem;
 
-        @media screen and (max-width: 1150px) and (min-width: 768px) {
-            order: 2;
-            margin-right: 0rem;
-            margin-top: 1.25rem;
-            grid-column-start: 2;
-            grid-column-end: 3;
-        }
-        @media screen and (max-width: 768px) {
-            order: 2;
-            margin-right: 0rem;
-            margin-top: 1.25rem;
-            margin-left: 0.3125rem;
-            display: flex;
-            flex-direction: column;
-        }
-        @media screen and (max-width: 550px) {
-            justify-self: flex-start;
-        }
+      @media screen and (max-width: 768px) {
+        margin: 0.625rem 0rem 0rem 0rem;
+      }
+    }
+  }
+
+  &__item-ref {
+    text-decoration: none;
+    color: $color-dark-shade-50;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    white-space: nowrap;
+    letter-spacing: 0.005em;
+  }
+
+  &__dropdown-arrow {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: Material Icons;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    color: $color-dark-shade-50;
+  }
+
+  &__user-full-name {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    color: $color-dark-shade-50;
+    white-space: nowrap;
+
+    &:before {
+      content: '';
+      height: 1.875rem;
+      width: 0.0625rem;
+      background: transparent;
+      border-left: 0.0625rem solid $color-dark-shade-10;
+      padding-right: 1.25rem;
     }
 
-    &__list {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        @media screen and (max-width: 768px) {
-            display: flex;
-            flex-direction: column;
-        }
+    @media screen and (max-width: 1150px) and (min-width: 768px) {
+      order: 1;
+      justify-self: end;
     }
-
-    &__item {
-        display: flex;
-        align-items: center;
-        margin: 0rem 0.625rem;
-
-        @media screen and (max-width: 768px) {
-            margin: 0.625rem 0rem;
-        }
-
-        &:first-child {
-            margin: 0rem 0.625rem 0rem 0rem;
-
-            .header__item-ref {
-                color: $color-dark-shade-75;
-                font-weight: bold;
-            }
-
-            @media screen and (max-width: 768px) {
-                margin: 0rem 0rem 0.625rem 0rem;
-            }
-        }
-
-        &:last-child {
-            margin: 0rem 0rem 0rem 0.625rem;
-
-            @media screen and (max-width: 768px) {
-                margin: 0.625rem 0rem 0rem 0rem;
-            }
-        }
+    @media screen and (max-width: 768px) {
+      order: 1;
+      justify-self: end;
     }
-
-    &__item-ref {
-        text-decoration: none;
-        color: $color-dark-shade-50;
-        font-size: 0.875rem;
-        line-height: 1.0625rem;
-        white-space: nowrap;
-        letter-spacing: 0.005em;
+    @media screen and (max-width: 550px) {
+      margin-top: 1.25rem;
     }
+  }
 
-    &__dropdown-arrow {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        font-family: Material Icons;
-        font-size: 1.5rem;
-        line-height: 1.25rem;
-        color: $color-dark-shade-50;
+  &__buttons {
+    display: flex;
+
+    @media screen and (max-width: 1150px) and (min-width: 768px) {
+      order: 1;
+      justify-self: end;
     }
-
-    &__user-full-name {
-        display: flex;
-        align-items: center;
-        font-size: 0.875rem;
-        line-height: 1.0625rem;
-        color: $color-dark-shade-50;
-        white-space: nowrap;
-
-        &:before {
-            content: '';
-            height: 1.875rem;
-            width: 0.0625rem;
-            background: transparent;
-            border-left: 0.0625rem solid $color-dark-shade-10;
-            padding-right: 1.25rem;
-        }
-
-        @media screen and (max-width: 1150px) and (min-width: 768px) {
-            order: 1;
-            justify-self: end;
-        }
-        @media screen and (max-width: 768px) {
-            order: 1;
-            justify-self: end;
-        }
-        @media screen and (max-width: 550px) {
-            margin-top: 1.25rem;
-        }
+    @media screen and (max-width: 768px) {
+      order: 1;
+      justify-self: end;
     }
-
-    &__buttons {
-        display: flex;
-
-        @media screen and (max-width: 1150px) and (min-width: 768px) {
-            order: 1;
-            justify-self: end;
-        }
-        @media screen and (max-width: 768px) {
-            order: 1;
-            justify-self: end;
-        }
-        @media screen and (max-width: 550px) {
-            display: grid;
-            grid-template-rows: auto auto;
-            grid-template-columns: min-content;
-            margin-top: 1.25rem;
-        }
+    @media screen and (max-width: 550px) {
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: min-content;
+      margin-top: 1.25rem;
     }
+  }
 
-    &__sign-in-button {
-        width: 5.4375rem;
-        height: 2.125rem;
-        margin-right: 1.25rem;
+  &__sign-in-button {
+    width: 5.4375rem;
+    height: 2.125rem;
+    margin-right: 1.25rem;
 
-        @media screen and (max-width: 550px) {
-            margin-right: 0rem;
-            margin-bottom: 0.625rem;
-        }
+    @media screen and (max-width: 550px) {
+      margin-right: 0rem;
+      margin-bottom: 0.625rem;
     }
+  }
 
-    &__sign-up-button {
-        width: 12.25rem;
-        height: 2.125rem;
-    }
+  &__sign-up-button {
+    width: 12.25rem;
+    height: 2.125rem;
+  }
 }

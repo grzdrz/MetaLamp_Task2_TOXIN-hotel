@@ -3,13 +3,13 @@ extends ../../base/page-base
 include ../../../components/room-finder-form/room-finder-form.pug
 
 block content
-    div(class=["landing-page"])
-        div(class=["landing-page__form", "js-landing-page__form"])
-            +room-finder-form({
-                title: "Найдём номера под ваши пожелания",
-            })
-        div(class=["landing-page__background"])
-            div(class=["landing-page__subtitle"])
-                p(class=["landing-page__subtitle-text"])
-                    | Лучшие номера для вашей работы,
-                    | отдыха и просто вдохновения
+  div(class=["landing-page"])
+    div(class=["landing-page__form", "js-landing-page__form"])
+      +room-finder-form({
+        title: "Найдём номера под ваши пожелания",
+      })
+    div(class=["landing-page__background"])
+      div(class=["landing-page__subtitle"])
+        p(class=["landing-page__subtitle-text"])
+          | Лучшие номера для вашей работы,
+          | отдыха и просто вдохновения

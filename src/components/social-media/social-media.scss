@@ -1,23 +1,23 @@
 $iconSize: 1.4375rem;
 
 .social-media {
-    width: 7rem;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
+  width: 7rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
 
-    &__ref {
-        width: $iconSize;
-        height: $iconSize;
-        margin-right: 1.25rem;
+  &__ref {
+    width: $iconSize;
+    height: $iconSize;
+    margin-right: 1.25rem;
 
-        &:last-of-type {
-            margin-right: 0rem;
-        }
+    &:last-of-type {
+      margin-right: 0rem;
     }
+  }
 
-    &__image {
-        width: $iconSize;
-        height: $iconSize;
-    }
+  &__image {
+    width: $iconSize;
+    height: $iconSize;
+  }
 }

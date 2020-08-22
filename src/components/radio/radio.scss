@@ -1,64 +1,64 @@
 @import '../../assets/constants.scss';
 
 .radio {
+  display: flex;
+  width: max-content;
+
+  &__label {
+    cursor: pointer;
     display: flex;
-    width: max-content;
+    position: relative;
+    margin-right: 1.25rem;
 
-    &__label {
-        cursor: pointer;
-        display: flex;
-        position: relative;
-        margin-right: 1.25rem;
+    &:last-child {
+      margin-right: 0rem;
+    }
+  }
 
-        &:last-child {
-            margin-right: 0rem;
-        }
+  &__button-image {
+    z-index: 1;
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 0.625rem;
+    border-radius: 50%;
+  }
+
+  &__input {
+    cursor: pointer;
+    z-index: 2;
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    opacity: 0;
+
+    &:checked + div {
+      border: 0.0625rem solid $color-purple;
     }
 
-    &__button-image {
-        z-index: 1;
-        width: 1.25rem;
-        height: 1.25rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        margin-right: 0.625rem;
-        border-radius: 50%;
+    &:checked + div::after {
+      content: '';
+      width: 0.75rem;
+      height: 0.75rem;
+      background: $gradient-purple-to-blue;
+      border-radius: 50%;
     }
 
-    &__input {
-        cursor: pointer;
-        z-index: 2;
-        width: 1.25rem;
-        height: 1.25rem;
-        position: absolute;
-        opacity: 0;
-
-        &:checked + div {
-            border: 0.0625rem solid $color-purple;
-        }
-
-        &:checked + div::after {
-            content: '';
-            width: 0.75rem;
-            height: 0.75rem;
-            background: $gradient-purple-to-blue;
-            border-radius: 50%;
-        }
-
-        &:not(:checked) + div {
-            border: 0.0625rem solid $color-dark-shade-25;
-        }
+    &:not(:checked) + div {
+      border: 0.0625rem solid $color-dark-shade-25;
     }
+  }
 
-    &__text {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 0.875rem;
-        line-height: 1.125rem;
-        color: $color-dark-shade-50;
-    }
+  &__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: $color-dark-shade-50;
+  }
 }

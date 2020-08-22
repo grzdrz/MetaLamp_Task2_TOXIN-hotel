@@ -1,19 +1,19 @@
 @import '../../assets/constants.scss';
 
 .text-button {
-    cursor: pointer;
-    background: transparent;
+  cursor: pointer;
+  background: transparent;
 
-    &__text {
-        font-weight: bold;
-        font-size: 0.75rem;
-        line-height: 0.75rem;
-        text-transform: uppercase;
-        color: $color-purple;
+  &__text {
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    text-transform: uppercase;
+    color: $color-purple;
 
-        &:hover,
-        &:focus {
-            color: $color-dark-shade-50;
-        }
+    &:hover,
+    &:focus {
+      color: $color-dark-shade-50;
     }
+  }
 }

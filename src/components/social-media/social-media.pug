@@ -1,26 +1,26 @@
 mixin social-media(options = {})
-    -
-        const {
-            links = [
-                {
-                    ref: "https://twitter.com",
-                    imageName: "twitter-icon",
-                    alt: "Twitter",
-                },
-                {
-                    ref: "https://facebook.com",
-                    imageName: "facebook-icon",
-                    alt: "Facebook",
-                },
-                {
-                    ref: "https://instagram.com",
-                    imageName: "instagram-icon",
-                    alt: "Instagram",
-                }
-            ],
-        } = options;
+  -
+    const {
+      links = [
+        {
+          ref: "https://twitter.com",
+          imageName: "twitter-icon",
+          alt: "Twitter",
+        },
+        {
+          ref: "https://facebook.com",
+          imageName: "facebook-icon",
+          alt: "Facebook",
+        },
+        {
+          ref: "https://instagram.com",
+          imageName: "instagram-icon",
+          alt: "Instagram",
+        }
+      ],
+    } = options;
 
-    div(class=["social-media"])
-        - for(let link of links)
-            a(class=["social-media__ref"] href=link.ref target="_blank" rel="noopener noreferrer")
-                img(class=["social-media__image"] src=`./src/components/social-media/img/${link.imageName}.svg` alt=link.alt)
+  div(class=["social-media"])
+    - for(let link of links)
+      a(class=["social-media__ref"] href=link.ref target="_blank" rel="noopener noreferrer")
+        img(class=["social-media__image"] src=`./src/components/social-media/img/${link.imageName}.svg` alt=link.alt)

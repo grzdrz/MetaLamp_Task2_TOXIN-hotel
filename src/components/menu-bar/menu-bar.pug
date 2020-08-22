@@ -1,16 +1,16 @@
 mixin menu-bar(options = {})
-    - 
-        const { 
-            refs = [
-                {url: "https://www.google.com/", text: "О нас"},
-                {url: "https://www.google.com/", text: "Услуги"},
-                {url: "https://www.google.com/", text: "Вакансии"},
-                {url: "https://www.google.com/", text: "Новости"},
-                {url: "https://www.google.com/", text: "Соглашения"},
-            ],
-        } = options;
+  - 
+    const { 
+      refs = [
+        {url: "https://www.google.com/", text: "О нас"},
+        {url: "https://www.google.com/", text: "Услуги"},
+        {url: "https://www.google.com/", text: "Вакансии"},
+        {url: "https://www.google.com/", text: "Новости"},
+        {url: "https://www.google.com/", text: "Соглашения"},
+      ],
+    } = options;
 
-    ul(class=["menu-bar"])
-        - for(let ref of refs)
-            li(class=["menu-bar__item"])
-                a(class=["menu-bar__item-ref"] href=ref.url target="_blank" rel="noopener noreferrer")= ref.text  
+  ul(class=["menu-bar"])
+    - for(let ref of refs)
+      li(class=["menu-bar__item"])
+        a(class=["menu-bar__item-ref"] href=ref.url target="_blank" rel="noopener noreferrer")= ref.text  

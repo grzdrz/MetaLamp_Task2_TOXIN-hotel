@@ -1,97 +1,97 @@
 @import '../../assets/constants.scss';
 
 .form-input {
-    width: 100%;
+  width: 100%;
 
-    &__title {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 0.3125rem;
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.3125rem;
+  }
+
+  &__title-text {
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: $color-dark-shade-100;
+  }
+
+  &__additional-title-text {
+    font-size: 0.75rem;
+    line-height: 0.65rem;
+    text-align: right;
+    text-transform: uppercase;
+    color: $color-dark-shade-50;
+    letter-spacing: -0.0187rem;
+  }
+
+  &__input-container {
+    display: grid;
+    grid-template-rows: 2.625rem;
+    grid-template-columns: auto min-content;
+    position: relative;
+    border: 0.0625rem solid $color-dark-shade-25;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+
+    &:hover,
+    &:focus {
+      border: 0.0625rem solid $color-dark-shade-50;
+    }
+  }
+
+  &__input {
+    padding: 0rem 0.9375rem;
+    height: 2.625rem;
+    outline: none;
+    background: transparent;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.0125rem;
+    color: $color-dark-shade-75;
+
+    &::-webkit-input-placeholder {
+      background: $color-dark-shade-25;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 0rem solid transparent;
     }
 
-    &__title-text {
-        font-weight: bold;
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        color: $color-dark-shade-100;
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      border: 0rem solid rgba(255, 255, 255, 0);
+      -webkit-text-fill-color: $color-dark-shade-75;
+      -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      transition: background-color 5000s ease-in-out 0s;
+      color: $color-dark-shade-75;
     }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-    &__additional-title-text {
-        font-size: 0.75rem;
-        line-height: 0.65rem;
-        text-align: right;
-        text-transform: uppercase;
-        color: $color-dark-shade-50;
-        letter-spacing: -0.0187rem;
-    }
-
-    &__input-container {
-        display: grid;
-        grid-template-rows: 2.625rem;
-        grid-template-columns: auto min-content;
-        position: relative;
-        border: 0.0625rem solid $color-dark-shade-25;
-        box-sizing: border-box;
-        border-radius: 0.25rem;
-
-        &:hover,
-        &:focus {
-            border: 0.0625rem solid $color-dark-shade-50;
-        }
-    }
-
-    &__input {
-        padding: 0rem 0.9375rem;
-        height: 2.625rem;
-        outline: none;
-        background: transparent;
-        font-size: 0.875rem;
-        line-height: 1.125rem;
-        letter-spacing: -0.0125rem;
-        color: $color-dark-shade-75;
-
-        &::-webkit-input-placeholder {
-            background: $color-dark-shade-25;
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            border: 0rem solid transparent;
-        }
-
-        &:-webkit-autofill,
-        &:-webkit-autofill:hover,
-        &:-webkit-autofill:focus,
-        textarea:-webkit-autofill,
-        textarea:-webkit-autofill:hover,
-        textarea:-webkit-autofill:focus,
-        select:-webkit-autofill,
-        select:-webkit-autofill:hover,
-        select:-webkit-autofill:focus {
-            border: 0rem solid rgba(255, 255, 255, 0);
-            -webkit-text-fill-color: $color-dark-shade-75;
-            -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
-            transition: background-color 5000s ease-in-out 0s;
-            color: $color-dark-shade-75;
-        }
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    &__submitter {
-        cursor: pointer;
-        min-width: 2.625rem;
-        height: 2.625rem;
-        border: 0rem solid transparent;
-        background: $gradient-purple-to-blue;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: Material Icons;
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-    }
+  &__submitter {
+    cursor: pointer;
+    min-width: 2.625rem;
+    height: 2.625rem;
+    border: 0rem solid transparent;
+    background: $gradient-purple-to-blue;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Material Icons;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
 }

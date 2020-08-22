@@ -3,25 +3,25 @@
 @import '../social-media/social-media.scss';
 
 .short-footer {
-    width: max-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 7.55rem 12.5rem;
-    background: white;
-    box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7.55rem 12.5rem;
+  background: white;
+  box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
 
-    @media screen and(max-width: 767px) {
-        width: 100%;
-        padding: 7.55rem 9.72222%;
-    }
+  @media screen and(max-width: 767px) {
+    width: 100%;
+    padding: 7.55rem 9.72222%;
+  }
 
-    &__text {
-        margin-top: 1.125rem;
-        margin-bottom: 1.28rem;
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        text-align: center;
-        color: $color-dark-shade-75;
-    }
+  &__text {
+    margin-top: 1.125rem;
+    margin-bottom: 1.28rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: $color-dark-shade-75;
+  }
 }

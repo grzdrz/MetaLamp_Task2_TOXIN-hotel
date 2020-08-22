@@ -1,28 +1,28 @@
 mixin form-input(options = {})
-    - 
-        const {
-            title = "",
-            additionalTitle = "",
-            placeholder = "Email",
-            name = "email",
-            type = "email",
-            value = "",
-            hasSubmitButton = false
-        } = options;
+  - 
+    const {
+      title = "",
+      additionalTitle = "",
+      placeholder = "Email",
+      name = "email",
+      type = "email",
+      value = "",
+      hasSubmitButton = false
+    } = options;
 
-    div(class=["form-input"])
-        - if(title)
-            p(class=["form-input__title"])
-                span(class=["form-input__title-text"])= title
-                - if(additionalTitle)
-                    span(class=["form-input__additional-title-text"])= additionalTitle
-        div(class=["form-input__input-container"])
-            input(class=["form-input__input"],
-                placeholder= placeholder,
-                name= name,
-                type= type,
-                value= value)
-            - if(hasSubmitButton)
-                input(class=["form-input__submitter"]
-                    type="submit"
-                    value="arrow_forward")
+  div(class=["form-input"])
+    - if(title)
+      p(class=["form-input__title"])
+        span(class=["form-input__title-text"])= title
+        - if(additionalTitle)
+          span(class=["form-input__additional-title-text"])= additionalTitle
+    div(class=["form-input__input-container"])
+      input(class=["form-input__input"],
+        placeholder= placeholder,
+        name= name,
+        type= type,
+        value= value)
+      - if(hasSubmitButton)
+        input(class=["form-input__submitter"]
+          type="submit"
+          value="arrow_forward")

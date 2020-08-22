@@ -1,64 +1,64 @@
 .font-demo {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    &__tag {
-        margin-right: 1.875rem;
-        min-width: 2.3125rem;
-        text-align: end;
+  &__tag {
+    margin-right: 1.875rem;
+    min-width: 2.3125rem;
+    text-align: end;
+  }
+
+  &__description {
+    max-width: 21rem;
+  }
+
+  &_font {
+    &-family {
+      &_quicksand {
+        font-family: Quicksand, OpenSans, Arial, sans-serif;
+      }
     }
 
-    &__description {
-        max-width: 21rem;
+    &-weight {
+      &_bold {
+        font-weight: bold;
+      }
     }
 
-    &_font {
-        &-family {
-            &_quicksand {
-                font-family: Quicksand, OpenSans, Arial, sans-serif;
-            }
-        }
+    &-size {
+      &_24px {
+        font-size: 1.5rem;
+      }
 
-        &-weight {
-            &_bold {
-                font-weight: bold;
-            }
-        }
+      &_19px {
+        font-size: 1.1875rem;
+      }
 
-        &-size {
-            &_24px {
-                font-size: 1.5rem;
-            }
+      &_14px {
+        font-size: 0.875rem;
+      }
 
-            &_19px {
-                font-size: 1.1875rem;
-            }
-
-            &_14px {
-                font-size: 0.875rem;
-            }
-
-            &_12px {
-                font-size: 0.75rem;
-            }
-        }
-
-        &-line-height {
-            &_30px {
-                line-height: 1.875rem;
-            }
-
-            &_24px {
-                line-height: 1.5rem;
-            }
-
-            &_15px {
-                line-height: 0.9375rem;
-            }
-        }
-
-        &_uppercase {
-            text-transform: uppercase;
-        }
+      &_12px {
+        font-size: 0.75rem;
+      }
     }
+
+    &-line-height {
+      &_30px {
+        line-height: 1.875rem;
+      }
+
+      &_24px {
+        line-height: 1.5rem;
+      }
+
+      &_15px {
+        line-height: 0.9375rem;
+      }
+    }
+
+    &_uppercase {
+      text-transform: uppercase;
+    }
+  }
 }

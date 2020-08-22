@@ -1,39 +1,39 @@
 @import '../../assets/constants.scss';
 
 .bullet-list {
+  display: flex;
+  flex-direction: column;
+
+  &__list {
     display: flex;
     flex-direction: column;
+    list-style: none;
+  }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 0.625rem;
+
+    &:last-of-type {
+      margin-bottom: 0rem;
     }
+  }
 
-    &__item {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        margin-bottom: 0.625rem;
+  &__item-marker {
+    width: 0.625rem;
+    height: 0.625rem;
+    margin-right: 0.625rem;
+    border-radius: 50%;
+    background: $color-dark-shade-25;
+  }
 
-        &:last-of-type {
-            margin-bottom: 0rem;
-        }
-    }
-
-    &__item-marker {
-        width: 0.625rem;
-        height: 0.625rem;
-        margin-right: 0.625rem;
-        border-radius: 50%;
-        background: $color-dark-shade-25;
-    }
-
-    &__item-text {
-        width: 15rem;
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        color: $color-dark-shade-75;
-        word-break: break-word;
-    }
+  &__item-text {
+    width: 15rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: $color-dark-shade-75;
+    word-break: break-word;
+  }
 }

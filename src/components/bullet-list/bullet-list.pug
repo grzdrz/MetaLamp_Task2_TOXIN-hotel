@@ -1,17 +1,17 @@
 mixin bullet-list(options = {})
-    - 
-        const { 
-            inRoomDetailsPage = false,
-            list = [
-                "Нельзя с питомцами",
-                "Без вечеринок и мероприятий",
-                "Время прибытия — после 13:00, а выезд до 12:00",
-            ], 
-        } = options;
+  - 
+    const { 
+      inRoomDetailsPage = false,
+      list = [
+        "Нельзя с питомцами",
+        "Без вечеринок и мероприятий",
+        "Время прибытия — после 13:00, а выезд до 12:00",
+      ], 
+    } = options;
 
-    div(class=["bullet-list"])
-        ul(class=["bullet-list__list"])    
-            - for(let item of list)
-                li(class=["bullet-list__item"])
-                    span(class=["bullet-list__item-marker"])
-                    p(class=["bullet-list__item-text"])= item
+  div(class=["bullet-list"])
+    ul(class=["bullet-list__list"])    
+      - for(let item of list)
+        li(class=["bullet-list__item"])
+          span(class=["bullet-list__item-marker"])
+          p(class=["bullet-list__item-text"])= item

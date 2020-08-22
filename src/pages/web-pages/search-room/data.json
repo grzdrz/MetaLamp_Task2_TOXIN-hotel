@@ -1,126 +1,126 @@
 {
-    "roomsInfo": [
-        {
-            "blockNumber": 0,
-            "photosCount": 4,
-            "roomNumber": 888,
-            "roomStatus": "люкс",
-            "roomPrice": 9990,
-            "currencyType": "₽",
-            "reviewsCount": "145",
-            "checkedStarIndex": 5,
-            "url": "room-details.html"
-        },
-        {
-            "blockNumber": 1,
-            "photosCount": 1,
-            "roomNumber": 840,
-            "roomPrice": 9990,
-            "currencyType": "₽",
-            "reviewsCount": "65",
-            "checkedStarIndex": 4,
-            "url": "room-details.html"
-        },
-        {
-            "blockNumber": 2,
-            "photosCount": 1,
-            "roomNumber": 980,
-            "roomStatus": "люкс",
-            "roomPrice": 8500,
-            "currencyType": "₽",
-            "reviewsCount": "35",
-            "checkedStarIndex": 3,
-            "url": "room-details.html"
-        },
-        {
-            "blockNumber": 3,
-            "photosCount": 1,
-            "roomNumber": 856,
-            "roomPrice": 7300,
-            "currencyType": "₽",
-            "reviewsCount": "19",
-            "checkedStarIndex": 5,
-            "url": "room-details.html"
-        },
-        {
-            "blockNumber": 4,
-            "photosCount": 1,
-            "roomNumber": 740,
-            "roomPrice": 6000,
-            "currencyType": "₽",
-            "reviewsCount": "44",
-            "checkedStarIndex": 4,
-            "url": "room-details.html"
-        },
-        {
-            "blockNumber": 5,
-            "photosCount": 1,
-            "roomNumber": 982,
-            "roomPrice": 5800,
-            "currencyType": "₽",
-            "reviewsCount": "56",
-            "checkedStarIndex": 3,
-            "url": "room-details.html"
-        },
-        {
-            "blockNumber": 6,
-            "photosCount": 1,
-            "roomNumber": 678,
-            "roomPrice": 5500,
-            "currencyType": "₽",
-            "reviewsCount": "45",
-            "checkedStarIndex": 5,
-            "url": "room-details.html"
-        },
-        {
-            "blockNumber": 7,
-            "photosCount": 1,
-            "roomNumber": 450,
-            "roomPrice": 5300,
-            "currencyType": "₽",
-            "reviewsCount": "39",
-            "checkedStarIndex": 4,
-            "url": "room-details.html"
-        },
-        {
-            "blockNumber": 8,
-            "photosCount": 1,
-            "roomNumber": 350,
-            "roomPrice": 5000,
-            "currencyType": "₽",
-            "reviewsCount": "77",
-            "checkedStarIndex": 3,
-            "url": "room-details.html"
-        },
-        {
-            "blockNumber": 9,
-            "photosCount": 1,
-            "roomNumber": 666,
-            "roomPrice": 5000,
-            "currencyType": "₽",
-            "reviewsCount": "25",
-            "checkedStarIndex": 5,
-            "url": "room-details.html"
-        },
-        {
-            "blockNumber": 10,
-            "photosCount": 1,
-            "roomNumber": 444,
-            "roomPrice": 5000,
-            "currencyType": "₽",
-            "reviewsCount": "15",
-            "checkedStarIndex": 3,
-            "url": "room-details.html"
-        },
-        {
-            "blockNumber": 11,
-            "photosCount": 1,
-            "roomNumber": 352,
-            "roomPrice": 5000,
-            "currencyType": "₽",
-            "reviewsCount": "55",
-            "checkedStarIndex": 3,
-            "url": "room-details.html"
-        }
-    ]
+  "roomsInfo": [
+    {
+      "blockNumber": 0,
+      "photosCount": 4,
+      "roomNumber": 888,
+      "roomStatus": "люкс",
+      "roomPrice": 9990,
+      "currencyType": "₽",
+      "reviewsCount": "145",
+      "checkedStarIndex": 5,
+      "url": "room-details.html"
+    },
+    {
+      "blockNumber": 1,
+      "photosCount": 1,
+      "roomNumber": 840,
+      "roomPrice": 9990,
+      "currencyType": "₽",
+      "reviewsCount": "65",
+      "checkedStarIndex": 4,
+      "url": "room-details.html"
+    },
+    {
+      "blockNumber": 2,
+      "photosCount": 1,
+      "roomNumber": 980,
+      "roomStatus": "люкс",
+      "roomPrice": 8500,
+      "currencyType": "₽",
+      "reviewsCount": "35",
+      "checkedStarIndex": 3,
+      "url": "room-details.html"
+    },
+    {
+      "blockNumber": 3,
+      "photosCount": 1,
+      "roomNumber": 856,
+      "roomPrice": 7300,
+      "currencyType": "₽",
+      "reviewsCount": "19",
+      "checkedStarIndex": 5,
+      "url": "room-details.html"
+    },
+    {
+      "blockNumber": 4,
+      "photosCount": 1,
+      "roomNumber": 740,
+      "roomPrice": 6000,
+      "currencyType": "₽",
+      "reviewsCount": "44",
+      "checkedStarIndex": 4,
+      "url": "room-details.html"
+    },
+    {
+      "blockNumber": 5,
+      "photosCount": 1,
+      "roomNumber": 982,
+      "roomPrice": 5800,
+      "currencyType": "₽",
+      "reviewsCount": "56",
+      "checkedStarIndex": 3,
+      "url": "room-details.html"
+    },
+    {
+      "blockNumber": 6,
+      "photosCount": 1,
+      "roomNumber": 678,
+      "roomPrice": 5500,
+      "currencyType": "₽",
+      "reviewsCount": "45",
+      "checkedStarIndex": 5,
+      "url": "room-details.html"
+    },
+    {
+      "blockNumber": 7,
+      "photosCount": 1,
+      "roomNumber": 450,
+      "roomPrice": 5300,
+      "currencyType": "₽",
+      "reviewsCount": "39",
+      "checkedStarIndex": 4,
+      "url": "room-details.html"
+    },
+    {
+      "blockNumber": 8,
+      "photosCount": 1,
+      "roomNumber": 350,
+      "roomPrice": 5000,
+      "currencyType": "₽",
+      "reviewsCount": "77",
+      "checkedStarIndex": 3,
+      "url": "room-details.html"
+    },
+    {
+      "blockNumber": 9,
+      "photosCount": 1,
+      "roomNumber": 666,
+      "roomPrice": 5000,
+      "currencyType": "₽",
+      "reviewsCount": "25",
+      "checkedStarIndex": 5,
+      "url": "room-details.html"
+    },
+    {
+      "blockNumber": 10,
+      "photosCount": 1,
+      "roomNumber": 444,
+      "roomPrice": 5000,
+      "currencyType": "₽",
+      "reviewsCount": "15",
+      "checkedStarIndex": 3,
+      "url": "room-details.html"
+    },
+    {
+      "blockNumber": 11,
+      "photosCount": 1,
+      "roomNumber": 352,
+      "roomPrice": 5000,
+      "currencyType": "₽",
+      "reviewsCount": "55",
+      "checkedStarIndex": 3,
+      "url": "room-details.html"
+    }
+  ]
 }

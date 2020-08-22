@@ -1,16 +1,16 @@
 mixin color-demo(options = {})
-    - 
-        const { 
-            colorName = "Purple",
-            colorCode = "#BC9CFF",
-            backgroundColor = "purple",
-        } = options;
-        const squareClasses = [];
+  - 
+    const { 
+      colorName = "Purple",
+      colorCode = "#BC9CFF",
+      backgroundColor = "purple",
+    } = options;
+    const squareClasses = [];
 
-        if(backgroundColor) squareClasses.push(`color-demo__color_${backgroundColor}`);
+    if(backgroundColor) squareClasses.push(`color-demo__color_${backgroundColor}`);
 
-    div(class=["color-demo"])
-        div(class=["color-demo__colored-square"].concat(squareClasses))
-        div(class=["color-demo__text-container"])
-            p(class=["color-demo__color-name"])= colorName
-            p(class=["color-demo__color-code"])= colorCode
+  div(class=["color-demo"])
+    div(class=["color-demo__colored-square"].concat(squareClasses))
+    div(class=["color-demo__text-container"])
+      p(class=["color-demo__color-name"])= colorName
+      p(class=["color-demo__color-code"])= colorCode

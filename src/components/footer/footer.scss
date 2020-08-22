@@ -6,138 +6,138 @@
 @import '../menu-bar/menu-bar.scss';
 
 .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
+
+  &__info-bar {
     width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 25.9% 17.2% 17.3% 19.6% 20%;
+    justify-items: start;
+    margin-bottom: 0.0625rem;
+    padding: 6.25rem scalePixelsAsPercentage(140, 1440);
+    box-shadow: 0rem 0.0625rem 0rem $color-dark-shade-10;
+
+    @media screen and (max-width: 1300px) {
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: 31% 22% 22.5% 24.5%;
+    }
+    @media screen and (max-width: 1100px) {
+      display: grid;
+      grid-template-rows: auto auto auto;
+      grid-template-columns: 39% 30% 30.5%;
+      grid-row-gap: 1.875rem;
+    }
+    @media screen and (max-width: 850px) {
+      display: grid;
+      grid-template-rows: auto auto auto auto;
+      grid-template-columns: 55% 45%;
+    }
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 0rem;
+      margin-bottom: 0rem;
+      box-shadow: 0rem 0rem 0rem transparent;
+    }
+  }
+
+  &__general-info {
+    width: 16.25rem;
     display: flex;
     flex-direction: column;
-    background: white;
-    box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
 
-    &__info-bar {
-        width: 100%;
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 25.9% 17.2% 17.3% 19.6% 20%;
-        justify-items: start;
-        margin-bottom: 0.0625rem;
-        padding: 6.25rem scalePixelsAsPercentage(140, 1440);
-        box-shadow: 0rem 0.0625rem 0rem $color-dark-shade-10;
-
-        @media screen and (max-width: 1300px) {
-            display: grid;
-            grid-template-rows: auto auto;
-            grid-template-columns: 31% 22% 22.5% 24.5%;
-        }
-        @media screen and (max-width: 1100px) {
-            display: grid;
-            grid-template-rows: auto auto auto;
-            grid-template-columns: 39% 30% 30.5%;
-            grid-row-gap: 1.875rem;
-        }
-        @media screen and (max-width: 850px) {
-            display: grid;
-            grid-template-rows: auto auto auto auto;
-            grid-template-columns: 55% 45%;
-        }
-        @media screen and (max-width: 767px) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 0rem;
-            margin-bottom: 0rem;
-            box-shadow: 0rem 0rem 0rem transparent;
-        }
+    @media screen and (max-width: 767px) {
+      align-items: center;
     }
+  }
 
-    &__general-info {
-        width: 16.25rem;
-        display: flex;
-        flex-direction: column;
+  &__general-info-text {
+    margin-top: 1.125rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: $color-dark-shade-75;
+    overflow: hidden;
+    word-break: break-word;
 
-        @media screen and (max-width: 767px) {
-            align-items: center;
-        }
+    @media screen and (max-width: 767px) {
+      display: none;
     }
+  }
 
-    &__general-info-text {
-        margin-top: 1.125rem;
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        color: $color-dark-shade-75;
-        overflow: hidden;
-        word-break: break-word;
-
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
+  &__menu-bar {
+    @media screen and (max-width: 767px) {
+      display: none;
     }
+  }
 
-    &__menu-bar {
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
+  &__subscription {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    margin-top: 0.25rem;
+
+    @media screen and (max-width: 767px) {
+      display: none;
     }
+  }
 
-    &__subscription {
-        display: flex;
-        flex-direction: column;
-        justify-self: end;
-        margin-top: 0.25rem;
+  &__subscription-title {
+    margin-bottom: 1.1875rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-transform: uppercase;
+    color: $color-dark-shade-100;
+    word-break: break-word;
+  }
 
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
+  &__subscription-description {
+    margin-bottom: 1.375rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: $color-dark-shade-75;
+    word-break: break-word;
+  }
+
+  &__subscription-form {
+    width: 16.25rem;
+    display: flex;
+    flex-wrap: nowrap;
+    background: transparent;
+  }
+
+  &__copyright-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1.4375rem 9.72222% 1.3rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0rem 0.0625rem 0rem $color-dark-shade-10;
+
+    @media screen and (max-width: 850px) {
+      flex-direction: column;
     }
-
-    &__subscription-title {
-        margin-bottom: 1.1875rem;
-        font-weight: bold;
-        font-size: 0.75rem;
-        line-height: 0.9375rem;
-        text-transform: uppercase;
-        color: $color-dark-shade-100;
-        word-break: break-word;
+    @media screen and (max-width: 767px) {
+      padding-bottom: 7.5rem;
     }
+  }
 
-    &__subscription-description {
-        margin-bottom: 1.375rem;
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        color: $color-dark-shade-75;
-        word-break: break-word;
+  &__copyright {
+    font-size: 0.875rem;
+    line-height: 1.6rem;
+    color: $color-dark-shade-75;
+    text-align: center;
+
+    @media screen and (max-width: 850px) {
+      margin-bottom: 1.25rem;
     }
-
-    &__subscription-form {
-        width: 16.25rem;
-        display: flex;
-        flex-wrap: nowrap;
-        background: transparent;
-    }
-
-    &__copyright-bar {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding: 1.4375rem 9.72222% 1.3rem;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 0rem 0.0625rem 0rem $color-dark-shade-10;
-
-        @media screen and (max-width: 850px) {
-            flex-direction: column;
-        }
-        @media screen and (max-width: 767px) {
-            padding-bottom: 7.5rem;
-        }
-    }
-
-    &__copyright {
-        font-size: 0.875rem;
-        line-height: 1.6rem;
-        color: $color-dark-shade-75;
-        text-align: center;
-
-        @media screen and (max-width: 850px) {
-            margin-bottom: 1.25rem;
-        }
-    }
+  }
 }

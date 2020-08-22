@@ -1,53 +1,53 @@
 include ../like-button/like-button.pug
 
 mixin room-reviews(options = {})
-    -
-        const { 
-            hasTitle = false,
-            reviews = [
-                {
-                    imageName: "avatar-murat-sarafanof",
-                    fullName: "Мурад Сарафанов",
-                    numberOfDaysSinceComment: "5 дней назад",
-                    likeButtonOptions: {
-                        number: 12,
-                        isChecked: true,
-                    },
-                    comment: `Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. 
-                        И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто 
-                        не жаловался из соседей.`,
-                },               
-            ], 
-        } = options;
+  -
+    const { 
+      hasTitle = false,
+      reviews = [
+        {
+          imageName: "avatar-murat-sarafanof",
+          fullName: "Мурад Сарафанов",
+          numberOfDaysSinceComment: "5 дней назад",
+          likeButtonOptions: {
+            number: 12,
+            isChecked: true,
+          },
+          comment: `Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. 
+            И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто 
+            не жаловался из соседей.`,
+        },               
+      ], 
+    } = options;
 
-        function doDeclensionOfWord(number) {
-            const words = ["отзыв", "отзыва", "отзывов"];
+    function doDeclensionOfWord(number) {
+      const words = ["отзыв", "отзыва", "отзывов"];
 
-            const isEndOnOne = number.toString()[number.toString().length - 1] === "1";
-            const isNotEqualEleven = number !== 11;
-            if (isEndOnOne && isNotEqualEleven) 
-                return words[0];
+      const isEndOnOne = number.toString()[number.toString().length - 1] === "1";
+      const isNotEqualEleven = number !== 11;
+      if (isEndOnOne && isNotEqualEleven) 
+        return words[0];
 
-            const isEndNumberMoreThenOne = number.toString()[number.toString().length - 1] > 1;
-            const isEndNumberLessThenFour = number.toString()[number.toString().length - 1] <= 4;
-            const isEndNumberBetweenTwelveAndFourteen = number < 12 || number > 14;
-            if (isEndNumberMoreThenOne && isEndNumberLessThenFour && isEndNumberBetweenTwelveAndFourteen) 
-                return words[1];
+      const isEndNumberMoreThenOne = number.toString()[number.toString().length - 1] > 1;
+      const isEndNumberLessThenFour = number.toString()[number.toString().length - 1] <= 4;
+      const isEndNumberBetweenTwelveAndFourteen = number < 12 || number > 14;
+      if (isEndNumberMoreThenOne && isEndNumberLessThenFour && isEndNumberBetweenTwelveAndFourteen) 
+        return words[1];
 
-            return words[2];
-        }
+      return words[2];
+    }
 
-    ul(class=["room-reviews"])
-        - if(hasTitle)
-            p(class=["room-reviews__title"]) 
-                span(class=["room-reviews__title-description"]) Отзывы посетителей номера
-                span(class=["room-reviews__review-count"])= `${reviews.length} ${doDeclensionOfWord(reviews.length)}`
-        - for(let review of reviews)
-            li(class=["room-reviews__review-container"])
-                img(class=["room-reviews__user-avatar"] src=`./src/components/room-reviews/img/${review.imageName}.png` alt="User avatar")
-                div(class=["room-reviews__user-info"])
-                    p(class=["room-reviews__user-full-name"])= review.fullName
-                    p(class=["room-reviews__number-of-days-since-comment"])= review.numberOfDaysSinceComment
-                div(class=["room-reviews__like-button"])
-                    +like-button(review.likeButtonOptions)
-                p(class=["room-reviews__comment"])= review.comment
+  ul(class=["room-reviews"])
+    - if(hasTitle)
+      p(class=["room-reviews__title"]) 
+        span(class=["room-reviews__title-description"]) Отзывы посетителей номера
+        span(class=["room-reviews__review-count"])= `${reviews.length} ${doDeclensionOfWord(reviews.length)}`
+    - for(let review of reviews)
+      li(class=["room-reviews__review-container"])
+        img(class=["room-reviews__user-avatar"] src=`./src/components/room-reviews/img/${review.imageName}.png` alt="User avatar")
+        div(class=["room-reviews__user-info"])
+          p(class=["room-reviews__user-full-name"])= review.fullName
+          p(class=["room-reviews__number-of-days-since-comment"])= review.numberOfDaysSinceComment
+        div(class=["room-reviews__like-button"])
+          +like-button(review.likeButtonOptions)
+        p(class=["room-reviews__comment"])= review.comment

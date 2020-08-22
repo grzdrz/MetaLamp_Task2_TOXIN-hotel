@@ -6,17 +6,17 @@ include ../../../components/footer/footer.pug
 include ../../../components/short-footer/short-footer.pug
 
 block content
-    div(class=["headers-and-footers"])
-        div(class=["headers-and-footers__header"])
-            +header({
-                isAuthorized: false,
-            })
-        div(class=["headers-and-footers__header"])
-            +header({
-                isAuthorized: true,
-                userFullName: "Юлий Цезарь",
-            })
-        div(class=["headers-and-footers__footer"])
-            +footer()
-        div(class=["headers-and-footers__footer"])
-            +short-footer()
+  div(class=["headers-and-footers"])
+    div(class=["headers-and-footers__header"])
+      +header({
+        isAuthorized: false,
+      })
+    div(class=["headers-and-footers__header"])
+      +header({
+        isAuthorized: true,
+        userFullName: "Юлий Цезарь",
+      })
+    div(class=["headers-and-footers__footer"])
+      +footer()
+    div(class=["headers-and-footers__footer"])
+      +short-footer()

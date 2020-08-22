@@ -17,273 +17,273 @@
 @import '../../../components/room-reviews/room-reviews.scss';
 
 @mixin title {
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
-    text-transform: uppercase;
-    color: $color-dark-shade-100;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  text-transform: uppercase;
+  color: $color-dark-shade-100;
 }
 
 .form-elements {
-    min-width: 100%;
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  grid-column-gap: 7.9375rem;
+  margin-top: 4.0625rem;
+  padding: 0rem 8.75rem 9.375rem;
+
+  &__column {
+    &-left,
+    &-central,
+    &-right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-right {
+      margin-left: 0.33rem;
+    }
+  }
+
+  &__form-input_type_default,
+  &__form-input_type_hover {
+    width: 20rem;
+  }
+
+  &__form-input_type_default,
+  &__form-input_type_hover {
+    margin-bottom: 1.28rem;
+  }
+
+  &__form-input_type_hover {
+    & .form-input__additional-title-text {
+      line-height: 0.95rem;
+    }
+  }
+
+  &__dropdown_type_default {
+    width: 20rem;
+    margin-bottom: 1.4rem;
+  }
+
+  &__calendar_type_default {
+    width: 20rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__calendar_type_double {
+    width: 20rem;
+    margin-bottom: 2.55rem;
+  }
+
+  &__calendar_type_single-with-range {
+    width: 16.625rem;
+    margin-bottom: 2.5625rem;
+  }
+
+  &__form-input_type_subscription {
+    width: 16.625rem;
+  }
+
+  &__checkbox_type_simple {
+    margin-bottom: 2.5rem;
+  }
+
+  &__radio {
+    width: max-content;
+    margin-bottom: 2.5625rem;
+
+    &-title {
+      margin-bottom: 0.875rem;
+      @include title();
+    }
+  }
+
+  &__toggles {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.8125rem;
+
+    &-title {
+      margin-bottom: 1rem;
+      @include title();
+    }
+  }
+
+  &__toggle {
+    width: max-content;
+
+    &:first-of-type {
+      margin-bottom: 0.875rem;
+    }
+  }
+
+  &__like-buttons {
     display: grid;
-    grid-template-columns: min-content min-content min-content;
-    grid-column-gap: 7.9375rem;
-    margin-top: 4.0625rem;
-    padding: 0rem 8.75rem 9.375rem;
+    grid-template-columns: min-content min-content;
+    grid-column-gap: 0.625rem;
+    margin-bottom: 2.5rem;
 
-    &__column {
-        &-left,
-        &-central,
-        &-right {
-            display: flex;
-            flex-direction: column;
-        }
+    &-title {
+      margin-bottom: 1rem;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      @include title();
+    }
+  }
 
-        &-right {
-            margin-left: 0.33rem;
-        }
+  &__like-button {
+    width: max-content;
+  }
+
+  &__star-ratings {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-column-gap: 1.25rem;
+
+    &-title {
+      margin-bottom: 1rem;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      @include title();
+    }
+  }
+
+  &__star-rating {
+    width: max-content;
+  }
+
+  &__range-slider {
+    width: 16.625rem;
+    margin-bottom: 2.0625rem;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-column-gap: 1.1875rem;
+    margin-bottom: 1.875rem;
+
+    &-title {
+      margin-bottom: 1rem;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      @include title();
+    }
+  }
+
+  &__button_type_simple,
+  &__button_type_simple-hover,
+  &__button_type_hollow,
+  &__button_type_hollow-hover {
+    width: 6.1875rem;
+    height: 2.75rem;
+  }
+
+  &__button_type_simple {
+    margin-bottom: 1.8125rem;
+  }
+
+  &__text-buttons {
+    display: flex;
+    margin-bottom: 1.6875rem;
+  }
+
+  &__text-button {
+    &:first-of-type {
+      margin-right: 1.25rem;
+    }
+  }
+
+  &__button_type_submit {
+    width: 20rem;
+    height: 2.75rem;
+    margin-bottom: 2.625rem;
+  }
+
+  &__pagination {
+    width: max-content;
+  }
+
+  &__row {
+    &-top,
+    &-central,
+    &-bottom {
+      display: flex;
+      grid-column-start: 1;
+      grid-column-end: 4;
     }
 
-    &__form-input_type_default,
-    &__form-input_type_hover {
-        width: 20rem;
+    &-top {
+      margin-top: 6.25rem;
+      margin-bottom: 9.9rem;
     }
 
-    &__form-input_type_default,
-    &__form-input_type_hover {
-        margin-bottom: 1.28rem;
+    &-central {
+      margin-bottom: 2.5rem;
     }
+  }
 
-    &__form-input_type_hover {
-        & .form-input__additional-title-text {
-            line-height: 0.95rem;
-        }
+  &__dropdowns {
+    margin-right: 11.3125rem;
+  }
+
+  &__dropdown_type_room-items-counter {
+    width: 16.625rem;
+
+    &:first-of-type {
+      margin-bottom: 1.25rem;
     }
+  }
 
-    &__dropdown_type_default {
-        width: 20rem;
-        margin-bottom: 1.4rem;
+  &__dropdown_type_guests-counter,
+  &__dropdown_type_guests-counter {
+    width: 20rem;
+    margin-right: 4.5rem;
+
+    &:last-of-type {
+      margin-right: 0rem;
     }
+  }
 
-    &__calendar_type_default {
-        width: 20rem;
-        margin-bottom: 2.5rem;
+  &__checkboxes {
+    margin-right: 11.3125rem;
+  }
+
+  &__checkbox_type_expandable {
+    width: 16.625rem;
+
+    &:first-of-type {
+      margin-bottom: 1.2rem;
     }
+  }
 
-    &__calendar_type_double {
-        width: 20rem;
-        margin-bottom: 2.55rem;
+  &__checkbox_type_rich {
+    margin-right: 8.3125rem;
+    margin-top: 0.93rem;
+  }
+
+  &__bullet-list {
+    margin-top: 0.85rem;
+
+    &-title {
+      margin-bottom: 14px;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 0.9375rem;
+      text-transform: uppercase;
+      color: $color-dark-shade-100;
+      word-break: break-word;
     }
+  }
 
-    &__calendar_type_single-with-range {
-        width: 16.625rem;
-        margin-bottom: 2.5625rem;
-    }
+  &__room-advantages {
+    margin-right: 9.8rem;
+  }
 
-    &__form-input_type_subscription {
-        width: 16.625rem;
-    }
-
-    &__checkbox_type_simple {
-        margin-bottom: 2.5rem;
-    }
-
-    &__radio {
-        width: max-content;
-        margin-bottom: 2.5625rem;
-
-        &-title {
-            margin-bottom: 0.875rem;
-            @include title();
-        }
-    }
-
-    &__toggles {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2.8125rem;
-
-        &-title {
-            margin-bottom: 1rem;
-            @include title();
-        }
-    }
-
-    &__toggle {
-        width: max-content;
-
-        &:first-of-type {
-            margin-bottom: 0.875rem;
-        }
-    }
-
-    &__like-buttons {
-        display: grid;
-        grid-template-columns: min-content min-content;
-        grid-column-gap: 0.625rem;
-        margin-bottom: 2.5rem;
-
-        &-title {
-            margin-bottom: 1rem;
-            grid-column-start: 1;
-            grid-column-end: 3;
-            @include title();
-        }
-    }
-
-    &__like-button {
-        width: max-content;
-    }
-
-    &__star-ratings {
-        display: grid;
-        grid-template-columns: min-content min-content;
-        grid-column-gap: 1.25rem;
-
-        &-title {
-            margin-bottom: 1rem;
-            grid-column-start: 1;
-            grid-column-end: 3;
-            @include title();
-        }
-    }
-
-    &__star-rating {
-        width: max-content;
-    }
-
-    &__range-slider {
-        width: 16.625rem;
-        margin-bottom: 2.0625rem;
-    }
-
-    &__buttons {
-        display: grid;
-        grid-template-columns: min-content min-content;
-        grid-column-gap: 1.1875rem;
-        margin-bottom: 1.875rem;
-
-        &-title {
-            margin-bottom: 1rem;
-            grid-column-start: 1;
-            grid-column-end: 3;
-            @include title();
-        }
-    }
-
-    &__button_type_simple,
-    &__button_type_simple-hover,
-    &__button_type_hollow,
-    &__button_type_hollow-hover {
-        width: 6.1875rem;
-        height: 2.75rem;
-    }
-
-    &__button_type_simple {
-        margin-bottom: 1.8125rem;
-    }
-
-    &__text-buttons {
-        display: flex;
-        margin-bottom: 1.6875rem;
-    }
-
-    &__text-button {
-        &:first-of-type {
-            margin-right: 1.25rem;
-        }
-    }
-
-    &__button_type_submit {
-        width: 20rem;
-        height: 2.75rem;
-        margin-bottom: 2.625rem;
-    }
-
-    &__pagination {
-        width: max-content;
-    }
-
-    &__row {
-        &-top,
-        &-central,
-        &-bottom {
-            display: flex;
-            grid-column-start: 1;
-            grid-column-end: 4;
-        }
-
-        &-top {
-            margin-top: 6.25rem;
-            margin-bottom: 9.9rem;
-        }
-
-        &-central {
-            margin-bottom: 2.5rem;
-        }
-    }
-
-    &__dropdowns {
-        margin-right: 11.3125rem;
-    }
-
-    &__dropdown_type_room-items-counter {
-        width: 16.625rem;
-
-        &:first-of-type {
-            margin-bottom: 1.25rem;
-        }
-    }
-
-    &__dropdown_type_guests-counter,
-    &__dropdown_type_guests-counter {
-        width: 20rem;
-        margin-right: 4.5rem;
-
-        &:last-of-type {
-            margin-right: 0rem;
-        }
-    }
-
-    &__checkboxes {
-        margin-right: 11.3125rem;
-    }
-
-    &__checkbox_type_expandable {
-        width: 16.625rem;
-
-        &:first-of-type {
-            margin-bottom: 1.2rem;
-        }
-    }
-
-    &__checkbox_type_rich {
-        margin-right: 8.3125rem;
-        margin-top: 0.93rem;
-    }
-
-    &__bullet-list {
-        margin-top: 0.85rem;
-
-        &-title {
-            margin-bottom: 14px;
-            font-weight: bold;
-            font-size: 0.75rem;
-            line-height: 0.9375rem;
-            text-transform: uppercase;
-            color: $color-dark-shade-100;
-            word-break: break-word;
-        }
-    }
-
-    &__room-advantages {
-        margin-right: 9.8rem;
-    }
-
-    &__guest-room-reviews {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        margin-top: 0.6rem;
-    }
+  &__guest-room-reviews {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-top: 0.6rem;
+  }
 }

@@ -2,39 +2,39 @@ include ../button/button.pug
 include ../form-input/form-input.pug
 
 mixin sign-in-form(options = {})
-    - const { title = "" } = options;
+  - const { title = "" } = options;
 
-    form(class=["sign-in-form"])
-        - if(title)
-            p(class=["sign-in-form__title"])= title
-        div(class=["sign-in-form__fields"])
-            +form-input({              
-                placeholder: "Email",
-                name: "email",
-                type: "email",
-                value: "",
-                hasSubmitButton: false
-            })
-            +form-input({
-                placeholder: "Пароль",
-                name: "password",
-                type: "password",
-                value: "",
-                hasSubmitButton: false
-            })
-        div(class=["sign-in-form__submit-button"])
-            +button({
-                text: "войти",
-                isHollow: false,
-                buttonType: "submit",
-                hasArrow: true,
-            })
-        div(class=["sign-in-form__account-create-field"])
-            p(class=["sign-in-form__question-text"]) Нет аккаунта на Toxin?
-            div(class=["sign-in-form__create-button"])
-                +button({
-                    text: "создать",
-                    isHollow:  true,
-                    buttonType: "a",
-                    hasArrow: false,
-                })
+  form(class=["sign-in-form"])
+    - if(title)
+      p(class=["sign-in-form__title"])= title
+    div(class=["sign-in-form__fields"])
+      +form-input({              
+        placeholder: "Email",
+        name: "email",
+        type: "email",
+        value: "",
+        hasSubmitButton: false
+      })
+      +form-input({
+        placeholder: "Пароль",
+        name: "password",
+        type: "password",
+        value: "",
+        hasSubmitButton: false
+      })
+    div(class=["sign-in-form__submit-button"])
+      +button({
+        text: "войти",
+        isHollow: false,
+        buttonType: "submit",
+        hasArrow: true,
+      })
+    div(class=["sign-in-form__account-create-field"])
+      p(class=["sign-in-form__question-text"]) Нет аккаунта на Toxin?
+      div(class=["sign-in-form__create-button"])
+        +button({
+          text: "создать",
+          isHollow:  true,
+          buttonType: "a",
+          hasArrow: false,
+        })

@@ -1,68 +1,68 @@
 @import '../../assets/constants.scss';
 
 .color-demo {
+  display: flex;
+  flex-direction: row;
+
+  &__colored-square {
+    min-width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 0.375rem;
+  }
+
+  &__text-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2.5rem;
+  }
 
-    &__colored-square {
-        min-width: 4.375rem;
-        height: 4.375rem;
-        border-radius: 0.375rem;
+  &__color-name {
+    display: flex;
+    align-items: center;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.8125rem;
+    color: $color-dark-shade-100;
+  }
+
+  &__color-code {
+    display: flex;
+    align-items: center;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-size: 1.1875rem;
+    line-height: 1.8125rem;
+    color: $color-dark-shade-100;
+  }
+
+  &__color {
+    &_purple {
+      background: $color-purple;
     }
 
-    &__text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 2.5rem;
+    &_green {
+      background: $color-green;
     }
 
-    &__color-name {
-        display: flex;
-        align-items: center;
-        font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1.1875rem;
-        line-height: 1.8125rem;
-        color: $color-dark-shade-100;
+    &_dark-shade-5 {
+      background: $color-dark-shade-5;
     }
 
-    &__color-code {
-        display: flex;
-        align-items: center;
-        font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-size: 1.1875rem;
-        line-height: 1.8125rem;
-        color: $color-dark-shade-100;
+    &_dark-shade-25 {
+      background: $color-dark-shade-25;
     }
 
-    &__color {
-        &_purple {
-            background: $color-purple;
-        }
-
-        &_green {
-            background: $color-green;
-        }
-
-        &_dark-shade-5 {
-            background: $color-dark-shade-5;
-        }
-
-        &_dark-shade-25 {
-            background: $color-dark-shade-25;
-        }
-
-        &_dark-shade-50 {
-            background: $color-dark-shade-50;
-        }
-
-        &_dark-shade-75 {
-            background: $color-dark-shade-75;
-        }
-
-        &_dark-shade-100 {
-            background: $color-dark-shade-100;
-        }
+    &_dark-shade-50 {
+      background: $color-dark-shade-50;
     }
+
+    &_dark-shade-75 {
+      background: $color-dark-shade-75;
+    }
+
+    &_dark-shade-100 {
+      background: $color-dark-shade-100;
+    }
+  }
 }

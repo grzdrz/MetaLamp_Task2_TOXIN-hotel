@@ -14,36 +14,36 @@ global.jQuery = $;
 global.$ = $;
 
 const roomFinderForms = Array.from(document.querySelectorAll('.js-cards__room-finder-form'))
-    .map((element) => new RoomFinderForm(element));
+  .map((element) => new RoomFinderForm(element));
 
 const signUpForms = Array.from(document.querySelectorAll('.js-cards__sign-up-form'))
-    .map((element) => new SignUpForm(element));
+  .map((element) => new SignUpForm(element));
 
 const priceCalculationForms = Array.from(document.querySelectorAll('.js-cards__price-calculation-form'))
-    .map((element) => new PriceCalculationForm(element));
+  .map((element) => new PriceCalculationForm(element));
 
 const roomInfos = Array.from(document.querySelectorAll('.js-cards__room-info'))
-    .map((element) => new RoomInfo(element));
+  .map((element) => new RoomInfo(element));
 
 const staticDatepicker = $('.js-cards__datepicker').datepicker({
-    range: true,
-    position: 'bottom left',
-    navTitles: {
-        days: 'MM yyyy',
-    },
-    autoClose: false,
-    onShow(dp, animationCompleted) {
-        if (!animationCompleted) {
-            if (!dp.$datepicker.find('.calendar__buttons').html()) {
-                dp.$datepicker.append(
-                    `<div class="calendar__buttons">
+  range: true,
+  position: 'bottom left',
+  navTitles: {
+    days: 'MM yyyy',
+  },
+  autoClose: false,
+  onShow(dp, animationCompleted) {
+    if (!animationCompleted) {
+      if (!dp.$datepicker.find('.calendar__buttons').html()) {
+        dp.$datepicker.append(
+          `<div class="calendar__buttons">
                     <p class="calendar__clear-button">очистить</p>
                     <p class="calendar__apply-button">применить</p>
                     </div>`,
-                );
-                dp.$datepicker.find('.datepicker--pointer').css('display', 'none');
-            }
-        }
-    },
+        );
+        dp.$datepicker.find('.datepicker--pointer').css('display', 'none');
+      }
+    }
+  },
 }).data('datepicker');
 staticDatepicker.show();

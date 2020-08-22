@@ -9,108 +9,108 @@
 @import '../../../components/footer/footer.scss';
 
 .search-room {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.0625rem;
+  padding: 1.875rem 9.72222% 4.5625rem 9.72222%;
+  box-shadow: 0rem 0.0625rem 0rem $color-dark-shade-10;
+
+  @media screen and (max-width: 690px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.875rem 0rem 4.375rem 0rem;
+  }
+
+  &__filters {
+    width: max-content;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 0.0625rem;
-    padding: 1.875rem 9.72222% 4.5625rem 9.72222%;
-    box-shadow: 0rem 0.0625rem 0rem $color-dark-shade-10;
+    flex-direction: column;
+    margin-right: scalePixelsAsPercentage(75, 1440);
+  }
+
+  &__calendar {
+    width: 16.625rem;
+    display: flex;
+    margin-bottom: 1.25rem;
+  }
+
+  &__range-slider {
+    width: 16.625rem;
+    display: flex;
+    margin-bottom: 1.74rem;
+  }
+
+  &__dropdown_type_guests-counter {
+    margin-bottom: 1.89rem;
+    display: flex;
+    width: 16.625rem;
+  }
+
+  &__checkbox-list_type_simple {
+    width: max-content;
+    display: flex;
+    margin-bottom: 1.86rem;
+  }
+
+  &__checkbox-list_type_rich {
+    width: max-content;
+    display: flex;
+    margin-bottom: 1.75rem;
+  }
+
+  &__dropdown_type_room-items-counter {
+    width: 16.625rem;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  &__room-list {
+    display: flex;
+    flex-direction: column;
 
     @media screen and (max-width: 690px) {
-        flex-direction: column;
-        align-items: center;
-        padding: 1.875rem 0rem 4.375rem 0rem;
+      align-items: center;
+      margin-right: 0rem;
+      margin-top: 2.5rem;
     }
+  }
 
-    &__filters {
-        width: max-content;
-        display: flex;
-        flex-direction: column;
-        margin-right: scalePixelsAsPercentage(75, 1440);
+  &__list-title {
+    margin-bottom: 1.3125rem;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: $color-dark-shade-100;
+
+    @media screen and (max-width: 690px) {
+      padding: 0rem 1.25rem;
     }
+  }
 
-    &__calendar {
-        width: 16.625rem;
-        display: flex;
-        margin-bottom: 1.25rem;
+  &__list {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 0.75rem;
+    grid-row-gap: 1.32rem;
+
+    @media screen and (max-width: 1320px) {
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-columns: auto auto;
     }
-
-    &__range-slider {
-        width: 16.625rem;
-        display: flex;
-        margin-bottom: 1.74rem;
+    @media screen and (max-width: 1000px) {
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-columns: auto;
     }
+  }
 
-    &__dropdown_type_guests-counter {
-        margin-bottom: 1.89rem;
-        display: flex;
-        width: 16.625rem;
-    }
-
-    &__checkbox-list_type_simple {
-        width: max-content;
-        display: flex;
-        margin-bottom: 1.86rem;
-    }
-
-    &__checkbox-list_type_rich {
-        width: max-content;
-        display: flex;
-        margin-bottom: 1.75rem;
-    }
-
-    &__dropdown_type_room-items-counter {
-        width: 16.625rem;
-        display: flex;
-        margin-bottom: 1rem;
-    }
-
-    &__room-list {
-        display: flex;
-        flex-direction: column;
-
-        @media screen and (max-width: 690px) {
-            align-items: center;
-            margin-right: 0rem;
-            margin-top: 2.5rem;
-        }
-    }
-
-    &__list-title {
-        margin-bottom: 1.3125rem;
-        font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1.5rem;
-        line-height: 1.875rem;
-        color: $color-dark-shade-100;
-
-        @media screen and (max-width: 690px) {
-            padding: 0rem 1.25rem;
-        }
-    }
-
-    &__list {
-        display: grid;
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: auto auto auto;
-        grid-column-gap: 0.75rem;
-        grid-row-gap: 1.32rem;
-
-        @media screen and (max-width: 1320px) {
-            grid-template-rows: auto auto auto auto auto;
-            grid-template-columns: auto auto;
-        }
-        @media screen and (max-width: 1000px) {
-            grid-template-rows: auto auto auto auto auto auto;
-            grid-template-columns: auto;
-        }
-    }
-
-    &__pagination {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 2.5rem;
-        padding: 0rem 1rem 0rem 0rem;
-    }
+  &__pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    padding: 0rem 1rem 0rem 0rem;
+  }
 }

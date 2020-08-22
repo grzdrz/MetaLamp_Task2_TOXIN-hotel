@@ -4,192 +4,192 @@
 @import '../dropdown/dropdown.scss';
 
 .price-calculation-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1.75rem 1.875rem 1.875rem;
+  background: white;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0rem 0rem 1.5625rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+
+  &__title {
+    display: grid;
+    grid-template-columns: max-content max-content max-content auto min-content;
+    margin-top: 0.1875rem;
+    margin-bottom: 1.4375rem;
+  }
+
+  &__number-symbol {
+    align-self: end;
+    margin-right: 0.1875rem;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    color: $color-dark-shade-100;
+  }
+
+  &__room-number {
+    align-self: end;
+    margin-right: 0.3125rem;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.4375rem;
+    color: $color-dark-shade-100;
+    max-width: 3.125rem;
+    word-break: break-word;
+  }
+
+  &__room-status {
+    align-self: end;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-transform: uppercase;
+    color: $color-purple;
+  }
+
+  &__room-price {
+    justify-self: end;
+    align-self: end;
+    margin-right: 0.25rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 0.9375rem;
+    color: $color-dark-shade-50;
+    max-width: 6.125rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  &__period-of-time {
+    justify-self: end;
+    align-self: end;
+    white-space: nowrap;
+    margin-right: 0.0625rem;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    color: $color-dark-shade-50;
+  }
+
+  &__calendar {
+    margin-bottom: 1.25rem;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem 1.75rem 1.875rem 1.875rem;
-    background: white;
-    border: 0.0625rem solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0rem 0rem 1.5625rem rgba(0, 0, 0, 0.2);
-    border-radius: 0.25rem;
+  }
 
-    &__title {
-        display: grid;
-        grid-template-columns: max-content max-content max-content auto min-content;
-        margin-top: 0.1875rem;
-        margin-bottom: 1.4375rem;
-    }  
+  &__dropdown {
+    margin-bottom: 1.3125rem;
+    width: 100%;
+  }
 
-    &__number-symbol {
-        align-self: end;
-        margin-right: 0.1875rem;
-        font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 0.875rem;
-        line-height: 1.0625rem;
-        color: $color-dark-shade-100;
-    }
+  &__calculated-data {
+    margin-bottom: 1.25rem;
+  }
 
-    &__room-number {
-        align-self: end;
-        margin-right: 0.3125rem;
-        font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1.5rem;
-        line-height: 1.4375rem;
-        color: $color-dark-shade-100;
-        max-width: 3.125rem;
-        word-break: break-word;
-    }
+  &__main-sum-formula,
+  &__main-sum-result,
+  &__discount-description,
+  &__discount-value,
+  &__additional-services-description,
+  &__additional-services-value {
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    color: $color-dark-shade-75;
+  }
 
-    &__room-status {
-        align-self: end;
-        font-weight: bold;
-        font-size: 0.75rem;
-        line-height: 0.9375rem;
-        text-transform: uppercase;
-        color: $color-purple;
-    }
+  &__total-result-text,
+  &__total-result-value {
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    color: $color-dark-shade-100;
+  }
 
-    &__room-price {
-        justify-self: end;
-        align-self: end;
-        margin-right: 0.25rem;
-        font-weight: bold;
-        font-size: 0.875rem;
-        line-height: 0.9375rem;
-        color: $color-dark-shade-50;
-        max-width: 6.125rem;
-        white-space: normal;
-        word-break: break-word;
-    }
+  &__main-sum {
+    display: grid;
+    grid-template-columns: max-content auto;
+    margin-bottom: 0.9375rem;
+  }
 
-    &__period-of-time {
-        justify-self: end;
-        align-self: end;
-        white-space: nowrap;
-        margin-right: 0.0625rem;
-        font-size: 0.75rem;
-        line-height: 0.9375rem;
-        color: $color-dark-shade-50;
-    }
+  &__main-sum-formula,
+  &__discount-description,
+  &__additional-services-description {
+    max-width: 13.75rem;
+    word-break: break-word;
+  }
 
-    &__calendar {
-        margin-bottom: 1.25rem;
-        width: 100%;
-    }
+  &__main-sum-result {
+    justify-self: end;
+    word-break: break-word;
+  }
 
-    &__dropdown {
-        margin-bottom: 1.3125rem;
-        width: 100%;
-    }
+  &__services {
+    display: grid;
+    grid-template-columns: 13.75rem auto auto;
+    grid-row-gap: 0.875rem;
+    margin-bottom: 1.75rem;
+  }
 
-    &__calculated-data {
-        margin-bottom: 1.25rem;
-    }
+  &__discount {
+    display: grid;
+    grid-template-columns: max-content auto auto;
+  }
 
-    &__main-sum-formula,
-    &__main-sum-result,
-    &__discount-description,
-    &__discount-value,
-    &__additional-services-description,
-    &__additional-services-value {
-        font-size: 0.875rem;
-        line-height: 1.1875rem;
-        color: $color-dark-shade-75;
-    }
+  &__services-tooltip {
+    min-width: 1.25rem;
+    height: 1.25rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: baseline;
+    border: 0.0625rem solid $color-dark-shade-25;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: transparent;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    text-align: right;
+    color: $color-dark-shade-25;
+  }
 
-    &__total-result-text,
-    &__total-result-value {
-        font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1.1875rem;
-        line-height: 1.5rem;
-        color: $color-dark-shade-100;
-    }
+  &__discount-value {
+    justify-self: end;
+    word-break: break-word;
+  }
 
-    &__main-sum {
-        display: grid;
-        grid-template-columns: max-content auto;
-        margin-bottom: 0.9375rem;
-    }
+  &__additional-services-value {
+    justify-self: end;
+    word-break: break-word;
+  }
 
-    &__main-sum-formula,
-    &__discount-description,
-    &__additional-services-description {
-        max-width: 13.75rem;
-        word-break: break-word;
-    }
+  &__total-result {
+    display: grid;
+    grid-template-columns: max-content auto min-content;
+    overflow: hidden;
+  }
 
-    &__main-sum-result {
-        justify-self: end;
-        word-break: break-word;
-    }
+  &__total-result-text {
+    align-self: flex-end;
+  }
 
-    &__services {
-        display: grid;
-        grid-template-columns: 13.75rem auto auto;
-        grid-row-gap: 0.875rem;
-        margin-bottom: 1.75rem;
-    }
+  &__total-result-bottom-line {
+    margin-bottom: 0.3125rem;
+    border-bottom: 0.0625rem dashed $color-dark-shade-25;
+    box-sizing: border-box;
+    min-width: 1.25rem;
+  }
 
-    &__discount {
-        display: grid;
-        grid-template-columns: max-content auto auto;
-    }
+  &__total-result-value {
+    justify-self: end;
+    white-space: nowrap;
+  }
 
-    &__services-tooltip {
-        min-width: 1.25rem;
-        height: 1.25rem;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        justify-self: baseline;
-        border: 0.0625rem solid $color-dark-shade-25;
-        border-radius: 50%;
-        box-sizing: border-box;
-        background: transparent;
-        font-weight: bold;
-        font-size: 0.75rem;
-        line-height: 0.875rem;
-        text-align: right;
-        color: $color-dark-shade-25;
-    }
-
-    &__discount-value {
-        justify-self: end;
-        word-break: break-word;
-    }
-
-    &__additional-services-value {
-        justify-self: end;
-        word-break: break-word;
-    }
-
-    &__total-result {
-        display: grid;
-        grid-template-columns: max-content auto min-content;
-        overflow: hidden;
-    }
-
-    &__total-result-text {
-        align-self: flex-end;
-    }
-
-    &__total-result-bottom-line {
-        margin-bottom: 0.3125rem;
-        border-bottom: 0.0625rem dashed $color-dark-shade-25;
-        box-sizing: border-box;
-        min-width: 1.25rem;
-    }
-
-    &__total-result-value {
-        justify-self: end;
-        white-space: nowrap;
-    }
-
-    &__submit-button {
-        width: 100%;
-        height: 2.75rem;
-    }
+  &__submit-button {
+    width: 100%;
+    height: 2.75rem;
+  }
 }

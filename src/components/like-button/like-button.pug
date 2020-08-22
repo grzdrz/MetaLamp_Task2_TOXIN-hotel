@@ -1,14 +1,14 @@
 mixin like-button(options = {})
-    - 
-        const {
-            isChecked = false,
-            number = 0,
-        } = options;
+  - 
+    const {
+      isChecked = false,
+      number = 0,
+    } = options;
 
-    div(class=["like-button"])
-        input(class=["like-button__input"] type="checkbox" checked=isChecked)
-        label(class=["like-button__label"])
-            div(class=["like-button__background"])
-            span(class=["like-button__like-symbol"])
-            span(class=["like-button__likes-number", "like-button__likes-number_unpressed"])= number
-            span(class=["like-button__likes-number", "like-button__likes-number_pressed"])= number + 1
+  div(class=["like-button"])
+    input(class=["like-button__input"] type="checkbox" checked=isChecked)
+    label(class=["like-button__label"])
+      div(class=["like-button__background"])
+      span(class=["like-button__like-symbol"])
+      span(class=["like-button__likes-number", "like-button__likes-number_unpressed"])= number
+      span(class=["like-button__likes-number", "like-button__likes-number_pressed"])= number + 1

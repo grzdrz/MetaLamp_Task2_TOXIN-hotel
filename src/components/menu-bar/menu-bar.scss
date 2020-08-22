@@ -1,39 +1,39 @@
 @import '../../assets/constants.scss';
 
 .menu-bar {
-    list-style: none;
-    justify-self: end;
-    display: flex;
-    flex-direction: column;
+  list-style: none;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
 
-    &__item {
-        margin-bottom: 1.3125rem;
-        font-size: 0.875rem;
-        line-height: 1.0625rem;
+  &__item {
+    margin-bottom: 1.3125rem;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
 
-        &:first-of-type {
-            margin-top: 0.25rem;
-            margin-bottom: 1.3rem;
+    &:first-of-type {
+      margin-top: 0.25rem;
+      margin-bottom: 1.3rem;
 
-            & > .menu-bar__item-ref {
-                font-weight: bold;
-                font-size: 0.75rem;
-                line-height: 0.9375rem;
-                text-transform: uppercase;
-                color: $color-dark-shade-100;
-            }
-        }
-
-        &:last-of-type {
-            margin-bottom: 0rem;
-        }
+      & > .menu-bar__item-ref {
+        font-weight: bold;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        text-transform: uppercase;
+        color: $color-dark-shade-100;
+      }
     }
 
-    &__item-ref {
-        text-decoration: none;
-        font-size: 0.875rem;
-        line-height: 1.0625rem;
-        color: $color-dark-shade-50;
-        word-break: break-word;
+    &:last-of-type {
+      margin-bottom: 0rem;
     }
+  }
+
+  &__item-ref {
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    color: $color-dark-shade-50;
+    word-break: break-word;
+  }
 }

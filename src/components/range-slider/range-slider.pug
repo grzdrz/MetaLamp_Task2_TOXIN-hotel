@@ -1,15 +1,15 @@
 mixin range-slider(options = {})
-    - 
-        const { 
-            title = "",
-            description = "", 
-        } = options;
+  - 
+    const { 
+      title = "",
+      description = "", 
+    } = options;
 
-    div(class=["range-slider", "js-range-slider"])
-        - if(title)
-            p(class=["range-slider__title"])
-                span(class=["range-slider__slider-name"])= title
-                span(class=["range-slider__current-values", "js-range-slider__current-values"])
-        div(class=["range-slider__content", "js-range-slider__content"])
-        if(description)
-            p(class=["range-slider__description"])= description
+  div(class=["range-slider", "js-range-slider"])
+    - if(title)
+      p(class=["range-slider__title"])
+        span(class=["range-slider__slider-name"])= title
+        span(class=["range-slider__current-values", "js-range-slider__current-values"])
+    div(class=["range-slider__content", "js-range-slider__content"])
+    if(description)
+      p(class=["range-slider__description"])= description

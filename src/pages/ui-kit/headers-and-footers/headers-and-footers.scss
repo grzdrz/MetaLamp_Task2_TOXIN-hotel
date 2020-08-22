@@ -4,24 +4,24 @@
 @import '../../../components/short-footer/short-footer.scss';
 
 body {
-    background: rgb(244, 244, 246);
+  background: rgb(244, 244, 246);
 }
 
 .headers-and-footers {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8.125rem;
+  padding-top: 3.875rem;
+
+  &__header,
+  &__footer {
     min-width: 100%;
+    margin-bottom: 2.5rem;
+  }
+
+  &__footer {
     display: flex;
-    flex-direction: column;
-    padding-bottom: 8.125rem;
-    padding-top: 3.875rem;
-
-    &__header,
-    &__footer {
-        min-width: 100%;
-        margin-bottom: 2.5rem;
-    }
-
-    &__footer {
-        display: flex;
-        justify-content: center;
-    }
+    justify-content: center;
+  }
 }

@@ -1,66 +1,66 @@
 @import '../../assets/constants.scss';
 
 .toggle {
-    cursor: pointer;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  width: max-content;
+
+  &__button-image {
+    z-index: 1;
+    width: 2.5rem;
+    height: 1.25rem;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     position: relative;
-    width: max-content;
+    margin-right: 0.625rem;
+    padding: 0rem 0.1875rem;
+    border-radius: 0.625rem;
+    transition: padding-left 0.3s;
+  }
 
-    &__button-image {
-        z-index: 1;
-        width: 2.5rem;
-        height: 1.25rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        position: relative;
-        margin-right: 0.625rem;
-        padding: 0rem 0.1875rem;
-        border-radius: 0.625rem;
-        transition: padding-left 0.3s;
+  &__input {
+    cursor: pointer;
+    z-index: 2;
+    width: 2.5rem;
+    height: 1.25rem;
+    position: absolute;
+    opacity: 0;
+
+    &:checked + div {
+      border: 0.0625rem solid $color-purple;
+      padding-left: 1.4375rem;
     }
 
-    &__input {
-        cursor: pointer;
-        z-index: 2;
-        width: 2.5rem;
-        height: 1.25rem;
-        position: absolute;
-        opacity: 0;
-
-        &:checked + div {
-            border: 0.0625rem solid $color-purple;
-            padding-left: 1.4375rem;
-        }
-
-        &:not(:checked) + div {
-            border: 0.0625rem solid $color-dark-shade-25;
-            padding-left: 0.1875rem;
-        }
-
-        &:checked + div::after {
-            content: '';
-            width: 0.75rem;
-            height: 0.75rem;
-            background: $gradient-purple-to-blue;
-            border-radius: 50%;
-        }
-        
-        &:not(:checked) + div::after {
-            content: '';
-            width: 0.75rem;
-            height: 0.75rem;
-            background: $color-dark-shade-25;
-            border-radius: 50%;
-        }
+    &:not(:checked) + div {
+      border: 0.0625rem solid $color-dark-shade-25;
+      padding-left: 0.1875rem;
     }
 
-    &__text {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 0.875rem;
-        line-height: 1.125rem;
-        color: $color-dark-shade-50;
+    &:checked + div::after {
+      content: '';
+      width: 0.75rem;
+      height: 0.75rem;
+      background: $gradient-purple-to-blue;
+      border-radius: 50%;
     }
+
+    &:not(:checked) + div::after {
+      content: '';
+      width: 0.75rem;
+      height: 0.75rem;
+      background: $color-dark-shade-25;
+      border-radius: 50%;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: $color-dark-shade-50;
+  }
 }

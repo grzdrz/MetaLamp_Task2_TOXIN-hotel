@@ -1,40 +1,40 @@
 mixin pie-chart(options = {})
-    -
-        const {
-            title = "Впечатления от номера",
-            totalValue = 0,
-            legends = ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"],
-            gradients = ["yellow-to-peach", "green-to-turquoise", "purple-to-blue", "gray-to-blue"],
-        } = options;
+  -
+    const {
+      title = "Впечатления от номера",
+      totalValue = 0,
+      legends = ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"],
+      gradients = ["yellow-to-peach", "green-to-turquoise", "purple-to-blue", "gray-to-blue"],
+    } = options;
 
-        function doDeclensionOfWord(number){
-            const words = ["голос", "голоса", "голосов"];
-            const isEndOnOne = number.toString()[number.toString().length - 1] === "1";
-            const isNotEqualEleven = number !== 11;
-            if (isEndOnOne && isNotEqualEleven)
-                return words[0];
+    function doDeclensionOfWord(number){
+      const words = ["голос", "голоса", "голосов"];
+      const isEndOnOne = number.toString()[number.toString().length - 1] === "1";
+      const isNotEqualEleven = number !== 11;
+      if (isEndOnOne && isNotEqualEleven)
+        return words[0];
 
-            const isEndNumberMoreThenOne = number.toString()[number.toString().length - 1] > 1;
-            const isEndNumberLessThenFour = number.toString()[number.toString().length - 1] <= 4;
-            const isEndNumberBetweenTwelveAndFourteen = number < 12 || number > 14;
-            const isSecondWord = isEndNumberMoreThenOne && isEndNumberLessThenFour && isEndNumberBetweenTwelveAndFourteen;
-            if (isSecondWord)
-                return words[1];
+      const isEndNumberMoreThenOne = number.toString()[number.toString().length - 1] > 1;
+      const isEndNumberLessThenFour = number.toString()[number.toString().length - 1] <= 4;
+      const isEndNumberBetweenTwelveAndFourteen = number < 12 || number > 14;
+      const isSecondWord = isEndNumberMoreThenOne && isEndNumberLessThenFour && isEndNumberBetweenTwelveAndFourteen;
+      if (isSecondWord)
+        return words[1];
 
-            return words[2];
-        }
-        const listLength = Math.min(legends.length, gradients.length);
+      return words[2];
+    }
+    const listLength = Math.min(legends.length, gradients.length);
 
-    div(class=["pie-chart"])
-        - if(title)
-            div(class=["pie-chart__title"])= title
-        div(class=["pie-chart__content"])
-            div(class=["pie-chart__pie"])
-            p(class=["pie-chart__inner-text"])
-                span(class=["pie-chart__inner-text-number"])= totalValue
-                span(class=["pie-chart__inner-text-word"])= doDeclensionOfWord(totalValue)
-            ul(class=["pie-chart__legend"])
-                - for(let i = 0; i < listLength; i += 1)
-                    li(class=["pie-chart__legend-item"])
-                        div(class=["pie-chart__legend-item-marker", `pie-chart__legend-item-marker_gradient_${gradients[i]}`])
-                        p(class=["pie-chart__legend-item-text"])= legends[i]
+  div(class=["pie-chart"])
+    - if(title)
+      div(class=["pie-chart__title"])= title
+    div(class=["pie-chart__content"])
+      div(class=["pie-chart__pie"])
+      p(class=["pie-chart__inner-text"])
+        span(class=["pie-chart__inner-text-number"])= totalValue
+        span(class=["pie-chart__inner-text-word"])= doDeclensionOfWord(totalValue)
+      ul(class=["pie-chart__legend"])
+        - for(let i = 0; i < listLength; i += 1)
+          li(class=["pie-chart__legend-item"])
+            div(class=["pie-chart__legend-item-marker", `pie-chart__legend-item-marker_gradient_${gradients[i]}`])
+            p(class=["pie-chart__legend-item-text"])= legends[i]

@@ -1,15 +1,15 @@
 mixin toggle(options = {})
-    - 
-        const {
-            text = "Получать спецпредложения",
-            isChecked = false,
-            name = "special-offer",
-        } = options; 
+  - 
+    const {
+      text = "Получать спецпредложения",
+      isChecked = false,
+      name = "special-offer",
+    } = options; 
 
-    label(class=["toggle"])
-        input(class=["toggle__input"] 
-            type="checkbox"
-            name= name
-            checked= isChecked)
-        div(class=["toggle__button-image"])
-        p(class=["toggle__text"])= text
+  label(class=["toggle"])
+    input(class=["toggle__input"] 
+      type="checkbox"
+      name= name
+      checked= isChecked)
+    div(class=["toggle__button-image"])
+    p(class=["toggle__text"])= text

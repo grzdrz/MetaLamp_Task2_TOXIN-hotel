@@ -4,56 +4,56 @@ include ../colored-logo/colored-logo.pug
 include ../social-media/social-media.pug
 
 mixin footer(options = {})
-    footer(class=["footer"])
-        div(class=["footer__info-bar"])
-            div(class=["footer__general-info"])
-                +colored-logo()
-                p(class=["footer__general-info-text"]) 
-                    | Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-            nav(class=["footer__menu-bar"])
-                +menu-bar({
-                    refs: [
-                        {url: "https://errorpage.com", text: "навигация"},
-                        {url: "https://errorpage.com", text: "О нас"}, 
-                        {url: "https://errorpage.com", text: "Новости"}, 
-                        {url: "https://errorpage.com", text: "Служба поддержки"}, 
-                        {url: "https://errorpage.com", text: "Услуги"},
-                    ]
-                })
-            nav(class=["footer__menu-bar"])
-                +menu-bar({
-                    refs: [
-                        {url: "https://errorpage.com", text: "о нас"}, 
-                        {url: "https://errorpage.com", text: "О сервисе"}, 
-                        {url: "https://errorpage.com", text: "Наша команда"}, 
-                        {url: "https://errorpage.com", text: "Вакансии"}, 
-                        {url: "https://errorpage.com", text: "Инвесторы"},
-                    ]
-                })
-            nav(class=["footer__menu-bar"])
-                +menu-bar({
-                    refs: [
-                        {url: "https://errorpage.com", text: "Служба поддержки"}, 
-                        {url: "https://errorpage.com", text: "Соглашения"}, 
-                        {url: "https://errorpage.com", text: "Сообщества"},
-                        {url: "https://errorpage.com", text: "Связь с нами"},
-                    ]
-                })           
-            div(class=["footer__subscription"])
-                p(class=["footer__subscription-title"]) Подписка
-                p(class=["footer__subscription-description"]) 
-                    | Получайте специальные предложения и новости сервиса
-                form(class=["footer__subscription-form"])
-                    +form-input({
-                        hasTitle: false,
-                        isTitleTextTestVisible: false,
-                        placeholder: "Email",
-                        name: "email",
-                        type: "email",
-                        value: "",
-                        hasSubmitButton: true
-                    })
-        div(class=["footer__copyright-bar"])
-            p(class=["footer__copyright"]) 
-                | Copyright © 2018 Toxin отель. Все права зачищены.
-            +social-media()
+  footer(class=["footer"])
+    div(class=["footer__info-bar"])
+      div(class=["footer__general-info"])
+        +colored-logo()
+        p(class=["footer__general-info-text"]) 
+          | Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+      nav(class=["footer__menu-bar"])
+        +menu-bar({
+          refs: [
+            {url: "https://errorpage.com", text: "навигация"},
+            {url: "https://errorpage.com", text: "О нас"}, 
+            {url: "https://errorpage.com", text: "Новости"}, 
+            {url: "https://errorpage.com", text: "Служба поддержки"}, 
+            {url: "https://errorpage.com", text: "Услуги"},
+          ]
+        })
+      nav(class=["footer__menu-bar"])
+        +menu-bar({
+          refs: [
+            {url: "https://errorpage.com", text: "о нас"}, 
+            {url: "https://errorpage.com", text: "О сервисе"}, 
+            {url: "https://errorpage.com", text: "Наша команда"}, 
+            {url: "https://errorpage.com", text: "Вакансии"}, 
+            {url: "https://errorpage.com", text: "Инвесторы"},
+          ]
+        })
+      nav(class=["footer__menu-bar"])
+        +menu-bar({
+          refs: [
+            {url: "https://errorpage.com", text: "Служба поддержки"}, 
+            {url: "https://errorpage.com", text: "Соглашения"}, 
+            {url: "https://errorpage.com", text: "Сообщества"},
+            {url: "https://errorpage.com", text: "Связь с нами"},
+          ]
+        })           
+      div(class=["footer__subscription"])
+        p(class=["footer__subscription-title"]) Подписка
+        p(class=["footer__subscription-description"]) 
+          | Получайте специальные предложения и новости сервиса
+        form(class=["footer__subscription-form"])
+          +form-input({
+            hasTitle: false,
+            isTitleTextTestVisible: false,
+            placeholder: "Email",
+            name: "email",
+            type: "email",
+            value: "",
+            hasSubmitButton: true
+          })
+    div(class=["footer__copyright-bar"])
+      p(class=["footer__copyright"]) 
+        | Copyright © 2018 Toxin отель. Все права зачищены.
+      +social-media()

@@ -1,337 +1,337 @@
 @import '../../assets/constants.scss';
 
 .datepicker {
+  width: max-content;
+  padding-bottom: 1.25rem;
+  background: white;
+  border: 0.0625rem solid $color-dark-shade-25;
+  box-sizing: border-box;
+  box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
+  border-radius: 0.25rem;
+
+  &.active {
+    @media screen and (max-width: 20rem) {
+      border: 0rem;
+    }
+  }
+
+  &.-bottom-right-,
+  &.-bottom-right-.active {
+    margin-left: -1.75rem;
+
+    @media screen and (max-width: 20rem) {
+      margin-left: -3.625rem;
+    }
+  }
+
+  &.-bottom-left-,
+  &.-bottom-left-.active {
+    margin-left: -0.125rem;
+
+    @media screen and (max-width: 20rem) {
+      margin-left: -2rem;
+    }
+  }
+
+  &.active {
     width: max-content;
-    padding-bottom: 1.25rem;
-    background: white;
-    border: 0.0625rem solid $color-dark-shade-25;
-    box-sizing: border-box;
-    box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
-    border-radius: 0.25rem;
+  }
 
-    &.active {
-        @media screen and (max-width: 20rem) {
-            border: 0rem;
+  &--cells {
+    width: 17.5rem;
+  }
+
+  &--cell {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    color: $color-dark-shade-50;
+
+    &-day {
+      &.-focus- {
+        border-radius: 50%;
+        background: $gradient-purple-to-blue-25;
+      }
+
+      &.-selected- {
+        position: relative;
+        background: $gradient-purple-to-blue;
+        border-radius: 50%;
+
+        &.-focus- {
+          background: $gradient-purple-to-blue;
         }
-    }
+      }
 
-    &.-bottom-right-,
-    &.-bottom-right-.active {
-        margin-left: -1.75rem;
-
-        @media screen and (max-width: 20rem) {
-            margin-left: -3.625rem;
+      &.-in-range- {
+        &.-focus- {
+          border-radius: 0%;
+          background: $gradient-purple-to-blue-25;
         }
-    }
+      }
 
-    &.-bottom-left-,
-    &.-bottom-left-.active {
-        margin-left: -0.125rem;
-
-        @media screen and (max-width: 20rem) {
-            margin-left: -2rem;
-        }
-    }
-
-    &.active {
-        width: max-content;
-    }
-
-    &--cells {
-        width: 17.5rem;
-    }
-
-    &--cell {
-        width: 2.5rem;
-        height: 2.5rem;
+      &.-current- {
         display: flex;
         align-items: center;
-        text-align: center;
-        font-size: 0.75rem;
-        line-height: 0.9375rem;
-        color: $color-dark-shade-50;
-
-        &-day {
-            &.-focus- {
-                border-radius: 50%;
-                background: $gradient-purple-to-blue-25;
-            }
-
-            &.-selected- {
-                position: relative;
-                background: $gradient-purple-to-blue;
-                border-radius: 50%;
-
-                &.-focus- {
-                    background: $gradient-purple-to-blue;
-                }
-            }
-
-            &.-in-range- {
-                &.-focus- {
-                    border-radius: 0%;
-                    background: $gradient-purple-to-blue-25;
-                }
-            }
-
-            &.-current- {
-                display: flex;
-                align-items: center;
-                background: $gradient-green-to-turquoise;
-                border-radius: 50%;
-                font-weight: bold;
-                font-size: 0.75rem;
-                line-height: 0.9375rem;
-                text-align: center;
-                color: white;
-
-                &.-focus- {
-                    color: white;
-                }
-
-                &.-in-range- {
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    position: relative;
-                    background: $gradient-purple-to-blue;
-                    border-radius: 50%;
-                    border: 0rem;
-                    font-weight: bold;
-                    font-size: 0.75rem;
-                    line-height: 0.9375rem;
-                    color: white;
-
-                    &::after {
-                        content: '';
-                        z-index: -1;
-                        width: 50%;
-                        height: inherit;
-                        position: absolute;
-                        margin-left: 50%;
-                        background: $gradient-purple-to-blue-25;
-                    }
-                }
-
-                &.-range-to- {
-                    &::after {
-                        background: transparent;
-                    }
-                }
-            }
-
-            &.-in-range-.-other-month- {
-                background: $gradient-purple-to-blue-25;
-                color: $color-dark-shade-25;
-            }
-
-            &.-range-from-,
-            &.-range-to-,
-            &.-range-from-.-current-,
-            &.-range-to-.-current-,
-            &.-range-from-.-other-month-,
-            &.-range-to-.-other-month- {
-                display: flex;
-                align-items: center;
-                text-align: center;
-                position: relative;
-                background: $gradient-purple-to-blue;
-                border-radius: 50%;
-                border: 0rem;
-                font-weight: bold;
-                font-size: 0.75rem;
-                line-height: 0.9375rem;
-                color: white;
-            }
-
-            &.-range-from-::after {
-                content: '';
-                z-index: -1;
-                width: 50%;
-                height: inherit;
-                position: absolute;
-                margin-left: 50%;
-                background: $gradient-purple-to-blue-25;
-            }
-
-            &.-range-to-::after {
-                content: '';
-                z-index: -1;
-                width: 50%;
-                height: inherit;
-                position: absolute;
-                margin-right: 50%;
-                background: $gradient-purple-to-blue-25;
-            }
-
-            &.-range-from-.-disabled-::after,
-            &.-range-to-.-disabled-::after {
-                background: transparent;
-            }
-
-            &.-in-range- {
-                background: $gradient-purple-to-blue-25;
-                color: $color-dark-shade-50;
-            }
-
-            &.-disabled-,
-            &.-disabled-.-focus- {
-                font-style: normal;
-                font-weight: normal;
-                color: $color-dark-shade-25;
-                background: transparent;
-            }
-
-            &.-range-from-,
-            &.-in-range- {
-                &.-other-month-,
-                &.-other-month-.-focus-,
-                &.-focus- {
-                    &.-disabled- {
-                        color: $color-dark-shade-25;
-                        background: transparent;
-                    }
-                }
-                &.-disabled- {
-                    color: $color-dark-shade-25;
-                    background: transparent;
-                }
-            }
-        }
-
-        &-month,
-        &-year {
-            width: 4.375rem;
-            height: 4.375rem;
-
-            &.-focus- {
-                border-radius: 50%;
-                background: $gradient-purple-to-blue-25;
-            }
-
-            &.-current- {
-                background: $gradient-green-to-turquoise;
-                color: white;
-                border-radius: 50%;
-
-                &.-focus- {
-                    color: white;
-                }
-            }
-
-            &.-selected-,
-            &.-selected-.-current- {
-                background: $gradient-purple-to-blue;
-                color: white;
-                border-radius: 50%;
-            }
-        }
-    }
-
-    &--content {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-    }
-
-    &--nav {
-        padding: 0.9375rem 1rem 0.9375rem 1rem;
-        border: 0rem solid transparent;
-
-        &-title {
-            font-family: Quicksand, OpenSans, Arial, sans-serif;
-            font-weight: bold;
-            font-size: 1.1875rem;
-            line-height: 1.5rem;
-            text-align: center;
-            color: $color-dark-shade-100;
-        }
-
-        &-action {
-            position: relative;
-
-            & > svg {
-                opacity: 0;
-            }
-
-            &:first-child::after {
-                content: 'arrow_back';
-                width: 1.5rem;
-                height: 1.5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                font-family: Material Icons;
-                font-size: 1.5rem;
-                line-height: 1.5rem;
-                border: 0rem solid transparent;
-                background: -moz-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
-                background: -webkit-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
-                background: $gradient-purple-to-blue;
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-            &:last-child::after {
-                content: 'arrow_forward';
-                width: 1.5rem;
-                height: 1.5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                font-family: Material Icons;
-                font-size: 1.5rem;
-                line-height: 1.5rem;
-                border: 0rem solid transparent;
-                background: -moz-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
-                background: -webkit-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
-                background: $gradient-purple-to-blue;
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-        }
-    }
-
-    &--days-names {
-        width: 17.5rem;
-        margin: 0.3125rem 0 0rem;
-    }
-
-    &--day-name {
-        min-width: 2.5rem;
-        height: 2.5rem;
-        display: flex;
-        align-items: center;
-        text-align: center;
+        background: $gradient-green-to-turquoise;
+        border-radius: 50%;
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
-        color: $color-purple;
-        text-transform: none;
-    }
+        text-align: center;
+        color: white;
 
-    &--months {
-        height: max-content;
-
-        & > .datepicker--cells-months {
-            height: max-content;
-            display: flex;
-            justify-content: space-between;
+        &.-focus- {
+          color: white;
         }
-    }
 
-    &--years {
-        height: max-content;
+        &.-in-range- {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          position: relative;
+          background: $gradient-purple-to-blue;
+          border-radius: 50%;
+          border: 0rem;
+          font-weight: bold;
+          font-size: 0.75rem;
+          line-height: 0.9375rem;
+          color: white;
 
-        & > .datepicker--cells-years {
-            height: max-content;
-            display: flex;
-            justify-content: space-between;
+          &::after {
+            content: '';
+            z-index: -1;
+            width: 50%;
+            height: inherit;
+            position: absolute;
+            margin-left: 50%;
+            background: $gradient-purple-to-blue-25;
+          }
         }
+
+        &.-range-to- {
+          &::after {
+            background: transparent;
+          }
+        }
+      }
+
+      &.-in-range-.-other-month- {
+        background: $gradient-purple-to-blue-25;
+        color: $color-dark-shade-25;
+      }
+
+      &.-range-from-,
+      &.-range-to-,
+      &.-range-from-.-current-,
+      &.-range-to-.-current-,
+      &.-range-from-.-other-month-,
+      &.-range-to-.-other-month- {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        background: $gradient-purple-to-blue;
+        border-radius: 50%;
+        border: 0rem;
+        font-weight: bold;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        color: white;
+      }
+
+      &.-range-from-::after {
+        content: '';
+        z-index: -1;
+        width: 50%;
+        height: inherit;
+        position: absolute;
+        margin-left: 50%;
+        background: $gradient-purple-to-blue-25;
+      }
+
+      &.-range-to-::after {
+        content: '';
+        z-index: -1;
+        width: 50%;
+        height: inherit;
+        position: absolute;
+        margin-right: 50%;
+        background: $gradient-purple-to-blue-25;
+      }
+
+      &.-range-from-.-disabled-::after,
+      &.-range-to-.-disabled-::after {
+        background: transparent;
+      }
+
+      &.-in-range- {
+        background: $gradient-purple-to-blue-25;
+        color: $color-dark-shade-50;
+      }
+
+      &.-disabled-,
+      &.-disabled-.-focus- {
+        font-style: normal;
+        font-weight: normal;
+        color: $color-dark-shade-25;
+        background: transparent;
+      }
+
+      &.-range-from-,
+      &.-in-range- {
+        &.-other-month-,
+        &.-other-month-.-focus-,
+        &.-focus- {
+          &.-disabled- {
+            color: $color-dark-shade-25;
+            background: transparent;
+          }
+        }
+        &.-disabled- {
+          color: $color-dark-shade-25;
+          background: transparent;
+        }
+      }
     }
+
+    &-month,
+    &-year {
+      width: 4.375rem;
+      height: 4.375rem;
+
+      &.-focus- {
+        border-radius: 50%;
+        background: $gradient-purple-to-blue-25;
+      }
+
+      &.-current- {
+        background: $gradient-green-to-turquoise;
+        color: white;
+        border-radius: 50%;
+
+        &.-focus- {
+          color: white;
+        }
+      }
+
+      &.-selected-,
+      &.-selected-.-current- {
+        background: $gradient-purple-to-blue;
+        color: white;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &--content {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  &--nav {
+    padding: 0.9375rem 1rem 0.9375rem 1rem;
+    border: 0rem solid transparent;
+
+    &-title {
+      font-family: Quicksand, OpenSans, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 1.1875rem;
+      line-height: 1.5rem;
+      text-align: center;
+      color: $color-dark-shade-100;
+    }
+
+    &-action {
+      position: relative;
+
+      & > svg {
+        opacity: 0;
+      }
+
+      &:first-child::after {
+        content: 'arrow_back';
+        width: 1.5rem;
+        height: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        font-family: Material Icons;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        border: 0rem solid transparent;
+        background: -moz-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
+        background: -webkit-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
+        background: $gradient-purple-to-blue;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &:last-child::after {
+        content: 'arrow_forward';
+        width: 1.5rem;
+        height: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        font-family: Material Icons;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        border: 0rem solid transparent;
+        background: -moz-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
+        background: -webkit-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
+        background: $gradient-purple-to-blue;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  &--days-names {
+    width: 17.5rem;
+    margin: 0.3125rem 0 0rem;
+  }
+
+  &--day-name {
+    min-width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    color: $color-purple;
+    text-transform: none;
+  }
+
+  &--months {
+    height: max-content;
+
+    & > .datepicker--cells-months {
+      height: max-content;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &--years {
+    height: max-content;
+
+    & > .datepicker--cells-years {
+      height: max-content;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }

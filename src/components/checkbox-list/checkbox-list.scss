@@ -1,177 +1,177 @@
 @import '../../assets/constants.scss';
 
 .checkbox-list {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    $checkboxMarginRight: 0.625rem;
-    $checkboxSize: 1.25rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  $checkboxMarginRight: 0.625rem;
+  $checkboxSize: 1.25rem;
 
-    &_type_expandable {
-        & .checkbox-list__title {
-            cursor: pointer;
-            margin-bottom: 0.23rem;
-        }
-
-        & .checkbox-list__item {
-            margin-bottom: 0.56rem;
-        }
-
-        & .checkbox-list__item-text {
-            line-height: 1.34rem;
-        }
+  &_type_expandable {
+    & .checkbox-list__title {
+      cursor: pointer;
+      margin-bottom: 0.23rem;
     }
 
-    &_type_rich {
-        & .checkbox-list__title {
-            margin-bottom: 0.9rem;
-        }
-
-        & .checkbox-list__item {
-            margin-bottom: 0.665rem;
-        }
+    & .checkbox-list__item {
+      margin-bottom: 0.56rem;
     }
 
-    &__title {
-        cursor: context-menu;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 1.04rem;
+    & .checkbox-list__item-text {
+      line-height: 1.34rem;
+    }
+  }
+
+  &_type_rich {
+    & .checkbox-list__title {
+      margin-bottom: 0.9rem;
     }
 
-    &__title-text {
-        font-weight: bold;
-        font-size: 0.75rem;
-        line-height: 0.9375rem;
-        text-transform: uppercase;
-        color: $color-dark-shade-100;
-        word-break: break-word;
+    & .checkbox-list__item {
+      margin-bottom: 0.665rem;
+    }
+  }
+
+  &__title {
+    cursor: context-menu;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.04rem;
+  }
+
+  &__title-text {
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-transform: uppercase;
+    color: $color-dark-shade-100;
+    word-break: break-word;
+  }
+
+  &__dropdown-arrow {
+    width: 2.625rem;
+    height: 2.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background: $color-dark-shade-75;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Material Icons;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    transform: rotate(180deg);
+
+    &_closed {
+      transform: none;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    &_closed {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.68rem;
+
+    &:last-child {
+      margin-bottom: 0rem;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: end;
+  }
+
+  &__input {
+    width: $checkboxSize;
+    height: $checkboxSize;
+    position: relative;
+    margin-right: $checkboxMarginRight;
+    opacity: 0;
+
+    &:not(:checked) + .checkbox-list__check-mark {
+      opacity: 0;
     }
 
-    &__dropdown-arrow {
-        width: 2.625rem;
-        height: 2.625rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        outline: none;
-        background: $color-dark-shade-75;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: Material Icons;
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        transform: rotate(180deg);
-
-        &_closed {
-            transform: none;
-        }
+    &:not(:checked) ~ .checkbox-list__frame {
+      border: 0.0625rem solid $color-gray-blue;
     }
 
-    &__list {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-
-        &_closed {
-            display: none;
-        }
+    &:checked + .checkbox-list__check-mark {
+      opacity: 1;
     }
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0.68rem;
-
-        &:last-child {
-            margin-bottom: 0rem;
-        }
+    &:checked ~ .checkbox-list__frame {
+      border: 0.0625rem solid $color-purple;
     }
+  }
 
-    &__label {
-        display: flex;
-        align-items: end;
+  &__check-mark {
+    width: $checkboxSize;
+    height: $checkboxSize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-bottom: 0.125rem;
+  }
+
+  &__check-mark-image {
+    width: 0.625rem;
+    height: 0.625rem;
+    display: flex;
+  }
+
+  &__frame {
+    cursor: pointer;
+    width: $checkboxSize;
+    height: $checkboxSize;
+    display: flex;
+    border-radius: 0.25rem;
+    position: absolute;
+  }
+
+  &__item-text {
+    cursor: context-menu;
+    width: 12.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.875rem;
+    line-height: 1.24rem;
+    color: $color-dark-shade-50;
+    word-break: break-word;
+
+    &_complex {
+      width: max-content;
+      font-weight: bold;
+      color: $color-dark-shade-75;
     }
+  }
 
-    &__input {
-        width: $checkboxSize;
-        height: $checkboxSize;
-        position: relative;
-        margin-right: $checkboxMarginRight;
-        opacity: 0;
-
-        &:not(:checked) + .checkbox-list__check-mark {
-            opacity: 0;
-        }
-
-        &:not(:checked) ~ .checkbox-list__frame {
-            border: 0.0625rem solid $color-gray-blue;
-        }
-
-        &:checked + .checkbox-list__check-mark {
-            opacity: 1;
-        }
-
-        &:checked ~ .checkbox-list__frame {
-            border: 0.0625rem solid $color-purple;
-        }
-    }
-
-    &__check-mark {
-        width: $checkboxSize;
-        height: $checkboxSize;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        padding-bottom: 0.125rem;
-    }
-
-    &__check-mark-image {
-        width: 0.625rem;
-        height: 0.625rem;
-        display: flex;
-    }
-
-    &__frame {
-        cursor: pointer;
-        width: $checkboxSize;
-        height: $checkboxSize;
-        display: flex;
-        border-radius: 0.25rem;
-        position: absolute;
-    }
-
-    &__item-text {
-        cursor: context-menu;
-        width: 12.5rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 0.875rem;
-        line-height: 1.24rem;
-        color: $color-dark-shade-50;
-        word-break: break-word;
-
-        &_complex {
-            width: max-content;
-            font-weight: bold;
-            color: $color-dark-shade-75;
-        }
-    }
-
-    &__item-additional-text {
-        cursor: context-menu;
-        width: 14.375rem;
-        margin-left: $checkboxSize + $checkboxMarginRight;
-        margin-top: 0.3125rem;
-        font-size: 0.75rem;
-        line-height: 0.875rem;
-        color: $color-dark-shade-50;
-        word-break: break-word;
-    }
+  &__item-additional-text {
+    cursor: context-menu;
+    width: 14.375rem;
+    margin-left: $checkboxSize + $checkboxMarginRight;
+    margin-top: 0.3125rem;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    color: $color-dark-shade-50;
+    word-break: break-word;
+  }
 }

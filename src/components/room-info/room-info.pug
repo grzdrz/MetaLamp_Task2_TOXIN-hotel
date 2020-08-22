@@ -1,57 +1,57 @@
 include ../star-rating/star-rating.pug
 
 mixin room-info(options = {})
-    -
-        const {
-            blockNumber = 0,
-            photosCount = 4,
-            roomNumber = 888,
-            roomStatus = "люкс",
-            roomPrice = 9990,
-            currencyType = "₽",
-            reviewsCount = "145",
-            checkedStarIndex = 5,
-            url = "room-details.html",
-        } = options;
-        const iterationCount = (photosCount <= 4 ? 4 : photosCount);
+  -
+    const {
+      blockNumber = 0,
+      photosCount = 4,
+      roomNumber = 888,
+      roomStatus = "люкс",
+      roomPrice = 9990,
+      currencyType = "₽",
+      reviewsCount = "145",
+      checkedStarIndex = 5,
+      url = "room-details.html",
+    } = options;
+    const iterationCount = (photosCount <= 4 ? 4 : photosCount);
 
-        function formateNumber(number) {
-            return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, "$1 ");
-        }
+    function formateNumber(number) {
+      return `${number}`.replace(/(\d)(?=(\d{3})+$)/g, "$1 ");
+    }
 
-    div(class=["room-info", "js-room-info"])
-        a(class=["room-info__ref"] href=url)
-        div(class=["room-info__photos"])
-            div(class=["room-info__radio-buttons"])
-                - for(let i = 0; i < iterationCount; i += 1) {
-                    p(class=["room-info__radio-button", "js-room-info__radio-button"] data-serial-number=i)
-                        span(class=["room-info__radio-button-image", "js-room-info__radio-button-image"])
-                - }
-            - for(let i = 0; i < iterationCount; i += 1) {
-                img(class=["room-info__photo", "js-room-info__photo"] 
-                    src=`./src/components/room-info/img/room-${roomNumber}${photosCount > 1 ? `-${i + 1}` : ""}.png` 
-                    alt="room photo"
-                    data-serial-number=i)
-            - }
-            - if(photosCount > 1)
-                div(class=["room-info__arrows", "js-room-info__arrows"])
-                    button(class=["room-info__arrow-back", "js-room-info__arrow-back"])
-                        span(class=["room-info__arrow-back-icon"]) expand_more
-                    button(class=["room-info__arrow-forward", "js-room-info__arrow-forward"])
-                        span(class=["room-info__arrow-forward-icon"]) expand_more
-        div(class=["room-info__text-info"])
-            p(class=["room-info__title"])
-                span(class=["room-info__number-symbol"]) №
-                span(class=["room-info__room-number"])= roomNumber
-                span(class=["room-info__room-status"])= (roomStatus ? roomStatus : "")
-                span(class=["room-info__room-price"])= `${formateNumber(roomPrice)}${currencyType}`
-                span(class=["room-info__period-of-time"])= `в сутки`
-            div(class=["room-info__room-rate"])
-                div(class=["room-info__star-rating"])
-                    +star-rating({
-                        blockNumber: blockNumber,
-                        checkedStarIndex: checkedStarIndex,
-                    })
-                p(class=["room-info__reviews-count"])
-                    span(class=["room-info__reviews-count-value"])= `${formateNumber(reviewsCount)}`
-                    span(class=["room-info__reviews-count-text"]) Отзывов
+  div(class=["room-info", "js-room-info"])
+    a(class=["room-info__ref"] href=url)
+    div(class=["room-info__photos"])
+      div(class=["room-info__radio-buttons"])
+        - for(let i = 0; i < iterationCount; i += 1) {
+          p(class=["room-info__radio-button", "js-room-info__radio-button"] data-serial-number=i)
+            span(class=["room-info__radio-button-image", "js-room-info__radio-button-image"])
+        - }
+      - for(let i = 0; i < iterationCount; i += 1) {
+        img(class=["room-info__photo", "js-room-info__photo"] 
+          src=`./src/components/room-info/img/room-${roomNumber}${photosCount > 1 ? `-${i + 1}` : ""}.png` 
+          alt="room photo"
+          data-serial-number=i)
+      - }
+      - if(photosCount > 1)
+        div(class=["room-info__arrows", "js-room-info__arrows"])
+          button(class=["room-info__arrow-back", "js-room-info__arrow-back"])
+            span(class=["room-info__arrow-back-icon"]) expand_more
+          button(class=["room-info__arrow-forward", "js-room-info__arrow-forward"])
+            span(class=["room-info__arrow-forward-icon"]) expand_more
+    div(class=["room-info__text-info"])
+      p(class=["room-info__title"])
+        span(class=["room-info__number-symbol"]) №
+        span(class=["room-info__room-number"])= roomNumber
+        span(class=["room-info__room-status"])= (roomStatus ? roomStatus : "")
+        span(class=["room-info__room-price"])= `${formateNumber(roomPrice)}${currencyType}`
+        span(class=["room-info__period-of-time"])= `в сутки`
+      div(class=["room-info__room-rate"])
+        div(class=["room-info__star-rating"])
+          +star-rating({
+            blockNumber: blockNumber,
+            checkedStarIndex: checkedStarIndex,
+          })
+        p(class=["room-info__reviews-count"])
+          span(class=["room-info__reviews-count-value"])= `${formateNumber(reviewsCount)}`
+          span(class=["room-info__reviews-count-text"]) Отзывов

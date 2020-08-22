@@ -3,37 +3,37 @@ include ../dropdown/dropdown.pug
 include ../button/button.pug
 
 mixin room-finder-form(options = {})
-    - const { title = "" } = options;
+  - const { title = "" } = options;
 
-    form(class=["room-finder-form", "js-room-finder-form"])
-        - if(title)
-            p(class=["room-finder-form__title"])= title
-        div(class=["room-finder-form__calendar", "js-room-finder-form__calendar"])
-            +calendar({
-                isDouble: true,
-                firstTitle: "прибытие",
-                secondTitle: "выезд",
-            })
-        div(class=["room-finder-form__dropdown", "js-room-finder-form__dropdown"])
-            +dropdown({
-                title: "гости",
-                additionalTitle: "",
-                placeholder: "Сколько гостей",
-                name: "guestsCount",
-                type: "text",
-                value: "Сколько гостей",
-                hasButtons: true,
-                list: [
-                    {name: "взрослые", value: 0},
-                    {name: "дети", value: 0},
-                    {name: "младенцы", value: 0}
-                ],
-                withTotalValue: true,
-            })
-        div(class=["room-finder-form__submit-button"])
-            +button({
-                text: "подобрать номер",
-                isHollow: false,
-                buttonType: "submit",
-                hasArrow: true,
-            })
+  form(class=["room-finder-form", "js-room-finder-form"])
+    - if(title)
+      p(class=["room-finder-form__title"])= title
+    div(class=["room-finder-form__calendar", "js-room-finder-form__calendar"])
+      +calendar({
+        isDouble: true,
+        firstTitle: "прибытие",
+        secondTitle: "выезд",
+      })
+    div(class=["room-finder-form__dropdown", "js-room-finder-form__dropdown"])
+      +dropdown({
+        title: "гости",
+        additionalTitle: "",
+        placeholder: "Сколько гостей",
+        name: "guestsCount",
+        type: "text",
+        value: "Сколько гостей",
+        hasButtons: true,
+        list: [
+          {name: "взрослые", value: 0},
+          {name: "дети", value: 0},
+          {name: "младенцы", value: 0}
+        ],
+        withTotalValue: true,
+      })
+    div(class=["room-finder-form__submit-button"])
+      +button({
+        text: "подобрать номер",
+        isHollow: false,
+        buttonType: "submit",
+        hasArrow: true,
+      })

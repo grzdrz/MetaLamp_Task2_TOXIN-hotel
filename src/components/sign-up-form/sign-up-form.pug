@@ -5,78 +5,78 @@ include ../calendar/calendar.pug
 include ../button/button.pug
 
 mixin sign-up-form(options = {})
-    - const { title = "" } = options;
+  - const { title = "" } = options;
 
-    form(class=["sign-up-form", "js-sign-up-form"])
-        - if(title)
-            p(class=["sign-up-form__title"])= title
-        div(class=["sign-up-form__first-name-field"])
-            +form-input({
-                placeholder: "Имя",
-                name: "clientFirstName",
-                type: "text",
-                value: "",
-                hasSubmitButton: false
-            })
-        div(class=["sign-up-form__second-name-field"])
-            +form-input({
-                placeholder: "Фамилия",
-                name: "clientSecondName",
-                type: "text",
-                value: "",
-                hasSubmitButton: false
-            })
-        div(class=["sign-up-form__radio-buttons"])
-            +radio({
-                blockNumber: 1,
-                buttonsList: [
-                    {text: "Мужчина", isChecked: true},
-                    {text: "Женщина", isChecked: false},
-                ],
-                name: "gender",
-            })
-        div(class=["sign-up-form__calendar", "js-sign-up-form__calendar"])
-            +calendar({
-                isDouble: false,
-                withRange: false, 
-                firstTitle: "дата рождения",
-            })
-        div(class=["sign-up-form__email-field"])
-            +form-input({
-                title: "данные для входа в сервис",                
-                placeholder: "Email",
-                name: "email",
-                type: "email",
-                value: "",
-                hasSubmitButton: false
-            })
-        div(class=["sign-up-form__password-field"])
-            +form-input({
-                placeholder: "Пароль",
-                name: "password",
-                type: "password",
-                value: "",
-                hasSubmitButton: false
-            })
-        div(class=["sign-up-form__toggle"])
-            +toggle({
-                text: "Получать спецпредложения",
-                isChecked: false,
-                name: "special-offer",
-            })
-        div(class=["sign-up-form__submit-button"])
-            +button({
-                text: "перейти к оплате",
-                isHollow: false,
-                buttonType: "submit",
-                hasArrow: true,
-            })
-        div(class=["sign-up-form__sign-in-field"])
-            p(class=["sign-up-form__confirmation-text"]) Уже есть аккаунт на Toxin
-            div(class=["sign-up-form__sign-in-button"])
-                +button({
-                    text: "войти",
-                    isHollow:  true,
-                    buttonType: "a",
-                    hasArrow: false,
-                })
+  form(class=["sign-up-form", "js-sign-up-form"])
+    - if(title)
+      p(class=["sign-up-form__title"])= title
+    div(class=["sign-up-form__first-name-field"])
+      +form-input({
+        placeholder: "Имя",
+        name: "clientFirstName",
+        type: "text",
+        value: "",
+        hasSubmitButton: false
+      })
+    div(class=["sign-up-form__second-name-field"])
+      +form-input({
+        placeholder: "Фамилия",
+        name: "clientSecondName",
+        type: "text",
+        value: "",
+        hasSubmitButton: false
+      })
+    div(class=["sign-up-form__radio-buttons"])
+      +radio({
+        blockNumber: 1,
+        buttonsList: [
+          {text: "Мужчина", isChecked: true},
+          {text: "Женщина", isChecked: false},
+        ],
+        name: "gender",
+      })
+    div(class=["sign-up-form__calendar", "js-sign-up-form__calendar"])
+      +calendar({
+        isDouble: false,
+        withRange: false, 
+        firstTitle: "дата рождения",
+      })
+    div(class=["sign-up-form__email-field"])
+      +form-input({
+        title: "данные для входа в сервис",                
+        placeholder: "Email",
+        name: "email",
+        type: "email",
+        value: "",
+        hasSubmitButton: false
+      })
+    div(class=["sign-up-form__password-field"])
+      +form-input({
+        placeholder: "Пароль",
+        name: "password",
+        type: "password",
+        value: "",
+        hasSubmitButton: false
+      })
+    div(class=["sign-up-form__toggle"])
+      +toggle({
+        text: "Получать спецпредложения",
+        isChecked: false,
+        name: "special-offer",
+      })
+    div(class=["sign-up-form__submit-button"])
+      +button({
+        text: "перейти к оплате",
+        isHollow: false,
+        buttonType: "submit",
+        hasArrow: true,
+      })
+    div(class=["sign-up-form__sign-in-field"])
+      p(class=["sign-up-form__confirmation-text"]) Уже есть аккаунт на Toxin
+      div(class=["sign-up-form__sign-in-button"])
+        +button({
+          text: "войти",
+          isHollow:  true,
+          buttonType: "a",
+          hasArrow: false,
+        })

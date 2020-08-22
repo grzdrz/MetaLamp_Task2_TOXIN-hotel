@@ -2,223 +2,223 @@
 @import '../star-rating/star-rating.scss';
 
 .room-info {
+  width: 16.875rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: white;
+  box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
+  border-radius: 0.25rem;
+  $radioButtonSize: 0.5rem;
+
+  &__ref {
+    z-index: 3;
     width: 16.875rem;
+    height: 6.6875rem;
+    position: absolute;
+    bottom: 0rem;
+    opacity: 0;
+  }
+
+  &__photos {
+    z-index: 2;
+    width: 16.875rem;
+    height: 9.4375rem;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     position: relative;
-    background: white;
-    box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
-    border-radius: 0.25rem;
-    $radioButtonSize: 0.5rem;
+  }
 
-    &__ref {
-        z-index: 3;
-        width: 16.875rem;
-        height: 6.6875rem;
-        position: absolute;
-        bottom: 0rem;
-        opacity: 0;
+  &__photo {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+
+    &_current {
+      opacity: 1;
     }
+  }
 
-    &__photos {
-        z-index: 2;
-        width: 16.875rem;
-        height: 9.4375rem;
-        display: flex;
-        align-items: center;
-        position: relative;
+  &__arrows {
+    z-index: 3;
+    width: 16.875rem;
+    height: 9.4375rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__arrow-back {
+    cursor: pointer;
+    min-width: 2.75rem;
+    height: 9.4375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: transparent;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+    border-top-left-radius: 0.25rem;
+  }
+
+  &__arrow-back-icon {
+    transform: rotate(90deg);
+    font-family: Material Icons;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  &__arrow-forward {
+    cursor: pointer;
+    min-width: 2.75rem;
+    height: 9.4375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: transparent;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+    border-top-left-radius: 0.25rem;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  &__arrow-forward-icon {
+    transform: rotate(90deg);
+    font-family: Material Icons;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  &__radio-buttons {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    right: 0.9375rem;
+    bottom: 0.9375rem;
+  }
+
+  &__radio-button {
+    width: $radioButtonSize;
+    height: $radioButtonSize;
+    margin-left: 0.2rem;
+
+    &_checked .room-info__radio-button-image {
+      background: white;
     }
+  }
 
-    &__photo {
-        z-index: 1;
-        width: 100%;
-        position: absolute;
-        opacity: 0;
-        border-top-left-radius: 0.25rem;
-        border-top-right-radius: 0.25rem;
+  &__radio-button-image {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    border-radius: 50%;
+    border: 0.0625rem solid white;
+    box-shadow: 0rem 0.3125rem 0.3125rem $color-dark-shade-30;
+  }
 
-        &_current {
-            opacity: 1;
-        }
-    }
+  &__text-info {
+    z-index: 1;
+    padding: 0.9375rem 1rem 1.1875rem 1.25rem;
+  }
 
-    &__arrows {
-        z-index: 3;
-        width: 16.875rem;
-        height: 9.4375rem;
-        display: flex;
-        justify-content: space-between;
-    }
+  &__title {
+    display: grid;
+    grid-template-columns: max-content max-content max-content auto min-content;
+    margin-top: 0.1875rem;
+    margin-bottom: 0.75rem;
+  }
 
-    &__arrow-back {
-        cursor: pointer;
-        min-width: 2.75rem;
-        height: 9.4375rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        outline: transparent;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
-        border-top-left-radius: 0.25rem;
-    }
+  &__number-symbol {
+    align-self: end;
+    margin-right: 0.25rem;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    color: $color-dark-shade-100;
+  }
 
-    &__arrow-back-icon {
-        transform: rotate(90deg);
-        font-family: Material Icons;
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        text-align: center;
-        color: white;
-    }
+  &__room-number {
+    align-self: end;
+    margin-right: 0.3125rem;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    color: $color-dark-shade-100;
+    max-width: 3.125rem;
+    word-break: break-word;
+  }
 
-    &__arrow-forward {
-        cursor: pointer;
-        min-width: 2.75rem;
-        height: 9.4375rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        outline: transparent;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
-        border-top-left-radius: 0.25rem;
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-    }
+  &__room-status {
+    align-self: end;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-transform: uppercase;
+    color: $color-purple;
+  }
 
-    &__arrow-forward-icon {
-        transform: rotate(90deg);
-        font-family: Material Icons;
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        text-align: center;
-        color: white;
-    }
+  &__room-price {
+    justify-self: end;
+    align-self: end;
+    margin-right: 0.25rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 0.9375rem;
+    color: $color-dark-shade-50;
+    max-width: 6.125rem;
+    word-break: break-word;
+  }
 
-    &__radio-buttons {
-        z-index: 2;
-        display: flex;
-        position: absolute;
-        right: 0.9375rem;
-        bottom: 0.9375rem;
-    }
+  &__period-of-time {
+    justify-self: end;
+    align-self: end;
+    margin-right: 0.0625rem;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    color: $color-dark-shade-50;
+    white-space: nowrap;
+  }
 
-    &__radio-button {
-        width: $radioButtonSize;
-        height: $radioButtonSize;
-        margin-left: 0.2rem;
+  &__room-rate {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    border-top: 0.0625rem solid $color-dark-shade-10;
+  }
 
-        &_checked .room-info__radio-button-image {
-            background: white;
-        }
-    }
+  &__star-rating {
+    width: max-content;
+  }
 
-    &__radio-button-image {
-        width: inherit;
-        height: inherit;
-        position: absolute;
-        border-radius: 50%;
-        border: 0.0625rem solid white;
-        box-shadow: 0rem 0.3125rem 0.3125rem $color-dark-shade-30;
-    }
+  &__reviews-count {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-bottom: 0.1875rem;
+    padding-right: 0.25rem;
+  }
 
-    &__text-info {
-        z-index: 1;
-        padding: 0.9375rem 1rem 1.1875rem 1.25rem;
-    }
+  &__reviews-count-value {
+    margin-right: 0.1875rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    text-align: right;
+    color: $color-dark-shade-50;
+    text-align: start;
+    word-break: break-word;
+  }
 
-    &__title {
-        display: grid;
-        grid-template-columns: max-content max-content max-content auto min-content;
-        margin-top: 0.1875rem;
-        margin-bottom: 0.75rem;
-    }
-
-    &__number-symbol {
-        align-self: end;
-        margin-right: 0.25rem;
-        font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 0.875rem;
-        line-height: 1.0625rem;
-        color: $color-dark-shade-100;
-    }
-
-    &__room-number {
-        align-self: end;
-        margin-right: 0.3125rem;
-        font-family: Quicksand, OpenSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1.1875rem;
-        line-height: 1.5rem;
-        color: $color-dark-shade-100;
-        max-width: 3.125rem;
-        word-break: break-word;
-    }
-
-    &__room-status {
-        align-self: end;
-        font-weight: bold;
-        font-size: 0.75rem;
-        line-height: 0.9375rem;
-        text-transform: uppercase;
-        color: $color-purple;
-    }
-
-    &__room-price {
-        justify-self: end;
-        align-self: end;
-        margin-right: 0.25rem;
-        font-weight: bold;
-        font-size: 0.875rem;
-        line-height: 0.9375rem;
-        color: $color-dark-shade-50;
-        max-width: 6.125rem;
-        word-break: break-word;
-    }
-
-    &__period-of-time {
-        justify-self: end;
-        align-self: end;
-        margin-right: 0.0625rem;
-        font-size: 0.75rem;
-        line-height: 0.9375rem;
-        color: $color-dark-shade-50;
-        white-space: nowrap;
-    }
-
-    &__room-rate {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 0.5rem;
-        border-top: 0.0625rem solid $color-dark-shade-10;
-    }
-
-    &__star-rating {
-        width: max-content;
-    }
-
-    &__reviews-count {
-        display: flex;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        padding-bottom: 0.1875rem;
-        padding-right: 0.25rem;
-    }
-
-    &__reviews-count-value {
-        margin-right: 0.1875rem;
-        font-weight: bold;
-        font-size: 0.875rem;
-        line-height: 1.125rem;
-        text-align: right;
-        color: $color-dark-shade-50;
-        text-align: start;
-        word-break: break-word;
-    }
-
-    &__reviews-count-text {
-        font-size: 0.875rem;
-        line-height: 1.125rem;
-        text-align: right;
-        color: $color-dark-shade-50;
-    }
+  &__reviews-count-text {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    text-align: right;
+    color: $color-dark-shade-50;
+  }
 }

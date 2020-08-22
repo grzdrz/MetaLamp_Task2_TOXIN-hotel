@@ -2,47 +2,47 @@ include ../button/button.pug
 include ../colored-logo/colored-logo.pug
 
 mixin header(options = {})
-    - 
-        const { 
-            isAuthorized = false, 
-            userFullName = "",
-            navList = [
-                {url: "https://www.google.com/", text: "О нас", hasDropdown: false},
-                {url: "https://www.google.com/", text: "Услуги", hasDropdown: true},
-                {url: "https://www.google.com/", text: "Вакансии", hasDropdown: false},
-                {url: "https://www.google.com/", text: "Новости", hasDropdown: false},
-                {url: "https://www.google.com/", text: "Соглашения", hasDropdown: true},
-            ],
-        } = options;
+  - 
+    const { 
+      isAuthorized = false, 
+      userFullName = "",
+      navList = [
+        {url: "https://www.google.com/", text: "О нас", hasDropdown: false},
+        {url: "https://www.google.com/", text: "Услуги", hasDropdown: true},
+        {url: "https://www.google.com/", text: "Вакансии", hasDropdown: false},
+        {url: "https://www.google.com/", text: "Новости", hasDropdown: false},
+        {url: "https://www.google.com/", text: "Соглашения", hasDropdown: true},
+      ],
+    } = options;
 
-    header(class=["header"])
-        div(class=["header__colored-logo"])
-            +colored-logo()
+  header(class=["header"])
+    div(class=["header__colored-logo"])
+      +colored-logo()
 
-        nav(class=["header__navigation-menu"])
-            ul(class=["header__list"])
-                - for(let item of navList)
-                    li(class=["header__item"])
-                        a(class=["header__item-ref"] 
-                            href=item.url target="_blank" rel="noopener noreferrer")= item.text
-                        - if(item.hasDropdown)
-                            span(class=["header__dropdown-arrow"]) expand_more
-        - if(isAuthorized)
-            p(class=["header__user-full-name"])
-                span(class=["header__name-text"])= userFullName
-        - else
-            div(class=["header__buttons"])
-                div(class=["header__sign-in-button"])
-                    +button({
-                        text: "войти",
-                        isHollow:  true,
-                        buttonType: "a",
-                        hasArrow: false,
-                    })
-                div(class=["header__sign-up-button"])
-                    +button({
-                        text: "зарегистрироваться",
-                        isHollow:  false,
-                        buttonType: "a",
-                        hasArrow: false,
-                    })
+    nav(class=["header__navigation-menu"])
+      ul(class=["header__list"])
+        - for(let item of navList)
+          li(class=["header__item"])
+            a(class=["header__item-ref"] 
+              href=item.url target="_blank" rel="noopener noreferrer")= item.text
+            - if(item.hasDropdown)
+              span(class=["header__dropdown-arrow"]) expand_more
+    - if(isAuthorized)
+      p(class=["header__user-full-name"])
+        span(class=["header__name-text"])= userFullName
+    - else
+      div(class=["header__buttons"])
+        div(class=["header__sign-in-button"])
+          +button({
+            text: "войти",
+            isHollow:  true,
+            buttonType: "a",
+            hasArrow: false,
+          })
+        div(class=["header__sign-up-button"])
+          +button({
+            text: "зарегистрироваться",
+            isHollow:  false,
+            buttonType: "a",
+            hasArrow: false,
+          })

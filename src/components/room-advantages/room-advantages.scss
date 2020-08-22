@@ -1,59 +1,59 @@
 @import '../../assets/constants.scss';
 
 .room-advantages {
-    width: max-content;
-    list-style: none;
+  width: max-content;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  &__bottom-border {
+    width: 17.5rem;
+    height: 0.0625rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    background: $color-dark-shade-10;
+
+    &:last-child {
+      margin-bottom: 0rem;
+    }
+  }
+
+  &__detail {
     display: flex;
+    flex-direction: row;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 0.625rem;
+    background: $gradient-purple-to-blue;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Material Icons;
+    font-size: 3rem;
+    line-height: 2.5625rem;
+  }
+
+  &__text {
+    width: 14.5625rem;
+    display: inline-flex;
     flex-direction: column;
+  }
 
-    &__bottom-border {
-        width: 17.5rem;
-        height: 0.0625rem;
-        margin-top: 1.25rem;
-        margin-bottom: 1.25rem;
-        background: $color-dark-shade-10;
+  &__title-text {
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: $color-dark-shade-75;
+    word-break: break-word;
+  }
 
-        &:last-child {
-            margin-bottom: 0rem;
-        }
-    }
-
-    &__detail {
-        display: flex;
-        flex-direction: row;
-    }
-
-    &__icon {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin-right: 0.625rem;
-        background: $gradient-purple-to-blue;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: Material Icons;
-        font-size: 3rem;
-        line-height: 2.5625rem;
-    }
-
-    &__text {
-        width: 14.5625rem;
-        display: inline-flex;
-        flex-direction: column;
-    }
-
-    &__title-text {
-        font-weight: bold;
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        color: $color-dark-shade-75;
-        word-break: break-word;
-    }
-
-    &__main-text {
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        color: $color-dark-shade-75;
-        word-break: break-word;
-    }
+  &__main-text {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: $color-dark-shade-75;
+    word-break: break-word;
+  }
 }

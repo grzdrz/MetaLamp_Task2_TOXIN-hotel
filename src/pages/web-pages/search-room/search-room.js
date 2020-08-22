@@ -9,23 +9,23 @@ import RoomInfo from '../../../components/room-info/room-info';
 import './search-room.scss';
 
 const dropdowns = Array.from(document.querySelectorAll('.js-search-room__dropdown'))
-    .map((element) => new Dropdown(element));
+  .map((element) => new Dropdown(element));
 
 const expandableCheckboxes = Array.from(document.querySelectorAll('.js-search-room__checkbox_expandable'))
-    .map((element) => new ExpandableCheckbox(element));
+  .map((element) => new ExpandableCheckbox(element));
 
 const paginations = Array.from(document.querySelectorAll('.js-search-room__pagination'))
-    .map((element) => new Pagination({
-        pagesCount: 15,
-        curPageNumber: 1,
-        itemsCount: 180,
-    }, element));
+  .map((element) => new Pagination({
+    pagesCount: 15,
+    curPageNumber: 1,
+    itemsCount: 180,
+  }, element));
 
 const rangeSliders = Array.from(document.querySelectorAll('.js-search-room__range-slider'))
-    .map((element) => new RangeSlider(element));
+  .map((element) => new RangeSlider(element));
 
 const calendars = Array.from(document.querySelectorAll('.js-search-room__calendar'))
-    .map((element) => new Calendar(element));
+  .map((element) => new Calendar(element));
 
 const roomsInfo = Array.from(document.querySelectorAll('.js-search-room__room-info'))
-    .map((element) => new RoomInfo(element));
+  .map((element) => new RoomInfo(element));
