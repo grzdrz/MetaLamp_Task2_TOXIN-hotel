@@ -1841,16 +1841,16 @@ Build date: 2019-12-19 16:51:02
     height: 1.5rem;
     position: absolute;
     opacity: 0; }
-    .star-rating__input-1 {
-      margin-left: 0rem; }
-    .star-rating__input-2 {
-      margin-left: 1.5rem; }
-    .star-rating__input-3 {
-      margin-left: 3rem; }
-    .star-rating__input-4 {
-      margin-left: 4.5rem; }
-    .star-rating__input-5 {
+    .star-rating__input:nth-of-type(1) {
       margin-left: 6rem; }
+    .star-rating__input:nth-of-type(2) {
+      margin-left: 4.5rem; }
+    .star-rating__input:nth-of-type(3) {
+      margin-left: 3rem; }
+    .star-rating__input:nth-of-type(4) {
+      margin-left: 1.5rem; }
+    .star-rating__input:nth-of-type(5) {
+      margin-left: 0rem; }
     .star-rating__input + .star-rating__image::before {
       content: 'star_border';
       width: 1.5rem;
@@ -1893,16 +1893,16 @@ Build date: 2019-12-19 16:51:02
     justify-content: center;
     align-items: center;
     position: absolute; }
-    .star-rating__image-1 {
-      margin-left: 0rem; }
-    .star-rating__image-2 {
-      margin-left: 1.5rem; }
-    .star-rating__image-3 {
-      margin-left: 3rem; }
-    .star-rating__image-4 {
-      margin-left: 4.5rem; }
-    .star-rating__image-5 {
+    .star-rating__image:nth-of-type(1) {
       margin-left: 6rem; }
+    .star-rating__image:nth-of-type(2) {
+      margin-left: 4.5rem; }
+    .star-rating__image:nth-of-type(3) {
+      margin-left: 3rem; }
+    .star-rating__image:nth-of-type(4) {
+      margin-left: 1.5rem; }
+    .star-rating__image:nth-of-type(5) {
+      margin-left: 0rem; }
 
 .button {
   cursor: pointer;
@@ -2750,119 +2750,89 @@ Build date: 2019-12-19 16:51:02
   grid-column-gap: 7.9375rem;
   margin-top: 4.0625rem;
   padding: 0rem 8.75rem 9.375rem; }
-  .form-elements__column {
-    justify-self: center; }
-    .form-elements__column-1 {
-      display: flex;
-      flex-direction: column; }
-      .form-elements__column-1 > * {
-        margin-bottom: 1.25rem; }
-    .form-elements__column-2 {
-      display: flex;
-      flex-direction: column; }
-      .form-elements__column-2 > * {
-        margin-bottom: 1.25rem; }
-    .form-elements__column-3 {
-      display: flex;
-      flex-direction: column;
-      margin-left: 0.33rem; }
-      .form-elements__column-3 > * {
-        margin-bottom: 1.25rem; }
-  .form-elements__row-1 {
+  .form-elements__column-left, .form-elements__column-central, .form-elements__column-right {
     display: flex;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    margin-top: 5rem;
-    margin-bottom: 9.9rem; }
-  .form-elements__dropdown-2-3 {
-    margin-right: 11.3125rem; }
-  .form-elements__row-2 {
-    display: flex;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    margin-bottom: 2.5rem; }
-  .form-elements__checkbox-2-3 {
-    margin-right: 11.3125rem; }
-  .form-elements__row-3 {
-    display: flex;
-    grid-column-start: 1;
-    grid-column-end: 4; }
-  .form-elements__star-rating-title, .form-elements__like-button-title, .form-elements__toggle-title {
-    margin-bottom: 1rem;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
-    text-transform: uppercase;
-    color: #1f2041; }
-  .form-elements__radio-title {
-    margin-bottom: 0.875rem;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
-    text-transform: uppercase;
-    color: #1f2041; }
-  .form-elements__buttons-title {
-    margin-bottom: 1rem;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
-    text-transform: uppercase;
-    color: #1f2041; }
-  .form-elements__star-rating-title, .form-elements__like-button-title, .form-elements__buttons-title {
-    grid-column-start: 1;
-    grid-column-end: 3; }
-  .form-elements__form-input-1, .form-elements__form-input-2, .form-elements__calendar-1, .form-elements__calendar-2 {
+    flex-direction: column; }
+  .form-elements__column-right {
+    margin-left: 0.33rem; }
+  .form-elements__form-input_type_default, .form-elements__form-input_type_hover {
     width: 20rem; }
-  .form-elements__form-input-2 .form-input__additional-title-text {
+  .form-elements__form-input_type_default, .form-elements__form-input_type_hover {
+    margin-bottom: 1.28rem; }
+  .form-elements__form-input_type_hover .form-input__additional-title-text {
     line-height: 0.95rem; }
-  .form-elements__dropdown-1 {
-    margin-bottom: 1.5rem; }
-  .form-elements__calendar-1 {
+  .form-elements__dropdown_type_default {
+    width: 20rem;
+    margin-bottom: 1.4rem; }
+  .form-elements__calendar_type_default {
+    width: 20rem;
     margin-bottom: 2.5rem; }
-  .form-elements__calendar-2 {
-    margin-bottom: 2.5rem; }
-  .form-elements__calendar-3 {
+  .form-elements__calendar_type_double {
+    width: 20rem;
+    margin-bottom: 2.55rem; }
+  .form-elements__calendar_type_single-with-range {
+    width: 16.625rem;
     margin-bottom: 2.5625rem; }
-  .form-elements__calendar-3, .form-elements__form-input-3 {
+  .form-elements__form-input_type_subscription {
     width: 16.625rem; }
-  .form-elements__dropdown-2, .form-elements__dropdown-3 {
-    width: 16.625rem; }
-  .form-elements__dropdown-2 {
-    margin-bottom: 1.25rem; }
-  .form-elements__dropdown-1, .form-elements__dropdown-4, .form-elements__dropdown-5 {
-    width: 20rem; }
-  .form-elements__dropdown-4 {
-    margin-right: 4.5rem; }
-  .form-elements__checkbox-4 {
-    margin-right: 8.3125rem;
-    margin-top: 0.9375rem; }
-  .form-elements__room-advantages {
-    margin-right: 9.8rem; }
-  .form-elements__checkbox-1 {
+  .form-elements__checkbox_type_simple {
     margin-bottom: 2.5rem; }
-  .form-elements__checkbox-2, .form-elements__checkbox-3 {
-    width: 16.625rem; }
-  .form-elements__checkbox-2 {
-    margin-bottom: 1.2rem; }
   .form-elements__radio {
+    width: max-content;
     margin-bottom: 2.5625rem; }
+    .form-elements__radio-title {
+      margin-bottom: 0.875rem;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 0.9375rem;
+      text-transform: uppercase;
+      color: #1f2041; }
   .form-elements__toggles {
     display: flex;
     flex-direction: column;
     margin-bottom: 2.8125rem; }
+    .form-elements__toggles-title {
+      margin-bottom: 1rem;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 0.9375rem;
+      text-transform: uppercase;
+      color: #1f2041; }
+  .form-elements__toggle {
+    width: max-content; }
+    .form-elements__toggle:first-of-type {
+      margin-bottom: 0.875rem; }
   .form-elements__like-buttons {
     display: grid;
     grid-template-columns: min-content min-content;
     grid-column-gap: 0.625rem;
     margin-bottom: 2.5rem; }
+    .form-elements__like-buttons-title {
+      margin-bottom: 1rem;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 0.9375rem;
+      text-transform: uppercase;
+      color: #1f2041; }
+  .form-elements__like-button {
+    width: max-content; }
   .form-elements__star-ratings {
     display: grid;
     grid-template-columns: min-content min-content;
     grid-column-gap: 1.25rem; }
-  .form-elements__radio, .form-elements__toggle-1, .form-elements__toggle-2, .form-elements__like-button-1, .form-elements__like-button-2, .form-elements__star-rating-1, .form-elements__star-rating-2 {
+    .form-elements__star-ratings-title {
+      margin-bottom: 1rem;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 0.9375rem;
+      text-transform: uppercase;
+      color: #1f2041; }
+  .form-elements__star-rating {
     width: max-content; }
-  .form-elements__toggle-1 {
-    margin-bottom: 0.875rem; }
   .form-elements__range-slider {
     width: 16.625rem;
     margin-bottom: 2.0625rem; }
@@ -2871,32 +2841,72 @@ Build date: 2019-12-19 16:51:02
     grid-template-columns: min-content min-content;
     grid-column-gap: 1.1875rem;
     margin-bottom: 1.875rem; }
-  .form-elements__button-1, .form-elements__button-2, .form-elements__button-3, .form-elements__button-4 {
+    .form-elements__buttons-title {
+      margin-bottom: 1rem;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 0.9375rem;
+      text-transform: uppercase;
+      color: #1f2041; }
+  .form-elements__button_type_simple, .form-elements__button_type_simple-hover, .form-elements__button_type_hollow, .form-elements__button_type_hollow-hover {
     width: 6.1875rem;
     height: 2.75rem; }
-  .form-elements__button-1 {
+  .form-elements__button_type_simple {
     margin-bottom: 1.8125rem; }
   .form-elements__text-buttons {
     display: flex;
     margin-bottom: 1.6875rem; }
-  .form-elements__button-5 {
+  .form-elements__text-button:first-of-type {
     margin-right: 1.25rem; }
-  .form-elements__button-7 {
+  .form-elements__button_type_submit {
     width: 20rem;
     height: 2.75rem;
     margin-bottom: 2.625rem; }
   .form-elements__pagination {
     width: max-content; }
-  .form-elements__bullet-list-title {
-    margin-bottom: 14px;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
-    text-transform: uppercase;
-    color: #1f2041;
-    word-break: break-word; }
+  .form-elements__row-top, .form-elements__row-central, .form-elements__row-bottom {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4; }
+  .form-elements__row-top {
+    margin-top: 6.25rem;
+    margin-bottom: 9.9rem; }
+  .form-elements__row-central {
+    margin-bottom: 2.5rem; }
+  .form-elements__dropdowns {
+    margin-right: 11.3125rem; }
+  .form-elements__dropdown_type_room-items-counter {
+    width: 16.625rem; }
+    .form-elements__dropdown_type_room-items-counter:first-of-type {
+      margin-bottom: 1.25rem; }
+  .form-elements__dropdown_type_guests-counter, .form-elements__dropdown_type_guests-counter {
+    width: 20rem;
+    margin-right: 4.5rem; }
+    .form-elements__dropdown_type_guests-counter:last-of-type, .form-elements__dropdown_type_guests-counter:last-of-type {
+      margin-right: 0rem; }
+  .form-elements__checkboxes {
+    margin-right: 11.3125rem; }
+  .form-elements__checkbox_type_expandable {
+    width: 16.625rem; }
+    .form-elements__checkbox_type_expandable:first-of-type {
+      margin-bottom: 1.2rem; }
+  .form-elements__checkbox_type_rich {
+    margin-right: 8.3125rem;
+    margin-top: 0.93rem; }
   .form-elements__bullet-list {
     margin-top: 0.85rem; }
+    .form-elements__bullet-list-title {
+      margin-bottom: 14px;
+      font-weight: bold;
+      font-size: 0.75rem;
+      line-height: 0.9375rem;
+      text-transform: uppercase;
+      color: #1f2041;
+      word-break: break-word; }
+  .form-elements__room-advantages {
+    margin-right: 9.8rem; }
   .form-elements__guest-room-reviews {
     grid-column-start: 2;
     grid-column-end: 4;

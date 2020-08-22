@@ -260,7 +260,7 @@ eval("var map = {\n\t\"./android-chrome-192x192.png\": \"./node_modules/file-loa
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const faviconsContext = __webpack_require__(\"./src/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./ \\\\.(svg|png|ico|xml|json)$\");\r\nfaviconsContext.keys().forEach(faviconsContext);\n\n//# sourceURL=webpack:///./src/favicons/favicons.js?");
+eval("const faviconsContext = __webpack_require__(\"./src/favicons sync recursive ./!./!./node_modules/file-loader/dist/cjs.js?name=/favicons/[name].[ext]!./ \\\\.(svg|png|ico|xml|json)$\");\r\nfaviconsContext.keys().forEach(faviconsContext);\r\n\n\n//# sourceURL=webpack:///./src/favicons/favicons.js?");
 
 /***/ })
 
