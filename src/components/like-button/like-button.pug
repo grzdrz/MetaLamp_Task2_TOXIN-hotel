@@ -10,5 +10,5 @@ mixin like-button(options = {})
     label(class=["like-button__label"])
       div(class=["like-button__background"])
       span(class=["like-button__like-symbol"])
-      span(class=["like-button__likes-number", "like-button__likes-number_unpressed"])= number
+      span(class=["like-button__likes-number"])= number
       span(class=["like-button__likes-number", "like-button__likes-number_pressed"])= number + 1

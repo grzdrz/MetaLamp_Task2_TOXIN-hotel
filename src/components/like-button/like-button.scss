@@ -39,7 +39,7 @@ $borderThickness: 0.0625rem;
   &__likes-number {
     z-index: 1;
     width: max-content;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -50,6 +50,10 @@ $borderThickness: 0.0625rem;
     font-size: 0.5625rem;
     text-align: center;
     white-space: nowrap;
+
+    &_pressed {
+      display: flex;
+    }
   }
 
   &__input {
@@ -75,7 +79,7 @@ $borderThickness: 0.0625rem;
         align-items: center;
       }
 
-      & > .like-button__likes-number_unpressed {
+      & > .like-button__likes-number {
         display: none;
       }
 
@@ -100,7 +104,7 @@ $borderThickness: 0.0625rem;
         border: 0rem solid transparent;
       }
 
-      & > .like-button__likes-number_unpressed {
+      & > .like-button__likes-number {
         display: flex;
       }
 
