@@ -995,7 +995,7 @@ body {
   .like-button__likes-number {
     z-index: 1;
     width: max-content;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -1006,6 +1006,8 @@ body {
     font-size: 0.5625rem;
     text-align: center;
     white-space: nowrap; }
+    .like-button__likes-number_pressed {
+      display: flex; }
   .like-button__input {
     cursor: pointer;
     z-index: 2;
@@ -1023,7 +1025,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center; }
-      .like-button__input:checked + .like-button__label > .like-button__likes-number_unpressed {
+      .like-button__input:checked + .like-button__label > .like-button__likes-number {
         display: none; }
       .like-button__input:checked + .like-button__label > .like-button__likes-number_pressed {
         display: flex; }
@@ -1038,7 +1040,7 @@ body {
         justify-content: center;
         align-items: center;
         border: 0rem solid transparent; }
-      .like-button__input:not(:checked) + .like-button__label > .like-button__likes-number_unpressed {
+      .like-button__input:not(:checked) + .like-button__label > .like-button__likes-number {
         display: flex; }
       .like-button__input:not(:checked) + .like-button__label > .like-button__likes-number_pressed {
         display: none; }
@@ -1282,6 +1284,8 @@ body {
     color: #bc9cff; }
     .calendar__clear-button:hover, .calendar__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
+    .calendar__clear-button_visible {
+      display: block; }
 
 .datepicker {
   width: max-content;
@@ -1363,10 +1367,10 @@ body {
           background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
       .datepicker--cell-day.-current-.-range-to-::after {
         background: transparent; }
-    .datepicker--cell-day.-in-range-.-other-month- {
+    .datepicker--cell-day.-in-range-.-other-month-, .datepicker--cell-day.-in-range-.-other-month-.-focus- {
       background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
       color: rgba(31, 32, 65, 0.25); }
-    .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-current-, .datepicker--cell-day.-range-to-.-current-, .datepicker--cell-day.-range-from-.-other-month-, .datepicker--cell-day.-range-to-.-other-month- {
+    .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-current-, .datepicker--cell-day.-range-to-.-current-, .datepicker--cell-day.-range-from-.-other-month-, .datepicker--cell-day.-range-to-.-other-month-, .datepicker--cell-day.-range-from-.-other-month-.-selected-.-focus-, .datepicker--cell-day.-range-to-.-other-month-.-selected-.-focus- {
       display: flex;
       align-items: center;
       text-align: center;
@@ -1645,6 +1649,8 @@ body {
     color: #1f2041; }
   .dropdown__item-minus {
     opacity: 0.38; }
+    .dropdown__item-minus_active {
+      opacity: 1; }
   .dropdown__item-value {
     margin: 0rem 0.3125rem;
     font-weight: bold;
@@ -1668,6 +1674,7 @@ body {
       color: rgba(31, 32, 65, 0.5); }
   .dropdown__clear-button {
     cursor: pointer;
+    display: none;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1675,6 +1682,8 @@ body {
     color: #bc9cff; }
     .dropdown__clear-button:hover, .dropdown__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
+    .dropdown__clear-button_visible {
+      display: flex; }
 
 .price-calculation-form {
   width: 100%;

@@ -1709,6 +1709,8 @@ Build date: 2019-12-19 16:51:02
     color: #1f2041; }
   .dropdown__item-minus {
     opacity: 0.38; }
+    .dropdown__item-minus_active {
+      opacity: 1; }
   .dropdown__item-value {
     margin: 0rem 0.3125rem;
     font-weight: bold;
@@ -1732,6 +1734,7 @@ Build date: 2019-12-19 16:51:02
       color: rgba(31, 32, 65, 0.5); }
   .dropdown__clear-button {
     cursor: pointer;
+    display: none;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -1739,6 +1742,8 @@ Build date: 2019-12-19 16:51:02
     color: #bc9cff; }
     .dropdown__clear-button:hover, .dropdown__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
+    .dropdown__clear-button_visible {
+      display: flex; }
 
 .checkbox-list {
   display: grid;
@@ -1874,7 +1879,7 @@ Build date: 2019-12-19 16:51:02
     flex-wrap: wrap;
     justify-content: center;
     background: transparent; }
-  .pagination__left-arrow, .pagination__right-arrow, .pagination__link, .pagination__three-dots {
+  .pagination__left-arrow, .pagination__right-arrow, .pagination__link, .pagination__dots {
     min-width: 2.5rem;
     width: max-content;
     display: flex;
@@ -1882,7 +1887,7 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     line-height: 2.5rem;
     text-decoration: none; }
-  .pagination__three-dots {
+  .pagination__dots {
     cursor: context-menu; }
   .pagination__link_target {
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
@@ -2085,6 +2090,8 @@ Build date: 2019-12-19 16:51:02
     color: #bc9cff; }
     .calendar__clear-button:hover, .calendar__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
+    .calendar__clear-button_visible {
+      display: block; }
 
 .datepicker {
   width: max-content;
@@ -2166,10 +2173,10 @@ Build date: 2019-12-19 16:51:02
           background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25)); }
       .datepicker--cell-day.-current-.-range-to-::after {
         background: transparent; }
-    .datepicker--cell-day.-in-range-.-other-month- {
+    .datepicker--cell-day.-in-range-.-other-month-, .datepicker--cell-day.-in-range-.-other-month-.-focus- {
       background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
       color: rgba(31, 32, 65, 0.25); }
-    .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-current-, .datepicker--cell-day.-range-to-.-current-, .datepicker--cell-day.-range-from-.-other-month-, .datepicker--cell-day.-range-to-.-other-month- {
+    .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-current-, .datepicker--cell-day.-range-to-.-current-, .datepicker--cell-day.-range-from-.-other-month-, .datepicker--cell-day.-range-to-.-other-month-, .datepicker--cell-day.-range-from-.-other-month-.-selected-.-focus-, .datepicker--cell-day.-range-to-.-other-month-.-selected-.-focus- {
       display: flex;
       align-items: center;
       text-align: center;

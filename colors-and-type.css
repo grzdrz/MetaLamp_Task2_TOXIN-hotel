@@ -61,7 +61,9 @@ body {
   flex-direction: column; }
 
 .logo {
-  display: flex;
+  display: flex; }
+
+.ui-kit__logo {
   margin-left: 1.875rem;
   padding-top: 1.875rem; }
 
