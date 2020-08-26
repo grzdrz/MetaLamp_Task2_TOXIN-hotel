@@ -27,7 +27,7 @@ class Calendar {
     this.$containerElement = $outerContainerElement.find('.js-calendar');
     this.$dateInputs = this.$containerElement.find('.js-calendar__input');
 
-    this.isDouble = this.$containerElement.hasClass('js-calendar_double');
+    this.isDouble = this.$containerElement.hasClass('js-calendar_type_double');
     this.withRangePicking = this.$containerElement.hasClass('js-calendar_with-range-picking');
 
     if (this.isDouble) this._setDoubleDatepicker();

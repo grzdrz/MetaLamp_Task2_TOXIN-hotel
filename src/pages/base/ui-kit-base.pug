@@ -3,5 +3,6 @@ extends base
 include ../../components/logo/logo
 
 block body
-  +logo()
+  div(class=["ui-kit__logo"])
+    +logo()
   block content

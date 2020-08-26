@@ -25,7 +25,7 @@
   &__left-arrow,
   &__right-arrow,
   &__link,
-  &__three-dots {
+  &__dots {
     min-width: 2.5rem;
     width: max-content;
     display: flex;
@@ -35,7 +35,7 @@
     text-decoration: none;
   }
 
-  &__three-dots {
+  &__dots {
     cursor: context-menu;
   }
 
