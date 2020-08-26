@@ -17,7 +17,7 @@ const expandableCheckboxes = Array.from(document.querySelectorAll('.js-search-ro
 const paginations = Array.from(document.querySelectorAll('.js-search-room__pagination'))
   .map((element) => new Pagination({
     pagesCount: 15,
-    curPageNumber: 1,
+    currentPageNumber: 1,
     itemsCount: 180,
   }, element));
 

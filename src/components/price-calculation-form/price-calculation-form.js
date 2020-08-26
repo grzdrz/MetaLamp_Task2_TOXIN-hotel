@@ -11,7 +11,7 @@ class PriceCalculationForm {
 
     this._handleDropdownInputChange = this._handleDropdownInputChange.bind(this);
     this._getCalendarSelectWrapper = this._getCalendarSelectWrapper.bind(this);
-    this._getCalendarClearClickWrapper = this._getCalendarClearClickWrapper.bind(this);
+    this._handleCalendarClearButtonClick = this._handleCalendarClearButtonClick.bind(this);
 
     this._initialize();
   }
@@ -46,9 +46,8 @@ class PriceCalculationForm {
     const oldHandlerSelect = datepicker.selectDate;
     datepicker.selectDate = this._getCalendarSelectWrapper(oldHandlerSelect.bind(datepicker));
 
-    const clearButton = datepicker.$datepicker[0].querySelector('.js-calendar__clear-button');
-    const oldOnClear = clearButton.onclick;
-    clearButton.onclick = this._getCalendarClearClickWrapper(oldOnClear);
+    const { clearButton } = this.calendar;
+    clearButton.addEventListener('click', this._handleCalendarClearButtonClick);
   }
 
   _handleDropdownInputChange() {
@@ -69,9 +68,9 @@ class PriceCalculationForm {
         const firstDate = new Date(firstDateStrings[2], firstDateStrings[1], firstDateStrings[0]);
         const secondDateStrings = secondDateValue.split('.');
         const secondDate = new Date(secondDateStrings[2], secondDateStrings[1], secondDateStrings[0]);
-        const dDate = Math.abs(secondDate - firstDate);
+        const deltaDate = Math.abs(secondDate - firstDate);
 
-        this.daysCount = dDate / (1000 * 60 * 60 * 24);
+        this.daysCount = deltaDate / (1000 * 60 * 60 * 24);
         this.roomRentalSum = this.daysCount * this.roomRentalPrice;
 
         this._calculateTotalPrice();
@@ -79,15 +78,10 @@ class PriceCalculationForm {
     }.bind(this);
   }
 
-  _getCalendarClearClickWrapper(oldHandler) {
-    return function newHandler(event) {
-      oldHandler(event);
-
-      this.daysCount = 0;
-      this.roomRentalSum = 0;
-
-      this._calculateTotalPrice();
-    }.bind(this);
+  _handleCalendarClearButtonClick() {
+    this.daysCount = 0;
+    this.roomRentalSum = 0;
+    this._calculateTotalPrice();
   }
 
   _calculateTotalPrice() {

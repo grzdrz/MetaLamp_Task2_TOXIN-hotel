@@ -181,6 +181,10 @@
 
   &__item-minus {
     opacity: 0.38;
+
+    &_active {
+      opacity: 1;
+    }
   }
 
   &__item-value {
@@ -215,6 +219,7 @@
 
   &__clear-button {
     cursor: pointer;
+    display: none;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -224,6 +229,10 @@
     &:hover,
     &:focus {
       color: $color-dark-shade-50;
+    }
+
+    &_visible {
+      display: flex;
     }
   }
 }

@@ -6,14 +6,13 @@ const $ = jQuery;
 global.jQuery = $;
 global.$ = $;
 
-const dateFormatOptions1 = { year: 'numeric', month: '2-digit', day: '2-digit' };
-const dateFormatOptions2 = {
-  month: 'short', day: '2-digit',
-};
+const dateFormatOptionsForDoubleInput = { year: 'numeric', month: '2-digit', day: '2-digit' };
+const dateFormatOptionsForSingleInput = { month: 'short', day: '2-digit' };
 
 class Calendar {
   constructor(outerContainerElement) {
     this.outerContainerElement = outerContainerElement;
+    this.hasClearButton = false;
 
     this._handleShow = this._handleShow.bind(this);
     this._handleDoubleInputSelectRange = this._handleDoubleInputSelectRange.bind(this);
@@ -30,8 +29,6 @@ class Calendar {
 
     this.isDouble = this.$containerElement.hasClass('js-calendar_double');
     this.withRangePicking = this.$containerElement.hasClass('js-calendar_with-range-picking');
-
-    this.datepickerInstance = {};
 
     if (this.isDouble) this._setDoubleDatepicker();
     else if (this.withRangePicking) this._setSingleDatepickerWithRange();
@@ -84,75 +81,91 @@ class Calendar {
     }).data('datepicker');
   }
 
-  _handleShow(dp, animationCompleted) {
+  _handleShow(datepickerInstance, animationCompleted) {
     if (!animationCompleted) {
-      if (!dp.$datepicker.find('.calendar__buttons').html()) {
-        dp.$datepicker.append(
+      if (!datepickerInstance.$datepicker.find('.calendar__buttons').html()) {
+        datepickerInstance.$datepicker.append(
           `<div class="calendar__buttons">
-                    <p class="calendar__clear-button js-calendar__clear-button">очистить</p>
-                    <p class="calendar__apply-button js-calendar__apply-button">применить</p>
-                    </div>`,
+            <p class="calendar__clear-button js-calendar__clear-button">очистить</p>
+            <p class="calendar__apply-button js-calendar__apply-button">применить</p>
+          </div>`,
         );
 
-        const clearButton = dp.$datepicker[0].querySelector('.js-calendar__clear-button');
-        clearButton.onclick = () => {
-          dp.clear();
-          dp.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'none';
-        };
+        this.clearButton = datepickerInstance.$datepicker[0].querySelector('.js-calendar__clear-button');
+        this.clearButton.addEventListener('click', this._handleClearButtonClick.bind(this, datepickerInstance));
 
-        const applyButton = dp.$datepicker[0].querySelector('.js-calendar__apply-button');
-        applyButton.onclick = () => {
-          dp.hide();
-        };
+        this.applyButton = datepickerInstance.$datepicker[0].querySelector('.js-calendar__apply-button');
+        this.applyButton.addEventListener('click', this._handleApplyButtonClick.bind(this, datepickerInstance));
 
-        dp.$datepicker.find('.datepicker--pointer').css('display', 'none');
+        datepickerInstance.$datepicker.find('.datepicker--pointer').css('display', 'none');
 
-        if (this.dateInputTo) this.dateInputTo.bind('click', dp.show.bind(dp));
+        if (this.dateInputTo) this.dateInputTo.bind('click', datepickerInstance.show.bind(datepickerInstance));
       }
     }
   }
 
   _handleDoubleInputSelectRange(formattedDate, date, inst) {
     if (inst.selectedDates[0]) {
-      const firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1)
+      const firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptionsForDoubleInput)
         .format(inst.selectedDates[0]);
       this.dateInputFrom.prop('value', firstFormattedDate);
     }
     if (inst.selectedDates[1]) {
-      const secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptions1)
+      const secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptionsForDoubleInput)
         .format(inst.selectedDates[1]);
       this.dateInputTo.prop('value', secondFormattedDate);
-      inst.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'block';
+      this.hasClearButton = true;
     } else {
       this.dateInputFrom.prop('value', '');
       this.dateInputTo.prop('value', '');
-      inst.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'none';
+      this.hasClearButton = false;
     }
+    this._changeState();
   }
 
   _handleSingleInputSelectRange(formattedDate, date, inst) {
     if (inst.selectedDates[0] && inst.selectedDates[1]) {
-      let formattedDate1 = (new Intl.DateTimeFormat('ru-RU', dateFormatOptions2)
+      let formattedDateFrom = (new Intl.DateTimeFormat('ru-RU', dateFormatOptionsForSingleInput)
         .format(inst.selectedDates[0]))
         .toString();
-      formattedDate1 = formattedDate1.slice(0, formattedDate1.length - 1);
-      let formattedDate2 = (new Intl.DateTimeFormat('ru-RU', dateFormatOptions2)
+      formattedDateFrom = formattedDateFrom.slice(0, formattedDateFrom.length - 1);
+      let formattedDateTo = (new Intl.DateTimeFormat('ru-RU', dateFormatOptionsForSingleInput)
         .format(inst.selectedDates[1]))
         .toString();
-      formattedDate2 = formattedDate2.slice(0, formattedDate2.length - 1);
-      this.dateInput.prop('value', `${formattedDate1} - ${formattedDate2}`);
-      inst.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'block';
+      formattedDateTo = formattedDateTo.slice(0, formattedDateTo.length - 1);
+      this.dateInput.prop('value', `${formattedDateFrom} - ${formattedDateTo}`);
+      this.hasClearButton = true;
     } else {
       this.dateInput.prop('value', '');
-      inst.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'none';
+      this.hasClearButton = false;
     }
+    this._changeState();
   }
 
   _handleSelectSingleDate(formattedDate, date, inst) {
     if (inst.selectedDates[0]) {
-      inst.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'block';
+      this.hasClearButton = true;
     } else {
-      inst.$datepicker[0].querySelector('.js-calendar__clear-button').style.display = 'none';
+      this.hasClearButton = false;
+    }
+    this._changeState();
+  }
+
+  _handleClearButtonClick(datepickerInstance) {
+    datepickerInstance.clear();
+    this.hasClearButton = false;
+    this._changeState();
+  }
+
+  _handleApplyButtonClick(datepickerInstance) {
+    datepickerInstance.hide();
+  }
+
+  _changeState() {
+    if (this.hasClearButton) {
+      this.clearButton.classList.toggle('calendar__clear-button_visible', true);
+    } else {
+      this.clearButton.classList.toggle('calendar__clear-button_visible', false);
     }
   }
 }

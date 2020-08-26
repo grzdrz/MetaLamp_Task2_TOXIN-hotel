@@ -32,16 +32,16 @@ const staticDatepicker = $('.js-cards__datepicker').datepicker({
     days: 'MM yyyy',
   },
   autoClose: false,
-  onShow(dp, animationCompleted) {
+  onShow(datepickerInstance, animationCompleted) {
     if (!animationCompleted) {
-      if (!dp.$datepicker.find('.calendar__buttons').html()) {
-        dp.$datepicker.append(
+      if (!datepickerInstance.$datepicker.find('.calendar__buttons').html()) {
+        datepickerInstance.$datepicker.append(
           `<div class="calendar__buttons">
-                    <p class="calendar__clear-button">очистить</p>
-                    <p class="calendar__apply-button">применить</p>
-                    </div>`,
+              <p class="calendar__clear-button">очистить</p>
+              <p class="calendar__apply-button">применить</p>
+          </div>`,
         );
-        dp.$datepicker.find('.datepicker--pointer').css('display', 'none');
+        datepickerInstance.$datepicker.find('.datepicker--pointer').css('display', 'none');
       }
     }
   },

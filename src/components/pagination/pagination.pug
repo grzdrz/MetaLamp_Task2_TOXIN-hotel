@@ -2,16 +2,16 @@ mixin pagination(options = {})
   - 
     const {
       title = "",
-      curPageNumber = 1,
+      currentPageNumber = 1,
       pagesCount = 15,
       itemsCount = 180,
     } = options;
 
-  div(class=["pagination"] data-pages-count=pagesCount data-items-count=itemsCount data-cur-page=curPageNumber)
+  div(class=["pagination"])
     - if(title)
       p(class=["pagination__title"])= title
     div(class=["pagination__list"])
-      - if(curPageNumber !== 1) {
+      - if(currentPageNumber !== 1) {
         a(class=["pagination__left-arrow", "js-pagination__link"] 
           href="https://errorpage.com" target="_blank" rel="noopener noreferrer"
           data-page-number="leftArrow")
@@ -21,37 +21,37 @@ mixin pagination(options = {})
           data-page-number="1")
           span(class=["pagination__link-text"])= 1
       - }
-      - if(curPageNumber - 3 > 1)
+      - if(currentPageNumber - 3 > 1)
         p(class=["pagination__three-dots"] data-page-number="...")
           span(class=["pagination__link-text"])= "..." 
-      - if(curPageNumber - 2 > 1)
+      - if(currentPageNumber - 2 > 1)
         a(class=["pagination__link", "js-pagination__link"]
           href="https://errorpage.com" target="_blank" rel="noopener noreferrer"
-          data-page-number=`${curPageNumber - 2}`)
-          span(class=["pagination__link-text"])= curPageNumber - 2
-      - if(curPageNumber - 1 > 1)
+          data-page-number=`${currentPageNumber - 2}`)
+          span(class=["pagination__link-text"])= currentPageNumber - 2
+      - if(currentPageNumber - 1 > 1)
         a(class=["pagination__link", "js-pagination__link"]
           href="https://errorpage.com" target="_blank" rel="noopener noreferrer" 
-          data-page-number=`${curPageNumber - 1}`)
-          span(class=["pagination__link-text"])= curPageNumber - 1
+          data-page-number=`${currentPageNumber - 1}`)
+          span(class=["pagination__link-text"])= currentPageNumber - 1
       a(class=["pagination__link", "pagination__link_target", "js-pagination__link"]
         href="https://errorpage.com" target="_blank" rel="noopener noreferrer"
-        data-page-number=`${curPageNumber}`)
-        span(class=["pagination__link-text"])= curPageNumber
-      - if(curPageNumber + 1 < pagesCount)
+        data-page-number=`${currentPageNumber}`)
+        span(class=["pagination__link-text"])= currentPageNumber
+      - if(currentPageNumber + 1 < pagesCount)
         a(class=["pagination__link", "js-pagination__link"]
           href="https://errorpage.com" target="_blank" rel="noopener noreferrer"
-          data-page-number=`${curPageNumber + 1}`)
-          span(class=["pagination__link-text"])= curPageNumber + 1
-      - if(curPageNumber + 2 < pagesCount)
+          data-page-number=`${currentPageNumber + 1}`)
+          span(class=["pagination__link-text"])= currentPageNumber + 1
+      - if(currentPageNumber + 2 < pagesCount)
         a(class=["pagination__link", "js-pagination__link"]
           href="https://errorpage.com" target="_blank" rel="noopener noreferrer" 
-          data-page-number=`${curPageNumber + 2}`)
-          span(class=["pagination__link-text"])= curPageNumber + 2
-      - if(curPageNumber + 3 < pagesCount)
+          data-page-number=`${currentPageNumber + 2}`)
+          span(class=["pagination__link-text"])= currentPageNumber + 2
+      - if(currentPageNumber + 3 < pagesCount)
         p(class=["pagination__three-dots"] data-page-number="...") 
           span(class=["pagination__link-text"])= "..." 
-      - if(curPageNumber !== pagesCount) {
+      - if(currentPageNumber !== pagesCount) {
         a(class=["pagination__link", "js-pagination__link"]
           href="https://errorpage.com" target="_blank" rel="noopener noreferrer" 
           data-page-number=`${pagesCount}`)

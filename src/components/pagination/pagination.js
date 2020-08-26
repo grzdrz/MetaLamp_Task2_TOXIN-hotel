@@ -30,8 +30,8 @@ class Pagination {
 
   _writeBottomText() {
     const bottomTextElement = this.outerContainerElement.querySelector('.js-pagination__bottom-text');
-    const firstItemCountNumber = Math.round(this.options.itemsCount / this.options.pagesCount) * (this.options.curPageNumber - 1) + 1;
-    let lastItemCountNumber = Math.round(this.options.itemsCount / this.options.pagesCount) * this.options.curPageNumber;
+    const firstItemCountNumber = Math.round(this.options.itemsCount / this.options.pagesCount) * (this.options.currentPageNumber - 1) + 1;
+    let lastItemCountNumber = Math.round(this.options.itemsCount / this.options.pagesCount) * this.options.currentPageNumber;
     if (lastItemCountNumber > this.options.itemsCount) lastItemCountNumber = this.options.itemsCount;
     const itemsCountText = this.options.itemsCount > 100 ? '100+' : `${this.options.itemsCount}`;
     bottomTextElement.textContent = `${firstItemCountNumber} - ${lastItemCountNumber} из ${itemsCountText} вариантов аренды`;
@@ -42,13 +42,13 @@ class Pagination {
 
     const selectedPageNumber = event.currentTarget.dataset.pageNumber;
     if (selectedPageNumber === 'leftArrow') {
-      this.options.curPageNumber -= 1;
+      this.options.currentPageNumber -= 1;
       this.outerContainerElement.innerHTML = this.pugCode(this.options);
     } else if (selectedPageNumber === 'rightArrow') {
-      this.options.curPageNumber += 1;
+      this.options.currentPageNumber += 1;
       this.outerContainerElement.innerHTML = this.pugCode(this.options);
     } else {
-      this.options.curPageNumber = Number.parseInt(selectedPageNumber, 10);
+      this.options.currentPageNumber = Number.parseInt(selectedPageNumber, 10);
       this.outerContainerElement.innerHTML = this.pugCode(this.options);
     }
 

@@ -6,7 +6,7 @@ mixin header(options = {})
     const { 
       isAuthorized = false, 
       userFullName = "",
-      navList = [
+      navigationList = [
         {url: "https://www.google.com/", text: "О нас", hasDropdown: false},
         {url: "https://www.google.com/", text: "Услуги", hasDropdown: true},
         {url: "https://www.google.com/", text: "Вакансии", hasDropdown: false},
@@ -21,7 +21,7 @@ mixin header(options = {})
 
     nav(class=["header__navigation-menu"])
       ul(class=["header__list"])
-        - for(let item of navList)
+        - for(let item of navigationList)
           li(class=["header__item"])
             a(class=["header__item-ref"] 
               href=item.url target="_blank" rel="noopener noreferrer")= item.text

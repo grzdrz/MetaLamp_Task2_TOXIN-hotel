@@ -26,7 +26,7 @@ mixin dropdown(options = {})
         - if(additionalTitle)
           span(class=["dropdown__additional-title-text"])= additionalTitle
     div(class=["dropdown__container"])
-      div(class=["dropdown__input-container", "js-dropdown__input-container"] data-default-value=value)
+      div(class=["dropdown__input-container", "js-dropdown__input-container"])
         input(class=["dropdown__input", "js-dropdown__input"], 
           placeholder= placeholder,
           name=name,

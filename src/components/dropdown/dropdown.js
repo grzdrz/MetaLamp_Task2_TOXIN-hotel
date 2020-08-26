@@ -4,10 +4,12 @@ class Dropdown {
   constructor(outerContainerElement, isOpened = false) {
     this.outerContainerElement = outerContainerElement;
     this.isOpened = isOpened;
+    this.hasClearButton = false;
+    this.totalValue = 0;
 
     this._handleDropdownClick = this._handleDropdownClick.bind(this);
     this._handleCloseDropdown = this._handleCloseDropdown.bind(this);
-    this._handleClear = this._handleClear.bind(this);
+    this._handleClearButtonClick = this._handleClearButtonClick.bind(this);
     this._handleApply = this._handleApply.bind(this);
     this._handleDropdownLeave = this._handleDropdownLeave.bind(this);
 
@@ -19,9 +21,9 @@ class Dropdown {
     const sum = this.list.reduce((previousValue, item) => {
       const itemText = item.name.textContent;
       if (itemText.toLowerCase() !== 'младенцы') {
-        return previousValue + Number.parseInt(item.value.textContent, 10);
+        return previousValue + Number.parseInt(item.valueElement.textContent, 10);
       }
-      babiesCount = Number.parseInt(item.value.textContent, 10);
+      babiesCount = Number.parseInt(item.valueElement.textContent, 10);
       return previousValue;
     }, 0);
 
@@ -37,7 +39,7 @@ class Dropdown {
     } else {
       const result = this.list.reduce((fullString, item, index) => {
         const itemName = item.name.textContent;
-        const itemValue = Number.parseInt(item.value.textContent, 10);
+        const itemValue = Number.parseInt(item.valueElement.textContent, 10);
 
         if (index !== this.list.length - 1) {
           return `${fullString}${itemValue} ${this._doDeclensionOfWord(itemValue, itemName)}, `;
@@ -52,12 +54,9 @@ class Dropdown {
     this.containerElement = this.outerContainerElement.querySelector('.js-dropdown');
 
     this.withTotalValue = this.containerElement.matches('.js-dropdown_with-total-value');
-    this.totalValue = 0;
 
     this.inputContainer = this.containerElement.querySelector('.js-dropdown__input-container');
-    this.borderRadius = this.inputContainer.style.borderTopLeftRadius;
     this.input = this.containerElement.querySelector('.js-dropdown__input');
-    this.inputDefaultValue = this.inputContainer.dataset.defaultValue;
     this.dropdownArrow = this.containerElement.querySelector('.js-dropdown__dropdown-arrow');
 
     this.listElement = this.containerElement.querySelector('.js-dropdown__list');
@@ -71,15 +70,14 @@ class Dropdown {
     this.dropdownArrow.onclick = this._handleDropdownClick;
 
     if (this.clearButton) {
-      this.clearButton.style.display = 'none';
-      this.clearButton.onclick = this._handleClear;
+      this.hasClearButton = false;
+      this._changeState();
+      this.clearButton.onclick = this._handleClearButtonClick;
     }
 
     if (this.applyButton) this.applyButton.onclick = this._handleApply;
 
     document.addEventListener('click', this._handleDropdownLeave);
-
-    this._changeState();
   }
 
   _doDeclensionOfWord(number, word) {
@@ -103,24 +101,13 @@ class Dropdown {
     return words[2];
   }
 
-  _changeState() {
-    if (this.isOpened) {
-      this.inputContainer.classList.toggle('dropdown__input-container_opened', true);
-      this.listElement.classList.toggle('dropdown__list_opened', true);
-    } else {
-      this.inputContainer.classList.toggle('dropdown__input-container_opened', false);
-      this.listElement.classList.toggle('dropdown__list_opened', false);
-    }
-  }
-
   _handleDropdownClick() {
     if (this.isOpened) {
       this.isOpened = false;
-      this._changeState();
     } else {
       this.isOpened = true;
-      this._changeState();
     }
+    this._changeState();
   }
 
   _handleCloseDropdown() {
@@ -128,14 +115,13 @@ class Dropdown {
     this._changeState();
   }
 
-  _handleClear() {
-    this.clearButton.style.display = 'none';
-
+  _handleClearButtonClick() {
+    this.hasClearButton = false;
     this.list.forEach((item) => {
-      item.minus.style.opacity = 0.38;
-      item.value.textContent = 0;
+      item.value = 0;
     });
 
+    this._changeState();
     this.changeDropdownInputValue();
   }
 
@@ -153,6 +139,37 @@ class Dropdown {
         this._handleCloseDropdown();
       }
     } else this._handleCloseDropdown();
+  }
+
+  _changeState() {
+    this.totalValue = 0;
+    this.list.forEach((item) => {
+      if (item.value === 0) {
+        item.minus.classList.toggle('dropdown__item-minus_active', false);
+        item.valueElement.textContent = 0;
+      } else {
+        item.minus.classList.toggle('dropdown__item-minus_active', true);
+        item.valueElement.textContent = item.value;
+      }
+      this.totalValue += item.value;
+    });
+    this.hasClearButton = this.totalValue !== 0;
+
+    if (this.isOpened) {
+      this.inputContainer.classList.toggle('dropdown__input-container_opened', true);
+      this.listElement.classList.toggle('dropdown__list_opened', true);
+    } else {
+      this.inputContainer.classList.toggle('dropdown__input-container_opened', false);
+      this.listElement.classList.toggle('dropdown__list_opened', false);
+    }
+
+    if (this.clearButton) {
+      if (this.hasClearButton) {
+        this.clearButton.classList.toggle('dropdown__clear-button_visible', true);
+      } else {
+        this.clearButton.classList.toggle('dropdown__clear-button_visible', false);
+      }
+    }
   }
 }
 

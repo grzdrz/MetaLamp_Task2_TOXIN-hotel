@@ -23,7 +23,7 @@ const paginations = Array.from(document.querySelectorAll('.js-form-elements__pag
   .map((element) => new Pagination({
     title: 'pagination',
     pagesCount: 15,
-    curPageNumber: 1,
+    currentPageNumber: 1,
     itemsCount: 180,
   }, element));
 

@@ -120,7 +120,8 @@
         }
       }
 
-      &.-in-range-.-other-month- {
+      &.-in-range-.-other-month-,
+      &.-in-range-.-other-month-.-focus- {
         background: $gradient-purple-to-blue-25;
         color: $color-dark-shade-25;
       }
@@ -130,7 +131,9 @@
       &.-range-from-.-current-,
       &.-range-to-.-current-,
       &.-range-from-.-other-month-,
-      &.-range-to-.-other-month- {
+      &.-range-to-.-other-month-,
+      &.-range-from-.-other-month-.-selected-.-focus-,
+      &.-range-to-.-other-month-.-selected-.-focus- {
         display: flex;
         align-items: center;
         text-align: center;

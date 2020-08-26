@@ -149,6 +149,10 @@
     &:focus {
       color: $color-dark-shade-50;
     }
+
+    &_visible {
+      display: block;
+    }
   }
 }
 
