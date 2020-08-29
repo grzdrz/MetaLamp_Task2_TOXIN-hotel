@@ -1,11 +1,12 @@
 class ListItem {
-  constructor(dropdown, containerElement) {
-    this.dropdown = dropdown;
+  constructor(containerElement, dropdown) {
     this.containerElement = containerElement;
+    this.dropdown = dropdown;
+
     this.value = 0;
 
-    this._handleDropdownItemPlus = this._handleDropdownItemPlus.bind(this);
-    this._handleDropdownItemMinus = this._handleDropdownItemMinus.bind(this);
+    this._handlePlusButtonClick = this._handlePlusButtonClick.bind(this);
+    this._handleMinusButtonClick = this._handleMinusButtonClick.bind(this);
 
     this._initialize();
   }
@@ -16,29 +17,27 @@ class ListItem {
     this.plus = this.containerElement.querySelector('.js-dropdown__item-plus');
     this.minus = this.containerElement.querySelector('.js-dropdown__item-minus');
 
-    this.plus.addEventListener('click', this._handleDropdownItemPlus);
-    this.minus.addEventListener('click', this._handleDropdownItemMinus);
+    this.plus.addEventListener('click', this._handlePlusButtonClick);
+    this.minus.addEventListener('click', this._handleMinusButtonClick);
   }
 
-  _handleDropdownItemPlus(event) {
+  _handlePlusButtonClick(event) {
     event.preventDefault();
 
     this.value = Number.parseInt(this.valueElement.textContent, 10);
     this.value += 1;
 
-    this.dropdown._changeState();
-    this.dropdown.changeDropdownInputValue();
+    this.dropdown.updateState();
   }
 
-  _handleDropdownItemMinus(event) {
+  _handleMinusButtonClick(event) {
     event.preventDefault();
 
     this.value = Number.parseInt(this.valueElement.textContent, 10);
     this.value -= 1;
     if (this.value < 0) this.value = 0;
 
-    this.dropdown._changeState();
-    this.dropdown.changeDropdownInputValue();
+    this.dropdown.updateState();
   }
 }
 
