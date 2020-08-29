@@ -21,7 +21,7 @@
             }
         }
 
-        & + .star-rating__image::before {
+        & + .star-rating__image-of-star::before {
             content: 'star_border';
             width: 1.5rem;
             height: 1.5rem;
@@ -39,7 +39,7 @@
             line-height: 1.25rem;
             color: $gradient-purple-to-blue;
         }
-        &:checked ~ .star-rating__image::after {
+        &:checked ~ .star-rating__image-of-star::after {
             content: 'star';
             width: 1.5rem;
             height: 1.5rem;
@@ -59,7 +59,7 @@
         }
     }
 
-    &__image {
+    &__image-of-star {
         z-index: 1;
         width: 1.5rem;
         height: 1.5rem;

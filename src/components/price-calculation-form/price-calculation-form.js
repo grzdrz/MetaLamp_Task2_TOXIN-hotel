@@ -9,8 +9,8 @@ class PriceCalculationForm {
     this.servicesSum = 0;
     this.roomRentalSum = 0;
 
-    this._handleDropdownInputChange = this._handleDropdownInputChange.bind(this);
-    this._getCalendarSelectWrapper = this._getCalendarSelectWrapper.bind(this);
+    this._handleDropdownMinusPlusButtonsClick = this._handleDropdownMinusPlusButtonsClick.bind(this);
+    this._makeCalendarSelectRangeHandler = this._makeCalendarSelectRangeHandler.bind(this);
     this._handleCalendarClearButtonClick = this._handleCalendarClearButtonClick.bind(this);
 
     this._initialize();
@@ -37,25 +37,20 @@ class PriceCalculationForm {
     this.discountValue = Number.parseInt(this.services.dataset.value, 10);
 
     this.dropdown.droppingList.forEach((item) => {
-      item.minus.addEventListener('click', this._handleDropdownInputChange);
-      item.plus.addEventListener('click', this._handleDropdownInputChange);
+      item.minus.addEventListener('click', this._handleDropdownMinusPlusButtonsClick);
+      item.plus.addEventListener('click', this._handleDropdownMinusPlusButtonsClick);
     });
-    this.dropdown.clearButton.addEventListener('click', this._handleDropdownInputChange);
+    this.dropdown.clearButton.addEventListener('click', this._handleDropdownMinusPlusButtonsClick);
 
     const datepicker = this.calendar.datepickerInstance;
     const oldHandlerSelect = datepicker.selectDate;
-    datepicker.selectDate = this._getCalendarSelectWrapper(oldHandlerSelect.bind(datepicker));
+    datepicker.selectDate = this._makeCalendarSelectRangeHandler(oldHandlerSelect.bind(datepicker));
 
     const { clearButton } = this.calendar;
     clearButton.addEventListener('click', this._handleCalendarClearButtonClick);
   }
 
-  _handleDropdownInputChange() {
-    this.servicesSum = this.dropdown.totalValue * 100;
-    this._calculateTotalPrice();
-  }
-
-  _getCalendarSelectWrapper(oldHandler) {
+  _makeCalendarSelectRangeHandler(oldHandler) {
     return function newHandler(date) {
       oldHandler(date);
 
@@ -76,12 +71,6 @@ class PriceCalculationForm {
         this._calculateTotalPrice();
       }
     }.bind(this);
-  }
-
-  _handleCalendarClearButtonClick() {
-    this.daysCount = 0;
-    this.roomRentalSum = 0;
-    this._calculateTotalPrice();
   }
 
   _calculateTotalPrice() {
@@ -117,6 +106,17 @@ class PriceCalculationForm {
     if (isSecondWord) return words[1];
 
     return words[2];
+  }
+
+  _handleDropdownMinusPlusButtonsClick() {
+    this.servicesSum = this.dropdown.totalValue * 100;
+    this._calculateTotalPrice();
+  }
+
+  _handleCalendarClearButtonClick() {
+    this.daysCount = 0;
+    this.roomRentalSum = 0;
+    this._calculateTotalPrice();
   }
 }
 

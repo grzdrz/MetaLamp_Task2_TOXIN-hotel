@@ -1,3 +1,4 @@
+/* eslint-disable no-lonely-if */
 import 'air-datepicker';
 import 'air-datepicker/dist/css/datepicker.css';
 import jQuery from 'jquery';
@@ -14,10 +15,9 @@ class Calendar {
     this.outerContainerElement = outerContainerElement;
     this.hasClearButton = false;
 
-    this._handleShow = this._handleShow.bind(this);
+    this._handleDatepickerShow = this._handleDatepickerShow.bind(this);
     this._handleDoubleInputSelectRange = this._handleDoubleInputSelectRange.bind(this);
     this._handleSingleInputSelectRange = this._handleSingleInputSelectRange.bind(this);
-    this._handleSelectSingleDate = this._handleSelectSingleDate.bind(this);
 
     this._initialize();
   }
@@ -46,7 +46,7 @@ class Calendar {
         days: 'MM yyyy',
       },
       minDate: new Date(),
-      onShow: this._handleShow,
+      onShow: this._handleDatepickerShow,
       onSelect: this._handleDoubleInputSelectRange,
     }).data('datepicker');
     this.datepickerInstance.show();
@@ -63,7 +63,7 @@ class Calendar {
         days: 'MM yyyy',
       },
       minDate: new Date(),
-      onShow: this._handleShow,
+      onShow: this._handleDatepickerShow,
       onSelect: this._handleSingleInputSelectRange,
     }).data('datepicker');
   }
@@ -76,12 +76,12 @@ class Calendar {
       navTitles: {
         days: 'MM yyyy',
       },
-      onShow: this._handleShow,
-      onSelect: this._handleSelectSingleDate,
+      onShow: this._handleDatepickerShow,
+      onSelect: this._handleSingleInputSelectRange,
     }).data('datepicker');
   }
 
-  _handleShow(datepickerInstance, animationCompleted) {
+  _handleDatepickerShow(datepickerInstance, animationCompleted) {
     if (!animationCompleted) {
       if (!datepickerInstance.$datepicker.find('.calendar__buttons').html()) {
         datepickerInstance.$datepicker.append(
@@ -120,48 +120,48 @@ class Calendar {
       this.dateInputTo.prop('value', '');
       this.hasClearButton = false;
     }
-    this._changeState();
+    this._updateState();
   }
 
   _handleSingleInputSelectRange(formattedDate, date, inst) {
-    if (inst.selectedDates[0] && inst.selectedDates[1]) {
-      let formattedDateFrom = (new Intl.DateTimeFormat('ru-RU', dateFormatOptionsForSingleInput)
-        .format(inst.selectedDates[0]))
-        .toString();
-      formattedDateFrom = formattedDateFrom.slice(0, formattedDateFrom.length - 1);
-      let formattedDateTo = (new Intl.DateTimeFormat('ru-RU', dateFormatOptionsForSingleInput)
-        .format(inst.selectedDates[1]))
-        .toString();
-      formattedDateTo = formattedDateTo.slice(0, formattedDateTo.length - 1);
-      this.dateInput.prop('value', `${formattedDateFrom} - ${formattedDateTo}`);
-      this.hasClearButton = true;
+    if (this.withRangePicking) {
+      if (inst.selectedDates[0] && inst.selectedDates[1]) {
+        let formattedDateFrom = (new Intl.DateTimeFormat('ru-RU', dateFormatOptionsForSingleInput)
+          .format(inst.selectedDates[0]))
+          .toString();
+        formattedDateFrom = formattedDateFrom.slice(0, formattedDateFrom.length - 1);
+        let formattedDateTo = (new Intl.DateTimeFormat('ru-RU', dateFormatOptionsForSingleInput)
+          .format(inst.selectedDates[1]))
+          .toString();
+        formattedDateTo = formattedDateTo.slice(0, formattedDateTo.length - 1);
+        this.dateInput.prop('value', `${formattedDateFrom} - ${formattedDateTo}`);
+        this.hasClearButton = true;
+      } else {
+        this.dateInput.prop('value', '');
+        this.hasClearButton = false;
+      }
     } else {
-      this.dateInput.prop('value', '');
-      this.hasClearButton = false;
+      if (inst.selectedDates[0]) {
+        this.hasClearButton = true;
+      } else {
+        this.hasClearButton = false;
+      }
     }
-    this._changeState();
-  }
 
-  _handleSelectSingleDate(formattedDate, date, inst) {
-    if (inst.selectedDates[0]) {
-      this.hasClearButton = true;
-    } else {
-      this.hasClearButton = false;
-    }
-    this._changeState();
+    this._updateState();
   }
 
   _handleClearButtonClick(datepickerInstance) {
     datepickerInstance.clear();
     this.hasClearButton = false;
-    this._changeState();
+    this._updateState();
   }
 
   _handleApplyButtonClick(datepickerInstance) {
     datepickerInstance.hide();
   }
 
-  _changeState() {
+  _updateState() {
     if (this.hasClearButton) {
       this.clearButton.classList.toggle('calendar__clear-button_visible', true);
     } else {

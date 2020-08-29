@@ -8,8 +8,8 @@ class Pagination {
 
     this.pugCode = require('./pagination-for-render.pug');
 
-    this._handleSelectPage = this._handleSelectPage.bind(this);
-    this._setClickEventsToPagesLinks = this._setClickEventsToPagesLinks.bind(this);
+    this._handleLinkClick = this._handleLinkClick.bind(this);
+    this._setEventHandlers = this._setEventHandlers.bind(this);
     this._writeBottomText = this._writeBottomText.bind(this);
 
     this._initialize();
@@ -18,13 +18,13 @@ class Pagination {
   _initialize() {
     this.outerContainerElement.innerHTML = this.pugCode(this.options);
     this._writeBottomText();
-    this._setClickEventsToPagesLinks();
+    this._setEventHandlers();
   }
 
-  _setClickEventsToPagesLinks() {
+  _setEventHandlers() {
     const links = this.outerContainerElement.querySelectorAll('.js-pagination__link');
     links.forEach((a) => {
-      a.onclick = this._handleSelectPage;
+      a.onclick = this._handleLinkClick;
     });
   }
 
@@ -37,7 +37,7 @@ class Pagination {
     bottomTextElement.textContent = `${firstItemCountNumber} - ${lastItemCountNumber} из ${itemsCountText} вариантов аренды`;
   }
 
-  _handleSelectPage(event) {
+  _handleLinkClick(event) {
     event.preventDefault();
 
     const selectedPageNumber = event.currentTarget.dataset.pageNumber;
@@ -53,7 +53,7 @@ class Pagination {
     }
 
     this._writeBottomText();
-    this._setClickEventsToPagesLinks();
+    this._setEventHandlers();
   }
 }
 

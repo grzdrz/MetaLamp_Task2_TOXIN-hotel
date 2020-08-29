@@ -25,10 +25,10 @@ class RoomInfo {
       this.rightArrow.addEventListener('click', this._handleRightArrowClick);
     }
 
-    this._update();
+    this._updateState();
   }
 
-  _move(isDirectionForward) {
+  _skipPhoto(isDirectionForward) {
     if (isDirectionForward) {
       if (this.currentPhotoIndex === this.radioButtons.length - 1) return;
       this.currentPhotoIndex += 1;
@@ -38,7 +38,7 @@ class RoomInfo {
     }
   }
 
-  _update() {
+  _updateState() {
     this.radioButtons.forEach((button, index) => {
       if (index === this.currentPhotoIndex) button.classList.toggle('room-info__radio-button_checked', true);
       else button.classList.toggle('room-info__radio-button_checked', false);
@@ -50,13 +50,13 @@ class RoomInfo {
   }
 
   _handleLeftArrowClick() {
-    this._move(false);
-    this._update();
+    this._skipPhoto(false);
+    this._updateState();
   }
 
   _handleRightArrowClick() {
-    this._move(true);
-    this._update();
+    this._skipPhoto(true);
+    this._updateState();
   }
 }
 

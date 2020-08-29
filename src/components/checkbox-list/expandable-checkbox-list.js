@@ -3,7 +3,7 @@ class ExpandableCheckbox {
     this.outerContainerElement = outerContainerElement;
     this.isClosed = isClosed;
 
-    this._handleExpand = this._handleExpand.bind(this);
+    this._handleCheckboxExpand = this._handleCheckboxExpand.bind(this);
 
     this._initialize();
   }
@@ -14,12 +14,12 @@ class ExpandableCheckbox {
     this.list = this.containerElement.querySelector('.js-checkbox-list__list');
     this.dropdownArrow = this.containerElement.querySelector('.js-checkbox-list__dropdown-arrow');
 
-    this.dropdownButton.addEventListener('click', this._handleExpand);
+    this.dropdownButton.addEventListener('click', this._handleCheckboxExpand);
 
-    this._changeState();
+    this._updateState();
   }
 
-  _changeState() {
+  _updateState() {
     if (this.isClosed) {
       this.list.classList.toggle('checkbox-list__list_closed', true);
       this.dropdownArrow.classList.toggle('checkbox-list__dropdown-arrow_closed', true);
@@ -29,10 +29,10 @@ class ExpandableCheckbox {
     }
   }
 
-  _handleExpand() {
+  _handleCheckboxExpand() {
     if (this.isClosed) this.isClosed = false;
     else this.isClosed = true;
-    this._changeState();
+    this._updateState();
   }
 }
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-lonely-if */
 import ListItem from './list-item';
 
 class Dropdown {
@@ -46,8 +47,7 @@ class Dropdown {
       }
     }
 
-    if (this.withTotalValue) this._calculateTotalValue();
-    else this._setInputValue();
+    this._calculateTotalValue();
   }
 
   _initialize() {
@@ -99,20 +99,26 @@ class Dropdown {
         const mainText = `${this.totalValue} ${this._doDeclensionOfWord(this.totalValue, 'гость')}`;
         const fullText = `${mainText}, ${babiesCount} ${this._doDeclensionOfWord(babiesCount, 'младенец')}`;
         this.input.value = fullText;
-      } else {
+      } else if (this.totalValue !== 0) {
         this.input.value = `${this.totalValue} ${this._doDeclensionOfWord(this.totalValue, 'гость')}`;
+      } else {
+        this.input.value = 'Сколько гостей';
       }
     } else {
-      const result = this.droppingList.reduce((fullString, item, index) => {
-        const itemName = item.name.textContent;
-        const itemValue = Number.parseInt(item.valueElement.textContent, 10);
+      if (this.totalValue !== 0) {
+        const result = this.droppingList.reduce((fullString, item, index) => {
+          const itemName = item.name.textContent;
+          const itemValue = Number.parseInt(item.valueElement.textContent, 10);
 
-        if (index !== this.droppingList.length - 1) {
-          return `${fullString}${itemValue} ${this._doDeclensionOfWord(itemValue, itemName)}, `;
-        }
-        return `${fullString}${itemValue} ${this._doDeclensionOfWord(itemValue, itemName)}`;
-      }, '');
-      this.input.value = result;
+          if (index !== this.droppingList.length - 1) {
+            return `${fullString}${itemValue} ${this._doDeclensionOfWord(itemValue, itemName)}, `;
+          }
+          return `${fullString}${itemValue} ${this._doDeclensionOfWord(itemValue, itemName)}`;
+        }, '');
+        this.input.value = result;
+      } else {
+        this.input.value = 'Сколько комнат';
+      }
     }
   }
 
