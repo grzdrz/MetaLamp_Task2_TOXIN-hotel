@@ -1,68 +1,9 @@
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/MaterialIcons/MaterialIcons-Regular.eot'); /* For IE6-8 */
-    src: local('Material Icons'), local('MaterialIcons-Regular'),
-        url('../assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2') format('woff2'),
-        url('../assets/fonts/MaterialIcons/MaterialIcons-Regular.woff') format('woff'),
-        url('../assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf') format('truetype');
-}
+@import './mixins.scss';
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../assets/fonts/Montserrat/montserrat-regular.woff'),
-        url('../assets/fonts/Montserrat/montserrat-regular.woff2'),
-        url('../assets/fonts/Montserrat/montserrat-regular.eot'),
-        url('../assets/fonts/Montserrat/montserrat-regular.ttf'),
-        url('../assets/fonts/Montserrat/montserrat-regular.svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../assets/fonts/Montserrat/montserrat-bold.woff'), url('../assets/fonts/Montserrat/montserrat-bold.woff2'),
-        url('../assets/fonts/Montserrat/montserrat-bold.eot'), url('../assets/fonts/Montserrat/montserrat-bold.ttf'),
-        url('../assets/fonts/Montserrat/montserrat-bold.svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../assets/fonts/Quicksand/quicksand-regular.woff'),
-        url('../assets/fonts/Quicksand/quicksand-regular.woff2'), url('../assets/fonts/Quicksand/quicksand-regular.eot'),
-        url('../assets/fonts/Quicksand/quicksand-regular.ttf'), url('../assets/fonts/Quicksand/quicksand-regular.svg');
-
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../assets/fonts/Quicksand/quicksand-bold.woff'), url('../assets/fonts/Quicksand/quicksand-bold.woff2'),
-        url('../assets/fonts/Quicksand/quicksand-bold.eot'), url('../assets/fonts/Quicksand/quicksand-bold.ttf'),
-        url('../assets/fonts/Quicksand/quicksand-bold.svg');
-
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSans';
-    src: url('../assets/fonts/OpenSans/open-sans-regular.woff'), url('../assets/fonts/OpenSans/open-sans-regular.woff2'),
-        url('../assets/fonts/OpenSans/open-sans-regular.eot'), url('../assets/fonts/OpenSans/open-sans-regular.ttf'),
-        url('../assets/fonts/OpenSans/open-sans-regular.svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSans';
-    src: url('../assets/fonts/OpenSans/open-sans-bold.woff'), url('../assets/fonts/OpenSans/open-sans-bold.woff2'),
-        url('../assets/fonts/OpenSans/open-sans-bold.eot'), url('../assets/fonts/OpenSans/open-sans-bold.ttf'),
-        url('../assets/fonts/OpenSans/open-sans-bold.svg');
-    font-weight: bold;
-    font-style: normal;
-}
+@include setFont('Material Icons', normal, 400, '../assets/fonts/MaterialIcons/MaterialIcons-Regular');
+@include setFont('Montserrat', normal, normal, '../assets/fonts/Montserrat/montserrat-regular');
+@include setFont('Montserrat', normal, bold, '../assets/fonts/Montserrat/montserrat-bold');
+@include setFont('Quicksand', normal, normal, '../assets/fonts/Quicksand/quicksand-regular');
+@include setFont('Quicksand', normal, bold, '../assets/fonts/Quicksand/quicksand-bold');
+@include setFont('OpenSans', normal, normal, '../assets/fonts/OpenSans/open-sans-regular');
+@include setFont('OpenSans', normal, bold, '../assets/fonts/OpenSans/open-sans-bold');

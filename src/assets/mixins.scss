@@ -1,3 +1,14 @@
 @function scalePixelsAsPercentage($valueInPx, $viewportSizeInPx) {
-    @return (($valueInPx * 100) / $viewportSizeInPx) * 1%;
+  @return (($valueInPx * 100) / $viewportSizeInPx) * 1%;
+}
+
+@mixin setFont($family, $style, $weight, $path) {
+  @font-face {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    src: url('#{$path}.eot');
+    src: url('#{$path}.woff2') format('woff2'), url('#{$path}.woff') format('woff'),
+      url('#{$path}.ttf') format('truetype');
+  }
 }
