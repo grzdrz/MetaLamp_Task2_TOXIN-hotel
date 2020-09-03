@@ -20,13 +20,7 @@ class Dropdown {
   updateState() {
     this.totalValue = 0;
     this.droppingList.forEach((item) => {
-      if (item.value === 0) {
-        item.minus.classList.toggle('dropdown__item-minus_active', false);
-        item.valueElement.textContent = 0;
-      } else {
-        item.minus.classList.toggle('dropdown__item-minus_active', true);
-        item.valueElement.textContent = item.value;
-      }
+      item._updateState();
       this.totalValue += item.value;
     });
     this.hasClearButton = this.totalValue !== 0;
@@ -82,11 +76,10 @@ class Dropdown {
   _calculateTotalValue() {
     let babiesCount = 0;
     this.totalValue = this.droppingList.reduce((previousValue, item) => {
-      const itemText = item.name.textContent;
-      if (itemText.toLowerCase() !== 'младенцы') {
-        return previousValue + Number.parseInt(item.valueElement.textContent, 10);
+      if (item.nameText.toLowerCase() !== 'младенцы') {
+        return previousValue + item.value;
       }
-      babiesCount = Number.parseInt(item.valueElement.textContent, 10);
+      babiesCount = item.value;
       return previousValue;
     }, 0);
 
@@ -107,8 +100,8 @@ class Dropdown {
     } else {
       if (this.totalValue !== 0) {
         const result = this.droppingList.reduce((fullString, item, index) => {
-          const itemName = item.name.textContent;
-          const itemValue = Number.parseInt(item.valueElement.textContent, 10);
+          const itemName = item.nameText;
+          const itemValue = item.value;
 
           if (index !== this.droppingList.length - 1) {
             return `${fullString}${itemValue} ${this._doDeclensionOfWord(itemValue, itemName)}, `;

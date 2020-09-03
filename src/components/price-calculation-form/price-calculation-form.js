@@ -37,8 +37,8 @@ class PriceCalculationForm {
     this.discountValue = Number.parseInt(this.services.dataset.value, 10);
 
     this.dropdown.droppingList.forEach((item) => {
-      item.minus.addEventListener('click', this._handleDropdownMinusPlusButtonsClick);
-      item.plus.addEventListener('click', this._handleDropdownMinusPlusButtonsClick);
+      item.minusButton.addEventListener('click', this._handleDropdownMinusPlusButtonsClick);
+      item.plusButton.addEventListener('click', this._handleDropdownMinusPlusButtonsClick);
     });
     this.dropdown.clearButton.addEventListener('click', this._handleDropdownMinusPlusButtonsClick);
 
