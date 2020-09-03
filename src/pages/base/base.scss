@@ -1,3 +1,5 @@
+@import '../../assets/constants.scss';
+
 *,
 *:after,
 *:before {
@@ -5,11 +7,13 @@
   padding: 0px;
   border: 0px;
   box-sizing: border-box;
-  font-family: Montserrat, Arial, sans-serif;
 }
 
 html {
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 16px;
+  color: $color-dark-shade-50;
+  background: white;
 }
 
 html,

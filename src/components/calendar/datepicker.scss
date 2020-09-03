@@ -9,6 +9,10 @@
   box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
   border-radius: 0.25rem;
 
+  & * {
+    font-family: Montserrat, Arial, sans-serif;
+  }
+
   &.active {
     @media screen and (max-width: 20rem) {
       border: 0rem;

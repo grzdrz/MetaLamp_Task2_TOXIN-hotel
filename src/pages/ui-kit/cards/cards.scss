@@ -5,8 +5,8 @@
 @import '../../../components/sign-up-form/sign-up-form.scss';
 @import '../../../components/room-info/room-info.scss';
 
-body {
-  background: rgb(229, 229, 229);
+html {
+  background: rgb(244, 244, 246);
 }
 
 .cards {
@@ -17,7 +17,6 @@ body {
   flex-wrap: wrap;
   padding-bottom: 8.75rem;
   padding: 4.5rem 9.6222% 8.75rem;
-  background: rgb(229, 229, 229);
 
   @media screen and (max-width: 950px) {
     width: 100%;

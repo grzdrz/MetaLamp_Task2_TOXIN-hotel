@@ -1,3 +1,5 @@
+@import '../../assets/constants.scss';
+
 .font-demo {
   display: flex;
   flex-direction: row;
@@ -54,6 +56,20 @@
 
       &_15px {
         line-height: 0.9375rem;
+      }
+    }
+
+    &-color {
+      &_dark-shade-25 {
+        color: $color-dark-shade-25;
+      }
+
+      &_dark-shade-75 {
+        color: $color-dark-shade-75;
+      }
+
+      &_dark-shade-100 {
+        color: $color-dark-shade-100;
       }
     }
 
