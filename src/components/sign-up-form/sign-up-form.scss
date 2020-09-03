@@ -1,5 +1,4 @@
 @import '../../assets/constants.scss';
-@import '../../assets/mixins.scss';
 @import '../form-input/form-input.scss';
 @import '../radio/radio.scss';
 @import '../toggle/toggle.scss';
@@ -76,6 +75,6 @@
   }
 
   &__sign-in-button {
-    width: scalePixelsAsPercentage(99, 320);
+    min-width: 6.1875rem;
   }
 }

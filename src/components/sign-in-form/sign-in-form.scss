@@ -1,5 +1,4 @@
 @import '../../assets/constants.scss';
-@import '../../assets/mixins.scss';
 @import '../button/button.scss';
 @import '../form-input/form-input.scss';
 
@@ -56,6 +55,6 @@
   }
 
   &__create-button {
-    width: scalePixelsAsPercentage(99, 320);
+    min-width: 6.1875rem;
   }
 }
