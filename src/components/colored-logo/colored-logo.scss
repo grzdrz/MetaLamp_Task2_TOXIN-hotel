@@ -1,7 +1,9 @@
 .colored-logo {
-  display: flex;
-  align-items: center;
-  justify-self: end;
+  &__ref {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+  }
 
   &__logo-symbol {
     margin-right: 0.7813rem;

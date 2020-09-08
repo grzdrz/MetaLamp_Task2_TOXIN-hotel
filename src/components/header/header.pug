@@ -15,11 +15,11 @@ mixin header(options = {})
       ],
     } = options;
 
-  header(class=["header"])
-    div(class=["header__colored-logo"])
+  header(class=["header", "js-header"])
+    div(class=["header__colored-logo", "js-header__colored-logo"])
       +colored-logo()
-
-    nav(class=["header__navigation-menu"])
+      div(class=["header__burger", "js-header__burger"])
+    nav(class=["header__navigation-menu", "js-header__navigation-menu"])
       ul(class=["header__list"])
         - for(let item of navigationList)
           li(class=["header__item"])
@@ -28,9 +28,9 @@ mixin header(options = {})
             - if(item.hasDropdown)
               span(class=["header__dropdown-arrow"]) expand_more
     - if(isAuthorized)
-      p(class=["header__user-full-name"])= userFullName
+      p(class=["header__user-full-name", "js-header__user-full-name"])= userFullName
     - else
-      div(class=["header__buttons"])
+      div(class=["header__buttons", "js-header__buttons"])
         div(class=["header__sign-in-button"])
           +button({
             text: "войти",
