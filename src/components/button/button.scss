@@ -13,16 +13,13 @@ $borderRadius: 1.375rem;
 
   &__basis {
     cursor: pointer;
+    max-width: -webkit-fill-available;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
-    left: 0rem;
-    right: 0rem;
-    top: 0rem;
-    bottom: 0rem;
     margin: 0.125rem;
-    padding: 0rem 0.5625rem 0rem 1.1875rem;
+    padding: 0rem 0.625rem;
     color: white;
     background: transparent;
     text-decoration: none;
@@ -37,13 +34,12 @@ $borderRadius: 1.375rem;
   &__text {
     cursor: pointer;
     width: 100%;
-    margin: 0rem 1.1875rem 0rem 1.1875rem;
     background: transparent;
     text-align: center;
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 2.75rem;
+    line-height: 2.5rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
@@ -53,13 +49,14 @@ $borderRadius: 1.375rem;
     }
 
     &_in-header {
-      line-height: 2.125rem;
+      line-height: 1.875rem;
     }
   }
 
   &__arrow {
     cursor: pointer;
-    right: 0rem;
+    position: absolute;
+    right: 0.7rem;
     font-family: Material Icons;
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -83,11 +80,11 @@ $borderRadius: 1.375rem;
       & > .button__arrow {
         color: $color-purple;
       }
-    }
 
-    & > .button__text {
-      color: $color-purple;
-      z-index: 1;
+      & > .button__text {
+        color: $color-purple;
+        z-index: 1;
+      }
     }
   }
 }

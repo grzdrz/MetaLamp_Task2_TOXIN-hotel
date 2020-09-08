@@ -15,16 +15,18 @@ mixin button(options = {})
   div(class=["button"].concat(containerClasses))
     - if(buttonType === "a")
       a(class=["button__basis"] 
-        href=(url ? url : "https://errorpage.com") target=(url ? "_blank" : "") rel=(url ? "noopener noreferrer" : ""))
+        href=(url || "https://errorpage.com") target=(url ? "_blank" : "") rel=(url ? "noopener noreferrer" : ""))
         - if(hasArrow)
-          span(class=["button__arrow"]) arrow_forward 
+          span(class=["button__arrow"]) arrow_forward
+        span(class=["button__text"].concat(textClasses))= text
     - else if(buttonType === "button")
       button(class=["button__basis"])
         - if(hasArrow)
           span(class=["button__arrow"]) arrow_forward
+        span(class=["button__text"].concat(textClasses))= text
     - else if(buttonType === "submit")
       label(class=["button__basis"])
         input(class=["button__submit"] type="submit")
         - if(hasArrow)
           span(class=["button__arrow"]) arrow_forward
-    p(class=["button__text"].concat(textClasses))= text
+        span(class=["button__text"].concat(textClasses))= text

@@ -27,11 +27,11 @@
   &__link,
   &__dots {
     min-width: 2.5rem;
+    min-height: 2.5rem;
     width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 2.5rem;
     text-decoration: none;
   }
 

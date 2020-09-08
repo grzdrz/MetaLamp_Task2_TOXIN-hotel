@@ -19,6 +19,9 @@ mixin header(options = {})
     div(class=["header__colored-logo", "js-header__colored-logo"])
       +colored-logo()
       div(class=["header__burger", "js-header__burger"])
+        span(class=["header__burger-element", "js-header__burger-element", "header__burger-element_opened"])
+        span(class=["header__burger-element", "js-header__burger-element", "header__burger-element_opened"])
+        span(class=["header__burger-element", "js-header__burger-element", "header__burger-element_opened"])
     nav(class=["header__navigation-menu", "js-header__navigation-menu"])
       ul(class=["header__list"])
         - for(let item of navigationList)
@@ -38,6 +41,7 @@ mixin header(options = {})
             buttonType: "a",
             hasArrow: false,
             isForHeader: true,
+            url: "sign-in.html"
           })
         div(class=["header__sign-up-button"])
           +button({
@@ -46,4 +50,5 @@ mixin header(options = {})
             buttonType: "a",
             hasArrow: false,
             isForHeader: true,
+            url: "registration.html"
           })
