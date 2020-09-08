@@ -708,16 +708,13 @@ body {
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
+    max-width: -webkit-fill-available;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
-    left: 0rem;
-    right: 0rem;
-    top: 0rem;
-    bottom: 0rem;
     margin: 0.125rem;
-    padding: 0rem 0.5625rem 0rem 1.1875rem;
+    padding: 0rem 0.625rem;
     color: white;
     background: transparent;
     text-decoration: none;
@@ -728,23 +725,23 @@ body {
   .button__text {
     cursor: pointer;
     width: 100%;
-    margin: 0rem 1.1875rem 0rem 1.1875rem;
     background: transparent;
     text-align: center;
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 2.75rem;
+    line-height: 2.5rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
     .button__text_in-header {
-      line-height: 2.125rem; }
+      line-height: 1.875rem; }
   .button__arrow {
     cursor: pointer;
-    right: 0rem;
+    position: absolute;
+    right: 0.7rem;
     font-family: Material Icons;
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -759,9 +756,9 @@ body {
     background: white; }
     .button_hollow > .button__basis > .button__arrow {
       color: #bc9cff; }
-  .button_hollow > .button__text {
-    color: #bc9cff;
-    z-index: 1; }
+    .button_hollow > .button__basis > .button__text {
+      color: #bc9cff;
+      z-index: 1; }
 
 .header {
   width: 100%;
@@ -785,15 +782,15 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between; }
-    .header__colored-logo_opened {
-      border-bottom: 0px solid blue; }
     @media screen and (max-width: 1150px) {
       .header__colored-logo {
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-        border-bottom: 2px solid blue; }
-        .header__colored-logo_opened {
-          border-bottom: 0px solid blue; } }
+        padding-bottom: 0.625rem;
+        margin-bottom: 0.625rem;
+        border-bottom: 0.125rem solid #bc9cff; }
+        .header__colored-logo_closed {
+          border-bottom: 0rem solid #bc9cff;
+          padding-bottom: 0rem;
+          margin-bottom: 0rem; } }
     @media screen and (max-width: 1150px) and (min-width: 1000px) {
       .header__colored-logo {
         grid-column-start: 1;
@@ -801,7 +798,7 @@ body {
   .header__navigation-menu {
     margin-right: 1.25rem; }
     @media screen and (max-width: 1150px) {
-      .header__navigation-menu_opened {
+      .header__navigation-menu_closed {
         display: none; } }
   .header__list {
     list-style: none;
@@ -850,7 +847,7 @@ body {
     padding-left: 1.25rem;
     border-left: 0.0625rem solid rgba(31, 32, 65, 0.1); }
     @media screen and (max-width: 1150px) {
-      .header__user-full-name_opened {
+      .header__user-full-name_closed {
         display: none; } }
     @media screen and (max-width: 550px) {
       .header__user-full-name {
@@ -858,12 +855,11 @@ body {
   .header__buttons {
     display: flex; }
     @media screen and (max-width: 1150px) {
-      .header__buttons_opened {
+      .header__buttons_closed {
         display: none; } }
     @media screen and (max-width: 550px) {
       .header__buttons {
-        grid-template-rows: auto auto;
-        grid-template-columns: min-content;
+        flex-direction: column;
         margin-top: 1.25rem; } }
   .header__sign-in-button {
     width: 5.4375rem;
@@ -876,16 +872,36 @@ body {
     width: 12.25rem; }
   .header__burger {
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     display: none;
-    background: red; }
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0.75rem;
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+    border-radius: 0.25rem; }
     @media screen and (max-width: 1150px) {
       .header__burger {
-        display: block;
+        display: flex;
         justify-self: flex-end; }
-        .header__burger_opened {
-          background: green; } }
+        .header__burger_closed {
+          background: linear-gradient(to bottom, #bc9cff, #8ba4f9); } }
+  .header__burger-element {
+    width: 1.875rem;
+    height: 0.25rem;
+    background: white; }
+    .header__burger-element_opened:nth-of-type(3) {
+      display: none; }
+    .header__burger-element_opened:nth-of-type(1) {
+      position: absolute;
+      top: 1.375rem;
+      transform: rotate(45deg); }
+    .header__burger-element_opened:nth-of-type(2) {
+      position: absolute;
+      top: 1.375rem;
+      transform: rotate(-45deg); }
 
 .room-advantages {
   width: max-content;
@@ -1114,16 +1130,13 @@ body {
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
+    max-width: -webkit-fill-available;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
-    left: 0rem;
-    right: 0rem;
-    top: 0rem;
-    bottom: 0rem;
     margin: 0.125rem;
-    padding: 0rem 0.5625rem 0rem 1.1875rem;
+    padding: 0rem 0.625rem;
     color: white;
     background: transparent;
     text-decoration: none;
@@ -1134,23 +1147,23 @@ body {
   .button__text {
     cursor: pointer;
     width: 100%;
-    margin: 0rem 1.1875rem 0rem 1.1875rem;
     background: transparent;
     text-align: center;
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 2.75rem;
+    line-height: 2.5rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
     .button__text_in-header {
-      line-height: 2.125rem; }
+      line-height: 1.875rem; }
   .button__arrow {
     cursor: pointer;
-    right: 0rem;
+    position: absolute;
+    right: 0.7rem;
     font-family: Material Icons;
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -1165,9 +1178,9 @@ body {
     background: white; }
     .button_hollow > .button__basis > .button__arrow {
       color: #bc9cff; }
-  .button_hollow > .button__text {
-    color: #bc9cff;
-    z-index: 1; }
+    .button_hollow > .button__basis > .button__text {
+      color: #bc9cff;
+      z-index: 1; }
 
 .calendar {
   width: 100%;

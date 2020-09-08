@@ -1919,16 +1919,13 @@ Build date: 2019-12-19 16:51:02
   background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
   .button__basis {
     cursor: pointer;
+    max-width: -webkit-fill-available;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
-    left: 0rem;
-    right: 0rem;
-    top: 0rem;
-    bottom: 0rem;
     margin: 0.125rem;
-    padding: 0rem 0.5625rem 0rem 1.1875rem;
+    padding: 0rem 0.625rem;
     color: white;
     background: transparent;
     text-decoration: none;
@@ -1939,23 +1936,23 @@ Build date: 2019-12-19 16:51:02
   .button__text {
     cursor: pointer;
     width: 100%;
-    margin: 0rem 1.1875rem 0rem 1.1875rem;
     background: transparent;
     text-align: center;
     color: white;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 2.75rem;
+    line-height: 2.5rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
     .button__text_in-header {
-      line-height: 2.125rem; }
+      line-height: 1.875rem; }
   .button__arrow {
     cursor: pointer;
-    right: 0rem;
+    position: absolute;
+    right: 0.7rem;
     font-family: Material Icons;
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -1970,9 +1967,9 @@ Build date: 2019-12-19 16:51:02
     background: white; }
     .button_hollow > .button__basis > .button__arrow {
       color: #bc9cff; }
-  .button_hollow > .button__text {
-    color: #bc9cff;
-    z-index: 1; }
+    .button_hollow > .button__basis > .button__text {
+      color: #bc9cff;
+      z-index: 1; }
 
 .text-button {
   cursor: pointer;
@@ -2004,11 +2001,11 @@ Build date: 2019-12-19 16:51:02
     background: transparent; }
   .pagination__left-arrow, .pagination__right-arrow, .pagination__link, .pagination__dots {
     min-width: 2.5rem;
+    min-height: 2.5rem;
     width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 2.5rem;
     text-decoration: none; }
   .pagination__dots {
     cursor: context-menu; }
@@ -2907,7 +2904,7 @@ Build date: 2019-12-19 16:51:02
   .form-elements__bullet-list {
     margin-top: 0.85rem; }
     .form-elements__bullet-list-title {
-      margin-bottom: 14px;
+      margin-bottom: 0.875rem;
       font-weight: bold;
       font-size: 0.75rem;
       line-height: 0.9375rem;
