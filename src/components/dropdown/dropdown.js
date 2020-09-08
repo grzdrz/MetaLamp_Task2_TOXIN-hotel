@@ -8,7 +8,6 @@ class Dropdown {
     this.hasClearButton = false;
     this.totalValue = 0;
 
-    this._closeDropdown = this._closeDropdown.bind(this);
     this._handleDropdownClick = this._handleDropdownClick.bind(this);
     this._handleClearButtonClick = this._handleClearButtonClick.bind(this);
     this._handleApplyButtonClick = this._handleApplyButtonClick.bind(this);
@@ -137,17 +136,8 @@ class Dropdown {
     return words[2];
   }
 
-  _closeDropdown() {
-    this.isOpened = false;
-    this.updateState();
-  }
-
   _handleDropdownClick() {
-    if (this.isOpened) {
-      this.isOpened = false;
-    } else {
-      this.isOpened = true;
-    }
+    this.isOpened = !this.isOpened;
     this.updateState();
   }
 
@@ -165,12 +155,11 @@ class Dropdown {
   }
 
   _handleDropdownLeave(event) {
-    if (event.target.className.match) {
-      const dropdowns = event.target.className.match(/(^dropdown$)|(^dropdown__)/);
-      if (!dropdowns) {
-        this._closeDropdown();
-      }
-    } else this._closeDropdown();
+    const dropwdown = event.target.closest('.dropdown');
+    if (!dropwdown) {
+      this.isOpened = false;
+      this.updateState();
+    }
   }
 }
 
