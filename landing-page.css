@@ -91,27 +91,17 @@ body {
     Datepicker cells
    ------------------------------------------------- */
 .datepicker--cells {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  flex-wrap: wrap; }
 
 .datepicker--cell {
   border-radius: 4px;
   box-sizing: border-box;
   cursor: pointer;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 32px;
   z-index: 1; }
   .datepicker--cell.-focus- {
@@ -160,28 +150,16 @@ body {
     cursor: default; }
 
 .datepicker--days-names {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 8px 0 3px; }
 
 .datepicker--day-name {
   color: #FF9A19;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
   text-align: center;
   text-transform: uppercase;
   font-size: .8em; }
@@ -250,29 +228,20 @@ body {
   position: absolute;
   left: -100000px;
   opacity: 0;
-  transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
-  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
   z-index: 100; }
   .datepicker.-from-top- {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px); }
+    transform: translateY(-8px); }
   .datepicker.-from-right- {
-    -webkit-transform: translateX(8px);
-            transform: translateX(8px); }
+    transform: translateX(8px); }
   .datepicker.-from-bottom- {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px); }
+    transform: translateY(8px); }
   .datepicker.-from-left- {
-    -webkit-transform: translateX(-8px);
-            transform: translateX(-8px); }
+    transform: translateX(-8px); }
   .datepicker.active {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-    transition: opacity 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease;
-    transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s;
-    transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease; }
+    transform: translate(0);
+    transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s; }
 
 .datepicker-inline .datepicker {
   border-color: #d7d7d7;
@@ -281,8 +250,7 @@ body {
   left: auto;
   right: auto;
   opacity: 1;
-  -webkit-transform: none;
-          transform: none; }
+  transform: none; }
 
 .datepicker-inline .datepicker--pointer {
   display: none; }
@@ -303,20 +271,16 @@ body {
   z-index: -1; }
   .-top-left- .datepicker--pointer, .-top-center- .datepicker--pointer, .-top-right- .datepicker--pointer {
     top: calc(100% - 4px);
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg); }
+    transform: rotate(135deg); }
   .-right-top- .datepicker--pointer, .-right-center- .datepicker--pointer, .-right-bottom- .datepicker--pointer {
     right: calc(100% - 4px);
-    -webkit-transform: rotate(225deg);
-            transform: rotate(225deg); }
+    transform: rotate(225deg); }
   .-bottom-left- .datepicker--pointer, .-bottom-center- .datepicker--pointer, .-bottom-right- .datepicker--pointer {
     bottom: calc(100% - 4px);
-    -webkit-transform: rotate(315deg);
-            transform: rotate(315deg); }
+    transform: rotate(315deg); }
   .-left-top- .datepicker--pointer, .-left-center- .datepicker--pointer, .-left-bottom- .datepicker--pointer {
     left: calc(100% - 4px);
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); }
+    transform: rotate(45deg); }
   .-top-left- .datepicker--pointer, .-bottom-left- .datepicker--pointer {
     left: 10px; }
   .-top-right- .datepicker--pointer, .-bottom-right- .datepicker--pointer {
@@ -359,12 +323,8 @@ body {
     Navigation
    ------------------------------------------------- */
 .datepicker--nav {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   border-bottom: 1px solid #efefef;
   min-height: 32px;
   padding: 4px; }
@@ -373,16 +333,10 @@ body {
 
 .datepicker--nav-title,
 .datepicker--nav-action {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   cursor: pointer;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  align-items: center;
+  justify-content: center; }
 
 .datepicker--nav-action {
   width: 32px;
@@ -417,8 +371,6 @@ body {
     background: none; }
 
 .datepicker--buttons {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   padding: 4px;
   border-top: 1px solid #efefef; }
@@ -427,18 +379,10 @@ body {
   color: #4EB5E6;
   cursor: pointer;
   border-radius: 4px;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
+  flex: 1;
   display: inline-flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 32px; }
   .datepicker--button:hover {
     color: #4a4a4a;
@@ -469,26 +413,18 @@ body {
    ------------------------------------------------- */
 .datepicker--time {
   border-top: 1px solid #efefef;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 4px;
   position: relative; }
   .datepicker--time.-am-pm- .datepicker--time-sliders {
-    -webkit-flex: 0 1 138px;
-        -ms-flex: 0 1 138px;
-            flex: 0 1 138px;
+    flex: 0 1 138px;
     max-width: 138px; }
   .-only-timepicker- .datepicker--time {
     border-top: none; }
 
 .datepicker--time-sliders {
-  -webkit-flex: 0 1 153px;
-      -ms-flex: 0 1 153px;
-          flex: 0 1 153px;
+  flex: 0 1 153px;
   margin-right: 10px;
   max-width: 153px; }
 
@@ -497,15 +433,9 @@ body {
   font-size: 12px; }
 
 .datepicker--time-current {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  align-items: center;
+  flex: 1;
   font-size: 14px;
   text-align: center;
   margin: 0 0 0 10px; }
@@ -539,21 +469,15 @@ body {
 
 .datepicker--time-current-ampm {
   text-transform: uppercase;
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
+  align-self: flex-end;
   color: #9c9c9c;
   margin-left: 6px;
   font-size: 11px;
   margin-bottom: 1px; }
 
 .datepicker--time-row {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 11px;
   height: 17px;
   background: linear-gradient(to right, #dedede, #dedede) left 50%/100% 1px no-repeat; }
@@ -562,9 +486,7 @@ body {
   .datepicker--time-row input[type='range'] {
     background: none;
     cursor: pointer;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -598,6 +520,7 @@ body {
       border: 1px solid #dedede;
       background: #fff;
       cursor: pointer;
+      -webkit-transition: background .2s;
       transition: background .2s; }
     .datepicker--time-row input[type='range']::-moz-range-thumb {
       box-sizing: border-box;
@@ -607,6 +530,7 @@ body {
       border: 1px solid #dedede;
       background: #fff;
       cursor: pointer;
+      -moz-transition: background .2s;
       transition: background .2s; }
     .datepicker--time-row input[type='range']::-ms-thumb {
       box-sizing: border-box;
@@ -616,6 +540,7 @@ body {
       border: 1px solid #dedede;
       background: #fff;
       cursor: pointer;
+      -ms-transition: background .2s;
       transition: background .2s; }
     .datepicker--time-row input[type='range']::-webkit-slider-thumb {
       margin-top: -6px; }
@@ -662,8 +587,7 @@ body {
     width: 1px;
     left: calc(50% - 1px);
     top: calc(50% + 1px);
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%); }
+    transform: translateY(-100%); }
   .datepicker--time-icon:before {
     width: .4em;
     height: 1px;
@@ -764,6 +688,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-rows: auto;
+  grid-template-columns: auto -webkit-min-content -webkit-min-content -webkit-min-content;
   grid-template-columns: auto min-content min-content min-content;
   align-items: center;
   justify-items: start;
@@ -772,6 +697,7 @@ body {
   box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.05); }
   @media screen and (max-width: 1150px) {
     .header {
+      grid-template-columns: auto -webkit-min-content;
       grid-template-columns: auto min-content;
       grid-template-rows: auto auto; } }
   @media screen and (max-width: 1000px) {
@@ -974,6 +900,7 @@ body {
       border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
       -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      -webkit-transition: background-color 5000s ease-in-out 0s;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .calendar__dropdown-arrow {
@@ -1015,6 +942,8 @@ body {
       display: block; }
 
 .datepicker {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   padding-bottom: 1.25rem;
   background: white;
@@ -1038,6 +967,8 @@ body {
       .datepicker.-bottom-left-, .datepicker.-bottom-left-.active {
         margin-left: -2rem; } }
   .datepicker.active {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content; }
   .datepicker--cells {
     width: 17.5rem; }
@@ -1188,8 +1119,6 @@ body {
         font-size: 1.5rem;
         line-height: 1.5rem;
         border: 0rem solid transparent;
-        background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-        background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
         background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         -webkit-background-clip: text;
         -moz-background-clip: text;
@@ -1207,8 +1136,6 @@ body {
         font-size: 1.5rem;
         line-height: 1.5rem;
         border: 0rem solid transparent;
-        background: -moz-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
-        background: -webkit-linear-gradient(bottom, #bc9cff 0%, #8ba4f9 100%);
         background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         -webkit-background-clip: text;
         -moz-background-clip: text;
@@ -1229,14 +1156,22 @@ body {
     color: #bc9cff;
     text-transform: none; }
   .datepicker--months {
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content; }
     .datepicker--months > .datepicker--cells-months {
+      height: -webkit-max-content;
+      height: -moz-max-content;
       height: max-content;
       display: flex;
       justify-content: space-between; }
   .datepicker--years {
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content; }
     .datepicker--years > .datepicker--cells-years {
+      height: -webkit-max-content;
+      height: -moz-max-content;
       height: max-content;
       display: flex;
       justify-content: space-between; }
@@ -1267,6 +1202,7 @@ body {
   .dropdown__input-container {
     display: grid;
     grid-template-rows: 2.625rem;
+    grid-template-columns: auto -webkit-min-content;
     grid-template-columns: auto min-content;
     border: 0.0625rem solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
@@ -1306,6 +1242,7 @@ body {
       border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
       -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      -webkit-transition: background-color 5000s ease-in-out 0s;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .dropdown__list {
@@ -1527,6 +1464,7 @@ body {
   .form-input__input-container {
     display: grid;
     grid-template-rows: 2.625rem;
+    grid-template-columns: auto -webkit-min-content;
     grid-template-columns: auto min-content;
     position: relative;
     border: 0.0625rem solid rgba(31, 32, 65, 0.25);
@@ -1563,6 +1501,7 @@ body {
       border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
       -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      -webkit-transition: background-color 5000s ease-in-out 0s;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .form-input__submitter {

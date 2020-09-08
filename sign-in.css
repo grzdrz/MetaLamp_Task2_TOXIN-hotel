@@ -141,6 +141,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-rows: auto;
+  grid-template-columns: auto -webkit-min-content -webkit-min-content -webkit-min-content;
   grid-template-columns: auto min-content min-content min-content;
   align-items: center;
   justify-items: start;
@@ -149,6 +150,7 @@ body {
   box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.05); }
   @media screen and (max-width: 1150px) {
     .header {
+      grid-template-columns: auto -webkit-min-content;
       grid-template-columns: auto min-content;
       grid-template-rows: auto auto; } }
   @media screen and (max-width: 1000px) {
@@ -364,6 +366,7 @@ body {
   .form-input__input-container {
     display: grid;
     grid-template-rows: 2.625rem;
+    grid-template-columns: auto -webkit-min-content;
     grid-template-columns: auto min-content;
     position: relative;
     border: 0.0625rem solid rgba(31, 32, 65, 0.25);
@@ -400,6 +403,7 @@ body {
       border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
       -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      -webkit-transition: background-color 5000s ease-in-out 0s;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .form-input__submitter {
@@ -479,6 +483,7 @@ body {
   .form-input__input-container {
     display: grid;
     grid-template-rows: 2.625rem;
+    grid-template-columns: auto -webkit-min-content;
     grid-template-columns: auto min-content;
     position: relative;
     border: 0.0625rem solid rgba(31, 32, 65, 0.25);
@@ -515,6 +520,7 @@ body {
       border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
       -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      -webkit-transition: background-color 5000s ease-in-out 0s;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
   .form-input__submitter {
