@@ -94,6 +94,18 @@ module.exports = {
           {
             loader: 'css-loader',
           },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    'autoprefixer',
+                  ],
+                ],
+              },
+            },
+          },
         ],
       },
       {
@@ -107,6 +119,18 @@ module.exports = {
           },
           {
             loader: 'css-loader',
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    'autoprefixer',
+                  ],
+                ],
+              },
+            },
           },
           {
             loader: 'sass-loader',
