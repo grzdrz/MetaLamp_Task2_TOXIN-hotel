@@ -1,46 +1,51 @@
 @font-face {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
   src: url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot);
-  /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2) format("woff2"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff) format("woff"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf) format("truetype"); }
+  src: url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2) format("woff2"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff) format("woff"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(src/assets/fonts/Montserrat/montserrat-regular.woff), url(src/assets/fonts/Montserrat/montserrat-regular.woff2), url(src/assets/fonts/Montserrat/montserrat-regular.eot), url(src/assets/fonts/Montserrat/montserrat-regular.ttf), url(src/assets/fonts/Montserrat/montserrat-regular.svg);
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: normal;
-  font-style: normal; }
+  src: url(src/assets/fonts/Montserrat/montserrat-regular.eot);
+  src: url(src/assets/fonts/Montserrat/montserrat-regular.woff2) format("woff2"), url(src/assets/fonts/Montserrat/montserrat-regular.woff) format("woff"), url(src/assets/fonts/Montserrat/montserrat-regular.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(src/assets/fonts/Montserrat/montserrat-bold.woff), url(src/assets/fonts/Montserrat/montserrat-bold.woff2), url(src/assets/fonts/Montserrat/montserrat-bold.eot), url(src/assets/fonts/Montserrat/montserrat-bold.ttf), url(src/assets/fonts/Montserrat/montserrat-bold.svg);
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: bold;
-  font-style: normal; }
+  src: url(src/assets/fonts/Montserrat/montserrat-bold.eot);
+  src: url(src/assets/fonts/Montserrat/montserrat-bold.woff2) format("woff2"), url(src/assets/fonts/Montserrat/montserrat-bold.woff) format("woff"), url(src/assets/fonts/Montserrat/montserrat-bold.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url(src/assets/fonts/Quicksand/quicksand-regular.woff), url(src/assets/fonts/Quicksand/quicksand-regular.woff2), url(src/assets/fonts/Quicksand/quicksand-regular.eot), url(src/assets/fonts/Quicksand/quicksand-regular.ttf), url(src/assets/fonts/Quicksand/quicksand-regular.svg);
+  font-family: "Quicksand";
+  font-style: normal;
   font-weight: normal;
-  font-style: normal; }
+  src: url(src/assets/fonts/Quicksand/quicksand-regular.eot);
+  src: url(src/assets/fonts/Quicksand/quicksand-regular.woff2) format("woff2"), url(src/assets/fonts/Quicksand/quicksand-regular.woff) format("woff"), url(src/assets/fonts/Quicksand/quicksand-regular.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url(src/assets/fonts/Quicksand/quicksand-bold.woff), url(src/assets/fonts/Quicksand/quicksand-bold.woff2), url(src/assets/fonts/Quicksand/quicksand-bold.eot), url(src/assets/fonts/Quicksand/quicksand-bold.ttf), url(src/assets/fonts/Quicksand/quicksand-bold.svg);
+  font-family: "Quicksand";
+  font-style: normal;
   font-weight: bold;
-  font-style: normal; }
+  src: url(src/assets/fonts/Quicksand/quicksand-bold.eot);
+  src: url(src/assets/fonts/Quicksand/quicksand-bold.woff2) format("woff2"), url(src/assets/fonts/Quicksand/quicksand-bold.woff) format("woff"), url(src/assets/fonts/Quicksand/quicksand-bold.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url(src/assets/fonts/OpenSans/open-sans-regular.woff), url(src/assets/fonts/OpenSans/open-sans-regular.woff2), url(src/assets/fonts/OpenSans/open-sans-regular.eot), url(src/assets/fonts/OpenSans/open-sans-regular.ttf), url(src/assets/fonts/OpenSans/open-sans-regular.svg);
+  font-family: "OpenSans";
+  font-style: normal;
   font-weight: normal;
-  font-style: normal; }
+  src: url(src/assets/fonts/OpenSans/open-sans-regular.eot);
+  src: url(src/assets/fonts/OpenSans/open-sans-regular.woff2) format("woff2"), url(src/assets/fonts/OpenSans/open-sans-regular.woff) format("woff"), url(src/assets/fonts/OpenSans/open-sans-regular.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url(src/assets/fonts/OpenSans/open-sans-bold.woff), url(src/assets/fonts/OpenSans/open-sans-bold.woff2), url(src/assets/fonts/OpenSans/open-sans-bold.eot), url(src/assets/fonts/OpenSans/open-sans-bold.ttf), url(src/assets/fonts/OpenSans/open-sans-bold.svg);
+  font-family: "OpenSans";
+  font-style: normal;
   font-weight: bold;
-  font-style: normal; }
+  src: url(src/assets/fonts/OpenSans/open-sans-bold.eot);
+  src: url(src/assets/fonts/OpenSans/open-sans-bold.woff2) format("woff2"), url(src/assets/fonts/OpenSans/open-sans-bold.woff) format("woff"), url(src/assets/fonts/OpenSans/open-sans-bold.ttf) format("truetype"); }
 
 *,
 *:after,
@@ -48,11 +53,13 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
-  box-sizing: border-box;
-  font-family: Montserrat, Arial, sans-serif; }
+  box-sizing: border-box; }
 
 html {
-  font-size: 16px; }
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 16px;
+  color: rgba(31, 32, 65, 0.5);
+  background: white; }
 
 html,
 body {
@@ -1399,6 +1406,7 @@ Build date: 2019-12-19 16:51:02
     padding: 0rem 0.9375rem;
     outline: none;
     background: transparent;
+    font-family: Montserrat, Arial, sans-serif;
     font-size: 0.875rem;
     line-height: 1.5rem;
     letter-spacing: -0.0125rem;
@@ -1479,6 +1487,7 @@ Build date: 2019-12-19 16:51:02
     padding: 0rem 0.9375rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
+    font-family: Montserrat, Arial, sans-serif;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
@@ -1739,7 +1748,7 @@ Build date: 2019-12-19 16:51:02
     margin-right: 1.25rem; }
     .radio__label:last-child {
       margin-right: 0rem; }
-  .radio__button-image {
+  .radio__colored-circle {
     z-index: 1;
     width: 1.25rem;
     height: 1.25rem;
@@ -1757,15 +1766,15 @@ Build date: 2019-12-19 16:51:02
     height: 1.25rem;
     position: absolute;
     opacity: 0; }
-    .radio__input:checked + .radio__button-image {
+    .radio__input:checked + .radio__colored-circle {
       border: 0.0625rem solid #bc9cff; }
-    .radio__input:checked + .radio__button-image::after {
+    .radio__input:checked + .radio__colored-circle::after {
       content: '';
       width: 0.75rem;
       height: 0.75rem;
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       border-radius: 50%; }
-    .radio__input:not(:checked) + .radio__button-image {
+    .radio__input:not(:checked) + .radio__colored-circle {
       border: 0.0625rem solid rgba(31, 32, 65, 0.25); }
   .radio__text {
     display: flex;
@@ -1780,7 +1789,7 @@ Build date: 2019-12-19 16:51:02
   display: flex;
   position: relative;
   width: max-content; }
-  .toggle__button-image {
+  .toggle__visualization {
     z-index: 1;
     width: 2.5rem;
     height: 1.25rem;
@@ -1847,7 +1856,7 @@ Build date: 2019-12-19 16:51:02
       margin-left: 1.5rem; }
     .star-rating__input:nth-of-type(5) {
       margin-left: 0rem; }
-    .star-rating__input + .star-rating__image::before {
+    .star-rating__input + .star-rating__image-of-star::before {
       content: 'star_border';
       width: 1.5rem;
       height: 1.5rem;
@@ -1864,7 +1873,7 @@ Build date: 2019-12-19 16:51:02
       font-size: 1.5rem;
       line-height: 1.25rem;
       color: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
-    .star-rating__input:checked ~ .star-rating__image::after {
+    .star-rating__input:checked ~ .star-rating__image-of-star::after {
       content: 'star';
       width: 1.5rem;
       height: 1.5rem;
@@ -1881,7 +1890,7 @@ Build date: 2019-12-19 16:51:02
       font-size: 1.5rem;
       line-height: 1.25rem;
       color: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
-  .star-rating__image {
+  .star-rating__image-of-star {
     z-index: 1;
     width: 1.5rem;
     height: 1.5rem;
@@ -1889,15 +1898,15 @@ Build date: 2019-12-19 16:51:02
     justify-content: center;
     align-items: center;
     position: absolute; }
-    .star-rating__image:nth-of-type(1) {
+    .star-rating__image-of-star:nth-of-type(1) {
       margin-left: 6rem; }
-    .star-rating__image:nth-of-type(2) {
+    .star-rating__image-of-star:nth-of-type(2) {
       margin-left: 4.5rem; }
-    .star-rating__image:nth-of-type(3) {
+    .star-rating__image-of-star:nth-of-type(3) {
       margin-left: 3rem; }
-    .star-rating__image:nth-of-type(4) {
+    .star-rating__image-of-star:nth-of-type(4) {
       margin-left: 1.5rem; }
-    .star-rating__image:nth-of-type(5) {
+    .star-rating__image-of-star:nth-of-type(5) {
       margin-left: 0rem; }
 
 .button {
@@ -2172,8 +2181,10 @@ Build date: 2019-12-19 16:51:02
     padding: 0rem 0rem 0rem 0.9375rem;
     outline: none;
     background: transparent;
+    font-family: Montserrat, Arial, sans-serif;
     font-size: 0.875rem;
     line-height: 1.5rem;
+    color: rgba(31, 32, 65, 0.75);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
@@ -2242,6 +2253,8 @@ Build date: 2019-12-19 16:51:02
   box-sizing: border-box;
   box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.05);
   border-radius: 0.25rem; }
+  .datepicker * {
+    font-family: Montserrat, Arial, sans-serif; }
   @media screen and (max-width: 20rem) {
     .datepicker.active {
       border: 0rem; } }

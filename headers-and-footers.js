@@ -609,6 +609,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/components/header/header.js":
+/*!*****************************************!*\
+  !*** ./src/components/header/header.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nclass Header {\r\n  constructor(container) {\r\n    this.container = container;\r\n\r\n    this._handleBurgerClick = this._handleBurgerClick.bind(this);\r\n\r\n    this._initialize();\r\n  }\r\n\r\n  _initialize() {\r\n    this.logoContainer = this.container.querySelector('.js-header__colored-logo');\r\n    this.burger = this.container.querySelector('.js-header__burger');\r\n    this.navigationMenu = this.container.querySelector('.js-header__navigation-menu');\r\n    this.buttons = this.container.querySelector('.js-header__buttons');\r\n    this.userFullName = this.container.querySelector('.js-header__user-full-name');\r\n\r\n    this.burger.addEventListener('click', this._handleBurgerClick);\r\n  }\r\n\r\n  _handleBurgerClick() {\r\n    this.logoContainer.classList.toggle('header__colored-logo_opened');\r\n    this.burger.classList.toggle('header__burger_opened');\r\n    this.navigationMenu.classList.toggle('header__navigation-menu_opened');\r\n    if (this.buttons) this.buttons.classList.toggle('header__buttons_opened');\r\n    if (this.userFullName) this.userFullName.classList.toggle('header__user-full-name_opened');\r\n  }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\r\n\n\n//# sourceURL=webpack:///./src/components/header/header.js?");
+
+/***/ }),
+
 /***/ "./src/components/logo/img/logo.svg":
 /*!******************************************!*\
   !*** ./src/components/logo/img/logo.svg ***!
@@ -1024,7 +1036,7 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _base_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../base/base */ \"./src/pages/base/base.js\");\n/* harmony import */ var _headers_and_footers_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./headers-and-footers.scss */ \"./src/pages/ui-kit/headers-and-footers/headers-and-footers.scss\");\n/* harmony import */ var _headers_and_footers_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_headers_and_footers_scss__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/pages/ui-kit/headers-and-footers/headers-and-footers.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _base_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../base/base */ \"./src/pages/base/base.js\");\n/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/header/header */ \"./src/components/header/header.js\");\n/* harmony import */ var _headers_and_footers_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./headers-and-footers.scss */ \"./src/pages/ui-kit/headers-and-footers/headers-and-footers.scss\");\n/* harmony import */ var _headers_and_footers_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_headers_and_footers_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* eslint-disable no-unused-vars */\r\n\r\n\r\n\r\n\r\nconst headers = Array.from(document.querySelectorAll('.js-header'))\r\n  .map((element) => new _components_header_header__WEBPACK_IMPORTED_MODULE_1__[\"default\"](element));\r\n\n\n//# sourceURL=webpack:///./src/pages/ui-kit/headers-and-footers/headers-and-footers.js?");
 
 /***/ }),
 

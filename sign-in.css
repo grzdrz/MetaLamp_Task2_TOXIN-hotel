@@ -1,46 +1,51 @@
 @font-face {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
   src: url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot);
-  /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2) format("woff2"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff) format("woff"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf) format("truetype"); }
+  src: url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2) format("woff2"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff) format("woff"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(src/assets/fonts/Montserrat/montserrat-regular.woff), url(src/assets/fonts/Montserrat/montserrat-regular.woff2), url(src/assets/fonts/Montserrat/montserrat-regular.eot), url(src/assets/fonts/Montserrat/montserrat-regular.ttf), url(src/assets/fonts/Montserrat/montserrat-regular.svg);
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: normal;
-  font-style: normal; }
+  src: url(src/assets/fonts/Montserrat/montserrat-regular.eot);
+  src: url(src/assets/fonts/Montserrat/montserrat-regular.woff2) format("woff2"), url(src/assets/fonts/Montserrat/montserrat-regular.woff) format("woff"), url(src/assets/fonts/Montserrat/montserrat-regular.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(src/assets/fonts/Montserrat/montserrat-bold.woff), url(src/assets/fonts/Montserrat/montserrat-bold.woff2), url(src/assets/fonts/Montserrat/montserrat-bold.eot), url(src/assets/fonts/Montserrat/montserrat-bold.ttf), url(src/assets/fonts/Montserrat/montserrat-bold.svg);
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: bold;
-  font-style: normal; }
+  src: url(src/assets/fonts/Montserrat/montserrat-bold.eot);
+  src: url(src/assets/fonts/Montserrat/montserrat-bold.woff2) format("woff2"), url(src/assets/fonts/Montserrat/montserrat-bold.woff) format("woff"), url(src/assets/fonts/Montserrat/montserrat-bold.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url(src/assets/fonts/Quicksand/quicksand-regular.woff), url(src/assets/fonts/Quicksand/quicksand-regular.woff2), url(src/assets/fonts/Quicksand/quicksand-regular.eot), url(src/assets/fonts/Quicksand/quicksand-regular.ttf), url(src/assets/fonts/Quicksand/quicksand-regular.svg);
+  font-family: "Quicksand";
+  font-style: normal;
   font-weight: normal;
-  font-style: normal; }
+  src: url(src/assets/fonts/Quicksand/quicksand-regular.eot);
+  src: url(src/assets/fonts/Quicksand/quicksand-regular.woff2) format("woff2"), url(src/assets/fonts/Quicksand/quicksand-regular.woff) format("woff"), url(src/assets/fonts/Quicksand/quicksand-regular.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url(src/assets/fonts/Quicksand/quicksand-bold.woff), url(src/assets/fonts/Quicksand/quicksand-bold.woff2), url(src/assets/fonts/Quicksand/quicksand-bold.eot), url(src/assets/fonts/Quicksand/quicksand-bold.ttf), url(src/assets/fonts/Quicksand/quicksand-bold.svg);
+  font-family: "Quicksand";
+  font-style: normal;
   font-weight: bold;
-  font-style: normal; }
+  src: url(src/assets/fonts/Quicksand/quicksand-bold.eot);
+  src: url(src/assets/fonts/Quicksand/quicksand-bold.woff2) format("woff2"), url(src/assets/fonts/Quicksand/quicksand-bold.woff) format("woff"), url(src/assets/fonts/Quicksand/quicksand-bold.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url(src/assets/fonts/OpenSans/open-sans-regular.woff), url(src/assets/fonts/OpenSans/open-sans-regular.woff2), url(src/assets/fonts/OpenSans/open-sans-regular.eot), url(src/assets/fonts/OpenSans/open-sans-regular.ttf), url(src/assets/fonts/OpenSans/open-sans-regular.svg);
+  font-family: "OpenSans";
+  font-style: normal;
   font-weight: normal;
-  font-style: normal; }
+  src: url(src/assets/fonts/OpenSans/open-sans-regular.eot);
+  src: url(src/assets/fonts/OpenSans/open-sans-regular.woff2) format("woff2"), url(src/assets/fonts/OpenSans/open-sans-regular.woff) format("woff"), url(src/assets/fonts/OpenSans/open-sans-regular.ttf) format("truetype"); }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url(src/assets/fonts/OpenSans/open-sans-bold.woff), url(src/assets/fonts/OpenSans/open-sans-bold.woff2), url(src/assets/fonts/OpenSans/open-sans-bold.eot), url(src/assets/fonts/OpenSans/open-sans-bold.ttf), url(src/assets/fonts/OpenSans/open-sans-bold.svg);
+  font-family: "OpenSans";
+  font-style: normal;
   font-weight: bold;
-  font-style: normal; }
+  src: url(src/assets/fonts/OpenSans/open-sans-bold.eot);
+  src: url(src/assets/fonts/OpenSans/open-sans-bold.woff2) format("woff2"), url(src/assets/fonts/OpenSans/open-sans-bold.woff) format("woff"), url(src/assets/fonts/OpenSans/open-sans-bold.ttf) format("truetype"); }
 
 *,
 *:after,
@@ -48,11 +53,13 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
-  box-sizing: border-box;
-  font-family: Montserrat, Arial, sans-serif; }
+  box-sizing: border-box; }
 
 html {
-  font-size: 16px; }
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 16px;
+  color: rgba(31, 32, 65, 0.5);
+  background: white; }
 
 html,
 body {
@@ -60,12 +67,13 @@ body {
   display: flex;
   flex-direction: column; }
 
-.colored-logo {
+.colored-logo__ref {
   display: flex;
   align-items: center;
   justify-self: end; }
-  .colored-logo__logo-symbol {
-    margin-right: 0.7813rem; }
+
+.colored-logo__logo-symbol {
+  margin-right: 0.7813rem; }
 
 .button {
   cursor: pointer;
@@ -136,58 +144,48 @@ body {
   width: 100%;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: min-content auto min-content;
+  grid-template-columns: auto min-content min-content min-content;
   align-items: center;
   justify-items: start;
   padding: 0.9375rem 9.72222%;
   background: white;
   box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.05); }
-  @media screen and (max-width: 1150px) and (min-width: 768px) {
+  @media screen and (max-width: 1150px) {
     .header {
-      display: grid;
-      grid-template-columns: min-content auto;
+      grid-template-columns: auto min-content;
       grid-template-rows: auto auto; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     .header {
-      display: grid;
-      grid-template-columns: min-content auto;
-      grid-template-rows: min-content auto; } }
-  @media screen and (max-width: 550px) {
-    .header {
-      display: grid;
       grid-template-columns: auto;
-      grid-template-rows: min-content min-content min-content;
-      justify-content: flex-start; } }
-  @media screen and (max-width: 768px) {
-    .header__colored-logo {
-      justify-self: flex-start; } }
-  .header__navigation-menu {
-    justify-self: end;
-    margin-right: 1.25rem; }
-    @media screen and (max-width: 1150px) and (min-width: 768px) {
-      .header__navigation-menu {
-        order: 2;
-        margin-right: 0rem;
-        margin-top: 1.25rem;
-        grid-column-start: 2;
+      grid-template-rows: auto auto auto auto; } }
+  .header__colored-logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .header__colored-logo_opened {
+      border-bottom: 0px solid blue; }
+    @media screen and (max-width: 1150px) {
+      .header__colored-logo {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid blue; }
+        .header__colored-logo_opened {
+          border-bottom: 0px solid blue; } }
+    @media screen and (max-width: 1150px) and (min-width: 1000px) {
+      .header__colored-logo {
+        grid-column-start: 1;
         grid-column-end: 3; } }
-    @media screen and (max-width: 768px) {
-      .header__navigation-menu {
-        order: 2;
-        margin-right: 0rem;
-        margin-top: 1.25rem;
-        margin-left: 0.3125rem;
-        display: flex;
-        flex-direction: column; } }
-    @media screen and (max-width: 550px) {
-      .header__navigation-menu {
-        justify-self: flex-start; } }
+  .header__navigation-menu {
+    margin-right: 1.25rem; }
+    @media screen and (max-width: 1150px) {
+      .header__navigation-menu_opened {
+        display: none; } }
   .header__list {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
       .header__list {
         display: flex;
         flex-direction: column; } }
@@ -195,7 +193,7 @@ body {
     display: flex;
     align-items: center;
     margin: 0rem 0.625rem; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
       .header__item {
         margin: 0.625rem 0rem; } }
     .header__item:first-child {
@@ -203,14 +201,6 @@ body {
       .header__item:first-child .header__item-ref {
         color: rgba(31, 32, 65, 0.75);
         font-weight: bold; }
-      @media screen and (max-width: 768px) {
-        .header__item:first-child {
-          margin: 0rem 0rem 0.625rem 0rem; } }
-    .header__item:last-child {
-      margin: 0rem 0rem 0rem 0.625rem; }
-      @media screen and (max-width: 768px) {
-        .header__item:last-child {
-          margin: 0.625rem 0rem 0rem 0rem; } }
   .header__item-ref {
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
@@ -236,30 +226,19 @@ body {
     white-space: nowrap;
     padding-left: 1.25rem;
     border-left: 0.0625rem solid rgba(31, 32, 65, 0.1); }
-    @media screen and (max-width: 1150px) and (min-width: 768px) {
-      .header__user-full-name {
-        order: 1;
-        justify-self: end; } }
-    @media screen and (max-width: 768px) {
-      .header__user-full-name {
-        order: 1;
-        justify-self: end; } }
+    @media screen and (max-width: 1150px) {
+      .header__user-full-name_opened {
+        display: none; } }
     @media screen and (max-width: 550px) {
       .header__user-full-name {
         margin-top: 1.25rem; } }
   .header__buttons {
     display: flex; }
-    @media screen and (max-width: 1150px) and (min-width: 768px) {
-      .header__buttons {
-        order: 1;
-        justify-self: end; } }
-    @media screen and (max-width: 768px) {
-      .header__buttons {
-        order: 1;
-        justify-self: end; } }
+    @media screen and (max-width: 1150px) {
+      .header__buttons_opened {
+        display: none; } }
     @media screen and (max-width: 550px) {
       .header__buttons {
-        display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: min-content;
         margin-top: 1.25rem; } }
@@ -272,6 +251,18 @@ body {
         margin-bottom: 0.625rem; } }
   .header__sign-up-button {
     width: 12.25rem; }
+  .header__burger {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: none;
+    background: red; }
+    @media screen and (max-width: 1150px) {
+      .header__burger {
+        display: block;
+        justify-self: flex-end; }
+        .header__burger_opened {
+          background: green; } }
 
 .button {
   cursor: pointer;
@@ -371,6 +362,7 @@ body {
     padding: 0rem 0.9375rem;
     outline: none;
     background: transparent;
+    font-family: Montserrat, Arial, sans-serif;
     font-size: 0.875rem;
     line-height: 1.5rem;
     letter-spacing: -0.0125rem;
@@ -450,7 +442,7 @@ body {
     line-height: 1.125rem;
     color: black; }
   .sign-in-form__create-button {
-    width: 30.9375%; }
+    min-width: 6.1875rem; }
 
 .form-input {
   width: 100%; }
@@ -485,6 +477,7 @@ body {
     padding: 0rem 0.9375rem;
     outline: none;
     background: transparent;
+    font-family: Montserrat, Arial, sans-serif;
     font-size: 0.875rem;
     line-height: 1.5rem;
     letter-spacing: -0.0125rem;
@@ -524,12 +517,13 @@ body {
     font-size: 1.5rem;
     line-height: 1.5rem; }
 
-.colored-logo {
+.colored-logo__ref {
   display: flex;
   align-items: center;
   justify-self: end; }
-  .colored-logo__logo-symbol {
-    margin-right: 0.7813rem; }
+
+.colored-logo__logo-symbol {
+  margin-right: 0.7813rem; }
 
 .social-media {
   width: 7rem;
