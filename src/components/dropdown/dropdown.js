@@ -75,7 +75,7 @@ class Dropdown {
   _calculateTotalValue() {
     let babiesCount = 0;
     this.totalValue = this.droppingList.reduce((previousValue, item) => {
-      if (item.nameText.toLowerCase() !== 'младенцы') {
+      if (item.name.toLowerCase() !== 'младенцы') {
         return previousValue + item.value;
       }
       babiesCount = item.value;
@@ -99,7 +99,7 @@ class Dropdown {
     } else {
       if (this.totalValue !== 0) {
         const result = this.droppingList.reduce((fullString, item, index) => {
-          const itemName = item.nameText;
+          const itemName = item.name;
           const itemValue = item.value;
 
           if (index !== this.droppingList.length - 1) {

@@ -11,8 +11,8 @@ class ListItem {
     this._initialize();
   }
 
-  get nameText() {
-    return this.name.textContent;
+  get name() {
+    return this.nameElement.textContent;
   }
 
   _updateState() {
@@ -26,7 +26,7 @@ class ListItem {
   }
 
   _initialize() {
-    this.name = this.containerElement.querySelector('.js-dropdown__item-name');
+    this.nameElement = this.containerElement.querySelector('.js-dropdown__item-name');
     this.valueElement = this.containerElement.querySelector('.js-dropdown__item-value');
     this.plusButton = this.containerElement.querySelector('.js-dropdown__item-plus');
     this.minusButton = this.containerElement.querySelector('.js-dropdown__item-minus');
