@@ -1,13 +1,6 @@
 const path = require('path');
-
-// После сборки создает отдельный css файл, в который помещается результат компиляции всего scss древа ссылок,
-// корень которого расположен в js файле точки входа('./src/index.js' в данном случае).
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
-// Сжимает древо pug файлов(в данном случае) в единый html файл, подтягивая в него ссылки на js и css бандлеры, созданные на основе
-// корневого js файла указанного в точке входа(/src/index.js в данном случае).
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const webpack = require('webpack');
 
 const pages = [
