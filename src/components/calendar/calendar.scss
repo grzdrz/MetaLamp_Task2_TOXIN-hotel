@@ -77,8 +77,6 @@
 
     &::-webkit-input-placeholder {
       background: $color-dark-shade-75;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       border: 0rem solid transparent;
@@ -95,7 +93,7 @@
     select:-webkit-autofill:focus {
       border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: $color-dark-shade-75;
-      -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
       transition: background-color 5000s ease-in-out 0s;
       color: $color-dark-shade-75;
     }

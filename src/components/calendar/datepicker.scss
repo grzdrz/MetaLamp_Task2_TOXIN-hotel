@@ -272,11 +272,7 @@
         font-size: 1.5rem;
         line-height: 1.5rem;
         border: 0rem solid transparent;
-        background: -moz-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
-        background: -webkit-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
         background: $gradient-purple-to-blue;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -296,8 +292,6 @@
         background: -moz-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
         background: -webkit-linear-gradient(bottom, $color-purple 0%, $color-blue 100%);
         background: $gradient-purple-to-blue;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
       }
