@@ -1,18 +1,12 @@
-include ../button/button.pug
 include ../colored-logo/colored-logo.pug
+include ../navigation-menu/navigation-menu.pug
+include ../button/button.pug
 
 mixin header(options = {})
   - 
     const { 
       isAuthorized = false, 
       userFullName = "",
-      navigationList = [
-        {url: "https://www.google.com/", text: "О нас", hasDropdown: false},
-        {url: "https://www.google.com/", text: "Услуги", hasDropdown: true},
-        {url: "https://www.google.com/", text: "Вакансии", hasDropdown: false},
-        {url: "https://www.google.com/", text: "Новости", hasDropdown: false},
-        {url: "https://www.google.com/", text: "Соглашения", hasDropdown: true},
-      ],
     } = options;
 
   header(class=["header", "js-header"])
@@ -23,13 +17,7 @@ mixin header(options = {})
         span(class=["header__burger-element", "js-header__burger-element", "header__burger-element_opened"])
         span(class=["header__burger-element", "js-header__burger-element", "header__burger-element_opened"])
     nav(class=["header__navigation-menu", "js-header__navigation-menu"])
-      ul(class=["header__list"])
-        - for(let item of navigationList)
-          li(class=["header__item"])
-            a(class=["header__item-ref"] 
-              href=item.url target="_blank" rel="noopener noreferrer")= item.text
-            - if(item.hasDropdown)
-              span(class=["header__dropdown-arrow"]) expand_more
+      +navigation-menu()
     - if(isAuthorized)
       p(class=["header__user-full-name", "js-header__user-full-name"])= userFullName
     - else

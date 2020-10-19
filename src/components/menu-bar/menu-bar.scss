@@ -15,7 +15,7 @@
       margin-top: 0.25rem;
       margin-bottom: 1.3rem;
 
-      & > .menu-bar__item-ref {
+      & .menu-bar__item-ref {
         font-weight: bold;
         font-size: 0.75rem;
         line-height: 0.9375rem;
@@ -35,5 +35,9 @@
     line-height: 1.0625rem;
     color: $color-dark-shade-50;
     word-break: break-word;
+
+    &:hover {
+      color: $color-dark-shade-75;
+    }
   }
 }

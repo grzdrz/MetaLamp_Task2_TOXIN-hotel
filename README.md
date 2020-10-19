@@ -15,6 +15,7 @@ $ npm install
 # Сборка
 ```
 $ npm run dev
+$ npm run prod
 ```
 
 # Запуск

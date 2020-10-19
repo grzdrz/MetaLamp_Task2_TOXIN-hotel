@@ -1,0 +1,107 @@
+.navigation-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 0rem 0.625rem;
+
+    @media screen and (max-width: 1000px) {
+      margin: 0.625rem 0rem;
+    }
+
+    &:first-child {
+      margin: 0rem 0.625rem 0rem 0rem;
+      font-weight: bold;
+    }
+
+    &:hover {
+      .navigation-menu__submenu {
+        display: block;
+      }
+
+      .navigation-menu__dropdown-arrow {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__item-ref {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: $color-dark-shade-50;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    white-space: nowrap;
+    letter-spacing: 0.005em;
+  }
+
+  &__item-ref-text {
+    &:hover {
+      color: $color-dark-shade-75;
+    }
+  }
+
+  &__dropdown-arrow {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: Material Icons;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    color: $color-dark-shade-50;
+  }
+
+  &__submenu {
+    z-index: 1;
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding: 0.625rem 0.625rem 0rem 0.625rem;
+    background: white;
+
+    @media screen and (max-width: 1000px) {
+      left: 90%;
+      padding-top: 0rem;
+    }
+  }
+
+  &__submenu-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0.625rem 0rem;
+
+    &:first-child {
+      margin: 0rem 0rem 0.625rem 0rem;
+    }
+
+    &:hover .navigation-menu__submenu {
+      display: block;
+    }
+  }
+
+  &__submenu-item-ref {
+    text-decoration: none;
+    color: $color-dark-shade-50;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    white-space: nowrap;
+    letter-spacing: 0.005em;
+
+    &:hover {
+      color: $color-dark-shade-75;
+    }
+  }
+}
