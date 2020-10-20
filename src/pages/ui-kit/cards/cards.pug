@@ -39,7 +39,12 @@ block content
       div(class=["cards__room-info", "js-cards__room-info"])
         +room-info({
           blockNumber: 1,
-          photosCount: 4,
+          photos: [
+            "room-888-1",
+            "room-888-2",
+            "room-888-3",
+            "room-888-4"
+          ],
           reviewsCount: 145,
           checkedStarIndex: 5,
           url: "room-details.html",
@@ -51,7 +56,12 @@ block content
       div(class=["cards__room-info", "js-cards__room-info"])
         +room-info({
           blockNumber: 2,
-          photosCount: 1,
+          photos: [
+            "room-840-1",
+            "room-840-2",
+            "room-840-3",
+            "room-840-4"
+          ],
           reviewsCount: 65,
           checkedStarIndex: 4,
           url: "room-details.html",

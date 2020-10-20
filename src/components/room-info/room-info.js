@@ -5,6 +5,7 @@ class RoomInfo {
 
     this._handleLeftArrowClick = this._handleLeftArrowClick.bind(this);
     this._handleRightArrowClick = this._handleRightArrowClick.bind(this);
+    this._handleRadioButtonClick = this._handleRadioButtonClick.bind(this);
 
     this._initialize();
   }
@@ -24,6 +25,9 @@ class RoomInfo {
       this.leftArrow.addEventListener('click', this._handleLeftArrowClick);
       this.rightArrow.addEventListener('click', this._handleRightArrowClick);
     }
+    this.radioButtons.forEach((button) => {
+      button.addEventListener('click', this._handleRadioButtonClick);
+    });
 
     this._updateState();
   }
@@ -56,6 +60,13 @@ class RoomInfo {
 
   _handleRightArrowClick() {
     this._skipPhoto(true);
+    this._updateState();
+  }
+
+  _handleRadioButtonClick(event) {
+    const target = event.target.closest('.js-room-info__radio-button');
+    const index = Number.parseInt(target.dataset.serialNumber, 10);
+    this.currentPhotoIndex = index;
     this._updateState();
   }
 }

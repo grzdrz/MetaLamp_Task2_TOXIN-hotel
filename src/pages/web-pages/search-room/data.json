@@ -2,7 +2,12 @@
   "roomsInfo": [
     {
       "blockNumber": 0,
-      "photosCount": 4,
+      "photos": [
+        "room-888-1",
+        "room-888-2",
+        "room-888-3",
+        "room-888-4"
+      ],
       "roomNumber": 888,
       "roomStatus": "люкс",
       "roomPrice": 9990,
@@ -13,7 +18,12 @@
     },
     {
       "blockNumber": 1,
-      "photosCount": 1,
+      "photos": [
+        "room-840-1",
+        "room-840-2",
+        "room-840-3",
+        "room-840-4"
+      ],
       "roomNumber": 840,
       "roomPrice": 9990,
       "currencyType": "₽",
@@ -23,7 +33,12 @@
     },
     {
       "blockNumber": 2,
-      "photosCount": 1,
+      "photos": [
+        "room-980-1",
+        "room-980-2",
+        "room-980-3",
+        "room-980-4"
+      ],
       "roomNumber": 980,
       "roomStatus": "люкс",
       "roomPrice": 8500,
@@ -34,7 +49,12 @@
     },
     {
       "blockNumber": 3,
-      "photosCount": 1,
+      "photos": [
+        "room-856-1",
+        "room-856-2",
+        "room-856-3",
+        "room-856-4"
+      ],
       "roomNumber": 856,
       "roomPrice": 7300,
       "currencyType": "₽",
@@ -44,7 +64,12 @@
     },
     {
       "blockNumber": 4,
-      "photosCount": 1,
+      "photos": [
+        "room-740-1",
+        "room-740-2",
+        "room-740-3",
+        "room-740-4"
+      ],
       "roomNumber": 740,
       "roomPrice": 6000,
       "currencyType": "₽",
@@ -54,7 +79,12 @@
     },
     {
       "blockNumber": 5,
-      "photosCount": 1,
+      "photos": [
+        "room-982-1",
+        "room-982-2",
+        "room-982-3",
+        "room-982-4"
+      ],
       "roomNumber": 982,
       "roomPrice": 5800,
       "currencyType": "₽",
@@ -64,7 +94,12 @@
     },
     {
       "blockNumber": 6,
-      "photosCount": 1,
+      "photos": [
+        "room-678-1",
+        "room-678-2",
+        "room-678-3",
+        "room-678-4"
+      ],
       "roomNumber": 678,
       "roomPrice": 5500,
       "currencyType": "₽",
@@ -74,7 +109,12 @@
     },
     {
       "blockNumber": 7,
-      "photosCount": 1,
+      "photos": [
+        "room-450-1",
+        "room-450-2",
+        "room-450-3",
+        "room-450-4"
+      ],
       "roomNumber": 450,
       "roomPrice": 5300,
       "currencyType": "₽",
@@ -84,7 +124,12 @@
     },
     {
       "blockNumber": 8,
-      "photosCount": 1,
+      "photos": [
+        "room-350-1",
+        "room-350-2",
+        "room-350-3",
+        "room-350-4"
+      ],
       "roomNumber": 350,
       "roomPrice": 5000,
       "currencyType": "₽",
@@ -94,7 +139,12 @@
     },
     {
       "blockNumber": 9,
-      "photosCount": 1,
+      "photos": [
+        "room-666-1",
+        "room-666-2",
+        "room-666-3",
+        "room-666-4"
+      ],
       "roomNumber": 666,
       "roomPrice": 5000,
       "currencyType": "₽",
@@ -104,7 +154,12 @@
     },
     {
       "blockNumber": 10,
-      "photosCount": 1,
+      "photos": [
+        "room-444-1",
+        "room-444-2",
+        "room-444-3",
+        "room-444-4"
+      ],
       "roomNumber": 444,
       "roomPrice": 5000,
       "currencyType": "₽",
@@ -114,7 +169,12 @@
     },
     {
       "blockNumber": 11,
-      "photosCount": 1,
+      "photos": [
+        "room-352-1",
+        "room-352-2",
+        "room-352-3",
+        "room-352-4"
+      ],
       "roomNumber": 352,
       "roomPrice": 5000,
       "currencyType": "₽",
