@@ -1932,6 +1932,8 @@ Build date: 2019-12-19 16:51:02
     justify-content: center;
     align-items: center;
     text-decoration: none; }
+  .pagination__left-arrow, .pagination__right-arrow, .pagination__link {
+    cursor: pointer; }
   .pagination__dots {
     cursor: context-menu; }
   .pagination__link_target {

@@ -2902,6 +2902,7 @@ body {
     right: 0.9375rem;
     bottom: 0.9375rem; }
   .room-info__radio-button {
+    cursor: pointer;
     width: 0.5rem;
     height: 0.5rem;
     margin-left: 0.2rem; }
