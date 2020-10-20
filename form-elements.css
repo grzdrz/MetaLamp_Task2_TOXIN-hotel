@@ -1339,8 +1339,7 @@ Build date: 2019-12-19 16:51:02
     .form-input__input::-webkit-input-placeholder {
       background: rgba(31, 32, 65, 0.25);
       -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
+              background-clip: text;
       -webkit-text-fill-color: transparent;
       border: 0rem solid transparent; }
     .form-input__input:-webkit-autofill, .form-input__input:-webkit-autofill:hover, .form-input__input:-webkit-autofill:focus,
@@ -1352,7 +1351,7 @@ Build date: 2019-12-19 16:51:02
     .form-input__input select:-webkit-autofill:focus {
       border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
       -webkit-transition: background-color 5000s ease-in-out 0s;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
@@ -1421,8 +1420,7 @@ Build date: 2019-12-19 16:51:02
     .dropdown__input::-webkit-input-placeholder {
       background: rgba(31, 32, 65, 0.75);
       -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
+              background-clip: text;
       -webkit-text-fill-color: transparent;
       border: 0rem solid transparent; }
     .dropdown__input:-webkit-autofill, .dropdown__input:-webkit-autofill:hover, .dropdown__input:-webkit-autofill:focus,
@@ -1434,7 +1432,7 @@ Build date: 2019-12-19 16:51:02
     .dropdown__input select:-webkit-autofill:focus {
       border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
       -webkit-transition: background-color 5000s ease-in-out 0s;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
@@ -1468,8 +1466,7 @@ Build date: 2019-12-19 16:51:02
     border: 0rem solid transparent;
     background: rgba(31, 32, 65, 0.75);
     -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
     font-size: 1.5rem;
@@ -1582,8 +1579,7 @@ Build date: 2019-12-19 16:51:02
     outline: none;
     background: rgba(31, 32, 65, 0.75);
     -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
     font-size: 1.5rem;
@@ -1797,8 +1793,7 @@ Build date: 2019-12-19 16:51:02
       position: absolute;
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
+              background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: Material Icons;
       font-size: 1.5rem;
@@ -1814,8 +1809,7 @@ Build date: 2019-12-19 16:51:02
       position: absolute;
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
       -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
+              background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: Material Icons;
       font-size: 1.5rem;
@@ -1862,8 +1856,6 @@ Build date: 2019-12-19 16:51:02
     text-decoration: none;
     border-radius: 1.375rem;
     outline: none; }
-  .button > button {
-    width: -webkit-fill-available; }
   .button__text {
     cursor: pointer;
     width: 100%;
@@ -2121,8 +2113,7 @@ Build date: 2019-12-19 16:51:02
     .calendar__input::-webkit-input-placeholder {
       background: rgba(31, 32, 65, 0.75);
       -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
+              background-clip: text;
       -webkit-text-fill-color: transparent;
       border: 0rem solid transparent; }
     .calendar__input:-webkit-autofill, .calendar__input:-webkit-autofill:hover, .calendar__input:-webkit-autofill:focus,
@@ -2134,7 +2125,7 @@ Build date: 2019-12-19 16:51:02
     .calendar__input select:-webkit-autofill:focus {
       border: 0rem solid rgba(255, 255, 255, 0);
       -webkit-text-fill-color: rgba(31, 32, 65, 0.75);
-      -webkit-box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
+      box-shadow: 0 0 0rem 62.5rem rgba(255, 255, 255, 0) inset;
       -webkit-transition: background-color 5000s ease-in-out 0s;
       transition: background-color 5000s ease-in-out 0s;
       color: rgba(31, 32, 65, 0.75); }
@@ -2356,8 +2347,7 @@ Build date: 2019-12-19 16:51:02
         border: 0rem solid transparent;
         background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
+                background-clip: text;
         -webkit-text-fill-color: transparent; }
       .datepicker--nav-action:last-child::after {
         content: 'arrow_forward';
@@ -2373,8 +2363,7 @@ Build date: 2019-12-19 16:51:02
         border: 0rem solid transparent;
         background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
         -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
+                background-clip: text;
         -webkit-text-fill-color: transparent; }
   .datepicker--days-names {
     width: 17.5rem;
@@ -2533,6 +2522,7 @@ Build date: 2019-12-19 16:51:02
     margin-right: 0.625rem;
     background: linear-gradient(to bottom, #bc9cff, #8ba4f9);
     -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
     font-size: 3rem;
