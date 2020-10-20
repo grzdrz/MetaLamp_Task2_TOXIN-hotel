@@ -697,64 +697,69 @@ body {
       color: rgba(31, 32, 65, 0.75); }
 
 .button {
-  cursor: pointer;
   width: 100%;
-  display: flex;
-  align-items: center;
-  position: relative;
-  border-radius: 1.375rem;
-  background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
-  .button__basis {
-    cursor: pointer;
-    max-width: -webkit-fill-available;
+  height: 100%;
+  position: relative; }
+  .button__background {
+    z-index: 1;
     width: 100%;
+    height: 100%;
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 1.375rem;
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+  .button__basis {
+    z-index: 2;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    outline: none;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin: 0.125rem;
-    padding: 0rem 0.625rem;
-    color: white;
-    background: transparent;
-    text-decoration: none;
+    justify-content: center;
+    box-sizing: border-box;
     border-radius: 1.375rem;
-    outline: none; }
+    background: transparent; }
   .button__text {
     cursor: pointer;
     width: 100%;
-    background: transparent;
+    margin: 0rem 1rem;
     text-align: center;
+    background: transparent;
     color: white;
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 2.5rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
-    .button__text_in-header {
-      line-height: 1.875rem; }
   .button__arrow {
     cursor: pointer;
     position: absolute;
     right: 0.7rem;
     font-family: Material Icons;
     font-size: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center; }
-  .button__submit {
-    cursor: pointer;
-    position: absolute;
-    opacity: 0; }
-  .button:hover {
+    text-align: center;
+    color: white; }
+  .button:hover .button__background {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
-  .button_hollow > .button__basis {
-    background: white; }
-    .button_hollow > .button__basis > .button__arrow {
-      color: #bc9cff; }
-    .button_hollow > .button__basis > .button__text {
-      color: #bc9cff;
-      z-index: 1; }
+  .button_hollow .button__basis {
+    background: white;
+    background-clip: padding-box;
+    border: solid 0.125rem transparent; }
+  .button_hollow .button__arrow {
+    color: #bc9cff; }
+  .button_hollow .button__text {
+    color: #bc9cff; }
 
 .header {
   width: 100%;
@@ -824,13 +829,15 @@ body {
         margin-top: 1.25rem; } }
   .header__sign-in-button {
     width: 5.4375rem;
+    height: 2.125rem;
     margin-right: 1.25rem; }
     @media screen and (max-width: 550px) {
       .header__sign-in-button {
         margin-right: 0rem;
         margin-bottom: 0.625rem; } }
   .header__sign-up-button {
-    width: 12.25rem; }
+    width: 12.25rem;
+    height: 2.125rem; }
   .header__burger {
     cursor: pointer;
     width: 3.125rem;
@@ -1383,64 +1390,69 @@ body {
       display: flex; }
 
 .button {
-  cursor: pointer;
   width: 100%;
-  display: flex;
-  align-items: center;
-  position: relative;
-  border-radius: 1.375rem;
-  background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
-  .button__basis {
-    cursor: pointer;
-    max-width: -webkit-fill-available;
+  height: 100%;
+  position: relative; }
+  .button__background {
+    z-index: 1;
     width: 100%;
+    height: 100%;
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 1.375rem;
+    background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+  .button__basis {
+    z-index: 2;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    outline: none;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin: 0.125rem;
-    padding: 0rem 0.625rem;
-    color: white;
-    background: transparent;
-    text-decoration: none;
+    justify-content: center;
+    box-sizing: border-box;
     border-radius: 1.375rem;
-    outline: none; }
+    background: transparent; }
   .button__text {
     cursor: pointer;
     width: 100%;
-    background: transparent;
+    margin: 0rem 1rem;
     text-align: center;
+    background: transparent;
     color: white;
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 2.5rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden; }
     .button__text_with-arrow {
       margin: 0rem 2.5rem; }
-    .button__text_in-header {
-      line-height: 1.875rem; }
   .button__arrow {
     cursor: pointer;
     position: absolute;
     right: 0.7rem;
     font-family: Material Icons;
     font-size: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center; }
-  .button__submit {
-    cursor: pointer;
-    position: absolute;
-    opacity: 0; }
-  .button:hover {
+    text-align: center;
+    color: white; }
+  .button:hover .button__background {
     background: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)); }
-  .button_hollow > .button__basis {
-    background: white; }
-    .button_hollow > .button__basis > .button__arrow {
-      color: #bc9cff; }
-    .button_hollow > .button__basis > .button__text {
-      color: #bc9cff;
-      z-index: 1; }
+  .button_hollow .button__basis {
+    background: white;
+    background-clip: padding-box;
+    border: solid 0.125rem transparent; }
+  .button_hollow .button__arrow {
+    color: #bc9cff; }
+  .button_hollow .button__text {
+    color: #bc9cff; }
 
 .room-finder-form {
   width: 100%;
@@ -1468,7 +1480,8 @@ body {
     width: 100%;
     margin-bottom: 1.9375rem; }
   .room-finder-form__submit-button {
-    width: 100%; }
+    width: 100%;
+    height: 2.75rem; }
 
 .form-input {
   width: 100%; }
