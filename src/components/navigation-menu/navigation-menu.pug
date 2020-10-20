@@ -1,34 +1,40 @@
 mixin navigation-menu(options = {})
   -
     const {
-      navigationList = [
-        {url: "https://www.error.com/", text: "О нас", hasDropdown: false},
-        {url: "https://www.error.com/", text: "Услуги", hasDropdown: true, submenu: [
-          {url: "https://www.error.com/", text: "Вакансии"},
-          {url: "https://www.error.com/", text: "Новости"},
-          {url: "https://www.error.com/", text: "Соглашения"},
+      refs = [
+        {url: "https://www.error.com/", isOuter: true, text: "О нас", hasDropdown: false},
+        {url: "https://www.error.com/", isOuter: true, text: "Услуги", hasDropdown: true, subrefs: [
+          {url: "https://www.error.com/", isOuter: true, text: "Вакансии"},
+          {url: "https://www.error.com/", isOuter: true, text: "Новости"},
+          {url: "https://www.error.com/", isOuter: true, text: "Соглашения"},
         ]},
-        {url: "https://www.error.com/", text: "Вакансии", hasDropdown: false},
-        {url: "https://www.error.com/", text: "Новости", hasDropdown: false},
-        {url: "https://www.error.com/", text: "Соглашения", hasDropdown: true, submenu: [
-          {url: "https://www.error.com/", text: "Вакансии"},
-          {url: "https://www.error.com/", text: "Новости"},
-          {url: "https://www.error.com/", text: "Соглашения"},
+        {url: "https://www.error.com/", isOuter: true, text: "Вакансии", hasDropdown: false},
+        {url: "https://www.error.com/", isOuter: true, text: "Новости", hasDropdown: false},
+        {url: "https://www.error.com/", isOuter: true, text: "Соглашения", hasDropdown: true, subrefs: [
+          {url: "https://www.error.com/", isOuter: true, text: "Вакансии"},
+          {url: "https://www.error.com/", isOuter: true, text: "Новости"},
+          {url: "https://www.error.com/", isOuter: true, text: "Соглашения"},
         ]},
       ],
     } = options;
 
   ul(class=["navigation-menu"])
-    - for(let item of navigationList)
+    - for(let ref of refs)
       li(class=["navigation-menu__item"])
-        - if(item.hasDropdown){
+        - if(ref.hasDropdown){
           div(class=["navigation-menu__item-ref"])
             ul(class=["navigation-menu__submenu"])
-              - for(let subitem of item.submenu)
+              - for(let subref of ref.subrefs)
                 li(class=["navigation-menu__submenu-item"]) 
-                  a(class=["navigation-menu__submenu-item-ref"] href=subitem.url target="_blank" rel="noopener noreferrer")= subitem.text
-            span(class=["navigation-menu__item-ref-text"])= item.text
+                  a(class=["navigation-menu__submenu-item-ref"] 
+                    href=subref.url 
+                    target=(subref.isOuter ? "_blank" : "") 
+                    rel=(subref.isOuter ? "noopener noreferrer" : ""))= subref.text
+            span(class=["navigation-menu__item-ref-text"])= ref.text
           div(class=["navigation-menu__dropdown-arrow"]) expand_more
         - }
         - else
-          a(class=["navigation-menu__item-ref"] href=item.url target="_blank" rel="noopener noreferrer")= item.text
+          a(class=["navigation-menu__item-ref"] 
+            href=ref.url 
+            target=(ref.isOuter ? "_blank" : "") 
+            rel=(ref.isOuter ? "noopener noreferrer" : ""))= ref.text

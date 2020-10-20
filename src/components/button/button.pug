@@ -5,7 +5,8 @@ mixin button(options = {})
       hasArrow = false,
       buttonType = "a",
       text = "click me",
-      url = "",
+      url = "https://error.com/",
+      isOuterRef = true,
       isForHeader = false,
     } = options;
     const containerClasses = (isHollow ? ["button_hollow"] : []);
@@ -14,8 +15,7 @@ mixin button(options = {})
 
   div(class=["button"].concat(containerClasses))
     - if(buttonType === "a")
-      a(class=["button__basis"] 
-        href=(url || "https://errorpage.com") target=(url ? "_blank" : "") rel=(url ? "noopener noreferrer" : ""))
+      a(class=["button__basis"] href=url target=(isOuterRef ? "_blank" : "") rel=(isOuterRef ? "noopener noreferrer" : ""))
         - if(hasArrow)
           span(class=["button__arrow"]) arrow_forward
         span(class=["button__text"].concat(textClasses))= text

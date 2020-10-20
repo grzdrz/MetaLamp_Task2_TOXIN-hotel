@@ -11,32 +11,24 @@ mixin footer(options = {})
         p(class=["footer__general-info-text"]) 
           | Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
       nav(class=["footer__menu-bar"])
+        +menu-bar()
+      nav(class=["footer__menu-bar"])
         +menu-bar({
           refs: [
-            {url: "https://errorpage.com", text: "навигация"},
-            {url: "https://errorpage.com", text: "О нас"}, 
-            {url: "https://errorpage.com", text: "Новости"}, 
-            {url: "https://errorpage.com", text: "Служба поддержки"}, 
-            {url: "https://errorpage.com", text: "Услуги"},
+            {url: "https://error.com", isOuter: true, text: "о нас"}, 
+            {url: "https://error.com", isOuter: true, text: "О сервисе"}, 
+            {url: "https://error.com", isOuter: true, text: "Наша команда"}, 
+            {url: "https://error.com", isOuter: true, text: "Вакансии"}, 
+            {url: "https://error.com", isOuter: true, text: "Инвесторы"},
           ]
         })
       nav(class=["footer__menu-bar"])
         +menu-bar({
           refs: [
-            {url: "https://errorpage.com", text: "о нас"}, 
-            {url: "https://errorpage.com", text: "О сервисе"}, 
-            {url: "https://errorpage.com", text: "Наша команда"}, 
-            {url: "https://errorpage.com", text: "Вакансии"}, 
-            {url: "https://errorpage.com", text: "Инвесторы"},
-          ]
-        })
-      nav(class=["footer__menu-bar"])
-        +menu-bar({
-          refs: [
-            {url: "https://errorpage.com", text: "Служба поддержки"}, 
-            {url: "https://errorpage.com", text: "Соглашения"}, 
-            {url: "https://errorpage.com", text: "Сообщества"},
-            {url: "https://errorpage.com", text: "Связь с нами"},
+            {url: "https://error.com", isOuter: true, text: "Служба поддержки"}, 
+            {url: "https://error.com", isOuter: true, text: "Соглашения"}, 
+            {url: "https://error.com", isOuter: true, text: "Сообщества"},
+            {url: "https://error.com", isOuter: true, text: "Связь с нами"},
           ]
         })           
       div(class=["footer__subscription"])

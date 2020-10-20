@@ -106,6 +106,7 @@
   }
 
   &__radio-button {
+    cursor: pointer;
     width: $radioButtonSize;
     height: $radioButtonSize;
     margin-left: 0.2rem;

@@ -35,6 +35,12 @@
     text-decoration: none;
   }
 
+  &__left-arrow,
+  &__right-arrow,
+  &__link {
+    cursor: pointer;
+  }
+
   &__dots {
     cursor: context-menu;
   }

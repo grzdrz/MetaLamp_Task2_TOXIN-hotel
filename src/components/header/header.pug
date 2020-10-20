@@ -29,7 +29,8 @@ mixin header(options = {})
             buttonType: "a",
             hasArrow: false,
             isForHeader: true,
-            url: "sign-in.html"
+            url: "sign-in.html",
+            isOuterRef: false,
           })
         div(class=["header__sign-up-button"])
           +button({
@@ -38,5 +39,6 @@ mixin header(options = {})
             buttonType: "a",
             hasArrow: false,
             isForHeader: true,
-            url: "registration.html"
+            url: "registration.html",
+            isOuterRef: false,
           })
