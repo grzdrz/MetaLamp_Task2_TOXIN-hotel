@@ -3,30 +3,25 @@ mixin button(options = {})
     const { 
       isHollow = false,
       hasArrow = false,
-      buttonType = "a",
+      basis = "a",
       text = "click me",
       url = "https://error.com/",
       isOuterRef = true,
       isForHeader = false,
+      buttonType = "button",
     } = options;
     const containerClasses = (isHollow ? ["button_hollow"] : []);
     const textClasses = (hasArrow ? ["button__text_with-arrow"] : []);
-    textClasses.push(isForHeader ? "button__text_in-header" : "");
 
-  div(class=["button"].concat(containerClasses))
-    - if(buttonType === "a")
+  div(class=['button'].concat(containerClasses))
+    div(class='button__background')
+    - if(basis === "a")
       a(class=["button__basis"] href=url target=(isOuterRef ? "_blank" : "") rel=(isOuterRef ? "noopener noreferrer" : ""))
         - if(hasArrow)
           span(class=["button__arrow"]) arrow_forward
         span(class=["button__text"].concat(textClasses))= text
-    - else if(buttonType === "button")
-      button(class=["button__basis"])
-        - if(hasArrow)
-          span(class=["button__arrow"]) arrow_forward
-        span(class=["button__text"].concat(textClasses))= text
-    - else if(buttonType === "submit")
-      label(class=["button__basis"])
-        input(class=["button__submit"] type="submit")
+    - else
+      button(class=["button__basis"].concat(containerClasses) type=buttonType)
         - if(hasArrow)
           span(class=["button__arrow"]) arrow_forward
         span(class=["button__text"].concat(textClasses))= text

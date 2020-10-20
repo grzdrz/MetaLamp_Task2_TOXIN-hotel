@@ -3,49 +3,57 @@
 $borderRadius: 1.375rem;
 
 .button {
-  cursor: pointer;
   width: 100%;
-  display: flex;
-  align-items: center;
+  height: 100%;
   position: relative;
-  border-radius: $borderRadius;
-  background: $gradient-purple-to-blue;
+
+  &__background {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: $borderRadius;
+    background: $gradient-purple-to-blue;
+  }
 
   &__basis {
+    z-index: 2;
     cursor: pointer;
-    max-width: -webkit-fill-available;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    outline: none;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin: 0.125rem;
-    padding: 0rem 0.625rem;
-    color: white;
-    background: transparent;
-    text-decoration: none;
+    justify-content: center;
+    box-sizing: border-box;
     border-radius: $borderRadius;
-    outline: none;
+    background: transparent;
   }
 
   &__text {
     cursor: pointer;
     width: 100%;
-    background: transparent;
+    margin: 0rem 1rem;
     text-align: center;
+    background: transparent;
     color: white;
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     font-size: 0.75rem;
-    line-height: 2.5rem;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
 
     &_with-arrow {
       margin: 0rem 2.5rem;
-    }
-
-    &_in-header {
-      line-height: 1.875rem;
     }
   }
 
@@ -55,32 +63,29 @@ $borderRadius: 1.375rem;
     right: 0.7rem;
     font-family: Material Icons;
     font-size: 1.5rem;
-    line-height: 1.5rem;
     text-align: center;
-  }
-
-  &__submit {
-    cursor: pointer;
-    position: absolute;
-    opacity: 0;
+    color: white;
   }
 
   &:hover {
-    background: $gradient-purple-to-blue-50;
+    .button__background {
+      background: $gradient-purple-to-blue-50;
+    }
   }
 
   &_hollow {
-    & > .button__basis {
+    .button__basis {
       background: white;
+      background-clip: padding-box;
+      border: solid 0.125rem transparent;
+    }
 
-      & > .button__arrow {
-        color: $color-purple;
-      }
+    .button__arrow {
+      color: $color-purple;
+    }
 
-      & > .button__text {
-        color: $color-purple;
-        z-index: 1;
-      }
+    .button__text {
+      color: $color-purple;
     }
   }
 }

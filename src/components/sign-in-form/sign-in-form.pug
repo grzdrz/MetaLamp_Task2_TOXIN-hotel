@@ -26,6 +26,7 @@ mixin sign-in-form(options = {})
       +button({
         text: "войти",
         isHollow: false,
+        basis: "button",
         buttonType: "submit",
         hasArrow: true,
       })
@@ -35,6 +36,6 @@ mixin sign-in-form(options = {})
         +button({
           text: "создать",
           isHollow:  true,
-          buttonType: "a",
+          basis: "a",
           hasArrow: false,
         })

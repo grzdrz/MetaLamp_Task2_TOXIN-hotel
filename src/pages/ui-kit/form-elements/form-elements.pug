@@ -158,28 +158,29 @@ block content
           +button({
             text: "click me",
             isHollow:  false,
-            buttonType: "button",
+            basis: "a",
             hasArrow: false,
           })
         div(class=["form-elements__button_type_simple-hover"])
           +button({
             text: "click me",
             isHollow:  false,
-            buttonType: "button",
+            basis: "a",
             hasArrow: false,              
           })   
         div(class=["form-elements__button_type_hollow"])
           +button({
             text: "click me",
             isHollow:  true,
-            buttonType: "a",
+            basis: "button",
+            buttonType: "submit",
             hasArrow: false,               
           })
         div(class=["form-elements__button_type_hollow-hover"])
           +button({
             text: "click me",
             isHollow:  true,
-            buttonType: "a",
+            basis: "button",
             hasArrow: false,               
           }) 
       div(class=["form-elements__text-buttons"])
@@ -195,6 +196,7 @@ block content
         +button({
           text: "перейти к оплате",
           isHollow:  false,
+          basis: "button",
           buttonType: "submit",
           hasArrow: true,               
         })
