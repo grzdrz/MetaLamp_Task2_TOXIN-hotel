@@ -85,9 +85,7 @@ body {
     position: absolute; }
   .pie-chart__outer-path {
     cursor: pointer; }
-  .pie-chart__inner-path {
-    fill: white; }
-  .pie-chart__central-circle {
+  .pie-chart__inner-path, .pie-chart__central-circle {
     fill: white; }
   .pie-chart__current-segment {
     position: absolute;
@@ -96,13 +94,13 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bold; }
-    .pie-chart__current-segment-0 {
+    .pie-chart__current-segment_with-name_great {
       color: #ffba9c; }
-    .pie-chart__current-segment-1 {
+    .pie-chart__current-segment_with-name_good {
       color: #6fcf97; }
-    .pie-chart__current-segment-2 {
+    .pie-chart__current-segment_with-name_normal {
       color: #bc9cff; }
-    .pie-chart__current-segment-3 {
+    .pie-chart__current-segment_with-name_bad {
       color: #919191; }
   .pie-chart__current-segment-value {
     font-family: Quicksand, OpenSans, Arial, sans-serif;
@@ -133,13 +131,13 @@ body {
     height: 0.625rem;
     margin-right: 0.3125rem;
     border-radius: 50%; }
-    .pie-chart__item-marker-0 {
+    .pie-chart__item-marker_with-name_great {
       background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%); }
-    .pie-chart__item-marker-1 {
+    .pie-chart__item-marker_with-name_good {
       background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%); }
-    .pie-chart__item-marker-2 {
+    .pie-chart__item-marker_with-name_normal {
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
-    .pie-chart__item-marker-3 {
+    .pie-chart__item-marker_with-name_bad {
       background: linear-gradient(180deg, #919191 0%, #3d4975 100%); }
   .pie-chart__item-text {
     max-width: 9.375rem;
@@ -2170,9 +2168,7 @@ body {
     position: absolute; }
   .pie-chart__outer-path {
     cursor: pointer; }
-  .pie-chart__inner-path {
-    fill: white; }
-  .pie-chart__central-circle {
+  .pie-chart__inner-path, .pie-chart__central-circle {
     fill: white; }
   .pie-chart__current-segment {
     position: absolute;
@@ -2181,13 +2177,13 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bold; }
-    .pie-chart__current-segment-0 {
+    .pie-chart__current-segment_with-name_great {
       color: #ffba9c; }
-    .pie-chart__current-segment-1 {
+    .pie-chart__current-segment_with-name_good {
       color: #6fcf97; }
-    .pie-chart__current-segment-2 {
+    .pie-chart__current-segment_with-name_normal {
       color: #bc9cff; }
-    .pie-chart__current-segment-3 {
+    .pie-chart__current-segment_with-name_bad {
       color: #919191; }
   .pie-chart__current-segment-value {
     font-family: Quicksand, OpenSans, Arial, sans-serif;
@@ -2218,13 +2214,13 @@ body {
     height: 0.625rem;
     margin-right: 0.3125rem;
     border-radius: 50%; }
-    .pie-chart__item-marker-0 {
+    .pie-chart__item-marker_with-name_great {
       background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%); }
-    .pie-chart__item-marker-1 {
+    .pie-chart__item-marker_with-name_good {
       background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%); }
-    .pie-chart__item-marker-2 {
+    .pie-chart__item-marker_with-name_normal {
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
-    .pie-chart__item-marker-3 {
+    .pie-chart__item-marker_with-name_bad {
       background: linear-gradient(180deg, #919191 0%, #3d4975 100%); }
   .pie-chart__item-text {
     max-width: 9.375rem;
