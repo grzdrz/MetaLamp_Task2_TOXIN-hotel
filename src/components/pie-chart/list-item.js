@@ -4,21 +4,23 @@ class ListItem {
     this.container = container;
     this.segment = segment;
 
-    this.handleItemMouseOver = this.handleItemMouseOver.bind(this);
-    this.handleItemMouseOut = this.handleItemMouseOut.bind(this);
+    this._handleItemMouseOver = this._handleItemMouseOver.bind(this);
+    this._handleItemMouseOut = this._handleItemMouseOut.bind(this);
   }
 
   initialize() {
-    this.container.addEventListener('mouseover', this.handleItemMouseOver);
-    this.container.addEventListener('mouseout', this.handleItemMouseOut);
+    this.container.addEventListener('mouseover', this._handleItemMouseOver);
+    this.container.addEventListener('mouseout', this._handleItemMouseOut);
   }
 
-  handleItemMouseOver() {
-    this.segment.handleSegmentMouseOver();
+  _handleItemMouseOver() {
+    this.segment.isTargeted = true;
+    this.chart.render();
   }
 
-  handleItemMouseOut() {
-    this.segment.handleSegmentMouseOut();
+  _handleItemMouseOut() {
+    this.segment.isTargeted = false;
+    this.chart.render();
   }
 }
 

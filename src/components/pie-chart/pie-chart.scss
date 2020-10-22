@@ -26,10 +26,7 @@
     cursor: pointer;
   }
 
-  &__inner-path {
-    fill: white;
-  }
-
+  &__inner-path,
   &__central-circle {
     fill: white;
   }
@@ -42,16 +39,16 @@
     align-items: center;
     font-weight: bold;
 
-    &-0 {
+    &_with-name_great {
       color: $color-peach;
     }
-    &-1 {
+    &_with-name_good {
       color: $color-green;
     }
-    &-2 {
+    &_with-name_normal {
       color: $color-purple;
     }
-    &-3 {
+    &_with-name_bad {
       color: $color-gray;
     }
   }
@@ -95,16 +92,16 @@
     margin-right: 0.3125rem;
     border-radius: 50%;
 
-    &-0 {
+    &_with-name_great {
       background: $gradient-yellow-to-peach;
     }
-    &-1 {
+    &_with-name_good {
       background: $gradient-green-to-turquoise;
     }
-    &-2 {
+    &_with-name_normal {
       background: $gradient-purple-to-blue;
     }
-    &-3 {
+    &_with-name_bad {
       background: $gradient-gray-to-blue;
     }
   }
