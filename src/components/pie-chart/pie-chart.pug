@@ -1,42 +1,45 @@
 mixin pie-chart(options = {})
   -
     const {
-      title = "Впечатления от номера",
-      totalValue = 0,
-      legends = ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"],
-      gradients = ["yellow-to-peach", "green-to-turquoise", "purple-to-blue", "gray-to-blue"],
+      outerRadius = 60,
+      innerRadius = 56,
+      hoveredInnerRadius = 50,
+      intervalBetweenArcs = 1,
+      segments = [
+        { value: 520, topColor: "rgb(255, 227, 156)", bottomColor: "rgb(255, 186, 156)", name: "Великолепно" },
+        { value: 260, topColor: "rgb(111, 207, 151)", bottomColor: "rgb(102, 210, 234)", name: "Хорошо" },
+        { value: 260, topColor: "rgb(188, 156, 255)", bottomColor: "rgb(139, 164, 249)", name: "Удовлетворительно" },
+        { value: 0, topColor: "rgb(145, 145, 145)", bottomColor: "rgb(61, 73, 117)", name: "Разочарован" },
+      ],
     } = options;
 
-    function doDeclensionOfWord(number){
-      const words = ["голос", "голоса", "голосов"];
-
-      const stringifiedNumber = number.toString();
-      const isEndOnOne = stringifiedNumber[stringifiedNumber.length - 1] === "1";
-      const isNotEqualEleven = number !== 11;
-      if (isEndOnOne && isNotEqualEleven)
-        return words[0];
-
-      const isEndNumberMoreThenOne = stringifiedNumber[stringifiedNumber.length - 1] > 1;
-      const isEndNumberLessThenFour = stringifiedNumber[stringifiedNumber.length - 1] <= 4;
-      const isEndNumberBetweenTwelveAndFourteen = number < 12 || number > 14;
-      const isSecondWord = isEndNumberMoreThenOne && isEndNumberLessThenFour && isEndNumberBetweenTwelveAndFourteen;
-      if (isSecondWord)
-        return words[1];
-
-      return words[2];
-    }
-    const listLength = Math.min(legends.length, gradients.length);
-
-  div(class=["pie-chart"])
-    - if(title)
-      div(class=["pie-chart__title"])= title
-    div(class=["pie-chart__content"])
-      div(class=["pie-chart__pie"])
-      p(class=["pie-chart__inner-text"])
-        span(class=["pie-chart__inner-text-number"])= totalValue
-        span(class=["pie-chart__inner-text-word"])= doDeclensionOfWord(totalValue)
-      ul(class=["pie-chart__legend"])
-        - for(let i = 0; i < listLength; i += 1)
-          li(class=["pie-chart__legend-item"])
-            div(class=["pie-chart__legend-item-marker", `pie-chart__legend-item-marker_gradient_${gradients[i]}`])
-            p(class=["pie-chart__legend-item-text"])= legends[i]
+  div(class=["pie-chart"] 
+    data-outer-radius=outerRadius 
+    data-inner-radius=innerRadius 
+    data-hovered-inner-radius=hoveredInnerRadius
+    data-interval-between-arcs=intervalBetweenArcs)
+    div(class=["pie-chart__svg-container"])
+      svg(class=["pie-chart__svg"])
+        defs(class=["pie-chart__defs"])
+          - for(let i = 0; i < segments.length; i += 1) {
+            linearGradient(class=["pie-chart__gradient"] id=`${segments[i].name}${i}` x1="0" y1="0" x2="0" y2="1")
+              stop(class=["pie-chart__top-color"] offset="0%" stop-color=`${segments[i].topColor}`)
+              stop(class=["pie-chart__bottom-color"] offset="100%" stop-color=`${segments[i].bottomColor}`)
+          - }
+        g(class=["pie-chart__paths"] transform=`translate(${outerRadius},${outerRadius})`)
+          - for(let i = 0; i < segments.length; i += 1) {
+            path(class=["pie-chart__outer-path", `pie-chart__outer-path-${i}`, `js-pie-chart__outer-path-${i}`] style=`fill:url(#${segments[i].name}${i})`
+              data-value=segments[i].value data-name=segments[i].name data-index=i)
+            path(class=["pie-chart__inner-path", `pie-chart__inner-path-${i}`, `js-pie-chart__inner-path-${i}`]
+              data-value=segments[i].value data-name=segments[i].name data-index=i)
+          - }
+        circle(class=["pie-chart__central-circle"] cx="0" cy="0" r=hoveredInnerRadius transform=`translate(${outerRadius},${outerRadius})`)
+      div(class=["pie-chart__current-segment"])
+        div(class=["pie-chart__current-segment-value"])
+        div(class=["pie-chart__current-segment-name"])
+    div(class=["pie-chart__chart-list"])
+      - for(let i = 0; i < segments.length; i += 1){
+        div(class=["pie-chart__list-item", `pie-chart__list-item-${i}`] data-index=i)
+          div(class=["pie-chart__item-marker", `pie-chart__item-marker-${i}`])
+          div(class=["pie-chart__item-text", `pie-chart__item-text-${i}`])= segments[i].name
+      - }

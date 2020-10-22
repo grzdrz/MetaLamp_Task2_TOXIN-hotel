@@ -1,121 +1,119 @@
 @import '../../assets/constants.scss';
 
 .pie-chart {
-  width: max-content;
   display: flex;
-  flex-direction: column;
 
   @media screen and(max-width: 400px) {
+    flex-direction: column;
+  }
+
+  &__svg-container {
+    width: 7.5rem;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
-  }
-
-  &__title {
-    margin-bottom: 1.125rem;
-    margin-left: 0.9375rem;
-    font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 1.1875rem;
-    line-height: 1.5rem;
-    color: $color-dark-shade-100;
-  }
-
-  &__content {
-    width: max-content;
-    display: flex;
     position: relative;
-
-    @media screen and(max-width: 400px) {
-      flex-direction: column;
-      align-items: center;
-    }
   }
 
-  &__pie {
+  &__svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  &__outer-path {
+    cursor: pointer;
+  }
+
+  &__inner-path {
+    fill: white;
+  }
+
+  &__central-circle {
+    fill: white;
+  }
+
+  &__current-segment {
+    position: absolute;
     display: flex;
-  }
-
-  &__inner-text {
-    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    margin-left: 2.875rem;
-    margin-top: 2.3125rem;
+    font-weight: bold;
 
-    @media screen and(max-width: 400px) {
-      margin-left: 0.3125rem;
-      margin-top: 2.3125rem;
+    &-0 {
+      color: $color-peach;
+    }
+    &-1 {
+      color: $color-green;
+    }
+    &-2 {
+      color: $color-purple;
+    }
+    &-3 {
+      color: $color-gray;
     }
   }
 
-  &__inner-text-number {
-    display: flex;
-    align-items: center;
-    text-align: center;
+  &__current-segment-value {
     font-family: Quicksand, OpenSans, Arial, sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.875rem;
-    color: $color-purple;
   }
 
-  &__inner-text-word {
+  &__current-segment-name {
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
-    text-align: center;
     text-transform: uppercase;
-    color: $color-purple;
   }
 
-  &__legend {
-    list-style-type: none;
+  &__chart-list {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 1.0625rem;
-    margin-bottom: 0.25rem;
+    margin-left: 1.875rem;
+    margin-top: 1.6rem;
 
     @media screen and(max-width: 400px) {
-      margin-left: 2.5rem;
-      margin-top: 0.625rem;
+      margin-left: 0rem;
+      margin-top: 1.875rem;
     }
   }
 
-  &__legend-item {
+  &__list-item {
+    cursor: pointer;
     display: flex;
     align-items: center;
   }
 
-  &__legend-item-marker {
-    min-width: 0.625rem;
+  &__item-marker {
+    width: 0.625rem;
     height: 0.625rem;
-    position: absolute;
+    margin-right: 0.3125rem;
     border-radius: 50%;
-    background: black;
 
-    &_gradient_yellow-to-peach {
+    &-0 {
       background: $gradient-yellow-to-peach;
     }
-
-    &_gradient_green-to-turquoise {
+    &-1 {
       background: $gradient-green-to-turquoise;
     }
-
-    &_gradient_purple-to-blue {
+    &-2 {
       background: $gradient-purple-to-blue;
     }
-
-    &_gradient_gray-to-blue {
+    &-3 {
       background: $gradient-gray-to-blue;
     }
   }
 
-  &__legend-item-text {
-    margin-left: 0.9375rem;
+  &__item-text {
+    max-width: 9.375rem;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: $color-dark-shade-75;
+    word-break: break-word;
   }
 }

@@ -97,12 +97,21 @@
     }
   }
 
-  &__pie-chart {
-    margin-left: 0.9375rem;
+  &__pie-chart-container {
+    margin-left: 1.9rem;
 
     @media screen and (max-width: 800px) {
       margin-top: 1.875rem;
     }
+  }
+
+  &__pie-chart-title {
+    margin-bottom: 1.3125rem;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    color: $color-dark-shade-100;
   }
 
   &__room-advantages {

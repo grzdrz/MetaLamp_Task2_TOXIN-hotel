@@ -28,11 +28,10 @@ block content
             ],
             hasLastBorderBottom: false,
           })
-        div(class=["room-details__pie-chart", "js-form-elements__pie-chart"])
-          +pie-chart({
-            totalValue: 260,
-            legends: ["Великолепно", "Хорошо", "Удовлетворительно", "Разочарован"]
-          })
+        div(class=["room-details__pie-chart-container", "js-form-elements__pie-chart"])
+          p(class=["room-details__pie-chart-title"]) Впечатления от номера
+          div(class=["room-details__pie-chart"])
+            +pie-chart()
         div(class=["room-details__room-reviews"])
           +room-reviews({
             hasTitle: true,

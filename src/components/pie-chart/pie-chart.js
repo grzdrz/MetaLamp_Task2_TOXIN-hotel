@@ -1,50 +1,71 @@
-import ApexCharts from 'apexcharts';
+import Segment from './segment';
+import ListItem from './list-item';
+
+import './pie-chart.scss';
 
 class PieChart {
-  constructor(outerContainerElement) {
-    this.outerContainerElement = outerContainerElement;
-    this.chart = {};
+  constructor(outerContainer) {
+    this.outerContainer = outerContainer;
 
-    this._initialize();
+    this.initialize();
   }
 
-  _initialize() {
-    this.containerElement = this.outerContainerElement.querySelector('.pie-chart .pie-chart__pie');
+  initialize() {
+    this.container = this.outerContainer.querySelector('.pie-chart');
+    this.chartListContainer = this.container.querySelector('.pie-chart__chart-list');
+    this.currentSegment = this.container.querySelector('.pie-chart__current-segment');
+    this.currentSegmentValue = this.container.querySelector('.pie-chart__current-segment-value');
+    this.currentSegmentName = this.container.querySelector('.pie-chart__current-segment-name');
 
-    const options = {
-      chart: {
-        offsetX: 0,
-        type: 'donut',
-        height: '150px',
-        width: '150px',
-      },
-      dataLabels: {
-        enabled: false,
-      },
-      legend: {
-        show: false,
-      },
-      series: [25, 25, 50, 0],
-      labels: ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован'],
-      plotOptions: {
-        pie: {
-          donut: {
-            size: '112px',
-          },
-        },
-      },
-      colors: ['#BC9CFF', '#6FCF97', '#FFE39C', '#919191'],
-      fill: {
-        type: 'gradient',
-        gradient: {
-          gradientToColors: ['#8BA4F9', '#66D2EA', '#FFBA9C', '#3D4975'],
-          stops: [80, 100],
-        },
-      },
-    };
+    this.extractData();
+    this.createSegments();
+    this.createListItems();
 
-    this.chart = new ApexCharts(this.containerElement, options);
-    this.chart.render();
+    this.totalValue = this.segments.reduce((previousValue, currentSegment) => previousValue + currentSegment.value, 0);
+
+    this.segments.forEach((segment) => segment.initialize());
+    this.items.forEach((item) => item.initialize());
+
+    this.render();
+  }
+
+  extractData() {
+    this.outerRadius = Number.parseInt(this.container.dataset.outerRadius, 10);
+    this.innerRadius = Number.parseInt(this.container.dataset.innerRadius, 10);
+    this.hoveredInnerRadius = Number.parseInt(this.container.dataset.hoveredInnerRadius, 10);
+    this.intervalBetweenArcs = Number.parseInt(this.container.dataset.intervalBetweenArcs, 10);
+  }
+
+  createSegments() {
+    const pathsContainer = this.container.querySelector('.pie-chart__paths');
+    const outerPaths = Array.from(pathsContainer.querySelectorAll('.pie-chart__outer-path'));
+    const innerPaths = Array.from(pathsContainer.querySelectorAll('.pie-chart__inner-path'));
+
+    this.segments = [];
+    outerPaths.forEach((outerPath, index) => {
+      this.segments.push(new Segment(this, index, outerPath, innerPaths[index]));
+    });
+  }
+
+  createListItems() {
+    const itemsContainer = Array.from(this.chartListContainer.querySelectorAll('.pie-chart__list-item'));
+    this.items = itemsContainer.map((itemContainer, index) => new ListItem(this, itemContainer, this.segments[index]));
+  }
+
+  render() {
+    this.segments.forEach((segment) => {
+      segment.render();
+    });
+
+    const targetedSegment = this.segments.find((segment) => segment.isTargeted);
+    if (targetedSegment) {
+      this.currentSegmentValue.textContent = targetedSegment.value;
+      this.currentSegmentName.textContent = 'голосов';
+      this.currentSegment.classList.toggle(`pie-chart__current-segment-${targetedSegment.index}`, true);
+    } else {
+      this.currentSegmentValue.textContent = this.totalValue;
+      this.currentSegmentName.textContent = 'голосов';
+    }
   }
 }
 
