@@ -1374,7 +1374,8 @@ Build date: 2019-12-19 16:51:02
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0.3125rem; }
+    margin-bottom: 0.3125rem;
+    word-break: break-all; }
   .dropdown__title-text {
     font-weight: bold;
     font-size: 0.75rem;
@@ -1526,7 +1527,9 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .dropdown__apply-button:hover, .dropdown__apply-button:focus {
       color: rgba(31, 32, 65, 0.5); }
   .dropdown__clear-button {
@@ -1536,7 +1539,9 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .dropdown__clear-button:hover, .dropdown__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
     .dropdown__clear-button_visible {
@@ -1644,6 +1649,7 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.875rem;
     line-height: 1.24rem;
     color: rgba(31, 32, 65, 0.5);
+    max-width: 20rem;
     word-break: break-word; }
     .checkbox-list__item-text_complex {
       width: -webkit-max-content;
@@ -1659,6 +1665,7 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.75rem;
     line-height: 0.875rem;
     color: rgba(31, 32, 65, 0.5);
+    max-width: 20rem;
     word-break: break-word; }
 
 .radio {
@@ -1669,6 +1676,7 @@ Build date: 2019-12-19 16:51:02
   .radio__label {
     cursor: pointer;
     display: flex;
+    align-items: center;
     position: relative;
     margin-right: 1.25rem; }
     .radio__label:last-child {
@@ -1707,7 +1715,9 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     font-size: 0.875rem;
     line-height: 1.125rem;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    max-width: 10rem;
+    word-break: break-all; }
 
 .toggle {
   cursor: pointer;
@@ -1759,7 +1769,9 @@ Build date: 2019-12-19 16:51:02
     align-items: center;
     font-size: 0.875rem;
     line-height: 1.125rem;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    max-width: 15rem;
+    word-break: break-all; }
 
 .star-rating {
   width: 7.5rem;
@@ -1985,7 +1997,9 @@ Build date: 2019-12-19 16:51:02
     margin-top: 0.4375rem;
     font-size: 0.875rem;
     line-height: 1.5rem;
-    color: rgba(31, 32, 65, 0.75); }
+    color: rgba(31, 32, 65, 0.75);
+    max-width: 20rem;
+    word-break: break-all; }
 
 .range-slider {
   width: 100%;
@@ -1994,7 +2008,8 @@ Build date: 2019-12-19 16:51:02
   background: white; }
   .range-slider__title {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    word-break: break-all; }
   .range-slider__slider-name {
     font-weight: bold;
     font-size: 0.75rem;
@@ -2066,7 +2081,7 @@ Build date: 2019-12-19 16:51:02
 .calendar {
   width: 100%;
   display: flex;
-  flex-direction: row; }
+  align-items: flex-end; }
   .calendar__input-container {
     width: 100%;
     display: flex;
@@ -2077,9 +2092,9 @@ Build date: 2019-12-19 16:51:02
       width: 46.875%; }
   .calendar__title {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0.3125rem; }
+    margin-bottom: 0.3125rem;
+    word-break: break-all; }
   .calendar__title-text {
     font-weight: bold;
     font-size: 0.75rem;
@@ -2158,7 +2173,9 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .calendar__apply-button:hover, .calendar__apply-button:focus {
       color: rgba(31, 32, 65, 0.5); }
   .calendar__clear-button {
@@ -2168,7 +2185,9 @@ Build date: 2019-12-19 16:51:02
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .calendar__clear-button:hover, .calendar__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
     .calendar__clear-button_visible {

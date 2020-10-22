@@ -777,7 +777,8 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.875rem;
-    color: #1f2041; }
+    color: #1f2041;
+    word-break: break-all; }
   .sign-in-form__fields {
     width: 100%;
     margin-bottom: 1.25rem; }
@@ -806,7 +807,7 @@ body {
 .calendar {
   width: 100%;
   display: flex;
-  flex-direction: row; }
+  align-items: flex-end; }
   .calendar__input-container {
     width: 100%;
     display: flex;
@@ -817,9 +818,9 @@ body {
       width: 46.875%; }
   .calendar__title {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0.3125rem; }
+    margin-bottom: 0.3125rem;
+    word-break: break-all; }
   .calendar__title-text {
     font-weight: bold;
     font-size: 0.75rem;
@@ -898,7 +899,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .calendar__apply-button:hover, .calendar__apply-button:focus {
       color: rgba(31, 32, 65, 0.5); }
   .calendar__clear-button {
@@ -908,7 +911,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .calendar__clear-button:hover, .calendar__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
     .calendar__clear-button_visible {
@@ -1153,7 +1158,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0.3125rem; }
+    margin-bottom: 0.3125rem;
+    word-break: break-all; }
   .dropdown__title-text {
     font-weight: bold;
     font-size: 0.75rem;
@@ -1305,7 +1311,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .dropdown__apply-button:hover, .dropdown__apply-button:focus {
       color: rgba(31, 32, 65, 0.5); }
   .dropdown__clear-button {
@@ -1315,7 +1323,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .dropdown__clear-button:hover, .dropdown__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
     .dropdown__clear-button_visible {
@@ -1481,7 +1491,7 @@ body {
 .calendar {
   width: 100%;
   display: flex;
-  flex-direction: row; }
+  align-items: flex-end; }
   .calendar__input-container {
     width: 100%;
     display: flex;
@@ -1492,9 +1502,9 @@ body {
       width: 46.875%; }
   .calendar__title {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0.3125rem; }
+    margin-bottom: 0.3125rem;
+    word-break: break-all; }
   .calendar__title-text {
     font-weight: bold;
     font-size: 0.75rem;
@@ -1573,7 +1583,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .calendar__apply-button:hover, .calendar__apply-button:focus {
       color: rgba(31, 32, 65, 0.5); }
   .calendar__clear-button {
@@ -1583,7 +1595,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .calendar__clear-button:hover, .calendar__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
     .calendar__clear-button_visible {
@@ -1828,7 +1842,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0.3125rem; }
+    margin-bottom: 0.3125rem;
+    word-break: break-all; }
   .dropdown__title-text {
     font-weight: bold;
     font-size: 0.75rem;
@@ -1980,7 +1995,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .dropdown__apply-button:hover, .dropdown__apply-button:focus {
       color: rgba(31, 32, 65, 0.5); }
   .dropdown__clear-button {
@@ -1990,7 +2007,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .dropdown__clear-button:hover, .dropdown__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
     .dropdown__clear-button_visible {
@@ -2035,7 +2054,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 5rem;
+    word-break: break-all; }
   .price-calculation-form__room-price {
     justify-self: end;
     align-self: end;
@@ -2045,7 +2066,6 @@ body {
     line-height: 0.9375rem;
     color: rgba(31, 32, 65, 0.5);
     max-width: 6.125rem;
-    white-space: normal;
     word-break: break-word; }
   .price-calculation-form__period-of-time {
     justify-self: end;
@@ -2054,7 +2074,9 @@ body {
     margin-right: 0.0625rem;
     font-size: 0.75rem;
     line-height: 0.9375rem;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    max-width: 5rem;
+    overflow: hidden; }
   .price-calculation-form__calendar {
     margin-bottom: 1.25rem;
     width: 100%; }
@@ -2121,7 +2143,9 @@ body {
     grid-template-columns: max-content auto min-content;
     overflow: hidden; }
   .price-calculation-form__total-result-text {
-    align-self: flex-end; }
+    align-self: flex-end;
+    max-width: 5rem;
+    word-break: break-all; }
   .price-calculation-form__total-result-bottom-line {
     margin-bottom: 0.3125rem;
     border-bottom: 0.0625rem dashed rgba(31, 32, 65, 0.25);
@@ -2216,6 +2240,7 @@ body {
   .radio__label {
     cursor: pointer;
     display: flex;
+    align-items: center;
     position: relative;
     margin-right: 1.25rem; }
     .radio__label:last-child {
@@ -2254,7 +2279,9 @@ body {
     align-items: center;
     font-size: 0.875rem;
     line-height: 1.125rem;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    max-width: 10rem;
+    word-break: break-all; }
 
 .toggle {
   cursor: pointer;
@@ -2306,12 +2333,14 @@ body {
     align-items: center;
     font-size: 0.875rem;
     line-height: 1.125rem;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    max-width: 15rem;
+    word-break: break-all; }
 
 .calendar {
   width: 100%;
   display: flex;
-  flex-direction: row; }
+  align-items: flex-end; }
   .calendar__input-container {
     width: 100%;
     display: flex;
@@ -2322,9 +2351,9 @@ body {
       width: 46.875%; }
   .calendar__title {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0.3125rem; }
+    margin-bottom: 0.3125rem;
+    word-break: break-all; }
   .calendar__title-text {
     font-weight: bold;
     font-size: 0.75rem;
@@ -2403,7 +2432,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .calendar__apply-button:hover, .calendar__apply-button:focus {
       color: rgba(31, 32, 65, 0.5); }
   .calendar__clear-button {
@@ -2413,7 +2444,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .calendar__clear-button:hover, .calendar__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
     .calendar__clear-button_visible {
@@ -2734,7 +2767,8 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.875rem;
-    color: #1f2041; }
+    color: #1f2041;
+    word-break: break-all; }
   .sign-up-form__first-name-field, .sign-up-form__second-name-field {
     width: 100%;
     margin-bottom: 0.625rem; }
@@ -2970,7 +3004,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 5rem;
+    word-break: break-all; }
   .room-info__room-price {
     justify-self: end;
     align-self: end;
@@ -2988,7 +3024,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     color: rgba(31, 32, 65, 0.5);
-    white-space: nowrap; }
+    white-space: nowrap;
+    max-width: 5rem;
+    overflow: hidden; }
   .room-info__room-rate {
     display: flex;
     justify-content: space-between;

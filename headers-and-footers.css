@@ -107,15 +107,19 @@ body {
       transform: rotate(180deg); }
   .navigation-menu__item-ref {
     cursor: pointer;
+    display: flex;
     position: relative;
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
     font-size: 0.875rem;
     line-height: 1.0625rem;
-    white-space: nowrap;
     letter-spacing: 0.005em; }
-  .navigation-menu__item-ref-text:hover {
-    color: rgba(31, 32, 65, 0.75); }
+  .navigation-menu__item-ref-text {
+    max-width: 7.5rem;
+    overflow: hidden;
+    white-space: nowrap; }
+    .navigation-menu__item-ref-text:hover {
+      color: rgba(31, 32, 65, 0.75); }
   .navigation-menu__dropdown-arrow {
     cursor: pointer;
     display: flex;
@@ -132,7 +136,8 @@ body {
     position: absolute;
     top: 100%;
     padding: 0.625rem 0.625rem 0rem 0.625rem;
-    background: white; }
+    background: white;
+    box-shadow: 0 0.1875rem 0.625rem 0.1875rem rgba(31, 32, 65, 0.25); }
     @media screen and (max-width: 1000px) {
       .navigation-menu__submenu {
         left: 90%;

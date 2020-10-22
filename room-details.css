@@ -127,7 +127,7 @@ body {
   .pie-chart__list-item {
     cursor: pointer;
     display: flex;
-    align-items: center; }
+    align-items: baseline; }
   .pie-chart__item-marker {
     width: 0.625rem;
     height: 0.625rem;
@@ -728,15 +728,19 @@ body {
       transform: rotate(180deg); }
   .navigation-menu__item-ref {
     cursor: pointer;
+    display: flex;
     position: relative;
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
     font-size: 0.875rem;
     line-height: 1.0625rem;
-    white-space: nowrap;
     letter-spacing: 0.005em; }
-  .navigation-menu__item-ref-text:hover {
-    color: rgba(31, 32, 65, 0.75); }
+  .navigation-menu__item-ref-text {
+    max-width: 7.5rem;
+    overflow: hidden;
+    white-space: nowrap; }
+    .navigation-menu__item-ref-text:hover {
+      color: rgba(31, 32, 65, 0.75); }
   .navigation-menu__dropdown-arrow {
     cursor: pointer;
     display: flex;
@@ -753,7 +757,8 @@ body {
     position: absolute;
     top: 100%;
     padding: 0.625rem 0.625rem 0rem 0.625rem;
-    background: white; }
+    background: white;
+    box-shadow: 0 0.1875rem 0.625rem 0.1875rem rgba(31, 32, 65, 0.25); }
     @media screen and (max-width: 1000px) {
       .navigation-menu__submenu {
         left: 90%;
@@ -1245,7 +1250,7 @@ body {
 .calendar {
   width: 100%;
   display: flex;
-  flex-direction: row; }
+  align-items: flex-end; }
   .calendar__input-container {
     width: 100%;
     display: flex;
@@ -1256,9 +1261,9 @@ body {
       width: 46.875%; }
   .calendar__title {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0.3125rem; }
+    margin-bottom: 0.3125rem;
+    word-break: break-all; }
   .calendar__title-text {
     font-weight: bold;
     font-size: 0.75rem;
@@ -1337,7 +1342,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .calendar__apply-button:hover, .calendar__apply-button:focus {
       color: rgba(31, 32, 65, 0.5); }
   .calendar__clear-button {
@@ -1347,7 +1354,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .calendar__clear-button:hover, .calendar__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
     .calendar__clear-button_visible {
@@ -1592,7 +1601,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0.3125rem; }
+    margin-bottom: 0.3125rem;
+    word-break: break-all; }
   .dropdown__title-text {
     font-weight: bold;
     font-size: 0.75rem;
@@ -1744,7 +1754,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .dropdown__apply-button:hover, .dropdown__apply-button:focus {
       color: rgba(31, 32, 65, 0.5); }
   .dropdown__clear-button {
@@ -1754,7 +1766,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 10rem;
+    word-break: break-all; }
     .dropdown__clear-button:hover, .dropdown__clear-button:focus {
       color: rgba(31, 32, 65, 0.5); }
     .dropdown__clear-button_visible {
@@ -1799,7 +1813,9 @@ body {
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
-    color: #bc9cff; }
+    color: #bc9cff;
+    max-width: 5rem;
+    word-break: break-all; }
   .price-calculation-form__room-price {
     justify-self: end;
     align-self: end;
@@ -1809,7 +1825,6 @@ body {
     line-height: 0.9375rem;
     color: rgba(31, 32, 65, 0.5);
     max-width: 6.125rem;
-    white-space: normal;
     word-break: break-word; }
   .price-calculation-form__period-of-time {
     justify-self: end;
@@ -1818,7 +1833,9 @@ body {
     margin-right: 0.0625rem;
     font-size: 0.75rem;
     line-height: 0.9375rem;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    max-width: 5rem;
+    overflow: hidden; }
   .price-calculation-form__calendar {
     margin-bottom: 1.25rem;
     width: 100%; }
@@ -1885,7 +1902,9 @@ body {
     grid-template-columns: max-content auto min-content;
     overflow: hidden; }
   .price-calculation-form__total-result-text {
-    align-self: flex-end; }
+    align-self: flex-end;
+    max-width: 5rem;
+    word-break: break-all; }
   .price-calculation-form__total-result-bottom-line {
     margin-bottom: 0.3125rem;
     border-bottom: 0.0625rem dashed rgba(31, 32, 65, 0.25);
@@ -2193,7 +2212,7 @@ body {
   .pie-chart__list-item {
     cursor: pointer;
     display: flex;
-    align-items: center; }
+    align-items: baseline; }
   .pie-chart__item-marker {
     width: 0.625rem;
     height: 0.625rem;
@@ -2323,7 +2342,8 @@ body {
     font-size: 1.1875rem;
     line-height: 1.5rem;
     color: #1f2041;
-    text-transform: none; }
+    text-transform: none;
+    word-break: break-all; }
   .room-details__bullet-list {
     margin-right: 4.375rem; }
     @media screen and (max-width: 800px) {
@@ -2344,7 +2364,8 @@ body {
     font-weight: bold;
     font-size: 1.1875rem;
     line-height: 1.5rem;
-    color: #1f2041; }
+    color: #1f2041;
+    word-break: break-all; }
   .room-details__cancel-rule-main-text {
     max-width: 21.3125rem;
     font-size: 0.875rem;

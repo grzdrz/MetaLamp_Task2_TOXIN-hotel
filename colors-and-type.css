@@ -129,14 +129,16 @@ body {
     font-weight: bold;
     font-size: 1.1875rem;
     line-height: 1.8125rem;
-    color: #1f2041; }
+    color: #1f2041;
+    word-break: break-all; }
   .color-demo__color-code {
     display: flex;
     align-items: center;
     font-family: Quicksand, OpenSans, Arial, sans-serif;
     font-size: 1.1875rem;
     line-height: 1.8125rem;
-    color: #1f2041; }
+    color: #1f2041;
+    word-break: break-all; }
   .color-demo__color_purple {
     background: #bc9cff; }
   .color-demo__color_green {
