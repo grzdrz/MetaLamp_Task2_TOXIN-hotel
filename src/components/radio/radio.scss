@@ -7,6 +7,7 @@
   &__label {
     cursor: pointer;
     display: flex;
+    align-items: center;
     position: relative;
     margin-right: 1.25rem;
 
@@ -60,5 +61,7 @@
     font-size: 0.875rem;
     line-height: 1.125rem;
     color: $color-dark-shade-50;
+    max-width: 10rem;
+    word-break: break-all;
   }
 }

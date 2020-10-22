@@ -4,7 +4,7 @@
 .calendar {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  align-items: flex-end;
 
   &__input-container {
     width: 100%;
@@ -23,9 +23,9 @@
 
   &__title {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.3125rem;
+    word-break: break-all;
   }
 
   &__title-text {
@@ -129,6 +129,8 @@
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: $color-purple;
+    max-width: 10rem;
+    word-break: break-all;
 
     &:hover,
     &:focus {
@@ -144,6 +146,8 @@
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: $color-purple;
+    max-width: 10rem;
+    word-break: break-all;
 
     &:hover,
     &:focus {

@@ -152,6 +152,7 @@
     font-size: 0.875rem;
     line-height: 1.24rem;
     color: $color-dark-shade-50;
+    max-width: 20rem;
     word-break: break-word;
 
     &_complex {
@@ -169,6 +170,7 @@
     font-size: 0.75rem;
     line-height: 0.875rem;
     color: $color-dark-shade-50;
+    max-width: 20rem;
     word-break: break-word;
   }
 }

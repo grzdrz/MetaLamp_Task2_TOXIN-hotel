@@ -36,16 +36,20 @@
 
   &__item-ref {
     cursor: pointer;
+    display: flex;
     position: relative;
     text-decoration: none;
     color: $color-dark-shade-50;
     font-size: 0.875rem;
     line-height: 1.0625rem;
-    white-space: nowrap;
     letter-spacing: 0.005em;
   }
 
   &__item-ref-text {
+    max-width: 7.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+
     &:hover {
       color: $color-dark-shade-75;
     }
@@ -70,6 +74,7 @@
     top: 100%;
     padding: 0.625rem 0.625rem 0rem 0.625rem;
     background: white;
+    box-shadow: 0 0.1875rem 0.625rem 0.1875rem $color-dark-shade-25;
 
     @media screen and (max-width: 1000px) {
       left: 90%;

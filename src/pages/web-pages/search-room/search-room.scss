@@ -24,6 +24,7 @@
 
   &__filters {
     width: max-content;
+    max-width: 16.625rem;
     display: flex;
     flex-direction: column;
     margin-right: scalePixelsAsPercentage(75, 1440);

@@ -9,6 +9,7 @@
   &__title {
     display: flex;
     justify-content: space-between;
+    word-break: break-all;
   }
 
   &__slider-name {

@@ -30,11 +30,12 @@ mixin navigation-menu(options = {})
                     href=subref.url 
                     target=(subref.isOuter ? "_blank" : "") 
                     rel=(subref.isOuter ? "noopener noreferrer" : ""))= subref.text
-            span(class=["navigation-menu__item-ref-text"])= ref.text
+            p(class=["navigation-menu__item-ref-text"])= ref.text
           div(class=["navigation-menu__dropdown-arrow"]) expand_more
         - }
         - else
           a(class=["navigation-menu__item-ref"] 
             href=ref.url 
             target=(ref.isOuter ? "_blank" : "") 
-            rel=(ref.isOuter ? "noopener noreferrer" : ""))= ref.text
+            rel=(ref.isOuter ? "noopener noreferrer" : ""))
+            p(class=["navigation-menu__item-ref-text"])= ref.text
