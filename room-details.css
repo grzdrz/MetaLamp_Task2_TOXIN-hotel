@@ -67,6 +67,87 @@ body {
   display: flex;
   flex-direction: column; }
 
+.pie-chart {
+  display: flex; }
+  @media screen and (max-width: 400px) {
+    .pie-chart {
+      flex-direction: column; } }
+  .pie-chart__svg-container {
+    width: 7.5rem;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+  .pie-chart__svg {
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+  .pie-chart__outer-path {
+    cursor: pointer; }
+  .pie-chart__inner-path {
+    fill: white; }
+  .pie-chart__central-circle {
+    fill: white; }
+  .pie-chart__current-segment {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; }
+    .pie-chart__current-segment-0 {
+      color: #ffba9c; }
+    .pie-chart__current-segment-1 {
+      color: #6fcf97; }
+    .pie-chart__current-segment-2 {
+      color: #bc9cff; }
+    .pie-chart__current-segment-3 {
+      color: #919191; }
+  .pie-chart__current-segment-value {
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.875rem; }
+  .pie-chart__current-segment-name {
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-transform: uppercase; }
+  .pie-chart__chart-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 1.875rem;
+    margin-top: 1.6rem; }
+    @media screen and (max-width: 400px) {
+      .pie-chart__chart-list {
+        margin-left: 0rem;
+        margin-top: 1.875rem; } }
+  .pie-chart__list-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center; }
+  .pie-chart__item-marker {
+    width: 0.625rem;
+    height: 0.625rem;
+    margin-right: 0.3125rem;
+    border-radius: 50%; }
+    .pie-chart__item-marker-0 {
+      background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%); }
+    .pie-chart__item-marker-1 {
+      background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%); }
+    .pie-chart__item-marker-2 {
+      background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
+    .pie-chart__item-marker-3 {
+      background: linear-gradient(180deg, #919191 0%, #3d4975 100%); }
+  .pie-chart__item-text {
+    max-width: 9.375rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: rgba(31, 32, 65, 0.75);
+    word-break: break-word; }
+
 .datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
   color: #dedede; }
   .datepicker--cell-day.-other-month-:hover, .datepicker--cell-year.-other-decade-:hover {
@@ -702,10 +783,9 @@ body {
   position: relative; }
   .button__background {
     z-index: 1;
+    cursor: pointer;
     width: 100%;
     height: 100%;
-    cursor: pointer;
-    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -1104,10 +1184,9 @@ body {
   position: relative; }
   .button__background {
     z-index: 1;
+    cursor: pointer;
     width: 100%;
     height: 100%;
-    cursor: pointer;
-    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -2055,95 +2134,85 @@ body {
         margin-bottom: 1.25rem; } }
 
 .pie-chart {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  display: flex;
-  flex-direction: column; }
+  display: flex; }
   @media screen and (max-width: 400px) {
     .pie-chart {
-      align-items: center; } }
-  .pie-chart__title {
-    margin-bottom: 1.125rem;
-    margin-left: 0.9375rem;
-    font-family: Quicksand, OpenSans, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 1.1875rem;
-    line-height: 1.5rem;
-    color: #1f2041; }
-  .pie-chart__content {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+      flex-direction: column; } }
+  .pie-chart__svg-container {
+    width: 7.5rem;
+    height: 7.5rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative; }
-    @media screen and (max-width: 400px) {
-      .pie-chart__content {
-        flex-direction: column;
-        align-items: center; } }
-  .pie-chart__pie {
-    display: flex; }
-  .pie-chart__inner-text {
-    display: inline-flex;
+  .pie-chart__svg {
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+  .pie-chart__outer-path {
+    cursor: pointer; }
+  .pie-chart__inner-path {
+    fill: white; }
+  .pie-chart__central-circle {
+    fill: white; }
+  .pie-chart__current-segment {
+    position: absolute;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    margin-left: 2.875rem;
-    margin-top: 2.3125rem; }
-    @media screen and (max-width: 400px) {
-      .pie-chart__inner-text {
-        margin-left: 0.3125rem;
-        margin-top: 2.3125rem; } }
-  .pie-chart__inner-text-number {
-    display: flex;
-    align-items: center;
-    text-align: center;
+    font-weight: bold; }
+    .pie-chart__current-segment-0 {
+      color: #ffba9c; }
+    .pie-chart__current-segment-1 {
+      color: #6fcf97; }
+    .pie-chart__current-segment-2 {
+      color: #bc9cff; }
+    .pie-chart__current-segment-3 {
+      color: #919191; }
+  .pie-chart__current-segment-value {
     font-family: Quicksand, OpenSans, Arial, sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 1.875rem;
-    color: #bc9cff; }
-  .pie-chart__inner-text-word {
+    line-height: 1.875rem; }
+  .pie-chart__current-segment-name {
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: #bc9cff; }
-  .pie-chart__legend {
-    list-style-type: none;
+    text-transform: uppercase; }
+  .pie-chart__chart-list {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 1.0625rem;
-    margin-bottom: 0.25rem; }
+    margin-left: 1.875rem;
+    margin-top: 1.6rem; }
     @media screen and (max-width: 400px) {
-      .pie-chart__legend {
-        margin-left: 2.5rem;
-        margin-top: 0.625rem; } }
-  .pie-chart__legend-item {
+      .pie-chart__chart-list {
+        margin-left: 0rem;
+        margin-top: 1.875rem; } }
+  .pie-chart__list-item {
+    cursor: pointer;
     display: flex;
     align-items: center; }
-  .pie-chart__legend-item-marker {
-    min-width: 0.625rem;
+  .pie-chart__item-marker {
+    width: 0.625rem;
     height: 0.625rem;
-    position: absolute;
-    border-radius: 50%;
-    background: black; }
-    .pie-chart__legend-item-marker_gradient_yellow-to-peach {
+    margin-right: 0.3125rem;
+    border-radius: 50%; }
+    .pie-chart__item-marker-0 {
       background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%); }
-    .pie-chart__legend-item-marker_gradient_green-to-turquoise {
+    .pie-chart__item-marker-1 {
       background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%); }
-    .pie-chart__legend-item-marker_gradient_purple-to-blue {
+    .pie-chart__item-marker-2 {
       background: linear-gradient(to bottom, #bc9cff, #8ba4f9); }
-    .pie-chart__legend-item-marker_gradient_gray-to-blue {
+    .pie-chart__item-marker-3 {
       background: linear-gradient(180deg, #919191 0%, #3d4975 100%); }
-  .pie-chart__legend-item-text {
-    margin-left: 0.9375rem;
+  .pie-chart__item-text {
+    max-width: 9.375rem;
     font-size: 0.875rem;
     line-height: 1.5rem;
-    color: rgba(31, 32, 65, 0.75); }
+    color: rgba(31, 32, 65, 0.75);
+    word-break: break-word; }
 
 .room-details {
   width: 100%;
@@ -2213,11 +2282,18 @@ body {
     @media screen and (max-width: 380px) {
       .room-details__price-calculation-form {
         width: 100%; } }
-  .room-details__pie-chart {
-    margin-left: 0.9375rem; }
+  .room-details__pie-chart-container {
+    margin-left: 1.9rem; }
     @media screen and (max-width: 800px) {
-      .room-details__pie-chart {
+      .room-details__pie-chart-container {
         margin-top: 1.875rem; } }
+  .room-details__pie-chart-title {
+    margin-bottom: 1.3125rem;
+    font-family: Quicksand, OpenSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    color: #1f2041; }
   @media screen and (max-width: 800px) {
     .room-details__room-advantages {
       margin-right: 0rem; } }

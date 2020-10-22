@@ -702,10 +702,9 @@ body {
   position: relative; }
   .button__background {
     z-index: 1;
+    cursor: pointer;
     width: 100%;
     height: 100%;
-    cursor: pointer;
-    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -1395,10 +1394,9 @@ body {
   position: relative; }
   .button__background {
     z-index: 1;
+    cursor: pointer;
     width: 100%;
     height: 100%;
-    cursor: pointer;
-    content: '';
     position: absolute;
     top: 0;
     right: 0;

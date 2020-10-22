@@ -1375,10 +1375,9 @@ Build date: 2019-12-19 16:51:02
   position: relative; }
   .button__background {
     z-index: 1;
+    cursor: pointer;
     width: 100%;
     height: 100%;
-    cursor: pointer;
-    content: '';
     position: absolute;
     top: 0;
     right: 0;
