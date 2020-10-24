@@ -1,5 +1,5 @@
 @import '../../assets/constants.scss';
-
+/* style=`fill:url(#${segment.name})` */
 .pie-chart {
   display: flex;
 
@@ -24,6 +24,19 @@
 
   &__outer-path {
     cursor: pointer;
+
+    &_with-name_great {
+      fill: url(#great);
+    }
+    &_with-name_good {
+      fill: url(#good);
+    }
+    &_with-name_normal {
+      fill: url(#normal);
+    }
+    &_with-name_bad {
+      fill: url(#bad);
+    }
   }
 
   &__inner-path,
@@ -58,6 +71,8 @@
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.875rem;
+    max-width: 5.625rem;
+    overflow: hidden;
   }
 
   &__current-segment-name {
@@ -65,6 +80,8 @@
     font-size: 0.75rem;
     line-height: 0.9375rem;
     text-transform: uppercase;
+    max-width: 5.625rem;
+    overflow: hidden;
   }
 
   &__chart-list {

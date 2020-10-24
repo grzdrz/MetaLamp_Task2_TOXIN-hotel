@@ -1,5 +1,6 @@
 import Segment from './segment';
 import ListItem from './list-item';
+import { doDeclensionOfWord } from '../../assets/helpers';
 
 import './pie-chart.scss';
 
@@ -11,11 +12,11 @@ class PieChart {
   }
 
   initialize() {
-    this.container = this.outerContainer.querySelector('.pie-chart');
-    this.chartListContainer = this.container.querySelector('.pie-chart__chart-list');
-    this.currentSegment = this.container.querySelector('.pie-chart__current-segment');
-    this.currentSegmentValue = this.container.querySelector('.pie-chart__current-segment-value');
-    this.currentSegmentName = this.container.querySelector('.pie-chart__current-segment-name');
+    this.container = this.outerContainer.querySelector('.js-pie-chart');
+    this.chartListContainer = this.container.querySelector('.js-pie-chart__chart-list');
+    this.currentSegment = this.container.querySelector('.js-pie-chart__current-segment');
+    this.currentSegmentValue = this.container.querySelector('.js-pie-chart__current-segment-value');
+    this.currentSegmentName = this.container.querySelector('.js-pie-chart__current-segment-name');
 
     this._extractData();
     this._createSegments();
@@ -37,11 +38,11 @@ class PieChart {
     const targetedSegment = this.segments.find((segment) => segment.isTargeted);
     if (targetedSegment) {
       this.currentSegmentValue.textContent = targetedSegment.value;
-      this.currentSegmentName.textContent = 'голосов';
       this.currentSegment.classList.toggle(`pie-chart__current-segment_with-name_${targetedSegment.name}`, true);
+      this.currentSegmentName.textContent = doDeclensionOfWord(targetedSegment.value, ['голос', 'голоса', 'голосов']);
     } else {
       this.currentSegmentValue.textContent = this.totalValue;
-      this.currentSegmentName.textContent = 'голосов';
+      this.currentSegmentName.textContent = doDeclensionOfWord(this.totalValue, ['голос', 'голоса', 'голосов']);
     }
   }
 
@@ -53,9 +54,9 @@ class PieChart {
   }
 
   _createSegments() {
-    const pathsContainer = this.container.querySelector('.pie-chart__paths');
-    const outerPaths = Array.from(pathsContainer.querySelectorAll('.pie-chart__outer-path'));
-    const innerPaths = Array.from(pathsContainer.querySelectorAll('.pie-chart__inner-path'));
+    const pathsContainer = this.container.querySelector('.js-pie-chart__paths');
+    const outerPaths = Array.from(pathsContainer.querySelectorAll('.js-pie-chart__outer-path'));
+    const innerPaths = Array.from(pathsContainer.querySelectorAll('.js-pie-chart__inner-path'));
 
     this.segments = [];
     outerPaths.forEach((outerPath, index) => {
@@ -64,7 +65,7 @@ class PieChart {
   }
 
   _createListItems() {
-    const itemsContainer = Array.from(this.chartListContainer.querySelectorAll('.pie-chart__list-item'));
+    const itemsContainer = Array.from(this.chartListContainer.querySelectorAll('.js-pie-chart__list-item'));
     this.items = itemsContainer.map((itemContainer, index) => new ListItem(this, itemContainer, this.segments[index]));
   }
 }

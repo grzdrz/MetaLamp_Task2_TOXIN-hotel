@@ -1,5 +1,6 @@
 /* eslint-disable no-lonely-if */
 import ListItem from './list-item';
+import { doDeclensionOfWord } from '../../assets/helpers';
 
 class Dropdown {
   constructor(outerContainerElement, isOpened = false) {
@@ -60,6 +61,14 @@ class Dropdown {
     if (this.clearButton) this.hasClearButton = false;
     this.applyButton = this.containerElement.querySelector('.js-dropdown__apply-button');
 
+    this.words = new Map([
+      ['гость', ['гость', 'гостя', 'гостей']],
+      ['спальни', ['спальня', 'спальни', 'спален']],
+      ['кровати', ['кровать', 'кровати', 'кроватей']],
+      ['ванные комнаты', ['ванная комната', 'ванные комнаты', 'ванных комнат']],
+      ['младенец', ['младенец', 'младенца', 'младенцев']],
+    ]);
+
     this._setEventHandlers();
     this.updateState();
   }
@@ -88,11 +97,11 @@ class Dropdown {
   _setInputValue(babiesCount) {
     if (this.withTotalValue) {
       if (babiesCount !== 0) {
-        const mainText = `${this.totalValue} ${this._doDeclensionOfWord(this.totalValue, 'гость')}`;
-        const fullText = `${mainText}, ${babiesCount} ${this._doDeclensionOfWord(babiesCount, 'младенец')}`;
+        const mainText = `${this.totalValue} ${doDeclensionOfWord(this.totalValue, this.words.get('гость'))}`;
+        const fullText = `${mainText}, ${babiesCount} ${doDeclensionOfWord(babiesCount, this.words.get('младенец'))}`;
         this.input.value = fullText;
       } else if (this.totalValue !== 0) {
-        this.input.value = `${this.totalValue} ${this._doDeclensionOfWord(this.totalValue, 'гость')}`;
+        this.input.value = `${this.totalValue} ${doDeclensionOfWord(this.totalValue, this.words.get('гость'))}`;
       } else {
         this.input.value = 'Сколько гостей';
       }
@@ -103,37 +112,15 @@ class Dropdown {
           const itemValue = item.value;
 
           if (index !== this.droppingList.length - 1) {
-            return `${fullString}${itemValue} ${this._doDeclensionOfWord(itemValue, itemName)}, `;
+            return `${fullString}${itemValue} ${doDeclensionOfWord(itemValue, this.words.get(itemName))}, `;
           }
-          return `${fullString}${itemValue} ${this._doDeclensionOfWord(itemValue, itemName)}`;
+          return `${fullString}${itemValue} ${doDeclensionOfWord(itemValue, this.words.get(itemName))}`;
         }, '');
         this.input.value = result;
       } else {
         this.input.value = 'Сколько комнат';
       }
     }
-  }
-
-  _doDeclensionOfWord(number, word) {
-    let words;
-    if (word === 'гость') words = ['гость', 'гостя', 'гостей'];
-    else if (word === 'спальни') words = ['спальня', 'спальни', 'спален'];
-    else if (word === 'кровати') words = ['кровать', 'кровати', 'кроватей'];
-    else if (word === 'ванные комнаты') words = ['ванная комната', 'ванные комнаты', 'ванных комнат'];
-    else if (word === 'младенец') words = ['младенец', 'младенца', 'младенцев'];
-
-    const stringifiedNumber = number.toString();
-    const isEndOnOne = stringifiedNumber[stringifiedNumber.length - 1] === '1';
-    const isNotEqualEleven = number !== 11;
-    if (isEndOnOne && isNotEqualEleven) return words[0];
-
-    const isEndNumberMoreThenOne = stringifiedNumber[stringifiedNumber.length - 1] > 1;
-    const isEndNumberLessThenFour = stringifiedNumber[stringifiedNumber.length - 1] <= 4;
-    const isEndNumberBetweenTwelveAndFourteen = number < 12 || number > 14;
-    const isSecondWord = isEndNumberMoreThenOne && isEndNumberLessThenFour && isEndNumberBetweenTwelveAndFourteen;
-    if (isSecondWord) return words[1];
-
-    return words[2];
   }
 
   _handleDropdownClick() {

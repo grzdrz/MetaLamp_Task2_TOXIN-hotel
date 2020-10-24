@@ -13,7 +13,7 @@ mixin pie-chart(options = {})
       ],
     } = options;
 
-  div(class=["pie-chart"] 
+  div(class=["pie-chart", "js-pie-chart"] 
     data-outer-radius=outerRadius 
     data-inner-radius=innerRadius 
     data-hovered-inner-radius=hoveredInnerRadius
@@ -26,20 +26,20 @@ mixin pie-chart(options = {})
               stop(class=["pie-chart__top-color"] offset="0%" stop-color=`${segment.topColor}`)
               stop(class=["pie-chart__bottom-color"] offset="100%" stop-color=`${segment.bottomColor}`)
           - }
-        g(class=["pie-chart__paths"] transform=`translate(${outerRadius},${outerRadius})`)
+        g(class=["pie-chart__paths", "js-pie-chart__paths"] transform=`translate(${outerRadius},${outerRadius})`)
           - for(let segment of segments) {
-            path(class=["pie-chart__outer-path"] style=`fill:url(#${segment.name})`
+            path(class=["pie-chart__outer-path", `pie-chart__outer-path_with-name_${segment.name}`, "js-pie-chart__outer-path"]
               data-value=segment.value data-name=segment.name)
-            path(class=["pie-chart__inner-path"]
+            path(class=["pie-chart__inner-path", "js-pie-chart__inner-path"]
               data-value=segment.value data-name=segment.name)
           - }
         circle(class=["pie-chart__central-circle"] cx="0" cy="0" r=hoveredInnerRadius transform=`translate(${outerRadius},${outerRadius})`)
-      div(class=["pie-chart__current-segment"])
-        div(class=["pie-chart__current-segment-value"])
-        div(class=["pie-chart__current-segment-name"])
-    div(class=["pie-chart__chart-list"])
+      div(class=["pie-chart__current-segment", "js-pie-chart__current-segment"])
+        div(class=["pie-chart__current-segment-value", "js-pie-chart__current-segment-value"])
+        div(class=["pie-chart__current-segment-name", "js-pie-chart__current-segment-name"])
+    div(class=["pie-chart__chart-list", "js-pie-chart__chart-list"])
       - for(let segment of segments) {
-        div(class=["pie-chart__list-item"])
+        div(class=["pie-chart__list-item", "js-pie-chart__list-item"])
           div(class=["pie-chart__item-marker", `pie-chart__item-marker_with-name_${segment.name}`])
           div(class=["pie-chart__item-text"])= segment.text
       - }
