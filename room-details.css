@@ -67,6 +67,7 @@ body {
   display: flex;
   flex-direction: column; }
 
+/* style=`fill:url(#${segment.name})` */
 .pie-chart {
   display: flex; }
   @media screen and (max-width: 400px) {
@@ -85,6 +86,14 @@ body {
     position: absolute; }
   .pie-chart__outer-path {
     cursor: pointer; }
+    .pie-chart__outer-path_with-name_great {
+      fill: url(#great); }
+    .pie-chart__outer-path_with-name_good {
+      fill: url(#good); }
+    .pie-chart__outer-path_with-name_normal {
+      fill: url(#normal); }
+    .pie-chart__outer-path_with-name_bad {
+      fill: url(#bad); }
   .pie-chart__inner-path, .pie-chart__central-circle {
     fill: white; }
   .pie-chart__current-segment {
@@ -106,12 +115,16 @@ body {
     font-family: Quicksand, OpenSans, Arial, sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 1.875rem; }
+    line-height: 1.875rem;
+    max-width: 5.625rem;
+    overflow: hidden; }
   .pie-chart__current-segment-name {
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    max-width: 5.625rem;
+    overflow: hidden; }
   .pie-chart__chart-list {
     display: flex;
     flex-direction: column;
@@ -2150,6 +2163,7 @@ body {
       .footer__copyright {
         margin-bottom: 1.25rem; } }
 
+/* style=`fill:url(#${segment.name})` */
 .pie-chart {
   display: flex; }
   @media screen and (max-width: 400px) {
@@ -2168,6 +2182,14 @@ body {
     position: absolute; }
   .pie-chart__outer-path {
     cursor: pointer; }
+    .pie-chart__outer-path_with-name_great {
+      fill: url(#great); }
+    .pie-chart__outer-path_with-name_good {
+      fill: url(#good); }
+    .pie-chart__outer-path_with-name_normal {
+      fill: url(#normal); }
+    .pie-chart__outer-path_with-name_bad {
+      fill: url(#bad); }
   .pie-chart__inner-path, .pie-chart__central-circle {
     fill: white; }
   .pie-chart__current-segment {
@@ -2189,12 +2211,16 @@ body {
     font-family: Quicksand, OpenSans, Arial, sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 1.875rem; }
+    line-height: 1.875rem;
+    max-width: 5.625rem;
+    overflow: hidden; }
   .pie-chart__current-segment-name {
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    max-width: 5.625rem;
+    overflow: hidden; }
   .pie-chart__chart-list {
     display: flex;
     flex-direction: column;
