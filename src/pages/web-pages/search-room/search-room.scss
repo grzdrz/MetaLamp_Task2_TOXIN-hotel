@@ -15,6 +15,7 @@
   margin-bottom: 0.0625rem;
   padding: 1.875rem 9.72222% 4.5625rem 9.72222%;
   box-shadow: 0rem 0.0625rem 0rem $color-dark-shade-10;
+  flex: 1 0 auto;
 
   @media screen and (max-width: 690px) {
     flex-direction: column;

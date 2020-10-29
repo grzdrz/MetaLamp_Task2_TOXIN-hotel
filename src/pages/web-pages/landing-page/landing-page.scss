@@ -2,12 +2,14 @@
 @import '../../../components/header/header.scss';
 @import '../../../components/room-finder-form/room-finder-form.scss';
 @import '../../../components/footer/footer.scss';
+@import '../..//base/page-base.scss';
 
 .landing-page {
   width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
+  flex: 1 0 auto;
 
   @media screen and (max-width: 768px) {
     display: flex;
