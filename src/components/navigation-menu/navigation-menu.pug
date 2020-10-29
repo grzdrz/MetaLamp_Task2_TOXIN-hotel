@@ -25,11 +25,12 @@ mixin navigation-menu(options = {})
           div(class=["navigation-menu__item-ref"])
             ul(class=["navigation-menu__submenu"])
               - for(let subref of ref.subrefs)
-                li(class=["navigation-menu__submenu-item"]) 
-                  a(class=["navigation-menu__submenu-item-ref"] 
+                li(class=["navigation-menu__subitem"]) 
+                  a(class=["navigation-menu__subitem-ref"] 
                     href=subref.url 
                     target=(subref.isOuter ? "_blank" : "") 
-                    rel=(subref.isOuter ? "noopener noreferrer" : ""))= subref.text
+                    rel=(subref.isOuter ? "noopener noreferrer" : ""))
+                    p(class=["navigation-menu__subitem-ref-text"])= subref.text
             p(class=["navigation-menu__item-ref-text"])= ref.text
           div(class=["navigation-menu__dropdown-arrow"]) expand_more
         - }
