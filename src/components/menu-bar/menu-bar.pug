@@ -13,4 +13,4 @@ mixin menu-bar(options = {})
   ul(class=["menu-bar"])
     - for(let ref of refs)
       li(class=["menu-bar__item"])
-        a(class=["menu-bar__item-ref"] href=ref.url target=(ref.isOuter ? "_blank" : "") rel=(ref.isOuter ? "noopener noreferrer" : ""))= ref.text  
+        a(class=["menu-bar__item-ref"] href=ref.url target=(ref.isOuter ? "_blank" : "_self") rel=(ref.isOuter ? "noopener noreferrer" : ""))= ref.text  

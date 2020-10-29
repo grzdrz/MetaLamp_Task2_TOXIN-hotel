@@ -28,7 +28,7 @@ mixin navigation-menu(options = {})
                 li(class=["navigation-menu__subitem"]) 
                   a(class=["navigation-menu__subitem-ref"] 
                     href=subref.url 
-                    target=(subref.isOuter ? "_blank" : "") 
+                    target=(subref.isOuter ? "_blank" : "_self") 
                     rel=(subref.isOuter ? "noopener noreferrer" : ""))
                     p(class=["navigation-menu__subitem-ref-text"])= subref.text
             p(class=["navigation-menu__item-ref-text"])= ref.text
@@ -37,6 +37,6 @@ mixin navigation-menu(options = {})
         - else
           a(class=["navigation-menu__item-ref"] 
             href=ref.url 
-            target=(ref.isOuter ? "_blank" : "") 
+            target=(ref.isOuter ? "_blank" : "_self") 
             rel=(ref.isOuter ? "noopener noreferrer" : ""))
             p(class=["navigation-menu__item-ref-text"])= ref.text

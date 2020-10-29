@@ -16,7 +16,7 @@ mixin button(options = {})
   div(class=['button'].concat(containerClasses))
     div(class='button__background')
     - if(basis === "a")
-      a(class=["button__basis"] href=url target=(isOuterRef ? "_blank" : "") rel=(isOuterRef ? "noopener noreferrer" : ""))
+      a(class=["button__basis"] href=url target=(isOuterRef ? "_blank" : "_self") rel=(isOuterRef ? "noopener noreferrer" : ""))
         - if(hasArrow)
           span(class=["button__arrow"]) arrow_forward
         span(class=["button__text"].concat(textClasses))= text
