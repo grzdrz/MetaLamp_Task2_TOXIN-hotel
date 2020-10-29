@@ -2,15 +2,18 @@ mixin menu-bar(options = {})
   - 
     const { 
       refs = [
-        {url: "https://www.error.com/", isOuter: true, text: "навигация"},
-        {url: "https://www.error.com/", isOuter: true, text: "О нас"},
-        {url: "https://www.error.com/", isOuter: true, text: "Новости"},
-        {url: "https://www.error.com/", isOuter: true, text: "Служба поддержки"},
-        {url: "https://www.error.com/", isOuter: true, text: "Услуги"},
+        {url: "https://www.error.com/", isOuter: false, text: "навигация"},
+        {url: "https://www.error.com/", isOuter: false, text: "О нас"},
+        {url: "https://www.error.com/", isOuter: false, text: "Новости"},
+        {url: "https://www.error.com/", isOuter: false, text: "Служба поддержки"},
+        {url: "https://www.error.com/", isOuter: false, text: "Услуги"},
       ],
     } = options;
 
   ul(class=["menu-bar"])
     - for(let ref of refs)
       li(class=["menu-bar__item"])
-        a(class=["menu-bar__item-ref"] href=ref.url target=(ref.isOuter ? "_blank" : "_self") rel=(ref.isOuter ? "noopener noreferrer" : ""))= ref.text  
+        - if(ref.isOuter)
+          a(class=["menu-bar__item-ref"] href=ref.url target="_blank" rel="noopener noreferrer")= ref.text  
+        - else
+          a(class=["menu-bar__item-ref"] href=ref.url)= ref.text  

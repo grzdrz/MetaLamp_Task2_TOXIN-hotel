@@ -2,18 +2,18 @@ mixin navigation-menu(options = {})
   -
     const {
       refs = [
-        {url: "https://www.error.com/", isOuter: true, text: "О нас", hasDropdown: false},
-        {url: "https://www.error.com/", isOuter: true, text: "Услуги", hasDropdown: true, subrefs: [
-          {url: "https://www.error.com/", isOuter: true, text: "Вакансии"},
-          {url: "https://www.error.com/", isOuter: true, text: "Новости"},
-          {url: "https://www.error.com/", isOuter: true, text: "Соглашения"},
+        {url: "https://www.error.com/", isOuter: false, text: "О нас", hasDropdown: false},
+        {url: "https://www.error.com/", isOuter: false, text: "Услуги", hasDropdown: true, subrefs: [
+          {url: "https://www.error.com/", isOuter: false, text: "Вакансии"},
+          {url: "https://www.error.com/", isOuter: false, text: "Новости"},
+          {url: "https://www.error.com/", isOuter: false, text: "Соглашения"},
         ]},
-        {url: "https://www.error.com/", isOuter: true, text: "Вакансии", hasDropdown: false},
-        {url: "https://www.error.com/", isOuter: true, text: "Новости", hasDropdown: false},
-        {url: "https://www.error.com/", isOuter: true, text: "Соглашения", hasDropdown: true, subrefs: [
-          {url: "https://www.error.com/", isOuter: true, text: "Вакансии"},
-          {url: "https://www.error.com/", isOuter: true, text: "Новости"},
-          {url: "https://www.error.com/", isOuter: true, text: "Соглашения"},
+        {url: "https://www.error.com/", isOuter: false, text: "Вакансии", hasDropdown: false},
+        {url: "https://www.error.com/", isOuter: false, text: "Новости", hasDropdown: false},
+        {url: "https://www.error.com/", isOuter: false, text: "Соглашения", hasDropdown: true, subrefs: [
+          {url: "https://www.error.com/", isOuter: false, text: "Вакансии"},
+          {url: "https://www.error.com/", isOuter: false, text: "Новости"},
+          {url: "https://www.error.com/", isOuter: false, text: "Соглашения"},
         ]},
       ],
     } = options;
@@ -26,17 +26,19 @@ mixin navigation-menu(options = {})
             ul(class=["navigation-menu__submenu"])
               - for(let subref of ref.subrefs)
                 li(class=["navigation-menu__subitem"]) 
-                  a(class=["navigation-menu__subitem-ref"] 
-                    href=subref.url 
-                    target=(subref.isOuter ? "_blank" : "_self") 
-                    rel=(subref.isOuter ? "noopener noreferrer" : ""))
-                    p(class=["navigation-menu__subitem-ref-text"])= subref.text
+                  - if(subref.isOuter)
+                    a(class=["navigation-menu__subitem-ref"] href=subref.url target="_blank" rel="noopener noreferrer")
+                      p(class=["navigation-menu__subitem-ref-text"])= subref.text
+                  - else
+                    a(class=["navigation-menu__subitem-ref"] href=subref.url)
+                      p(class=["navigation-menu__subitem-ref-text"])= subref.text
             p(class=["navigation-menu__item-ref-text"])= ref.text
           div(class=["navigation-menu__dropdown-arrow"]) expand_more
         - }
         - else
-          a(class=["navigation-menu__item-ref"] 
-            href=ref.url 
-            target=(ref.isOuter ? "_blank" : "_self") 
-            rel=(ref.isOuter ? "noopener noreferrer" : ""))
-            p(class=["navigation-menu__item-ref-text"])= ref.text
+          - if(ref.isOuter)
+            a(class=["navigation-menu__item-ref"] href=ref.url target="_blank" rel="noopener noreferrer")
+              p(class=["navigation-menu__item-ref-text"])= ref.text
+          - else
+            a(class=["navigation-menu__item-ref"] href=ref.url)
+              p(class=["navigation-menu__item-ref-text"])= ref.text
