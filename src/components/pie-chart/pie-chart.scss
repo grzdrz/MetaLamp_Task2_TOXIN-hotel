@@ -1,5 +1,5 @@
 @import '../../assets/constants.scss';
-/* style=`fill:url(#${segment.name})` */
+
 .pie-chart {
   display: flex;
 
@@ -9,11 +9,13 @@
 
   &__svg-container {
     width: 7.5rem;
+    min-width: 7.5rem;
     height: 7.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-right: 1.875rem;
   }
 
   &__svg {
@@ -88,11 +90,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 1.875rem;
     margin-top: 1.6rem;
 
     @media screen and(max-width: 400px) {
-      margin-left: 0rem;
       margin-top: 1.875rem;
     }
   }
@@ -105,6 +105,7 @@
 
   &__item-marker {
     width: 0.625rem;
+    min-width: 0.625rem;
     height: 0.625rem;
     margin-right: 0.3125rem;
     border-radius: 50%;
@@ -124,7 +125,7 @@
   }
 
   &__item-text {
-    max-width: 9.375rem;
+    width: 10rem;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: $color-dark-shade-75;
