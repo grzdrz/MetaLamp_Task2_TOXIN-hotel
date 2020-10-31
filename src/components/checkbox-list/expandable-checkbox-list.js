@@ -18,13 +18,8 @@ class ExpandableCheckbox {
   }
 
   _updateState() {
-    if (this.isClosed) {
-      this.list.classList.toggle('checkbox-list__list_closed', true);
-      this.dropdownArrow.classList.toggle('checkbox-list__dropdown-arrow_closed', true);
-    } else {
-      this.list.classList.toggle('checkbox-list__list_closed', false);
-      this.dropdownArrow.classList.toggle('checkbox-list__dropdown-arrow_closed', false);
-    }
+    this.list.classList.toggle('checkbox-list__list_closed', this.isClosed);
+    this.dropdownArrow.classList.toggle('checkbox-list__dropdown-arrow_closed', this.isClosed);
   }
 
   _handleCheckboxExpand = () => {

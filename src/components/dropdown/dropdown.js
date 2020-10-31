@@ -20,21 +20,9 @@ class Dropdown {
     });
     this.hasClearButton = this.totalValue !== 0;
 
-    if (this.isOpened) {
-      this.inputContainer.classList.toggle('dropdown__input-container_opened', true);
-      this.droppingListContainer.classList.toggle('dropdown__list_opened', true);
-    } else {
-      this.inputContainer.classList.toggle('dropdown__input-container_opened', false);
-      this.droppingListContainer.classList.toggle('dropdown__list_opened', false);
-    }
-
-    if (this.clearButton) {
-      if (this.hasClearButton) {
-        this.clearButton.classList.toggle('dropdown__clear-button_visible', true);
-      } else {
-        this.clearButton.classList.toggle('dropdown__clear-button_visible', false);
-      }
-    }
+    this.inputContainer.classList.toggle('dropdown__input-container_opened', this.isOpened);
+    this.droppingListContainer.classList.toggle('dropdown__list_opened', this.isOpened);
+    if (this.clearButton) this.clearButton.classList.toggle('dropdown__clear-button_visible', this.hasClearButton);
 
     this._calculateTotalValue();
   }

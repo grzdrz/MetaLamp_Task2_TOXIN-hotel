@@ -40,12 +40,10 @@ class RoomInfo {
 
   _updateState() {
     this.radioButtons.forEach((button, index) => {
-      if (index === this.currentPhotoIndex) button.classList.toggle('room-info__radio-button_checked', true);
-      else button.classList.toggle('room-info__radio-button_checked', false);
+      button.classList.toggle('room-info__radio-button_checked', index === this.currentPhotoIndex);
     });
     this.photos.forEach((photo, index) => {
-      if (index === this.currentPhotoIndex) photo.classList.toggle('room-info__photo_current', true);
-      else photo.classList.toggle('room-info__photo_current', false);
+      photo.classList.toggle('room-info__photo_current', index === this.currentPhotoIndex);
     });
   }
 

@@ -158,11 +158,7 @@ class Calendar {
   }
 
   _updateState() {
-    if (this.hasClearButton) {
-      this.clearButton.classList.toggle('calendar__clear-button_visible', true);
-    } else {
-      this.clearButton.classList.toggle('calendar__clear-button_visible', false);
-    }
+    this.clearButton.classList.toggle('calendar__clear-button_visible', this.hasClearButton);
   }
 }
 

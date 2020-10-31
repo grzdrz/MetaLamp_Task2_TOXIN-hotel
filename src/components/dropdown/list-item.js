@@ -13,13 +13,8 @@ class ListItem {
   }
 
   _updateState() {
-    if (this.value === 0) {
-      this.minusButton.classList.toggle('dropdown__item-minus_active', false);
-      this.valueElement.textContent = 0;
-    } else {
-      this.minusButton.classList.toggle('dropdown__item-minus_active', true);
-      this.valueElement.textContent = this.value;
-    }
+    this.minusButton.classList.toggle('dropdown__item-minus_active', this.value !== 0);
+    this.valueElement.textContent = this.value;
   }
 
   _initialize() {
