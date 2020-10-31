@@ -36,15 +36,15 @@ mixin price-calculation-form(options = {})
         placeholder: "Сколько гостей",
         name: "guestsCount",
         type: "text",
-        value: "Сколько гостей",
         hasButtons: true,
-        withTotalValue: true,
+        defaultText: "Сколько гостей",
         list: [
-          {name: "взрослые", value: 0},
-          {name: "дети", value: 0},
-          {name: "младенцы", value: 0}
+          {names: ["взрослые"], value: 0, isCommon: true},
+          {names: ["дети"], value: 0, isCommon: true},
+          {names: ["младенец", "младенца", "младенцев", "младенцы"], value: 0, isCommon: false}
         ],
-      })  
+        commonNames: ["гость", "гостя", "гостей"],
+      }) 
     div(class=["price-calculation-form__calculated-data"])
       p(class=["price-calculation-form__main-sum", "js-price-calculation-form__main-sum"] 
         data-value=roomPrice data-currency-type=currencyType)

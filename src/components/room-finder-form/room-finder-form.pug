@@ -17,18 +17,17 @@ mixin room-finder-form(options = {})
     div(class=["room-finder-form__dropdown", "js-room-finder-form__dropdown"])
       +dropdown({
         title: "гости",
-        additionalTitle: "",
         placeholder: "Сколько гостей",
         name: "guestsCount",
         type: "text",
-        value: "Сколько гостей",
         hasButtons: true,
+        defaultText: "Сколько гостей",
         list: [
-          {name: "взрослые", value: 0},
-          {name: "дети", value: 0},
-          {name: "младенцы", value: 0}
+          {names: ["взрослые"], value: 0, isCommon: true},
+          {names: ["дети"], value: 0, isCommon: true},
+          {names: ["младенец", "младенца", "младенцев", "младенцы"], value: 0, isCommon: false}
         ],
-        withTotalValue: true,
+        commonNames: ["гость", "гостя", "гостей"],
       })
     div(class=["room-finder-form__submit-button"])
       +button({

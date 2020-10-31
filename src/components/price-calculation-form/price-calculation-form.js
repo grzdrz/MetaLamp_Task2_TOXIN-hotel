@@ -1,6 +1,6 @@
 import Dropdown from '../dropdown/dropdown';
 import Calendar from '../calendar/calendar';
-import { doDeclensionOfWord } from '../../assets/helpers';
+import { doDeclensionOfWord, formateNumber } from '../../assets/helpers';
 
 class PriceCalculationForm {
   constructor(outerContainerElement) {
@@ -33,7 +33,7 @@ class PriceCalculationForm {
     this.currencyType = this.mainSum.dataset.currencyType;
     this.discountValue = Number.parseInt(this.services.dataset.value, 10);
 
-    this.dropdown.droppingList.forEach((item) => {
+    this.dropdown.droppingItems.forEach((item) => {
       item.minusButton.addEventListener('click', this._handleDropdownMinusPlusButtonsClick);
       item.plusButton.addEventListener('click', this._handleDropdownMinusPlusButtonsClick);
     });
@@ -76,18 +76,14 @@ class PriceCalculationForm {
   }
 
   _render() {
-    this.mainSumFormula.textContent = `${this._formateNumber(this.roomRentalPrice)}${this.currencyType} x ${this.daysCount} ${doDeclensionOfWord(this.daysCount, ['сутки', 'суток', 'суток'])}`;
-    this.mainSumValue.textContent = `${this._formateNumber(this.roomRentalSum)}${this.currencyType}`;
-    this.additionalServicesValue.textContent = `${this._formateNumber(this.servicesSum)}${this.currencyType}`;
-    this.totalResultValue.textContent = `${this._formateNumber(this.totalSum)}${this.currencyType}`;
-  }
-
-  _formateNumber(number) {
-    return number.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+    this.mainSumFormula.textContent = `${formateNumber(this.roomRentalPrice)}${this.currencyType} x ${this.daysCount} ${doDeclensionOfWord(this.daysCount, ['сутки', 'суток', 'суток'])}`;
+    this.mainSumValue.textContent = `${formateNumber(this.roomRentalSum)}${this.currencyType}`;
+    this.additionalServicesValue.textContent = `${formateNumber(this.servicesSum)}${this.currencyType}`;
+    this.totalResultValue.textContent = `${formateNumber(this.totalSum)}${this.currencyType}`;
   }
 
   _handleDropdownMinusPlusButtonsClick = () => {
-    this.servicesSum = this.dropdown.totalValue * 100;
+    this.servicesSum = this.dropdown.commonValue * 100;
     this._calculateTotalPrice();
   }
 

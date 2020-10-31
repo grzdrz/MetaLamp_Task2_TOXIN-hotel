@@ -50,14 +50,14 @@ block content
           placeholder: "dropdown",
           name: "dropdown",
           type: "text",
-          value: "Сколько гостей",
           hasButtons: true,
-          withTotalValue: true,
+          defaultText: "Сколько гостей",
           list: [
-            {name: "взрослые", value: 0},
-            {name: "дети", value: 0},
-            {name: "младенцы", value: 0}
+            {names: ["взрослые"], value: 0, isCommon: true},
+            {names: ["дети"], value: 0, isCommon: true},
+            {names: ["младенец", "младенца", "младенцев", "младенцы"], value: 0, isCommon: false}
           ],
+          commonNames: ["гость", "гостя", "гостей"],
         })
       div(class=["form-elements__calendar_type_default js-form-elements__calendar"])
         +calendar({
@@ -210,13 +210,14 @@ block content
             placeholder: "dropdown",
             name: "dropdown",
             type: "text",
-            value: "Сколько комнат",
-            withTotalValue: false,
+            hasButtons: false,
+            defaultText: "Сколько комнат",
             list: [
-              {name: "спальни", value: 0},
-              {name: "кровати", value: 0},
-              {name: "ванные комнаты", value: 0}
+              {names: ["спальня", "спальни", "спален", "спальни"], value: 0, isCommon: false},
+              {names: ["кровать", "кровати", "кроватей", "кровати"], value: 0, isCommon: false},
+              {names: ["ванная комната", "ванные комнаты", "ванных комнат", "ванные комнаты"], value: 0, isCommon: false},
             ],
+            commonNames: [],
           }) 
         div(class=["form-elements__dropdown_type_room-items-counter js-form-elements__dropdown"]) 
           +dropdown({
@@ -225,13 +226,14 @@ block content
             placeholder: "dropdown",
             name: "dropdown",
             type: "text",
-            value: "Сколько комнат",
-            withTotalValue: false,
+            hasButtons: false,
+            defaultText: "Сколько комнат",
             list: [
-              {name: "спальни", value: 0},
-              {name: "кровати", value: 0},
-              {name: "ванные комнаты", value: 0}
+              {names: ["спальня", "спальни", "спален", "спальни"], value: 0, isCommon: false},
+              {names: ["кровать", "кровати", "кроватей", "кровати"], value: 0, isCommon: false},
+              {names: ["ванная комната", "ванные комнаты", "ванных комнат", "ванные комнаты"], value: 0, isCommon: false},
             ],
+            commonNames: [],
           })
       div(class=["form-elements__dropdown_type_guests-counter js-form-elements__dropdown"]) 
         +dropdown({
@@ -240,14 +242,14 @@ block content
           placeholder: "dropdown",
           name: "dropdown",
           type: "text",
-          value: "Сколько гостей",
           hasButtons: true,
-          withTotalValue: true,
+          defaultText: "Сколько гостей",
           list: [
-            {name: "взрослые", value: 0},
-            {name: "дети", value: 0},
-            {name: "младенцы", value: 0}
+            {names: ["взрослые"], value: 0, isCommon: true},
+            {names: ["дети"], value: 0, isCommon: true},
+            {names: ["младенец", "младенца", "младенцев", "младенцы"], value: 0, isCommon: false}
           ],
+          commonNames: ["гость", "гостя", "гостей"],
         })
       div(class=["form-elements__dropdown_type_guests-counter js-form-elements__dropdown"]) 
         +dropdown({
@@ -256,14 +258,14 @@ block content
           placeholder: "dropdown",
           name: "dropdown",
           type: "text",
-          value: "Сколько гостей",
           hasButtons: true,
-          withTotalValue: true,
+          defaultText: "Сколько гостей",
           list: [
-            {name: "взрослые", value: 0},
-            {name: "дети", value: 0},
-            {name: "младенцы", value: 0}
+            {names: ["взрослые"], value: 0, isCommon: true},
+            {names: ["дети"], value: 0, isCommon: true},
+            {names: ["младенец", "младенца", "младенцев", "младенцы"], value: 0, isCommon: false}
           ],
+          commonNames: ["гость", "гостя", "гостей"],
         })
     div(class=["form-elements__row-central"])
       div(class=["form-elements__checkboxes"])

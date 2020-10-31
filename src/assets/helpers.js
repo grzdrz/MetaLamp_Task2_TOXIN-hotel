@@ -13,3 +13,7 @@ export function doDeclensionOfWord(number, words) {
 
   return words[2];
 }
+
+export function formateNumber(number) {
+  return number.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+}

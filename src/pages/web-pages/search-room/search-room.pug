@@ -21,17 +21,18 @@ block content
       div(class=["search-room__dropdown_type_guests-counter", "js-search-room__dropdown"])
         +dropdown({
           title: "гости",
+          additionalTitle: "",
           placeholder: "Сколько гостей",
-          name: "guests",
+          name: "guestsCount",
           type: "text",
-          value: "Сколько гостей",
           hasButtons: true,
-          dropdownList: [
-            {name: "взрослые", value: 0},
-            {name: "дети", value: 0},
-            {name: "младенцы", value: 0}
+          defaultText: "Сколько гостей",
+          list: [
+            {names: ["взрослые"], value: 0, isCommon: true},
+            {names: ["дети"], value: 0, isCommon: true},
+            {names: ["младенец", "младенца", "младенцев", "младенцы"], value: 0, isCommon: false}
           ],
-          withTotalValue: true,
+          commonNames: ["гость", "гостя", "гостей"],
         })
       div(class=["search-room__range-slider", "js-search-room__range-slider"])
         +range-slider({
@@ -65,13 +66,14 @@ block content
           placeholder: "Сколько комнат",
           name: "rooms",
           type: "text",
-          value: "Сколько комнат",
+          hasButtons: false,
+          defaultText: "Сколько комнат",
           list: [
-            {name: "спальни", value: 0},
-            {name: "кровати", value: 0},
-            {name: "ванные комнаты", value: 0}
+            {names: ["спальня", "спальни", "спален", "спальни"], value: 0, isCommon: false},
+            {names: ["кровать", "кровати", "кроватей", "кровати"], value: 0, isCommon: false},
+            {names: ["ванная комната", "ванные комнаты", "ванных комнат", "ванные комнаты"], value: 0, isCommon: false},
           ],
-          withTotalValue: false,
+          commonNames: [],
         })
       div(class=["search-room__checkbox-list_type_expandable", "js-search-room__checkbox_expandable"])
         +checkbox-list({

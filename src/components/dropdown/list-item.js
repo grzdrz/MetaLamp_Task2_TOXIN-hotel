@@ -9,8 +9,9 @@ class ListItem {
     this._setEventHandlers();
   }
 
-  get name() {
-    return this.nameElement.textContent;
+  updateState() {
+    this.minusButton.classList.toggle('dropdown__item-minus_active', this.value !== 0);
+    this.valueElement.textContent = this.value;
   }
 
   _initialize() {
@@ -18,16 +19,14 @@ class ListItem {
     this.valueElement = this.containerElement.querySelector('.js-dropdown__item-value');
     this.plusButton = this.containerElement.querySelector('.js-dropdown__item-plus');
     this.minusButton = this.containerElement.querySelector('.js-dropdown__item-minus');
+
+    this.isCommon = this.containerElement.matches('.js-dropdown__list-item_common');
+    this.names = this.containerElement.dataset.names.split(',');
   }
 
   _setEventHandlers() {
     this.plusButton.addEventListener('click', this._handlePlusButtonClick);
     this.minusButton.addEventListener('click', this._handleMinusButtonClick);
-  }
-
-  _updateState() {
-    this.minusButton.classList.toggle('dropdown__item-minus_active', this.value !== 0);
-    this.valueElement.textContent = this.value;
   }
 
   _handlePlusButtonClick = (event) => {

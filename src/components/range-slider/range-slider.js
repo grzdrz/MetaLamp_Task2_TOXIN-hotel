@@ -1,6 +1,9 @@
 import 'ion-rangeslider';
-import 'ion-rangeslider/css/ion.rangeSlider.css';
 import jQuery from 'jquery';
+
+import { formateNumber } from '../../assets/helpers';
+
+import 'ion-rangeslider/css/ion.rangeSlider.css';
 
 const $ = jQuery;
 global.jQuery = $;
@@ -36,11 +39,7 @@ class RangeSlider {
   }
 
   _renderTitle = (data) => {
-    this.currentValues.textContent = `${this._formateNumber(data.from)}₽ - ${this._formateNumber(data.to)}₽`;
-  }
-
-  _formateNumber(number) {
-    return number.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+    this.currentValues.textContent = `${formateNumber(data.from)}₽ - ${formateNumber(data.to)}₽`;
   }
 }
 
