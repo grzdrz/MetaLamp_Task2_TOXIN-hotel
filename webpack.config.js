@@ -64,11 +64,6 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules)/,
         loader: 'babel-loader',
-        /* options: {
-          plugins: [
-            ['@babel/plugin-proposal-class-properties', { loose: true }],
-          ],
-        }, */
       },
       {
         test: /\.pug$/,

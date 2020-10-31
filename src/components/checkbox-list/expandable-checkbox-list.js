@@ -4,6 +4,8 @@ class ExpandableCheckbox {
     this.isClosed = isClosed;
 
     this._initialize();
+    this._setEventHandlers();
+    this._updateState();
   }
 
   _initialize() {
@@ -11,10 +13,10 @@ class ExpandableCheckbox {
     this.dropdownButton = this.containerElement.querySelector('.js-checkbox-list__title');
     this.list = this.containerElement.querySelector('.js-checkbox-list__list');
     this.dropdownArrow = this.containerElement.querySelector('.js-checkbox-list__dropdown-arrow');
+  }
 
+  _setEventHandlers() {
     this.dropdownButton.addEventListener('click', this._handleCheckboxExpand);
-
-    this._updateState();
   }
 
   _updateState() {

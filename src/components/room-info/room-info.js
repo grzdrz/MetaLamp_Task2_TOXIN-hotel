@@ -4,6 +4,8 @@ class RoomInfo {
     this.currentPhotoIndex = currentPhotoIndex;
 
     this._initialize();
+    this._setEventHandlers();
+    this._updateState();
   }
 
   _initialize() {
@@ -13,10 +15,11 @@ class RoomInfo {
       this.leftArrow = this.arrows.querySelector('.js-room-info__arrow-back');
       this.rightArrow = this.arrows.querySelector('.js-room-info__arrow-forward');
     }
-
     this.radioButtons = Array.from(this.containerElement.querySelectorAll('.js-room-info__radio-button'));
     this.photos = Array.from(this.containerElement.querySelectorAll('.js-room-info__photo'));
+  }
 
+  _setEventHandlers() {
     if (this.leftArrow && this.rightArrow) {
       this.leftArrow.addEventListener('click', this._handleLeftArrowClick);
       this.rightArrow.addEventListener('click', this._handleRightArrowClick);
@@ -24,8 +27,6 @@ class RoomInfo {
     this.radioButtons.forEach((button) => {
       button.addEventListener('click', this._handleRadioButtonClick);
     });
-
-    this._updateState();
   }
 
   _skipPhoto(isDirectionForward) {

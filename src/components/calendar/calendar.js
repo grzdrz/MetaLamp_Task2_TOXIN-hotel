@@ -16,6 +16,7 @@ class Calendar {
     this.hasClearButton = false;
 
     this._initialize();
+    this._selectDatapicker();
   }
 
   _initialize() {
@@ -25,7 +26,9 @@ class Calendar {
 
     this.isDouble = this.$containerElement.hasClass('js-calendar_type_double');
     this.withRangePicking = this.$containerElement.hasClass('js-calendar_with-range-picking');
+  }
 
+  _selectDatapicker() {
     if (this.isDouble) this._setDoubleDatepicker();
     else if (this.withRangePicking) this._setSingleDatepickerWithRange();
     else this._singleDatepickerWithoutRange();

@@ -10,6 +10,8 @@ class Dropdown {
     this.totalValue = 0;
 
     this._initialize();
+    this._setEventHandlers();
+    this.updateState();
   }
 
   updateState() {
@@ -51,9 +53,6 @@ class Dropdown {
       ['ванные комнаты', ['ванная комната', 'ванные комнаты', 'ванных комнат']],
       ['младенец', ['младенец', 'младенца', 'младенцев']],
     ]);
-
-    this._setEventHandlers();
-    this.updateState();
   }
 
   _setEventHandlers() {

@@ -3,6 +3,8 @@ class Header {
     this.container = container;
 
     this._initialize();
+    this._setEventHandlers();
+    this._handleBurgerClick();
   }
 
   _initialize() {
@@ -12,9 +14,10 @@ class Header {
     this.navigationMenu = this.container.querySelector('.js-header__navigation-menu');
     this.buttons = this.container.querySelector('.js-header__buttons');
     this.userFullName = this.container.querySelector('.js-header__user-full-name');
+  }
 
+  _setEventHandlers() {
     this.burger.addEventListener('click', this._handleBurgerClick);
-    this._handleBurgerClick();
   }
 
   _handleBurgerClick = () => {
