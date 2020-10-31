@@ -9,11 +9,6 @@ class Dropdown {
     this.hasClearButton = false;
     this.totalValue = 0;
 
-    this._handleDropdownClick = this._handleDropdownClick.bind(this);
-    this._handleClearButtonClick = this._handleClearButtonClick.bind(this);
-    this._handleApplyButtonClick = this._handleApplyButtonClick.bind(this);
-    this._handleDropdownLeave = this._handleDropdownLeave.bind(this);
-
     this._initialize();
   }
 
@@ -123,12 +118,12 @@ class Dropdown {
     }
   }
 
-  _handleDropdownClick() {
+  _handleDropdownClick = () => {
     this.isOpened = !this.isOpened;
     this.updateState();
   }
 
-  _handleClearButtonClick() {
+  _handleClearButtonClick = () => {
     this.hasClearButton = false;
     this.droppingList.forEach((item) => {
       item.value = 0;
@@ -136,12 +131,12 @@ class Dropdown {
     this.updateState();
   }
 
-  _handleApplyButtonClick() {
+  _handleApplyButtonClick = () => {
     this.isOpened = false;
     this.updateState();
   }
 
-  _handleDropdownLeave(event) {
+  _handleDropdownLeave = (event) => {
     const dropwdown = event.target.closest('.dropdown');
     if (!dropwdown) {
       this.isOpened = false;

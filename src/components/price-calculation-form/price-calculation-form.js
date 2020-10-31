@@ -10,10 +10,6 @@ class PriceCalculationForm {
     this.servicesSum = 0;
     this.roomRentalSum = 0;
 
-    this._handleDropdownMinusPlusButtonsClick = this._handleDropdownMinusPlusButtonsClick.bind(this);
-    this._makeCalendarSelectRangeHandler = this._makeCalendarSelectRangeHandler.bind(this);
-    this._handleCalendarClearButtonClick = this._handleCalendarClearButtonClick.bind(this);
-
     this._initialize();
   }
 
@@ -51,27 +47,25 @@ class PriceCalculationForm {
     clearButton.addEventListener('click', this._handleCalendarClearButtonClick);
   }
 
-  _makeCalendarSelectRangeHandler(oldHandler) {
-    return function newHandler(date) {
-      oldHandler(date);
+  _makeCalendarSelectRangeHandler = (oldHandler) => (date) => {
+    oldHandler(date);
 
-      const firstDateInput = this.calendar.$dateInputs.eq(0);
-      const secondDateInput = this.calendar.$dateInputs.eq(1);
-      const firstDateValue = firstDateInput[0].value;
-      const secondDateValue = secondDateInput[0].value;
-      if (firstDateValue && secondDateValue) {
-        const firstDateStrings = firstDateValue.split('.');
-        const firstDate = new Date(firstDateStrings[2], firstDateStrings[1], firstDateStrings[0]);
-        const secondDateStrings = secondDateValue.split('.');
-        const secondDate = new Date(secondDateStrings[2], secondDateStrings[1], secondDateStrings[0]);
-        const deltaDate = Math.abs(secondDate - firstDate);
+    const firstDateInput = this.calendar.$dateInputs.eq(0);
+    const secondDateInput = this.calendar.$dateInputs.eq(1);
+    const firstDateValue = firstDateInput[0].value;
+    const secondDateValue = secondDateInput[0].value;
+    if (firstDateValue && secondDateValue) {
+      const firstDateStrings = firstDateValue.split('.');
+      const firstDate = new Date(firstDateStrings[2], firstDateStrings[1], firstDateStrings[0]);
+      const secondDateStrings = secondDateValue.split('.');
+      const secondDate = new Date(secondDateStrings[2], secondDateStrings[1], secondDateStrings[0]);
+      const deltaDate = Math.abs(secondDate - firstDate);
 
-        this.daysCount = deltaDate / (1000 * 60 * 60 * 24);
-        this.roomRentalSum = this.daysCount * this.roomRentalPrice;
+      this.daysCount = deltaDate / (1000 * 60 * 60 * 24);
+      this.roomRentalSum = this.daysCount * this.roomRentalPrice;
 
-        this._calculateTotalPrice();
-      }
-    }.bind(this);
+      this._calculateTotalPrice();
+    }
   }
 
   _calculateTotalPrice() {
@@ -92,12 +86,12 @@ class PriceCalculationForm {
     return number.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
   }
 
-  _handleDropdownMinusPlusButtonsClick() {
+  _handleDropdownMinusPlusButtonsClick = () => {
     this.servicesSum = this.dropdown.totalValue * 100;
     this._calculateTotalPrice();
   }
 
-  _handleCalendarClearButtonClick() {
+  _handleCalendarClearButtonClick = () => {
     this.daysCount = 0;
     this.roomRentalSum = 0;
     this._calculateTotalPrice();

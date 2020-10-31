@@ -15,10 +15,6 @@ class Calendar {
     this.outerContainerElement = outerContainerElement;
     this.hasClearButton = false;
 
-    this._handleDatepickerShow = this._handleDatepickerShow.bind(this);
-    this._handleDoubleInputSelectRange = this._handleDoubleInputSelectRange.bind(this);
-    this._handleSingleInputSelectRange = this._handleSingleInputSelectRange.bind(this);
-
     this._initialize();
   }
 
@@ -81,7 +77,7 @@ class Calendar {
     }).data('datepicker');
   }
 
-  _handleDatepickerShow(datepickerInstance, animationCompleted) {
+  _handleDatepickerShow = (datepickerInstance, animationCompleted) => {
     if (!animationCompleted) {
       if (!datepickerInstance.$datepicker.find('.calendar__buttons').html()) {
         datepickerInstance.$datepicker.append(
@@ -104,7 +100,7 @@ class Calendar {
     }
   }
 
-  _handleDoubleInputSelectRange(formattedDate, date, inst) {
+  _handleDoubleInputSelectRange = (formattedDate, date, inst) => {
     if (inst.selectedDates[0]) {
       const firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptionsForDoubleInput)
         .format(inst.selectedDates[0]);
@@ -123,7 +119,7 @@ class Calendar {
     this._updateState();
   }
 
-  _handleSingleInputSelectRange(formattedDate, date, inst) {
+  _handleSingleInputSelectRange = (formattedDate, date, inst) => {
     if (this.withRangePicking) {
       if (inst.selectedDates[0] && inst.selectedDates[1]) {
         let formattedDateFrom = (new Intl.DateTimeFormat('ru-RU', dateFormatOptionsForSingleInput)

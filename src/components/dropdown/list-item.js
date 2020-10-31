@@ -5,9 +5,6 @@ class ListItem {
 
     this.value = 0;
 
-    this._handlePlusButtonClick = this._handlePlusButtonClick.bind(this);
-    this._handleMinusButtonClick = this._handleMinusButtonClick.bind(this);
-
     this._initialize();
   }
 
@@ -35,7 +32,7 @@ class ListItem {
     this.minusButton.addEventListener('click', this._handleMinusButtonClick);
   }
 
-  _handlePlusButtonClick(event) {
+  _handlePlusButtonClick = (event) => {
     event.preventDefault();
 
     this.value = Number.parseInt(this.valueElement.textContent, 10);
@@ -44,7 +41,7 @@ class ListItem {
     this.dropdown.updateState();
   }
 
-  _handleMinusButtonClick(event) {
+  _handleMinusButtonClick = (event) => {
     event.preventDefault();
 
     this.value = Number.parseInt(this.valueElement.textContent, 10);

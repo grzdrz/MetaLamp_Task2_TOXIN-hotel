@@ -10,7 +10,6 @@ class RangeSlider {
   constructor(outerContainerElement) {
     this.outerContainerElement = outerContainerElement;
 
-    this._renderTitle = this._renderTitle.bind(this);
     this.data = {
       type: 'double',
       min: 1000,
@@ -36,7 +35,7 @@ class RangeSlider {
     this.$slider = $(this.content).ionRangeSlider(this.data);
   }
 
-  _renderTitle(data) {
+  _renderTitle = (data) => {
     this.currentValues.textContent = `${this._formateNumber(data.from)}₽ - ${this._formateNumber(data.to)}₽`;
   }
 

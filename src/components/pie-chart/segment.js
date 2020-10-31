@@ -12,9 +12,6 @@ class Segment {
     this.value = Number.parseInt(outerPath.dataset.value, 10);
 
     this.innerRadius = this.chart.innerRadius;
-
-    this._handleSegmentMouseOver = this._handleSegmentMouseOver.bind(this);
-    this._handleSegmentMouseOut = this._handleSegmentMouseOut.bind(this);
   }
 
   initialize() {
@@ -67,12 +64,12 @@ class Segment {
     return result;
   }
 
-  _handleSegmentMouseOver() {
+  _handleSegmentMouseOver = () => {
     this.isTargeted = true;
     this.chart.render();
   }
 
-  _handleSegmentMouseOut() {
+  _handleSegmentMouseOut = () => {
     this.isTargeted = false;
     this.chart.render();
   }

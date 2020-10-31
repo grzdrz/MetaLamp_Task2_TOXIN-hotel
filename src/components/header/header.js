@@ -2,8 +2,6 @@ class Header {
   constructor(container) {
     this.container = container;
 
-    this._handleBurgerClick = this._handleBurgerClick.bind(this);
-
     this._initialize();
   }
 
@@ -19,7 +17,7 @@ class Header {
     this._handleBurgerClick();
   }
 
-  _handleBurgerClick() {
+  _handleBurgerClick = () => {
     this.logoContainer.classList.toggle('header__colored-logo_closed');
     this.burger.classList.toggle('header__burger_closed');
     this.burgerElements.forEach((element) => element.classList.toggle('header__burger-element_opened'));

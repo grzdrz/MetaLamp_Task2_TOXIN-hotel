@@ -3,8 +3,6 @@ class ExpandableCheckbox {
     this.outerContainerElement = outerContainerElement;
     this.isClosed = isClosed;
 
-    this._handleCheckboxExpand = this._handleCheckboxExpand.bind(this);
-
     this._initialize();
   }
 
@@ -29,7 +27,7 @@ class ExpandableCheckbox {
     }
   }
 
-  _handleCheckboxExpand() {
+  _handleCheckboxExpand = () => {
     if (this.isClosed) this.isClosed = false;
     else this.isClosed = true;
     this._updateState();
