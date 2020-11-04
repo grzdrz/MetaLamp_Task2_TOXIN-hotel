@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 /* eslint-disable no-lonely-if */
 import 'air-datepicker';
 import 'air-datepicker/dist/css/datepicker.css';
@@ -23,7 +24,7 @@ class Calendar {
     const $outerContainerElement = $('html').find(this.outerContainerElement);
     this.$containerElement = $outerContainerElement.find('.js-calendar');
     this.$dateInputs = this.$containerElement.find('.js-calendar__input');
-
+    this.arrows = [...this.$containerElement.find('.js-calendar__dropdown-arrow')];
     this.isDouble = this.$containerElement.hasClass('js-calendar_type_double');
     this.withRangePicking = this.$containerElement.hasClass('js-calendar_with-range-picking');
   }
@@ -35,10 +36,10 @@ class Calendar {
   }
 
   _setDoubleDatepicker() {
-    this.dateInputFrom = this.$dateInputs.eq(0);
-    this.dateInputTo = this.$dateInputs.eq(1);
+    this.$dateInputFrom = this.$dateInputs.eq(0);
+    this.$dateInputTo = this.$dateInputs.eq(1);
 
-    this.datepickerInstance = this.dateInputFrom.datepicker({
+    this.datepickerInstance = this.$dateInputFrom.datepicker({
       range: true,
       position: 'bottom left',
       navTitles: {
@@ -47,15 +48,16 @@ class Calendar {
       minDate: new Date(),
       onShow: this._handleDatepickerShow,
       onSelect: this._handleDoubleInputSelectRange,
+      onHide: () => this.arrows.forEach((arrow) => arrow.classList.toggle('calendar__dropdown-arrow_opened', false)),
     }).data('datepicker');
     this.datepickerInstance.show();
     this.datepickerInstance.hide();
   }
 
   _setSingleDatepickerWithRange() {
-    this.dateInput = this.$dateInputs.eq(0);
+    this.$dateInput = this.$dateInputs.eq(0);
 
-    this.datepickerInstance = this.dateInput.datepicker({
+    this.datepickerInstance = this.$dateInput.datepicker({
       range: true,
       position: 'bottom left',
       navTitles: {
@@ -64,19 +66,21 @@ class Calendar {
       minDate: new Date(),
       onShow: this._handleDatepickerShow,
       onSelect: this._handleSingleInputSelectRange,
+      onHide: () => this.arrows.forEach((arrow) => arrow.classList.toggle('calendar__dropdown-arrow_opened', false)),
     }).data('datepicker');
   }
 
   _singleDatepickerWithoutRange() {
-    this.dateInput = this.$dateInputs.eq(0);
+    this.$dateInput = this.$dateInputs.eq(0);
 
-    this.datepickerInstance = this.dateInput.datepicker({
+    this.datepickerInstance = this.$dateInput.datepicker({
       position: 'bottom left',
       navTitles: {
         days: 'MM yyyy',
       },
       onShow: this._handleDatepickerShow,
       onSelect: this._handleSingleInputSelectRange,
+      onHide: () => this.arrows.forEach((arrow) => arrow.classList.toggle('calendar__dropdown-arrow_opened', false)),
     }).data('datepicker');
   }
 
@@ -98,25 +102,27 @@ class Calendar {
 
         datepickerInstance.$datepicker.find('.datepicker--pointer').css('display', 'none');
 
-        if (this.dateInputTo) this.dateInputTo.bind('click', datepickerInstance.show.bind(datepickerInstance));
+        if (this.$dateInputTo) this.$dateInputTo.bind('click', datepickerInstance.show.bind(datepickerInstance));
       }
     }
+
+    this.arrows.forEach((arrow) => arrow.classList.toggle('calendar__dropdown-arrow_opened', true));
   }
 
   _handleDoubleInputSelectRange = (formattedDate, date, inst) => {
     if (inst.selectedDates[0]) {
       const firstFormattedDate = new Intl.DateTimeFormat(dateFormatOptionsForDoubleInput)
         .format(inst.selectedDates[0]);
-      this.dateInputFrom.prop('value', firstFormattedDate);
+      this.$dateInputFrom.prop('value', firstFormattedDate);
     }
     if (inst.selectedDates[1]) {
       const secondFormattedDate = new Intl.DateTimeFormat(dateFormatOptionsForDoubleInput)
         .format(inst.selectedDates[1]);
-      this.dateInputTo.prop('value', secondFormattedDate);
+      this.$dateInputTo.prop('value', secondFormattedDate);
       this.hasClearButton = true;
     } else {
-      this.dateInputFrom.prop('value', '');
-      this.dateInputTo.prop('value', '');
+      this.$dateInputFrom.prop('value', '');
+      this.$dateInputTo.prop('value', '');
       this.hasClearButton = false;
     }
     this._updateState();
@@ -133,10 +139,10 @@ class Calendar {
           .format(inst.selectedDates[1]))
           .toString();
         formattedDateTo = formattedDateTo.slice(0, formattedDateTo.length - 1);
-        this.dateInput.prop('value', `${formattedDateFrom} - ${formattedDateTo}`);
+        this.$dateInput.prop('value', `${formattedDateFrom} - ${formattedDateTo}`);
         this.hasClearButton = true;
       } else {
-        this.dateInput.prop('value', '');
+        this.$dateInput.prop('value', '');
         this.hasClearButton = false;
       }
     } else {

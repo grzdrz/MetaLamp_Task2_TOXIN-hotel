@@ -30,7 +30,7 @@ mixin calendar(options = {})
           name="date_from" 
           placeholder="ДД.ММ.ГГГГ"
           readonly=true)
-        p(class=["calendar__dropdown-arrow"]) expand_more
+        p(class=["calendar__dropdown-arrow", "js-calendar__dropdown-arrow"]) expand_more
     - if(isDouble)                
       div(class=["calendar__input-container", "calendar__input-container_date_to"])
         p(class=["calendar__title"])
@@ -41,4 +41,4 @@ mixin calendar(options = {})
             name="date_to"
             placeholder="ДД.ММ.ГГГГ"
             readonly=true)
-          p(class=["calendar__dropdown-arrow"]) expand_more                  
+          p(class=["calendar__dropdown-arrow", "js-calendar__dropdown-arrow"]) expand_more                  

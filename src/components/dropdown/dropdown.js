@@ -26,6 +26,7 @@ class Dropdown {
 
     this.inputContainer.classList.toggle('dropdown__input-container_opened', this.isOpened);
     this.droppingListContainer.classList.toggle('dropdown__list_opened', this.isOpened);
+    this.dropdownArrow.classList.toggle('dropdown__dropdown-arrow_opened', this.isOpened);
     if (this.clearButton) this.clearButton.classList.toggle('dropdown__clear-button_visible', this.hasClearButton);
   }
 

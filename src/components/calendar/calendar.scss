@@ -113,6 +113,10 @@
     color: $color-dark-shade-50;
     background: transparent;
     outline: none;
+
+    &_opened {
+      transform: rotate(180deg);
+    }
   }
 
   &__buttons {

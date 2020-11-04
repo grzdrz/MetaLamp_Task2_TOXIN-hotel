@@ -1,5 +1,7 @@
 @import '../../assets/constants.scss';
 
+$animation-duration: 1s;
+
 .dropdown {
   width: 100%;
 
@@ -37,9 +39,12 @@
     display: grid;
     grid-template-rows: 2.625rem;
     grid-template-columns: auto min-content;
-    border: 0.0625rem solid $color-dark-shade-25;
     box-sizing: border-box;
     border-radius: 0.25rem;
+    border: 0.0625rem solid $color-dark-shade-25;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    animation: close-input-container $animation-duration ease-in-out;
 
     &:hover,
     &:focus {
@@ -50,6 +55,37 @@
       border: 0.0625rem solid $color-dark-shade-50;
       border-bottom-left-radius: 0rem;
       border-bottom-right-radius: 0rem;
+      animation: open-input-container $animation-duration ease-in-out;
+    }
+
+    @keyframes open-input-container {
+      from {
+        border-bottom-left-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+      }
+      1% {
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+      }
+      to {
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+      }
+    }
+
+    @keyframes close-input-container {
+      from {
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+      }
+      99% {
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+      }
+      to {
+        border-bottom-left-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+      }
     }
   }
 
@@ -91,29 +127,59 @@
   }
 
   &__list {
-    display: none;
     width: 100%;
     list-style: none;
     flex-direction: column;
     grid-column-start: 1;
     grid-column-end: 3;
     position: absolute;
-    top: 2.75rem;
+    top: 100%;
     background: white;
-    border: 0.0625rem solid $color-dark-shade-50;
     box-shadow: 0rem 0.625rem 1.25rem $color-dark-shade-5;
-    border-top: 0rem;
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
     z-index: 9999;
-
-    &:hover,
-    &:focus {
-      border-top: 0rem;
-    }
+    overflow-y: hidden;
+    max-height: 0px;
+    border: 0rem solid $color-dark-shade-50;
+    animation: close-list $animation-duration ease-in-out;
 
     &_opened {
-      display: flex;
+      max-height: 50rem;
+      border: 0.0625rem solid $color-dark-shade-50;
+      border-top: 0rem;
+      animation: open-list $animation-duration ease-in-out;
+    }
+
+    @keyframes open-list {
+      from {
+        max-height: 0px;
+      }
+      1% {
+        max-height: 0px;
+        border: 0.0625rem solid $color-dark-shade-50;
+        border-top: 0rem;
+      }
+      to {
+        max-height: 50rem;
+      }
+    }
+
+    @keyframes close-list {
+      from {
+        max-height: 50rem;
+        border: 0.0625rem solid $color-dark-shade-50;
+        border-top: 0rem;
+      }
+      99% {
+        max-height: 0px;
+        border: 0.0625rem solid $color-dark-shade-50;
+        border-top: 0rem;
+      }
+      to {
+        max-height: 0px;
+        border: 0rem solid $color-dark-shade-50;
+      }
     }
   }
 
@@ -131,6 +197,11 @@
     font-family: Material Icons;
     font-size: 1.5rem;
     line-height: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+
+    &_opened {
+      transform: rotate(180deg);
+    }
   }
 
   &__list-item {
