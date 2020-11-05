@@ -20,7 +20,7 @@ mixin room-info(options = {})
 
   div(class=["room-info", "js-room-info"])
     a(class=["room-info__ref"] href=url)
-    div(class=["room-info__photos"])
+    div(class=["room-info__photos", "js-room-info__photos"])
       - for(let i = 0; i < photos.length; i += 1) {
         img(class=["room-info__photo", "js-room-info__photo"] 
           src=`./src/components/room-info/img/${photos[i]}.png` 
