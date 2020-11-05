@@ -3,7 +3,6 @@ mixin checkbox-list(options = {})
     const {
       title = "",
       isExpandable = false,
-      isOpened = false,
       hasAdditionalText = false,
       list = [
         {isChecked: false, text: "Можно курить"},
@@ -28,7 +27,7 @@ mixin checkbox-list(options = {})
       - for(let item of list)
         li(class=["checkbox-list__item"])
           label(class=["checkbox-list__label"])
-            input(class=["checkbox-list__input"] type= "checkbox" checked= item.isChecked)
+            input(class=["checkbox-list__input"] type="checkbox" checked=item.isChecked)
             div(class=["checkbox-list__check-mark"])
               img(class=["checkbox-list__check-mark-image"] 
                 src="./src/components/checkbox-list/img/check-mark.svg" alt="check-mark")

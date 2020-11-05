@@ -1,3 +1,5 @@
+$dropdown-animation-duration: 1.5s;
+
 .navigation-menu {
   list-style: none;
   display: flex;
@@ -25,7 +27,24 @@
 
     &:hover {
       .navigation-menu__submenu {
-        display: block;
+        animation: open-navigation-menu $dropdown-animation-duration ease-in-out forwards;
+
+        @keyframes open-navigation-menu {
+          from {
+            max-height: 0rem;
+            padding: 0rem;
+            box-shadow: none;
+          }
+          10% {
+            padding: 0.625rem 0.625rem 0rem 0.625rem;
+            box-shadow: 0 0.1875rem 0.625rem 0.1875rem $color-dark-shade-25;
+          }
+          to {
+            max-height: 50rem;
+            padding: 0.625rem 0.625rem 0rem 0.625rem;
+            box-shadow: 0 0.1875rem 0.625rem 0.1875rem $color-dark-shade-25;
+          }
+        }
       }
 
       .navigation-menu__dropdown-arrow {
@@ -64,18 +83,36 @@
     font-size: 1.5rem;
     line-height: 1.25rem;
     color: $color-dark-shade-50;
+    transition: transform 0.7s ease-in-out;
   }
 
   &__submenu {
     z-index: 9999;
     list-style: none;
     width: max-content;
-    display: none;
     position: absolute;
     top: 100%;
-    padding: 0.625rem 0.625rem 0rem 0.625rem;
     background: white;
-    box-shadow: 0 0.1875rem 0.625rem 0.1875rem $color-dark-shade-25;
+    overflow-y: hidden;
+    animation: close-navigation-menu $dropdown-animation-duration ease-in-out forwards;
+    animation-delay: -1s;
+
+    @keyframes close-navigation-menu {
+      from {
+        max-height: 50rem;
+        padding: 0.625rem 0.625rem 0rem 0.625rem;
+        box-shadow: 0 0.1875rem 0.625rem 0.1875rem $color-dark-shade-25;
+      }
+      90% {
+        padding: 0.625rem 0.625rem 0rem 0.625rem;
+        box-shadow: 0 0.1875rem 0.625rem 0.1875rem $color-dark-shade-25;
+      }
+      to {
+        max-height: 0rem;
+        padding: 0rem;
+        box-shadow: none;
+      }
+    }
   }
 
   &__subitem {

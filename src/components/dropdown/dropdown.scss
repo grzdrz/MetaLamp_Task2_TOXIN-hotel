@@ -1,6 +1,6 @@
 @import '../../assets/constants.scss';
 
-$animation-duration: 1s;
+$dropdown-animation-duration: 1s;
 
 .dropdown {
   width: 100%;
@@ -44,7 +44,7 @@ $animation-duration: 1s;
     border: 0.0625rem solid $color-dark-shade-25;
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
-    animation: close-input-container $animation-duration ease-in-out;
+    animation: close-input-container $dropdown-animation-duration ease-in-out;
 
     &:hover,
     &:focus {
@@ -55,7 +55,7 @@ $animation-duration: 1s;
       border: 0.0625rem solid $color-dark-shade-50;
       border-bottom-left-radius: 0rem;
       border-bottom-right-radius: 0rem;
-      animation: open-input-container $animation-duration ease-in-out;
+      animation: open-input-container $dropdown-animation-duration ease-in-out;
     }
 
     @keyframes open-input-container {
@@ -142,16 +142,17 @@ $animation-duration: 1s;
     overflow-y: hidden;
     max-height: 0px;
     border: 0rem solid $color-dark-shade-50;
-    animation: close-list $animation-duration ease-in-out;
+    animation: close-dropdown-list $dropdown-animation-duration ease-in-out;
+    animation-delay: -0.5s;
 
     &_opened {
       max-height: 50rem;
       border: 0.0625rem solid $color-dark-shade-50;
       border-top: 0rem;
-      animation: open-list $animation-duration ease-in-out;
+      animation: open-dropdown-list $dropdown-animation-duration ease-in-out;
     }
 
-    @keyframes open-list {
+    @keyframes open-dropdown-list {
       from {
         max-height: 0px;
       }
@@ -165,7 +166,7 @@ $animation-duration: 1s;
       }
     }
 
-    @keyframes close-list {
+    @keyframes close-dropdown-list {
       from {
         max-height: 50rem;
         border: 0.0625rem solid $color-dark-shade-50;
