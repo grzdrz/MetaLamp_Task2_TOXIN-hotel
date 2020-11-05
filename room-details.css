@@ -735,7 +735,34 @@ body {
       margin: 0rem 0.625rem 0rem 0rem;
       font-weight: bold; }
     .navigation-menu__item:hover .navigation-menu__submenu {
-      display: block; }
+      -webkit-animation: open-navigation-menu 1.5s ease-in-out forwards;
+              animation: open-navigation-menu 1.5s ease-in-out forwards; }
+
+@-webkit-keyframes open-navigation-menu {
+  from {
+    max-height: 0rem;
+    padding: 0rem;
+    box-shadow: none; }
+  10% {
+    padding: 0.625rem 0.625rem 0rem 0.625rem;
+    box-shadow: 0 0.1875rem 0.625rem 0.1875rem rgba(31, 32, 65, 0.25); }
+  to {
+    max-height: 50rem;
+    padding: 0.625rem 0.625rem 0rem 0.625rem;
+    box-shadow: 0 0.1875rem 0.625rem 0.1875rem rgba(31, 32, 65, 0.25); } }
+
+@keyframes open-navigation-menu {
+  from {
+    max-height: 0rem;
+    padding: 0rem;
+    box-shadow: none; }
+  10% {
+    padding: 0.625rem 0.625rem 0rem 0.625rem;
+    box-shadow: 0 0.1875rem 0.625rem 0.1875rem rgba(31, 32, 65, 0.25); }
+  to {
+    max-height: 50rem;
+    padding: 0.625rem 0.625rem 0rem 0.625rem;
+    box-shadow: 0 0.1875rem 0.625rem 0.1875rem rgba(31, 32, 65, 0.25); } }
     .navigation-menu__item:hover .navigation-menu__dropdown-arrow {
       transform: rotate(180deg); }
   .navigation-menu__item-ref {
@@ -761,19 +788,48 @@ body {
     font-family: Material Icons;
     font-size: 1.5rem;
     line-height: 1.25rem;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    transition: transform 0.7s ease-in-out; }
   .navigation-menu__submenu {
     z-index: 9999;
     list-style: none;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    display: none;
     position: absolute;
     top: 100%;
-    padding: 0.625rem 0.625rem 0rem 0.625rem;
     background: white;
+    overflow-y: hidden;
+    -webkit-animation: close-navigation-menu 1.5s ease-in-out forwards;
+            animation: close-navigation-menu 1.5s ease-in-out forwards;
+    -webkit-animation-delay: -1s;
+            animation-delay: -1s; }
+
+@-webkit-keyframes close-navigation-menu {
+  from {
+    max-height: 50rem;
+    padding: 0.625rem 0.625rem 0rem 0.625rem;
     box-shadow: 0 0.1875rem 0.625rem 0.1875rem rgba(31, 32, 65, 0.25); }
+  90% {
+    padding: 0.625rem 0.625rem 0rem 0.625rem;
+    box-shadow: 0 0.1875rem 0.625rem 0.1875rem rgba(31, 32, 65, 0.25); }
+  to {
+    max-height: 0rem;
+    padding: 0rem;
+    box-shadow: none; } }
+
+@keyframes close-navigation-menu {
+  from {
+    max-height: 50rem;
+    padding: 0.625rem 0.625rem 0rem 0.625rem;
+    box-shadow: 0 0.1875rem 0.625rem 0.1875rem rgba(31, 32, 65, 0.25); }
+  90% {
+    padding: 0.625rem 0.625rem 0rem 0.625rem;
+    box-shadow: 0 0.1875rem 0.625rem 0.1875rem rgba(31, 32, 65, 0.25); }
+  to {
+    max-height: 0rem;
+    padding: 0rem;
+    box-shadow: none; } }
   .navigation-menu__subitem {
     display: flex;
     align-items: center;
@@ -1747,16 +1803,18 @@ body {
     overflow-y: hidden;
     max-height: 0px;
     border: 0rem solid rgba(31, 32, 65, 0.5);
-    -webkit-animation: close-list 1s ease-in-out;
-            animation: close-list 1s ease-in-out; }
+    -webkit-animation: close-dropdown-list 1s ease-in-out;
+            animation: close-dropdown-list 1s ease-in-out;
+    -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s; }
     .dropdown__list_opened {
       max-height: 50rem;
       border: 0.0625rem solid rgba(31, 32, 65, 0.5);
       border-top: 0rem;
-      -webkit-animation: open-list 1s ease-in-out;
-              animation: open-list 1s ease-in-out; }
+      -webkit-animation: open-dropdown-list 1s ease-in-out;
+              animation: open-dropdown-list 1s ease-in-out; }
 
-@-webkit-keyframes open-list {
+@-webkit-keyframes open-dropdown-list {
   from {
     max-height: 0px; }
   1% {
@@ -1766,7 +1824,7 @@ body {
   to {
     max-height: 50rem; } }
 
-@keyframes open-list {
+@keyframes open-dropdown-list {
   from {
     max-height: 0px; }
   1% {
@@ -1776,7 +1834,7 @@ body {
   to {
     max-height: 50rem; } }
 
-@-webkit-keyframes close-list {
+@-webkit-keyframes close-dropdown-list {
   from {
     max-height: 50rem;
     border: 0.0625rem solid rgba(31, 32, 65, 0.5);
@@ -1789,7 +1847,7 @@ body {
     max-height: 0px;
     border: 0rem solid rgba(31, 32, 65, 0.5); } }
 
-@keyframes close-list {
+@keyframes close-dropdown-list {
   from {
     max-height: 50rem;
     border: 0.0625rem solid rgba(31, 32, 65, 0.5);
