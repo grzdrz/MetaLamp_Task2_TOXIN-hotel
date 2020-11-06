@@ -15,6 +15,8 @@ class ImagesCarousel {
     this.initialize();
     this.setEventsHandlers();
     this.buildCarouselList();
+
+    this.currentImage = this.imagesList.tail;
     this.setImagesPositions();
   }
 
@@ -45,27 +47,53 @@ class ImagesCarousel {
   }
 
   showActiveImages() {
-    for (let item of this.imagesList) {
+    /* for (let item of this.imagesList) {
       item.value.style.display = 'none';
     }
     this.currentImage.previous.value.style.display = 'block';
     this.currentImage.next.value.style.display = 'block';
-    this.currentImage.value.style.display = 'block';
+    this.currentImage.value.style.display = 'block'; */
   }
 
   setImagesPositions() {
-    this.currentImage = this.imagesList.tail;
-    for (let i = 0; i < this.currentImageIndex; i += 1) {
-      this.currentImage = this.currentImage.next;
-    }
-
-    this.showActiveImages();
-
     const width = this.currentImage.value.clientWidth;
 
-    this.currentImage.previous.value.style.left = `${-width}px`;
-    this.currentImage.next.value.style.left = `${width}px`;
-    this.currentImage.value.style.left = `${0}px`;
+    for (let item of this.imagesList) {
+      if (item.index !== this.currentImage.index) {
+        item.value.style.transition = 'none';
+        item.value.style.display = 'none';
+      }
+    }
+
+    let startItem = this.currentImage;
+    let currentItem = this.currentImage.next;
+    let i = 1;
+    while (currentItem !== startItem) {
+      currentItem.value.style.zIndex = 0;
+      currentItem.value.style.left = `${width * i}px`;
+      i += 1;
+      currentItem = currentItem.next;
+    }
+
+    for (let item of this.imagesList) {
+      item.value.style.transition = 'left 0.8s ease-out';
+      item.value.style.display = 'block';
+    }
+
+    i = this.currentImage.index - this.currentImageIndex;
+    startItem = this.currentImage.previous;
+    currentItem = this.currentImage;
+    while (currentItem !== startItem) {
+      if (currentItem.index === this.currentImageIndex) this.currentImage = currentItem;
+
+      currentItem.value.style.zIndex = 0;
+      currentItem.value.style.left = `${width * i}px`;
+
+      i += 1;
+      currentItem = currentItem.next;
+    }
+    currentItem.value.style.zIndex = 0;
+    currentItem.value.style.left = `${width * i}px`;
 
     this._updateState();
   }
