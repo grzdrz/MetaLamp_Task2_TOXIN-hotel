@@ -1,71 +1,56 @@
-import ImagesCarousel from './images-carousel';
-
 class RoomInfo {
-  constructor(outerContainerElement, currentPhotoIndex = 0) {
-    this.outerContainerElement = outerContainerElement;
-    /* this.currentPhotoIndex = currentPhotoIndex; */
-    this.imagesCarousel = new ImagesCarousel(this.outerContainerElement, currentPhotoIndex);
+  constructor(outerContainer, currentImageIndex = 0) {
+    this.outerContainer = outerContainer;
+    this.currentImageIndex = currentImageIndex;
 
-    /* this._initialize();
-    this._setEventHandlers();
-    this._updateState(); */
+    this._initialize();
+    this._setEventsHandlers();
+    this._setImagesPositions();
   }
 
   _initialize() {
-    /* this.containerElement = this.outerContainerElement.querySelector('.js-room-info'); */
-    /* this.arrows = this.containerElement.querySelector('.js-room-info__arrows'); */
-    /* if (this.arrows) {
-      this.leftArrow = this.arrows.querySelector('.js-room-info__arrow-back');
-      this.rightArrow = this.arrows.querySelector('.js-room-info__arrow-forward');
-    } */
-    /* this.radioButtons = Array.from(this.containerElement.querySelectorAll('.js-room-info__radio-button')); */
-    /* this.photos = Array.from(this.containerElement.querySelectorAll('.js-room-info__photo')); */
+    this.imagesContainer = this.outerContainer.querySelector('.js-room-info__photos');
+    this.leftButton = this.outerContainer.querySelector('.js-room-info__arrow-back');
+    this.rightButton = this.outerContainer.querySelector('.js-room-info__arrow-forward');
+    this.imagesElements = [...this.outerContainer.querySelectorAll('.js-room-info__photo')];
+    this.radioButtons = [...this.outerContainer.querySelectorAll('.js-room-info__radio-button')];
   }
 
-  _setEventHandlers() {
-    /* if (this.leftArrow && this.rightArrow) {
-      this.leftArrow.addEventListener('click', this._handleLeftArrowClick);
-      this.rightArrow.addEventListener('click', this._handleRightArrowClick);
-    } */
-    this.radioButtons.forEach((button) => {
-      button.addEventListener('click', this._handleRadioButtonClick);
+  _setEventsHandlers() {
+    this.leftButton.addEventListener('click', this._handleLeftButtonClick);
+    this.rightButton.addEventListener('click', this._handleRightButtonClick);
+    this.radioButtons.forEach((button) => button.addEventListener('click', this._handleRadioButtonClick));
+  }
+
+  _setImagesPositions() {
+    let relativeIndex = -this.currentImageIndex;
+    this.imagesElements.forEach((image) => {
+      image.style.left = `${image.clientWidth * relativeIndex}px`;
+      relativeIndex += 1;
     });
+    this._updateState();
   }
 
-  /* _skipPhoto(isDirectionForward) {
-    if (isDirectionForward) {
-      if (this.currentPhotoIndex === this.radioButtons.length - 1) return;
-      this.currentPhotoIndex += 1;
-    } else {
-      if (this.currentPhotoIndex === 0) return;
-      this.currentPhotoIndex -= 1;
-    }
-  } */
+  _handleLeftButtonClick = () => {
+    if (this.currentImageIndex > 0) this.currentImageIndex -= 1;
+    this._setImagesPositions();
+  }
+
+  _handleRightButtonClick = () => {
+    if (this.currentImageIndex < this.imagesElements.length - 1) this.currentImageIndex += 1;
+    this._setImagesPositions();
+  }
+
+  _handleRadioButtonClick = (event) => {
+    const targetRadioButton = event.target.closest('.js-room-info__radio-button');
+    this.currentImageIndex = Number.parseInt(targetRadioButton.dataset.serialNumber, 10);
+    this._setImagesPositions();
+  }
 
   _updateState() {
-    /* this.radioButtons.forEach((button, index) => {
-      button.classList.toggle('room-info__radio-button_checked', index === this.currentPhotoIndex);
-    }); */
-    /* this.photos.forEach((photo, index) => {
-      photo.classList.toggle('room-info__photo_current', index === this.currentPhotoIndex);
-    }); */
-  }
-
-  /* _handleLeftArrowClick = () => {
-    this._skipPhoto(false);
-    this._updateState();
-  }
-
-  _handleRightArrowClick = () => {
-    this._skipPhoto(true);
-    this._updateState();
-  } */
-
-  _handleRadioButtonClick = (/* event */) => {
-    /* const target = event.target.closest('.js-room-info__radio-button');
-    const index = Number.parseInt(target.dataset.serialNumber, 10);
-    this.currentPhotoIndex = index;
-    this._updateState(); */
+    this.radioButtons.forEach((button, index) => {
+      button.classList.toggle('room-info__radio-button_checked', index === this.currentImageIndex);
+    });
   }
 }
 

@@ -27,7 +27,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 
     &:hover .room-info__arrows {
       display: flex;
@@ -38,14 +38,9 @@
     z-index: 1;
     width: 100%;
     position: absolute;
-    /* opacity: 0; */
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-    /* transition: left 0.8s ease-out; */
-
-    &_current {
-      /* opacity: 1; */
-    }
+    transition: left 0.8s ease-out;
   }
 
   &__arrows {
