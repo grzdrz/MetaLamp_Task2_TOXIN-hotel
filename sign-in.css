@@ -150,7 +150,7 @@ body {
     font-size: 1.5rem;
     line-height: 1.25rem;
     color: rgba(31, 32, 65, 0.5);
-    transition: transform 0.7s ease-in-out; }
+    transition: transform 0.4s ease-in-out; }
   .navigation-menu__submenu {
     z-index: 9999;
     list-style: none;

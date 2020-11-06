@@ -888,7 +888,8 @@ body {
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
-    outline: none; }
+    outline: none;
+    transition: transform 0.3s ease-in-out; }
     .calendar__dropdown-arrow_opened {
       transform: rotate(180deg); }
   .calendar__buttons {
@@ -1227,8 +1228,8 @@ body {
     border-bottom-left-radius: 0rem;
     border-bottom-right-radius: 0rem; }
   99% {
-    border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0rem; }
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; }
   to {
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem; } }
@@ -1238,8 +1239,8 @@ body {
     border-bottom-left-radius: 0rem;
     border-bottom-right-radius: 0rem; }
   99% {
-    border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0rem; }
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; }
   to {
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem; } }
@@ -1680,7 +1681,8 @@ body {
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
-    outline: none; }
+    outline: none;
+    transition: transform 0.3s ease-in-out; }
     .calendar__dropdown-arrow_opened {
       transform: rotate(180deg); }
   .calendar__buttons {
@@ -2008,8 +2010,8 @@ body {
     border-bottom-left-radius: 0rem;
     border-bottom-right-radius: 0rem; }
   99% {
-    border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0rem; }
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; }
   to {
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem; } }
@@ -2592,7 +2594,8 @@ body {
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
-    outline: none; }
+    outline: none;
+    transition: transform 0.3s ease-in-out; }
     .calendar__dropdown-arrow_opened {
       transform: rotate(180deg); }
   .calendar__buttons {
@@ -3072,18 +3075,17 @@ body {
     height: 9.4375rem;
     display: flex;
     align-items: center;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .room-info__photos:hover .room-info__arrows {
       display: flex; }
   .room-info__photo {
     z-index: 1;
     width: 100%;
     position: absolute;
-    opacity: 0;
     border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem; }
-    .room-info__photo_current {
-      opacity: 1; }
+    border-top-right-radius: 0.25rem;
+    transition: left 0.8s ease-out; }
   .room-info__arrows {
     z-index: 2;
     width: 16.875rem;

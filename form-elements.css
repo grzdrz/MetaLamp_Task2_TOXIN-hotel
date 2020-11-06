@@ -1441,8 +1441,8 @@ Build date: 2019-12-19 16:51:02
     border-bottom-left-radius: 0rem;
     border-bottom-right-radius: 0rem; }
   99% {
-    border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0rem; }
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; }
   to {
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem; } }
@@ -1452,8 +1452,8 @@ Build date: 2019-12-19 16:51:02
     border-bottom-left-radius: 0rem;
     border-bottom-right-radius: 0rem; }
   99% {
-    border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0rem; }
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; }
   to {
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem; } }
@@ -2299,7 +2299,8 @@ Build date: 2019-12-19 16:51:02
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     background: transparent;
-    outline: none; }
+    outline: none;
+    transition: transform 0.3s ease-in-out; }
     .calendar__dropdown-arrow_opened {
       transform: rotate(180deg); }
   .calendar__buttons {
