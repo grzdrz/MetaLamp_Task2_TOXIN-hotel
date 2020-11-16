@@ -55,8 +55,8 @@ class PieChart {
 
   _createSegments() {
     const pathsContainer = this.container.querySelector('.js-pie-chart__paths');
-    const outerPaths = Array.from(pathsContainer.querySelectorAll('.js-pie-chart__outer-path'));
-    const innerPaths = Array.from(pathsContainer.querySelectorAll('.js-pie-chart__inner-path'));
+    const outerPaths = [...pathsContainer.querySelectorAll('.js-pie-chart__outer-path')];
+    const innerPaths = [...pathsContainer.querySelectorAll('.js-pie-chart__inner-path')];
 
     this.segments = [];
     outerPaths.forEach((outerPath, index) => {
@@ -65,7 +65,7 @@ class PieChart {
   }
 
   _createListItems() {
-    const itemsContainer = Array.from(this.chartListContainer.querySelectorAll('.js-pie-chart__list-item'));
+    const itemsContainer = [...this.chartListContainer.querySelectorAll('.js-pie-chart__list-item')];
     this.items = itemsContainer.map((itemContainer, index) => new ListItem(this, itemContainer, this.segments[index]));
   }
 }

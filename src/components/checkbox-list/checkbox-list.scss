@@ -1,7 +1,5 @@
 @import '../../assets/constants.scss';
 
-$dropdown-animation-duration: 1s;
-
 .checkbox-list {
   display: grid;
   grid-template-columns: 100%;
@@ -78,29 +76,12 @@ $dropdown-animation-duration: 1s;
     flex-direction: column;
     position: relative;
     overflow-y: hidden;
-    animation: open-checkbox-list $dropdown-animation-duration ease-in-out forwards;
+    max-height: 50rem;
+    transition: max-height 1s ease-in-out;
 
     &_closed {
-      animation: close-checkbox-list $dropdown-animation-duration ease-in-out forwards;
-      animation-delay: -0.3s;
-    }
-
-    @keyframes open-checkbox-list {
-      from {
-        max-height: 0rem;
-      }
-      to {
-        max-height: 50rem;
-      }
-    }
-
-    @keyframes close-checkbox-list {
-      from {
-        max-height: 50rem;
-      }
-      to {
-        max-height: 0rem;
-      }
+      max-height: 0rem;
+      transition: max-height 1s ease-in-out -0.5s;
     }
   }
 

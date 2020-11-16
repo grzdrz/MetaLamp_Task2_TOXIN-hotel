@@ -1,7 +1,5 @@
 @import '../../assets/constants.scss';
 
-$dropdown-animation-duration: 1s;
-
 .dropdown {
   width: 100%;
 
@@ -44,7 +42,7 @@ $dropdown-animation-duration: 1s;
     border: 0.0625rem solid $color-dark-shade-25;
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
-    animation: close-input-container $dropdown-animation-duration ease-in-out;
+    transition: border-bottom-left-radius 1s ease-in-out, border-bottom-right-radius 1s ease-in-out;
 
     &:hover,
     &:focus {
@@ -52,40 +50,10 @@ $dropdown-animation-duration: 1s;
     }
 
     &_opened {
+      transition: border-bottom-left-radius 1s ease-in-out -0.5s, border-bottom-right-radius 1s ease-in-out -0.5s;
       border: 0.0625rem solid $color-dark-shade-50;
       border-bottom-left-radius: 0rem;
       border-bottom-right-radius: 0rem;
-      animation: open-input-container $dropdown-animation-duration ease-in-out;
-    }
-
-    @keyframes open-input-container {
-      from {
-        border-bottom-left-radius: 0.25rem;
-        border-bottom-right-radius: 0.25rem;
-      }
-      1% {
-        border-bottom-left-radius: 0rem;
-        border-bottom-right-radius: 0rem;
-      }
-      to {
-        border-bottom-left-radius: 0rem;
-        border-bottom-right-radius: 0rem;
-      }
-    }
-
-    @keyframes close-input-container {
-      from {
-        border-bottom-left-radius: 0rem;
-        border-bottom-right-radius: 0rem;
-      }
-      99% {
-        border-bottom-left-radius: 0.25rem;
-        border-bottom-right-radius: 0.25rem;
-      }
-      to {
-        border-bottom-left-radius: 0.25rem;
-        border-bottom-right-radius: 0.25rem;
-      }
     }
   }
 
@@ -142,45 +110,13 @@ $dropdown-animation-duration: 1s;
     overflow-y: hidden;
     max-height: 0px;
     border: 0rem solid $color-dark-shade-50;
-    animation: close-dropdown-list $dropdown-animation-duration ease-in-out;
-    animation-delay: -0.5s;
+    transition: max-height 1s ease-in-out -0.5s, border 1s ease-in-out -0.5s;
 
     &_opened {
+      transition: max-height 1s ease-in-out, border 1s ease-in-out;
       max-height: 50rem;
       border: 0.0625rem solid $color-dark-shade-50;
       border-top: 0rem;
-      animation: open-dropdown-list $dropdown-animation-duration ease-in-out;
-    }
-
-    @keyframes open-dropdown-list {
-      from {
-        max-height: 0px;
-      }
-      1% {
-        max-height: 0px;
-        border: 0.0625rem solid $color-dark-shade-50;
-        border-top: 0rem;
-      }
-      to {
-        max-height: 50rem;
-      }
-    }
-
-    @keyframes close-dropdown-list {
-      from {
-        max-height: 50rem;
-        border: 0.0625rem solid $color-dark-shade-50;
-        border-top: 0rem;
-      }
-      99% {
-        max-height: 0px;
-        border: 0.0625rem solid $color-dark-shade-50;
-        border-top: 0rem;
-      }
-      to {
-        max-height: 0px;
-        border: 0rem solid $color-dark-shade-50;
-      }
     }
   }
 

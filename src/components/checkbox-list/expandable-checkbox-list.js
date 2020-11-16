@@ -17,6 +17,7 @@ class ExpandableCheckbox {
 
   _setEventHandlers() {
     this.dropdownButton.addEventListener('click', this._handleCheckboxExpand);
+    this.dropdownButton.addEventListener('touchend', this._handleCheckboxExpand);
   }
 
   _updateState() {
@@ -24,7 +25,8 @@ class ExpandableCheckbox {
     this.dropdownArrow.classList.toggle('checkbox-list__dropdown-arrow_closed', this.isClosed);
   }
 
-  _handleCheckboxExpand = () => {
+  _handleCheckboxExpand = (event) => {
+    event.preventDefault();
     if (this.isClosed) this.isClosed = false;
     else this.isClosed = true;
     this._updateState();

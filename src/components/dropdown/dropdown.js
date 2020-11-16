@@ -41,7 +41,7 @@ class Dropdown {
     this.dropdownArrow = this.containerElement.querySelector('.js-dropdown__dropdown-arrow');
 
     this.droppingListContainer = this.containerElement.querySelector('.js-dropdown__list');
-    this.droppingItems = Array.from(this.droppingListContainer.querySelectorAll('.js-dropdown__list-item'))
+    this.droppingItems = [...this.droppingListContainer.querySelectorAll('.js-dropdown__list-item')]
       .map((itemElement) => new ListItem(itemElement, this));
 
     this.clearButton = this.containerElement.querySelector('.js-dropdown__clear-button');
@@ -51,7 +51,9 @@ class Dropdown {
 
   _setEventHandlers() {
     this.input.addEventListener('click', this._handleDropdownClick);
+    this.input.addEventListener('touchend', this._handleDropdownClick);
     this.dropdownArrow.addEventListener('click', this._handleDropdownClick);
+    this.dropdownArrow.addEventListener('touchend', this._handleDropdownClick);
     if (this.clearButton) this.clearButton.addEventListener('click', this._handleClearButtonClick);
     if (this.applyButton) this.applyButton.addEventListener('click', this._handleApplyButtonClick);
     document.addEventListener('click', this._handleDropdownLeave);
@@ -88,7 +90,8 @@ class Dropdown {
     }
   }
 
-  _handleDropdownClick = () => {
+  _handleDropdownClick = (event) => {
+    event.preventDefault();
     this.isOpened = !this.isOpened;
     this.updateState();
   }
