@@ -108,7 +108,7 @@ class Dropdown {
   }
 
   _handleDropdownLeave = (event) => {
-    const dropwdown = event.target.closest('.dropdown');
+    const dropwdown = event.target.closest('.js-dropdown');
     if (!dropwdown) {
       this.isOpened = false;
       this.updateState();
