@@ -20,7 +20,7 @@ mixin navigation-menu(options = {})
 
   ul(class=["navigation-menu"])
     - for(let ref of refs)
-      li(class=["navigation-menu__item"])
+      li(class=[`navigation-menu__item ${ref.hasDropdown ? 'js-navigation-menu__item' : ''}`])
         - if(ref.hasDropdown){
           div(class=["navigation-menu__item-ref"])
             ul(class=["navigation-menu__submenu"])
